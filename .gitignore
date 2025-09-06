@@ -85,3 +85,8 @@ Thumbs.db
 *.log
 *.tmp
 *.temp
+
+# Firebase configuration (contains sensitive API keys)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+lib/firebase_options.dart
