@@ -4,12 +4,24 @@ import '../services/auth_service.dart';
 
 class AuthProvider extends ChangeNotifier {
   final AuthService _authService = AuthService();
+  User? _currentUser;
+
+  AuthProvider() {
+    _currentUser = _authService.currentUser;
+    // Listen to auth state changes and notify listeners
+    _authService.authStateChanges.listen((User? user) {
+      if (_currentUser != user) {
+        _currentUser = user;
+        notifyListeners();
+      }
+    });
+  }
 
   AuthService get authService => _authService;
 
-  User? get currentUser => _authService.currentUser;
+  User? get currentUser => _currentUser;
   Stream<User?> get authStateChanges => _authService.authStateChanges;
-  bool get isSignedIn => _authService.isSignedIn;
+  bool get isSignedIn => _currentUser != null;
 
   bool _isLoading = false;
   String? _errorMessage;

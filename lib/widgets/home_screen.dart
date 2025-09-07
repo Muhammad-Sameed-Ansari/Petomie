@@ -16,14 +16,16 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Petomie'),
         actions: [
-          // Theme toggle button
+          // Theme selection button
           IconButton(
             icon: Icon(
-              themeProvider.isDarkMode
-                  ? Icons.light_mode
-                  : Icons.dark_mode,
+              themeProvider.themeMode == ThemeModeOption.system
+                  ? Icons.brightness_auto
+                  : themeProvider.isDarkMode
+                      ? Icons.dark_mode
+                      : Icons.light_mode,
             ),
-            onPressed: () => themeProvider.toggleTheme(),
+            onPressed: () => _showThemeSelectionDialog(context, themeProvider),
           ),
           // Logout button
           IconButton(
@@ -121,12 +123,12 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      themeProvider.isDarkMode ? 'Dark Mode' : 'Light Mode',
+                      _getThemeModeDisplayName(themeProvider.themeMode),
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'Tap the theme icon in the app bar to switch themes',
+                      'Tap the theme icon in the app bar to change appearance',
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
                             color: themeProvider.isDarkMode
                                 ? AppColors.darkOnBackground.withOpacity(0.7)
@@ -138,6 +140,138 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  String _getThemeModeDisplayName(ThemeModeOption mode) {
+    switch (mode) {
+      case ThemeModeOption.system:
+        return 'System (Follow Device)';
+      case ThemeModeOption.light:
+        return 'Light Mode';
+      case ThemeModeOption.dark:
+        return 'Dark Mode';
+    }
+  }
+
+  void _showThemeSelectionDialog(BuildContext context, ThemeProvider themeProvider) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Choose Theme'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              _buildThemeOption(
+                context,
+                'System',
+                'Follow device settings',
+                Icons.brightness_auto,
+                ThemeModeOption.system,
+                themeProvider,
+              ),
+              const SizedBox(height: 8),
+              _buildThemeOption(
+                context,
+                'Light',
+                'Always light mode',
+                Icons.light_mode,
+                ThemeModeOption.light,
+                themeProvider,
+              ),
+              const SizedBox(height: 8),
+              _buildThemeOption(
+                context,
+                'Dark',
+                'Always dark mode',
+                Icons.dark_mode,
+                ThemeModeOption.dark,
+                themeProvider,
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text('Cancel'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Widget _buildThemeOption(
+    BuildContext context,
+    String title,
+    String subtitle,
+    IconData icon,
+    ThemeModeOption mode,
+    ThemeProvider themeProvider,
+  ) {
+    final isSelected = themeProvider.themeMode == mode;
+
+    return InkWell(
+      onTap: () {
+        themeProvider.setThemeMode(mode);
+        Navigator.of(context).pop();
+      },
+      borderRadius: BorderRadius.circular(8),
+      child: Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: isSelected
+              ? Theme.of(context).colorScheme.primary.withOpacity(0.1)
+              : null,
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(
+            color: isSelected
+                ? Theme.of(context).colorScheme.primary
+                : Colors.transparent,
+            width: 2,
+          ),
+        ),
+        child: Row(
+          children: [
+            Icon(
+              icon,
+              color: isSelected
+                  ? Theme.of(context).colorScheme.primary
+                  : Theme.of(context).colorScheme.onSurface,
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: TextStyle(
+                      fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                      color: isSelected
+                          ? Theme.of(context).colorScheme.primary
+                          : Theme.of(context).colorScheme.onSurface,
+                    ),
+                  ),
+                  Text(
+                    subtitle,
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            if (isSelected)
+              Icon(
+                Icons.check,
+                color: Theme.of(context).colorScheme.primary,
+              ),
           ],
         ),
       ),

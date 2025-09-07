@@ -129,6 +129,7 @@ class _RegisterScreenState extends State<RegisterScreen> with TickerProviderStat
           ),
         ),
         child: SafeArea(
+          bottom: false, // Allow content to extend to bottom edge
           child: SingleChildScrollView(
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
             child: Column(
@@ -459,7 +460,7 @@ class _RegisterScreenState extends State<RegisterScreen> with TickerProviderStat
                         ],
                       ),
 
-                      const SizedBox(height: 20),
+                        const SizedBox(height: 20),
                     ],
                   ),
                 ),
@@ -468,6 +469,8 @@ class _RegisterScreenState extends State<RegisterScreen> with TickerProviderStat
           ),
         ),
       ),
+      // Add bottom padding to account for removed SafeArea
+      bottomNavigationBar: SizedBox(height: MediaQuery.of(context).padding.bottom),
     );
   }
 }

@@ -106,6 +106,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
           ),
         ),
         child: SafeArea(
+          bottom: false, // Allow content to extend to bottom edge
           child: FadeTransition(
             opacity: _fadeAnimation,
             child: SingleChildScrollView(
@@ -379,6 +380,8 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
           ),
         ),
       ),
+      // Add bottom padding to account for removed SafeArea
+      bottomNavigationBar: SizedBox(height: MediaQuery.of(context).padding.bottom),
     );
   }
 }

@@ -18,8 +18,34 @@ void main() async {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangePlatformBrightness() {
+    super.didChangePlatformBrightness();
+    // Update theme provider when system theme changes
+    final themeProvider = Provider.of<ThemeProvider>(context, listen: false);
+    final Brightness brightness = WidgetsBinding.instance.platformDispatcher.platformBrightness;
+    themeProvider.updateSystemTheme(brightness == Brightness.dark);
+  }
 
   @override
   Widget build(BuildContext context) {
