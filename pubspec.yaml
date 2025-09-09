@@ -48,6 +48,21 @@ dependencies:
   # App icon generation
   flutter_launcher_icons: ^0.13.1
 
+  # Cloud Firestore for subscription data
+  cloud_firestore: ^5.2.0
+
+  # In-app purchases for subscriptions
+  purchases_flutter: ^8.5.2
+
+  # HTTP requests for server communication
+  http: ^1.2.2
+
+  # URL launcher for external links
+  url_launcher: ^6.3.1
+
+  # Intl for date formatting
+  intl: ^0.19.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

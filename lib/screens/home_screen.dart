@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart' as local_auth;
 import '../providers/theme_provider.dart';
+import '../providers/subscription_provider.dart';
 import '../themes/app_themes.dart';
 import '../models/category.dart';
 import '../widgets/category_grid.dart';
 import 'category_screen.dart';
+import 'subscription_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,6 +16,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final authProvider = Provider.of<local_auth.AuthProvider>(context);
     final themeProvider = Provider.of<ThemeProvider>(context);
+    final subscriptionProvider = Provider.of<SubscriptionProvider>(context);
 
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
@@ -51,6 +54,44 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
         actions: [
+          // Subscription status button
+          Container(
+            margin: const EdgeInsets.only(right: 8),
+            decoration: BoxDecoration(
+              color: subscriptionProvider.hasActiveSubscription
+                  ? AppColors.success.withOpacity(0.1)
+                  : Theme.of(context).colorScheme.surface,
+              borderRadius: BorderRadius.circular(12),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  blurRadius: 8,
+                  offset: const Offset(0, 2),
+                ),
+              ],
+            ),
+            child: IconButton(
+              icon: Icon(
+                subscriptionProvider.hasActiveSubscription
+                    ? Icons.workspace_premium
+                    : Icons.workspace_premium_outlined,
+                color: subscriptionProvider.hasActiveSubscription
+                    ? AppColors.success
+                    : Theme.of(context).colorScheme.primary,
+              ),
+              tooltip: subscriptionProvider.hasActiveSubscription
+                  ? 'Premium Active'
+                  : 'Get Premium',
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const SubscriptionScreen(),
+                    fullscreenDialog: true,
+                  ),
+                );
+              },
+            ),
+          ),
           Container(
             margin: const EdgeInsets.only(right: 8),
             decoration: BoxDecoration(

@@ -4,8 +4,11 @@ import 'package:provider/provider.dart';
 import 'firebase_options.dart';
 import 'providers/theme_provider.dart';
 import 'providers/auth_provider.dart' as local_auth;
+import 'providers/subscription_provider.dart';
+import 'services/subscription_service.dart';
 import 'widgets/auth_wrapper.dart';
 import 'themes/app_themes.dart';
+import 'config/subscription_config.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,6 +17,21 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  // Initialize Subscription Service
+  try {
+    // Only initialize if configuration is valid
+    if (SubscriptionConfig.validateConfiguration()) {
+      await SubscriptionService().initialize(
+        apiKey: SubscriptionConfig.currentPlatformApiKey,
+      );
+    } else {
+      debugPrint('Subscription service not initialized: Invalid configuration');
+      debugPrint('Please update your subscription configuration in lib/config/subscription_config.dart');
+    }
+  } catch (e) {
+    debugPrint('Failed to initialize subscription service: $e');
+  }
 
   runApp(const MyApp());
 }
@@ -26,15 +44,34 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
+  late local_auth.AuthProvider _authProvider;
+  late SubscriptionProvider _subscriptionProvider;
+
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+    
+    // Initialize providers
+    _authProvider = local_auth.AuthProvider();
+    _subscriptionProvider = SubscriptionProvider();
+    
+    // Listen to auth state changes to sync subscription service
+    _authProvider.authStateChanges.listen((user) {
+      if (user != null) {
+        // User logged in - set user ID for subscription service
+        SubscriptionService().setUserId(user.uid);
+      } else {
+        // User logged out - clear subscription service user
+        SubscriptionService().clearUser();
+      }
+    });
   }
 
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    SubscriptionService().dispose();
     super.dispose();
   }
 
@@ -52,7 +89,8 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
-        ChangeNotifierProvider(create: (_) => local_auth.AuthProvider()),
+        ChangeNotifierProvider.value(value: _authProvider),
+        ChangeNotifierProvider.value(value: _subscriptionProvider),
       ],
       child: Consumer<ThemeProvider>(
         builder: (context, themeProvider, child) {
