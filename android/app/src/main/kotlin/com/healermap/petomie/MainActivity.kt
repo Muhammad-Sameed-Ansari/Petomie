@@ -1,4 +1,4 @@
-package com.example.petomie
+package com.healermap.petomie
 
 import io.flutter.embedding.android.FlutterActivity
 

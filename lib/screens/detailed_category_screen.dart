@@ -1,32 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/category.dart';
-import '../widgets/category_grid.dart';
 import '../providers/auth_provider.dart' as local_auth;
 import '../providers/theme_provider.dart';
 import '../providers/subscription_provider.dart';
 import '../themes/app_themes.dart';
-import '../widgets/subscription_required_overlay.dart';
 import 'subscription_screen.dart';
-import 'detailed_category_screen.dart';
 
-class CategoryScreen extends StatefulWidget {
+class DetailedCategoryScreen extends StatefulWidget {
   final List<Category> categories;
   final String title;
   final List<String> breadcrumbs;
+  final String animalType; // To track which animal we came from
 
-  const CategoryScreen({
+  const DetailedCategoryScreen({
     super.key,
     required this.categories,
     required this.title,
+    required this.animalType,
     this.breadcrumbs = const [],
   });
 
   @override
-  State<CategoryScreen> createState() => _CategoryScreenState();
+  State<DetailedCategoryScreen> createState() => _DetailedCategoryScreenState();
 }
 
-class _CategoryScreenState extends State<CategoryScreen> {
+class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
   late List<Category> _currentCategories;
   late String _currentTitle;
   late List<String> _currentBreadcrumbs;
@@ -34,6 +33,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
   @override
   void initState() {
     super.initState();
+    
     _currentCategories = widget.categories;
     _currentTitle = widget.title;
     _currentBreadcrumbs = List.from(widget.breadcrumbs);
@@ -41,29 +41,21 @@ class _CategoryScreenState extends State<CategoryScreen> {
 
   void _onCategoryTap(Category category) {
     if (category.hasSubcategories) {
-      final subscriptionProvider = Provider.of<SubscriptionProvider>(context, listen: false);
-      
-      if (!subscriptionProvider.hasActiveSubscription) {
-        // Show subscription required overlay for any category
-        _showSubscriptionRequiredOverlay(category);
-        return;
-      }
-      
-      // For all categories, navigate within the same screen
+      // Navigate to further subcategories (future implementation)
       setState(() {
         _currentCategories = category.subcategories;
         _currentTitle = category.label;
         _currentBreadcrumbs.add(category.label);
       });
     } else {
-      // Handle leaf category tap (could show details, perform action, etc.)
+      // Handle leaf category tap
       _showCategoryDetails(category);
     }
   }
 
   void _navigateBack() {
     if (_currentBreadcrumbs.length <= 1) {
-      // If we're at the first level (animal anatomy), go back to home
+      // Go back to previous screen
       Navigator.of(context).pop();
       return;
     }
@@ -71,11 +63,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
     // Navigate up one level
     setState(() {
       _currentBreadcrumbs.removeLast();
-
+      
       // Find the parent category
       Category? parentCategory = _findParentCategory(
-        CategoryData.mainCategories,
-        _currentBreadcrumbs,
+        widget.categories,
+        _currentBreadcrumbs.skip(1).toList(), // Skip the first breadcrumb which is the animal name
       );
 
       if (parentCategory != null) {
@@ -118,13 +110,15 @@ class _CategoryScreenState extends State<CategoryScreen> {
             Text(
               'You selected: ${category.label}',
               style: Theme.of(context).textTheme.bodyMedium,
+              textAlign: TextAlign.center,
             ),
             const SizedBox(height: 8),
             Text(
-              'Category ID: ${category.id}',
+              'This content will be available soon with detailed information about ${category.label.toLowerCase()} in ${widget.animalType.toLowerCase()}s.',
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
-                  ),
+                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
+              ),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
@@ -138,156 +132,19 @@ class _CategoryScreenState extends State<CategoryScreen> {
     );
   }
 
-  void _showSubscriptionRequiredOverlay(Category category) {
-    final animalType = _currentBreadcrumbs.isNotEmpty ? _currentBreadcrumbs.first : 'Animal';
-    
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) => SubscriptionRequiredOverlay(
-        animalType: animalType,
-        categoryType: category.label,
-        onSubscribe: () {
-          Navigator.of(context).pop(); // Close overlay
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => const SubscriptionScreen(),
-              fullscreenDialog: true,
-            ),
-          );
-        },
-        onGoBack: () {
-          Navigator.of(context).pop(); // Close overlay, stay on current screen
-        },
-      ),
-    );
-  }
-
-  void _showSubscriptionRequiredAlert() {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: Row(
-          children: [
-            Container(
-              width: 32,
-              height: 32,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Theme.of(context).colorScheme.primary,
-                    Theme.of(context).colorScheme.primary.withOpacity(0.7),
-                  ],
-                ),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: const Icon(
-                Icons.workspace_premium,
-                color: Colors.white,
-                size: 20,
-              ),
-            ),
-            const SizedBox(width: 12),
-            Text(
-              'Premium Required',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ],
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'To access detailed anatomy information, you need a premium subscription.',
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.8),
-              ),
-            ),
-            const SizedBox(height: 12),
-            Text(
-              'Premium features include:',
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                fontWeight: FontWeight.w600,
-                color: Theme.of(context).colorScheme.onSurface,
-              ),
-            ),
-            const SizedBox(height: 8),
-            ...['Unlimited access to all content', 'High-quality anatomical diagrams', 'Detailed descriptions'].map((feature) => 
-              Padding(
-                padding: const EdgeInsets.only(bottom: 4),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      width: 16,
-                      height: 16,
-                      margin: const EdgeInsets.only(top: 2),
-                      decoration: BoxDecoration(
-                        color: AppColors.success.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                      child: const Icon(
-                        Icons.check,
-                        color: AppColors.success,
-                        size: 12,
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        feature,
-                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ).toList(),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(
-              'Cancel',
-              style: TextStyle(
-                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
-              ),
-            ),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pop(); // Close the dialog first
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const SubscriptionScreen(),
-                  fullscreenDialog: true,
-                ),
-              );
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Theme.of(context).colorScheme.primary,
-              foregroundColor: Colors.white,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-            child: const Text('Buy Premium'),
-          ),
-        ],
-      ),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
     final authProvider = Provider.of<local_auth.AuthProvider>(context);
     final themeProvider = Provider.of<ThemeProvider>(context);
+    final subscriptionProvider = Provider.of<SubscriptionProvider>(context);
+
+    // If subscription is lost during session, navigate back to previous screen
+    if (!subscriptionProvider.hasActiveSubscription) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        Navigator.of(context).pop();
+      });
+    }
 
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
@@ -428,7 +285,43 @@ class _CategoryScreenState extends State<CategoryScreen> {
               ),
             ),
           
-          // Category grid
+          // Premium indicator
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  AppColors.success.withOpacity(0.1),
+                  AppColors.success.withOpacity(0.05),
+                ],
+              ),
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(
+                color: AppColors.success.withOpacity(0.3),
+              ),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.workspace_premium,
+                  size: 16,
+                  color: AppColors.success,
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  'Premium Content',
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: AppColors.success,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          
+          // Category grid with enhanced layout for longer names
           Expanded(
             child: Container(
               decoration: BoxDecoration(
@@ -441,7 +334,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                   ],
                 ),
               ),
-              child: CategoryGrid(
+              child: _EnhancedCategoryGrid(
                 categories: _currentCategories,
                 onCategoryTap: _onCategoryTap,
               ),
@@ -573,3 +466,187 @@ class _CategoryScreenState extends State<CategoryScreen> {
     );
   }
 }
+
+// Enhanced category grid widget for handling longer category names
+class _EnhancedCategoryGrid extends StatelessWidget {
+  final List<Category> categories;
+  final Function(Category category)? onCategoryTap;
+
+  const _EnhancedCategoryGrid({
+    required this.categories,
+    this.onCategoryTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        crossAxisSpacing: 16,
+        mainAxisSpacing: 16,
+        childAspectRatio: 0.8, // Slightly taller for longer text
+      ),
+      itemCount: categories.length,
+      itemBuilder: (context, index) {
+        final category = categories[index];
+        return _EnhancedCategoryCard(
+          category: category,
+          onTap: onCategoryTap != null
+              ? () => onCategoryTap!(category)
+              : null,
+        );
+      },
+    );
+  }
+}
+
+// Enhanced category card with better text handling
+class _EnhancedCategoryCard extends StatefulWidget {
+  final Category category;
+  final VoidCallback? onTap;
+
+  const _EnhancedCategoryCard({
+    required this.category,
+    this.onTap,
+  });
+
+  @override
+  State<_EnhancedCategoryCard> createState() => _EnhancedCategoryCardState();
+}
+
+class _EnhancedCategoryCardState extends State<_EnhancedCategoryCard>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _animationController;
+  late Animation<double> _scaleAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+    _animationController = AnimationController(
+      duration: const Duration(milliseconds: 150),
+      vsync: this,
+    );
+    _scaleAnimation = Tween<double>(
+      begin: 1.0,
+      end: 0.95,
+    ).animate(CurvedAnimation(
+      parent: _animationController,
+      curve: Curves.easeInOut,
+    ));
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _scaleAnimation,
+      builder: (context, child) {
+        return Transform.scale(
+          scale: _scaleAnimation.value,
+          child: GestureDetector(
+            onTapDown: (_) => _animationController.forward(),
+            onTapUp: (_) {
+              _animationController.reverse();
+              widget.onTap?.call();
+            },
+            onTapCancel: () => _animationController.reverse(),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.1),
+                    blurRadius: 15,
+                    offset: const Offset(0, 5),
+                  ),
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Theme.of(context).colorScheme.surface,
+                        Theme.of(context).colorScheme.surface.withOpacity(0.8),
+                      ],
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      // Icon section
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                                Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                              ],
+                            ),
+                          ),
+                          child: Center(
+                            child: Icon(
+                              widget.category.icon,
+                              size: 48,
+                              color: Theme.of(context).colorScheme.primary,
+                            ),
+                          ),
+                        ),
+                      ),
+                      
+                      // Label section with enhanced text handling
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).colorScheme.surface,
+                            border: Border(
+                              top: BorderSide(
+                                color: Theme.of(context).colorScheme.outline.withOpacity(0.2),
+                                width: 1,
+                              ),
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              widget.category.label,
+                              style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                                    fontWeight: FontWeight.w600,
+                                    color: Theme.of(context).colorScheme.onSurface,
+                                    fontSize: 13,
+                                    height: 1.2,
+                                  ),
+                              textAlign: TextAlign.center,
+                              maxLines: 3, // Allow up to 3 lines for longer text
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+

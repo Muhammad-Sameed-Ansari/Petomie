@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 enum SubscriptionType {
-  monthly('monthly', 'Monthly', 9.99, 'month'),
-  yearly('yearly', 'Yearly', 99.99, 'year');
+  monthly('monthly', 'Monthly', 5, 'month'),
+  yearly('yearly', 'Yearly', 50, 'year');
 
   const SubscriptionType(this.id, this.displayName, this.price, this.period);
 
@@ -35,9 +35,9 @@ enum SubscriptionType {
   String get productId {
     switch (this) {
       case SubscriptionType.monthly:
-        return 'petomie_monthly_subscription';
+        return 'petomie_monthly_subscription:petomie-monthly-subscription';
       case SubscriptionType.yearly:
-        return 'petomie_yearly_subscription';
+        return 'petomie_yearly_subscription:petomie-yearly-subscription';
     }
   }
 }

@@ -64,21 +64,33 @@ class SubscriptionProvider extends ChangeNotifier {
     _clearError();
 
     try {
-      // Load current subscription
-      final subscription = await _subscriptionService.getCurrentSubscription();
-      _currentSubscription = subscription;
-
-      // Load available subscriptions
-      final available = await _subscriptionService.getAvailableSubscriptions();
-      _availableSubscriptions = available;
-
-      debugPrint('Loaded subscription: ${subscription.status.displayName}');
+      // Add timeout to prevent infinite loading
+      await Future.any([
+        _loadSubscriptionData(),
+        Future.delayed(const Duration(seconds: 15), () => throw TimeoutException('Loading timed out', const Duration(seconds: 15))),
+      ]);
     } catch (e) {
       debugPrint('Failed to load subscription: $e');
-      _setError('Failed to load subscription information');
+      if (e is TimeoutException) {
+        _setError('Loading subscription timed out. Please try again.');
+      } else {
+        _setError('Failed to load subscription information');
+      }
     } finally {
       _setLoading(false);
     }
+  }
+
+  Future<void> _loadSubscriptionData() async {
+    // Load current subscription
+    final subscription = await _subscriptionService.getCurrentSubscription();
+    _currentSubscription = subscription;
+
+    // Load available subscriptions
+    final available = await _subscriptionService.getAvailableSubscriptions();
+    _availableSubscriptions = available;
+
+    debugPrint('Loaded subscription: ${subscription.status.displayName}');
   }
 
   // Purchase a subscription
@@ -89,7 +101,11 @@ class SubscriptionProvider extends ChangeNotifier {
     _clearError();
 
     try {
-      final success = await _subscriptionService.purchaseSubscription(type);
+      // Add timeout to prevent infinite purchasing state
+      final success = await Future.any([
+        _subscriptionService.purchaseSubscription(type),
+        Future.delayed(const Duration(seconds: 60), () => throw TimeoutException('Purchase timed out', const Duration(seconds: 60))),
+      ]);
       
       if (success) {
         // Reload subscription data
@@ -102,7 +118,11 @@ class SubscriptionProvider extends ChangeNotifier {
       }
     } catch (e) {
       debugPrint('Failed to purchase subscription: $e');
-      _setError(_formatErrorMessage(e.toString()));
+      if (e is TimeoutException) {
+        _setError('Purchase took too long. Please check your account or try again.');
+      } else {
+        _setError(_formatErrorMessage(e.toString()));
+      }
       return false;
     } finally {
       _setPurchasing(false);
@@ -117,7 +137,11 @@ class SubscriptionProvider extends ChangeNotifier {
     _clearError();
 
     try {
-      final success = await _subscriptionService.restorePurchases();
+      // Add timeout to prevent infinite loading
+      final success = await Future.any([
+        _subscriptionService.restorePurchases(),
+        Future.delayed(const Duration(seconds: 15), () => throw TimeoutException('Restore timed out', const Duration(seconds: 15))),
+      ]);
       
       if (success) {
         await loadSubscription();
@@ -129,7 +153,11 @@ class SubscriptionProvider extends ChangeNotifier {
       }
     } catch (e) {
       debugPrint('Failed to restore purchases: $e');
-      _setError('Failed to restore purchases');
+      if (e is TimeoutException) {
+        _setError('Restore purchases timed out. Please try again.');
+      } else {
+        _setError('Failed to restore purchases');
+      }
       return false;
     } finally {
       _setLoading(false);
@@ -171,6 +199,13 @@ class SubscriptionProvider extends ChangeNotifier {
     _availableSubscriptions = SubscriptionType.values;
     _clearError();
     notifyListeners();
+  }
+
+  // Reset loading states (useful when stuck in loading)
+  void resetLoadingStates() {
+    _setLoading(false);
+    _setPurchasing(false);
+    _clearError();
   }
 
   // Helper methods

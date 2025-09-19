@@ -4,6 +4,8 @@
 /// You'll need to replace the placeholder values with your actual credentials
 /// and configuration from various services.
 
+import 'dart:io' show Platform;
+
 class SubscriptionConfig {
   // ============================================================================
   // REVENUECAT CONFIGURATION
@@ -23,12 +25,17 @@ class SubscriptionConfig {
   static const String revenueCatApiKeyIOS = 'YOUR_REVENUECAT_IOS_API_KEY_HERE';
   
   /// RevenueCat API Key for Android (if different from above)
-  static const String revenueCatApiKeyAndroid = 'YOUR_REVENUECAT_ANDROID_API_KEY_HERE';
+  static const String revenueCatApiKeyAndroid = 'goog_DOGKbvHIbGlmgqVwByqltsOYkWv';
   
   /// Get the appropriate API key for the current platform
   static String get currentPlatformApiKey {
-    // You can implement platform-specific logic here if needed
-    return revenueCatApiKey;
+    if (Platform.isAndroid) {
+      return revenueCatApiKeyAndroid;
+    } else if (Platform.isIOS) {
+      return revenueCatApiKeyIOS;
+    } else {
+      return revenueCatApiKey;
+    }
   }
 
   // ============================================================================
@@ -62,7 +69,7 @@ class SubscriptionConfig {
   /// Get these from: https://play.google.com/console
   
   /// Your app's Package Name (must match your Android app)
-  static const String androidPackageName = 'com.yourcompany.petomie';
+  static const String androidPackageName = 'com.healermap.petomie';
   
   /// Google Play Store Product IDs
   /// These must match the subscription IDs you created in Google Play Console
@@ -134,8 +141,8 @@ class SubscriptionConfig {
   
   /// Subscription plan prices (should match your store configuration)
   static const Map<String, double> subscriptionPrices = {
-    'monthly': 9.99,
-    'yearly': 99.99,
+    'monthly': 5,
+    'yearly': 50,
   };
   
   /// Free trial configuration
@@ -184,7 +191,8 @@ class SubscriptionConfig {
   
   /// Validate configuration
   static bool validateConfiguration() {
-    if (revenueCatApiKey == 'YOUR_REVENUECAT_API_KEY_HERE') {
+    final keyToCheck = currentPlatformApiKey;
+    if (keyToCheck.startsWith('YOUR_') || keyToCheck.isEmpty) {
       return false;
     }
     // Add more validation as needed

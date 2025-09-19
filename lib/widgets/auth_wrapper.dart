@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart' as local_auth;
@@ -6,15 +7,24 @@ import '../screens/login_screen.dart';
 import '../screens/home_screen.dart';
 import 'subscription_wrapper.dart';
 
-class AuthWrapper extends StatelessWidget {
+class AuthWrapper extends StatefulWidget {
   const AuthWrapper({super.key});
 
+  @override
+  State<AuthWrapper> createState() => _AuthWrapperState();
+}
+
+class _AuthWrapperState extends State<AuthWrapper> {
   @override
   Widget build(BuildContext context) {
     return Consumer2<local_auth.AuthProvider, SubscriptionProvider>(
       builder: (context, authProvider, subscriptionProvider, child) {
+        // Debug: Always log the current auth state
+        debugPrint('AuthWrapper: Building - isLoading: ${authProvider.isLoading}, isSignedIn: ${authProvider.isSignedIn}, currentUser: ${authProvider.currentUser?.email ?? "null"}');
+        
         // Show loading indicator while auth is in progress
         if (authProvider.isLoading) {
+          debugPrint('AuthWrapper: Showing loading screen');
           return const Scaffold(
             body: Center(
               child: CircularProgressIndicator(),
@@ -25,15 +35,16 @@ class AuthWrapper extends StatelessWidget {
         // Show login screen if user is not authenticated
         if (!authProvider.isSignedIn) {
           // Clear subscription data when user is not signed in
-          subscriptionProvider.clearSubscription();
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            subscriptionProvider.clearSubscription();
+          });
+          debugPrint('AuthWrapper: Showing login screen - user not signed in');
           return const LoginScreen();
         }
 
-        // User is authenticated, wrap home screen with subscription checking
-        return const SubscriptionWrapper(
-          requiresSubscription: true,
-          child: HomeScreen(),
-        );
+        // User is authenticated, show home screen directly
+        debugPrint('AuthWrapper: User authenticated - showing home screen for ${authProvider.currentUser?.email}');
+        return const HomeScreen();
       },
     );
   }

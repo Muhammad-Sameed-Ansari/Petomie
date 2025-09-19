@@ -97,9 +97,13 @@ class SubscriptionService {
       // Filter available packages based on product IDs
       final availableTypes = <SubscriptionType>[];
       for (final type in SubscriptionType.values) {
+        print("sameed - getAvailableSubscriptions - Checking for type: ${type.productId}");
         try {
           current.availablePackages.firstWhere(
-            (p) => p.storeProduct.identifier == type.productId,
+            (p) {
+              print("sameed - getAvailableSubscriptions - p.storeProduct.identifier: ${p.storeProduct.identifier}");
+              return p.storeProduct.identifier == type.productId;
+            },
           );
           availableTypes.add(type);
         } catch (e) {
@@ -182,63 +186,75 @@ class SubscriptionService {
     }
 
     try {
-      // First check Firestore
-      final doc = await _firestore
-          .collection('subscriptions')
-          .doc(user.uid)
-          .get();
-
-      if (doc.exists) {
-        final subscription = SubscriptionData.fromFirestore(doc);
-        
-        // If subscription is active but might be expired, check RevenueCat
-        if (subscription.status.isActive && _isInitialized) {
-          try {
-            final customerInfo = await Purchases.getCustomerInfo();
-            await _updateFirestoreSubscription(customerInfo);
-            
-            // Re-fetch updated data
-            final updatedDoc = await _firestore
-                .collection('subscriptions')
-                .doc(user.uid)
-                .get();
-            
-            return updatedDoc.exists 
-                ? SubscriptionData.fromFirestore(updatedDoc)
-                : subscription;
-          } catch (e) {
-            debugPrint('Failed to sync with RevenueCat: $e');
-            return subscription;
-          }
-        }
-        
-        return subscription;
+      return await Future.any([
+        _getCurrentSubscriptionData(user),
+        Future.delayed(const Duration(seconds: 10), () => throw TimeoutException('getCurrentSubscription timed out', const Duration(seconds: 10))),
+      ]);
+    } catch (e) {
+      if (e is TimeoutException) {
+        debugPrint('getCurrentSubscription timed out');
+        // Return cached subscription if available, otherwise empty
+        return SubscriptionData.empty(user.uid);
       }
+      debugPrint('Failed to get current subscription: $e');
+      return SubscriptionData.empty(user.uid);
+    }
+  }
 
-      // If no Firestore data, check RevenueCat
-      if (_isInitialized) {
+  Future<SubscriptionData> _getCurrentSubscriptionData(user) async {
+    // First check Firestore
+    final doc = await _firestore
+        .collection('subscriptions')
+        .doc(user.uid)
+        .get();
+
+    if (doc.exists) {
+      final subscription = SubscriptionData.fromFirestore(doc);
+      
+      // If subscription is active but might be expired, check RevenueCat
+      if (subscription.status.isActive && _isInitialized) {
         try {
           final customerInfo = await Purchases.getCustomerInfo();
           await _updateFirestoreSubscription(customerInfo);
           
-          final newDoc = await _firestore
+          // Re-fetch updated data
+          final updatedDoc = await _firestore
               .collection('subscriptions')
               .doc(user.uid)
               .get();
           
-          return newDoc.exists 
-              ? SubscriptionData.fromFirestore(newDoc)
-              : SubscriptionData.empty(user.uid);
+          return updatedDoc.exists 
+              ? SubscriptionData.fromFirestore(updatedDoc)
+              : subscription;
         } catch (e) {
-          debugPrint('Failed to check RevenueCat subscription: $e');
+          debugPrint('Failed to sync with RevenueCat: $e');
+          return subscription;
         }
       }
-
-      return SubscriptionData.empty(user.uid);
-    } catch (e) {
-      debugPrint('Failed to get current subscription: $e');
-      return SubscriptionData.empty(user.uid);
+      
+      return subscription;
     }
+
+    // If no Firestore data, check RevenueCat
+    if (_isInitialized) {
+      try {
+        final customerInfo = await Purchases.getCustomerInfo();
+        await _updateFirestoreSubscription(customerInfo);
+        
+        final newDoc = await _firestore
+            .collection('subscriptions')
+            .doc(user.uid)
+            .get();
+        
+        return newDoc.exists 
+            ? SubscriptionData.fromFirestore(newDoc)
+            : SubscriptionData.empty(user.uid);
+      } catch (e) {
+        debugPrint('Failed to check RevenueCat subscription: $e');
+      }
+    }
+
+    return SubscriptionData.empty(user.uid);
   }
 
   // Stream subscription updates
@@ -280,6 +296,7 @@ class SubscriptionService {
       if (customerInfo.activeSubscriptions.isNotEmpty) {
         // Find the active subscription
         final activeEntitlement = customerInfo.entitlements.active.values.firstOrNull;
+        print("sameed - _updateFirestoreSubscription - activeEntitlement: $activeEntitlement");
         
         if (activeEntitlement != null) {
           // Determine subscription type from product identifier
@@ -310,6 +327,7 @@ class SubscriptionService {
       } else {
         // Check if there are any expired subscriptions
         final allEntitlements = customerInfo.entitlements.all;
+        print("sameed - _updateFirestoreSubscription - allEntitlements: $allEntitlements");
         if (allEntitlements.isNotEmpty) {
           final latestEntitlement = allEntitlements.values.first;
           final productId = latestEntitlement.productIdentifier;

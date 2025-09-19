@@ -8,6 +8,8 @@ GeneratedPluginRegistrant.java
 .cxx/
 
 # Remember to never publicly share your keystore.
+*.jks
+keystore.properties
 # See https://flutter.dev/to/reference-keystore
 key.properties
 **/*.keystore

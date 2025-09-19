@@ -703,6 +703,13 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
           ),
         ),
       );
+      
+      // Navigate back to home screen after successful subscription
+      // Small delay to let the user see the success message
+      await Future.delayed(const Duration(milliseconds: 1500));
+      if (mounted && Navigator.of(context).canPop()) {
+        Navigator.of(context).pop();
+      }
     } else if (provider.errorMessage != null && mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(

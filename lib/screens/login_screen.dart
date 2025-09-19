@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart' as local_auth;
@@ -54,12 +55,30 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
     );
 
     if (success && mounted) {
+      // Debug: Print auth state to help identify issues
+      debugPrint('Login successful - isSignedIn: ${authProvider.isSignedIn}');
+      
+      // Show success message
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Login successful!'),
+        SnackBar(
+          content: const Text('Login successful!'),
           backgroundColor: AppColors.success,
+          duration: const Duration(milliseconds: 1200), // Shorter duration
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
         ),
       );
+      
+      // Small delay to ensure auth state propagates, then check if navigation occurred
+      await Future.delayed(const Duration(milliseconds: 100));
+      
+      // The AuthWrapper should automatically handle navigation, 
+      // but we'll add a backup just in case
+      if (mounted) {
+        debugPrint('Checking auth state after delay - isSignedIn: ${authProvider.isSignedIn}');
+      }
     }
   }
 

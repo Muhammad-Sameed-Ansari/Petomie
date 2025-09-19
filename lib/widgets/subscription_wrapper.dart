@@ -79,6 +79,34 @@ class _SubscriptionWrapperState extends State<SubscriptionWrapper> {
                 color: Theme.of(context).colorScheme.onBackground.withOpacity(0.7),
               ),
             ),
+            const SizedBox(height: 24),
+            Consumer<SubscriptionProvider>(
+              builder: (context, provider, child) {
+                if (provider.errorMessage != null) {
+                  return Column(
+                    children: [
+                      Text(
+                        provider.errorMessage!,
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: Theme.of(context).colorScheme.error,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 16),
+                      ElevatedButton(
+                        onPressed: () => provider.loadSubscription(),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Theme.of(context).colorScheme.primary,
+                          foregroundColor: Colors.white,
+                        ),
+                        child: const Text('Retry'),
+                      ),
+                    ],
+                  );
+                }
+                return const SizedBox.shrink();
+              },
+            ),
           ],
         ),
       ),
@@ -89,7 +117,7 @@ class _SubscriptionWrapperState extends State<SubscriptionWrapper> {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
       body: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.all(24),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -148,6 +176,7 @@ class _SubscriptionWrapperState extends State<SubscriptionWrapper> {
 
               // Action buttons
               _buildActionButtons(provider),
+              const SizedBox(height: 24), // Extra space at bottom
             ],
           ),
         ),

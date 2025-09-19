@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../services/auth_service.dart';
@@ -36,12 +37,20 @@ class AuthProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      await _authService.signInWithEmailAndPassword(
+      final userCredential = await _authService.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
+      
+      // Update current user immediately to avoid race condition
+      if (userCredential?.user != null) {
+        _currentUser = userCredential!.user;
+        debugPrint('AuthProvider: User signed in immediately - ${_currentUser?.email}');
+      }
+      
       _isLoading = false;
       notifyListeners();
+      debugPrint('AuthProvider: Sign-in completed, isSignedIn: $isSignedIn');
       return true;
     } catch (e) {
       _isLoading = false;
@@ -58,10 +67,16 @@ class AuthProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      await _authService.createUserWithEmailAndPassword(
+      final userCredential = await _authService.createUserWithEmailAndPassword(
         email: email,
         password: password,
       );
+      
+      // Update current user immediately to avoid race condition
+      if (userCredential?.user != null) {
+        _currentUser = userCredential!.user;
+      }
+      
       _isLoading = false;
       notifyListeners();
       return true;
