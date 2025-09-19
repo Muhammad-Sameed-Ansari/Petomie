@@ -132,8 +132,8 @@ class _CategoryCardState extends State<_CategoryCard>
                           end: Alignment.bottomRight,
                           colors: widget.category.isComingSoon
                               ? [
-                                  Theme.of(context).colorScheme.surface.withOpacity(0.7),
-                                  Theme.of(context).colorScheme.surface.withOpacity(0.5),
+                                  Colors.grey.withOpacity(0.7),
+                                  Colors.grey.withOpacity(0.5),
                                 ]
                               : [
                                   Theme.of(context).colorScheme.surface,
@@ -153,8 +153,12 @@ class _CategoryCardState extends State<_CategoryCard>
                                   begin: Alignment.topCenter,
                                   end: Alignment.bottomCenter,
                                   colors: [
-                                    Theme.of(context).colorScheme.primary.withOpacity(widget.category.isComingSoon ? 0.05 : 0.1),
-                                    Theme.of(context).colorScheme.primary.withOpacity(widget.category.isComingSoon ? 0.02 : 0.05),
+                                    widget.category.isComingSoon
+                                        ? Colors.grey.withOpacity(0.1)
+                                        : Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                                    widget.category.isComingSoon
+                                        ? Colors.grey.withOpacity(0.05)
+                                        : Theme.of(context).colorScheme.primary.withOpacity(0.05),
                                   ],
                                 ),
                               ),
@@ -164,8 +168,8 @@ class _CategoryCardState extends State<_CategoryCard>
                                 ? ColorFiltered(
                                     colorFilter: widget.category.isComingSoon
                                         ? ColorFilter.mode(
-                                            Colors.grey.withOpacity(0.7),
-                                            BlendMode.saturation,
+                                            Colors.white.withOpacity(0.7),
+                                            BlendMode.modulate,
                                           )
                                         : const ColorFilter.mode(
                                             Colors.transparent,
@@ -201,7 +205,9 @@ class _CategoryCardState extends State<_CategoryCard>
                               width: double.infinity,
                               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                               decoration: BoxDecoration(
-                                color: Theme.of(context).colorScheme.surface.withOpacity(widget.category.isComingSoon ? 0.7 : 1.0),
+                                color: widget.category.isComingSoon
+                                    ? Colors.grey.withOpacity(0.7)
+                                    : Theme.of(context).colorScheme.surface.withOpacity(1.0),
                                 border: Border(
                                   top: BorderSide(
                                     color: Theme.of(context).colorScheme.outline.withOpacity(0.2),
