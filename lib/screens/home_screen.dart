@@ -169,10 +169,12 @@ class HomeScreen extends StatelessWidget {
           categories: CategoryData.mainCategories,
           title: 'Choose an Animal',
           onCategoryTap: (category) {
+            // Lazily load subcategories only when animal is selected
+            final categoryWithSubcategories = CategoryData.getMainCategoryWithSubcategories(category.id);
             Navigator.of(context).push(
               PageRouteBuilder(
                 pageBuilder: (context, animation, secondaryAnimation) => CategoryScreen(
-                  categories: category.subcategories,
+                  categories: categoryWithSubcategories?.subcategories ?? [],
                   title: '${category.label} Anatomy',
                   breadcrumbs: [category.label],
                 ),

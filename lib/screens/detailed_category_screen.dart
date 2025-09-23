@@ -54,6 +54,7 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
   }
 
   void _navigateBack() {
+    print("sameed - _navigateBack - _currentBreadcrumbs: $_currentBreadcrumbs");
     if (_currentBreadcrumbs.length <= 1) {
       // Go back to previous screen
       Navigator.of(context).pop();
@@ -161,8 +162,17 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
     }
 
     List<Category> breadcrumbCategories = [];
-    Category? animalCategory = _findCategoryByLabel(CategoryData.mainCategories, widget.animalType);
-    if (animalCategory != null) breadcrumbCategories.add(animalCategory);
+    // Find animal category without loading all subcategories
+    final mainCategories = CategoryData.mainCategories;
+    Category animalCategory = mainCategories.firstWhere(
+      (category) => category.label == widget.animalType,
+      orElse: () => Category(
+        id: widget.animalType.toLowerCase(),
+        label: widget.animalType,
+        icon: Icons.pets,
+      ),
+    );
+    breadcrumbCategories.add(animalCategory);
     for (String label in _currentBreadcrumbs.skip(1)) {
       Category? cat = _findCategoryByLabel(widget.categories, label);
       if (cat != null) breadcrumbCategories.add(cat);

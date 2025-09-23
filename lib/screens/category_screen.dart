@@ -30,6 +30,10 @@ class _CategoryScreenState extends State<CategoryScreen> {
   late List<Category> _currentCategories;
   late String _currentTitle;
   late List<String> _currentBreadcrumbs;
+  late String _animalId; // Store the animal ID for lazy loading
+  
+  // Navigation stack to keep track of categories for proper back navigation
+  final List<List<Category>> _navigationStack = [];
 
   @override
   void initState() {
@@ -37,23 +41,49 @@ class _CategoryScreenState extends State<CategoryScreen> {
     _currentCategories = widget.categories;
     _currentTitle = widget.title;
     _currentBreadcrumbs = List.from(widget.breadcrumbs);
+    // Extract animal ID from breadcrumbs (first breadcrumb is the animal name)
+    _animalId = widget.breadcrumbs.isNotEmpty ? widget.breadcrumbs.first.toLowerCase() : '';
+    
+    // Initialize navigation stack with the initial categories
+    _navigationStack.add(List.from(_currentCategories));
   }
 
   void _onCategoryTap(Category category) {
-    if (category.hasSubcategories) {
-      final subscriptionProvider = Provider.of<SubscriptionProvider>(context, listen: false);
-      
-      if (!subscriptionProvider.hasActiveSubscription) {
-        // Show subscription required overlay for any category
-        _showSubscriptionRequiredOverlay(category);
+    final subscriptionProvider = Provider.of<SubscriptionProvider>(context, listen: false);
+    
+    if (!subscriptionProvider.hasActiveSubscription) {
+      // Show subscription required overlay for any category
+      _showSubscriptionRequiredOverlay(category);
+      return;
+    }
+    
+    // Handle Energy category with lazy loading
+    if (category.id == 'energy' && !category.hasSubcategories) {
+      final energyCategory = CategoryData.getAnatomyCategoryWithEnergySubcategories(_animalId, 'energy');
+      if (energyCategory != null) {
+        setState(() {
+          // Push current categories to navigation stack before navigating
+          _navigationStack.add(List.from(_currentCategories));
+          print('sameed - Navigation: Pushed ${_currentCategories.length} categories to stack, stack size: ${_navigationStack.length}');
+          _currentCategories = energyCategory.subcategories;
+          _currentTitle = energyCategory.label;
+          _currentBreadcrumbs.add(energyCategory.label);
+          print('sameed - Navigation: Navigated to ${energyCategory.label}, showing ${energyCategory.subcategories.length} subcategories');
+        });
         return;
       }
-      
-      // For all categories, navigate within the same screen
+    }
+    
+    if (category.hasSubcategories) {
+      // For all other categories with subcategories, navigate within the same screen
       setState(() {
+        // Push current categories to navigation stack before navigating
+        _navigationStack.add(List.from(_currentCategories));
+        print('sameed - Navigation: Pushed ${_currentCategories.length} categories to stack, stack size: ${_navigationStack.length}');
         _currentCategories = category.subcategories;
         _currentTitle = category.label;
         _currentBreadcrumbs.add(category.label);
+        print('sameed - Navigation: Navigated to ${category.label}, showing ${category.subcategories.length} subcategories');
       });
     } else {
       // Handle leaf category tap (could show details, perform action, etc.)
@@ -68,21 +98,53 @@ class _CategoryScreenState extends State<CategoryScreen> {
       return;
     }
 
-    // Navigate up one level
+    // Navigate up one level using the navigation stack
     setState(() {
-      _currentBreadcrumbs.removeLast();
-
-      // Find the parent category
-      Category? parentCategory = _findParentCategory(
-        CategoryData.mainCategories,
-        _currentBreadcrumbs,
-      );
-
-      if (parentCategory != null) {
-        _currentCategories = parentCategory.subcategories;
-        _currentTitle = parentCategory.label;
+      final removedBreadcrumb = _currentBreadcrumbs.removeLast();
+      print('sameed - Navigation: Going back from $removedBreadcrumb, breadcrumbs now: $_currentBreadcrumbs');
+      
+      if (_navigationStack.isNotEmpty) {
+        // Pop the last categories from navigation stack
+        _currentCategories = _navigationStack.removeLast();
+        print('sameed - Navigation: Popped categories from stack, showing ${_currentCategories.length} categories, stack size: ${_navigationStack.length}');
+        
+        // Set the title based on current breadcrumbs
+        if (_currentBreadcrumbs.length == 1) {
+          _currentTitle = '${_currentBreadcrumbs.first} Anatomy';
+        } else {
+          _currentTitle = _currentBreadcrumbs.last;
+        }
+        print('sameed - Navigation: Set title to $_currentTitle');
+      } else {
+        print('sameed - Navigation: Stack is empty, using fallback reconstruction');
+        // Fallback: reconstruct from scratch if navigation stack is empty
+        _reconstructParentCategory();
       }
     });
+  }
+  
+  void _reconstructParentCategory() {
+    // This method handles going back within subcategory levels
+    // For now, we'll use a simplified approach - in a real app you might want to 
+    // maintain a navigation stack or use a more sophisticated state management
+    final parentCategoryName = _currentBreadcrumbs.last;
+    
+    if (parentCategoryName == 'Energy') {
+      final energyCategory = CategoryData.getAnatomyCategoryWithEnergySubcategories(_animalId, 'energy');
+      if (energyCategory != null) {
+        _currentCategories = energyCategory.subcategories;
+        _currentTitle = energyCategory.label;
+      }
+    } else {
+      // For other anatomy categories, get from anatomy categories
+      final anatomyCategories = CategoryData.getAnatomyCategoriesForAnimal(_animalId);
+      final parentCategory = anatomyCategories.firstWhere(
+        (cat) => cat.label == parentCategoryName,
+        orElse: () => anatomyCategories.first,
+      );
+      _currentCategories = parentCategory.subcategories;
+      _currentTitle = parentCategory.label;
+    }
   }
 
   Category? _findParentCategory(List<Category> categories, List<String> breadcrumbs) {
@@ -305,8 +367,17 @@ class _CategoryScreenState extends State<CategoryScreen> {
 
     List<Category> breadcrumbCategories = [];
     for (String label in _currentBreadcrumbs) {
-      Category? cat = _findCategoryByLabel(CategoryData.mainCategories, label);
-      if (cat != null) breadcrumbCategories.add(cat);
+      // Create simple category objects for breadcrumbs without loading full subcategories
+      final mainCategories = CategoryData.mainCategories;
+      Category cat = mainCategories.firstWhere(
+        (category) => category.label == label,
+        orElse: () => Category(
+          id: label.toLowerCase(),
+          label: label,
+          icon: Icons.category,
+        ),
+      );
+      breadcrumbCategories.add(cat);
     }
 
     return Scaffold(
