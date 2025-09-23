@@ -35,7 +35,7 @@ class AuthLogo extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(size * 0.16),
           child: Image.asset(
-            'assets/images/logo_transparent.png',
+            'assets/images/logo_transparent.webp',
             fit: BoxFit.contain,
           ),
         ),
