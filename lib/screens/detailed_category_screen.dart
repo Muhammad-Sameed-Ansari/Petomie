@@ -93,6 +93,20 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
     return null;
   }
 
+  Category? _findCategoryByLabel(List<Category> categories, String label) {
+    for (final category in categories) {
+      if (category.label == label) {
+        return category;
+      }
+
+      final found = _findCategoryByLabel(category.subcategories, label);
+      if (found != null) {
+        return found;
+      }
+    }
+    return null;
+  }
+
   void _showCategoryDetails(Category category) {
     showDialog(
       context: context,
@@ -144,6 +158,14 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         Navigator.of(context).pop();
       });
+    }
+
+    List<Category> breadcrumbCategories = [];
+    Category? animalCategory = _findCategoryByLabel(CategoryData.mainCategories, widget.animalType);
+    if (animalCategory != null) breadcrumbCategories.add(animalCategory);
+    for (String label in _currentBreadcrumbs.skip(1)) {
+      Category? cat = _findCategoryByLabel(widget.categories, label);
+      if (cat != null) breadcrumbCategories.add(cat);
     }
 
     return Scaffold(
@@ -272,13 +294,26 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
                   ),
                   const SizedBox(width: 8),
                   Expanded(
-                    child: Text(
-                      'Home > ${_currentBreadcrumbs.join(' > ')}',
-                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                            color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
-                            fontWeight: FontWeight.w500,
-                          ),
-                      overflow: TextOverflow.ellipsis,
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          ...breadcrumbCategories.expand((cat) => [
+                            Icon(
+                              Icons.chevron_right,
+                              size: 14,
+                              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+                            ),
+                            const SizedBox(width: 8),
+                            Icon(
+                              cat.icon,
+                              size: 16,
+                              color: Theme.of(context).colorScheme.primary,
+                            ),
+                            const SizedBox(width: 8),
+                          ]),
+                        ],
+                      ),
                     ),
                   ),
                 ],
