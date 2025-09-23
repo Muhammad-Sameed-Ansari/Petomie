@@ -65,6 +65,7 @@ class CategoryData {
         id: 'meridians',
         label: 'Meridians',
         icon: Icons.linear_scale,
+        imagePath: 'assets/images/$animalId/Energy/meridians.png',
       ),
       Category(
         id: 'life_force_vital_energy',
