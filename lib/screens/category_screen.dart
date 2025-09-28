@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
-import '../models/category.dart';
+import '../models/category.dart' as app_category;
 import '../widgets/category_grid.dart';
 import '../providers/auth_provider.dart' as local_auth;
 import '../providers/theme_provider.dart';
 import '../providers/subscription_provider.dart';
 import '../themes/app_themes.dart';
 import '../widgets/subscription_required_overlay.dart';
+import '../services/content_service.dart';
 import 'subscription_screen.dart';
 import 'detailed_category_screen.dart';
+import 'category_explanation_screen.dart';
 
 class CategoryScreen extends StatefulWidget {
-  final List<Category> categories;
+  final List<app_category.Category> categories;
   final String title;
   final List<String> breadcrumbs;
 
@@ -27,13 +30,13 @@ class CategoryScreen extends StatefulWidget {
 }
 
 class _CategoryScreenState extends State<CategoryScreen> {
-  late List<Category> _currentCategories;
+  late List<app_category.Category> _currentCategories;
   late String _currentTitle;
   late List<String> _currentBreadcrumbs;
   late String _animalId; // Store the animal ID for lazy loading
   
   // Navigation stack to keep track of categories for proper back navigation
-  final List<List<Category>> _navigationStack = [];
+  final List<List<app_category.Category>> _navigationStack = [];
 
   @override
   void initState() {
@@ -48,7 +51,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
     _navigationStack.add(List.from(_currentCategories));
   }
 
-  void _onCategoryTap(Category category) {
+  void _onCategoryTap(app_category.Category category) {
     final subscriptionProvider = Provider.of<SubscriptionProvider>(context, listen: false);
     
     if (!subscriptionProvider.hasActiveSubscription) {
@@ -59,7 +62,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
     
     // Handle Energy category with lazy loading
     if (category.id == 'energy' && !category.hasSubcategories) {
-      final energyCategory = CategoryData.getAnatomyCategoryWithEnergySubcategories(_animalId, 'energy');
+      final energyCategory = app_category.CategoryData.getAnatomyCategoryWithEnergySubcategories(_animalId, 'energy');
       if (energyCategory != null) {
         setState(() {
           // Push current categories to navigation stack before navigating
@@ -122,6 +125,35 @@ class _CategoryScreenState extends State<CategoryScreen> {
       }
     });
   }
+
+  void _navigateToBreadcrumb(int index) {
+    if (index >= _currentBreadcrumbs.length - 1) {
+      // Already at this level or invalid index
+      return;
+    }
+
+    // Calculate how many levels to go back
+    int levelsToGoBack = _currentBreadcrumbs.length - 1 - index;
+    
+    setState(() {
+      // Remove breadcrumbs
+      _currentBreadcrumbs.removeRange(index + 1, _currentBreadcrumbs.length);
+      
+      // Pop categories from navigation stack
+      for (int i = 0; i < levelsToGoBack && _navigationStack.isNotEmpty; i++) {
+        _currentCategories = _navigationStack.removeLast();
+      }
+      
+      // Set the title based on current breadcrumbs
+      if (_currentBreadcrumbs.length == 1) {
+        _currentTitle = '${_currentBreadcrumbs.first} Anatomy';
+      } else {
+        _currentTitle = _currentBreadcrumbs.last;
+      }
+      
+      print('sameed - Navigation: Navigated to breadcrumb level $index, title: $_currentTitle');
+    });
+  }
   
   void _reconstructParentCategory() {
     // This method handles going back within subcategory levels
@@ -130,14 +162,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
     final parentCategoryName = _currentBreadcrumbs.last;
     
     if (parentCategoryName == 'Energy') {
-      final energyCategory = CategoryData.getAnatomyCategoryWithEnergySubcategories(_animalId, 'energy');
+      final energyCategory = app_category.CategoryData.getAnatomyCategoryWithEnergySubcategories(_animalId, 'energy');
       if (energyCategory != null) {
         _currentCategories = energyCategory.subcategories;
         _currentTitle = energyCategory.label;
       }
-    } else {
-      // For other anatomy categories, get from anatomy categories
-      final anatomyCategories = CategoryData.getAnatomyCategoriesForAnimal(_animalId);
+      } else {
+        // For other anatomy categories, get from anatomy categories
+        final anatomyCategories = app_category.CategoryData.getAnatomyCategoriesForAnimal(_animalId);
       final parentCategory = anatomyCategories.firstWhere(
         (cat) => cat.label == parentCategoryName,
         orElse: () => anatomyCategories.first,
@@ -147,7 +179,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
     }
   }
 
-  Category? _findParentCategory(List<Category> categories, List<String> breadcrumbs) {
+  app_category.Category? _findParentCategory(List<app_category.Category> categories, List<String> breadcrumbs) {
     if (breadcrumbs.isEmpty) return null;
 
     for (final category in categories) {
@@ -163,7 +195,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
     return null;
   }
 
-  Category? _findCategoryByLabel(List<Category> categories, String label) {
+  app_category.Category? _findCategoryByLabel(List<app_category.Category> categories, String label) {
     for (final category in categories) {
       if (category.label == label) {
         return category;
@@ -177,7 +209,60 @@ class _CategoryScreenState extends State<CategoryScreen> {
     return null;
   }
 
-  void _showCategoryDetails(Category category) {
+  Future<void> _showCategoryDetails(app_category.Category category) async {
+    final contentService = ContentService();
+    
+    // Show loading indicator
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => const Center(
+        child: CircularProgressIndicator(),
+      ),
+    );
+
+    try {
+      // Get the full breadcrumb path including current category navigation
+      final fullBreadcrumbs = List<String>.from(_currentBreadcrumbs);
+      
+      
+      // Check if content exists and load it
+      final hasContent = await contentService.hasContent(category.id, fullBreadcrumbs);
+      
+      if (mounted) {
+        Navigator.of(context).pop(); // Close loading dialog
+        
+        if (hasContent) {
+          // Load content and navigate to explanation screen
+          final explanationText = await contentService.getExplanationText(category.id, fullBreadcrumbs);
+          final imagePath = contentService.getImagePath(category.id, fullBreadcrumbs);
+          
+          if (mounted && explanationText.isNotEmpty) {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => CategoryExplanationScreen(
+                  categoryName: category.label,
+                  imagePath: imagePath,
+                  explanation: explanationText,
+                ),
+              ),
+            );
+            } else {
+              _showComingSoonDialog(category);
+            }
+          } else {
+            _showComingSoonDialog(category);
+          }
+        }
+      } catch (e) {
+      if (mounted) {
+        Navigator.of(context).pop(); // Close loading dialog
+        _showComingSoonDialog(category);
+      }
+    }
+  }
+
+  void _showComingSoonDialog(app_category.Category category) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -194,13 +279,15 @@ class _CategoryScreenState extends State<CategoryScreen> {
             Text(
               'You selected: ${category.label}',
               style: Theme.of(context).textTheme.bodyMedium,
+              textAlign: TextAlign.center,
             ),
             const SizedBox(height: 8),
             Text(
-              'Category ID: ${category.id}',
+              'This content will be available soon with detailed information about ${category.label.toLowerCase()}.',
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
-                  ),
+                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
+              ),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
@@ -214,7 +301,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
     );
   }
 
-  void _showSubscriptionRequiredOverlay(Category category) {
+  void _showSubscriptionRequiredOverlay(app_category.Category category) {
     final animalType = _currentBreadcrumbs.isNotEmpty ? _currentBreadcrumbs.first : 'Animal';
     
     showDialog(
@@ -360,24 +447,206 @@ class _CategoryScreenState extends State<CategoryScreen> {
     );
   }
 
-  @override
-  Widget build(BuildContext context) {
-    final authProvider = Provider.of<local_auth.AuthProvider>(context);
-    final themeProvider = Provider.of<ThemeProvider>(context);
+  app_category.Category _findCategoryInHierarchy(String label, int breadcrumbIndex) {
+    // Search through the category hierarchy to find the category with the correct image
+    try {
+      if (breadcrumbIndex == 1) {
+        // Second level - anatomy categories (like Muscular System, Energy, etc.)
+        final anatomyCategories = app_category.CategoryData.getAnatomyCategoriesForAnimal(_animalId);
+        final found = anatomyCategories.firstWhere(
+          (cat) => cat.label == label,
+          orElse: () => app_category.Category(
+            id: label.toLowerCase(),
+            label: label,
+            icon: Icons.category,
+          ),
+        );
+        return found;
+      } else if (breadcrumbIndex == 2 && _currentBreadcrumbs.length > 2) {
+        // Third level - check if it's Energy subcategories
+        if (_currentBreadcrumbs[1] == 'Energy') {
+          final energyCategory = app_category.CategoryData.getAnatomyCategoryWithEnergySubcategories(_animalId, 'energy');
+          if (energyCategory != null) {
+            final found = energyCategory.subcategories.firstWhere(
+              (cat) => cat.label == label,
+              orElse: () => app_category.Category(
+                id: label.toLowerCase(),
+                label: label,
+                icon: Icons.category,
+              ),
+            );
+            return found;
+          }
+        } else {
+          // Other anatomy subcategories
+          final anatomyCategories = app_category.CategoryData.getAnatomyCategoriesForAnimal(_animalId);
+          final parentCategory = anatomyCategories.firstWhere(
+            (cat) => cat.label == _currentBreadcrumbs[1],
+            orElse: () => anatomyCategories.first,
+          );
+          final found = parentCategory.subcategories.firstWhere(
+            (cat) => cat.label == label,
+            orElse: () => app_category.Category(
+              id: label.toLowerCase(),
+              label: label,
+              icon: Icons.category,
+            ),
+          );
+          return found;
+        }
+      } else if (breadcrumbIndex >= 3) {
+        // Fourth level and beyond - search recursively through the current navigation path
+        return _findDeepCategory(label, breadcrumbIndex);
+      }
+    } catch (e) {
+      print('sameed - Error finding category in hierarchy: $e');
+    }
+    
+    // Fallback category
+    return app_category.Category(
+      id: label.toLowerCase(),
+      label: label,
+      icon: Icons.category,
+    );
+  }
 
-    List<Category> breadcrumbCategories = [];
-    for (String label in _currentBreadcrumbs) {
-      // Create simple category objects for breadcrumbs without loading full subcategories
-      final mainCategories = CategoryData.mainCategories;
-      Category cat = mainCategories.firstWhere(
-        (category) => category.label == label,
-        orElse: () => Category(
+  app_category.Category _findDeepCategory(String label, int breadcrumbIndex) {
+    // For deeper levels, we need to traverse the category tree
+    // This is a simplified approach - in a real app you might want more sophisticated tracking
+    
+    // Try to find in current categories first
+    if (_currentCategories.isNotEmpty) {
+      final found = _currentCategories.firstWhere(
+        (cat) => cat.label == label,
+        orElse: () => app_category.Category(
           id: label.toLowerCase(),
           label: label,
           icon: Icons.category,
         ),
       );
-      breadcrumbCategories.add(cat);
+      if (found.label == label) {
+        return found;
+      }
+    }
+    
+    // Fallback category
+    return app_category.Category(
+      id: label.toLowerCase(),
+      label: label,
+      icon: Icons.category,
+    );
+  }
+
+  List<Widget> _buildWebBreadcrumbs(BuildContext context) {
+    List<Widget> breadcrumbWidgets = [];
+    
+    for (int i = 0; i < _currentBreadcrumbs.length; i++) {
+      final breadcrumb = _currentBreadcrumbs[i];
+      final isLast = i == _currentBreadcrumbs.length - 1;
+      
+      // Add separator if not first item
+      if (i > 0) {
+        breadcrumbWidgets.add(
+          Text(
+            ' > ',
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        );
+      }
+      
+      // Add breadcrumb text
+      breadcrumbWidgets.add(
+        InkWell(
+          onTap: isLast ? null : () => _navigateToBreadcrumb(i),
+          borderRadius: BorderRadius.circular(4),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+            child: Text(
+              breadcrumb,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: isLast 
+                  ? Theme.of(context).colorScheme.onSurface
+                  : Theme.of(context).colorScheme.primary,
+                fontWeight: isLast ? FontWeight.w600 : FontWeight.w500,
+                decoration: isLast ? null : TextDecoration.underline,
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+    
+    return breadcrumbWidgets;
+  }
+
+  List<Widget> _buildMobileBreadcrumbs(BuildContext context, List<app_category.Category> breadcrumbCategories) {
+    return breadcrumbCategories.expand<Widget>((cat) => [
+      Icon(
+        Icons.chevron_right,
+        size: 14,
+        color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+      ),
+      const SizedBox(width: 8),
+      // Use category image if available, otherwise fallback to icon
+      cat.imagePath != null
+          ? ClipRRect(
+              borderRadius: BorderRadius.circular(4),
+              child: SizedBox(
+                width: 20,
+                height: 20,
+                child: Image.asset(
+                  cat.imagePath!,
+                  fit: BoxFit.cover,
+                  errorBuilder: (context, error, stackTrace) {
+                    // Fallback to icon if image fails to load
+                    return Icon(
+                      cat.icon,
+                      size: 16,
+                      color: Theme.of(context).colorScheme.primary,
+                    );
+                  },
+                ),
+              ),
+            )
+          : Icon(
+              cat.icon,
+              size: 16,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+      const SizedBox(width: 8),
+    ]).toList();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final authProvider = Provider.of<local_auth.AuthProvider>(context);
+    final themeProvider = Provider.of<ThemeProvider>(context);
+
+    List<app_category.Category> breadcrumbCategories = [];
+    for (int i = 0; i < _currentBreadcrumbs.length; i++) {
+      final label = _currentBreadcrumbs[i];
+      app_category.Category? foundCategory;
+      
+      if (i == 0) {
+        // First breadcrumb is always a main animal category
+        final mainCategories = app_category.CategoryData.mainCategories;
+        foundCategory = mainCategories.firstWhere(
+          (category) => category.label == label,
+          orElse: () => app_category.Category(
+            id: label.toLowerCase(),
+            label: label,
+            icon: Icons.category,
+          ),
+        );
+      } else {
+        // For subcategories, search through the appropriate category hierarchy
+        foundCategory = _findCategoryInHierarchy(label, i);
+      }
+      
+      breadcrumbCategories.add(foundCategory);
     }
 
     return Scaffold(
@@ -499,32 +768,21 @@ class _CategoryScreenState extends State<CategoryScreen> {
               ),
               child: Row(
                 children: [
-                  Icon(
-                    Icons.home,
-                    size: 16,
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
-                  const SizedBox(width: 8),
+                  if (!kIsWeb) ...[
+                    Icon(
+                      Icons.home,
+                      size: 16,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                    const SizedBox(width: 8),
+                  ],
                   Expanded(
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                        children: [
-                          ...breadcrumbCategories.expand((cat) => [
-                            Icon(
-                              Icons.chevron_right,
-                              size: 14,
-                              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
-                            ),
-                            const SizedBox(width: 8),
-                            Icon(
-                              cat.icon,
-                              size: 16,
-                              color: Theme.of(context).colorScheme.primary,
-                            ),
-                            const SizedBox(width: 8),
-                          ]),
-                        ],
+                        children: kIsWeb 
+                          ? _buildWebBreadcrumbs(context)
+                          : _buildMobileBreadcrumbs(context, breadcrumbCategories),
                       ),
                     ),
                   ),

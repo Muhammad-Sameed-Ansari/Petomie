@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import '../models/category.dart';
+import 'package:flutter/foundation.dart';
+import '../models/category.dart' as app_category;
 
 class CategoryGrid extends StatelessWidget {
-  final List<Category> categories;
-  final Function(Category category)? onCategoryTap;
+  final List<app_category.Category> categories;
+  final Function(app_category.Category category)? onCategoryTap;
   final String? title;
 
   const CategoryGrid({
@@ -15,6 +16,52 @@ class CategoryGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Check if we're on web platform
+    final isWeb = kIsWeb;
+    final screenWidth = MediaQuery.of(context).size.width;
+    
+    // Calculate responsive parameters
+    int crossAxisCount;
+    double maxWidth;
+    double horizontalPadding;
+    
+    if (isWeb && screenWidth > 800) {
+      // Web layout: 2 columns, limited width, centered
+      crossAxisCount = 2;
+      maxWidth = screenWidth * 0.35; // 35% of screen width
+      horizontalPadding = 16;
+    } else {
+      // Mobile layout: keep original design
+      crossAxisCount = 2;
+      maxWidth = double.infinity;
+      horizontalPadding = 20;
+    }
+
+    Widget gridWidget = ScrollConfiguration(
+      behavior: ScrollConfiguration.of(context).copyWith(
+        scrollbars: !isWeb, // Hide scrollbars on web
+      ),
+      child: GridView.builder(
+        padding: EdgeInsets.symmetric(horizontal: horizontalPadding, vertical: 10),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: crossAxisCount,
+          crossAxisSpacing: 20,
+          mainAxisSpacing: 20,
+          childAspectRatio: 0.85,
+        ),
+        itemCount: categories.length,
+        itemBuilder: (context, index) {
+          final category = categories[index];
+          return _CategoryCard(
+            category: category,
+            onTap: onCategoryTap != null
+                ? () => onCategoryTap!(category)
+                : null,
+          );
+        },
+      ),
+    );
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -31,25 +78,14 @@ class CategoryGrid extends StatelessWidget {
           ),
         ],
         Expanded(
-          child: GridView.builder(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              crossAxisSpacing: 20,
-              mainAxisSpacing: 20,
-              childAspectRatio: 0.85,
-            ),
-            itemCount: categories.length,
-            itemBuilder: (context, index) {
-              final category = categories[index];
-              return _CategoryCard(
-                category: category,
-                onTap: onCategoryTap != null
-                    ? () => onCategoryTap!(category)
-                    : null,
-              );
-            },
-          ),
+          child: isWeb && screenWidth > 800
+              ? Center(
+                  child: Container(
+                    constraints: BoxConstraints(maxWidth: maxWidth),
+                    child: gridWidget,
+                  ),
+                )
+              : gridWidget,
         ),
       ],
     );
@@ -57,7 +93,7 @@ class CategoryGrid extends StatelessWidget {
 }
 
 class _CategoryCard extends StatefulWidget {
-  final Category category;
+  final app_category.Category category;
   final VoidCallback? onTap;
 
   const _CategoryCard({
