@@ -91,16 +91,21 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
       body: AuthBackground(
         child: FadeTransition(
           opacity: _fadeAnimation,
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0).copyWith(
-              top: MediaQuery.of(context).padding.top + 16,
-            ),
-            child: Column(
-              children: [
-                const SizedBox(height: 60),
-                // Logo
-                const AuthLogo(size: 120),
-                const SizedBox(height: 32),
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(
+                maxWidth: 400, // Constrain width for web
+              ),
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(horizontal: 24.0).copyWith(
+                  top: MediaQuery.of(context).padding.top + 16,
+                ),
+                child: Column(
+                  children: [
+                    const SizedBox(height: 60),
+                    // Logo
+                    const AuthLogo(size: 120),
+                    const SizedBox(height: 32),
                 // Welcome Text
                 Text(
                   'Welcome Back',
@@ -234,7 +239,9 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
                     ],
                   ),
                 ),
-              ],
+                  ],
+                ),
+              ),
             ),
           ),
         ),
