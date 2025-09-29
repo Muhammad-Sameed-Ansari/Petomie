@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/subscription.dart';
@@ -65,14 +66,30 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
 
   @override
   Widget build(BuildContext context) {
+    final isWeb = kIsWeb;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isLargeScreen = screenWidth > 1200;
+    final isMediumScreen = screenWidth > 800;
+    
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: isWeb 
+          ? Theme.of(context).colorScheme.background.withOpacity(0.98)
+          : Theme.of(context).colorScheme.background,
       body: SafeArea(
-        child: FadeTransition(
-          opacity: _fadeAnimation,
-          child: SlideTransition(
-            position: _slideAnimation,
-            child: _buildBody(),
+        child: Center(
+          child: Container(
+            constraints: BoxConstraints(
+              maxWidth: isWeb 
+                  ? (isLargeScreen ? 800 : (isMediumScreen ? 700 : 600))
+                  : double.infinity,
+            ),
+            child: FadeTransition(
+              opacity: _fadeAnimation,
+              child: SlideTransition(
+                position: _slideAnimation,
+                child: _buildBody(),
+              ),
+            ),
           ),
         ),
       ),
@@ -168,94 +185,167 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
   }
 
   Widget _buildAppBar({required String title}) {
+    final isWeb = kIsWeb;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isLargeScreen = screenWidth > 1200;
+    final isMediumScreen = screenWidth > 800;
+    
     return SliverAppBar(
       elevation: 0,
       backgroundColor: Colors.transparent,
+      expandedHeight: isWeb ? (isLargeScreen ? 120 : 100) : null,
       leading: widget.showCloseButton
           ? Container(
-              margin: const EdgeInsets.all(8),
+              margin: EdgeInsets.all(isWeb ? 12 : 8),
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.surface,
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(isWeb ? 16 : 12),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
-                    blurRadius: 8,
+                    color: Colors.black.withOpacity(isWeb ? 0.08 : 0.1),
+                    blurRadius: isWeb ? 12 : 8,
                     offset: const Offset(0, 2),
                   ),
                 ],
+                border: isWeb ? Border.all(
+                  color: Theme.of(context).colorScheme.outline.withOpacity(0.1),
+                  width: 1,
+                ) : null,
               ),
               child: IconButton(
                 icon: Icon(
                   Icons.close,
                   color: Theme.of(context).colorScheme.onSurface,
+                  size: isWeb ? 22 : 20,
                 ),
                 onPressed: () => Navigator.of(context).pop(),
+                style: isWeb ? IconButton.styleFrom(
+                  overlayColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                ) : null,
               ),
             )
           : null,
-      title: Text(
+      flexibleSpace: isWeb ? FlexibleSpaceBar(
+        centerTitle: true,
+        title: Text(
+          title,
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+            fontWeight: FontWeight.bold,
+            color: Theme.of(context).colorScheme.onBackground,
+            fontSize: isLargeScreen ? 28 : (isMediumScreen ? 24 : 22),
+            letterSpacing: -0.5,
+          ),
+        ),
+        background: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                Colors.transparent,
+              ],
+            ),
+          ),
+        ),
+      ) : null,
+      title: !isWeb ? Text(
         title,
         style: Theme.of(context).textTheme.headlineSmall?.copyWith(
           fontWeight: FontWeight.bold,
           color: Theme.of(context).colorScheme.onBackground,
         ),
-      ),
+      ) : null,
       centerTitle: true,
       floating: true,
+      pinned: isWeb,
     );
   }
 
   Widget _buildHeaderSection() {
+    final isWeb = kIsWeb;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isLargeScreen = screenWidth > 1200;
+    final isMediumScreen = screenWidth > 800;
+    
     return Column(
       children: [
         Container(
-          width: 80,
-          height: 80,
+          width: isWeb ? (isLargeScreen ? 120 : 100) : 80,
+          height: isWeb ? (isLargeScreen ? 120 : 100) : 80,
           decoration: BoxDecoration(
             gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
               colors: [
                 Theme.of(context).colorScheme.primary,
-                Theme.of(context).colorScheme.primary.withOpacity(0.7),
+                Theme.of(context).colorScheme.primary.withOpacity(0.8),
+                Theme.of(context).colorScheme.secondary.withOpacity(0.6),
               ],
             ),
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(isWeb ? (isLargeScreen ? 30 : 25) : 20),
+            boxShadow: isWeb ? [
+              BoxShadow(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.3),
+                blurRadius: 20,
+                offset: const Offset(0, 8),
+              ),
+              BoxShadow(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                blurRadius: 40,
+                offset: const Offset(0, 16),
+              ),
+            ] : null,
           ),
-          child: const Icon(
+          child: Icon(
             Icons.pets,
             color: Colors.white,
-            size: 40,
+            size: isWeb ? (isLargeScreen ? 60 : 50) : 40,
           ),
         ),
-        const SizedBox(height: 16),
+        SizedBox(height: isWeb ? (isLargeScreen ? 24 : 20) : 16),
         Text(
           'Unlock Premium Features',
           style: Theme.of(context).textTheme.headlineMedium?.copyWith(
             fontWeight: FontWeight.bold,
             color: Theme.of(context).colorScheme.onBackground,
+            fontSize: isWeb ? (isLargeScreen ? 36 : (isMediumScreen ? 32 : 28)) : null,
+            letterSpacing: isWeb ? -0.5 : null,
+            height: isWeb ? 1.2 : null,
           ),
           textAlign: TextAlign.center,
         ),
-        const SizedBox(height: 8),
-        Text(
-          'Get unlimited access to all animal anatomy content and premium features',
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-            color: Theme.of(context).colorScheme.onBackground.withOpacity(0.7),
+        SizedBox(height: isWeb ? (isLargeScreen ? 16 : 12) : 8),
+        Container(
+          padding: EdgeInsets.symmetric(
+            horizontal: isWeb ? (isLargeScreen ? 40 : 20) : 0,
           ),
-          textAlign: TextAlign.center,
+          child: Text(
+            'Get unlimited access to all animal anatomy content and premium features',
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+              color: Theme.of(context).colorScheme.onBackground.withOpacity(0.7),
+              fontSize: isWeb ? (isLargeScreen ? 18 : (isMediumScreen ? 16 : 15)) : null,
+              height: isWeb ? 1.6 : null,
+            ),
+            textAlign: TextAlign.center,
+          ),
         ),
       ],
     );
   }
 
   Widget _buildSubscriptionPlans(SubscriptionProvider provider) {
+    final isWeb = kIsWeb;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isLargeScreen = screenWidth > 1200;
+    
     return Column(
       children: SubscriptionType.values.map((type) {
         final isSelected = _selectedType == type;
         final isPopular = type == SubscriptionType.yearly;
         
         return Container(
-          margin: const EdgeInsets.only(bottom: 12),
+          margin: EdgeInsets.only(bottom: isWeb ? 16 : 12),
           child: Stack(
             children: [
               InkWell(
@@ -264,52 +354,66 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
                     _selectedType = type;
                   });
                 },
-                borderRadius: BorderRadius.circular(16),
-                child: Container(
-                  padding: const EdgeInsets.all(20),
+                borderRadius: BorderRadius.circular(isWeb ? 20 : 16),
+                hoverColor: isWeb ? Theme.of(context).colorScheme.primary.withOpacity(0.05) : null,
+                child: AnimatedContainer(
+                  duration: isWeb ? const Duration(milliseconds: 200) : Duration.zero,
+                  padding: EdgeInsets.all(isWeb ? (isLargeScreen ? 28 : 24) : 20),
                   decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.surface,
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(isWeb ? 20 : 16),
                     border: Border.all(
                       color: isSelected
                           ? Theme.of(context).colorScheme.primary
-                          : Colors.transparent,
-                      width: 2,
+                          : (isWeb ? Theme.of(context).colorScheme.outline.withOpacity(0.2) : Colors.transparent),
+                      width: isSelected ? (isWeb ? 3 : 2) : (isWeb ? 1 : 0),
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.05),
-                        blurRadius: 10,
-                        offset: const Offset(0, 4),
+                        color: Colors.black.withOpacity(isWeb ? 0.08 : 0.05),
+                        blurRadius: isWeb ? (isSelected ? 20 : 15) : 10,
+                        offset: Offset(0, isWeb ? (isSelected ? 8 : 4) : 4),
+                      ),
+                      if (isWeb && isSelected) BoxShadow(
+                        color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                        blurRadius: 30,
+                        offset: const Offset(0, 10),
                       ),
                     ],
                   ),
                   child: Row(
                     children: [
                       Container(
-                        width: 24,
-                        height: 24,
+                        width: isWeb ? 28 : 24,
+                        height: isWeb ? 28 : 24,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
                             color: isSelected
                                 ? Theme.of(context).colorScheme.primary
                                 : Theme.of(context).colorScheme.onSurface.withOpacity(0.3),
-                            width: 2,
+                            width: isWeb ? 3 : 2,
                           ),
                           color: isSelected
                               ? Theme.of(context).colorScheme.primary
                               : Colors.transparent,
+                          boxShadow: isWeb && isSelected ? [
+                            BoxShadow(
+                              color: Theme.of(context).colorScheme.primary.withOpacity(0.3),
+                              blurRadius: 8,
+                              offset: const Offset(0, 2),
+                            ),
+                          ] : null,
                         ),
                         child: isSelected
-                            ? const Icon(
+                            ? Icon(
                                 Icons.check,
                                 color: Colors.white,
-                                size: 16,
+                                size: isWeb ? 18 : 16,
                               )
                             : null,
                       ),
-                      const SizedBox(width: 16),
+                      SizedBox(width: isWeb ? 20 : 16),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -321,35 +425,52 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
                                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                                     fontWeight: FontWeight.bold,
                                     color: Theme.of(context).colorScheme.onSurface,
+                                    fontSize: isWeb ? (isLargeScreen ? 20 : 18) : null,
                                   ),
                                 ),
                                 if (isPopular) ...[
-                                  const SizedBox(width: 8),
+                                  SizedBox(width: isWeb ? 12 : 8),
                                   Container(
-                                    padding: const EdgeInsets.symmetric(
-                                      horizontal: 8,
-                                      vertical: 2,
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: isWeb ? 10 : 8,
+                                      vertical: isWeb ? 4 : 2,
                                     ),
                                     decoration: BoxDecoration(
-                                      color: AppColors.warning,
-                                      borderRadius: BorderRadius.circular(8),
+                                      gradient: LinearGradient(
+                                        colors: [
+                                          AppColors.warning,
+                                          AppColors.warning.withOpacity(0.8),
+                                        ],
+                                      ),
+                                      borderRadius: BorderRadius.circular(isWeb ? 12 : 8),
+                                      boxShadow: isWeb ? [
+                                        BoxShadow(
+                                          color: AppColors.warning.withOpacity(0.3),
+                                          blurRadius: 8,
+                                          offset: const Offset(0, 2),
+                                        ),
+                                      ] : null,
                                     ),
                                     child: Text(
                                       'POPULAR',
                                       style: Theme.of(context).textTheme.labelSmall?.copyWith(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
+                                        fontSize: isWeb ? 11 : null,
+                                        letterSpacing: isWeb ? 0.5 : null,
                                       ),
                                     ),
                                   ),
                                 ],
                               ],
                             ),
-                            const SizedBox(height: 4),
+                            SizedBox(height: isWeb ? 8 : 4),
                             Text(
                               type.description,
                               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                                 color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
+                                fontSize: isWeb ? (isLargeScreen ? 15 : 14) : null,
+                                height: isWeb ? 1.4 : null,
                               ),
                             ),
                           ],
@@ -363,12 +484,14 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
                             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: Theme.of(context).colorScheme.primary,
+                              fontSize: isWeb ? (isLargeScreen ? 28 : 24) : null,
                             ),
                           ),
                           Text(
                             '/${type.period}',
                             style: Theme.of(context).textTheme.bodySmall?.copyWith(
                               color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
+                              fontSize: isWeb ? (isLargeScreen ? 14 : 13) : null,
                             ),
                           ),
                         ],
@@ -380,24 +503,38 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
               if (isPopular)
                 Positioned(
                   top: -1,
-                  right: 20,
+                  right: isWeb ? 24 : 20,
                   child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 4,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: isWeb ? 16 : 12,
+                      vertical: isWeb ? 6 : 4,
                     ),
                     decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.primary,
-                      borderRadius: const BorderRadius.only(
-                        bottomLeft: Radius.circular(8),
-                        bottomRight: Radius.circular(8),
+                      gradient: LinearGradient(
+                        colors: [
+                          Theme.of(context).colorScheme.primary,
+                          Theme.of(context).colorScheme.primary.withOpacity(0.8),
+                        ],
                       ),
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(isWeb ? 12 : 8),
+                        bottomRight: Radius.circular(isWeb ? 12 : 8),
+                      ),
+                      boxShadow: isWeb ? [
+                        BoxShadow(
+                          color: Theme.of(context).colorScheme.primary.withOpacity(0.4),
+                          blurRadius: 8,
+                          offset: const Offset(0, 2),
+                        ),
+                      ] : null,
                     ),
                     child: Text(
                       'BEST VALUE',
                       style: Theme.of(context).textTheme.labelSmall?.copyWith(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
+                        fontSize: isWeb ? 12 : null,
+                        letterSpacing: isWeb ? 0.8 : null,
                       ),
                     ),
                   ),
@@ -467,9 +604,13 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
   }
 
   Widget _buildSubscribeButton(SubscriptionProvider provider) {
+    final isWeb = kIsWeb;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isLargeScreen = screenWidth > 1200;
+    
     return SizedBox(
       width: double.infinity,
-      height: 56,
+      height: isWeb ? (isLargeScreen ? 68 : 64) : 56,
       child: ElevatedButton(
         onPressed: provider.isPurchasing
             ? null
@@ -477,42 +618,106 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
         style: ElevatedButton.styleFrom(
           backgroundColor: Theme.of(context).colorScheme.primary,
           foregroundColor: Colors.white,
-          elevation: 4,
+          elevation: isWeb ? 8 : 4,
           shadowColor: Theme.of(context).colorScheme.primary.withOpacity(0.3),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(isWeb ? 20 : 16),
           ),
+        ).copyWith(
+          overlayColor: isWeb ? MaterialStateProperty.resolveWith<Color?>(
+            (Set<MaterialState> states) {
+              if (states.contains(MaterialState.hovered)) {
+                return Colors.white.withOpacity(0.1);
+              }
+              if (states.contains(MaterialState.pressed)) {
+                return Colors.white.withOpacity(0.2);
+              }
+              return null;
+            },
+          ) : null,
         ),
         child: provider.isPurchasing
-            ? const SizedBox(
-                width: 24,
-                height: 24,
+            ? SizedBox(
+                width: isWeb ? 28 : 24,
+                height: isWeb ? 28 : 24,
                 child: CircularProgressIndicator(
-                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                  strokeWidth: 2,
+                  valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
+                  strokeWidth: isWeb ? 3 : 2,
                 ),
               )
-            : Text(
-                'Subscribe for ${_selectedType.formattedPrice}/${_selectedType.period}',
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
+            : Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.credit_card,
+                    size: isWeb ? 22 : 18,
+                  ),
+                  SizedBox(width: isWeb ? 12 : 8),
+                  Flexible(
+                    child: Text(
+                      'Subscribe for ${_selectedType.formattedPrice}/${_selectedType.period}',
+                      style: TextStyle(
+                        fontSize: isWeb ? (isLargeScreen ? 18 : 16) : 16,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: isWeb ? 0.5 : null,
+                      ),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
               ),
       ),
     );
   }
 
   Widget _buildRestoreButton(SubscriptionProvider provider) {
-    return TextButton(
-      onPressed: provider.isLoading
-          ? null
-          : () => _handleRestore(provider),
-      child: Text(
-        'Restore Purchases',
-        style: TextStyle(
-          color: Theme.of(context).colorScheme.primary,
-          fontWeight: FontWeight.w500,
+    final isWeb = kIsWeb;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isLargeScreen = screenWidth > 1200;
+    
+    return SizedBox(
+      width: double.infinity,
+      height: isWeb ? (isLargeScreen ? 60 : 56) : 48,
+      child: TextButton(
+        onPressed: provider.isLoading
+            ? null
+            : () => _handleRestore(provider),
+        style: TextButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(isWeb ? 16 : 12),
+            side: isWeb ? BorderSide(
+              color: Theme.of(context).colorScheme.primary.withOpacity(0.3),
+              width: 1,
+            ) : BorderSide.none,
+          ),
+        ).copyWith(
+          overlayColor: isWeb ? MaterialStateProperty.resolveWith<Color?>(
+            (Set<MaterialState> states) {
+              if (states.contains(MaterialState.hovered)) {
+                return Theme.of(context).colorScheme.primary.withOpacity(0.05);
+              }
+              return null;
+            },
+          ) : null,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.refresh,
+              color: Theme.of(context).colorScheme.primary,
+              size: isWeb ? 20 : 18,
+            ),
+            SizedBox(width: isWeb ? 8 : 6),
+            Text(
+              'Restore Purchases',
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.primary,
+                fontWeight: FontWeight.w500,
+                fontSize: isWeb ? (isLargeScreen ? 16 : 15) : 14,
+              ),
+            ),
+          ],
         ),
       ),
     );
