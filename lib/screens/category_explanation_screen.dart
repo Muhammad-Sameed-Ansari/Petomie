@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
-import '../themes/app_themes.dart';
 
 class CategoryExplanationScreen extends StatefulWidget {
   final String categoryName;
@@ -282,6 +281,37 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
   Widget _buildContentItem(BuildContext context, String content) {
     final isWeb = kIsWeb;
     
+    // Check if this is a subheading
+    if (content.startsWith('###SUBHEADING###')) {
+      final subheadingTitle = content.substring('###SUBHEADING###'.length);
+      return Container(
+        width: double.infinity,
+        margin: const EdgeInsets.only(bottom: 16, top: 8),
+        padding: EdgeInsets.symmetric(
+          horizontal: isWeb ? 16 : 12,
+          vertical: isWeb ? 12 : 8,
+        ),
+        decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.3),
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(
+            color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+            width: 1,
+          ),
+        ),
+        child: Text(
+          subheadingTitle,
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.w600,
+            fontSize: isWeb ? 18 : 16,
+            color: Theme.of(context).colorScheme.primary,
+          ),
+          textAlign: isWeb ? TextAlign.center : TextAlign.start,
+        ),
+      );
+    }
+    
+    // Regular content item
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.only(bottom: 12),
@@ -313,13 +343,13 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
   }
 
 
-  /// Extract page title from ##Title## format (first line)
+  /// Extract page title from #Title# format (first line)
   String? _extractPageTitle(String text) {
     final lines = text.split('\n');
     if (lines.isNotEmpty) {
       final firstLine = lines.first.trim();
-      if (firstLine.startsWith('##') && firstLine.endsWith('##') && firstLine.length > 4) {
-        return firstLine.substring(2, firstLine.length - 2);
+      if (firstLine.startsWith('#') && firstLine.endsWith('#') && firstLine.length > 2) {
+        return firstLine.substring(1, firstLine.length - 1);
       }
     }
     return null;
@@ -334,7 +364,7 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
     int startIndex = 0;
     
     // Skip the page title line if it exists
-    if (lines.isNotEmpty && lines.first.trim().startsWith('##') && lines.first.trim().endsWith('##')) {
+    if (lines.isNotEmpty && lines.first.trim().startsWith('#') && lines.first.trim().endsWith('#')) {
       startIndex = 1;
     }
     
@@ -351,24 +381,35 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
         continue;
       }
       
-      // Check if this is a section header #Title#
-      if (trimmedLine.startsWith('#') && trimmedLine.endsWith('#') && trimmedLine.length > 2) {
+      // Check for subheading FIRST (###Title###) before section header
+      if (trimmedLine.startsWith('###') && trimmedLine.endsWith('###') && trimmedLine.length > 6) {
+        // This is a subheading ###Title###
+        if (currentSection == null) {
+          // Create a default section for subheading without a main header
+          currentSection = ExplanationSection(title: '', content: [], isSubheading: false);
+        }
+        
+        // Add subheading as special content
+        final subheadingTitle = trimmedLine.substring(3, trimmedLine.length - 3);
+        currentSection.content.add('###SUBHEADING###$subheadingTitle');
+      } else if (trimmedLine.startsWith('##') && trimmedLine.endsWith('##') && trimmedLine.length > 4) {
         // Save previous section
         if (currentSection != null) {
           sections.add(currentSection);
         }
         
         // Start new section
-        final title = trimmedLine.substring(1, trimmedLine.length - 1);
+        final title = trimmedLine.substring(2, trimmedLine.length - 2);
         currentSection = ExplanationSection(
           title: title,
           content: [],
+          isSubheading: false,
         );
       } else {
         // Add content to current section
         if (currentSection == null) {
           // Create a default section for content without a header
-          currentSection = ExplanationSection(title: '', content: []);
+          currentSection = ExplanationSection(title: '', content: [], isSubheading: false);
         }
         currentSection.content.add(trimmedLine);
       }
@@ -645,10 +686,12 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
 class ExplanationSection {
   final String title;
   final List<String> content;
+  final bool isSubheading;
 
   ExplanationSection({
     required this.title,
     required this.content,
+    this.isSubheading = false,
   });
 }
 
