@@ -1,1 +1,45 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"petomie-2a04b","appId":"1:458390215577:android:90a967cbc41f128d259108","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"petomie-2a04b","appId":"1:458390215577:ios:6667825c0434ac56259108","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"petomie-2a04b","configurations":{"android":"1:458390215577:android:90a967cbc41f128d259108","ios":"1:458390215577:ios:6667825c0434ac56259108","web":"1:458390215577:web:b9d0a9dd237efcaa259108"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "petomie-2a04b",
+          "appId": "1:458390215577:android:90a967cbc41f128d259108",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "petomie-2a04b",
+          "appId": "1:458390215577:ios:6667825c0434ac56259108",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "petomie-2a04b",
+          "configurations": {
+            "android": "1:458390215577:android:90a967cbc41f128d259108",
+            "ios": "1:458390215577:ios:6667825c0434ac56259108",
+            "web": "1:458390215577:web:b9d0a9dd237efcaa259108"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

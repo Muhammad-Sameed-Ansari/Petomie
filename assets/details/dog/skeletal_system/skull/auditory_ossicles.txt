@@ -1,0 +1,12 @@
+#Auditory Ossicles#
+
+##Location##
+Located within the middle ear cavity (tympanic cavity) inside the temporal bone.
+
+##Shape##
+Three tiny articulated bones forming a chain between the tympanic membrane (eardrum) and the inner ear.
+
+##Parts##
+Malleus – “Hammer” bone attached to the tympanic membrane, transmits vibrations medially.
+Incus – “Anvil” bone articulating between malleus and stapes, relays vibrations.
+Stapes – “Stirrup” bone connecting to the oval window of the cochlea, transmitting sound waves to the inner ear.

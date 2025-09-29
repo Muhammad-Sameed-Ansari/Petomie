@@ -1,0 +1,14 @@
+#Hyoid Apparatus#
+
+##Location##
+Located in the throat region, suspended between the skull and larynx. Supports the tongue, larynx, and pharynx, aiding in swallowing and vocalization.
+
+##Shape##
+A chain-like series of small paired bones connected by cartilage, forming a U-shaped structure.
+
+##Parts##
+Basihyoid – Central unpaired bone forming the base of the apparatus, located on the midline.
+Thyrohyoid – Paired bones connecting the basihyoid to the thyroid cartilage of the larynx.
+Ceratohyoid – Paired bones connecting basihyoid to epihyoid.
+Epihyoid – Small paired bones linking ceratohyoid to stylohyoid.
+Stylohyoid – Long paired bones extending dorsally to the temporal bone, anchoring the hyoid to the skull.

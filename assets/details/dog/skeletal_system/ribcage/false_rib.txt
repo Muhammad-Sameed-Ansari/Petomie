@@ -1,0 +1,25 @@
+#False Ribs (Costae Spuriae)#
+
+##Location##
+Located caudally on the thorax, after the nine true ribs. False ribs are pairs 10, 11, and 12 in the dog. They attach dorsally to the thoracic vertebrae but do not connect directly to the sternum. Instead, their costal cartilages join together to form the costal arch.
+
+##Shape##
+Similar in form to the true ribs but slightly longer, narrower, and more caudally sloped.
+
+##Parts##
+###Rib 10###
+First false rib
+Costal cartilage joins with cartilage of rib 9 and 11 to form part of costal arch
+Protects caudal lung lobes and cranial portion of diaphragm
+###Rib 11###
+Middle false rib
+Similar length to rib 10
+Intercostal space between ribs 11 and 12 is a common site for surgical access to the thorax (thoracotomy)
+###Rib 12###
+Last false rib before the floating rib
+More flexible due to longer costal cartilage
+Provides protection to cranial abdominal organs and diaphragm attachment
+
+##Function##
+Form the caudal portion of the thoracic cage while allowing flexibility for breathing and abdominal movement.
+Help complete the costal arch, which provides a protective boundary for internal organs.

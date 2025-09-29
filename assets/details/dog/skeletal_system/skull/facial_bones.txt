@@ -1,0 +1,17 @@
+#Facial Bones (Viscerocranium)#
+
+##Location##
+Form the bony framework of the face, enclosing the nasal and oral cavities, and supporting teeth and facial structures.
+
+##Shape##
+Paired and unpaired bones with openings, ridges, and projections that define the face and house sensory organs.
+
+##Parts##
+Vomer – Forms part of nasal septum.
+Palatine Bone – Forms caudal hard palate and floor of nasal cavity.
+Pterygoid Bone – Small paired bones forming lateral walls of the nasopharynx.
+Lacrimal Bone – Medial orbital bone housing nasolacrimal duct.
+Zygomatic Bone – Forms cheek prominence and part of zygomatic arch.
+Maxilla – Upper jaw bone, housing upper teeth and forming part of hard palate.
+Incisive (Premaxilla) – Rostral bones housing incisors.
+Nasal Bone – Forms dorsal roof of nasal cavity.

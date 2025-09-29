@@ -1,0 +1,11 @@
+#Acetabular Bone#
+
+##Location##
+Small bone forming part of acetabulum.
+
+##Shape##
+Irregular bone that fuses with ilium, ischium, and pubis.
+
+##Function##
+Completes hip socket
+Allows femoral head articulation

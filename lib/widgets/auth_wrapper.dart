@@ -19,9 +19,6 @@ class _AuthWrapperState extends State<AuthWrapper> {
   Widget build(BuildContext context) {
     return Consumer2<local_auth.AuthProvider, SubscriptionProvider>(
       builder: (context, authProvider, subscriptionProvider, child) {
-        // Debug: Always log the current auth state
-        debugPrint('AuthWrapper: Building - isLoading: ${authProvider.isLoading}, isSignedIn: ${authProvider.isSignedIn}, currentUser: ${authProvider.currentUser?.email ?? "null"}');
-        
         // Show loading indicator while auth is in progress
         if (authProvider.isLoading) {
           debugPrint('AuthWrapper: Showing loading screen');
@@ -38,7 +35,6 @@ class _AuthWrapperState extends State<AuthWrapper> {
           WidgetsBinding.instance.addPostFrameCallback((_) {
             subscriptionProvider.clearSubscription();
           });
-          debugPrint('AuthWrapper: Showing login screen - user not signed in');
           return const LoginScreen();
         }
 

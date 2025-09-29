@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+7
+version: 1.0.0+8
 
 environment:
   sdk: ^3.9.2
@@ -88,6 +88,29 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/details/
+    - assets/details/energy/
+    - assets/details/energy/chakras/
+    - assets/details/energy/chakras/main_chakra/
+    - assets/details/energy/chakras/secondary_chakra/
+    - assets/details/dog/
+    - assets/details/dog/skeletal_system/
+    - assets/details/dog/skeletal_system/skull/
+    - assets/details/dog/skeletal_system/spine/
+    - assets/details/dog/skeletal_system/ribcage/
+    - assets/details/dog/skeletal_system/shoulder_girdle/
+    - assets/details/dog/skeletal_system/forelimb/
+    - assets/details/dog/skeletal_system/forelimb/arm/
+    - assets/details/dog/skeletal_system/forelimb/forearm/
+    - assets/details/dog/skeletal_system/forelimb/carpus_proximal_row/
+    - assets/details/dog/skeletal_system/forelimb/carpus_distal_row/
+    - assets/details/dog/skeletal_system/forelimb/manus/
+    - assets/details/dog/skeletal_system/forelimb/sesamoids/
+    - assets/details/dog/skeletal_system/axial_skeleton/
+    - assets/details/dog/skeletal_system/axial_skeleton/pelvis/
+    - assets/details/dog/skeletal_system/hindlimb/
+    - assets/details/dog/skeletal_system/special_bones/
+    - assets/details/dog/skeletal_system/dentition/
     - assets/images/horse/
     - assets/images/dog/
     - assets/images/cat/
@@ -99,6 +122,9 @@ flutter:
     - assets/images/dog/Energy/
     - assets/images/cat/Energy/
     - assets/images/bird/Energy/
+    - assets/images/chakras/
+    - assets/images/chakras/main_chakra/
+    - assets/images/chakras/secondary_chakra/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

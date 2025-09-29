@@ -42,23 +42,129 @@ class Category {
 
 /// Predefined category data for the app
 class CategoryData {
-  // Helper function to generate energy categories for a specific animal
+  // Cache for generated subcategories to avoid regeneration
+  static final Map<String, List<Category>> _anatomyCache = {};
+  static final Map<String, List<Category>> _energyCache = {};
+  /// Get energy categories for a specific animal with caching
   static List<Category> getEnergyCategoriesForAnimal(String animalId) {
-    // Define chakra subcategories for Horse, Dog, and Cat
+    print("sameed - getEnergyCategoriesForAnimal - animalId: $animalId");
+    
+    // Check cache first
+    if (_energyCache.containsKey(animalId)) {
+      print("sameed - returning cached energy categories for $animalId");
+      return _energyCache[animalId]!;
+    }
+    // Define chakra subcategories for Horse, Dog, Cat, and Bird
     List<Category> chakraSubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       chakraSubcategories = [
-        Category(id: 'root_chakra', label: 'Root Chakra', icon: Icons.circle),
-        Category(id: 'sacral_chakra', label: 'Sacral Chakra', icon: Icons.circle),
-        Category(id: 'solar_plexus_chakra', label: 'Solar Plexus Chakra', icon: Icons.circle),
-        Category(id: 'heart_chakra', label: 'Heart Chakra', icon: Icons.circle),
-        Category(id: 'throat_chakra', label: 'Throat Chakra', icon: Icons.circle),
-        Category(id: 'third_eye_chakra', label: 'Third Eye Chakra', icon: Icons.circle),
-        Category(id: 'crown_chakra', label: 'Crown Chakra', icon: Icons.circle),
-        Category(id: 'brachial_shoulder_chakra', label: 'Brachial/Shoulder Chakra', icon: Icons.circle),
-        Category(id: 'paw_chakra', label: 'Paw Chakra', icon: Icons.circle),
-        Category(id: 'whisker_vibrissae_tail_ear_chakras', label: 'Whisker/Vibrissae, Tail, Ear Chakras', icon: Icons.circle),
+        Category(
+          id: 'main_chakra',
+          label: 'Main Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/chakras/main_chakra.png',
+          subcategories: [
+            Category(
+              id: 'root_chakra',
+              label: 'Root Chakra',
+              icon: Icons.circle,
+              imagePath: 'assets/images/chakras/main_chakra/root_chakra.webp',
+            ),
+            Category(
+              id: 'sacral_chakra',
+              label: 'Sacral Chakra',
+              icon: Icons.circle,
+              imagePath: 'assets/images/chakras/main_chakra/sacral_chakra.webp',
+            ),
+            Category(
+              id: 'solar_plexus_chakra',
+              label: 'Solar Plexus Chakra',
+              icon: Icons.circle,
+              imagePath: 'assets/images/chakras/main_chakra/solar_plexus_chakra.webp',
+            ),
+            Category(
+              id: 'heart_chakra',
+              label: 'Heart Chakra',
+              icon: Icons.circle,
+              imagePath: 'assets/images/chakras/main_chakra/heart_chakra.webp',
+            ),
+            Category(
+              id: 'throat_chakra',
+              label: 'Throat Chakra',
+              icon: Icons.circle,
+              imagePath: 'assets/images/chakras/main_chakra/throat_chakra.webp',
+            ),
+            Category(
+              id: 'third_eye_chakra',
+              label: 'Third Eye Chakra',
+              icon: Icons.circle,
+              imagePath: 'assets/images/chakras/main_chakra/third_eye_chakra.webp',
+            ),
+            Category(
+              id: 'crown_chakra',
+              label: 'Crown Chakra',
+              icon: Icons.circle,
+              imagePath: 'assets/images/chakras/main_chakra/crown_chakra.webp',
+            ),
+            Category(
+              id: 'brachial_shoulder_chakra',
+              label: 'Brachial/Shoulder Chakra',
+              icon: Icons.circle,
+              imagePath: 'assets/images/chakras/main_chakra/brachial_shoulder_chakra.webp',
+            ),
+          ],
+        ),
       ];
+
+      String animal = animalId.toLowerCase();
+      List<Category> secondarySubs = [];
+      if (animal == 'horse') {
+        secondarySubs = [
+          Category(id: 'hoof_chakras', label: 'Hoof Chakras (4)', icon: Icons.circle),
+          Category(id: 'tail_chakra', label: 'Tail Chakra', icon: Icons.circle),
+          Category(id: 'nose_muzzle_chakra', label: 'Nose/Muzzle Chakra', icon: Icons.circle),
+          Category(id: 'ear_chakra', label: 'Ear Chakra', icon: Icons.circle),
+          Category(id: 'flank_chakras', label: 'Flank Chakras', icon: Icons.circle),
+          Category(id: 'whorl_chakra', label: 'Whorl Chakra', icon: Icons.circle),
+          Category(id: 'spleen_chakra', label: 'Spleen Chakra', icon: Icons.circle),
+        ];
+      } else if (animal == 'dog') {
+        secondarySubs = [
+          Category(id: 'paw_chakras', label: 'Paw Chakras (4)', icon: Icons.circle),
+          Category(id: 'tail_chakra', label: 'Tail Chakra', icon: Icons.circle),
+          Category(id: 'ear_chakra', label: 'Ear Chakra', icon: Icons.circle),
+          Category(id: 'nose_chakra', label: 'Nose Chakra', icon: Icons.circle),
+          Category(id: 'sacral_chakra', label: 'Sacral Chakra', icon: Icons.circle),
+        ];
+      } else if (animal == 'cat') {
+        secondarySubs = [
+          Category(id: 'paw_chakras', label: 'Paw Chakras (4)', icon: Icons.circle),
+          Category(id: 'tail_chakra', label: 'Tail Chakra', icon: Icons.circle),
+          Category(id: 'spleen_chakra', label: 'Spleen Chakra', icon: Icons.circle),
+          Category(id: 'whisker_chakras', label: 'Whisker Chakras', icon: Icons.circle),
+          Category(id: 'ear_chakra', label: 'Ear Chakra', icon: Icons.circle),
+        ];
+      } else if (animal == 'bird') {
+        secondarySubs = [
+          Category(id: 'wing_chakras', label: 'Wing Chakras (2)', icon: Icons.circle),
+          Category(id: 'beak_chakra', label: 'Beak Chakra', icon: Icons.circle),
+          Category(id: 'feet_chakras', label: 'Feet Chakras (2)', icon: Icons.circle),
+          Category(id: 'ear_side_head_chakras', label: 'Ear/Side Head Chakras', icon: Icons.circle),
+          Category(id: 'tail_feather_chakra', label: 'Tail Feather Chakra', icon: Icons.circle),
+        ];
+      }
+
+      if (secondarySubs.isNotEmpty) {
+        chakraSubcategories.add(
+          Category(
+            id: 'secondary_chakra',
+            label: 'Secondary Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/chakras/secondary_chakra.png',
+            subcategories: secondarySubs,
+          ),
+        );
+      }
     }
 
     // Define aura & energy field subcategories for Horse, Dog, and Cat
@@ -219,16 +325,13 @@ class CategoryData {
       ];
     }
 
-    return [
-      Category(
-        id: 'main_category',
-        label: 'Main Category',
-        icon: Icons.category,
-      ),
+    // Generate energy categories and cache them
+    final categories = [
       Category(
         id: 'chakras',
         label: 'Chakras',
         icon: Icons.brightness_7,
+        imagePath: 'assets/images/chakras/chakras.webp',
         subcategories: chakraSubcategories,
       ),
       Category(
@@ -279,6 +382,7 @@ class CategoryData {
         id: 'energetic_influences',
         label: 'Energetic Influences',
         icon: Icons.waves,
+        imagePath: 'assets/images/$animalId/Energy/energetic_influences.png',
         subcategories: energeticInfluencesSubcategories,
       ),
       Category(
@@ -291,19 +395,236 @@ class CategoryData {
         id: 'unresolved_emotions',
         label: 'Unresolved Emotions',
         icon: Icons.sentiment_dissatisfied,
+        imagePath: 'assets/images/$animalId/Energy/unresolved_emotions.png',
         subcategories: unresolvedEmotionsSubcategories,
       ),
     ];
+    
+    _energyCache[animalId] = categories;
+    return categories;
   }
 
-  // Mock subcategories for Skeletal System
-  static final List<Category> skeletalSystemCategories = [
-    Category(id: 'bones', label: 'Bones', icon: Icons.straighten),
-    Category(id: 'joints', label: 'Joints', icon: Icons.join_inner),
-    Category(id: 'cartilage', label: 'Cartilage', icon: Icons.layers),
-    Category(id: 'bone_marrow', label: 'Bone Marrow', icon: Icons.circle),
-    Category(id: 'skeletal_development', label: 'Skeletal Development', icon: Icons.trending_up),
-  ];
+  // Get skeletal system categories for a specific animal
+  static List<Category> getSkeletalSystemCategoriesForAnimal(String animalId) {
+    if (animalId.toLowerCase() == 'dog') {
+      return [
+        Category(
+          id: 'skull', 
+          label: 'Skull', 
+          icon: Icons.psychology,
+          imagePath: 'assets/images/$animalId/skeletal_system/skull.png',
+          subcategories: [
+            Category(id: 'cranial_bones', label: 'Cranial Bones', icon: Icons.psychology),
+            Category(id: 'facial_bones', label: 'Facial Bones', icon: Icons.face),
+            Category(id: 'mandible', label: 'Mandible', icon: Icons.architecture),
+            Category(id: 'hyoid_apparatus', label: 'Hyoid Apparatus', icon: Icons.straighten),
+            Category(id: 'auditory_ossicles', label: 'Auditory Ossicles', icon: Icons.hearing),
+          ],
+        ),
+        Category(
+          id: 'spine', 
+          label: 'Spine', 
+          icon: Icons.view_column,
+          subcategories: [
+            Category(id: 'cervical_vertebrae', label: 'Cervical Vertebrae', icon: Icons.view_column),
+            Category(id: 'thoracic_vertebrae', label: 'Thoracic Vertebrae', icon: Icons.view_column),
+            Category(id: 'lumbar_vertebrae', label: 'Lumbar Vertebrae', icon: Icons.view_column),
+            Category(id: 'sacral_vertebrae', label: 'Sacral Vertebrae', icon: Icons.view_column),
+            Category(id: 'caudal_vertebrae', label: 'Caudal Vertebrae', icon: Icons.view_column),
+          ],
+        ),
+        Category(
+          id: 'ribcage', 
+          label: 'Ribcage', 
+          icon: Icons.border_all,
+          subcategories: [
+            Category(id: 'true_rib', label: 'True Rib', icon: Icons.border_all),
+            Category(id: 'false_rib', label: 'False Rib', icon: Icons.border_all),
+            Category(id: 'floating_rib_13', label: 'Floating Rib 13', icon: Icons.border_all),
+            Category(id: 'sternum', label: 'Sternum', icon: Icons.straighten),
+          ],
+        ),
+        Category(
+          id: 'shoulder_girdle', 
+          label: 'Shoulder Girdle', 
+          icon: Icons.accessibility,
+          subcategories: [
+            Category(id: 'scapula', label: 'Scapula', icon: Icons.accessibility),
+          ],
+        ),
+        Category(
+          id: 'forelimb', 
+          label: 'Forelimb', 
+          icon: Icons.accessibility,
+          subcategories: [
+            Category(
+              id: 'arm',
+              label: 'Arm',
+              icon: Icons.accessibility,
+              subcategories: [
+                Category(id: 'humerus', label: 'Humerus', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'forearm',
+              label: 'Forearm',
+              icon: Icons.accessibility,
+              subcategories: [
+                Category(id: 'radius', label: 'Radius', icon: Icons.accessibility),
+                Category(id: 'ulna', label: 'Ulna', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'carpus_proximal_row',
+              label: 'Carpus (Proximal Row)',
+              icon: Icons.grid_view,
+              subcategories: [
+                Category(id: 'intermedioradial_carpal', label: 'Intermedioradial Carpal', icon: Icons.accessibility),
+                Category(id: 'ulnar_carpal', label: 'Ulnar Carpal', icon: Icons.accessibility),
+                Category(id: 'accessory_carpal', label: 'Accessory Carpal', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'carpus_distal_row',
+              label: 'Carpus (Distal Row)',
+              icon: Icons.grid_view,
+              subcategories: [
+                Category(id: 'carpal_i_iv', label: 'Carpal I-IV', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'manus',
+              label: 'Manus',
+              icon: Icons.pan_tool,
+              subcategories: [
+                Category(id: 'metacarpal_i_v', label: 'Metacarpal I-V', icon: Icons.accessibility),
+                Category(id: 'proximal_phalanges_i_v', label: 'Proximal Phalanges (I-V)', icon: Icons.accessibility),
+                Category(id: 'middle_phalanges_ii_v', label: 'Middle Phalanges (II-V)', icon: Icons.accessibility),
+                Category(id: 'distal_phalanges_i_v', label: 'Distal Phalanges (I-V)', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'sesamoids',
+              label: 'Sesamoids',
+              icon: Icons.circle,
+              subcategories: [
+                Category(id: 'proximal_sesamoids_ii_v', label: 'Proximal Sesamoids (II-V)', icon: Icons.accessibility),
+                Category(id: 'dorsal_sesamoids_ii_v', label: 'Dorsal Sesamoids (II-V)', icon: Icons.accessibility),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'axial_skeleton', 
+          label: 'Axial Skeleton', 
+          icon: Icons.accessibility,
+          subcategories: [
+            Category(
+              id: 'pelvis',
+              label: 'Pelvis',
+              icon: Icons.accessibility,
+              subcategories: [
+                Category(id: 'ilium', label: 'Ilium', icon: Icons.accessibility),
+                Category(id: 'ischium', label: 'Ischium', icon: Icons.accessibility),
+                Category(id: 'pubis', label: 'Pubis', icon: Icons.accessibility),
+                Category(id: 'acetabular_bone', label: 'Acetabular Bone', icon: Icons.accessibility),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'hindlimb', 
+          label: 'Hindlimb', 
+          icon: Icons.grid_view,
+          subcategories: [
+            Category(
+              id: 'thigh',
+              label: 'Thigh',
+              icon: Icons.straighten,
+              subcategories: [
+                Category(id: 'femur', label: 'Femur', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'stifle',
+              label: 'Stifle',
+              icon: Icons.join_inner,
+              subcategories: [
+                Category(id: 'patella', label: 'Patella', icon: Icons.accessibility),
+                Category(id: 'fabellae_medial_lateral', label: 'Fabellae (medial/lateral)', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'leg',
+              label: 'Leg',
+              icon: Icons.straighten,
+              subcategories: [
+                Category(id: 'tibia', label: 'Tibia', icon: Icons.accessibility),
+                Category(id: 'fibula', label: 'Fibula', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'tarsus',
+              label: 'Tarsus',
+              icon: Icons.grid_view,
+              subcategories: [
+                Category(id: 'talus', label: 'Talus', icon: Icons.accessibility),
+                Category(id: 'calcaneus', label: 'Calcaneus', icon: Icons.accessibility),
+                Category(id: 'central_tarsal', label: 'Central Tarsal', icon: Icons.accessibility),
+                Category(id: 'tarsal_i_iv', label: 'Tarsal I-IV', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'hindpaw',
+              label: 'Hindpaw',
+              icon: Icons.pan_tool,
+              subcategories: [
+                Category(id: 'metacarpals_i_v', label: 'Metacarpals I-V', icon: Icons.accessibility),
+                Category(id: 'Metatarsals_ii_v', label: 'Metatarsals II-V', icon: Icons.accessibility),
+                Category(id: 'proximal_phalanges_ii_v', label: 'Proximal Phalanges (II-V)', icon: Icons.accessibility),
+                Category(id: 'middle_phalanges_ii_v', label: 'Middle Phalanges (II-V)', icon: Icons.accessibility),
+                Category(id: 'distal_phalanges_ii_v', label: 'Distal Phalanges (II-V)', icon: Icons.accessibility),
+                Category(id: 'proximal_sesamoids_ii_v', label: 'Proximal Sesamoids (II-V)', icon: Icons.accessibility),
+                Category(id: 'dorsal_sesamoids_ii_v', label: 'Dorsal Sesamoids (II-V)', icon: Icons.accessibility),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'special_bones', 
+          label: 'Special Bones', 
+          icon: Icons.star,
+          subcategories: [
+            Category(id: 'os_penis_baculum', label: 'Os Penis (Baculum)', icon: Icons.star),
+          ],
+        ),
+        Category(
+          id: 'dentition', 
+          label: 'Dentition', 
+          icon: Icons.emoji_food_beverage,
+          subcategories: [
+            Category(id: 'incisor_upper', label: 'Incisor - Upper', icon: Icons.crop_square),
+            Category(id: 'canine_upper', label: 'Canine - Upper', icon: Icons.change_history),
+            Category(id: 'premolar_upper', label: 'Premolar - Upper', icon: Icons.crop_3_2),
+            Category(id: 'molar_upper', label: 'Molar - Upper', icon: Icons.crop_7_5),
+            Category(id: 'incisor_lower', label: 'Incisor - Lower', icon: Icons.crop_square),
+            Category(id: 'canine_lower', label: 'Canine - Lower', icon: Icons.change_history),
+            Category(id: 'premolar_lower', label: 'Premolar - Lower', icon: Icons.crop_3_2),
+            Category(id: 'molar_lower', label: 'Molar - Lower', icon: Icons.crop_7_5),
+          ],
+        ),
+      ];
+    }
+    
+    // Default skeletal system categories for other animals
+    return [
+      Category(id: 'bones', label: 'Bones', icon: Icons.straighten),
+      Category(id: 'joints', label: 'Joints', icon: Icons.join_inner),
+      Category(id: 'cartilage', label: 'Cartilage', icon: Icons.layers),
+      Category(id: 'bone_marrow', label: 'Bone Marrow', icon: Icons.circle),
+      Category(id: 'skeletal_development', label: 'Skeletal Development', icon: Icons.trending_up),
+    ];
+  }
 
   // Mock subcategories for Muscular System
   static final List<Category> muscularSystemCategories = [
@@ -349,22 +670,31 @@ class CategoryData {
     Category(id: 'tail_ears', label: 'Tail & Ears', icon: Icons.pets),
   ];
 
-  // Helper function to generate anatomy categories for a specific animal
+  /// Get anatomy categories for a specific animal with caching
   static List<Category> getAnatomyCategoriesForAnimal(String animalId) {
-    return [
+    print("sameed - getAnatomyCategoriesForAnimal - animalId: $animalId");
+    
+    // Check cache first
+    if (_anatomyCache.containsKey(animalId)) {
+      print("sameed - returning cached anatomy categories for $animalId");
+      return _anatomyCache[animalId]!;
+    }
+    
+    // Generate categories and cache them
+    final categories = [
       Category(
         id: 'energy',
         label: 'Energy',
         icon: Icons.flash_on,
         imagePath: 'assets/images/$animalId/energy.webp',
-        subcategories: getEnergyCategoriesForAnimal(animalId),
+        // Lazy load energy subcategories only when needed
       ),
       Category(
         id: 'skeletal_system',
         label: 'Skeletal System',
         icon: Icons.accessibility,
         imagePath: 'assets/images/$animalId/skeletal_system.webp',
-        subcategories: skeletalSystemCategories,
+        subcategories: getSkeletalSystemCategoriesForAnimal(animalId),
       ),
       Category(
         id: 'muscular_system',
@@ -395,63 +725,104 @@ class CategoryData {
         subcategories: sensoryExternalCategories,
       ),
     ];
+    
+    _anatomyCache[animalId] = categories;
+    return categories;
   }
 
   static List<Category> get mainCategories {
+    print("sameed - CategoryData - get mainCategories");
     return [
       Category(
         id: 'horse',
         label: 'Horse',
         icon: Icons.pets,
         imagePath: 'assets/images/horse.webp',
-        subcategories: getAnatomyCategoriesForAnimal('horse'),
+        // No subcategories loaded initially
       ),
       Category(
         id: 'dog',
         label: 'Dog',
         icon: Icons.pets,
         imagePath: 'assets/images/dog.webp',
-        subcategories: getAnatomyCategoriesForAnimal('dog'),
+        // No subcategories loaded initially
       ),
       Category(
         id: 'cat',
         label: 'Cat',
         icon: Icons.pets,
         imagePath: 'assets/images/cat.webp',
-        subcategories: getAnatomyCategoriesForAnimal('cat'),
+        // No subcategories loaded initially
       ),
       Category(
         id: 'bird',
         label: 'Bird',
         icon: Icons.flutter_dash,
         imagePath: 'assets/images/bird.webp',
-        subcategories: getAnatomyCategoriesForAnimal('bird'),
+        // No subcategories loaded initially
       ),
       Category(
         id: 'cow',
         label: 'Cow',
         icon: Icons.pets,
         imagePath: 'assets/images/cow.webp',
-        subcategories: getAnatomyCategoriesForAnimal('cow'),
         isComingSoon: true,
+        // No subcategories loaded initially
       ),
       Category(
         id: 'guineapig',
         label: 'Guinea Pig',
         icon: Icons.pets,
         imagePath: 'assets/images/guineapig.webp',
-        subcategories: getAnatomyCategoriesForAnimal('guineapig'),
         isComingSoon: true,
+        // No subcategories loaded initially
       ),
       Category(
         id: 'rabbit',
         label: 'Rabbit',
         icon: Icons.pets,
         imagePath: 'assets/images/rabbit.webp',
-        subcategories: getAnatomyCategoriesForAnimal('rabbit'),
         isComingSoon: true,
+        // No subcategories loaded initially
       ),
     ];
+  }
+
+  /// Get a main category with its subcategories loaded lazily
+  static Category? getMainCategoryWithSubcategories(String animalId) {
+    print("sameed - getMainCategoryWithSubcategories - animalId: $animalId");
+    
+    final mainCategory = mainCategories.firstWhere(
+      (category) => category.id == animalId,
+      orElse: () => throw ArgumentError('Animal category not found: $animalId'),
+    );
+    
+    // Return category with lazily loaded subcategories
+    return mainCategory.copyWith(
+      subcategories: getAnatomyCategoriesForAnimal(animalId),
+    );
+  }
+  
+  /// Get energy subcategories for a specific anatomy category
+  static Category? getAnatomyCategoryWithEnergySubcategories(String animalId, String categoryId) {
+    print("sameed - getAnatomyCategoryWithEnergySubcategories - animalId: $animalId, categoryId: $categoryId");
+    
+    if (categoryId == 'energy') {
+      return Category(
+        id: 'energy',
+        label: 'Energy',
+        icon: Icons.flash_on,
+        imagePath: 'assets/images/$animalId/energy.webp',
+        subcategories: getEnergyCategoriesForAnimal(animalId),
+      );
+    }
+    
+    // For other categories, get from cached anatomy categories
+    final anatomyCategories = getAnatomyCategoriesForAnimal(animalId);
+    return anatomyCategories.firstWhere(
+      (category) => category.id == categoryId,
+      orElse: () => throw ArgumentError('Anatomy category not found: $categoryId'),
+    );
   }
 
   /// Get a category by its ID from a list of categories
