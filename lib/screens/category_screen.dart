@@ -766,28 +766,34 @@ class _CategoryScreenState extends State<CategoryScreen> {
                   ),
                 ],
               ),
-              child: Row(
-                children: [
-                  if (!kIsWeb) ...[
-                    Icon(
-                      Icons.home,
-                      size: 16,
-                      color: Theme.of(context).colorScheme.primary,
-                    ),
-                    const SizedBox(width: 8),
-                  ],
-                  Expanded(
+              child: kIsWeb 
+                ? Center(
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                        children: kIsWeb 
-                          ? _buildWebBreadcrumbs(context)
-                          : _buildMobileBreadcrumbs(context, breadcrumbCategories),
+                        mainAxisSize: MainAxisSize.min,
+                        children: _buildWebBreadcrumbs(context),
                       ),
                     ),
+                  )
+                : Row(
+                    children: [
+                      Icon(
+                        Icons.home,
+                        size: 16,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: _buildMobileBreadcrumbs(context, breadcrumbCategories),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
             ),
           
           // Category grid

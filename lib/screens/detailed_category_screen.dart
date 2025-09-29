@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:provider/provider.dart';
 import '../models/category.dart';
 import '../providers/auth_provider.dart' as local_auth;
 import '../providers/theme_provider.dart';
 import '../providers/subscription_provider.dart';
 import '../themes/app_themes.dart';
+import '../services/content_service.dart';
 import 'subscription_screen.dart';
+import 'category_explanation_screen.dart';
 
 class DetailedCategoryScreen extends StatefulWidget {
   final List<Category> categories;
@@ -108,7 +111,60 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
     return null;
   }
 
-  void _showCategoryDetails(Category category) {
+  Future<void> _showCategoryDetails(Category category) async {
+    final contentService = ContentService();
+    
+    // Show loading indicator
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => const Center(
+        child: CircularProgressIndicator(),
+      ),
+    );
+
+    try {
+      // Get the full breadcrumb path including current category navigation
+      final fullBreadcrumbs = List<String>.from(_currentBreadcrumbs);
+      
+      
+      // Check if content exists and load it
+      final hasContent = await contentService.hasContent(category.id, fullBreadcrumbs);
+      
+      if (mounted) {
+        Navigator.of(context).pop(); // Close loading dialog
+        
+        if (hasContent) {
+          // Load content and navigate to explanation screen
+          final explanationText = await contentService.getExplanationText(category.id, fullBreadcrumbs);
+          final imagePath = contentService.getImagePath(category.id, fullBreadcrumbs);
+          
+          if (mounted && explanationText.isNotEmpty) {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => CategoryExplanationScreen(
+                  categoryName: category.label,
+                  imagePath: imagePath,
+                  explanation: explanationText,
+                ),
+              ),
+            );
+            } else {
+              _showComingSoonDialog(category);
+            }
+          } else {
+            _showComingSoonDialog(category);
+          }
+        }
+      } catch (e) {
+      if (mounted) {
+        Navigator.of(context).pop(); // Close loading dialog
+        _showComingSoonDialog(category);
+      }
+    }
+  }
+
+  void _showComingSoonDialog(Category category) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -146,6 +202,7 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
       ),
     );
   }
+
 
 
   @override
@@ -295,19 +352,19 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
                   ),
                 ],
               ),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.home,
-                    size: 16,
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
+              child: kIsWeb 
+                ? Center(
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
+                          Icon(
+                            Icons.home,
+                            size: 16,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
+                          const SizedBox(width: 8),
                           ...breadcrumbCategories.expand((cat) => [
                             Icon(
                               Icons.chevron_right,
@@ -325,46 +382,42 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
                         ],
                       ),
                     ),
+                  )
+                : Row(
+                    children: [
+                      Icon(
+                        Icons.home,
+                        size: 16,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: [
+                              ...breadcrumbCategories.expand((cat) => [
+                                Icon(
+                                  Icons.chevron_right,
+                                  size: 14,
+                                  color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+                                ),
+                                const SizedBox(width: 8),
+                                Icon(
+                                  cat.icon,
+                                  size: 16,
+                                  color: Theme.of(context).colorScheme.primary,
+                                ),
+                                const SizedBox(width: 8),
+                              ]),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
             ),
           
-          // Premium indicator
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  AppColors.success.withOpacity(0.1),
-                  AppColors.success.withOpacity(0.05),
-                ],
-              ),
-              borderRadius: BorderRadius.circular(8),
-              border: Border.all(
-                color: AppColors.success.withOpacity(0.3),
-              ),
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(
-                  Icons.workspace_premium,
-                  size: 16,
-                  color: AppColors.success,
-                ),
-                const SizedBox(width: 8),
-                Text(
-                  'Premium Content',
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: AppColors.success,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ],
-            ),
-          ),
           
           // Category grid with enhanced layout for longer names
           Expanded(

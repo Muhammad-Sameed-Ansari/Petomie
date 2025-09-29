@@ -168,7 +168,7 @@ class HomeScreen extends StatelessWidget {
         child: CategoryGrid(
           categories: CategoryData.mainCategories,
           title: 'Choose an Animal',
-          onCategoryTap: (category) {
+          onCategoryTap: (Category category) {
             // Lazily load subcategories only when animal is selected
             final categoryWithSubcategories = CategoryData.getMainCategoryWithSubcategories(category.id);
             Navigator.of(context).push(
