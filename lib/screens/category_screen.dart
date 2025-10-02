@@ -46,6 +46,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
     _currentBreadcrumbs = List.from(widget.breadcrumbs);
     // Extract animal ID from breadcrumbs (first breadcrumb is the animal name)
     _animalId = widget.breadcrumbs.isNotEmpty ? widget.breadcrumbs.first.toLowerCase() : '';
+    print('DEBUG: CategoryScreen - Extracted animal ID: $_animalId from breadcrumbs: ${widget.breadcrumbs}');
     
     // Initialize navigation stack with the initial categories
     _navigationStack.add(List.from(_currentCategories));
@@ -225,6 +226,17 @@ class _CategoryScreenState extends State<CategoryScreen> {
       // Get the full breadcrumb path including current category navigation
       final fullBreadcrumbs = List<String>.from(_currentBreadcrumbs);
       
+      // Ensure the animal ID is always the first breadcrumb for animal-specific content
+      if (fullBreadcrumbs.isEmpty || fullBreadcrumbs.first.toLowerCase() != _animalId) {
+        // Insert or replace the first breadcrumb with the correct animal ID
+        if (fullBreadcrumbs.isEmpty) {
+          fullBreadcrumbs.insert(0, _animalId.toLowerCase());
+        } else {
+          fullBreadcrumbs[0] = _animalId.toLowerCase();
+        }
+      }
+      
+      print('DEBUG: CategoryScreen - Animal ID: $_animalId, Full breadcrumbs: $fullBreadcrumbs');
       
       // Check if content exists and load it
       final hasContent = await contentService.hasContent(category.id, fullBreadcrumbs);

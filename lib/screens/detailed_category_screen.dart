@@ -127,6 +127,18 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
       // Get the full breadcrumb path including current category navigation
       final fullBreadcrumbs = List<String>.from(_currentBreadcrumbs);
       
+      // Ensure the animal ID is always the first breadcrumb for animal-specific content
+      final animalId = widget.animalType.toLowerCase();
+      if (fullBreadcrumbs.isEmpty || fullBreadcrumbs.first.toLowerCase() != animalId) {
+        // Insert or replace the first breadcrumb with the correct animal ID
+        if (fullBreadcrumbs.isEmpty) {
+          fullBreadcrumbs.insert(0, animalId);
+        } else {
+          fullBreadcrumbs[0] = animalId;
+        }
+      }
+      
+      print('DEBUG: DetailedCategoryScreen - Animal ID: $animalId, Full breadcrumbs: $fullBreadcrumbs');
       
       // Check if content exists and load it
       final hasContent = await contentService.hasContent(category.id, fullBreadcrumbs);

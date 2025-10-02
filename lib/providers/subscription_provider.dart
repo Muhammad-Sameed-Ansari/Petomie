@@ -22,7 +22,7 @@ class SubscriptionProvider extends ChangeNotifier {
   String? get errorMessage => _errorMessage;
   
   // bool get hasActiveSubscription => _currentSubscription.hasAccess;
-  bool get hasActiveSubscription => false; // Temporarily bypass for testing
+  bool get hasActiveSubscription => true; // Temporarily bypass for testing
   bool get isSubscriptionExpired => _currentSubscription.isExpired;
   int get daysRemaining => _currentSubscription.daysRemaining;
   String get subscriptionStatusDescription => _currentSubscription.statusDescription;

@@ -148,6 +148,8 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                           widget.imagePath,
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stackTrace) {
+                            print('DEBUG: Failed to load image (mobile): ${widget.imagePath}');
+                            print('DEBUG: Error: $error');
                             return _buildImageFallback(context);
                           },
                         ),
@@ -278,70 +280,244 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
     );
   }
 
-  Widget _buildContentItem(BuildContext context, String content) {
+  Widget _buildContentItem(BuildContext context, dynamic content) {
     final isWeb = kIsWeb;
     
-    // Check if this is a subheading
-    if (content.startsWith('###SUBHEADING###')) {
-      final subheadingTitle = content.substring('###SUBHEADING###'.length);
+    // Handle different content types
+    if (content is TableData) {
+      return _buildTableWidget(context, content);
+    } else if (content is ExpandableData) {
+      return _buildExpandableWidget(context, content);
+    } else if (content is String) {
+      // Check if this is a subheading
+      if (content.startsWith('###SUBHEADING###')) {
+        final subheadingTitle = content.substring('###SUBHEADING###'.length);
+        return Container(
+          width: double.infinity,
+          margin: const EdgeInsets.only(bottom: 16, top: 8),
+          padding: EdgeInsets.symmetric(
+            horizontal: isWeb ? 16 : 12,
+            vertical: isWeb ? 12 : 8,
+          ),
+          decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.3),
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              width: 1,
+            ),
+          ),
+          child: Text(
+            subheadingTitle,
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.w600,
+              fontSize: isWeb ? 18 : 16,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            textAlign: isWeb ? TextAlign.center : TextAlign.start,
+          ),
+        );
+      }
+      
+      // Regular content item
       return Container(
         width: double.infinity,
-        margin: const EdgeInsets.only(bottom: 16, top: 8),
-        padding: EdgeInsets.symmetric(
-          horizontal: isWeb ? 16 : 12,
-          vertical: isWeb ? 12 : 8,
-        ),
+        margin: const EdgeInsets.only(bottom: 12),
+        padding: EdgeInsets.all(isWeb ? 20 : 16),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.3),
-          borderRadius: BorderRadius.circular(8),
+          color: Theme.of(context).colorScheme.surface,
+          borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
-            width: 1,
+            color: Theme.of(context).colorScheme.outline.withOpacity(0.1),
           ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.05),
+              blurRadius: 8,
+              offset: const Offset(0, 2),
+            ),
+          ],
         ),
         child: Text(
-          subheadingTitle,
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.w600,
-            fontSize: isWeb ? 18 : 16,
-            color: Theme.of(context).colorScheme.primary,
+          content,
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+            height: 1.6,
+            fontSize: isWeb ? 16 : null,
+            color: Theme.of(context).colorScheme.onSurface,
           ),
           textAlign: isWeb ? TextAlign.center : TextAlign.start,
         ),
       );
     }
     
-    // Regular content item
+    return const SizedBox.shrink();
+  }
+
+  /// Build non-scrollable table widget that shows all data
+  Widget _buildTableWidget(BuildContext context, TableData tableData) {
+    final isWeb = kIsWeb;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isDesktop = screenWidth > 1200;
+    final isTablet = screenWidth > 800 && screenWidth <= 1200;
+    
+    // Calculate column count
+    final columnCount = tableData.headers.length;
+    
     return Container(
       width: double.infinity,
-      margin: const EdgeInsets.only(bottom: 12),
-      padding: EdgeInsets.all(isWeb ? 20 : 16),
+      margin: const EdgeInsets.only(bottom: 20),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.surface,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Theme.of(context).colorScheme.outline.withOpacity(0.1),
+          color: Theme.of(context).colorScheme.outline.withOpacity(0.2),
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
-            blurRadius: 8,
-            offset: const Offset(0, 2),
+            color: Colors.black.withOpacity(0.08),
+            blurRadius: 12,
+            offset: const Offset(0, 4),
           ),
         ],
       ),
-      child: Text(
-        content,
-        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-          height: 1.6,
-          fontSize: isWeb ? 16 : null,
-          color: Theme.of(context).colorScheme.onSurface,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(16),
+        child: Table(
+          // Use flexible column widths to fit all columns without scrolling
+          columnWidths: Map.fromEntries(
+            List.generate(columnCount, (index) => MapEntry(index, const FlexColumnWidth())),
+          ),
+          border: TableBorder.all(
+            color: Theme.of(context).colorScheme.outline.withOpacity(0.3),
+            width: 1,
+          ),
+          children: [
+            // Header row
+            TableRow(
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.5),
+              ),
+              children: tableData.headers.map((header) {
+                return Container(
+                  padding: EdgeInsets.symmetric(
+                    vertical: isDesktop ? 16 : (isTablet ? 14 : 12),
+                    horizontal: isDesktop ? 12 : (isTablet ? 10 : 8),
+                  ),
+                  child: Text(
+                    header,
+                    style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: Theme.of(context).colorScheme.primary,
+                      fontSize: isDesktop ? 14 : (isTablet ? 13 : 12),
+                    ),
+                    textAlign: TextAlign.center,
+                    maxLines: null, // Allow unlimited lines for headers
+                    softWrap: true,
+                  ),
+                );
+              }).toList(),
+            ),
+            // Data rows
+            ...tableData.rows.map((row) {
+              return TableRow(
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.surface,
+                ),
+                children: row.map((cell) {
+                  return Container(
+                    padding: EdgeInsets.symmetric(
+                      vertical: isDesktop ? 14 : (isTablet ? 12 : 10),
+                      horizontal: isDesktop ? 12 : (isTablet ? 10 : 8),
+                    ),
+                    child: Text(
+                      cell,
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        fontSize: isDesktop ? 13 : (isTablet ? 12 : 11),
+                        color: Theme.of(context).colorScheme.onSurface,
+                        height: 1.4,
+                      ),
+                      textAlign: TextAlign.center,
+                      maxLines: null, // Allow unlimited lines for cell content
+                      softWrap: true,
+                    ),
+                  );
+                }).toList(),
+              );
+            }).toList(),
+          ],
         ),
-        textAlign: isWeb ? TextAlign.center : TextAlign.start,
       ),
     );
   }
 
+  /// Build expandable/collapsible widget with animations
+  Widget _buildExpandableWidget(BuildContext context, ExpandableData expandableData) {
+    final isWeb = kIsWeb;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isDesktop = screenWidth > 1200;
+    final isTablet = screenWidth > 800 && screenWidth <= 1200;
+    
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 20),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.surface,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: Theme.of(context).colorScheme.outline.withOpacity(0.2),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.08),
+            blurRadius: 12,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Title section
+          if (expandableData.title.isNotEmpty)
+            Container(
+              width: double.infinity,
+              padding: EdgeInsets.all(isDesktop ? 20 : (isTablet ? 18 : 16)),
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.3),
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(16),
+                  topRight: Radius.circular(16),
+                ),
+              ),
+              child: Text(
+                expandableData.title,
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.primary,
+                  fontSize: isDesktop ? 20 : (isTablet ? 18 : 16),
+                ),
+                textAlign: isWeb ? TextAlign.center : TextAlign.start,
+              ),
+            ),
+          
+          // Expandable items
+          ...expandableData.items.asMap().entries.map((entry) {
+            final index = entry.key;
+            final item = entry.value;
+            final isLast = index == expandableData.items.length - 1;
+            
+            return _ExpandableItemWidget(
+              item: item,
+              isLast: isLast,
+              isWeb: isWeb,
+              isDesktop: isDesktop,
+              isTablet: isTablet,
+            );
+          }).toList(),
+        ],
+      ),
+    );
+  }
 
   /// Extract page title from #Title# format (first line)
   String? _extractPageTitle(String text) {
@@ -355,72 +531,234 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
     return null;
   }
 
-  /// Parse explanation text with new format
+  /// Parse explanation text with new format including tables and expandables
   List<ExplanationSection> _parseExplanationText(String text) {
-    final sections = <ExplanationSection>[];
-    final lines = text.split('\n');
-    
-    ExplanationSection? currentSection;
-    int startIndex = 0;
-    
-    // Skip the page title line if it exists
-    if (lines.isNotEmpty && lines.first.trim().startsWith('#') && lines.first.trim().endsWith('#')) {
-      startIndex = 1;
-    }
-    
-    for (int i = startIndex; i < lines.length; i++) {
-      final line = lines[i];
-      final trimmedLine = line.trim();
+    try {
+      final sections = <ExplanationSection>[];
+      final lines = text.split('\n');
       
-      // Skip empty lines unless we're collecting content
-      if (trimmedLine.isEmpty) {
-        if (currentSection != null && currentSection.content.isNotEmpty) {
-          // Empty line signals end of section content
+      ExplanationSection? currentSection;
+      int startIndex = 0;
+      
+      // Skip the page title line if it exists
+      if (lines.isNotEmpty && lines.first.trim().startsWith('#') && lines.first.trim().endsWith('#')) {
+        startIndex = 1;
+      }
+      
+      for (int i = startIndex; i < lines.length; i++) {
+        final line = lines[i];
+        final trimmedLine = line.trim();
+        
+        // Skip empty lines unless we're collecting content
+        if (trimmedLine.isEmpty) {
+          if (currentSection != null && currentSection.content.isNotEmpty) {
+            // Empty line signals end of section content
+            continue;
+          }
           continue;
         }
-        continue;
+        
+        // Check for table start
+        if (trimmedLine == '###TABLE_START###') {
+          final tableData = _parseTable(lines, i);
+          if (tableData != null) {
+            if (currentSection == null) {
+              currentSection = ExplanationSection(title: '', content: [], isSubheading: false);
+            }
+            currentSection.content.add(tableData.table);
+            i = tableData.endIndex;
+            continue;
+          }
+        }
+        
+        // Check for expandable start
+        if (trimmedLine.startsWith('###EXPANDABLE_START###')) {
+          final expandableData = _parseExpandable(lines, i);
+          if (expandableData != null) {
+            if (currentSection == null) {
+              currentSection = ExplanationSection(title: '', content: [], isSubheading: false);
+            }
+            currentSection.content.add(expandableData.expandable);
+            i = expandableData.endIndex;
+            continue;
+          }
+        }
+        
+        // Check for subheading FIRST (###Title###) before section header
+        if (trimmedLine.startsWith('###') && trimmedLine.endsWith('###') && trimmedLine.length > 6) {
+          // Skip if it's a table or expandable marker
+          if (trimmedLine == '###TABLE_START###' || 
+              trimmedLine == '###TABLE_END###' ||
+              trimmedLine.startsWith('###EXPANDABLE_START###') ||
+              trimmedLine == '###EXPANDABLE_END###' ||
+              trimmedLine.startsWith('###EXPAND_ITEM_START###') ||
+              trimmedLine == '###EXPAND_ITEM_END###') {
+            continue;
+          }
+          
+          // This is a subheading ###Title###
+          if (currentSection == null) {
+            // Create a default section for subheading without a main header
+            currentSection = ExplanationSection(title: '', content: [], isSubheading: false);
+          }
+          
+          // Add subheading as special content
+          final subheadingTitle = trimmedLine.substring(3, trimmedLine.length - 3);
+          currentSection.content.add('###SUBHEADING###$subheadingTitle');
+        } else if (trimmedLine.startsWith('##') && trimmedLine.endsWith('##') && trimmedLine.length > 4) {
+          // Save previous section
+          if (currentSection != null) {
+            sections.add(currentSection);
+          }
+          
+          // Start new section
+          final title = trimmedLine.substring(2, trimmedLine.length - 2);
+          currentSection = ExplanationSection(
+            title: title,
+            content: [],
+            isSubheading: false,
+          );
+        } else {
+          // Add content to current section
+          if (currentSection == null) {
+            // Create a default section for content without a header
+            currentSection = ExplanationSection(title: '', content: [], isSubheading: false);
+          }
+          currentSection.content.add(trimmedLine);
+        }
       }
       
-      // Check for subheading FIRST (###Title###) before section header
-      if (trimmedLine.startsWith('###') && trimmedLine.endsWith('###') && trimmedLine.length > 6) {
-        // This is a subheading ###Title###
-        if (currentSection == null) {
-          // Create a default section for subheading without a main header
-          currentSection = ExplanationSection(title: '', content: [], isSubheading: false);
-        }
-        
-        // Add subheading as special content
-        final subheadingTitle = trimmedLine.substring(3, trimmedLine.length - 3);
-        currentSection.content.add('###SUBHEADING###$subheadingTitle');
-      } else if (trimmedLine.startsWith('##') && trimmedLine.endsWith('##') && trimmedLine.length > 4) {
-        // Save previous section
-        if (currentSection != null) {
-          sections.add(currentSection);
-        }
-        
-        // Start new section
-        final title = trimmedLine.substring(2, trimmedLine.length - 2);
-        currentSection = ExplanationSection(
-          title: title,
-          content: [],
-          isSubheading: false,
-        );
-      } else {
-        // Add content to current section
-        if (currentSection == null) {
-          // Create a default section for content without a header
-          currentSection = ExplanationSection(title: '', content: [], isSubheading: false);
-        }
-        currentSection.content.add(trimmedLine);
+      // Add the last section
+      if (currentSection != null) {
+        sections.add(currentSection);
       }
+      
+      return sections;
+    } catch (e, stackTrace) {
+      print('ERROR: Exception in _parseExplanationText: $e');
+      // Return a safe fallback
+      return [ExplanationSection(title: 'Error', content: ['Failed to parse content: $e'], isSubheading: false)];
     }
-    
-    // Add the last section
-    if (currentSection != null) {
-      sections.add(currentSection);
+  }
+
+  /// Parse table data from lines starting at startIndex
+  _TableParseResult? _parseTable(List<String> lines, int startIndex) {
+    try {
+      final headers = <String>[];
+      final rows = <List<String>>[];
+      
+      int i = startIndex + 1; // Skip TABLE_START line
+      
+      // Parse headers (first line after TABLE_START)
+      if (i < lines.length) {
+        final headerLine = lines[i].trim();
+        if (headerLine.isNotEmpty) {
+          headers.addAll(headerLine.split('|').map((h) => h.trim()));
+          i++;
+        }
+      }
+      
+      // Parse rows until TABLE_END
+      while (i < lines.length) {
+        final line = lines[i].trim();
+        
+        if (line == '###TABLE_END###') {
+          break;
+        }
+        
+        if (line.isNotEmpty && line.contains('|')) {
+          final rowData = line.split('|').map((cell) => cell.trim()).toList();
+          rows.add(rowData);
+        }
+        i++;
+        
+        // Safety check to prevent infinite loop
+        if (i > startIndex + 100) {
+          break;
+        }
+      }
+      
+      if (headers.isNotEmpty && rows.isNotEmpty) {
+        return _TableParseResult(TableData(headers: headers, rows: rows), i);
+      }
+      
+      return null;
+    } catch (e) {
+      print('ERROR TABLE: Exception in _parseTable: $e');
+      return null;
     }
-    
-    return sections;
+  }
+
+  /// Parse expandable data from lines starting at startIndex
+  _ExpandableParseResult? _parseExpandable(List<String> lines, int startIndex) {
+    try {
+      final items = <ExpandableItem>[];
+      String title = '';
+      
+      int i = startIndex;
+      final startLine = lines[i].trim();
+      
+      // Extract title from EXPANDABLE_START line
+      if (startLine.startsWith('###EXPANDABLE_START###')) {
+        title = startLine.substring('###EXPANDABLE_START###'.length);
+      }
+      
+      i++; // Move to next line
+      
+      String? currentItemTitle;
+      final currentItemContent = <String>[];
+      
+      while (i < lines.length) {
+        final line = lines[i].trim();
+        
+        if (line == '###EXPANDABLE_END###') {
+          // Add the last item if exists
+          if (currentItemTitle != null && currentItemContent.isNotEmpty) {
+            items.add(ExpandableItem(
+              title: currentItemTitle,
+              content: currentItemContent.join('\n'),
+            ));
+          }
+          break;
+        }
+        
+        if (line.startsWith('###EXPAND_ITEM_START###')) {
+          // Save previous item if exists
+          if (currentItemTitle != null && currentItemContent.isNotEmpty) {
+            items.add(ExpandableItem(
+              title: currentItemTitle,
+              content: currentItemContent.join('\n'),
+            ));
+          }
+          
+          // Start new item
+          currentItemTitle = line.substring('###EXPAND_ITEM_START###'.length);
+          currentItemContent.clear();
+        } else if (line == '###EXPAND_ITEM_END###') {
+          // Item end marker - content already collected
+          // Continue to next iteration (i++ will happen at end of loop)
+        } else if (line.isNotEmpty && currentItemTitle != null) {
+          // Add content to current item
+          currentItemContent.add(line);
+        }
+        
+        i++;
+        
+        // Safety check to prevent infinite loop
+        if (i > startIndex + 200) {
+          break;
+        }
+      }
+      
+      if (items.isNotEmpty) {
+        return _ExpandableParseResult(ExpandableData(title: title, items: items), i);
+      }
+      
+      return null;
+    } catch (e) {
+      print('ERROR EXPANDABLE: Exception in _parseExpandable: $e');
+      return null;
+    }
   }
 
   /// Calculate optimal image height for web platform based on screen dimensions
@@ -481,6 +819,8 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                       widget.imagePath,
                       fit: BoxFit.cover,
                       errorBuilder: (context, error, stackTrace) {
+                        print('DEBUG: Failed to load image: ${widget.imagePath}');
+                        print('DEBUG: Error: $error');
                         return _buildImageFallback(context);
                       },
                     ),
@@ -532,10 +872,12 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
   Widget _buildImageFallback(BuildContext context) {
     final isWeb = kIsWeb;
     
+    // Try the logo first, then show gradient if that fails too
     return Image.asset(
       'assets/images/logo_transparent.webp',
       fit: BoxFit.cover,
       errorBuilder: (context, error, stackTrace) {
+        print('DEBUG: Logo fallback also failed, using gradient fallback');
         return Container(
           width: double.infinity,
           height: double.infinity,
@@ -550,10 +892,24 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
             ),
           ),
           child: Center(
-            child: Icon(
-              Icons.image_not_supported,
-              size: isWeb ? 64 : 48,
-              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.pets,
+                  size: isWeb ? 64 : 48,
+                  color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  widget.categoryName,
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
+                    fontWeight: FontWeight.w500,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
             ),
           ),
         );
@@ -685,7 +1041,7 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
 
 class ExplanationSection {
   final String title;
-  final List<String> content;
+  final List<dynamic> content; // Changed to dynamic to support different content types
   final bool isSubheading;
 
   ExplanationSection({
@@ -693,5 +1049,294 @@ class ExplanationSection {
     required this.content,
     this.isSubheading = false,
   });
+}
+
+class TableData {
+  final List<String> headers;
+  final List<List<String>> rows;
+
+  TableData({
+    required this.headers,
+    required this.rows,
+  });
+}
+
+class ExpandableData {
+  final String title;
+  final List<ExpandableItem> items;
+
+  ExpandableData({
+    required this.title,
+    required this.items,
+  });
+}
+
+class ExpandableItem {
+  final String title;
+  final String content;
+  bool isExpanded;
+
+  ExpandableItem({
+    required this.title,
+    required this.content,
+    this.isExpanded = false,
+  });
+}
+
+class _TableParseResult {
+  final TableData table;
+  final int endIndex;
+  
+  _TableParseResult(this.table, this.endIndex);
+}
+
+class _ExpandableParseResult {
+  final ExpandableData expandable;
+  final int endIndex;
+  
+  _ExpandableParseResult(this.expandable, this.endIndex);
+}
+
+class _ExpandableItemWidget extends StatefulWidget {
+  final ExpandableItem item;
+  final bool isLast;
+  final bool isWeb;
+  final bool isDesktop;
+  final bool isTablet;
+
+  const _ExpandableItemWidget({
+    required this.item,
+    required this.isLast,
+    required this.isWeb,
+    required this.isDesktop,
+    required this.isTablet,
+  });
+
+  @override
+  State<_ExpandableItemWidget> createState() => _ExpandableItemWidgetState();
+}
+
+class _ExpandableItemWidgetState extends State<_ExpandableItemWidget>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _animationController;
+  late Animation<double> _expandAnimation;
+  late Animation<double> _iconRotationAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+    _animationController = AnimationController(
+      duration: const Duration(milliseconds: 300),
+      vsync: this,
+    );
+
+    _expandAnimation = CurvedAnimation(
+      parent: _animationController,
+      curve: Curves.easeInOut,
+    );
+
+    _iconRotationAnimation = Tween<double>(
+      begin: 0.0,
+      end: 0.5,
+    ).animate(CurvedAnimation(
+      parent: _animationController,
+      curve: Curves.easeInOut,
+    ));
+
+    if (widget.item.isExpanded) {
+      _animationController.value = 1.0;
+    }
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  void _toggleExpansion() {
+    setState(() {
+      widget.item.isExpanded = !widget.item.isExpanded;
+      if (widget.item.isExpanded) {
+        _animationController.forward();
+      } else {
+        _animationController.reverse();
+      }
+    });
+  }
+
+  /// Build rich content with support for paragraphs, bullet points, and formatting
+  Widget _buildRichContent(BuildContext context, String content) {
+    final lines = content.split('\n');
+    final widgets = <Widget>[];
+    
+    for (int i = 0; i < lines.length; i++) {
+      final line = lines[i].trim();
+      
+      if (line.isEmpty) {
+        // Add spacing for empty lines (paragraph breaks)
+        widgets.add(const SizedBox(height: 8));
+        continue;
+      }
+      
+      Widget textWidget;
+      
+      if (line.startsWith('**') && line.endsWith('**') && line.length > 4) {
+        // Bold headers
+        final boldText = line.substring(2, line.length - 2);
+        textWidget = Container(
+          width: double.infinity,
+          margin: const EdgeInsets.only(top: 12, bottom: 8),
+          child: Text(
+            boldText,
+            style: Theme.of(context).textTheme.titleSmall?.copyWith(
+              fontWeight: FontWeight.bold,
+              fontSize: widget.isDesktop ? 16 : (widget.isTablet ? 15 : 14),
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            textAlign: widget.isWeb ? TextAlign.center : TextAlign.start,
+          ),
+        );
+      } else if (line.startsWith('• ')) {
+        // Bullet points
+        final bulletText = line.substring(2);
+        textWidget = Container(
+          margin: const EdgeInsets.only(bottom: 4),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: const EdgeInsets.only(top: 8, right: 8),
+                width: 4,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.primary,
+                  shape: BoxShape.circle,
+                ),
+              ),
+              Expanded(
+                child: Text(
+                  bulletText,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    height: 1.5,
+                    fontSize: widget.isDesktop ? 14 : (widget.isTablet ? 13 : 12),
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
+                  textAlign: widget.isWeb ? TextAlign.center : TextAlign.start,
+                ),
+              ),
+            ],
+          ),
+        );
+      } else {
+        // Regular paragraphs
+        textWidget = Container(
+          width: double.infinity,
+          margin: const EdgeInsets.only(bottom: 8),
+          child: Text(
+            line,
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+              height: 1.6,
+              fontSize: widget.isDesktop ? 15 : (widget.isTablet ? 14 : 13),
+              color: Theme.of(context).colorScheme.onSurface,
+            ),
+            textAlign: widget.isWeb ? TextAlign.center : TextAlign.start,
+          ),
+        );
+      }
+      
+      widgets.add(textWidget);
+    }
+    
+    return Column(
+      crossAxisAlignment: widget.isWeb ? CrossAxisAlignment.center : CrossAxisAlignment.start,
+      children: widgets,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        border: widget.isLast ? null : Border(
+          bottom: BorderSide(
+            color: Theme.of(context).colorScheme.outline.withOpacity(0.1),
+            width: 1,
+          ),
+        ),
+      ),
+      child: Column(
+        children: [
+          // Header with title and expand/collapse button
+          InkWell(
+            onTap: _toggleExpansion,
+            borderRadius: BorderRadius.circular(8),
+            child: Container(
+              width: double.infinity,
+              padding: EdgeInsets.all(
+                widget.isDesktop ? 20 : (widget.isTablet ? 18 : 16),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      widget.item.title,
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.w600,
+                        color: Theme.of(context).colorScheme.onSurface,
+                        fontSize: widget.isDesktop ? 18 : (widget.isTablet ? 16 : 15),
+                      ),
+                      textAlign: widget.isWeb ? TextAlign.center : TextAlign.start,
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  AnimatedBuilder(
+                    animation: _iconRotationAnimation,
+                    builder: (context, child) {
+                      return Transform.rotate(
+                        angle: _iconRotationAnimation.value * 3.14159,
+                        child: Icon(
+                          Icons.expand_more,
+                          color: Theme.of(context).colorScheme.primary,
+                          size: widget.isDesktop ? 28 : (widget.isTablet ? 26 : 24),
+                        ),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ),
+          
+          // Expandable content
+          SizeTransition(
+            sizeFactor: _expandAnimation,
+            child: Container(
+              width: double.infinity,
+              padding: EdgeInsets.fromLTRB(
+                widget.isDesktop ? 20 : (widget.isTablet ? 18 : 16),
+                0,
+                widget.isDesktop ? 20 : (widget.isTablet ? 18 : 16),
+                widget.isDesktop ? 20 : (widget.isTablet ? 18 : 16),
+              ),
+              child: Container(
+                padding: EdgeInsets.all(
+                  widget.isDesktop ? 16 : (widget.isTablet ? 14 : 12),
+                ),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: Theme.of(context).colorScheme.outline.withOpacity(0.1),
+                  ),
+                ),
+                child: _buildRichContent(context, widget.item.content),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
 

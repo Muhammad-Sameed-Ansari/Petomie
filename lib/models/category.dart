@@ -62,55 +62,55 @@ class CategoryData {
           id: 'main_chakra',
           label: 'Main Chakra',
           icon: Icons.circle,
-          imagePath: 'assets/images/chakras/main_chakra.png',
+          imagePath: 'assets/images/energy/chakras/main_chakra.png',
           subcategories: [
             Category(
               id: 'root_chakra',
               label: 'Root Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/chakras/main_chakra/root_chakra.webp',
+              imagePath: 'assets/images/energy/chakras/main_chakra/root_chakra.png',
             ),
             Category(
               id: 'sacral_chakra',
               label: 'Sacral Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/chakras/main_chakra/sacral_chakra.webp',
+              imagePath: 'assets/images/energy/chakras/main_chakra/sacral_chakra.png',
             ),
             Category(
               id: 'solar_plexus_chakra',
               label: 'Solar Plexus Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/chakras/main_chakra/solar_plexus_chakra.webp',
+              imagePath: 'assets/images/energy/chakras/main_chakra/solar_plexus_chakra.png',
             ),
             Category(
               id: 'heart_chakra',
               label: 'Heart Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/chakras/main_chakra/heart_chakra.webp',
+              imagePath: 'assets/images/energy/chakras/main_chakra/heart_chakra.png',
             ),
             Category(
               id: 'throat_chakra',
               label: 'Throat Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/chakras/main_chakra/throat_chakra.webp',
+              imagePath: 'assets/images/energy/chakras/main_chakra/throat_chakra.png',
             ),
             Category(
               id: 'third_eye_chakra',
               label: 'Third Eye Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/chakras/main_chakra/third_eye_chakra.webp',
+              imagePath: 'assets/images/energy/chakras/main_chakra/third_eye_chakra.png',
             ),
             Category(
               id: 'crown_chakra',
               label: 'Crown Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/chakras/main_chakra/crown_chakra.webp',
+              imagePath: 'assets/images/energy/chakras/main_chakra/crown_chakra.png',
             ),
             Category(
               id: 'brachial_shoulder_chakra',
               label: 'Brachial/Shoulder Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/chakras/main_chakra/brachial_shoulder_chakra.webp',
+              imagePath: 'assets/images/energy/chakras/main_chakra/brachial_shoulder_chakra.png',
             ),
           ],
         ),
@@ -120,37 +120,147 @@ class CategoryData {
       List<Category> secondarySubs = [];
       if (animal == 'horse') {
         secondarySubs = [
-          Category(id: 'hoof_chakras', label: 'Hoof Chakras (4)', icon: Icons.circle),
-          Category(id: 'tail_chakra', label: 'Tail Chakra', icon: Icons.circle),
-          Category(id: 'nose_muzzle_chakra', label: 'Nose/Muzzle Chakra', icon: Icons.circle),
-          Category(id: 'ear_chakra', label: 'Ear Chakra', icon: Icons.circle),
-          Category(id: 'flank_chakras', label: 'Flank Chakras', icon: Icons.circle),
-          Category(id: 'whorl_chakra', label: 'Whorl Chakra', icon: Icons.circle),
-          Category(id: 'spleen_chakra', label: 'Spleen Chakra', icon: Icons.circle),
+          Category(
+            id: 'hoof_chakras',
+            label: 'Hoof Chakras (4)',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/hoof_chakras.png',
+          ),
+          Category(
+            id: 'tail_chakra',
+            label: 'Tail Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.png',
+          ),
+          Category(
+            id: 'nose_muzzle_chakra',
+            label: 'Nose/Muzzle Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/nose_chakra.png',
+          ),
+          Category(
+            id: 'ear_chakra',
+            label: 'Ear Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.png',
+          ),
+          Category(
+            id: 'flank_chakras',
+            label: 'Flank Chakras',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/flank_chakras.png',
+          ),
+          Category(
+            id: 'whorl_chakra',
+            label: 'Whorl Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/whorl_chakra.png',
+          ),
+          Category(
+            id: 'spleen_chakra',
+            label: 'Spleen Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.png',
+          ),
         ];
       } else if (animal == 'dog') {
         secondarySubs = [
-          Category(id: 'paw_chakras', label: 'Paw Chakras (4)', icon: Icons.circle),
-          Category(id: 'tail_chakra', label: 'Tail Chakra', icon: Icons.circle),
-          Category(id: 'ear_chakra', label: 'Ear Chakra', icon: Icons.circle),
-          Category(id: 'nose_chakra', label: 'Nose Chakra', icon: Icons.circle),
-          Category(id: 'sacral_chakra', label: 'Sacral Chakra', icon: Icons.circle),
+          Category(
+            id: 'paw_chakras',
+            label: 'Paw Chakras (4)',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.png',
+          ),
+          Category(
+            id: 'tail_chakra',
+            label: 'Tail Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.png',
+          ),
+          Category(
+            id: 'ear_chakra',
+            label: 'Ear Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.png',
+          ),
+          Category(
+            id: 'nose_chakra',
+            label: 'Nose Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/nose_chakra.png',
+          ),
+          Category(
+            id: 'spleen_chakra',
+            label: 'Spleen Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.png',
+          ),
         ];
       } else if (animal == 'cat') {
         secondarySubs = [
-          Category(id: 'paw_chakras', label: 'Paw Chakras (4)', icon: Icons.circle),
-          Category(id: 'tail_chakra', label: 'Tail Chakra', icon: Icons.circle),
-          Category(id: 'spleen_chakra', label: 'Spleen Chakra', icon: Icons.circle),
-          Category(id: 'whisker_chakras', label: 'Whisker Chakras', icon: Icons.circle),
-          Category(id: 'ear_chakra', label: 'Ear Chakra', icon: Icons.circle),
+          Category(
+            id: 'paw_chakras',
+            label: 'Paw Chakras (4)',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.png',
+          ),
+          Category(
+            id: 'tail_chakra',
+            label: 'Tail Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.png',
+          ),
+          Category(
+            id: 'spleen_chakra',
+            label: 'Spleen Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.png',
+          ),
+          Category(
+            id: 'whisker_chakras',
+            label: 'Whisker Chakras',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/whisker_chakras.png',
+          ),
+          Category(
+            id: 'ear_chakra',
+            label: 'Ear Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.png',
+          ),
         ];
       } else if (animal == 'bird') {
         secondarySubs = [
-          Category(id: 'wing_chakras', label: 'Wing Chakras (2)', icon: Icons.circle),
-          Category(id: 'beak_chakra', label: 'Beak Chakra', icon: Icons.circle),
-          Category(id: 'feet_chakras', label: 'Feet Chakras (2)', icon: Icons.circle),
-          Category(id: 'ear_side_head_chakras', label: 'Ear/Side Head Chakras', icon: Icons.circle),
-          Category(id: 'tail_feather_chakra', label: 'Tail Feather Chakra', icon: Icons.circle),
+          Category(
+            id: 'wing_chakras',
+            label: 'Wing Chakras (2)',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/wing_chakras.png',
+          ),
+          Category(
+            id: 'beak_chakra',
+            label: 'Beak Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/beak_chakra.png',
+          ),
+          Category(
+            id: 'feet_chakras',
+            label: 'Feet Chakras (2)',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/feet_chakras.png',
+          ),
+          Category(
+            id: 'ear_side_head_chakras',
+            label: 'Ear/Side Head Chakras',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.png',
+          ),
+          Category(
+            id: 'tail_feather_chakra',
+            label: 'Tail Feather Chakra', 
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_feather_chakra.png',
+          ),
         ];
       }
 
@@ -160,7 +270,7 @@ class CategoryData {
             id: 'secondary_chakra',
             label: 'Secondary Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/chakras/secondary_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra.png',
             subcategories: secondarySubs,
           ),
         );
@@ -169,7 +279,7 @@ class CategoryData {
 
     // Define aura & energy field subcategories for Horse, Dog, and Cat
     List<Category> auraEnergyFieldSubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       auraEnergyFieldSubcategories = [
         Category(id: 'aura_layers', label: 'Aura Layers (etheric, emotional, mental, spiritual)', icon: Icons.layers),
         Category(id: 'field_strength_weakness', label: 'Field Strength / Weakness', icon: Icons.flash_on),
@@ -179,11 +289,11 @@ class CategoryData {
 
     // Define meridians subcategories for Horse, Dog, and Cat
     List<Category> meridiansSubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       meridiansSubcategories = [
         Category(
-          id: 'paired_meridians', 
-          label: 'Paired Meridians', 
+          id: 'primary_meridian', 
+          label: 'Primary Meridian', 
           icon: Icons.call_split,
           subcategories: [
             Category(id: 'lung_meridian', label: 'Lung (LU)', icon: Icons.air),
@@ -197,20 +307,26 @@ class CategoryData {
             Category(id: 'pericardium_meridian', label: 'Pericardium (PC)', icon: Icons.favorite_border),
             Category(id: 'triple_heater_meridian', label: 'Triple Heater / Triple Burner (TH / TB / SJ)', icon: Icons.whatshot),
             Category(id: 'gall_bladder_meridian', label: 'Gall Bladder (GB)', icon: Icons.local_hospital),
-            Category(id: 'liver_meridian', label: 'Liver (LV)', icon: Icons.local_hospital),
           ],
         ),
         Category(
-          id: 'unpaired_meridians', 
-          label: 'Unpaired Meridians', 
+          id: 'extraordinary_meridian', 
+          label: 'Extraordinary Meridian', 
           icon: Icons.linear_scale,
           subcategories: [
-            Category(id: 'governing_vessel', label: 'Governing Vessel', icon: Icons.vertical_split),
+            Category(id: 'liver_meridian', label: 'Liver (LV)', icon: Icons.local_hospital),
             Category(id: 'conception_vessel', label: 'Conception Vessel', icon: Icons.horizontal_split),
+            Category(id: 'governing_vessel', label: 'Governing Vessel', icon: Icons.vertical_split),
+            Category(id: 'chong_mai', label: 'Chong Mai', icon: Icons.vertical_split),
+            Category(id: 'dai_mai_belt_vessel', label: 'Dai Mai (Belt Vessel)', icon: Icons.vertical_split),
+            Category(id: 'yin_qiao_mai_yin_heel_vessel', label: 'Yin Qiao Mai (Yin Heel Vessel)', icon: Icons.vertical_split),
+            Category(id: 'yang_qiao_mai_yang_heel_vessel', label: 'Yang Qiao Mai (Yang Heel Vessel)', icon: Icons.vertical_split),
+            Category(id: 'yin_wei_mai_yin_linking_vessel', label: 'Yin Wei Mai (Yin Linking Vessel)', icon: Icons.vertical_split),
+            Category(id: 'yang_wei_mai_yang_linking_vessel', label: 'Yang Wei Mai (Yang Linking Vessel)', icon: Icons.vertical_split),
           ],
         ),
         Category(
-          id: 'energy_balance_in_body',
+          id: 'energy_balance_in_the_body',
           label: 'Energy Balance in the Body',
           icon: Icons.balance,
           subcategories: [
@@ -222,7 +338,7 @@ class CategoryData {
 
     // Define life force / vital energy subcategories for Horse, Dog, and Cat
     List<Category> lifeForceSubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       lifeForceSubcategories = [
         Category(id: 'general_energy_level', label: 'General Energy Level', icon: Icons.battery_full),
         Category(id: 'flow_vs_stagnation', label: 'Flow vs. Stagnation', icon: Icons.waves),
@@ -232,7 +348,7 @@ class CategoryData {
 
     // Define energy imbalances subcategories for Horse, Dog, and Cat
     List<Category> energyImbalancesSubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       energyImbalancesSubcategories = [
         Category(id: 'stress_overwhelm', label: 'Stress & Overwhelm', icon: Icons.warning),
         Category(id: 'energy_leaks', label: 'Energy Leaks', icon: Icons.leak_remove),
@@ -255,7 +371,7 @@ class CategoryData {
 
     // Define energy connections subcategories for Horse, Dog, and Cat
     List<Category> energyConnectionsSubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       energyConnectionsSubcategories = [
         Category(id: 'cord_with_humans', label: 'Cord with Humans', icon: Icons.people),
         Category(id: 'cord_with_other_animals', label: 'Cord with Other Animals', icon: Icons.pets),
@@ -266,7 +382,7 @@ class CategoryData {
 
     // Define sacred geometry & vibrational patterns subcategories for Horse, Dog, and Cat
     List<Category> sacredGeometrySubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       sacredGeometrySubcategories = [
         Category(id: 'flower_of_life', label: 'Flower of Life (unity, interconnectedness)', icon: Icons.blur_on),
         Category(id: 'seed_of_life', label: 'Seed of Life (beginnings, regeneration)', icon: Icons.grain),
@@ -277,7 +393,7 @@ class CategoryData {
 
     // Define states of harmony subcategories for Horse, Dog, and Cat
     List<Category> statesOfHarmonySubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       statesOfHarmonySubcategories = [
         Category(id: 'balance_homeostasis', label: 'Balance (homeostasis)', icon: Icons.balance),
         Category(id: 'disharmony_chaotic_field', label: 'Disharmony (chaotic field)', icon: Icons.warning_amber),
@@ -286,7 +402,7 @@ class CategoryData {
 
     // Define energetic influences subcategories for Horse, Dog, and Cat
     List<Category> energeticInfluencesSubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       energeticInfluencesSubcategories = [
         Category(id: 'karmic_patterns', label: 'Karmic Patterns', icon: Icons.replay_circle_filled),
         Category(id: 'contracts_vows', label: 'Contracts & Vows', icon: Icons.description),
@@ -299,7 +415,7 @@ class CategoryData {
 
     // Define negative beliefs subcategories for Horse, Dog, and Cat
     List<Category> negativeBeliefsSubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       negativeBeliefsSubcategories = [
         Category(id: 'safety_survival_beliefs', label: 'Safety & Survival Beliefs', icon: Icons.security),
         Category(id: 'trust_relationship_beliefs', label: 'Trust & Relationship Beliefs', icon: Icons.handshake),
@@ -312,7 +428,7 @@ class CategoryData {
 
     // Define unresolved emotions subcategories for Horse, Dog, and Cat
     List<Category> unresolvedEmotionsSubcategories = [];
-    if (['horse', 'dog', 'cat'].contains(animalId.toLowerCase())) {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       unresolvedEmotionsSubcategories = [
         Category(id: 'fear_anxiety', label: 'Fear / Anxiety', icon: Icons.warning),
         Category(id: 'sadness_grief', label: 'Sadness / Grief', icon: Icons.sentiment_very_dissatisfied),
@@ -331,71 +447,77 @@ class CategoryData {
         id: 'chakras',
         label: 'Chakras',
         icon: Icons.brightness_7,
-        imagePath: 'assets/images/chakras/chakras.webp',
+        imagePath: 'assets/images/energy/chakras.webp',
         subcategories: chakraSubcategories,
       ),
       Category(
         id: 'aura_energy_field',
         label: 'Aura & Energy Field',
         icon: Icons.blur_circular,
-        imagePath: 'assets/images/$animalId/Energy/aura_&_energy_field.webp',
+        imagePath: 'assets/images/$animalId/energy/aura_&_energy_field.webp',
         subcategories: auraEnergyFieldSubcategories,
       ),
       Category(
         id: 'meridians',
         label: 'Meridians',
         icon: Icons.linear_scale,
-        imagePath: 'assets/images/$animalId/Energy/meridians.webp',
+        imagePath: 'assets/images/$animalId/energy/meridians.webp',
         subcategories: meridiansSubcategories,
       ),
       Category(
         id: 'life_force_vital_energy',
         label: 'Life Force / Vital Energy',
         icon: Icons.energy_savings_leaf,
+        imagePath: 'assets/images/energy/life_force_vital_energy.png',
         subcategories: lifeForceSubcategories,
       ),
       Category(
         id: 'energy_imbalances',
         label: 'Energy Imbalances',
         icon: Icons.balance,
+        imagePath: 'assets/images/energy/energy_imbalances.png',
         subcategories: energyImbalancesSubcategories,
       ),
       Category(
         id: 'energy_connections',
         label: 'Energy Connections',
         icon: Icons.device_hub,
+        imagePath: 'assets/images/energy/energy_connections.png',
         subcategories: energyConnectionsSubcategories,
       ),
       Category(
         id: 'sacred_geometry_vibrational_patterns',
         label: 'Sacred Geometry & Vibrational Patterns',
         icon: Icons.hexagon,
+        imagePath: 'assets/images/energy/sacred_geometry_vibrational_patterns.png',
         subcategories: sacredGeometrySubcategories,
       ),
       Category(
         id: 'states_of_harmony',
         label: 'States of Harmony',
         icon: Icons.self_improvement,
+        imagePath: 'assets/images/energy/states_of_harmony.png',
         subcategories: statesOfHarmonySubcategories,
       ),
       Category(
         id: 'energetic_influences',
         label: 'Energetic Influences',
         icon: Icons.waves,
-        imagePath: 'assets/images/$animalId/Energy/energetic_influences.png',
+        imagePath: 'assets/images/$animalId/energy/energetic_influences.png',
         subcategories: energeticInfluencesSubcategories,
       ),
       Category(
         id: 'negative_beliefs',
         label: 'Negative Beliefs',
         icon: Icons.psychology_alt,
+        imagePath: 'assets/images/energy/negative_beliefs.png',
         subcategories: negativeBeliefsSubcategories,
       ),
       Category(
         id: 'unresolved_emotions',
         label: 'Unresolved Emotions',
         icon: Icons.sentiment_dissatisfied,
-        imagePath: 'assets/images/$animalId/Energy/unresolved_emotions.png',
+        imagePath: 'assets/images/$animalId/energy/unresolved_emotions.png',
         subcategories: unresolvedEmotionsSubcategories,
       ),
     ];

@@ -90,10 +90,26 @@ flutter:
     - assets/images/
     - assets/details/
     - assets/details/energy/
+    - assets/details/energy/aura_energy_field/
     - assets/details/energy/chakras/
     - assets/details/energy/chakras/main_chakra/
-    - assets/details/energy/chakras/secondary_chakra/
+    - assets/details/energy/meridians/
+    - assets/details/energy/meridians/primary_meridian/
+    - assets/details/energy/meridians/extraordinary_meridian/
+    - assets/details/energy/meridians/energy_balance_in_the_body/
+    - assets/details/energy/life_force_vital_energy/
+    - assets/details/energy/energy_imbalances/
+    - assets/details/energy/energy_imbalances/environmental_impacts/
+    - assets/details/energy/energy_connections/
+    - assets/details/energy/sacred_geometry_vibrational_patterns/
+    - assets/details/energy/states_of_harmony/
+    - assets/details/energy/energetic_influences/
+    - assets/details/energy/negative_beliefs/
+    - assets/details/energy/unresolved_emotions/
     - assets/details/dog/
+    - assets/details/dog/energy/
+    - assets/details/dog/energy/chakras/
+    - assets/details/dog/energy/chakras/secondary_chakra/
     - assets/details/dog/skeletal_system/
     - assets/details/dog/skeletal_system/skull/
     - assets/details/dog/skeletal_system/spine/
@@ -111,6 +127,18 @@ flutter:
     - assets/details/dog/skeletal_system/hindlimb/
     - assets/details/dog/skeletal_system/special_bones/
     - assets/details/dog/skeletal_system/dentition/
+    - assets/details/horse/
+    - assets/details/horse/energy/
+    - assets/details/horse/energy/chakras/
+    - assets/details/horse/energy/chakras/secondary_chakra/
+    - assets/details/cat/
+    - assets/details/cat/energy/
+    - assets/details/cat/energy/chakras/
+    - assets/details/cat/energy/chakras/secondary_chakra/
+    - assets/details/bird/
+    - assets/details/bird/energy/
+    - assets/details/bird/energy/chakras/
+    - assets/details/bird/energy/chakras/secondary_chakra/
     - assets/images/horse/
     - assets/images/dog/
     - assets/images/cat/
@@ -118,13 +146,14 @@ flutter:
     - assets/images/cow/
     - assets/images/guineapig/
     - assets/images/rabbit/
-    - assets/images/horse/Energy/
-    - assets/images/dog/Energy/
-    - assets/images/cat/Energy/
-    - assets/images/bird/Energy/
-    - assets/images/chakras/
-    - assets/images/chakras/main_chakra/
-    - assets/images/chakras/secondary_chakra/
+    - assets/images/horse/energy/
+    - assets/images/dog/energy/
+    - assets/images/cat/energy/
+    - assets/images/bird/energy/
+    - assets/images/energy/
+    - assets/images/energy/chakras/
+    - assets/images/energy/chakras/main_chakra/
+    - assets/images/energy/chakras/secondary_chakra/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
