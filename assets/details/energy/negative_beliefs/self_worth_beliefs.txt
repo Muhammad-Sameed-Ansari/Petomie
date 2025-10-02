@@ -1,0 +1,18 @@
+
+###TABLE_START###
+Set 1|Set 2
+I am not worthy.|I don’t deserve love.
+I am broken.|I am unfixable.
+I am a burden to others.|My needs are too much.
+I am not lovable.|I am hard to love.
+I am less than others.|Others are better than me.
+I am invisible.|I am not important.
+I am not allowed to take up space.|I must shrink myself to be accepted.
+I am not enough as I am.|I must change to be loved.
+I am defined by my flaws.|My value is based on what I do.
+I am unworthy of good things.|Blessings are for others, not me.
+I am a mistake.|I was not meant to exist.
+I cannot forgive myself.|My past defines me.
+I am weak.|Strength is not for me.
+I don’t belong anywhere.|I am always on the outside.
+###TABLE_END###

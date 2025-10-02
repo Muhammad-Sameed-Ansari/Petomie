@@ -1,0 +1,18 @@
+#Safety & Survival Beliefs#
+
+###TABLE_START###
+Set 1|Set 2 
+The ground is never stable.|Noise means danger is near.
+I am never truly safe, even when it’s quiet.|Stillness means danger is near.
+The unknown is dangerous.|I must control everything to stay safe.
+I have to watch everyone all the time.|Safety is not real; it is an illusion.
+Rest is unsafe; sleep is risky.|I was born unsafe.
+If I trust, I will get hurt.|The world will always hurt me.
+Safety is temporary and can vanish.|Safety is only for others, not for me.
+Danger comes when I least expect it.|I must stay invisible to survive.
+The environment will turn against me.|I have to anticipate every threat.
+Humans cannot be trusted with my safety.|Being alone means death.
+Comfort means I am vulnerable.|Even the herd/flock/pack can turn on me.
+If I feel joy, something bad will follow.|I must always be tense to survive.
+I am a target for harm.|       
+###TABLE_END###

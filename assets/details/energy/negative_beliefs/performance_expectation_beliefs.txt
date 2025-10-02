@@ -1,0 +1,19 @@
+#Performance & Expectation Beliefs#
+
+###TABLE_START###
+Set 1|Set 2
+I am never good enough.|No matter what I do, it will never be enough.
+I must always be perfect.|Mistakes make me a failure.
+I am only valued for what I achieve.|My worth depends on my performance.
+If I slow down, I will be punished.|Rest equals laziness.
+I must meet everyone’s expectations.|Disappointing others is unforgivable.
+I am responsible for everyone’s happiness.|Others’ needs always come before mine.
+I must always work harder.|I can never relax or let my guard down.
+I am defined by my results.|Failure means I am worthless.
+I have to earn love through success.|Praise is rare and conditional.
+If I don’t succeed, I will be rejected.|Criticism means I am broken.
+I can’t say no to demands.|Boundaries make me selfish.
+Pressure is the only way to get things done.|Ease means I am slacking.
+I must prove myself constantly.|I can never stop striving.
+I am only as good as my last success.|The bar will always keep moving higher.
+###TABLE_END###

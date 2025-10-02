@@ -1,0 +1,18 @@
+
+###TABLE_START###
+Set 1|Set 2
+I am not free.|My life is controlled by others.  
+I have no choices.|Choice is an illusion.  
+I am trapped by my circumstances.|There is no way out.  
+I cannot do what I want.|My desires are wrong.  
+I am powerless.|I have no control over my life.  
+I must obey to survive.|Rebellion is dangerous.  
+I have to sacrifice my needs.|My needs do not matter.  
+I am not allowed to say no.|Saying no will bring punishment.  
+I am not allowed to leave.|Leaving means I will lose everything.  
+I am stuck in the past.|The future is closed to me.  
+I must please everyone to stay safe.|Autonomy leads to rejection.  
+I cannot be myself.|My true self is unacceptable.  
+I have no personal space.|Boundaries will be crossed.  
+I am always restrained.|I will never be free.  
+###TABLE_END###

@@ -1,0 +1,19 @@
+#Trust & Relationship Beliefs#
+
+###TABLE_START###
+Set 1|Set 2
+I cannot trust anyone.|I will be betrayed.
+Trust makes me weak.|Love always leads to pain.
+I must rely only on myself.|If I open my heart, I will be hurt.
+Relationships are unsafe.|Connection is dangerous.
+Closeness leads to loss.|I will be rejected if I show my true self.
+Others will use me.|My needs are a burden.
+I am unlovable.|I am unworthy of affection.
+Bonds never last.|I am destined to be alone.
+If I depend on others, I will suffer.|I must give everything to be accepted.
+Love cannot be trusted.|Partnership means losing myself.
+If I forgive, I will be hurt again.|Loyalty is never returned.
+I have to hide my feelings to stay safe.|Vulnerability is dangerous.
+Intimacy means pain.|People I love will leave me.
+I can’t rely on my herd/flock/pack.|Support will always fail me.
+###TABLE_END###

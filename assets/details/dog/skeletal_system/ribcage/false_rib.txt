@@ -20,6 +20,46 @@ Last false rib before the floating rib
 More flexible due to longer costal cartilage
 Provides protection to cranial abdominal organs and diaphragm attachment
 
+##Clinical Significance##
+###EXPANDABLE_START###Clinical Examination Points
+###EXPAND_ITEM_START###Palpation Techniques
+The false ribs can be palpated by running fingers along the lateral chest wall. Rib 10 is easily identified as the first rib that doesn't connect directly to the sternum. Gentle pressure should be applied to assess for pain, swelling, or irregularities.
+
+Key palpation points include:
+• Lateral chest wall examination
+• Intercostal space assessment
+• Costal arch evaluation
+• Pain response testing
+
+Clinical findings may indicate rib fractures, muscle strain, or underlying pathology. Always compare bilateral symmetry during examination.
+###EXPAND_ITEM_END###
+###EXPAND_ITEM_START###Radiographic Landmarks
+On lateral radiographs, false ribs appear as curved radiopaque structures. The costal arch formed by their cartilages creates a distinctive pattern. Rib 11 is often used as a landmark for thoracotomy procedures.
+
+Radiographic considerations:
+• Lateral projection optimal for false rib visualization
+• Costal arch pattern assessment
+• Intercostal space measurement
+• Comparison with contralateral side
+
+The false ribs provide excellent anatomical landmarks for surgical planning and diagnostic imaging interpretation.
+###EXPAND_ITEM_END###
+###EXPAND_ITEM_START###Common Pathologies
+False ribs are susceptible to fractures during trauma. Rib 12 fractures are particularly concerning as they may indicate abdominal organ damage. Intercostal muscle strain between ribs 11-12 is common in athletic dogs.
+
+Pathological conditions include:
+
+**Traumatic Injuries:**
+Blunt force trauma commonly affects ribs 11-12 due to their exposed position. Multiple rib fractures may indicate severe chest trauma requiring immediate intervention.
+
+**Degenerative Changes:**
+Age-related changes include cartilage calcification and reduced flexibility. These changes may affect respiratory mechanics in older animals.
+
+**Surgical Complications:**
+Post-thoracotomy complications can include intercostal neuralgia, chronic pain, and reduced chest wall mobility. Proper surgical technique minimizes these risks.
+###EXPAND_ITEM_END###
+###EXPANDABLE_END###
+
 ##Function##
 Form the caudal portion of the thoracic cage while allowing flexibility for breathing and abdominal movement.
 Help complete the costal arch, which provides a protective boundary for internal organs.
