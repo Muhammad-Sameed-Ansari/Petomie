@@ -1,0 +1,21 @@
+#Pharyngeal Muscles#
+
+##Location##
+Form the muscular walls of the pharynx, surrounding the nasopharynx, oropharynx, and laryngopharynx.
+
+##Shape##
+Circular constrictor muscles and thin dilator muscles that control the pharyngeal diameter.
+
+##Parts##
+###1. Pharyngeal Constrictors###
+(Cricopharyngeus, Thyropharyngeus, Hyopharyngeus)
+Contract sequentially to propel food bolus from pharynx into esophagus
+###2. Pharyngeal Dilators###
+Thin muscles that widen the pharynx
+Facilitate air passage during breathing
+Prepare pharynx for swallowing
+
+##Function##
+Contract to move food bolus during swallowing
+Dilate to allow breathing between swallows
+Coordinate with hyoid muscles for safe passage of food and air

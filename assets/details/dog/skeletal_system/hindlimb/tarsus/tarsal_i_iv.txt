@@ -1,0 +1,26 @@
+#Tarsals I–IV#
+
+##Location##
+Located in the distal row of the tarsus (hock), just proximal to the metatarsals.
+
+##Shape##
+Small cuboidal bones arranged from medial (I) to lateral (IV). Tarsal IV is the largest and articulates with two metatarsals.
+
+##Parts##
+###Tarsal I###
+Most medial distal tarsal
+Articulates with metatarsal I (if present)
+###Tarsal II###
+Medial distal tarsal
+Articulates with metatarsal II
+###Tarsal III###
+Central distal tarsal
+Articulates with metatarsal III
+###Tarsal IV###
+Largest, most lateral distal tarsal
+Articulates with both metatarsal IV and V
+
+##Function##
+Form the distal tarsal joint row
+Provide articulation and weight transfer to the metatarsals
+Support hock flexibility and shock absorption during locomotion

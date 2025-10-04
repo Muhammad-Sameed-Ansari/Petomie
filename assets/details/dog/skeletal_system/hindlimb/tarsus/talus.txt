@@ -1,0 +1,10 @@
+#Talus#
+
+##Location##
+Proximal tarsus, articulates with tibia.
+
+##Shape##
+Rounded, pulley-like bone.
+
+##Function##
+Allows hinge-like motion at tibiotarsal joint

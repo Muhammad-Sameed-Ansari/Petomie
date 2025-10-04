@@ -1,0 +1,30 @@
+#Metacarpals I–V#
+
+##Location##
+Located in the forepaw (manus), distal to the carpus and proximal to the digits.
+
+##Shape##
+Five long bones arranged in parallel. Metacarpal I is the shortest and supports the dewclaw, while II–V are progressively longer and bear weight.
+
+##Parts##
+###Metacarpal I###
+Shortest metacarpal
+Supports dewclaw digit (digit I)
+Non–weight-bearing
+###Metacarpal II###
+Medial weight-bearing metacarpal
+Articulates with carpal II
+###Metacarpal III###
+Central and typically strongest metacarpal
+Articulates with carpal III
+###Metacarpal IV###
+Lateral weight-bearing metacarpal
+Articulates with carpal IV
+###Metacarpal V###
+Most lateral metacarpal
+Weight-bearing but slightly smaller than IV
+
+##Function##
+Form the palm of the forepaw
+Support body weight (II–V)
+Transmit forces to digits during locomotion

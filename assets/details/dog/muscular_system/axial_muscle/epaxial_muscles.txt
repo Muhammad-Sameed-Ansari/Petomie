@@ -1,0 +1,27 @@
+#Epaxial Muscles (Spinal Extensors)#
+
+##Location##
+Located dorsal (above) to the transverse processes of the vertebrae, running along the length of the spine from the sacrum to the skull.
+
+##Shape##
+Long, parallel muscle columns arranged in three main systems on each side of the vertebral column. These are the primary extensors of the back.
+
+##Parts##
+###1. Iliocostalis System###
+Most lateral epaxial muscle group
+Extends from ilium to cervical vertebrae
+Extends the vertebral column and aids in lateral flexion
+###2. Longissimus System###
+Largest epaxial muscle group, lying between iliocostalis and transversospinalis
+Subdivided into longissimus thoracis et lumborum, longissimus cervicis, longissimus capitis
+Extends vertebral column, stabilizes spine, raises and turns head
+###3. Transversospinalis System###
+Most medial epaxial muscle group, close to spinous processes
+Includes spinalis, semispinalis, multifidus
+Stabilizes vertebrae, extends neck and back, provides fine control of vertebral motion
+
+##Function##
+Extend and stabilize the spine during movement
+Raise head and neck when acting bilaterally
+Provide lateral bending when acting unilaterally
+Support posture and resist gravity

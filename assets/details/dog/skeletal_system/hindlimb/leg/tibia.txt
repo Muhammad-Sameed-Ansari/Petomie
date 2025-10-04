@@ -1,0 +1,11 @@
+#Tibia#
+
+##Location##
+Medial bone of crus, between stifle and tarsus.
+
+##Shape##
+Thick, weight-bearing long bone.
+
+##Function##
+Transmits weight to hock
+Provides attachment for stifle ligaments

@@ -1,0 +1,34 @@
+#Crus & Pes Muscles – Cranial & Lateral (Extensor) Group#
+
+##Location##
+Located on the cranial and lateral sides of the crus, extending into the paw. These muscles flex the tarsus (hock) and extend the digits, allowing paw placement during locomotion.
+
+##Shape##
+Long, narrow muscles on the front and lateral aspects of the leg, tapering into tendons that run under extensor retinacula to the paw.
+
+##Parts##
+###1. Cranial Tibial###
+Cranial aspect of tibia
+Flexes tarsus
+Rotates paw laterally (supinates pes)
+###2. Long Digital Extensor###
+Cranial crus muscle
+Extends digits II–V
+Flexes tarsus
+###3. Lateral Digital Extensor###
+Runs beside long digital extensor
+Extends digit V
+Assists in paw stabilization
+###4. Peroneus Longus###
+Lateral crus muscle
+Flexes tarsus
+Pronates pes (rotates paw medially)
+###5. Peroneus Brevis###
+Shorter lateral muscle
+Flexes tarsus
+Stabilizes paw in stance
+
+##Function##
+Flex tarsus to lift paw during swing phase
+Extend digits for paw placement
+Aid in steering, balance, and precise foot positioning during locomotion

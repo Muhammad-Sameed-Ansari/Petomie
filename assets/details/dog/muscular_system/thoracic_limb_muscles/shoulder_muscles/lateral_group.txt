@@ -1,0 +1,28 @@
+#Shoulder Muscles – Lateral Group#
+
+##Location##
+Located on the lateral surface of the scapula and shoulder joint. These muscles primarily flex, extend, and stabilize the shoulder joint.
+
+##Shape##
+Flat, triangular muscles covering the scapula and inserting on the humerus.
+
+##Parts##
+###1. Deltoideus###
+Large triangular shoulder muscle
+Flexes shoulder joint
+Abducts forelimb
+###2. Supraspinatus###
+Occupies supraspinous fossa of scapula
+Extends and stabilizes shoulder joint
+###3. Infraspinatus###
+Occupies infraspinous fossa of scapula
+Flexes shoulder (depending on joint angle)
+Acts as lateral collateral ligament of shoulder
+###4. Teres Minor###
+Small muscle caudal to infraspinatus
+Flexes shoulder and rotates arm laterally
+
+##Function##
+Flex and extend the shoulder joint as needed during gait
+Stabilize joint during weight-bearing
+Allow lateral rotation and abduction of limb

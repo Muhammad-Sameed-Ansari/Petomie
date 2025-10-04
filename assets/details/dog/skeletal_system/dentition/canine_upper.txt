@@ -1,76 +1,25 @@
-## Upper Canine Teeth in Dogs
+#Upper Canine Tooth (C1)#
 
-The upper canine teeth, also known as the upper fangs or cuspids, are the prominent pointed teeth located at the corners of the dog's mouth. These are among the most important teeth for a dog's survival and daily activities.
+##Location##
+Located in the maxilla (upper jaw), immediately caudal to the upper third incisor (I3) and cranial to the first premolar. Dogs have one upper canine on each side (left and right).
 
-### Anatomical Features:
+##Shape##
+Large, conical, single-rooted tooth with a long, curved crown and pointed tip designed for piercing and holding.
 
-**Location and Position**
-- Located between the incisors and premolars
-- One canine on each side of the upper jaw (total of 2)
-- Positioned at the corner of the mouth
-- Longest and most prominent teeth in the mouth
+##Parts##
+###Crown###
+Visible portion of the tooth above the gum line
+Long, curved, and sharply pointed
+Labial surface is convex; lingual surface slightly concave
+###Root###
+Longest root of any tooth in the dog
+Anchors deeply in the maxilla
+Provides great stability for gripping and tearing
+###Neck###
+Narrow region where crown meets root
+Covered by gingiva
 
-**Structure**
-- **Crown**: The visible portion above the gum line
-- **Root**: Long, deep root extending into the maxilla
-- **Pulp Cavity**: Contains nerves and blood vessels
-- **Enamel**: Hardest substance, covers the crown
-- **Dentin**: Forms the bulk of the tooth structure
-
-**Size and Shape**
-- Cone-shaped with a sharp, pointed tip
-- Curved slightly backward
-- Approximately 1-2 inches long depending on breed size
-- Robust construction for maximum strength
-
-### Functions:
-
-**Primary Functions**
-- **Grasping and Holding**: Securing prey or objects
-- **Tearing**: Ripping meat and tough materials
-- **Defense**: Protection and intimidation
-- **Puncturing**: Penetrating tough surfaces
-
-**Behavioral Functions**
-- **Carrying**: Transporting objects and puppies
-- **Play**: Gentle mouthing during social interaction
-- **Communication**: Displaying dominance or submission
-- **Grooming**: Self-grooming and social grooming
-
-### Development Timeline:
-
-**Deciduous (Baby) Canines**
-- Erupt at 3-4 weeks of age
-- Remain until 4-6 months
-- Smaller and sharper than adult teeth
-
-**Permanent (Adult) Canines**
-- Erupt at 4-6 months of age
-- Fully developed by 7-8 months
-- Last throughout the dog's lifetime with proper care
-
-### Clinical Significance:
-
-**Common Problems**
-- **Retained deciduous canines**: Baby teeth don't fall out
-- **Malocclusion**: Improper alignment with lower canines
-- **Fractures**: Due to trauma or chewing hard objects
-- **Wear**: From excessive chewing or grinding
-
-**Orthodontic Considerations**
-- Proper spacing with adjacent teeth
-- Correct bite alignment (scissors bite)
-- No interference with lower canines
-- Adequate clearance for jaw movement
-
-### Breed Variations:
-- **Brachycephalic breeds**: Shorter, more crowded canines
-- **Working breeds**: Larger, more robust canines
-- **Toy breeds**: Proportionally smaller but still prominent
-- **Sight hounds**: Long, elegant canines suited for coursing
-
-### Care and Maintenance:
-- Regular dental cleaning and examination
-- Appropriate chew toys to prevent excessive wear
-- Monitoring for signs of damage or disease
-- Professional dental care as recommended by veterinarian
+##Function##
+Used for grasping, holding, and puncturing prey or objects
+Aid in tearing meat and playing a key role in defense
+Help maintain proper interlocking bite (occlusion) with lower canines

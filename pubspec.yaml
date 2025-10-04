@@ -62,6 +62,7 @@ dependencies:
 
   # Intl for date formatting
   intl: ^0.19.0
+  flutter_svg: ^2.2.1
 
 dev_dependencies:
   flutter_test:
@@ -125,8 +126,26 @@ flutter:
     - assets/details/dog/skeletal_system/axial_skeleton/
     - assets/details/dog/skeletal_system/axial_skeleton/pelvis/
     - assets/details/dog/skeletal_system/hindlimb/
+    - assets/details/dog/skeletal_system/hindlimb/hindpaw/
+    - assets/details/dog/skeletal_system/hindlimb/leg/
+    - assets/details/dog/skeletal_system/hindlimb/stifle/
+    - assets/details/dog/skeletal_system/hindlimb/tarsus/
+    - assets/details/dog/skeletal_system/hindlimb/thigh/
     - assets/details/dog/skeletal_system/special_bones/
     - assets/details/dog/skeletal_system/dentition/
+    - assets/details/dog/muscular_system/
+    - assets/details/dog/muscular_system/head_neck/
+    - assets/details/dog/muscular_system/throat/
+    - assets/details/dog/muscular_system/throat/laryngeal_muscles/
+    - assets/details/dog/muscular_system/thoracic_limb_muscles/
+    - assets/details/dog/muscular_system/thoracic_limb_muscles/shoulder_muscles/
+    - assets/details/dog/muscular_system/thoracic_limb_muscles/antebrachium_paw_muscles/
+    - assets/details/dog/muscular_system/pectoral_muscles/
+    - assets/details/dog/muscular_system/hip_thigh_muscles/
+    - assets/details/dog/muscular_system/crus_pes_muscles/
+    - assets/details/dog/muscular_system/axial_muscle/
+    - assets/details/dog/muscular_system/muscles_of_respiration/
+    - assets/details/dog/muscular_system/tail_muscles/
     - assets/details/horse/
     - assets/details/horse/energy/
     - assets/details/horse/energy/chakras/

@@ -1,0 +1,11 @@
+#Fibula#
+
+##Location##
+Lateral bone of crus.
+
+##Shape##
+Slender, narrow bone.
+
+##Function##
+Provides muscle attachment
+Stabilizes tarsus laterally

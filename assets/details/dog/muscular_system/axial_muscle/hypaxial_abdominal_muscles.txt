@@ -1,0 +1,50 @@
+#Hypaxial & Abdominal Muscles (Spinal Flexors & Core)#
+
+##Location##
+Located ventral (below) to the transverse processes of the vertebrae, including the muscles of the thorax, abdomen, and ventral neck.
+
+##Shape##
+Flat, broad muscle sheets (abdominals, intercostals) and strap-like ventral neck muscles. They support viscera, flex the spine, and control breathing.
+
+##Parts##
+###1. Longus Colli###
+Runs along ventral cervical vertebrae
+Flexes neck and stabilizes cervical spine
+###2. Longus Capitis###
+Runs from cervical vertebrae to skull
+Flexes atlanto-occipital joint, lowering head
+###3. Scalenus###
+Runs from cervical vertebrae to first ribs
+Flexes neck and draws cranial ribs forward (inspiration)
+###4. External Intercostals###
+Run between ribs
+Draw ribs forward to expand thoracic cavity (inspiration)
+###5. Internal Intercostals###
+Deep to external intercostals
+Draw ribs backward to reduce thoracic volume (expiration)
+###6. Rectus Abdominis###
+Long strap muscle on ventral midline
+Flexes lumbar spine
+Supports abdominal wall
+###7. External Abdominal Oblique###
+Most superficial abdominal muscle
+Compresses abdominal cavity
+Flexes and laterally bends spine
+###8. Internal Abdominal Oblique###
+Deep to external oblique
+Compresses abdominal cavity
+Supports trunk rotation and lateral flexion
+###9. Transversus Abdominis###
+Deepest abdominal muscle
+Runs transversely
+Compresses abdominal contents, stabilizes core
+###10. Diaphragm###
+Dome-shaped muscle separating thorax and abdomen
+Primary muscle of inspiration
+Flattens during contraction to draw air into lungs
+
+##Function##
+Flex and stabilize the spine and neck
+Support and compress abdominal organs
+Assist with respiration (inspiration and expiration)
+Provide core stability and protect internal viscera
