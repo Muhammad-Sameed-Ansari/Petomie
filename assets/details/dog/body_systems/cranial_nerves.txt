@@ -1,0 +1,22 @@
+#Cranial Nerves#
+
+##Location##
+Emerge from the brain and brainstem, passing through foramina of the skull to supply head, neck, and some thoracic/abdominal structures.
+
+##Parts##
+I – Olfactory – Smell
+II – Optic – Vision
+III – Oculomotor – Eye movement, pupil constriction
+IV – Trochlear – Eye rotation (dorsal oblique muscle)
+V – Trigeminal – Sensation to face, motor to mastication muscles
+VI – Abducens – Lateral eye movement (lateral rectus)
+VII – Facial – Facial expression, taste (rostral tongue)
+VIII – Vestibulocochlear – Hearing, balance
+IX – Glossopharyngeal – Taste (caudal tongue), pharyngeal sensation, swallowing
+X – Vagus – Larynx/pharynx motor, parasympathetic to thoracic/abdominal organs
+XI – Accessory – Neck muscles (trapezius, sternocephalicus)
+XII – Hypoglossal – Tongue movement
+
+##Function##
+Provide sensory, motor, and parasympathetic innervation to the head and neck
+Coordinate smell, vision, taste, hearing, facial movement, and swallowing

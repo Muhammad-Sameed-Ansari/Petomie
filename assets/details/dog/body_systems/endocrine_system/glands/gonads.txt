@@ -1,0 +1,19 @@
+#Gonads (Testes & Ovaries)#
+
+##Location##
+###Testes (male)###
+Paired organs located in the scrotum, caudal to the penis. They descend from the abdominal cavity through the inguinal canal after birth.
+###Ovaries (female)###
+Paired organs located in the dorsal abdomen, just caudal to the kidneys, suspended by the mesovarium.
+
+##Parts##
+Seminiferous Tubules (testes) produce spermatozoa.
+Interstitial (Leydig) Cells (testes) secrete testosterone.
+Ovarian Cortex (ovaries) contains developing follicles and ova.
+Ovarian Medulla (ovaries) contains blood vessels, lymphatics, and nerves.
+
+##Function##
+###Testes###
+Produce sperm and secrete testosterone, which regulates male secondary sexual characteristics, libido, and spermatogenesis.
+###Ovaries###
+Produce ova (eggs) and secrete estrogen and progesterone, regulating the estrous cycle, reproduction, and female secondary sexual characteristics.

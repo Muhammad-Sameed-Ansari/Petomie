@@ -62,55 +62,55 @@ class CategoryData {
           id: 'main_chakra',
           label: 'Main Chakra',
           icon: Icons.circle,
-          imagePath: 'assets/images/energy/chakras/main_chakra.png',
+          imagePath: 'assets/images/energy/chakras/main_chakra.webp',
           subcategories: [
             Category(
               id: 'root_chakra',
               label: 'Root Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/root_chakra.png',
+              imagePath: 'assets/images/energy/chakras/main_chakra/root_chakra.webp',
             ),
             Category(
               id: 'sacral_chakra',
               label: 'Sacral Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/sacral_chakra.png',
+              imagePath: 'assets/images/energy/chakras/main_chakra/sacral_chakra.webp',
             ),
             Category(
               id: 'solar_plexus_chakra',
               label: 'Solar Plexus Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/solar_plexus_chakra.png',
+              imagePath: 'assets/images/energy/chakras/main_chakra/solar_plexus_chakra.webp',
             ),
             Category(
               id: 'heart_chakra',
               label: 'Heart Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/heart_chakra.png',
+              imagePath: 'assets/images/energy/chakras/main_chakra/heart_chakra.webp',
             ),
             Category(
               id: 'throat_chakra',
               label: 'Throat Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/throat_chakra.png',
+              imagePath: 'assets/images/energy/chakras/main_chakra/throat_chakra.webp',
             ),
             Category(
               id: 'third_eye_chakra',
               label: 'Third Eye Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/third_eye_chakra.png',
+              imagePath: 'assets/images/energy/chakras/main_chakra/third_eye_chakra.webp',
             ),
             Category(
               id: 'crown_chakra',
               label: 'Crown Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/crown_chakra.png',
+              imagePath: 'assets/images/energy/chakras/main_chakra/crown_chakra.webp',
             ),
             Category(
               id: 'brachial_shoulder_chakra',
               label: 'Brachial/Shoulder Chakra',
               icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/brachial_shoulder_chakra.png',
+              imagePath: 'assets/images/energy/chakras/main_chakra/brachial_shoulder_chakra.webp',
             ),
           ],
         ),
@@ -124,43 +124,43 @@ class CategoryData {
             id: 'hoof_chakras',
             label: 'Hoof Chakras (4)',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/hoof_chakras.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/hoof_chakras.webp',
           ),
           Category(
             id: 'tail_chakra',
             label: 'Tail Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.webp',
           ),
           Category(
             id: 'nose_muzzle_chakra',
             label: 'Nose/Muzzle Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/nose_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/nose_chakra.webp',
           ),
           Category(
             id: 'ear_chakra',
             label: 'Ear Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.webp',
           ),
           Category(
             id: 'flank_chakras',
             label: 'Flank Chakras',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/flank_chakras.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/flank_chakras.webp',
           ),
           Category(
             id: 'whorl_chakra',
             label: 'Whorl Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/whorl_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/whorl_chakra.webp',
           ),
           Category(
             id: 'spleen_chakra',
             label: 'Spleen Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.webp',
           ),
         ];
       } else if (animal == 'dog') {
@@ -169,31 +169,31 @@ class CategoryData {
             id: 'paw_chakras',
             label: 'Paw Chakras (4)',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.webp',
           ),
           Category(
             id: 'tail_chakra',
             label: 'Tail Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.webp',
           ),
           Category(
             id: 'ear_chakra',
             label: 'Ear Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.webp',
           ),
           Category(
             id: 'nose_chakra',
             label: 'Nose Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/nose_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/nose_chakra.webp',
           ),
           Category(
             id: 'spleen_chakra',
             label: 'Spleen Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.webp',
           ),
         ];
       } else if (animal == 'cat') {
@@ -202,31 +202,31 @@ class CategoryData {
             id: 'paw_chakras',
             label: 'Paw Chakras (4)',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.webp',
           ),
           Category(
             id: 'tail_chakra',
             label: 'Tail Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.webp',
           ),
           Category(
             id: 'spleen_chakra',
             label: 'Spleen Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.webp',
           ),
           Category(
             id: 'whisker_chakras',
             label: 'Whisker Chakras',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/whisker_chakras.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/whisker_chakras.webp',
           ),
           Category(
             id: 'ear_chakra',
             label: 'Ear Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.webp',
           ),
         ];
       } else if (animal == 'bird') {
@@ -235,31 +235,31 @@ class CategoryData {
             id: 'wing_chakras',
             label: 'Wing Chakras (2)',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/wing_chakras.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/wing_chakras.webp',
           ),
           Category(
             id: 'beak_chakra',
             label: 'Beak Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/beak_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/beak_chakra.webp',
           ),
           Category(
             id: 'feet_chakras',
             label: 'Feet Chakras (2)',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/feet_chakras.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/feet_chakras.webp',
           ),
           Category(
             id: 'ear_side_head_chakras',
             label: 'Ear/Side Head Chakras',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.webp',
           ),
           Category(
             id: 'tail_feather_chakra',
             label: 'Tail Feather Chakra', 
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_feather_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_feather_chakra.webp',
           ),
         ];
       }
@@ -270,7 +270,7 @@ class CategoryData {
             id: 'secondary_chakra',
             label: 'Secondary Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra.png',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra.webp',
             subcategories: secondarySubs,
           ),
         );
@@ -468,62 +468,393 @@ class CategoryData {
         id: 'life_force_vital_energy',
         label: 'Life Force / Vital Energy',
         icon: Icons.energy_savings_leaf,
-        imagePath: 'assets/images/energy/life_force_vital_energy.png',
+        imagePath: 'assets/images/energy/life_force_vital_energy.webp',
         subcategories: lifeForceSubcategories,
       ),
       Category(
         id: 'energy_imbalances',
         label: 'Energy Imbalances',
         icon: Icons.balance,
-        imagePath: 'assets/images/energy/energy_imbalances.png',
+        imagePath: 'assets/images/energy/energy_imbalances.webp',
         subcategories: energyImbalancesSubcategories,
       ),
       Category(
         id: 'energy_connections',
         label: 'Energy Connections',
         icon: Icons.device_hub,
-        imagePath: 'assets/images/energy/energy_connections.png',
+        imagePath: 'assets/images/energy/energy_connections.webp',
         subcategories: energyConnectionsSubcategories,
       ),
       Category(
         id: 'sacred_geometry_vibrational_patterns',
         label: 'Sacred Geometry & Vibrational Patterns',
         icon: Icons.hexagon,
-        imagePath: 'assets/images/energy/sacred_geometry_vibrational_patterns.png',
+        imagePath: 'assets/images/energy/sacred_geometry_vibrational_patterns.webp',
         subcategories: sacredGeometrySubcategories,
       ),
       Category(
         id: 'states_of_harmony',
         label: 'States of Harmony',
         icon: Icons.self_improvement,
-        imagePath: 'assets/images/energy/states_of_harmony.png',
+        imagePath: 'assets/images/energy/states_of_harmony.webp',
         subcategories: statesOfHarmonySubcategories,
       ),
       Category(
         id: 'energetic_influences',
         label: 'Energetic Influences',
         icon: Icons.waves,
-        imagePath: 'assets/images/$animalId/energy/energetic_influences.png',
+        imagePath: 'assets/images/$animalId/energy/energetic_influences.webp',
         subcategories: energeticInfluencesSubcategories,
       ),
       Category(
         id: 'negative_beliefs',
         label: 'Negative Beliefs',
         icon: Icons.psychology_alt,
-        imagePath: 'assets/images/energy/negative_beliefs.png',
+        imagePath: 'assets/images/energy/negative_beliefs.webp',
         subcategories: negativeBeliefsSubcategories,
       ),
       Category(
         id: 'unresolved_emotions',
         label: 'Unresolved Emotions',
         icon: Icons.sentiment_dissatisfied,
-        imagePath: 'assets/images/$animalId/energy/unresolved_emotions.png',
+        imagePath: 'assets/images/$animalId/energy/unresolved_emotions.webp',
         subcategories: unresolvedEmotionsSubcategories,
       ),
     ];
     
     _energyCache[animalId] = categories;
     return categories;
+  }
+
+  // Get muscular system categories for a specific animal
+  static List<Category> getMuscularSystemCategoriesForAnimal(String animalId) {
+    if (animalId.toLowerCase() == 'dog') {
+      return [
+        Category(
+          id: 'head_neck',
+          label: 'Head & Neck',
+          icon: Icons.face,
+          subcategories: [
+            Category(id: 'masseter', label: 'Masseter', icon: Icons.fitness_center),
+          ],
+        ),
+        Category(
+          id: 'throat',
+          label: 'Throat',
+          icon: Icons.restaurant,
+          subcategories: [
+            Category(id: 'hyoid_muscles', label: 'Hyoid Muscles', icon: Icons.fitness_center),
+            Category(id: 'pharyngeal_muscles', label: 'Pharyngeal Muscles', icon: Icons.fitness_center),
+            Category(
+              id: 'laryngeal_muscles',
+              label: 'Laryngeal Muscles',
+              icon: Icons.fitness_center,
+              subcategories: [
+                Category(id: 'abductors_tensors', label: 'Abductors & Tensors', icon: Icons.fitness_center),
+                Category(id: 'adductors_relaxers', label: 'Adductors & Relaxers', icon: Icons.fitness_center),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'thoracic_limb_muscles',
+          label: 'Thoracic Limb Muscles',
+          icon: Icons.accessibility,
+          subcategories: [
+            Category(
+              id: 'shoulder_muscles',
+              label: 'Shoulder Muscles',
+              icon: Icons.fitness_center,
+              subcategories: [
+                Category(id: 'lateral_group', label: 'Lateral Group', icon: Icons.fitness_center),
+                Category(id: 'medial_group', label: 'Medial Group', icon: Icons.fitness_center),
+              ],
+            ),
+            Category(
+              id: 'antebrachium_paw_muscles',
+              label: 'Antebrachium & Paw Muscles',
+              icon: Icons.fitness_center,
+              subcategories: [
+                Category(id: 'extensors_supinators', label: 'Extensors & Supinators', icon: Icons.fitness_center),
+                Category(id: 'flexors_pronators', label: 'Flexors & Pronators', icon: Icons.fitness_center),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'pectoral_muscles',
+          label: 'Pectoral Muscles',
+          icon: Icons.fitness_center,
+          subcategories: [
+            Category(id: 'superficial', label: 'Superficial', icon: Icons.fitness_center),
+            Category(id: 'deep', label: 'Deep', icon: Icons.fitness_center),
+          ],
+        ),
+        Category(
+          id: 'hip_thigh_muscles',
+          label: 'Hip & Thigh Muscles',
+          icon: Icons.fitness_center,
+          subcategories: [
+            Category(id: 'gluteal_hamstring_muscles', label: 'Gluteal & Hamstring Muscles', icon: Icons.fitness_center),
+            Category(id: 'medial_cranial_thigh_muscles', label: 'Medial & Cranial Thigh Muscles', icon: Icons.fitness_center),
+          ],
+        ),
+        Category(
+          id: 'crus_pes_muscles',
+          label: 'Crus & Pes Muscles',
+          icon: Icons.fitness_center,
+          subcategories: [
+            Category(id: 'caudal_flexor_group', label: 'Caudal (Flexor) Group', icon: Icons.fitness_center),
+            Category(id: 'cranial_lateral_extensor_group', label: 'Cranial & Lateral (Extensor) Group', icon: Icons.fitness_center),
+          ],
+        ),
+        Category(
+          id: 'axial_muscle',
+          label: 'Axial Muscle',
+          icon: Icons.fitness_center,
+          subcategories: [
+            Category(id: 'epaxial_muscles', label: 'Epaxial Muscles', icon: Icons.fitness_center),
+            Category(id: 'hypaxial_abdominal_muscles', label: 'Hypaxial & Abdominal Muscles', icon: Icons.fitness_center),
+          ],
+        ),
+        Category(
+          id: 'muscles_of_respiration',
+          label: 'Muscles of Respiration',
+          icon: Icons.air,
+          subcategories: [
+            Category(id: 'inspiratory', label: 'Inspiratory', icon: Icons.fitness_center),
+            Category(id: 'expiratory', label: 'Expiratory', icon: Icons.fitness_center),
+          ],
+        ),
+        Category(
+          id: 'tail_muscles',
+          label: 'Tail Muscles',
+          icon: Icons.pets,
+          subcategories: [
+            Category(id: 'dorsal_group', label: 'Dorsal Group', icon: Icons.fitness_center),
+            Category(id: 'ventral_group', label: 'Ventral Group', icon: Icons.fitness_center),
+            Category(id: 'intrinsic_group', label: 'Intrinsic Group', icon: Icons.fitness_center),
+          ],
+        ),
+      ];
+    }
+    
+    // Default muscular system categories for other animals
+    return muscularSystemCategories;
+  }
+
+  // Get body systems categories for a specific animal
+  static List<Category> getBodySystemsCategoriesForAnimal(String animalId) {
+    if (animalId.toLowerCase() == 'dog') {
+      return [
+        Category(
+          id: 'cardiovascular_system',
+          label: 'Cardiovascular System',
+          icon: Icons.bloodtype,
+          subcategories: [
+            Category(
+              id: 'heart_vessels',
+              label: 'Heart & Vessels',
+              icon: Icons.favorite,
+              subcategories: [
+                Category(id: 'heart', label: 'Heart', icon: Icons.favorite),
+                Category(id: 'valves', label: 'Valves', icon: Icons.check_circle),
+                Category(id: 'major_vessels', label: 'Major Vessels', icon: Icons.linear_scale),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'respiratory_system',
+          label: 'Respiratory System',
+          icon: Icons.air,
+          imagePath: 'assets/images/body_systems/respiratory_system.webp',
+          subcategories: [
+            Category(
+              id: 'upper_airways',
+              label: 'Upper Airways',
+              icon: Icons.air,
+              subcategories: [
+                Category(id: 'nasal_cavity_turbinates', label: 'Nasal Cavity & Turbinates', icon: Icons.air),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'digestive_system',
+          label: 'Digestive System',
+          icon: Icons.restaurant,
+          subcategories: [
+            Category(id: 'oral_cavity', label: 'Oral Cavity', icon: Icons.emoji_food_beverage),
+          ],
+        ),
+        Category(
+          id: 'urinary_system',
+          label: 'Urinary System',
+          icon: Icons.water_drop,
+          subcategories: [
+            Category(id: 'kidneys_cortex_medulla_pelvis', label: 'Kidneys (Cortex, Medulla, Pelvis)', icon: Icons.water_drop),
+            Category(id: 'ureters', label: 'Ureters', icon: Icons.linear_scale),
+            Category(id: 'urinary_bladder', label: 'Urinary Bladder', icon: Icons.opacity),
+            Category(id: 'urethra', label: 'Urethra', icon: Icons.linear_scale),
+          ],
+        ),
+        Category(
+          id: 'reproductive_system_male',
+          label: 'Reproductive System (Male)',
+          icon: Icons.male,
+          imagePath: 'assets/images/body_systems/reproductive_system_male.webp',
+          subcategories: [
+            Category(
+              id: 'testes',
+              label: 'Testes',
+              icon: Icons.circle,
+              subcategories: [
+                Category(id: 'testes_epididymides', label: 'Testes & Epididymides', icon: Icons.circle),
+              ],
+            ),
+            Category(
+              id: 'duct_system',
+              label: 'Duct System',
+              icon: Icons.linear_scale,
+              subcategories: [
+                Category(id: 'ductus_deferens', label: 'Ductus Deferens', icon: Icons.linear_scale),
+              ],
+            ),
+            Category(
+              id: 'accessory_glands',
+              label: 'Accessory Glands',
+              icon: Icons.scatter_plot,
+              subcategories: [
+                Category(id: 'prostate_gland', label: 'Prostate Gland', icon: Icons.scatter_plot),
+              ],
+            ),
+            Category(
+              id: 'copulatory_organ',
+              label: 'Copulatory Organ',
+              icon: Icons.straighten,
+              subcategories: [
+                Category(id: 'penis', label: 'Penis', icon: Icons.straighten),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'reproductive_system_female',
+          label: 'Reproductive System (Female)',
+          icon: Icons.female,
+          imagePath: 'assets/images/body_systems/reproductive_system_female.webp',
+          subcategories: [
+            Category(id: 'ovaries', label: 'Ovaries', icon: Icons.circle),
+            Category(id: 'uterine_tubes', label: 'Uterine Tubes', icon: Icons.linear_scale),
+            Category(id: 'uterus_horns_body_cervix', label: 'Uterus (horns, body, cervix)', icon: Icons.favorite),
+            Category(id: 'vagina_vestibule', label: 'Vagina & Vestibule', icon: Icons.linear_scale),
+            Category(
+              id: 'external_genitalia',
+              label: 'External Genitalia',
+              icon: Icons.crop_portrait,
+              subcategories: [
+                Category(id: 'clitoris_vulva', label: 'Clitoris & Vulva', icon: Icons.crop_portrait),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'endocrine_system',
+          label: 'Endocrine System',
+          icon: Icons.scatter_plot,
+          subcategories: [
+            Category(
+              id: 'glands',
+              label: 'Glands',
+              icon: Icons.scatter_plot,
+              subcategories: [
+                Category(id: 'pituitary_hypophysis', label: 'Pituitary (Hypophysis)', icon: Icons.scatter_plot),
+                Category(id: 'pineal_gland', label: 'Pineal Gland', icon: Icons.scatter_plot),
+                Category(id: 'thyroid_gland', label: 'Thyroid Gland', icon: Icons.scatter_plot),
+                Category(id: 'parathyroid_glands', label: 'Parathyroid Glands', icon: Icons.scatter_plot),
+                Category(id: 'adrenal_glands_cortex_medulla', label: 'Adrenal Glands (cortex/medulla)', icon: Icons.scatter_plot),
+                Category(id: 'pancreatic_islets', label: 'Pancreatic Islets', icon: Icons.scatter_plot),
+                Category(id: 'gonads', label: 'Gonads', icon: Icons.scatter_plot),
+                Category(id: 'thymus', label: 'Thymus', icon: Icons.scatter_plot),
+              ],
+            ),
+          ],
+        ),
+        Category(
+          id: 'lymphatic_system',
+          label: 'Lymphatic System',
+          icon: Icons.water,
+          subcategories: [
+            Category(id: 'organs_ducts', label: 'Organs & Ducts', icon: Icons.water),
+          ],
+        ),
+        Category(
+          id: 'regional_lymph_nodes',
+          label: 'Regional Lymph Nodes',
+          icon: Icons.scatter_plot,
+          subcategories: [
+            Category(id: 'major_lymph_nodes', label: 'Major Lymph Nodes', icon: Icons.scatter_plot),
+          ],
+        ),
+        Category(
+          id: 'nervous_system_cns',
+          label: 'Nervous System (CNS)',
+          icon: Icons.psychology,
+          subcategories: [
+            Category(
+              id: 'brain',
+              label: 'Brain',
+              icon: Icons.psychology,
+              subcategories: [
+                Category(id: 'cerebrum', label: 'Cerebrum', icon: Icons.psychology),
+                Category(id: 'basal_nuclei', label: 'Basal Nuclei', icon: Icons.psychology),
+                Category(id: 'diencephalon', label: 'Diencephalon', icon: Icons.psychology),
+                Category(id: 'cerebellum_vermis_hemispheres', label: 'Cerebellum (vermis, hemispheres)', icon: Icons.psychology),
+              ],
+            ),
+            Category(
+              id: 'brainstem',
+              label: 'Brainstem',
+              icon: Icons.psychology,
+              subcategories: [
+                Category(id: 'midbrain', label: 'Midbrain', icon: Icons.psychology),
+                Category(id: 'pons', label: 'Pons', icon: Icons.psychology),
+                Category(id: 'medulla_oblongata', label: 'Medulla Oblongata', icon: Icons.psychology),
+              ],
+            ),
+            Category(id: 'spinal_cord', label: 'Spinal Cord', icon: Icons.psychology),
+          ],
+        ),
+        Category(
+          id: 'cranial_nerves',
+          label: 'Cranial Nerves',
+          icon: Icons.linear_scale,
+        ),
+        Category(
+          id: 'brachial_plexus_c6_t2',
+          label: 'Brachial Plexus (C6-T2)',
+          icon: Icons.linear_scale,
+        ),
+        Category(
+          id: 'lumbosacral_plexus_l4_s3',
+          label: 'Lumbosacral Plexus (L4-S3)',
+          icon: Icons.linear_scale,
+        ),
+        Category(
+          id: 'autonomic',
+          label: 'Autonomic',
+          icon: Icons.settings,
+          subcategories: [
+            Category(id: 'sympathetic', label: 'Sympathetic', icon: Icons.settings),
+            Category(id: 'parasympathetic', label: 'Parasympathetic', icon: Icons.settings),
+          ],
+        ),
+      ];
+    }
+    
+    // Default body systems categories for other animals
+    return bodySystemsCategories;
   }
 
   // Get skeletal system categories for a specific animal
@@ -534,7 +865,7 @@ class CategoryData {
           id: 'skull', 
           label: 'Skull', 
           icon: Icons.psychology,
-          imagePath: 'assets/images/$animalId/skeletal_system/skull.png',
+          imagePath: 'assets/images/$animalId/skeletal_system/skull.webp',
           subcategories: [
             Category(id: 'cranial_bones', label: 'Cranial Bones', icon: Icons.psychology),
             Category(id: 'facial_bones', label: 'Facial Bones', icon: Icons.face),
@@ -702,7 +1033,7 @@ class CategoryData {
               icon: Icons.pan_tool,
               subcategories: [
                 Category(id: 'metacarpals_i_v', label: 'Metacarpals I-V', icon: Icons.accessibility),
-                Category(id: 'Metatarsals_ii_v', label: 'Metatarsals II-V', icon: Icons.accessibility),
+                Category(id: 'metatarsals_ii_v', label: 'Metatarsals II-V', icon: Icons.accessibility),
                 Category(id: 'proximal_phalanges_ii_v', label: 'Proximal Phalanges (II-V)', icon: Icons.accessibility),
                 Category(id: 'middle_phalanges_ii_v', label: 'Middle Phalanges (II-V)', icon: Icons.accessibility),
                 Category(id: 'distal_phalanges_ii_v', label: 'Distal Phalanges (II-V)', icon: Icons.accessibility),
@@ -823,7 +1154,7 @@ class CategoryData {
         label: 'Muscular System',
         icon: Icons.fitness_center,
         imagePath: 'assets/images/$animalId/muscular_system.webp',
-        subcategories: muscularSystemCategories,
+        subcategories: getMuscularSystemCategoriesForAnimal(animalId),
       ),
       Category(
         id: 'organ_gland_system',
@@ -837,7 +1168,7 @@ class CategoryData {
         label: 'Body Systems',
         icon: Icons.psychology,
         imagePath: 'assets/images/$animalId/body_systems.webp',
-        subcategories: bodySystemsCategories,
+        subcategories: getBodySystemsCategoriesForAnimal(animalId),
       ),
       Category(
         id: 'sensory_external_structures',

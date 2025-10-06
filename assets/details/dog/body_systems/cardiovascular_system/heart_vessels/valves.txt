@@ -1,0 +1,10 @@
+#Cardiac Valves#
+
+##Location##
+Between heart chambers and major outflow vessels.
+
+##Parts##
+Tricuspid, Pulmonic, Mitral, Aortic
+
+##Function##
+Ensure one-way blood flow and prevent regurgitation.

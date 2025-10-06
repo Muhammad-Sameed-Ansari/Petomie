@@ -1,0 +1,14 @@
+#Adrenal Glands#
+
+##Location##
+Paired glands located cranial to each kidney, enclosed in fat and connective tissue.
+
+##Parts##
+Cortex produces steroid hormones:
+Zona glomerulosa secretes mineralocorticoids (aldosterone).
+Zona fasciculata secretes glucocorticoids (cortisol).
+Zona reticularis produces sex steroids (androgens).
+Medulla secretes catecholamines (epinephrine and norepinephrine).
+
+##Function##
+Regulate stress response, metabolism, electrolyte balance, and fight-or-flight reactions.

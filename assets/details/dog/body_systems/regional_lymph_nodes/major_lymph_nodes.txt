@@ -1,0 +1,13 @@
+#Regional Lymph Nodes#
+
+##Location##
+Distributed throughout the body in predictable regions, often near major blood vessels.
+
+##Parts##
+1. Head & Neck: Parotid, Mandibular, Medial Retropharyngeal, Lateral Retropharyngeal, Superficial Cervical (Prescapular)
+2. Thoracic: Axillary, Accessory Axillary, Sternal, Tracheobronchial, Mediastinal, Intercostal
+3. Abdominal: Jejunal (Mesenteric), Ileocolic, Colic, Celiac, Hepatic, Renal
+4. Pelvic & Limbs: Popliteal, Superficial Inguinal, Medial Iliac, Internal Iliac, Sacral
+
+##Function##
+Drain and filter lymph from their respective anatomical regions, produce lymphocytes, and participate in immune surveillance.

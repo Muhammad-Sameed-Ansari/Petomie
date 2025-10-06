@@ -874,7 +874,7 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
     
     // Try the logo first, then show gradient if that fails too
     return Image.asset(
-      'assets/images/logo_transparent.webp',
+      'assets/images/logo_transparent.png',
       fit: BoxFit.cover,
       errorBuilder: (context, error, stackTrace) {
         print('DEBUG: Logo fallback also failed, using gradient fallback');

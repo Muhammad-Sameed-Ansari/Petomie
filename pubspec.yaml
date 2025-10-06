@@ -146,6 +146,28 @@ flutter:
     - assets/details/dog/muscular_system/axial_muscle/
     - assets/details/dog/muscular_system/muscles_of_respiration/
     - assets/details/dog/muscular_system/tail_muscles/
+    - assets/details/dog/body_systems/
+    - assets/details/dog/body_systems/autonomic/
+    - assets/details/dog/body_systems/cardiovascular_system/
+    - assets/details/dog/body_systems/cardiovascular_system/heart_vessels/
+    - assets/details/dog/body_systems/digestive_system/
+    - assets/details/dog/body_systems/endocrine_system/
+    - assets/details/dog/body_systems/endocrine_system/glands/
+    - assets/details/dog/body_systems/lymphatic_system/
+    - assets/details/dog/body_systems/nervous_system_cns/
+    - assets/details/dog/body_systems/nervous_system_cns/brain/
+    - assets/details/dog/body_systems/nervous_system_cns/brainstem/
+    - assets/details/dog/body_systems/regional_lymph_nodes/
+    - assets/details/dog/body_systems/reproductive_system_female/
+    - assets/details/dog/body_systems/reproductive_system_female/external_genitalia/
+    - assets/details/dog/body_systems/reproductive_system_male/
+    - assets/details/dog/body_systems/reproductive_system_male/accessory_glands/
+    - assets/details/dog/body_systems/reproductive_system_male/copulatory_organ/
+    - assets/details/dog/body_systems/reproductive_system_male/duct_system/
+    - assets/details/dog/body_systems/reproductive_system_male/testes/
+    - assets/details/dog/body_systems/respiratory_system/
+    - assets/details/dog/body_systems/respiratory_system/upper_airways/
+    - assets/details/dog/body_systems/urinary_system/
     - assets/details/horse/
     - assets/details/horse/energy/
     - assets/details/horse/energy/chakras/
@@ -173,6 +195,7 @@ flutter:
     - assets/images/energy/chakras/
     - assets/images/energy/chakras/main_chakra/
     - assets/images/energy/chakras/secondary_chakra/
+    - assets/images/body_systems/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

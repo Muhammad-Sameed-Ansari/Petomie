@@ -1,0 +1,13 @@
+#Cerebrum (Frontal, Parietal, Temporal, Occipital Lobes)#
+
+##Location##
+Largest part of the brain, occupying the cranial cavity above the brainstem and cerebellum. Divided into left and right hemispheres.
+
+##Parts##
+Frontal Lobe – Governs voluntary movement, reasoning, planning, personality, and speech.
+Parietal Lobe – Processes sensory input such as touch, pressure, temperature, and spatial orientation.
+Temporal Lobe – Involved in hearing, memory, and language comprehension.
+Occipital Lobe – Primary center for visual processing.
+
+##Function##
+Integrates higher brain functions including thought, decision-making, voluntary motor control, sensory perception, memory, language, and vision.

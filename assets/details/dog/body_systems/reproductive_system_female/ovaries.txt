@@ -1,0 +1,12 @@
+#Ovaries#
+
+##Location##
+Paired female reproductive organs located in the dorsal abdomen, just caudal to the kidneys and suspended by the mesovarium.
+
+##Parts##
+Ovarian Cortex contains follicles in different stages of development, producing oocytes (eggs).
+Ovarian Medulla contains connective tissue, blood vessels, lymphatics, and nerves that support ovarian function.
+Ovarian Bursa is a peritoneal sac that partially encloses the ovary and helps capture released oocytes.
+
+##Function##
+Produce ova (eggs) for reproduction and secrete sex hormones (estrogen and progesterone) that regulate the estrous cycle, behavior, and secondary sex characteristics.

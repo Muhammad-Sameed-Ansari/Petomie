@@ -1,0 +1,57 @@
+
+##Tonsils (Palatine, Lingual, Pharyngeal)##
+
+###Location###
+Aggregates of lymphoid tissue located in the mucosa of the pharynx and oral cavity.
+
+###Parts###
+Palatine Tonsils – found on either side of the oropharynx.
+Lingual Tonsils – located at the root of the tongue.
+Pharyngeal Tonsils – located in the nasopharynx region.
+
+###Function###
+Provide immune surveillance of ingested and inhaled pathogens, initiate immune responses, and produce lymphocytes.
+
+##Thoracic Duct##
+
+###Location###
+Major lymphatic vessel originating from the cisterna chyli in the abdomen, running cranially through the thorax and draining into the venous system at the junction of the left jugular and subclavian veins.
+
+###Parts###
+Single elongated duct with multiple tributaries along its course.
+
+###Function###
+Principal lymphatic drainage pathway of the body, carrying lymph (including chyle) from most of the body back into the bloodstream.
+
+##Right Lymphatic Duct##
+
+###Location###
+Short lymphatic vessel draining into the venous system at the junction of the right jugular and subclavian veins.
+
+###Parts###
+Receives lymph from the right thoracic wall, right forelimb, right side of the head and neck.
+
+###Function###
+Returns lymph from the upper right quadrant of the body to the venous circulation.
+
+##Cisterna Chyli##
+
+###Location###
+Dilated lymphatic sac located in the dorsal abdomen, ventral to the first lumbar vertebrae, serving as the origin of the thoracic duct.
+
+###Parts###
+Receives lymphatic drainage from the intestinal and lumbar lymphatic trunks.
+
+###Function###
+Acts as a collecting reservoir for lymph and chyle from the abdomen and hind limbs before entering the thoracic duct.
+
+##Lacteals##
+
+###Location###
+Specialized lymphatic capillaries located within the villi of the small intestine.
+
+###Parts###
+Microscopic vessels embedded in the mucosa of intestinal villi.
+
+###Function###
+Absorb dietary fats and fat-soluble vitamins from the intestinal lumen and transport them as chyle into the lymphatic system.

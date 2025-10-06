@@ -1,0 +1,11 @@
+#Pineal Gland#
+
+##Location##
+Small, cone-shaped endocrine organ located in the epithalamus, between the cerebral hemispheres, attached to the roof of the third ventricle.
+
+##Parts##
+Pinealocytes secrete melatonin.
+Supporting Glial Cells provide structural support.
+
+##Function##
+Regulates circadian rhythms, seasonal reproductive cycles, and influences sleep-wake patterns through melatonin secretion.

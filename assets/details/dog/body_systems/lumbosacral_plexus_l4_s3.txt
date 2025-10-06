@@ -1,0 +1,11 @@
+#Lumbosacral Plexus (L4–S3)#
+
+##Parts##
+- Sciatic Nerve – Hamstrings; branches to tibial/peroneal
+- Femoral Nerve – Quadriceps; saphenous sensory
+- Obturator Nerve – Adductor muscles
+- Tibial Nerve – Caudal crus; plantar sensation
+- Common Peroneal (Fibular) Nerve – Craniolateral crus; dorsal paw
+
+##Function##
+Motor and sensory innervation to the hindlimb.

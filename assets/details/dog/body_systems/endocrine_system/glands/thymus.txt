@@ -1,0 +1,11 @@
+#Thymus#
+
+##Location##
+A bilobed lymphoid organ located in the cranial mediastinum, ventral to the heart and trachea, extending into the neck region in young dogs. It is prominent in puppies and gradually involutes (shrinks) with age.
+
+##Parts##
+Cortex contains densely packed immature T-lymphocytes (thymocytes).
+Medulla contains mature T-lymphocytes, epithelial cells, and Hassall’s corpuscles.
+
+##Function##
+Essential for the development and maturation of T-lymphocytes (cell-mediated immunity). The thymus “educates” and differentiates immune cells, ensuring self-tolerance and proper immune defense. It is most active in young animals and regresses in adulthood.
