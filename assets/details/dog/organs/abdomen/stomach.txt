@@ -1,0 +1,10 @@
+#Stomach#
+
+##Location##
+Cranial abdomen, mainly on the left side.
+
+##Parts##
+Cardia, fundus, body, pylorus.
+
+##Function##
+Stores food, mixes it mechanically, and initiates protein digestion with acid and enzymes.

@@ -1,0 +1,14 @@
+#Touch – Cutaneous Structures#
+
+##Parts##
+Skin (Epidermis, Dermis, Hypodermis) – Outer covering containing sensory nerve endings.
+Hair Follicle Receptors – Nerve endings at the base of hairs that detect hair movement.
+Merkel Cells – Specialized skin cells for detecting light pressure and texture.
+Meissner’s Corpuscles – Receptors in paw pads and sensitive skin areas that sense touch and vibration.
+Pacinian Corpuscles – Deep pressure and vibration receptors in the dermis.
+Ruffini Endings – Detect skin stretch and contribute to body position awareness.
+Free Nerve Endings – Detect pain (nociception), temperature, and crude touch.
+Whiskers (Vibrissae) – Highly sensitive tactile hairs on muzzle and face with deep nerve endings.
+
+##Function##
+Provides sensitivity to pressure, vibration, pain, temperature, and texture. Dogs rely on tactile information for navigation, environmental awareness, communication, and protective reflexes.

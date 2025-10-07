@@ -827,9 +827,15 @@ class CategoryData {
           ],
         ),
         Category(
-          id: 'cranial_nerves',
-          label: 'Cranial Nerves',
-          icon: Icons.linear_scale,
+          id: 'peripheral_nervous_system_pns',
+          label: 'Peripheral Nervous System (PNS)',
+          icon: Icons.scatter_plot,
+          subcategories: [
+            Category(id: 'cranial_nerves', label: 'Cranial Nerves', icon: Icons.scatter_plot),
+            Category(id: 'spinal_nerves', label: 'Spinal Nerves', icon: Icons.scatter_plot),
+            Category(id: 'sensory_nerves', label: 'Sensory Nerves', icon: Icons.scatter_plot),
+            Category(id: 'motor_nerves', label: 'Motor Nerves', icon: Icons.scatter_plot),
+          ],
         ),
         Category(
           id: 'brachial_plexus_c6_t2',
@@ -968,21 +974,14 @@ class CategoryData {
           ],
         ),
         Category(
-          id: 'axial_skeleton', 
-          label: 'Axial Skeleton', 
+          id: 'pelvis',
+          label: 'Pelvis',
           icon: Icons.accessibility,
           subcategories: [
-            Category(
-              id: 'pelvis',
-              label: 'Pelvis',
-              icon: Icons.accessibility,
-              subcategories: [
-                Category(id: 'ilium', label: 'Ilium', icon: Icons.accessibility),
-                Category(id: 'ischium', label: 'Ischium', icon: Icons.accessibility),
-                Category(id: 'pubis', label: 'Pubis', icon: Icons.accessibility),
-                Category(id: 'acetabular_bone', label: 'Acetabular Bone', icon: Icons.accessibility),
-              ],
-            ),
+            Category(id: 'ilium', label: 'Ilium', icon: Icons.accessibility),
+            Category(id: 'ischium', label: 'Ischium', icon: Icons.accessibility),
+            Category(id: 'pubis', label: 'Pubis', icon: Icons.accessibility),
+            Category(id: 'acetabular_bone', label: 'Acetabular Bone', icon: Icons.accessibility),
           ],
         ),
         Category(
@@ -1089,7 +1088,35 @@ class CategoryData {
     Category(id: 'muscle_groups', label: 'Muscle Groups', icon: Icons.group_work),
   ];
 
-  // Mock subcategories for Organ & Gland System
+  // Mock subcategories for Organs
+  static final List<Category> organsCategories = [
+    Category(id: 'heart', label: 'Heart', icon: Icons.favorite),
+    Category(id: 'lungs', label: 'Lungs', icon: Icons.air),
+    Category(id: 'liver', label: 'Liver', icon: Icons.local_hospital),
+    Category(id: 'kidneys', label: 'Kidneys', icon: Icons.water_drop),
+    Category(id: 'digestive_organs', label: 'Digestive Organs', icon: Icons.restaurant),
+    Category(id: 'reproductive_organs', label: 'Reproductive Organs', icon: Icons.family_restroom),
+  ];
+
+  // Mock subcategories for Glands
+  static final List<Category> glandsCategories = [
+    Category(id: 'endocrine_glands', label: 'Endocrine Glands', icon: Icons.scatter_plot),
+    Category(id: 'exocrine_glands', label: 'Exocrine Glands', icon: Icons.opacity),
+    Category(id: 'salivary_glands', label: 'Salivary Glands', icon: Icons.restaurant_menu),
+    Category(id: 'sweat_glands', label: 'Sweat Glands', icon: Icons.water_drop),
+  ];
+
+  // Mock subcategories for Connective Tissue
+  static final List<Category> connectiveTissueCategories = [
+    Category(id: 'cartilage', label: 'Cartilage', icon: Icons.layers),
+    Category(id: 'bone', label: 'Bone', icon: Icons.straighten),
+    Category(id: 'blood', label: 'Blood', icon: Icons.bloodtype),
+    Category(id: 'adipose_tissue', label: 'Adipose Tissue', icon: Icons.circle),
+    Category(id: 'dense_connective_tissue', label: 'Dense Connective Tissue', icon: Icons.grid_on),
+    Category(id: 'loose_connective_tissue', label: 'Loose Connective Tissue', icon: Icons.blur_on),
+  ];
+
+  // Mock subcategories for Organ & Gland System (deprecated - kept for backward compatibility)
   static final List<Category> organGlandSystemCategories = [
     Category(id: 'heart', label: 'Heart', icon: Icons.favorite),
     Category(id: 'lungs', label: 'Lungs', icon: Icons.air),
@@ -1111,7 +1138,232 @@ class CategoryData {
     Category(id: 'urinary_system', label: 'Urinary System', icon: Icons.opacity),
   ];
 
-  // Mock subcategories for Sensory & External Structures
+  // Get sensory & external structure categories for a specific animal
+  static List<Category> getSensoryExternalCategoriesForAnimal(String animalId) {
+    if (animalId.toLowerCase() == 'dog') {
+      return [
+        Category(
+          id: 'vision',
+          label: 'Vision',
+          icon: Icons.visibility,
+          subcategories: [
+            Category(id: 'structures', label: 'Structures', icon: Icons.visibility),
+            Category(id: 'accessory_structures', label: 'Accessory Structures', icon: Icons.visibility_off),
+          ],
+        ),
+        Category(
+          id: 'hearing_balance',
+          label: 'Hearing & Balance',
+          icon: Icons.hearing,
+          subcategories: [
+            Category(id: 'auditory_structures', label: 'Auditory Structures', icon: Icons.hearing),
+            Category(id: 'vestibular_structures', label: 'Vestibular Structures', icon: Icons.balance),
+          ],
+        ),
+        Category(
+          id: 'smell_taste',
+          label: 'Smell & Taste',
+          icon: Icons.air,
+          subcategories: [
+            Category(id: 'smell', label: 'Smell', icon: Icons.air),
+            Category(id: 'taste', label: 'Taste', icon: Icons.emoji_food_beverage),
+          ],
+        ),
+        Category(
+          id: 'touch',
+          label: 'Touch',
+          icon: Icons.touch_app,
+          subcategories: [
+            Category(id: 'cutaneous_structures', label: 'Cutaneous Structures', icon: Icons.touch_app),
+            Category(id: 'proprioceptive_structures', label: 'Proprioceptive Structures', icon: Icons.sensors),
+          ],
+        ),
+      ];
+    }
+    
+    // Default sensory & external structure categories for other animals
+    return sensoryExternalCategories;
+  }
+
+  // Get connective tissue categories for a specific animal
+  static List<Category> getConnectiveTissueCategoriesForAnimal(String animalId) {
+    if (animalId.toLowerCase() == 'dog') {
+      return [
+        Category(
+          id: 'fascia',
+          label: 'Fascia',
+          icon: Icons.layers,
+          subcategories: [
+            Category(id: 'superficial', label: 'Superficial', icon: Icons.layers),
+            Category(id: 'deep_myofascia', label: 'Deep (Myofascia)', icon: Icons.layers),
+          ],
+        ),
+        Category(
+          id: 'tendons',
+          label: 'Tendons',
+          icon: Icons.link,
+          subcategories: [
+            Category(id: 'forelimb', label: 'Forelimb', icon: Icons.accessibility),
+            Category(id: 'hindlimb', label: 'Hindlimb', icon: Icons.accessibility),
+          ],
+        ),
+        Category(
+          id: 'ligaments',
+          label: 'Ligaments',
+          icon: Icons.link,
+          subcategories: [
+            Category(id: 'forelimb', label: 'Forelimb', icon: Icons.accessibility),
+            Category(id: 'hindlimb', label: 'Hindlimb', icon: Icons.accessibility),
+          ],
+        ),
+        Category(
+          id: 'cartilage',
+          label: 'Cartilage',
+          icon: Icons.layers,
+          subcategories: [
+            Category(id: 'axial', label: 'Axial', icon: Icons.layers),
+            Category(id: 'appendicular', label: 'Appendicular', icon: Icons.layers),
+          ],
+        ),
+        Category(
+          id: 'adipose_tissue',
+          label: 'Adipose Tissue',
+          icon: Icons.circle,
+          subcategories: [
+            Category(id: 'superficial', label: 'Superficial', icon: Icons.circle),
+            Category(id: 'visceral', label: 'Visceral', icon: Icons.circle),
+          ],
+        ),
+        Category(id: 'blood', label: 'Blood', icon: Icons.bloodtype),
+        Category(id: 'lymph', label: 'Lymph', icon: Icons.water),
+      ];
+    }
+    
+    // Default connective tissue categories for other animals
+    return connectiveTissueCategories;
+  }
+
+  // Get organs categories for a specific animal
+  static List<Category> getOrgansCategoriesForAnimal(String animalId) {
+    if (animalId.toLowerCase() == 'dog') {
+      return [
+        Category(
+          id: 'head',
+          label: 'Head',
+          icon: Icons.face,
+          subcategories: [
+            Category(id: 'eye', label: 'Eye', icon: Icons.visibility),
+            Category(id: 'ear', label: 'Ear', icon: Icons.hearing),
+          ],
+        ),
+        Category(
+          id: 'head_neck',
+          label: 'Head/Neck',
+          icon: Icons.restaurant,
+          subcategories: [
+            Category(id: 'larynx', label: 'Larynx', icon: Icons.mic),
+          ],
+        ),
+        Category(
+          id: 'thorax',
+          label: 'Thorax',
+          icon: Icons.accessibility,
+          subcategories: [
+            Category(id: 'heart', label: 'Heart', icon: Icons.favorite),
+            Category(id: 'lungs_lobes', label: 'Lungs (lobes)', icon: Icons.air),
+          ],
+        ),
+        Category(
+          id: 'abdomen',
+          label: 'Abdomen',
+          icon: Icons.restaurant,
+          subcategories: [
+            Category(id: 'liver_lobes_processes', label: 'Liver (lobes & processes)', icon: Icons.local_hospital),
+            Category(id: 'gallbladder', label: 'Gallbladder', icon: Icons.opacity),
+            Category(id: 'stomach', label: 'Stomach', icon: Icons.restaurant),
+            Category(id: 'pancreas', label: 'Pancreas', icon: Icons.scatter_plot),
+            Category(id: 'spleen', label: 'Spleen', icon: Icons.scatter_plot),
+            Category(id: 'small_intestine', label: 'Small Intestine', icon: Icons.linear_scale),
+            Category(id: 'large_intestine', label: 'Large Intestine', icon: Icons.linear_scale),
+          ],
+        ),
+        Category(
+          id: 'urinary',
+          label: 'Urinary',
+          icon: Icons.water_drop,
+          subcategories: [
+            Category(id: 'kidneys', label: 'Kidneys', icon: Icons.water_drop),
+            Category(id: 'ureters', label: 'Ureters', icon: Icons.linear_scale),
+            Category(id: 'urinary_bladder', label: 'Urinary Bladder', icon: Icons.opacity),
+          ],
+        ),
+      ];
+    }
+    
+    // Default organs categories for other animals
+    return organsCategories;
+  }
+
+  // Get glands categories for a specific animal
+  static List<Category> getGlandsCategoriesForAnimal(String animalId) {
+    if (animalId.toLowerCase() == 'dog') {
+      return [
+        Category(
+          id: 'salivary',
+          label: 'Salivary',
+          icon: Icons.scatter_plot,
+          subcategories: [
+            Category(id: 'parotid_gland', label: 'Parotid Gland', icon: Icons.scatter_plot),
+            Category(id: 'mandibular_gland', label: 'Mandibular Gland', icon: Icons.scatter_plot),
+            Category(id: 'sublingual_gland', label: 'Sublingual Gland (mono/polystomatic)', icon: Icons.scatter_plot),
+            Category(id: 'zygomatic_gland', label: 'Zygomatic Gland', icon: Icons.scatter_plot),
+          ],
+        ),
+        Category(
+          id: 'ocular',
+          label: 'Ocular',
+          icon: Icons.visibility,
+          subcategories: [
+            Category(id: 'lacrimal_gland', label: 'Lacrimal Gland', icon: Icons.visibility),
+            Category(id: 'gland_of_the_third_eyelid', label: 'Gland of the Third Eyelid', icon: Icons.visibility),
+            Category(id: 'meibomian_tarsal_glands', label: 'Meibomian (Tarsal) Glands', icon: Icons.visibility),
+          ],
+        ),
+        Category(
+          id: 'dermal',
+          label: 'Dermal',
+          icon: Icons.layers,
+          subcategories: [
+            Category(id: 'sebaceous_glands', label: 'Sebaceous Glands', icon: Icons.layers),
+            Category(id: 'apocrine_sweat_glands', label: 'Apocrine Sweat Glands', icon: Icons.layers),
+            Category(id: 'merocrine_eccrine_glands', label: 'Merocrine (Eccrine) Glands', icon: Icons.layers),
+          ],
+        ),
+        Category(
+          id: 'perianal',
+          label: 'Perianal',
+          icon: Icons.scatter_plot,
+          subcategories: [
+            Category(id: 'anal_sacs_apocrine_glands', label: 'Anal Sacs (Apocrine Glands)', icon: Icons.scatter_plot),
+            Category(id: 'circumanal_perianal_glands', label: 'Circumanal (Perianal) Glands', icon: Icons.scatter_plot),
+          ],
+        ),
+        Category(
+          id: 'mammary',
+          label: 'Mammary',
+          icon: Icons.scatter_plot,
+          subcategories: [
+            Category(id: 'mammary_glands', label: 'Mammary Glands', icon: Icons.scatter_plot),
+          ],
+        ),
+      ];
+    }
+    
+    // Default glands categories for other animals
+    return glandsCategories;
+  }
+
+  // Mock subcategories for Sensory & External Structures (default for non-dog animals)
   static final List<Category> sensoryExternalCategories = [
     Category(id: 'eyes_vision', label: 'Eyes & Vision', icon: Icons.visibility),
     Category(id: 'ears_hearing', label: 'Ears & Hearing', icon: Icons.hearing),
@@ -1157,11 +1409,25 @@ class CategoryData {
         subcategories: getMuscularSystemCategoriesForAnimal(animalId),
       ),
       Category(
-        id: 'organ_gland_system',
-        label: 'Organ & Gland System',
+        id: 'connective_tissue',
+        label: 'Connective Tissue',
+        icon: Icons.layers,
+        imagePath: 'assets/images/$animalId/connective_tissue.webp',
+        subcategories: getConnectiveTissueCategoriesForAnimal(animalId),
+      ),
+      Category(
+        id: 'organs',
+        label: 'Organs',
         icon: Icons.favorite,
-        imagePath: 'assets/images/$animalId/oragn_&_gland.webp',
-        subcategories: organGlandSystemCategories,
+        imagePath: 'assets/images/$animalId/organs.webp',
+        subcategories: getOrgansCategoriesForAnimal(animalId),
+      ),
+      Category(
+        id: 'glands',
+        label: 'Glands',
+        icon: Icons.scatter_plot,
+        imagePath: 'assets/images/$animalId/glands.webp',
+        subcategories: getGlandsCategoriesForAnimal(animalId),
       ),
       Category(
         id: 'body_systems',
@@ -1175,7 +1441,7 @@ class CategoryData {
         label: 'Sensory & External Structures',
         icon: Icons.visibility,
         imagePath: 'assets/images/$animalId/sensory_&_external.webp',
-        subcategories: sensoryExternalCategories,
+        subcategories: getSensoryExternalCategoriesForAnimal(animalId),
       ),
     ];
     

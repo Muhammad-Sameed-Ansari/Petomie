@@ -1,0 +1,23 @@
+#Spinal Nerves#
+
+##Location##
+Emerge in bilateral pairs from each segment of the spinal cord, exiting through the intervertebral foramina.
+Extend outward to innervate the neck, trunk, limbs, and tail.
+Originate from cervical, thoracic, lumbar, sacral, and caudal regions.
+
+##Shape##
+Each spinal nerve consists of two roots:
+Dorsal Root: Sensory (afferent) fibers carrying information to the spinal cord.
+Ventral Root: Motor (efferent) fibers sending signals from the spinal cord to muscles and glands.
+Grouped as:
+Cervical (C1–C8) – Neck, forelimbs, diaphragm
+Thoracic (T1–T13) – Chest wall, intercostal muscles, trunk
+Lumbar (L1–L7) – Abdominal wall, hind limbs
+Sacral (S1–S3) – Pelvic organs, tail, perineum
+Caudal (Cd1–Cd5) – Tail movement and sensation
+
+##Function##
+Act as communication highways between the brain and body.
+Transmit sensory signals to the CNS and motor commands to limbs and organs.
+Coordinate reflexes, voluntary movement, balance, and postural adjustments.
+Also contribute to autonomic control of viscera and blood flow.

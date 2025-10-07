@@ -1,0 +1,14 @@
+#Eye Structures#
+
+##Location##
+Located within the orbit, protected by the eyelids, extraocular muscles, and surrounding bony socket. The eye is a spherical organ specialized for vision.
+
+##Parts##
+Cornea is the transparent, curved front surface of the eye that refracts (bends) incoming light.
+Sclera is the opaque, white outer layer of the eyeball that provides structure and protection.
+Iris is the colored portion of the eye that controls pupil size and regulates the amount of light entering.
+Lens is a transparent, flexible structure behind the iris that focuses light onto the retina.
+Retina is the innermost layer of the eye containing photoreceptor cells (rods and cones) that convert light into neural signals.
+
+##Function##
+Together, these structures protect the eye, regulate light entry, focus light, and transform visual input into electrical signals for the brain, enabling vision in dogs.

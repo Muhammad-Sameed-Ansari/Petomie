@@ -1,0 +1,26 @@
+#Cranial Nerves#
+
+##Location##
+Emerge directly from the brain and brainstem, passing through foramina of the skull.
+They supply sensory and motor fibers to the head, neck, and upper thoracic and abdominal organs (via the vagus nerve).
+Each nerve pair arises in sequence from the most rostral (front) to the most caudal (rear) part of the brain.
+
+##Shape##
+Twelve paired nerves with distinct origins and terminations:
+I – Olfactory – Smell (nasal cavity)
+II – Optic – Vision (retina → brain)
+III – Oculomotor – Eye movement, pupil constriction
+IV – Trochlear – Eye rotation (dorsal oblique muscle)
+V – Trigeminal – Facial sensation, chewing muscles
+VI – Abducens – Lateral eye movement (lateral rectus)
+VII – Facial – Facial expression, taste, saliva/tear secretion
+VIII – Vestibulocochlear – Hearing and balance
+IX – Glossopharyngeal – Taste, swallowing, salivation
+X – Vagus – Parasympathetic to thoracic and abdominal organs
+XI – Accessory – Neck and shoulder movement
+XII – Hypoglossal – Tongue movement
+
+##Function##
+Provide sensory input (smell, taste, sight, hearing, balance) and motor output (eye, facial, tongue, and neck movement).
+Regulate gland secretion, swallowing, speech, and autonomic control of organs such as the heart and gut.
+Crucial for communication, survival behaviors, and sensory awareness.

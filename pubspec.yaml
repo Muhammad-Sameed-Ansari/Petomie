@@ -123,8 +123,7 @@ flutter:
     - assets/details/dog/skeletal_system/forelimb/carpus_distal_row/
     - assets/details/dog/skeletal_system/forelimb/manus/
     - assets/details/dog/skeletal_system/forelimb/sesamoids/
-    - assets/details/dog/skeletal_system/axial_skeleton/
-    - assets/details/dog/skeletal_system/axial_skeleton/pelvis/
+    - assets/details/dog/skeletal_system/pelvis/
     - assets/details/dog/skeletal_system/hindlimb/
     - assets/details/dog/skeletal_system/hindlimb/hindpaw/
     - assets/details/dog/skeletal_system/hindlimb/leg/
@@ -157,6 +156,7 @@ flutter:
     - assets/details/dog/body_systems/nervous_system_cns/
     - assets/details/dog/body_systems/nervous_system_cns/brain/
     - assets/details/dog/body_systems/nervous_system_cns/brainstem/
+    - assets/details/dog/body_systems/peripheral_nervous_system_pns/
     - assets/details/dog/body_systems/regional_lymph_nodes/
     - assets/details/dog/body_systems/reproductive_system_female/
     - assets/details/dog/body_systems/reproductive_system_female/external_genitalia/
@@ -168,6 +168,29 @@ flutter:
     - assets/details/dog/body_systems/respiratory_system/
     - assets/details/dog/body_systems/respiratory_system/upper_airways/
     - assets/details/dog/body_systems/urinary_system/
+    - assets/details/dog/sensory_external_structures/
+    - assets/details/dog/sensory_external_structures/vision/
+    - assets/details/dog/sensory_external_structures/hearing_balance/
+    - assets/details/dog/sensory_external_structures/smell_taste/
+    - assets/details/dog/sensory_external_structures/touch/
+    - assets/details/dog/connective_tissue/
+    - assets/details/dog/connective_tissue/fascia/
+    - assets/details/dog/connective_tissue/tendons/
+    - assets/details/dog/connective_tissue/ligaments/
+    - assets/details/dog/connective_tissue/cartilage/
+    - assets/details/dog/connective_tissue/adipose_tissue/
+    - assets/details/dog/organs/
+    - assets/details/dog/organs/head/
+    - assets/details/dog/organs/head_neck/
+    - assets/details/dog/organs/thorax/
+    - assets/details/dog/organs/abdomen/
+    - assets/details/dog/organs/urinary/
+    - assets/details/dog/glands/
+    - assets/details/dog/glands/salivary/
+    - assets/details/dog/glands/ocular/
+    - assets/details/dog/glands/dermal/
+    - assets/details/dog/glands/perianal/
+    - assets/details/dog/glands/mammary/
     - assets/details/horse/
     - assets/details/horse/energy/
     - assets/details/horse/energy/chakras/

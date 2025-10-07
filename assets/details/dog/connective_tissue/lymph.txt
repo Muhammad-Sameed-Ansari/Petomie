@@ -1,0 +1,20 @@
+#Lymph#
+
+##Location##
+Flows through the lymphatic system: lymphatic capillaries, vessels, nodes, and ducts, returning to venous circulation.
+
+##Shape##
+Clear to slightly yellow fluid, lower in proteins than plasma, rich in lymphocytes.
+
+##Parts##
+Lymphatic Capillaries – Collect interstitial fluid from tissues.
+Lymph Vessels – Transport lymph back toward the thoracic duct and venous system.
+Lymph Nodes – Filter lymph, produce lymphocytes, mount immune responses.
+Lymph Organs – Spleen, thymus, tonsils, Peyer’s patches.
+Thoracic Duct & Right Lymphatic Duct – Return lymph to venous circulation.
+
+##Function##
+Maintain fluid balance by returning interstitial fluid to the blood.
+Transport lipids absorbed from the intestine.
+Provide immune surveillance and defense.
+Filter pathogens and present them to lymphocytes.

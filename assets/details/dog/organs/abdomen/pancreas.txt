@@ -1,0 +1,11 @@
+#Pancreas#
+
+##Location##
+Along the duodenum, between stomach and small intestine.
+
+##Parts##
+Right lobe, left lobe, pancreatic duct(s).
+
+##Function##
+Exocrine: secretes digestive enzymes and bicarbonate.
+Endocrine: produces insulin, glucagon, somatostatin.

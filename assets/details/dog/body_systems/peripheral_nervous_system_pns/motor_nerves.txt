@@ -1,0 +1,18 @@
+#Motor Nerves#
+
+##Location##
+Originate from motor neurons within the brain (motor cortex, brainstem) and spinal cord (ventral horn).
+Extend outward through the peripheral nervous system to reach muscles and glands across the body.
+
+##Shape##
+Long, myelinated fibers transmitting impulses from the CNS to effector organs.
+###Two main types###
+Somatic Motor Fibers: Voluntary control of skeletal muscles (walking, running, posture, barking).
+Autonomic Motor Fibers: Involuntary control of smooth and cardiac muscles (heart, intestines, glands).
+Each motor nerve branches into smaller terminals that connect directly to muscle fibers at the neuromuscular junction.
+
+##Function##
+Activate muscle contraction for movement, stability, and reflexes.
+Maintain posture, gait, and precise coordination.
+Regulate involuntary body functions — heartbeat, respiration, digestion, gland secretion.
+Translate thought or instinct into physical action, forming the link between intention and motion.

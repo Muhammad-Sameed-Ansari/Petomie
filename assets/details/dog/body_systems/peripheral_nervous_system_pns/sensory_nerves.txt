@@ -1,0 +1,19 @@
+#Sensory Nerves#
+
+##Location##
+Found throughout skin, muscles, tendons, joints, and internal organs.
+Sensory nerve endings connect via afferent fibers to the spinal cord and brain, forming the body’s feedback system.
+
+##Shape##
+Microscopic receptor endings specialized to detect different stimuli:
+Mechanoreceptors: Touch, pressure, and vibration (in skin, whiskers, paw pads).
+Thermoreceptors: Temperature changes (hot or cold).
+Nociceptors: Pain and tissue damage.
+Proprioceptors: Position and movement (within muscles, tendons, joints).
+Fibers vary in diameter and myelination depending on signal speed (e.g., touch is fast, pain slower).
+
+##Function##
+Convert physical or chemical stimuli into electrical impulses sent to the CNS.
+Allow dogs to sense touch, texture, vibration, temperature, pain, and limb position.
+Essential for awareness, reflexes, coordination, and protective reactions.
+Enable the dog’s exceptional agility, balance, and environmental awareness.

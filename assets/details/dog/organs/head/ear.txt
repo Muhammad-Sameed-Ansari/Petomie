@@ -1,0 +1,15 @@
+#Ear#
+
+##Location##
+Situated on either side of the head.
+
+##Parts##
+- Pinna (Auricle) – Collects sound
+- Ear Canal – Conducts sound to tympanum
+- Tympanum (Eardrum) – Vibrates with sound waves
+- Ossicles (Malleus, Incus, Stapes) – Amplify sound
+- Cochlea – Converts sound to neural signals
+- Vestibule & Semicircular Canals – Detect position and motion (balance)
+
+##Function##
+Hearing and balance (equilibrium).

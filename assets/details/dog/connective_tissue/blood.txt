@@ -1,0 +1,19 @@
+#Blood#
+
+##Location##
+Circulates throughout the cardiovascular system: heart, arteries, veins, and capillaries.
+
+##Shape##
+Fluid connective tissue composed of plasma and formed elements (erythrocytes, leukocytes, platelets).
+
+##Parts##
+Erythrocytes (Red Blood Cells) – Contain hemoglobin, transport oxygen and carbon dioxide.
+Leukocytes (White Blood Cells) – Immune defense cells; include neutrophils, lymphocytes, monocytes, eosinophils, basophils.
+Platelets (Thrombocytes) – Small fragments aiding in clot formation.
+Plasma – Liquid component carrying nutrients, hormones, waste, electrolytes, and proteins.
+
+##Function##
+Transport oxygen, nutrients, hormones, and waste.
+Maintain pH balance and temperature regulation.
+Immune defense against pathogens.
+Hemostasis (clotting) after injury.

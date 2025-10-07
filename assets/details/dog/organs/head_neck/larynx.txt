@@ -1,0 +1,12 @@
+#Larynx#
+
+##Location##
+Located in the neck, between the pharynx and trachea.
+
+##Parts##
+Thyroid cartilage, cricoid cartilage, arytenoid cartilages, epiglottis.
+
+##Function##
+Airway protection during swallowing (epiglottis closes over glottis).
+Phonation (sound production) via vocal folds.
+Controls airflow to lower respiratory tract.

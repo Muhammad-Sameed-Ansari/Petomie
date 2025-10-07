@@ -1,0 +1,14 @@
+#Structures#
+
+##Parts##
+Cornea – Transparent, curved outer layer that refracts incoming light.
+Sclera – Opaque, protective outer coat providing shape and support.
+Iris – Colored muscular structure controlling pupil size.
+Pupil – Central opening that regulates the amount of light entering.
+Ciliary Body – Produces aqueous humor and adjusts lens curvature.
+Lens – Transparent, elastic structure focusing light on the retina.
+Retina – Light-sensitive tissue containing photoreceptors (rods and cones).
+Optic Nerve – Transmits visual signals from retina to the brain.
+
+##Function##
+Capture and focus light onto the retina, regulate light entry, and convert light into electrical signals for processing in the brain.

@@ -1,0 +1,11 @@
+#Touch – Proprioceptive Structures#
+
+##Parts##
+Muscle Spindles – Stretch receptors within muscles that detect changes in length and tension.
+Golgi Tendon Organs – Receptors in tendons that sense muscle force and load.
+Joint Receptors – Sensory endings in ligaments and joint capsules that detect position and movement.
+Spinal Cord Pathways – Carry proprioceptive signals from body to brain.
+Somatosensory Cortex – Brain region that processes tactile and proprioceptive input.
+
+##Function##
+Proprioception provides awareness of body position, balance, and movement coordination. It works with the tactile system to guide precise movements, posture control, and spatial orientation.

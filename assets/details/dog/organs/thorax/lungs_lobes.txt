@@ -1,0 +1,10 @@
+#Lungs#
+
+##Location##
+Thoracic cavity, surrounding the heart.
+
+##Parts##
+Right lung (cranial, middle, caudal, accessory lobes); left lung (cranial [cranial + caudal parts], caudal lobe).
+
+##Function##
+Gas exchange — oxygen enters blood, carbon dioxide is expelled.
