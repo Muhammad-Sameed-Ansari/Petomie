@@ -1,0 +1,20 @@
+#Gonads#
+
+##Location##
+The gonads are the primary reproductive organs—the testes in males and ovaries in females.
+- **In Males:** The testes are located within the scrotum, suspended outside the abdominal cavity to maintain an optimal temperature for sperm production.
+- **In Females:** The ovaries lie in the dorsal part of the abdominal cavity, just behind the kidneys, attached by the mesovarium within the broad ligament of the uterus.
+
+##Shape##
+Paired organs with distinct structures suited to their reproductive functions.
+- **Testes:** Oval, smooth, and firm, surrounded by a fibrous capsule (tunica albuginea). Internally divided into lobules containing seminiferous tubules.
+- **Ovaries:** Irregularly oval with a smooth outer surface and an ovulation fossa where follicles rupture to release ova.
+- **Associated Ducts:**
+  - In males: epididymis and vas deferens.
+  - In females: oviducts (fallopian tubes) and uterine horns.
+
+##Function##
+Serve as the source of gametes and reproductive hormones essential for fertility and sexual function.
+- **Testes:** Produce sperm (spermatogenesis) and secrete testosterone, responsible for male sexual characteristics, libido, and muscle development.
+- **Ovaries:** Produce ova (eggs) and secrete estrogen and progesterone, which regulate the estrous cycle, pregnancy, and development of female characteristics.
+Together, the gonads ensure reproduction, hormone balance, and secondary sexual development in the horse.

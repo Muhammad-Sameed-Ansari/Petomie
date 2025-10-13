@@ -1,0 +1,24 @@
+#Inspiratory & Expiratory Muscles#
+
+##Location##
+Located within the thoracic and abdominal regions, surrounding the rib cage, diaphragm, and abdominal wall. These muscles coordinate the expansion and contraction of the thoracic cavity to facilitate breathing.
+
+##Shape##
+**Inspiratory Muscles:**
+- **Diaphragm:** Dome-shaped musculotendinous partition separating thoracic and abdominal cavities.
+- **External Intercostals:** Situated between ribs with fibers running caudoventrally, expanding the rib cage.
+- **Scalenus and Serratus Ventralis:** Assist in elevating the ribs and drawing air into the lungs.
+
+**Expiratory Muscles:**
+- **Internal Intercostals:** Deeper rib muscles with fibers running cranioventrally, compressing the thorax.
+- **Abdominal Muscles (External/Internal Obliques, Transversus Abdominis, Rectus Abdominis):** Push abdominal viscera against the diaphragm to expel air.
+
+##Function##
+**Inspiration:**
+- Enlarges thoracic cavity and decreases intrathoracic pressure
+- Draws air into the lungs through diaphragm contraction and rib elevation
+
+**Expiration:**
+- Reduces thoracic volume and increases internal pressure to expel air
+- Aids in vocalization, coughing, and stabilization of the trunk during exertion
+- Works synergistically with core muscles for posture and respiration efficiency

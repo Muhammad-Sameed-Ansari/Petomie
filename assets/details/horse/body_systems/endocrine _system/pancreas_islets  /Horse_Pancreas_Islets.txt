@@ -1,0 +1,22 @@
+#Pancreas (Islets)#
+
+##Location##
+Situated in the cranial part of the abdominal cavity, nestled within the mesoduodenum between the duodenum and the right lobe of the liver.  
+The islets of Langerhans are microscopic clusters scattered throughout the exocrine pancreas tissue.
+
+##Shape##
+The pancreas is a pale, lobulated gland with both exocrine and endocrine portions.  
+- **Islets of Langerhans:** Small, round or oval clusters of pale cells dispersed within darker acinar tissue.  
+- **Cell Types:** 
+  - **Alpha Cells:** Secrete glucagon to raise blood glucose.  
+  - **Beta Cells:** Secrete insulin to lower blood glucose.  
+  - **Delta Cells:** Produce somatostatin, regulating both insulin and glucagon.  
+  - **F Cells:** Secrete pancreatic polypeptide aiding digestive regulation.  
+
+##Function##
+Regulates blood glucose and energy metabolism through hormone secretion.  
+- **Insulin:** Promotes glucose uptake and storage as glycogen.  
+- **Glucagon:** Stimulates glucose release from the liver.  
+- **Somatostatin:** Balances secretion of other pancreatic hormones.  
+- **Pancreatic Polypeptide:** Modulates digestive enzyme secretion and intestinal motility.  
+Works in harmony with the liver, adrenal glands, and digestive system to maintain metabolic balance and homeostasis.

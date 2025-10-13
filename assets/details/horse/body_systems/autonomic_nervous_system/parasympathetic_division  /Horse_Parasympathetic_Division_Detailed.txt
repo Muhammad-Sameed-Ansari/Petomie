@@ -1,0 +1,25 @@
+#Parasympathetic Division#
+
+##Location##
+Originates from the brainstem and sacral spinal cord (S2–S4).
+Cranial outflow arises through cranial nerves III (oculomotor), VII (facial), IX (glossopharyngeal), and X (vagus).
+The vagus nerve provides parasympathetic supply to the thoracic and abdominal organs, while the pelvic nerves from the sacral region innervate the pelvic viscera, including the bladder, rectum, and reproductive organs.
+Ganglia are positioned close to or within the walls of target organs, allowing precise local control.
+
+##Shape##
+Composed of long preganglionic fibers and short postganglionic fibers, forming fine, delicate nerve networks distributed along the major visceral pathways.
+These fibers create diffuse but highly coordinated connections throughout the heart, lungs, gastrointestinal tract, and urogenital system.
+
+- **Cranial Component:** Originates in the brainstem; fibers travel via cranial nerves to the head, thoracic cavity, and abdominal organs.
+- **Vagal Branches:** Extend through the thorax and abdomen to the heart, lungs, stomach, liver, and intestines.
+- **Sacral Component:** Arises from sacral spinal segments; fibers form pelvic nerves to the bladder, colon, and reproductive organs.
+- **Terminal Ganglia:** Small clusters of neurons located within or near target organs, ensuring rapid, localized responses.
+
+##Function##
+Promotes the body’s “rest and digest” state, restoring energy and supporting recovery after activity or stress.
+- **Slows heart rate** and reduces cardiac workload.
+- **Stimulates digestive secretions** and intestinal motility.
+- **Enhances nutrient absorption** and glandular activity.
+- **Facilitates urination and defecation** through contraction of smooth muscles.
+- **Supports reproductive organ function** and overall internal balance.
+Acts in coordination with the enteric and sympathetic divisions to maintain homeostasis and long-term physiological stability.

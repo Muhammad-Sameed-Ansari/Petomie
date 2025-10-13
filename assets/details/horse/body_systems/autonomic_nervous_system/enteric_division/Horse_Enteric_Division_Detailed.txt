@@ -1,0 +1,24 @@
+#Enteric Division#
+
+##Location##
+Located throughout the walls of the gastrointestinal tract, extending from the esophagus to the rectum.
+Found within two main nerve plexuses: the **myenteric (Auerbach’s) plexus** between the circular and longitudinal muscle layers, and the **submucosal (Meissner’s) plexus** within the submucosa.
+Both plexuses are embedded in the gut wall and function independently, though they communicate with the central and autonomic nervous systems.
+
+##Shape##
+Composed of dense networks of interconnected neurons and glial cells forming an intrinsic “gut brain.”
+These neurons are organized into ganglia and interconnected by nerve fibers that run along the intestinal wall in layered plexiform patterns.
+
+- **Myenteric (Auerbach’s) Plexus:** Located between muscle layers; regulates peristalsis and muscular tone of the gut wall.
+- **Submucosal (Meissner’s) Plexus:** Lies within the submucosa; controls secretion, blood flow, and absorption in the intestinal lining.
+- **Sensory Neurons:** Detect mechanical stretch, pressure, and chemical changes in ingesta.
+- **Motor Neurons:** Stimulate smooth muscle contraction, glandular activity, and local reflexes.
+- **Interneurons:** Integrate sensory and motor input, enabling independent reflex control without brain involvement.
+
+##Function##
+Acts as the intrinsic control system of the gastrointestinal tract, coordinating digestive processes without requiring direct input from the brain or spinal cord.
+- **Regulates peristaltic movement** and rhythmic contractions of smooth muscle.
+- **Controls digestive secretion** and absorption of nutrients.
+- **Maintains intestinal blood flow** to match metabolic activity.
+- **Integrates with parasympathetic and sympathetic divisions** to adjust digestive activity according to the body’s state.
+Ensures efficient digestion, nutrient absorption, and internal stability within the gastrointestinal system.

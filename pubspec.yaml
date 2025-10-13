@@ -94,10 +94,6 @@ flutter:
     - assets/details/energy/aura_energy_field/
     - assets/details/energy/chakras/
     - assets/details/energy/chakras/main_chakra/
-    - assets/details/energy/meridians/
-    - assets/details/energy/meridians/primary_meridian/
-    - assets/details/energy/meridians/extraordinary_meridian/
-    - assets/details/energy/meridians/energy_balance_in_the_body/
     - assets/details/energy/life_force_vital_energy/
     - assets/details/energy/energy_imbalances/
     - assets/details/energy/energy_imbalances/environmental_impacts/
@@ -111,6 +107,8 @@ flutter:
     - assets/details/dog/energy/
     - assets/details/dog/energy/chakras/
     - assets/details/dog/energy/chakras/secondary_chakra/
+    - assets/details/dog/energy/meridians/primary_meridian/
+    - assets/details/dog/energy/meridians/extraordinary_meridian/
     - assets/details/dog/skeletal_system/
     - assets/details/dog/skeletal_system/skull/
     - assets/details/dog/skeletal_system/spine/
@@ -195,14 +193,26 @@ flutter:
     - assets/details/horse/energy/
     - assets/details/horse/energy/chakras/
     - assets/details/horse/energy/chakras/secondary_chakra/
+    - assets/details/horse/energy/meridians/primary_meridian/
+    - assets/details/horse/energy/meridians/extraordinary_meridian/
+    - assets/details/horse/energy/meridians/energy_balance_in_the_body/
+    - assets/details/horse/sensory_external_structures/
+    - assets/details/horse/sensory_external_structures/vision/
+    - assets/details/horse/sensory_external_structures/hearing_balance/
+    - assets/details/horse/sensory_external_structures/smell_taste/
+    - assets/details/horse/sensory_external_structures/touch/
     - assets/details/cat/
     - assets/details/cat/energy/
     - assets/details/cat/energy/chakras/
     - assets/details/cat/energy/chakras/secondary_chakra/
+    - assets/details/cat/energy/meridians/primary_meridian/
+    - assets/details/cat/energy/meridians/extraordinary_meridian/
     - assets/details/bird/
     - assets/details/bird/energy/
     - assets/details/bird/energy/chakras/
     - assets/details/bird/energy/chakras/secondary_chakra/
+    - assets/details/bird/energy/meridians/primary_meridian/
+    - assets/details/bird/energy/meridians/extraordinary_meridian/
     - assets/images/horse/
     - assets/images/dog/
     - assets/images/cat/
@@ -211,14 +221,23 @@ flutter:
     - assets/images/guineapig/
     - assets/images/rabbit/
     - assets/images/horse/energy/
+    - assets/images/horse/energy/meridians/primary_meridian/
+    - assets/images/horse/energy/meridians/extraordinary_meridian/
+    - assets/images/horse/energy/aura_energy_field/
     - assets/images/dog/energy/
+    - assets/images/dog/energy/aura_energy_field/
+    - assets/images/dog/skeletal_system/
     - assets/images/cat/energy/
+    - assets/images/cat/energy/aura_energy_field/
     - assets/images/bird/energy/
+    - assets/images/bird/energy/aura_energy_field/
     - assets/images/energy/
     - assets/images/energy/chakras/
     - assets/images/energy/chakras/main_chakra/
     - assets/images/energy/chakras/secondary_chakra/
     - assets/images/body_systems/
+    - assets/images/body_systems/nervous_system/
+    - assets/images/body_systems/nervous_system/peripheral_nervous_system_pns/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

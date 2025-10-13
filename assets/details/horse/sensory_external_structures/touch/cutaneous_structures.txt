@@ -1,0 +1,11 @@
+#Touch – Cutaneous Structures#
+
+##Parts##
+Merkel Cells – Specialized skin cells that detect light touch and texture changes.
+Meissner’s Corpuscles – Receptors in the dermis that sense gentle touch and vibration.
+Pacinian Corpuscles – Deep pressure and high-frequency vibration receptors located in the dermis and subcutaneous tissue.
+Ruffini Endings – Detect skin stretch and sustained pressure, aiding in proprioceptive feedback.
+Free Nerve Endings – Unencapsulated receptors that respond to pain, temperature, and crude touch.
+
+##Function##
+Cutaneous receptors allow the horse to perceive tactile stimuli such as touch, pressure, and vibration. They protect the body by alerting the animal to harmful contact, support social interaction through grooming and contact, and contribute to coordination by integrating sensory feedback with movement.

@@ -1,0 +1,20 @@
+#Heart#
+
+##Location##
+Located in the middle mediastinum of the thoracic cavity, between the lungs and slightly to the left of the midline. It lies behind the elbow joint at the level of the 3rd to 6th ribs, enclosed within the pericardial sac and protected by the sternum and ribs.
+
+##Shape##
+A muscular, cone-shaped organ divided into four chambers and enclosed by protective membranes:
+- **Right Atrium and Right Ventricle:** Receive deoxygenated blood from the body and pump it to the lungs via the pulmonary artery.
+- **Left Atrium and Left Ventricle:** Receive oxygenated blood from the lungs and pump it to the body through the aorta.
+- **Valves:** Include the tricuspid, pulmonary, mitral, and aortic valves that prevent backflow and ensure unidirectional circulation.
+- **Pericardium:** Double-walled sac containing serous fluid that lubricates the heart’s movement.
+- **Myocardium:** Thick muscular layer responsible for contraction and pumping force.
+- **Coronary Vessels:** Supply oxygen and nutrients to cardiac tissue.
+
+##Function##
+Pumps oxygenated blood to the body and deoxygenated blood to the lungs
+Maintains continuous circulation for nutrient and gas exchange
+Regulates blood pressure and cardiac output according to physiological demand
+Supports thermoregulation and metabolic balance through efficient perfusion
+Acts as the central component of the circulatory system coordinating with vessels and lungs

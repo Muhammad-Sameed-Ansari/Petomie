@@ -1,0 +1,19 @@
+#Duodenal Entry#
+
+##Location##
+Situated in the proximal portion of the duodenum, just beyond the pylorus of the stomach. The duodenal entry (also known as the major duodenal papilla) is the site where the bile duct and pancreatic duct empty their secretions into the small intestine. In the horse, this structure lies on the right side of the abdomen, near the cranial flexure of the duodenum.
+
+##Shape##
+A small raised papilla on the mucosal surface of the duodenum containing duct openings:
+- **Major Duodenal Papilla:** The main site where bile and pancreatic ducts discharge into the intestinal lumen.  
+- **Duct Junction:** The bile and pancreatic ducts often join before entering the duodenum.  
+- **Mucosal Folds:** Surround and protect the opening, preventing backflow.  
+- **Epithelium:** Lined with columnar cells that resist digestive enzymes and bile.  
+- **Smooth Muscle Sphincter:** Regulates the release of bile and pancreatic fluids.  
+
+##Function##
+Controls the flow of bile and pancreatic secretions into the small intestine
+Coordinates with stomach emptying to begin digestion of fats, proteins, and carbohydrates
+Ensures one-way flow of digestive secretions, preventing reflux into ducts
+Initiates the enzymatic phase of digestion by combining bile, enzymes, and chyme
+Maintains balance in intestinal pH and nutrient absorption processes

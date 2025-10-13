@@ -1,0 +1,18 @@
+#Lymphatic Vessels#
+
+##Location##
+Present throughout the entire body, running parallel to blood vessels and connecting lymphatic capillaries with lymph nodes and larger ducts. In the horse, major lymphatic vessels are concentrated in the head, neck, thorax, abdomen, and limbs, draining into the thoracic duct and right lymphatic duct.
+
+##Shape##
+A branching network of thin-walled vessels that transport lymph fluid toward the heart:
+- **Lymphatic Capillaries:** Small, blind-ended vessels located within tissues that absorb interstitial fluid.
+- **Collecting Vessels:** Larger conduits with valves to prevent backflow; they connect to lymph nodes for filtration.
+- **Lymphatic Trunks and Ducts:** Major channels, including the thoracic duct (main lymph drainage route) and right lymphatic duct.
+- **Walls:** Composed of endothelial lining, thin smooth muscle layers, and valves promoting unidirectional flow.
+
+##Function##
+Collect excess interstitial fluid and return it to the bloodstream
+Transport immune cells and absorbed fats from the digestive tract
+Filter lymph through nodes to remove pathogens and waste
+Maintain tissue fluid balance and prevent edema
+Serve as pathways for immune surveillance and defense throughout the body

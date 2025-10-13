@@ -10,13 +10,11 @@ class ContentService {
   final Map<String, String> _contentCache = {};
   
   // Define shared folder mappings (parent category ID -> folder path)
+  // Note: meridians are now animal-specific, not shared
   static const Map<String, String> _sharedFolderMappings = {
     // Energy category folders (shared across all animals)
     'main_chakra': 'energy/chakras/main_chakra',
     'aura_energy_field': 'energy/aura_energy_field',
-    'primary_meridian': 'energy/meridians/primary_meridian',
-    'extraordinary_meridian': 'energy/meridians/extraordinary_meridian',
-    'energy_balance_in_the_body': 'energy/meridians/energy_balance_in_the_body',
     'life_force_vital_energy': 'energy/life_force_vital_energy',
     'energy_imbalances': 'energy/energy_imbalances',
     'environmental_impacts': 'energy/energy_imbalances/environmental_impacts',
@@ -80,7 +78,30 @@ class ContentService {
         return 'assets/images/energy/chakras.webp';
       }
       
-      // Other energy subcategories (like aura, meridians, etc.)
+      // Handle Meridians subcategories (now animal-specific)
+      if (breadcrumbs.contains('Meridians')) {
+        // Determine meridian type
+        String meridianType = 'primary_meridian'; // default
+        if (breadcrumbs.contains('Extraordinary Meridian')) {
+          meridianType = 'extraordinary_meridian';
+        } else if (breadcrumbs.contains('Primary Meridian')) {
+          meridianType = 'primary_meridian';
+        } else if (breadcrumbs.contains('Energy Balance in the Body')) {
+          meridianType = 'energy_balance_in_the_body';
+        }
+        
+        // Animal-specific meridian images (currently only horse has them)
+        if (animalType == 'horse') {
+          final meridianImagePath = 'assets/images/$animalType/energy/meridians/$meridianType/${_processImageFilename(categoryId)}.webp';
+          print('DEBUG: Animal-specific meridian image path: $meridianImagePath');
+          return meridianImagePath;
+        }
+        
+        // Fallback for other animals - use general meridians image
+        return 'assets/images/$animalType/energy/meridians.webp';
+      }
+      
+      // Other energy subcategories (like aura, etc.)
       final energyImagePath = 'assets/images/energy/${_processImageFilename(categoryId)}.webp';
       print('DEBUG: Energy image path: $energyImagePath');
       return energyImagePath;
@@ -150,6 +171,11 @@ class ContentService {
   String _buildAssetPath(String categoryId, List<String> breadcrumbs) {
     print('DEBUG: Building asset path for categoryId: $categoryId, breadcrumbs: $breadcrumbs');
     
+    // Check if this is a meridian-related category (now animal-specific)
+    if (_isMeridianCategory(breadcrumbs)) {
+      return _buildAnimalSpecificMeridianPath(categoryId, breadcrumbs);
+    }
+    
     // Determine the parent category from breadcrumbs to check if it's shared
     String? parentCategoryId = _getParentCategoryId(breadcrumbs);
     
@@ -189,6 +215,42 @@ class ContentService {
     return finalPath;
   }
   
+  /// Check if the breadcrumbs indicate a meridian category
+  bool _isMeridianCategory(List<String> breadcrumbs) {
+    return breadcrumbs.any((breadcrumb) => 
+      breadcrumb.toLowerCase().contains('meridian') ||
+      breadcrumb.toLowerCase() == 'primary meridian' ||
+      breadcrumb.toLowerCase() == 'extraordinary meridian'
+    );
+  }
+  
+  /// Build animal-specific meridian path
+  String _buildAnimalSpecificMeridianPath(String categoryId, List<String> breadcrumbs) {
+    if (breadcrumbs.isEmpty) {
+      return 'assets/details/$categoryId.txt';
+    }
+    
+    // Get animal type (first breadcrumb)
+    String animalType = breadcrumbs[0].toLowerCase();
+    
+    // Determine meridian type
+    String meridianType = 'primary_meridian'; // default
+    if (breadcrumbs.any((b) => b.toLowerCase().contains('extraordinary'))) {
+      meridianType = 'extraordinary_meridian';
+    } else if (breadcrumbs.any((b) => b.toLowerCase().contains('primary'))) {
+      meridianType = 'primary_meridian';
+    } else if (breadcrumbs.any((b) => b.toLowerCase().contains('energy balance'))) {
+      meridianType = 'energy_balance_in_the_body';
+    }
+    
+    // Build path for animal-specific meridian
+    String filename = _processFilename(categoryId);
+    String finalPath = 'assets/details/$animalType/energy/meridians/$meridianType/$filename.txt';
+    
+    print('DEBUG: Using animal-specific meridian path: $finalPath');
+    return finalPath;
+  }
+  
   /// Extract parent category ID from breadcrumbs to determine folder structure
   String? _getParentCategoryId(List<String> breadcrumbs) {
     print('DEBUG: Looking for parent category in breadcrumbs: $breadcrumbs');
@@ -219,13 +281,8 @@ class ContentService {
       case 'aura & energy field':
         return 'aura_energy_field';
       
-      // Meridian subcategories
-      case 'primary meridian':
-        return 'primary_meridian';
-      case 'extraordinary meridian':
-        return 'extraordinary_meridian';
-      case 'energy balance in the body':
-        return 'energy_balance_in_the_body';
+      // Note: Meridian categories are now handled by animal-specific logic
+      // and are no longer shared across animals
       
       case 'life force / vital energy':
         return 'life_force_vital_energy';

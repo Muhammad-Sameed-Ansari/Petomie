@@ -1,0 +1,17 @@
+##Olfactory Epithelium##
+
+#Location#
+Located in the dorsocaudal part of the nasal cavity, lining the ethmoturbinates, nasal septum, and dorsal meatus.
+It forms the sensory region of smell, extending over the cribriform plate where the olfactory nerves (CN I) pass to the brain.
+
+#Shape#
+A specialized mucous membrane composed of several layers:
+- Olfactory receptor neurons – bipolar sensory cells detecting odor molecules.
+- Supporting (sustentacular) cells – provide structural and metabolic support.
+- Basal cells – stem cells regenerating new receptor neurons.
+- Bowman's glands – secrete mucus that dissolves and traps odorants.
+
+#Function#
+Detects airborne odor molecules and transmits sensory signals to the olfactory bulb via Cranial Nerve I.
+Enables the horse to identify scents related to food, environment, predators, and individuals.
+Connects with the limbic system, influencing memory, emotion, and behavior.

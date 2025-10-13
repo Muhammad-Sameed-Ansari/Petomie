@@ -1,0 +1,19 @@
+#Bile Ducts#
+
+##Location##
+Located within the liver and extending to the duodenum, the bile ducts form a network of channels that transport bile produced by liver cells. In the horse, these ducts converge to form the common bile duct, which empties directly into the duodenum near the opening of the pancreatic duct. Horses do not have a gallbladder, so bile flows continuously into the intestine.
+
+##Shape##
+A branching tubular system composed of progressively larger ducts:
+- **Intrahepatic Ducts:** Tiny channels within the liver that collect bile from hepatic cells.  
+- **Hepatic Ducts:** Larger ducts formed by the union of intrahepatic ducts that merge toward the liver hilus.  
+- **Common Bile Duct:** Main duct connecting the liver to the duodenum.  
+- **Sphincter of Oddi:** Muscular valve at the duodenal opening controlling bile and pancreatic secretion flow.  
+- **Structure:** Lined with columnar epithelium and surrounded by connective tissue to support flow and flexibility.
+
+##Function##
+Transports bile from liver cells to the duodenum for fat digestion and absorption
+Regulates the flow of bile into the intestine in coordination with pancreatic secretions
+Facilitates emulsification of fats and absorption of fat-soluble vitamins (A, D, E, K)
+Assists in the removal of bilirubin and metabolic waste from the liver
+Maintains a steady digestive environment as bile secretion in horses is continuous due to absence of a gallbladder

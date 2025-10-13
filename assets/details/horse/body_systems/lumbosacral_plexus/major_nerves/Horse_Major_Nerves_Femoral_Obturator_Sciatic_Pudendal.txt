@@ -1,0 +1,19 @@
+##Major Nerves (Femoral, Obturator, Sciatic, Pudendal)##
+
+#Location#  
+Arise from the lumbosacral plexus, which originates from the ventral branches of spinal nerves L4–S3.  
+Located within the pelvic and upper hindlimb region, coursing through the pelvis and thigh to innervate muscles and skin of the hindlimb and perineal area.
+
+#Shape#  
+Thick, cord-like bundles of mixed motor and sensory fibers, branching to supply the pelvic limb.  
+Each nerve has a distinct path and target region, coordinating locomotion and sensory perception.
+
+#Parts#  
+1. Femoral Nerve – Arises from L4–L6; passes through the iliopsoas; supplies quadriceps femoris and skin of medial thigh and leg via the saphenous branch.  
+2. Obturator Nerve – From L4–L6; exits through the obturator foramen; innervates adductor muscles of the thigh (gracilis, adductor, pectineus).  
+3. Sciatic Nerve – Largest nerve; from L6–S2; passes caudal to the femur; divides into tibial and peroneal branches; supplies hamstrings and all structures distal to the stifle.  
+4. Pudendal Nerve – From S2–S4; located in the pelvic canal; supplies perineal muscles, anal sphincter, external genitalia, and skin around the anus.
+
+#Function#  
+Provide motor control and sensory feedback to the hindlimb and perineal region.  
+Coordinate movement of the hip, thigh, stifle, hock, and tail, while maintaining sensation and voluntary control of urination and defecation.

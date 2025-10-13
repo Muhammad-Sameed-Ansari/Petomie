@@ -1,0 +1,18 @@
+#Caudal (Flexors)#
+
+##Location##
+Situated on the caudal aspect of the crus (lower hind leg), extending from the femur and tibia to the tarsal, metatarsal, and phalangeal bones. These muscles form the prominent back portion of the gaskin and lead into long tendons running toward the hock and hoof.
+
+##Shape##
+Comprises strong, fusiform muscles with extensive tendinous continuations forming the Achilles tendon complex. Main components include:
+- **Gastrocnemius:** Large, two-headed muscle forming the calf, inserting via the calcaneal tendon on the tuber calcanei.
+- **Superficial Digital Flexor:** Lies over the gastrocnemius, with a tendinous portion crossing the hock and inserting on the middle phalanx.
+- **Deep Digital Flexor:** Deep to the gastrocnemius, splitting distally into branches that insert on the distal phalanx.
+- **Popliteus:** Small triangular muscle caudal to the stifle, assisting in joint rotation and stabilization.
+
+##Function##
+Extends the hock and flexes the stifle (reciprocal apparatus)
+Flexes the digit during propulsion and stance phases
+Supports weight-bearing and shock absorption through tendinous tension
+Provides elastic recoil and energy efficiency during locomotion
+Stabilizes the hock and stifle alignment under load

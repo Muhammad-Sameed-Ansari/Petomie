@@ -1,0 +1,20 @@
+#Stomach#
+
+##Location##
+Located in the left upper quadrant of the abdominal cavity, just behind the diaphragm and liver. In the horse, it lies predominantly on the left side and is relatively small compared to the overall size of the digestive tract.
+
+##Shape##
+A simple, single-chambered organ with distinct regions and internal structures:
+- **Cardia:** Entry point where the esophagus joins the stomach, guarded by a strong cardiac sphincter that prevents vomiting.
+- **Fundus:** Dorsal, blind-ended portion that stores ingested food and gas.
+- **Body:** Central, glandular section responsible for enzymatic digestion.
+- **Pylorus:** Distal narrowing leading into the duodenum, controlled by the pyloric sphincter.
+- **Margo Plicatus:** Distinct internal ridge separating the non-glandular (squamous) upper region from the glandular lower region.
+- **Glandular and Non-Glandular Zones:** Reflect the transition between mechanical and chemical digestion areas.
+
+##Function##
+Stores and begins digestion of ingested feed
+Secretes gastric acids and enzymes for protein breakdown
+Mixes feed with digestive fluids to form chyme
+Prevents reflux into the esophagus through the strong cardiac sphincter
+Serves as the initial site of microbial fermentation in small amounts

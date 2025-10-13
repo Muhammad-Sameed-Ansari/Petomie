@@ -1,0 +1,19 @@
+#Mandible#
+
+##Location##
+Forms the lower jaw of the horse, extending from the chin (symphysis) to the joint with the temporal bone (temporomandibular joint) on each side of the skull. It lies below the maxilla and supports the lower dental arcade.
+
+##Shape##
+A large, U-shaped bone composed of two halves fused at the mandibular symphysis. Each half includes:
+- **Body:** Horizontal portion housing the lower teeth.
+- **Ramus:** Vertical portion that extends upward to articulate with the temporal bone.
+- **Coronoid Process:** Dorsal projection providing attachment for the temporalis muscle.
+- **Condylar Process:** Articulates with the temporal bone at the temporomandibular joint.
+- **Angle:** The caudal junction of the body and ramus, providing attachment for masticatory muscles.
+
+##Function##
+Supports and houses the lower teeth for mastication
+Forms the movable component of the jaw for chewing and grinding food
+Provides attachment for the muscles of mastication and facial expression
+Facilitates biting, grinding, and side-to-side movements during feeding
+Contributes to vocalization and expression by aiding tongue and lip motion

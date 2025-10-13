@@ -1,0 +1,23 @@
+#Spinal Nerves#
+
+##Location##
+Emerge in pairs from each segment of the spinal cord through the intervertebral foramina.  
+In the horse, there are **8 cervical, 18 thoracic, 6 lumbar, 5 sacral, and 15–21 coccygeal pairs**.  
+They branch outward to form the **peripheral nerves** that innervate the skin, muscles, and organs of the body.
+
+##Shape##
+Short, mixed nerves composed of sensory and motor fibers that unite near the spinal cord.  
+- **Dorsal Root:** Carries sensory impulses from receptors to the spinal cord; contains the dorsal root ganglion.  
+- **Ventral Root:** Carries motor impulses from the spinal cord to muscles and glands.  
+- **Spinal Nerve Trunk:** Formed by the union of dorsal and ventral roots; exits through the intervertebral foramen.  
+- **Dorsal Branch:** Supplies muscles and skin of the back.  
+- **Ventral Branch:** Supplies limbs and ventral body wall; contributes to major plexuses (cervical, brachial, lumbosacral).  
+- **Meningeal Branch:** Re-enters the vertebral canal to supply spinal meninges.  
+- **Rami Communicantes:** Connect the spinal nerves to the sympathetic trunk for autonomic control.
+
+##Function##
+Serve as vital communication links between the central nervous system and the rest of the body.  
+- **Transmit sensory input** from skin, joints, and organs to the spinal cord.  
+- **Convey motor output** from the spinal cord to skeletal muscles, glands, and smooth muscle.  
+- **Coordinate reflex actions** for protection and balance.  
+- **Integrate somatic and autonomic functions**, ensuring proper body movement, sensation, and homeostasis.

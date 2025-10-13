@@ -1,0 +1,20 @@
+#Testes#
+
+##Location##
+Located within the scrotum, which lies outside the abdominal cavity and ventral to the anus. The scrotum provides a cooler environment necessary for sperm production. Each testis is suspended by its own spermatic cord containing vessels, nerves, and the ductus deferens.
+
+##Shape##
+Oval, flattened organs with smooth surfaces enclosed by protective layers:
+- **Tunica Vaginalis:** Serous membrane derived from the peritoneum surrounding the testis.
+- **Tunica Albuginea:** Dense fibrous capsule covering the testis, sending septa inward to form lobules.
+- **Seminiferous Tubules:** Highly coiled structures within lobules where spermatogenesis occurs.
+- **Rete Testis:** Network of channels collecting sperm from seminiferous tubules.
+- **Efferent Ductules:** Small ducts transporting sperm to the epididymis.
+- **Interstitial (Leydig) Cells:** Located between tubules; secrete testosterone for male secondary characteristics and sperm maturation.
+
+##Function##
+Produces spermatozoa for reproduction
+Secretes testosterone, supporting libido and male sexual development
+Maintains optimal temperature for sperm production through scrotal thermoregulation
+Coordinates with accessory glands and epididymis for sperm maturation and delivery
+Acts as the primary endocrine and reproductive organ of the male horse

@@ -1,0 +1,20 @@
+#Liver#
+
+##Location##
+Situated in the cranial part of the abdominal cavity, immediately caudal to the diaphragm. In the horse, it lies mostly on the right side, extending slightly to the left, and is closely associated with the stomach, duodenum, and diaphragm.
+
+##Shape##
+A large, lobulated organ with a smooth convex surface and multiple functional regions:
+- **Lobes:** Divided into right, left, quadrate, and caudate lobes; though less distinct in horses compared to other species.
+- **Diaphragmatic Surface:** Convex side facing the diaphragm.
+- **Visceral Surface:** Concave side contacting the stomach and intestines.
+- **Hepatic Ducts:** Drain bile produced by liver cells into the bile duct.
+- **Vascular Supply:** Receives blood from the hepatic artery and portal vein, and drains through the hepatic veins into the caudal vena cava.
+- **No Gallbladder:** Horses lack a gallbladder; bile flows continuously into the duodenum.
+
+##Function##
+Produces bile for fat digestion and emulsification
+Metabolizes nutrients, carbohydrates, fats, and proteins absorbed from the intestine
+Detoxifies harmful substances and metabolizes medications
+Stores glycogen, vitamins, and trace minerals
+Synthesizes plasma proteins and supports immune function through filtration

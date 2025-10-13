@@ -1,0 +1,44 @@
+#Thymus#
+
+##Location##
+Located in the front of the thoracic cavity, ventral to the trachea and extending from the neck region down to the heart base in young horses. It regresses and becomes less visible with age, leaving only small remnants in adults.
+
+##Shape##
+A lobulated, pale gray organ consisting of two main cervical lobes connected by tissue near the thoracic inlet. Composed of outer cortex and inner medulla, rich in lymphocytes and epithelial cells.
+
+##Function##
+Responsible for the development and maturation of T-lymphocytes (T-cells)
+Establishes immune tolerance and prevents autoimmunity
+Serves as a primary lymphoid organ in young horses supporting early immune system function
+Undergoes involution with age as secondary lymphoid tissues take over immune functions
+
+
+#Spleen#
+
+##Location##
+Situated in the left upper abdomen between the stomach and the body wall, attached by the gastrosplenic ligament. Lies beneath the ribs and alongside the diaphragm.
+
+##Shape##
+A large, crescent-shaped organ with a smooth, glistening surface and a deep red coloration due to rich blood content. Contains a capsule with smooth muscle and connective tissue that allows contraction and expansion. Divided internally into red and white pulp.
+
+##Function##
+Stores and releases red blood cells during exertion or stress
+Filters blood, removing old or damaged erythrocytes
+Acts as an immune organ producing and storing lymphocytes
+Serves as a reservoir for platelets and supports immune surveillance
+Maintains blood volume and quality in coordination with the circulatory system
+
+
+#Tonsils#
+
+##Location##
+Located in the pharyngeal region near the base of the tongue and soft palate. The most prominent are the palatine and lingual tonsils.
+
+##Shape##
+Aggregations of lymphoid tissue forming nodules or folds beneath the mucous membrane. They have surface crypts that increase contact with inhaled or ingested pathogens.
+
+##Function##
+Serve as the first line of immune defense in the upper respiratory and digestive tracts
+Trap and process pathogens entering through the mouth or nose
+Produce lymphocytes and antibodies locally for immune protection
+Participate in early activation of the immune response during infections

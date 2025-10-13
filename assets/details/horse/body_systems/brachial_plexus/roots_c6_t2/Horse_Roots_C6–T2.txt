@@ -1,0 +1,20 @@
+##Roots (C6–T2)##
+
+#Location#  
+Originate from the ventral branches of the sixth cervical (C6) through second thoracic (T2) spinal nerves.  
+Emerge from the intervertebral foramina of the cervical and thoracic vertebrae and course laterally into the axillary region, forming the basis of the brachial plexus.
+
+#Shape#  
+Series of large, paired spinal nerve roots that merge and intertwine to form a compact neural network before dividing into trunks.  
+Each root carries both motor fibers (from spinal cord to limb muscles) and sensory fibers (from limb back to spinal cord).
+
+#Parts#  
+- C6 Root: Contributes to the suprascapular and subscapular nerves.  
+- C7 Root: Joins C6 and C8 in forming the cranial and middle trunks.  
+- C8 Root: Major contributor to middle and caudal trunks.  
+- T1 Root: Forms part of the caudal trunk, continues into median and ulnar nerves.  
+- T2 Root: Minor contributor; often connects to intercostobrachial nerve supplying axillary skin.
+
+#Function#  
+Transmit sensory and motor impulses between the spinal cord and forelimb.  
+Serve as the foundational connection for all subsequent branches of the brachial plexus, enabling coordinated limb movement and sensation.

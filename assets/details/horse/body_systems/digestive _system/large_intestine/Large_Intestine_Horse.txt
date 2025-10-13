@@ -1,0 +1,20 @@
+#Large Intestine#
+
+##Location##
+Occupies a major portion of the abdominal cavity, filling much of the ventral and dorsal regions. It extends from the ileum to the rectum, forming the largest compartment of the horse’s digestive tract. The large intestine lies mostly on the right side but loops across the midline.
+
+##Shape##
+A massive, complex organ approximately 7–8 meters long, divided into multiple specialized segments:
+- **Cecum:** Large, comma-shaped fermentation chamber on the right side; connects to the ileum and right ventral colon.
+- **Right and Left Ventral Colon:** Wide tubular portions running along the floor of the abdomen.
+- **Pelvic Flexure:** Sharp, narrow bend between the left ventral and left dorsal colon — a common site for impaction.
+- **Dorsal Colon (Right and Left):** Continue dorsally along the abdomen, wider in diameter, leading toward the transverse colon.
+- **Transverse and Descending Colon:** Shorter segments leading to the rectum; responsible for water absorption and fecal formation.
+- **Haustra and Bands:** Segmentation and longitudinal muscular bands (taeniae) aiding in mixing and propulsion of digesta.
+
+##Function##
+Acts as a fermentation vat for fibrous plant material via microbial digestion
+Absorbs volatile fatty acids, electrolytes, and water
+Forms and stores fecal matter before defecation
+Hosts beneficial microbes essential for cellulose breakdown
+Provides slow passage time to maximize nutrient extraction from roughage

@@ -1,0 +1,23 @@
+##Major Nerves##
+
+#Location#  
+Emerge from the brachial plexus, formed by the ventral branches of spinal nerves C6 to T2, coursing through the axillary region to the thoracic limb.
+
+#Shape#  
+Bundles of mixed motor and sensory fibers branching to shoulder, forelimb, and thoracic wall. Each nerve follows a defined pathway to supply specific muscles and skin areas.
+
+#Parts#  
+1. Suprascapular Nerve – Passes between supraspinatus and subscapularis; innervates supraspinatus and infraspinatus muscles.  
+2. Subscapular Nerve – Supplies subscapularis muscle.  
+3. Axillary Nerve – Curves around the humerus; supplies deltoideus, teres major, teres minor, and shoulder skin.  
+4. Musculocutaneous Nerve – Runs with brachial artery; innervates biceps brachii, brachialis, and skin of medial forearm.  
+5. Radial Nerve – Largest branch; passes caudal to humerus; supplies triceps, extensors of forearm, and dorsal skin of limb.  
+6. Median Nerve – Travels with brachial artery; supplies flexors of the carpus and digits, and skin of medial forelimb.  
+7. Ulnar Nerve – Courses caudally behind the medial epicondyle; supplies flexors and skin of caudal forelimb and lateral pastern.  
+8. Thoracodorsal Nerve – To latissimus dorsi.  
+9. Long Thoracic Nerve – To serratus ventralis thoracis.  
+10. Lateral Thoracic Nerve – To cutaneous trunci (responsible for skin twitch reflex).
+
+#Function#  
+Transmit motor impulses to the muscles of the thoracic limb and sensory feedback from skin, joints, and tendons.  
+Coordinate limb movement, stability, and skin sensation.

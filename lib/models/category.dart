@@ -281,32 +281,104 @@ class CategoryData {
     List<Category> auraEnergyFieldSubcategories = [];
     if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       auraEnergyFieldSubcategories = [
-        Category(id: 'aura_layers', label: 'Aura Layers (etheric, emotional, mental, spiritual)', icon: Icons.layers),
-        Category(id: 'field_strength_weakness', label: 'Field Strength / Weakness', icon: Icons.flash_on),
-        Category(id: 'protection_permeability', label: 'Protection & Permeability', icon: Icons.shield),
+        Category(
+          id: 'aura_layers', 
+          label: 'Aura Layers (etheric, emotional, mental, spiritual)', 
+          icon: Icons.layers,
+          imagePath: 'assets/images/$animalId/energy/aura_energy_field/aura_layers.webp',
+        ),
+        Category(
+          id: 'field_strength_weakness', 
+          label: 'Field Strength / Weakness', 
+          icon: Icons.flash_on,
+          imagePath: 'assets/images/$animalId/energy/aura_energy_field/field_strength_weakness.webp',
+        ),
+        Category(
+          id: 'protection_permeability', 
+          label: 'Protection & Permeability', 
+          icon: Icons.shield,
+          imagePath: 'assets/images/$animalId/energy/aura_energy_field/protection_permeability.webp',
+        ),
       ];
     }
 
-    // Define meridians subcategories for Horse, Dog, and Cat
+    // Define meridians subcategories for Horse, Dog, Cat, and Bird
     List<Category> meridiansSubcategories = [];
     if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      String animal = animalId.toLowerCase();
+
       meridiansSubcategories = [
         Category(
           id: 'primary_meridian', 
           label: 'Primary Meridian', 
           icon: Icons.call_split,
           subcategories: [
-            Category(id: 'lung_meridian', label: 'Lung (LU)', icon: Icons.air),
-            Category(id: 'large_intestine_meridian', label: 'Large Intestine (LI)', icon: Icons.restaurant),
-            Category(id: 'stomach_meridian', label: 'Stomach (ST)', icon: Icons.restaurant),
-            Category(id: 'spleen_meridian', label: 'Spleen (SP)', icon: Icons.scatter_plot),
-            Category(id: 'heart_meridian', label: 'Heart (HT)', icon: Icons.favorite),
-            Category(id: 'small_intestine_meridian', label: 'Small Intestine (SI)', icon: Icons.restaurant),
-            Category(id: 'bladder_meridian', label: 'Bladder (BL)', icon: Icons.water_drop),
-            Category(id: 'kidney_meridian', label: 'Kidney (KI)', icon: Icons.water_drop),
-            Category(id: 'pericardium_meridian', label: 'Pericardium (PC)', icon: Icons.favorite_border),
-            Category(id: 'triple_heater_meridian', label: 'Triple Heater / Triple Burner (TH / TB / SJ)', icon: Icons.whatshot),
-            Category(id: 'gall_bladder_meridian', label: 'Gall Bladder (GB)', icon: Icons.local_hospital),
+            Category(
+              id: 'lung_meridian', 
+              label: 'Lung (LU)', 
+              icon: Icons.air,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/lung_meridian.webp',
+            ),
+            Category(
+              id: 'large_intestine_meridian', 
+              label: 'Large Intestine (LI)', 
+              icon: Icons.restaurant,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/large_intestine_meridian.webp',
+            ),
+            Category(
+              id: 'stomach_meridian', 
+              label: 'Stomach (ST)', 
+              icon: Icons.restaurant,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/stomach_meridian.webp',
+            ),
+            Category(
+              id: 'spleen_meridian', 
+              label: 'Spleen (SP)', 
+              icon: Icons.scatter_plot,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/spleen_meridian.webp',
+            ),
+            Category(
+              id: 'heart_meridian', 
+              label: 'Heart (HT)', 
+              icon: Icons.favorite,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/heart_meridian.webp',
+            ),
+            Category(
+              id: 'small_intestine_meridian', 
+              label: 'Small Intestine (SI)', 
+              icon: Icons.restaurant,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/small_intestine_meridian.webp',
+            ),
+            Category(
+              id: 'bladder_meridian', 
+              label: 'Bladder (BL)', 
+              icon: Icons.water_drop,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/bladder_meridian.webp',
+            ),
+            Category(
+              id: 'kidney_meridian', 
+              label: 'Kidney (KI)', 
+              icon: Icons.water_drop,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/kidney_meridian.webp', 
+            ),
+            Category(
+              id: 'pericardium_meridian', 
+              label: 'Pericardium (PC)', 
+              icon: Icons.favorite_border,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/pericardium_meridian.webp',
+            ),
+            Category(
+              id: 'triple_heater_meridian', 
+              label: 'Triple Heater', 
+              icon: Icons.whatshot,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/triple_heater_meridian.webp',
+            ),
+            Category(
+              id: 'gall_bladder_meridian', 
+              label: 'Gall Bladder (GB)', 
+              icon: Icons.local_hospital,
+              imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/gall_bladder_meridian.webp',
+            ),
           ],
         ),
         Category(
@@ -314,15 +386,60 @@ class CategoryData {
           label: 'Extraordinary Meridian', 
           icon: Icons.linear_scale,
           subcategories: [
-            Category(id: 'liver_meridian', label: 'Liver (LV)', icon: Icons.local_hospital),
-            Category(id: 'conception_vessel', label: 'Conception Vessel', icon: Icons.horizontal_split),
-            Category(id: 'governing_vessel', label: 'Governing Vessel', icon: Icons.vertical_split),
-            Category(id: 'chong_mai', label: 'Chong Mai', icon: Icons.vertical_split),
-            Category(id: 'dai_mai_belt_vessel', label: 'Dai Mai (Belt Vessel)', icon: Icons.vertical_split),
-            Category(id: 'yin_qiao_mai_yin_heel_vessel', label: 'Yin Qiao Mai (Yin Heel Vessel)', icon: Icons.vertical_split),
-            Category(id: 'yang_qiao_mai_yang_heel_vessel', label: 'Yang Qiao Mai (Yang Heel Vessel)', icon: Icons.vertical_split),
-            Category(id: 'yin_wei_mai_yin_linking_vessel', label: 'Yin Wei Mai (Yin Linking Vessel)', icon: Icons.vertical_split),
-            Category(id: 'yang_wei_mai_yang_linking_vessel', label: 'Yang Wei Mai (Yang Linking Vessel)', icon: Icons.vertical_split),
+            Category(
+              id: 'liver_meridian', 
+              label: 'Liver (LV)', 
+              icon: Icons.local_hospital,
+              imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/liver_meridian.webp',
+            ),
+            Category(
+              id: 'conception_vessel', 
+              label: 'Conception Vessel', 
+              icon: Icons.horizontal_split,
+              imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/conception_vessel.webp',
+            ),
+            Category(
+              id: 'governing_vessel', 
+              label: 'Governing Vessel', 
+              icon: Icons.vertical_split,
+              imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/governing_vessel.webp', 
+            ),
+            Category(
+              id: 'penetrating_vessel', 
+              label: 'Penetrating Vessel', 
+              icon: Icons.vertical_split,
+              imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/penetrating_vessel.webp',
+            ),
+            Category(
+              id: 'girdling_vessel', 
+              label: 'Girdling Vessel', 
+              icon: Icons.vertical_split,
+              imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/girdling_vessel.webp',
+            ),
+            Category(
+              id: 'yin_heel_vessel', 
+              label: 'Yin Heel Vessel', 
+              icon: Icons.vertical_split,
+              imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_heel_vessel.webp',
+            ),
+            Category(
+              id: 'yang_heel_vessel', 
+              label: 'Yang Heel Vessel', 
+              icon: Icons.vertical_split,
+              imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_heel_vessel.webp',
+            ),
+            Category(
+              id: 'yin_linking_vessel', 
+              label: 'Yin Linking Vessel', 
+              icon: Icons.vertical_split,
+              imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_linking_vessel.webp',
+            ),
+            Category(
+              id: 'yang_linking_vessel', 
+              label: 'Yang Linking Vessel', 
+              icon: Icons.vertical_split,
+              imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_linking_vessel.webp',
+            ),
           ],
         ),
         Category(
@@ -330,7 +447,7 @@ class CategoryData {
           label: 'Energy Balance in the Body',
           icon: Icons.balance,
           subcategories: [
-            Category(id: 'yin_yang_balance', label: 'Yin–Yang Balance', icon: Icons.yard),
+            Category(id: 'yin_yang_balance', label: 'Yin-Yang Balance', icon: Icons.yard),
           ],
         ),
       ];
@@ -645,12 +762,13 @@ class CategoryData {
 
   // Get body systems categories for a specific animal
   static List<Category> getBodySystemsCategoriesForAnimal(String animalId) {
-    if (animalId.toLowerCase() == 'dog') {
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       return [
         Category(
           id: 'cardiovascular_system',
           label: 'Cardiovascular System',
           icon: Icons.bloodtype,
+          imagePath: 'assets/images/body_systems/cardiovascular_system.webp',
           subcategories: [
             Category(
               id: 'heart_vessels',
@@ -684,6 +802,7 @@ class CategoryData {
           id: 'digestive_system',
           label: 'Digestive System',
           icon: Icons.restaurant,
+          imagePath: 'assets/images/body_systems/digestive_system.webp',
           subcategories: [
             Category(id: 'oral_cavity', label: 'Oral Cavity', icon: Icons.emoji_food_beverage),
           ],
@@ -692,6 +811,7 @@ class CategoryData {
           id: 'urinary_system',
           label: 'Urinary System',
           icon: Icons.water_drop,
+          imagePath: 'assets/images/body_systems/urinary_system.webp',
           subcategories: [
             Category(id: 'kidneys_cortex_medulla_pelvis', label: 'Kidneys (Cortex, Medulla, Pelvis)', icon: Icons.water_drop),
             Category(id: 'ureters', label: 'Ureters', icon: Icons.linear_scale),
@@ -763,6 +883,7 @@ class CategoryData {
           id: 'endocrine_system',
           label: 'Endocrine System',
           icon: Icons.scatter_plot,
+          imagePath: 'assets/images/body_systems/endocrine_system.webp',
           subcategories: [
             Category(
               id: 'glands',
@@ -784,6 +905,7 @@ class CategoryData {
         Category(
           id: 'lymphatic_system',
           label: 'Lymphatic System',
+          imagePath: 'assets/images/body_systems/lymphatic_system.webp',
           icon: Icons.water,
           subcategories: [
             Category(id: 'organs_ducts', label: 'Organs & Ducts', icon: Icons.water),
@@ -793,68 +915,88 @@ class CategoryData {
           id: 'regional_lymph_nodes',
           label: 'Regional Lymph Nodes',
           icon: Icons.scatter_plot,
+          imagePath: 'assets/images/body_systems/regional_lymph_nodes.webp',
           subcategories: [
             Category(id: 'major_lymph_nodes', label: 'Major Lymph Nodes', icon: Icons.scatter_plot),
           ],
         ),
         Category(
-          id: 'nervous_system_cns',
-          label: 'Nervous System (CNS)',
-          icon: Icons.psychology,
-          subcategories: [
-            Category(
-              id: 'brain',
-              label: 'Brain',
-              icon: Icons.psychology,
-              subcategories: [
-                Category(id: 'cerebrum', label: 'Cerebrum', icon: Icons.psychology),
-                Category(id: 'basal_nuclei', label: 'Basal Nuclei', icon: Icons.psychology),
-                Category(id: 'diencephalon', label: 'Diencephalon', icon: Icons.psychology),
-                Category(id: 'cerebellum_vermis_hemispheres', label: 'Cerebellum (vermis, hemispheres)', icon: Icons.psychology),
-              ],
-            ),
-            Category(
-              id: 'brainstem',
-              label: 'Brainstem',
-              icon: Icons.psychology,
-              subcategories: [
-                Category(id: 'midbrain', label: 'Midbrain', icon: Icons.psychology),
-                Category(id: 'pons', label: 'Pons', icon: Icons.psychology),
-                Category(id: 'medulla_oblongata', label: 'Medulla Oblongata', icon: Icons.psychology),
-              ],
-            ),
-            Category(id: 'spinal_cord', label: 'Spinal Cord', icon: Icons.psychology),
-          ],
-        ),
-        Category(
-          id: 'peripheral_nervous_system_pns',
-          label: 'Peripheral Nervous System (PNS)',
+          id: 'nervous_system',
+          label: 'Nervous System',
           icon: Icons.scatter_plot,
+          imagePath: 'assets/images/body_systems/nervous_system.webp',
           subcategories: [
-            Category(id: 'cranial_nerves', label: 'Cranial Nerves', icon: Icons.scatter_plot),
-            Category(id: 'spinal_nerves', label: 'Spinal Nerves', icon: Icons.scatter_plot),
-            Category(id: 'sensory_nerves', label: 'Sensory Nerves', icon: Icons.scatter_plot),
-            Category(id: 'motor_nerves', label: 'Motor Nerves', icon: Icons.scatter_plot),
+            Category(
+              id: 'nervous_system_cns',
+              label: 'Nervous System (CNS)',
+              icon: Icons.psychology,
+              imagePath: 'assets/images/body_systems/nervous_system/nervous_system_cns.webp',
+              subcategories: [
+                Category(
+                  id: 'brain',
+                  label: 'Brain',
+                  icon: Icons.psychology,
+                  subcategories: [
+                    Category(id: 'cerebrum', label: 'Cerebrum', icon: Icons.psychology),
+                    Category(id: 'basal_nuclei', label: 'Basal Nuclei', icon: Icons.psychology),
+                    Category(id: 'diencephalon', label: 'Diencephalon', icon: Icons.psychology),
+                    Category(id: 'cerebellum_vermis_hemispheres', label: 'Cerebellum (vermis, hemispheres)', icon: Icons.psychology),
+                  ],
+                ),
+                Category(
+                  id: 'brainstem',
+                  label: 'Brainstem',
+                  icon: Icons.psychology,
+                  subcategories: [
+                    Category(id: 'midbrain', label: 'Midbrain', icon: Icons.psychology),
+                    Category(id: 'pons', label: 'Pons', icon: Icons.psychology),
+                    Category(id: 'medulla_oblongata', label: 'Medulla Oblongata', icon: Icons.psychology),
+                  ],
+                ),
+                Category(id: 'spinal_cord', label: 'Spinal Cord', icon: Icons.psychology),
+              ],
+            ),
+            Category(
+              id: 'peripheral_nervous_system_pns',
+              label: 'Peripheral Nervous System (PNS)',
+              icon: Icons.scatter_plot,
+              imagePath: 'assets/images/body_systems/nervous_system/peripheral_nervous_system_pns.webp',
+              subcategories: [
+                Category(
+                  id: 'cranial_nerves', 
+                  label: 'Cranial Nerves', 
+                  icon: Icons.scatter_plot,
+                  imagePath: 'assets/images/body_systems/nervous_system/peripheral_nervous_system_pns/cranial_nerves.webp',
+                  ),
+                Category(id: 'spinal_nerves', label: 'Spinal Nerves', icon: Icons.scatter_plot),
+                Category(id: 'sensory_nerves', label: 'Sensory Nerves', icon: Icons.scatter_plot),
+                Category(id: 'motor_nerves', label: 'Motor Nerves', icon: Icons.scatter_plot),
+                Category(id: 'brachial_plexus', label: 'Brachial Plexus', icon: Icons.scatter_plot),
+              ],
+            ),
+            Category(
+              id: 'autonomic',
+              label: 'Autonomic',
+              icon: Icons.settings,
+              imagePath: 'assets/images/body_systems/nervous_system/autonomic.webp',
+              subcategories: [
+                Category(id: 'sympathetic', label: 'Sympathetic', icon: Icons.settings),
+                Category(id: 'parasympathetic', label: 'Parasympathetic', icon: Icons.settings),
+              ],
+            ),
           ],
         ),
         Category(
           id: 'brachial_plexus_c6_t2',
           label: 'Brachial Plexus (C6-T2)',
           icon: Icons.linear_scale,
+          imagePath: 'assets/images/body_systems/brachial_plexus_c6_t2.webp',
         ),
         Category(
           id: 'lumbosacral_plexus_l4_s3',
           label: 'Lumbosacral Plexus (L4-S3)',
           icon: Icons.linear_scale,
-        ),
-        Category(
-          id: 'autonomic',
-          label: 'Autonomic',
-          icon: Icons.settings,
-          subcategories: [
-            Category(id: 'sympathetic', label: 'Sympathetic', icon: Icons.settings),
-            Category(id: 'parasympathetic', label: 'Parasympathetic', icon: Icons.settings),
-          ],
+          imagePath: 'assets/images/body_systems/lumbosacral_plexus_l4_s3.webp',
         ),
       ];
     }
@@ -1140,7 +1282,7 @@ class CategoryData {
 
   // Get sensory & external structure categories for a specific animal
   static List<Category> getSensoryExternalCategoriesForAnimal(String animalId) {
-    if (animalId.toLowerCase() == 'dog') {
+    if (['horse', 'dog'].contains(animalId.toLowerCase())) {
       return [
         Category(
           id: 'vision',

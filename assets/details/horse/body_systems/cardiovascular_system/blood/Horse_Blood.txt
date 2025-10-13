@@ -1,0 +1,23 @@
+#Blood#
+
+##Location##
+Circulates throughout the entire body within a closed network of arteries, veins, and capillaries.
+Produced primarily in the red bone marrow of flat and long bones such as the sternum, ribs, pelvis, and femur.
+Continuously flows through the heart, lungs, and systemic vessels, delivering oxygen and nutrients to all tissues and removing metabolic waste.
+
+##Shape##
+A fluid connective tissue composed of cellular and liquid components that form a dynamic transport medium.
+- **Plasma:** The liquid portion (≈55%) containing water, proteins (albumin, globulins, fibrinogen), electrolytes, hormones, nutrients, and waste products.
+- **Erythrocytes (Red Blood Cells):** Biconcave discs lacking nuclei; carry oxygen via hemoglobin and transport carbon dioxide.
+- **Leukocytes (White Blood Cells):** Nucleated cells responsible for immune defense and inflammation control.
+- **Platelets (Thrombocytes):** Small cell fragments derived from megakaryocytes; initiate clotting to prevent blood loss.
+- **Viscosity & Color:** Bright red when oxygenated, dark maroon when deoxygenated; slightly more viscous than water.
+
+##Function##
+Maintains internal stability and homeostasis by transporting vital substances and regulating physiological processes.
+- **Transports oxygen, nutrients, and hormones** to cells.
+- **Removes carbon dioxide and metabolic waste** via lungs and kidneys.
+- **Regulates body temperature, pH, and fluid balance.**
+- **Defends against infection** through immune cells and antibodies.
+- **Clots at injury sites** to prevent blood loss.
+- **Serves as a communication medium** for hormones and signaling molecules coordinating organ function.

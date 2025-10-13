@@ -1,0 +1,22 @@
+#Peripheral Nerves#
+
+##Location##
+Extend from the brain and spinal cord to all regions of the body, forming the communication network of the peripheral nervous system (PNS).
+Include cranial nerves emerging from the brain and spinal nerves branching from the spinal cord.
+Found throughout the head, neck, trunk, and limbs, connecting the central nervous system with muscles, skin, and internal organs.
+
+##Shape##
+Long, thread-like bundles composed of thousands of nerve fibers (axons) bound together by connective tissue sheaths.
+- **Epineurium:** Outer protective layer enclosing the entire nerve.
+- **Perineurium:** Surrounds bundles (fascicles) of nerve fibers.
+- **Endoneurium:** Encloses individual axons and their myelin sheaths.
+- **Sensory Fibers:** Carry information from receptors to the central nervous system.
+- **Motor Fibers:** Transmit impulses from the central nervous system to muscles and glands.
+- **Mixed Nerves:** Contain both sensory and motor fibers, serving most body regions.
+
+##Function##
+Provide two-way communication between the central nervous system and the body.
+- **Sensory Function:** Detect and relay information about touch, temperature, pain, and body position to the brain.
+- **Motor Function:** Carry commands to skeletal muscles for voluntary movement and to smooth muscles and glands for involuntary control.
+- **Reflex Activity:** Mediate quick, automatic responses without brain involvement.
+- **Coordination:** Ensure precise interaction between sensory input and motor output, supporting posture, movement, and awareness of the environment.

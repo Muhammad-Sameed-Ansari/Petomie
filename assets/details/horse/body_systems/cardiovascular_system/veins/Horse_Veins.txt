@@ -1,0 +1,25 @@
+#Veins#
+
+##Location##
+Form an extensive, low-pressure network that returns deoxygenated blood from tissues and organs back to the heart.
+Major veins accompany arteries throughout the body and drain into progressively larger vessels leading to the cranial and caudal vena cava.
+- **Cranial Vena Cava:** Collects blood from the head, neck, and forelimbs.
+- **Caudal Vena Cava:** Drains blood from the abdomen, pelvis, and hindlimbs.
+Superficial veins such as the jugular, cephalic, and saphenous are easily visible and used clinically for venipuncture.
+Deep veins run parallel to arteries within muscles and organ systems.
+
+##Shape##
+Thin-walled, collapsible tubular vessels with larger diameters than arteries.
+- **Tunica Intima:** Inner smooth endothelial lining with valves to prevent backflow.
+- **Tunica Media:** Thin layer of smooth muscle and elastic tissue permitting slight constriction.
+- **Tunica Externa:** Outer connective tissue sheath providing structural support.
+- **Valves:** Present in many veins, especially of limbs, ensuring one-way flow toward the heart.
+- **Color & Texture:** Dark bluish-purple when filled with deoxygenated blood, soft and flexible compared to arteries.
+
+##Function##
+Return blood to the heart for reoxygenation and maintain circulation balance.
+- **Collect deoxygenated blood** from capillaries and transport it back to the heart.
+- **Serve as blood reservoirs**, storing up to 60–70% of total blood volume.
+- **Maintain venous return** during movement through muscular contraction and valve action.
+- **Facilitate thermoregulation** by adjusting blood distribution between superficial and deep vessels.
+- **Assist in nutrient and waste transport** between organs and systemic circulation.

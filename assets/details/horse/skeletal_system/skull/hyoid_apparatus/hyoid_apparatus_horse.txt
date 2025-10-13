@@ -1,0 +1,19 @@
+#Hyoid Apparatus#
+
+##Location##
+Located in the throat region between the mandibles and the larynx, suspended from the base of the skull. It connects the tongue, larynx, and pharynx, serving as a supportive framework for these structures.
+
+##Shape##
+Consists of a series of small, paired bones joined by cartilage and connective tissue. The main components include:
+- **Stylohyoid:** The largest element, extending from the skull to the epihyoid.
+- **Epihyoid:** Short rod-like bone linking the stylohyoid and ceratohyoid.
+- **Ceratohyoid:** Connects the epihyoid to the basihyoid.
+- **Basihyoid:** Central transverse bone located in the midline, containing a lingual process projecting forward into the tongue.
+- **Thyrohyoid:** Connects the basihyoid to the thyroid cartilage of the larynx.
+
+##Function##
+Supports and suspends the tongue and larynx
+Facilitates swallowing, breathing, and vocalization
+Anchors muscles involved in tongue and pharyngeal movements
+Stabilizes the airway and contributes to correct alignment of the upper respiratory tract
+Acts as a resonance and balance structure within the throat and jaw region

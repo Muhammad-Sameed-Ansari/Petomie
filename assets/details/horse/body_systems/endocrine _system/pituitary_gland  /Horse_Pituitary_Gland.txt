@@ -1,0 +1,25 @@
+#Pituitary Gland#
+
+##Location##
+Lies at the base of the brain, housed within a small depression of the sphenoid bone called the **sella turcica**.  
+Connected to the hypothalamus by a slender stalk known as the **infundibulum**, which allows communication between the nervous and endocrine systems.
+
+##Shape##
+Small, oval, reddish-gray gland divided into two major parts:  
+- **Anterior Pituitary (Adenohypophysis):** Glandular portion producing multiple hormones that regulate other endocrine glands.  
+- **Posterior Pituitary (Neurohypophysis):** Neural portion storing and releasing hormones produced by the hypothalamus.  
+Encased in a fibrous capsule and highly vascularized to facilitate hormone distribution.
+
+##Function##
+Acts as the **master endocrine gland**, controlling hormone release throughout the body.  
+- **Anterior Pituitary Hormones:**  
+  - **Growth Hormone (GH):** Stimulates tissue growth and metabolism.  
+  - **Thyroid-Stimulating Hormone (TSH):** Activates thyroid hormone production.  
+  - **Adrenocorticotropic Hormone (ACTH):** Stimulates adrenal cortex secretion.  
+  - **Follicle-Stimulating Hormone (FSH):** Promotes follicle development in females and sperm production in males.  
+  - **Luteinizing Hormone (LH):** Triggers ovulation and testosterone release.  
+  - **Prolactin (PRL):** Initiates milk production.  
+- **Posterior Pituitary Hormones:**  
+  - **Antidiuretic Hormone (ADH):** Regulates water balance by acting on kidneys.  
+  - **Oxytocin:** Stimulates uterine contractions and milk letdown.  
+- **Overall Role:** Integrates neural and endocrine functions to maintain growth, reproduction, metabolism, and fluid balance.

@@ -1,0 +1,20 @@
+#Brain#
+
+##Location##
+Encased within the cranial cavity of the skull, the brain lies protected by the cranial bones, meninges, and cerebrospinal fluid. It connects caudally to the spinal cord at the foramen magnum and serves as the central control center of the nervous system.
+
+##Shape##
+An oval, bilaterally symmetrical organ divided into major regions with distinct structures and functions:
+- **Cerebrum:** Largest part, divided into right and left hemispheres; responsible for sensory perception, voluntary movement, and higher cognitive functions.
+- **Cerebellum:** Located caudally beneath the cerebrum; coordinates balance, muscle tone, and fine motor control.
+- **Brainstem:** Composed of the midbrain, pons, and medulla oblongata; regulates vital autonomic functions such as breathing, heart rate, and reflexes.
+- **Diencephalon:** Includes the thalamus and hypothalamus, which integrate sensory signals and regulate endocrine activity, temperature, and emotion.
+- **Meninges:** Three protective layers (dura mater, arachnoid mater, pia mater) surrounding the brain.
+- **Ventricles:** Fluid-filled spaces producing and containing cerebrospinal fluid for cushioning and nutrient transport.
+
+##Function##
+Processes sensory input and coordinates motor output
+Controls balance, coordination, and body posture
+Regulates autonomic and endocrine functions essential for survival
+Facilitates learning, memory, and behavioral responses
+Acts as the control center for all voluntary and involuntary body activities

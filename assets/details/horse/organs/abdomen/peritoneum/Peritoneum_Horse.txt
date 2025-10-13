@@ -1,0 +1,19 @@
+#Peritoneum#
+
+##Location##
+Lines the entire abdominal cavity and covers most of the abdominal organs. In the horse, the peritoneum forms a continuous, glistening membrane extending from the diaphragm to the pelvic cavity. It consists of two layers: the parietal peritoneum (lining the abdominal wall) and the visceral peritoneum (covering the organs).
+
+##Shape##
+A thin, transparent serous membrane composed of epithelial and connective tissue layers:
+- **Parietal Peritoneum:** Adheres to the inner abdominal wall, diaphragm, and pelvic cavity.
+- **Visceral Peritoneum:** Reflects over abdominal organs such as the stomach, liver, and intestines.
+- **Peritoneal Cavity:** Potential space between layers containing a small amount of lubricating serous fluid.
+- **Mesentery:** Double fold of peritoneum suspending the intestines and carrying blood vessels, lymphatics, and nerves.
+- **Omentum and Ligaments:** Specialized folds that attach organs to each other or to the abdominal wall.
+
+##Function##
+Provides a smooth, frictionless surface for organ movement during digestion and respiration
+Suspends and supports abdominal organs in position through mesenteric attachments
+Allows passage of blood vessels, lymphatics, and nerves to visceral organs
+Acts as a protective barrier against infection and assists in immune response
+Maintains fluid balance within the abdominal cavity through absorption and secretion of serous fluid

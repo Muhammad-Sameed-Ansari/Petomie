@@ -1,0 +1,19 @@
+#Pharynx#
+
+##Location##
+Located in the head and upper neck, the pharynx serves as the common muscular chamber connecting the nasal cavity, oral cavity, esophagus, and larynx. In the horse, it lies caudal to the nasal passages and oral cavity, extending from the base of the skull to the beginning of the esophagus and larynx.
+
+##Shape##
+A funnel-shaped muscular structure divided into three regions:
+- **Nasopharynx:** Upper portion connecting the nasal cavity to the laryngeal region, allowing airflow during breathing.
+- **Oropharynx:** Middle region behind the oral cavity, involved in swallowing.
+- **Laryngopharynx:** Caudal section leading to both the esophagus (digestive tract) and larynx (respiratory tract).
+- **Soft Palate:** Separates the oral and nasal cavities; in horses, it is long, making them obligate nasal breathers.
+- **Muscular Walls:** Composed of circular and longitudinal muscle layers facilitating coordinated swallowing movements.
+
+##Function##
+Acts as a shared passageway for air and food
+Directs air toward the larynx and food toward the esophagus
+Aids in swallowing through coordinated muscular contractions
+Prevents aspiration by sealing off the larynx during deglutition
+Assists in vocalization and pressure equalization in the upper airway

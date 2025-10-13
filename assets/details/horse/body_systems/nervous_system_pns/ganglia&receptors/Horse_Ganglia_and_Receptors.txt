@@ -1,0 +1,26 @@
+#Ganglia & Receptors#
+
+##Location##
+- **Ganglia:** Found throughout the peripheral nervous system, located along the spinal cord and near or within target organs.  
+  - **Dorsal Root Ganglia:** Along the spinal nerves, containing sensory neuron cell bodies.  
+  - **Autonomic Ganglia:** Located in the sympathetic chain, prevertebral areas, or within organ walls (as in the parasympathetic system).  
+- **Receptors:** Distributed across skin, muscles, joints, and internal organs.  
+  - Present in sensory organs such as the eyes, ears, nose, and tongue, as well as throughout tissues detecting touch, pain, and position.
+
+##Shape##
+- **Ganglia:** Oval or nodular structures composed of clusters of neuronal cell bodies surrounded by supportive glial cells and connective tissue capsules.  
+- **Receptors:** Specialized nerve endings or modified epithelial cells that detect environmental or internal stimuli.  
+  - **Mechanoreceptors:** Respond to touch, pressure, and stretch.  
+  - **Thermoreceptors:** Detect changes in temperature.  
+  - **Nociceptors:** Sense pain or tissue damage.  
+  - **Chemoreceptors:** Detect chemical stimuli such as taste, smell, and blood composition.  
+  - **Photoreceptors:** Respond to light within the retina.  
+  - **Proprioceptors:** Located in muscles, tendons, and joints; provide body position awareness.
+
+##Function##
+- **Ganglia:** Serve as relay stations and processing centers for nerve impulses outside the central nervous system.  
+  - Dorsal root ganglia transmit sensory information to the spinal cord.  
+  - Autonomic ganglia coordinate involuntary activities such as heart rate, digestion, and glandular function.  
+- **Receptors:** Convert physical or chemical stimuli into electrical nerve impulses (sensory transduction).  
+  - Enable the horse to perceive and respond to touch, pain, temperature, movement, and environmental changes.  
+Together, ganglia and receptors form the foundation of sensory perception and neural communication within the peripheral nervous system.

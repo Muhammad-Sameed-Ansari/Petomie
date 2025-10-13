@@ -1,0 +1,20 @@
+#Adrenal Glands#
+
+##Location##
+Located cranial to each kidney, embedded in the fat surrounding the renal capsule.  
+The right adrenal gland lies close to the caudal vena cava, while the left adrenal gland is near the aorta and slightly more caudal in position.
+
+##Shape##
+Small, flattened, oval-shaped endocrine glands with distinct outer and inner regions.  
+- **Cortex:** Outer yellowish zone producing steroid hormones; divided into three layers:
+  - **Zona Glomerulosa:** Produces mineralocorticoids (aldosterone) for electrolyte balance.
+  - **Zona Fasciculata:** Secretes glucocorticoids (cortisol) regulating metabolism and stress response.
+  - **Zona Reticularis:** Produces small amounts of sex hormones (androgens).  
+- **Medulla:** Central dark area producing catecholamines (adrenaline and noradrenaline) that control the body’s stress response.
+- **Capsule:** Thin fibrous covering that maintains gland shape and provides protection.
+
+##Function##
+Essential endocrine organs that help regulate metabolism, stress, and fluid balance.  
+- **Cortex:** Controls salt, water, and carbohydrate metabolism; influences immune and inflammatory responses.  
+- **Medulla:** Initiates the “fight or flight” response by increasing heart rate, blood pressure, and glucose levels.  
+- **Overall Role:** Maintains homeostasis during stress, physical exertion, or emotional excitement by integrating hormonal and nervous system functions.

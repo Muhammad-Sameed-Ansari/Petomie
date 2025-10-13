@@ -1,0 +1,19 @@
+#Lungs#
+
+##Location##
+Occupy most of the thoracic cavity, lying on either side of the heart. The lungs are enclosed by the rib cage and covered by the pleura, with the diaphragm forming the caudal boundary. The right lung is slightly larger than the left due to the position of the heart.
+
+##Shape##
+Paired, spongy, elastic organs divided into lobes and lobules:
+- **Right Lung:** Consists of cranial, caudal, and accessory lobes.
+- **Left Lung:** Divided into cranial (with cranial and caudal parts) and caudal lobes.
+- **Bronchial Tree:** Includes primary bronchi branching into smaller bronchi, bronchioles, and alveolar ducts.
+- **Alveoli:** Microscopic air sacs where gas exchange occurs between air and blood.
+- **Pleura:** Double-layered membrane consisting of the visceral pleura (covering lungs) and parietal pleura (lining the thoracic cavity).
+
+##Function##
+Facilitates exchange of oxygen and carbon dioxide between air and blood
+Maintains acid-base balance by regulating blood CO₂ levels
+Provides airflow and filtration through bronchial passages and cilia
+Assists in vocalization and thermoregulation during respiration
+Adapts to high oxygen demand during exercise through increased ventilation efficiency

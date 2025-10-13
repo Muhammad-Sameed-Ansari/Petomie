@@ -1,0 +1,22 @@
+#Facial Bones#
+
+##Location##
+Located in the anterior portion of the skull, forming the framework of the face and supporting the nasal cavity, oral cavity, and upper teeth. These bones articulate with the cranial bones posteriorly and contribute to the horse’s distinctive facial profile.
+
+##Shape##
+Composed of several irregular and flat bones forming the upper and lower facial structure. Major facial bones include:
+- **Nasal:** Form the bridge and roof of the nasal cavity.
+- **Maxilla:** Houses the upper teeth and forms part of the hard palate and nasal cavity walls.
+- **Premaxilla (Incisive Bone):** Carries the upper incisors and forms the front of the upper jaw.
+- **Zygomatic (Malar):** Forms the cheek arch and lateral boundary of the orbit.
+- **Lacrimal:** Small bone forming part of the medial orbit.
+- **Palatine:** Forms the caudal portion of the hard palate.
+- **Vomer:** Divides the nasal cavity medially.
+- **Pterygoid:** Forms part of the lateral wall of the nasopharynx.
+
+##Function##
+Supports and shapes the face, muzzle, and nasal passages
+Houses the upper teeth and contributes to chewing and biting mechanics
+Protects sensory organs involved in smell, sight, and taste
+Forms part of the airway and oral passage
+Provides attachment points for facial expression and mastication muscles
