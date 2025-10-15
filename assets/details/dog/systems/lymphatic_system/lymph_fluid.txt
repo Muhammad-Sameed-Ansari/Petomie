@@ -1,0 +1,19 @@
+#Lymph Fluid#
+
+##Location##
+Lymph fluid circulates throughout the entire body within a network of lymphatic vessels.  
+It originates from the fluid that surrounds body cells (interstitial fluid) and enters small lymph capillaries.  
+From there, it travels through lymph vessels and nodes before draining back into the bloodstream near the heart.
+
+##Shape##
+A clear to slightly milky fluid resembling plasma.  
+It contains white blood cells (especially lymphocytes), proteins, fats, and waste materials.  
+The composition can vary depending on its location in the body and immune activity.
+
+##Function##
+- Transports white blood cells to areas of infection or inflammation.  
+- Removes waste products, toxins, and excess fluid from tissues.  
+- Carries absorbed fats from the intestines to the bloodstream.  
+- Helps maintain proper fluid balance between blood and tissues.  
+- Circulates immune cells and antibodies for defense against pathogens.  
+- Supports detoxification and overall immune health.

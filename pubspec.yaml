@@ -109,27 +109,23 @@ flutter:
     - assets/details/dog/energy/chakras/secondary_chakra/
     - assets/details/dog/energy/meridians/primary_meridian/
     - assets/details/dog/energy/meridians/extraordinary_meridian/
-    - assets/details/dog/skeletal_system/
-    - assets/details/dog/skeletal_system/skull/
-    - assets/details/dog/skeletal_system/spine/
-    - assets/details/dog/skeletal_system/ribcage/
-    - assets/details/dog/skeletal_system/shoulder_girdle/
-    - assets/details/dog/skeletal_system/forelimb/
-    - assets/details/dog/skeletal_system/forelimb/arm/
-    - assets/details/dog/skeletal_system/forelimb/forearm/
-    - assets/details/dog/skeletal_system/forelimb/carpus_proximal_row/
-    - assets/details/dog/skeletal_system/forelimb/carpus_distal_row/
-    - assets/details/dog/skeletal_system/forelimb/manus/
-    - assets/details/dog/skeletal_system/forelimb/sesamoids/
-    - assets/details/dog/skeletal_system/pelvis/
-    - assets/details/dog/skeletal_system/hindlimb/
-    - assets/details/dog/skeletal_system/hindlimb/hindpaw/
-    - assets/details/dog/skeletal_system/hindlimb/leg/
-    - assets/details/dog/skeletal_system/hindlimb/stifle/
-    - assets/details/dog/skeletal_system/hindlimb/tarsus/
-    - assets/details/dog/skeletal_system/hindlimb/thigh/
-    - assets/details/dog/skeletal_system/special_bones/
-    - assets/details/dog/skeletal_system/dentition/
+    - assets/details/dog/skeleton/
+    - assets/details/dog/skeleton/skull/
+    - assets/details/dog/skeleton/spine/
+    - assets/details/dog/skeleton/ribcage/
+    - assets/details/dog/skeleton/shoulder_girdle/
+    - assets/details/dog/skeleton/forelimb/
+    - assets/details/dog/skeleton/forelimb/antebrachium/
+    - assets/details/dog/skeleton/forelimb/brachium/
+    - assets/details/dog/skeleton/forelimb/carpus/
+    - assets/details/dog/skeleton/forelimb/manus/
+    - assets/details/dog/skeleton/hindlimb/
+    - assets/details/dog/skeleton/hindlimb/hindpaw/
+    - assets/details/dog/skeleton/hindlimb/leg/
+    - assets/details/dog/skeleton/hindlimb/tarsus/
+    - assets/details/dog/skeleton/hindlimb/thigh/
+    - assets/details/dog/skeleton/special_bones/
+    - assets/details/dog/skeleton/dentition/
     - assets/details/dog/muscular_system/
     - assets/details/dog/muscular_system/head_neck/
     - assets/details/dog/muscular_system/throat/
@@ -143,29 +139,28 @@ flutter:
     - assets/details/dog/muscular_system/axial_muscle/
     - assets/details/dog/muscular_system/muscles_of_respiration/
     - assets/details/dog/muscular_system/tail_muscles/
-    - assets/details/dog/body_systems/
-    - assets/details/dog/body_systems/autonomic/
-    - assets/details/dog/body_systems/cardiovascular_system/
-    - assets/details/dog/body_systems/cardiovascular_system/heart_vessels/
-    - assets/details/dog/body_systems/digestive_system/
-    - assets/details/dog/body_systems/endocrine_system/
-    - assets/details/dog/body_systems/endocrine_system/glands/
-    - assets/details/dog/body_systems/lymphatic_system/
-    - assets/details/dog/body_systems/nervous_system_cns/
-    - assets/details/dog/body_systems/nervous_system_cns/brain/
-    - assets/details/dog/body_systems/nervous_system_cns/brainstem/
-    - assets/details/dog/body_systems/peripheral_nervous_system_pns/
-    - assets/details/dog/body_systems/regional_lymph_nodes/
-    - assets/details/dog/body_systems/reproductive_system_female/
-    - assets/details/dog/body_systems/reproductive_system_female/external_genitalia/
-    - assets/details/dog/body_systems/reproductive_system_male/
-    - assets/details/dog/body_systems/reproductive_system_male/accessory_glands/
-    - assets/details/dog/body_systems/reproductive_system_male/copulatory_organ/
-    - assets/details/dog/body_systems/reproductive_system_male/duct_system/
-    - assets/details/dog/body_systems/reproductive_system_male/testes/
-    - assets/details/dog/body_systems/respiratory_system/
-    - assets/details/dog/body_systems/respiratory_system/upper_airways/
-    - assets/details/dog/body_systems/urinary_system/
+    - assets/details/dog/systems/
+    - assets/details/dog/systems/cardiovascular_system/
+    - assets/details/dog/systems/digestive_system/
+    - assets/details/dog/systems/endocrine_system/
+    - assets/details/dog/systems/endocrine_system/glands/
+    - assets/details/dog/systems/lymphatic_system/
+    - assets/details/dog/systems/nervous_system/
+    - assets/details/dog/systems/nervous_system/nervous_system_cns/
+    - assets/details/dog/systems/nervous_system/nervous_system_cns/brain/
+    - assets/details/dog/systems/nervous_system/nervous_system_cns/brainstem/
+    - assets/details/dog/systems/nervous_system/peripheral_nervous_system_pns/
+    - assets/details/dog/systems/nervous_system/autonomic/
+    - assets/details/dog/systems/reproductive_system/
+    - assets/details/dog/systems/reproductive_system/male/
+    - assets/details/dog/systems/reproductive_system/male/accessory_glands/
+    - assets/details/dog/systems/reproductive_system/male/copulatory_organ/
+    - assets/details/dog/systems/reproductive_system/male/duct_system/
+    - assets/details/dog/systems/reproductive_system/male/testes/
+    - assets/details/dog/systems/reproductive_system/female/
+    - assets/details/dog/systems/respiratory_system/
+    - assets/details/dog/systems/respiratory_system/upper_airways/
+    - assets/details/dog/systems/urinary_system/
     - assets/details/dog/sensory_external_structures/
     - assets/details/dog/sensory_external_structures/vision/
     - assets/details/dog/sensory_external_structures/hearing_balance/
@@ -179,10 +174,10 @@ flutter:
     - assets/details/dog/connective_tissue/adipose_tissue/
     - assets/details/dog/organs/
     - assets/details/dog/organs/head/
-    - assets/details/dog/organs/head_neck/
+    - assets/details/dog/organs/neck/
     - assets/details/dog/organs/thorax/
     - assets/details/dog/organs/abdomen/
-    - assets/details/dog/organs/urinary/
+    - assets/details/dog/organs/abdomen/urinary/
     - assets/details/dog/glands/
     - assets/details/dog/glands/salivary/
     - assets/details/dog/glands/ocular/
@@ -226,7 +221,7 @@ flutter:
     - assets/images/horse/energy/aura_energy_field/
     - assets/images/dog/energy/
     - assets/images/dog/energy/aura_energy_field/
-    - assets/images/dog/skeletal_system/
+    - assets/images/dog/skeleton/
     - assets/images/cat/energy/
     - assets/images/cat/energy/aura_energy_field/
     - assets/images/bird/energy/
@@ -235,9 +230,10 @@ flutter:
     - assets/images/energy/chakras/
     - assets/images/energy/chakras/main_chakra/
     - assets/images/energy/chakras/secondary_chakra/
-    - assets/images/body_systems/
-    - assets/images/body_systems/nervous_system/
-    - assets/images/body_systems/nervous_system/peripheral_nervous_system_pns/
+    - assets/images/systems/
+    - assets/images/systems/nervous_system/
+    - assets/images/systems/nervous_system/peripheral_nervous_system_pns/
+    - assets/images/systems/reproductive_system/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

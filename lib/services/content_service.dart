@@ -115,17 +115,17 @@ class ContentService {
         
         // Handle different subcategory types
         switch (subcategory.toLowerCase()) {
-          case 'body systems':
-            return 'assets/images/$animalType/body_systems.webp';
+          case 'systems':
+            return 'assets/images/$animalType/systems.webp';
           case 'muscular system':
             return 'assets/images/$animalType/muscular_system.webp';
-          case 'skeletal system':
+          case 'skeleton':
             // Check if it's a specific bone/part
             if (breadcrumbs.length > 2) {
               final bonePart = _processImageFilename(categoryId);
-              return 'assets/images/$animalType/skeletal_system/$bonePart.webp';
+              return 'assets/images/$animalType/skeleton/$bonePart.webp';
             }
-            return 'assets/images/$animalType/skeletal_system.webp';
+            return 'assets/images/$animalType/skeleton.webp';
           case 'organ & gland':
           case 'oragn & gland': // Handle typo in existing files
             return 'assets/images/$animalType/oragn_&_gland.webp';

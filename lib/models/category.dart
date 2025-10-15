@@ -501,10 +501,10 @@ class CategoryData {
     List<Category> sacredGeometrySubcategories = [];
     if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       sacredGeometrySubcategories = [
-        Category(id: 'flower_of_life', label: 'Flower of Life (unity, interconnectedness)', icon: Icons.blur_on),
-        Category(id: 'seed_of_life', label: 'Seed of Life (beginnings, regeneration)', icon: Icons.grain),
-        Category(id: 'metatrons_cube', label: 'Metatron\'s Cube (structure, balance)', icon: Icons.hexagon),
-        Category(id: 'spiral', label: 'Spiral (growth, evolution, healing flow)', icon: Icons.rotate_right),
+        Category(id: 'flower_of_life', label: 'Flower of Life', icon: Icons.blur_on),
+        Category(id: 'seed_of_life', label: 'Seed of Life', icon: Icons.grain),
+        Category(id: 'metatrons_cube', label: 'Metatron\'s Cube', icon: Icons.hexagon),
+        Category(id: 'spiral', label: 'Spiral', icon: Icons.rotate_right),
       ];
     }
 
@@ -768,25 +768,19 @@ class CategoryData {
           id: 'cardiovascular_system',
           label: 'Cardiovascular System',
           icon: Icons.bloodtype,
-          imagePath: 'assets/images/body_systems/cardiovascular_system.webp',
+          imagePath: 'assets/images/systems/cardiovascular_system.webp',
           subcategories: [
-            Category(
-              id: 'heart_vessels',
-              label: 'Heart & Vessels',
-              icon: Icons.favorite,
-              subcategories: [
-                Category(id: 'heart', label: 'Heart', icon: Icons.favorite),
-                Category(id: 'valves', label: 'Valves', icon: Icons.check_circle),
-                Category(id: 'major_vessels', label: 'Major Vessels', icon: Icons.linear_scale),
-              ],
-            ),
+            Category(id: 'heart', label: 'Heart', icon: Icons.favorite),
+            Category(id: 'arteries', label: 'Arteries', icon: Icons.check_circle),
+            Category(id: 'veins', label: 'Veins', icon: Icons.linear_scale),
+            Category(id: 'capillaries', label: 'Capillaries', icon: Icons.linear_scale),
           ],
         ),
         Category(
           id: 'respiratory_system',
           label: 'Respiratory System',
           icon: Icons.air,
-          imagePath: 'assets/images/body_systems/respiratory_system.webp',
+          imagePath: 'assets/images/systems/respiratory_system.webp',
           subcategories: [
             Category(
               id: 'upper_airways',
@@ -802,7 +796,7 @@ class CategoryData {
           id: 'digestive_system',
           label: 'Digestive System',
           icon: Icons.restaurant,
-          imagePath: 'assets/images/body_systems/digestive_system.webp',
+          imagePath: 'assets/images/systems/digestive_system.webp',
           subcategories: [
             Category(id: 'oral_cavity', label: 'Oral Cavity', icon: Icons.emoji_food_beverage),
           ],
@@ -811,70 +805,71 @@ class CategoryData {
           id: 'urinary_system',
           label: 'Urinary System',
           icon: Icons.water_drop,
-          imagePath: 'assets/images/body_systems/urinary_system.webp',
+          imagePath: 'assets/images/systems/urinary_system.webp',
           subcategories: [
-            Category(id: 'kidneys_cortex_medulla_pelvis', label: 'Kidneys (Cortex, Medulla, Pelvis)', icon: Icons.water_drop),
+            Category(id: 'kidneys', label: 'Kidneys', icon: Icons.water_drop),
             Category(id: 'ureters', label: 'Ureters', icon: Icons.linear_scale),
             Category(id: 'urinary_bladder', label: 'Urinary Bladder', icon: Icons.opacity),
             Category(id: 'urethra', label: 'Urethra', icon: Icons.linear_scale),
           ],
         ),
         Category(
-          id: 'reproductive_system_male',
-          label: 'Reproductive System (Male)',
-          icon: Icons.male,
-          imagePath: 'assets/images/body_systems/reproductive_system_male.webp',
+          id: 'reproductive_system',
+          label: 'Reproductive System',
+          icon: Icons.water_drop,
+          imagePath: 'assets/images/systems/reproductive_system.webp',
           subcategories: [
             Category(
-              id: 'testes',
-              label: 'Testes',
-              icon: Icons.circle,
+              id: 'male',
+              label: 'Male',
+              icon: Icons.male,
+              imagePath: 'assets/images/systems/reproductive_system/male.webp',
               subcategories: [
-                Category(id: 'testes_epididymides', label: 'Testes & Epididymides', icon: Icons.circle),
+                Category(
+                  id: 'testes',
+                  label: 'Testes',
+                  icon: Icons.circle,
+                  subcategories: [
+                    Category(id: 'testes_epididymides', label: 'Testes & Epididymides', icon: Icons.circle),
+                  ],
+                ),
+                Category(
+                  id: 'duct_system',
+                  label: 'Duct System',
+                  icon: Icons.linear_scale,
+                  subcategories: [
+                    Category(id: 'ductus_deferens', label: 'Ductus Deferens', icon: Icons.linear_scale),
+                  ],
+                ),
+                Category(
+                  id: 'accessory_glands',
+                  label: 'Accessory Glands',
+                  icon: Icons.scatter_plot,
+                  subcategories: [
+                    Category(id: 'prostate_gland', label: 'Prostate Gland', icon: Icons.scatter_plot),
+                  ],
+                ),
+                Category(
+                  id: 'copulatory_organ',
+                  label: 'Copulatory Organ',
+                  icon: Icons.straighten,
+                  subcategories: [
+                    Category(id: 'penis', label: 'Penis', icon: Icons.straighten),
+                  ],
+                ),
               ],
             ),
             Category(
-              id: 'duct_system',
-              label: 'Duct System',
-              icon: Icons.linear_scale,
+              id: 'female',
+              label: 'Female',
+              icon: Icons.female,
+              imagePath: 'assets/images/systems/reproductive_system/female.webp',
               subcategories: [
-                Category(id: 'ductus_deferens', label: 'Ductus Deferens', icon: Icons.linear_scale),
-              ],
-            ),
-            Category(
-              id: 'accessory_glands',
-              label: 'Accessory Glands',
-              icon: Icons.scatter_plot,
-              subcategories: [
-                Category(id: 'prostate_gland', label: 'Prostate Gland', icon: Icons.scatter_plot),
-              ],
-            ),
-            Category(
-              id: 'copulatory_organ',
-              label: 'Copulatory Organ',
-              icon: Icons.straighten,
-              subcategories: [
-                Category(id: 'penis', label: 'Penis', icon: Icons.straighten),
-              ],
-            ),
-          ],
-        ),
-        Category(
-          id: 'reproductive_system_female',
-          label: 'Reproductive System (Female)',
-          icon: Icons.female,
-          imagePath: 'assets/images/body_systems/reproductive_system_female.webp',
-          subcategories: [
-            Category(id: 'ovaries', label: 'Ovaries', icon: Icons.circle),
-            Category(id: 'uterine_tubes', label: 'Uterine Tubes', icon: Icons.linear_scale),
-            Category(id: 'uterus_horns_body_cervix', label: 'Uterus (horns, body, cervix)', icon: Icons.favorite),
-            Category(id: 'vagina_vestibule', label: 'Vagina & Vestibule', icon: Icons.linear_scale),
-            Category(
-              id: 'external_genitalia',
-              label: 'External Genitalia',
-              icon: Icons.crop_portrait,
-              subcategories: [
-                Category(id: 'clitoris_vulva', label: 'Clitoris & Vulva', icon: Icons.crop_portrait),
+                Category(id: 'ovaries', label: 'Ovaries', icon: Icons.circle),
+                Category(id: 'uterine_tubes', label: 'Uterine Tubes', icon: Icons.linear_scale),
+                Category(id: 'uterus', label: 'Uterus', icon: Icons.favorite),
+                Category(id: 'vagina_vestibule', label: 'Vagina & Vestibule', icon: Icons.linear_scale),
+                Category(id: 'external_genitalia', label: 'External Genitalia', icon: Icons.crop_portrait),
               ],
             ),
           ],
@@ -883,7 +878,7 @@ class CategoryData {
           id: 'endocrine_system',
           label: 'Endocrine System',
           icon: Icons.scatter_plot,
-          imagePath: 'assets/images/body_systems/endocrine_system.webp',
+          imagePath: 'assets/images/systems/endocrine_system.webp',
           subcategories: [
             Category(
               id: 'glands',
@@ -905,32 +900,28 @@ class CategoryData {
         Category(
           id: 'lymphatic_system',
           label: 'Lymphatic System',
-          imagePath: 'assets/images/body_systems/lymphatic_system.webp',
+          imagePath: 'assets/images/systems/lymphatic_system.webp',
           icon: Icons.water,
           subcategories: [
-            Category(id: 'organs_ducts', label: 'Organs & Ducts', icon: Icons.water),
-          ],
-        ),
-        Category(
-          id: 'regional_lymph_nodes',
-          label: 'Regional Lymph Nodes',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/body_systems/regional_lymph_nodes.webp',
-          subcategories: [
-            Category(id: 'major_lymph_nodes', label: 'Major Lymph Nodes', icon: Icons.scatter_plot),
+            Category(id: 'thymus', label: 'Thymus', icon: Icons.water),
+            Category(id: 'spleen', label: 'Spleen', icon: Icons.water),
+            Category(id: 'tonsils', label: 'Tonsils', icon: Icons.water),
+            Category(id: 'lymph_fluid', label: 'Lymph Fluid', icon: Icons.water),
+            Category(id: 'lymphatic_vessel', label: 'Lymphatic Vessel', icon: Icons.water),
+            Category(id: 'lymph_nodes', label: 'Lymph Nodes', icon: Icons.water),
           ],
         ),
         Category(
           id: 'nervous_system',
           label: 'Nervous System',
           icon: Icons.scatter_plot,
-          imagePath: 'assets/images/body_systems/nervous_system.webp',
+          imagePath: 'assets/images/systems/nervous_system.webp',
           subcategories: [
             Category(
               id: 'nervous_system_cns',
               label: 'Nervous System (CNS)',
               icon: Icons.psychology,
-              imagePath: 'assets/images/body_systems/nervous_system/nervous_system_cns.webp',
+              imagePath: 'assets/images/systems/nervous_system/nervous_system_cns.webp',
               subcategories: [
                 Category(
                   id: 'brain',
@@ -940,7 +931,7 @@ class CategoryData {
                     Category(id: 'cerebrum', label: 'Cerebrum', icon: Icons.psychology),
                     Category(id: 'basal_nuclei', label: 'Basal Nuclei', icon: Icons.psychology),
                     Category(id: 'diencephalon', label: 'Diencephalon', icon: Icons.psychology),
-                    Category(id: 'cerebellum_vermis_hemispheres', label: 'Cerebellum (vermis, hemispheres)', icon: Icons.psychology),
+                    Category(id: 'cerebellum', label: 'Cerebellum', icon: Icons.psychology),
                   ],
                 ),
                 Category(
@@ -960,13 +951,13 @@ class CategoryData {
               id: 'peripheral_nervous_system_pns',
               label: 'Peripheral Nervous System (PNS)',
               icon: Icons.scatter_plot,
-              imagePath: 'assets/images/body_systems/nervous_system/peripheral_nervous_system_pns.webp',
+              imagePath: 'assets/images/systems/nervous_system/peripheral_nervous_system_pns.webp',
               subcategories: [
                 Category(
                   id: 'cranial_nerves', 
                   label: 'Cranial Nerves', 
                   icon: Icons.scatter_plot,
-                  imagePath: 'assets/images/body_systems/nervous_system/peripheral_nervous_system_pns/cranial_nerves.webp',
+                  imagePath: 'assets/images/systems/nervous_system/peripheral_nervous_system_pns/cranial_nerves.webp',
                   ),
                 Category(id: 'spinal_nerves', label: 'Spinal Nerves', icon: Icons.scatter_plot),
                 Category(id: 'sensory_nerves', label: 'Sensory Nerves', icon: Icons.scatter_plot),
@@ -978,7 +969,7 @@ class CategoryData {
               id: 'autonomic',
               label: 'Autonomic',
               icon: Icons.settings,
-              imagePath: 'assets/images/body_systems/nervous_system/autonomic.webp',
+              imagePath: 'assets/images/systems/nervous_system/autonomic.webp',
               subcategories: [
                 Category(id: 'sympathetic', label: 'Sympathetic', icon: Icons.settings),
                 Category(id: 'parasympathetic', label: 'Parasympathetic', icon: Icons.settings),
@@ -987,16 +978,10 @@ class CategoryData {
           ],
         ),
         Category(
-          id: 'brachial_plexus_c6_t2',
-          label: 'Brachial Plexus (C6-T2)',
-          icon: Icons.linear_scale,
-          imagePath: 'assets/images/body_systems/brachial_plexus_c6_t2.webp',
-        ),
-        Category(
           id: 'lumbosacral_plexus_l4_s3',
           label: 'Lumbosacral Plexus (L4-S3)',
           icon: Icons.linear_scale,
-          imagePath: 'assets/images/body_systems/lumbosacral_plexus_l4_s3.webp',
+          imagePath: 'assets/images/systems/lumbosacral_plexus_l4_s3.webp',
         ),
       ];
     }
@@ -1013,7 +998,7 @@ class CategoryData {
           id: 'skull', 
           label: 'Skull', 
           icon: Icons.psychology,
-          imagePath: 'assets/images/$animalId/skeletal_system/skull.webp',
+          imagePath: 'assets/images/$animalId/skeleton/skull.webp',
           subcategories: [
             Category(id: 'cranial_bones', label: 'Cranial Bones', icon: Icons.psychology),
             Category(id: 'facial_bones', label: 'Facial Bones', icon: Icons.face),
@@ -1059,38 +1044,29 @@ class CategoryData {
           icon: Icons.accessibility,
           subcategories: [
             Category(
-              id: 'arm',
-              label: 'Arm',
-              icon: Icons.accessibility,
+              id: 'carpus',
+              label: 'Carpus',
+              icon: Icons.grid_view,
+              subcategories: [
+                Category(id: 'distal_row', label: 'Distal Row', icon: Icons.accessibility),
+                Category(id: 'proximal_row', label: 'Proximal Row', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'antebrachium',
+              label: 'Antebrachium',
+              icon: Icons.grid_view,
+              subcategories: [
+                Category(id: 'ulna', label: 'Ulna', icon: Icons.accessibility),
+                Category(id: 'radius', label: 'Radius', icon: Icons.accessibility),
+              ],
+            ),
+            Category(
+              id: 'brachium',
+              label: 'Brachium',
+              icon: Icons.grid_view,
               subcategories: [
                 Category(id: 'humerus', label: 'Humerus', icon: Icons.accessibility),
-              ],
-            ),
-            Category(
-              id: 'forearm',
-              label: 'Forearm',
-              icon: Icons.accessibility,
-              subcategories: [
-                Category(id: 'radius', label: 'Radius', icon: Icons.accessibility),
-                Category(id: 'ulna', label: 'Ulna', icon: Icons.accessibility),
-              ],
-            ),
-            Category(
-              id: 'carpus_proximal_row',
-              label: 'Carpus (Proximal Row)',
-              icon: Icons.grid_view,
-              subcategories: [
-                Category(id: 'intermedioradial_carpal', label: 'Intermedioradial Carpal', icon: Icons.accessibility),
-                Category(id: 'ulnar_carpal', label: 'Ulnar Carpal', icon: Icons.accessibility),
-                Category(id: 'accessory_carpal', label: 'Accessory Carpal', icon: Icons.accessibility),
-              ],
-            ),
-            Category(
-              id: 'carpus_distal_row',
-              label: 'Carpus (Distal Row)',
-              icon: Icons.grid_view,
-              subcategories: [
-                Category(id: 'carpal_i_iv', label: 'Carpal I-IV', icon: Icons.accessibility),
               ],
             ),
             Category(
@@ -1098,32 +1074,11 @@ class CategoryData {
               label: 'Manus',
               icon: Icons.pan_tool,
               subcategories: [
-                Category(id: 'metacarpal_i_v', label: 'Metacarpal I-V', icon: Icons.accessibility),
-                Category(id: 'proximal_phalanges_i_v', label: 'Proximal Phalanges (I-V)', icon: Icons.accessibility),
-                Category(id: 'middle_phalanges_ii_v', label: 'Middle Phalanges (II-V)', icon: Icons.accessibility),
-                Category(id: 'distal_phalanges_i_v', label: 'Distal Phalanges (I-V)', icon: Icons.accessibility),
+                Category(id: 'sesamoids', label: 'Sesamoids', icon: Icons.accessibility),
+                Category(id: 'phalanges', label: 'Phalanges', icon: Icons.accessibility),
+                Category(id: 'metacarpals', label: 'Metacarpals', icon: Icons.accessibility),
               ],
             ),
-            Category(
-              id: 'sesamoids',
-              label: 'Sesamoids',
-              icon: Icons.circle,
-              subcategories: [
-                Category(id: 'proximal_sesamoids_ii_v', label: 'Proximal Sesamoids (II-V)', icon: Icons.accessibility),
-                Category(id: 'dorsal_sesamoids_ii_v', label: 'Dorsal Sesamoids (II-V)', icon: Icons.accessibility),
-              ],
-            ),
-          ],
-        ),
-        Category(
-          id: 'pelvis',
-          label: 'Pelvis',
-          icon: Icons.accessibility,
-          subcategories: [
-            Category(id: 'ilium', label: 'Ilium', icon: Icons.accessibility),
-            Category(id: 'ischium', label: 'Ischium', icon: Icons.accessibility),
-            Category(id: 'pubis', label: 'Pubis', icon: Icons.accessibility),
-            Category(id: 'acetabular_bone', label: 'Acetabular Bone', icon: Icons.accessibility),
           ],
         ),
         Category(
@@ -1131,21 +1086,14 @@ class CategoryData {
           label: 'Hindlimb', 
           icon: Icons.grid_view,
           subcategories: [
+            Category(id: 'pelvis', label: 'Pelvis', icon: Icons.accessibility),
             Category(
               id: 'thigh',
               label: 'Thigh',
               icon: Icons.straighten,
               subcategories: [
                 Category(id: 'femur', label: 'Femur', icon: Icons.accessibility),
-              ],
-            ),
-            Category(
-              id: 'stifle',
-              label: 'Stifle',
-              icon: Icons.join_inner,
-              subcategories: [
                 Category(id: 'patella', label: 'Patella', icon: Icons.accessibility),
-                Category(id: 'fabellae_medial_lateral', label: 'Fabellae (medial/lateral)', icon: Icons.accessibility),
               ],
             ),
             Category(
@@ -1173,13 +1121,9 @@ class CategoryData {
               label: 'Hindpaw',
               icon: Icons.pan_tool,
               subcategories: [
-                Category(id: 'metacarpals_i_v', label: 'Metacarpals I-V', icon: Icons.accessibility),
-                Category(id: 'metatarsals_ii_v', label: 'Metatarsals II-V', icon: Icons.accessibility),
-                Category(id: 'proximal_phalanges_ii_v', label: 'Proximal Phalanges (II-V)', icon: Icons.accessibility),
-                Category(id: 'middle_phalanges_ii_v', label: 'Middle Phalanges (II-V)', icon: Icons.accessibility),
-                Category(id: 'distal_phalanges_ii_v', label: 'Distal Phalanges (II-V)', icon: Icons.accessibility),
-                Category(id: 'proximal_sesamoids_ii_v', label: 'Proximal Sesamoids (II-V)', icon: Icons.accessibility),
-                Category(id: 'dorsal_sesamoids_ii_v', label: 'Dorsal Sesamoids (II-V)', icon: Icons.accessibility),
+                Category(id: 'metatarsals_i_v', label: 'Metatarsals I-V', icon: Icons.accessibility),
+                Category(id: 'phalanges', label: 'Phalanges', icon: Icons.accessibility),
+                Category(id: 'sesamoids', label: 'Sesamoids', icon: Icons.accessibility),
               ],
             ),
           ],
@@ -1189,7 +1133,7 @@ class CategoryData {
           label: 'Special Bones', 
           icon: Icons.star,
           subcategories: [
-            Category(id: 'os_penis_baculum', label: 'Os Penis (Baculum)', icon: Icons.star),
+            Category(id: 'os_penis_baculum', label: 'Os Penis', icon: Icons.star),
           ],
         ),
         Category(
@@ -1399,8 +1343,8 @@ class CategoryData {
           ],
         ),
         Category(
-          id: 'head_neck',
-          label: 'Head/Neck',
+          id: 'neck',
+          label: 'Neck',
           icon: Icons.restaurant,
           subcategories: [
             Category(id: 'larynx', label: 'Larynx', icon: Icons.mic),
@@ -1420,23 +1364,23 @@ class CategoryData {
           label: 'Abdomen',
           icon: Icons.restaurant,
           subcategories: [
-            Category(id: 'liver_lobes_processes', label: 'Liver (lobes & processes)', icon: Icons.local_hospital),
+            Category(id: 'liver', label: 'Liver', icon: Icons.local_hospital),
             Category(id: 'gallbladder', label: 'Gallbladder', icon: Icons.opacity),
             Category(id: 'stomach', label: 'Stomach', icon: Icons.restaurant),
             Category(id: 'pancreas', label: 'Pancreas', icon: Icons.scatter_plot),
             Category(id: 'spleen', label: 'Spleen', icon: Icons.scatter_plot),
             Category(id: 'small_intestine', label: 'Small Intestine', icon: Icons.linear_scale),
             Category(id: 'large_intestine', label: 'Large Intestine', icon: Icons.linear_scale),
-          ],
-        ),
-        Category(
-          id: 'urinary',
-          label: 'Urinary',
-          icon: Icons.water_drop,
-          subcategories: [
-            Category(id: 'kidneys', label: 'Kidneys', icon: Icons.water_drop),
-            Category(id: 'ureters', label: 'Ureters', icon: Icons.linear_scale),
-            Category(id: 'urinary_bladder', label: 'Urinary Bladder', icon: Icons.opacity),
+            Category(
+              id: 'urinary',
+              label: 'Urinary',
+              icon: Icons.water_drop,
+              subcategories: [
+                Category(id: 'kidneys', label: 'Kidneys', icon: Icons.water_drop),
+                Category(id: 'ureters', label: 'Ureters', icon: Icons.linear_scale),
+                Category(id: 'urinary_bladder', label: 'Urinary Bladder', icon: Icons.opacity),
+              ],
+            ),
           ],
         ),
       ];
@@ -1457,7 +1401,7 @@ class CategoryData {
           subcategories: [
             Category(id: 'parotid_gland', label: 'Parotid Gland', icon: Icons.scatter_plot),
             Category(id: 'mandibular_gland', label: 'Mandibular Gland', icon: Icons.scatter_plot),
-            Category(id: 'sublingual_gland', label: 'Sublingual Gland (mono/polystomatic)', icon: Icons.scatter_plot),
+            Category(id: 'sublingual_gland', label: 'Sublingual Gland', icon: Icons.scatter_plot),
             Category(id: 'zygomatic_gland', label: 'Zygomatic Gland', icon: Icons.scatter_plot),
           ],
         ),
@@ -1537,10 +1481,10 @@ class CategoryData {
         // Lazy load energy subcategories only when needed
       ),
       Category(
-        id: 'skeletal_system',
-        label: 'Skeletal System',
+        id: 'skeleton',
+        label: 'Skeleton',
         icon: Icons.accessibility,
-        imagePath: 'assets/images/$animalId/skeletal_system.webp',
+        imagePath: 'assets/images/$animalId/skeleton.webp',
         subcategories: getSkeletalSystemCategoriesForAnimal(animalId),
       ),
       Category(
@@ -1572,10 +1516,10 @@ class CategoryData {
         subcategories: getGlandsCategoriesForAnimal(animalId),
       ),
       Category(
-        id: 'body_systems',
-        label: 'Body Systems',
+        id: 'systems',
+        label: 'Systems',
         icon: Icons.psychology,
-        imagePath: 'assets/images/$animalId/body_systems.webp',
+        imagePath: 'assets/images/$animalId/systems.webp',
         subcategories: getBodySystemsCategoriesForAnimal(animalId),
       ),
       Category(

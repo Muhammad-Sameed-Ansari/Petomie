@@ -1,0 +1,21 @@
+#Capillaries#
+
+##Location##
+Found throughout nearly all tissues and organs of the body, forming dense networks between the smallest arteries (arterioles) and veins (venules).
+They are most abundant in metabolically active tissues such as muscles, lungs, kidneys, liver, and glands, where constant exchange of substances is vital.
+
+##Shape##
+Extremely small, thin-walled blood vessels — typically only one endothelial cell thick.
+Their diameter (5–10 micrometers) allows passage of red blood cells in single file.
+Arranged in vast branching networks that form capillary beds, connecting the arterial and venous circulation.
+Three main types are recognized:
+Continuous capillaries: tight junctions, minimal permeability (found in skin, muscle, brain).
+Fenestrated capillaries: small pores for fluid and nutrient exchange (found in kidneys, intestines, endocrine glands).
+Sinusoidal capillaries: large openings allowing movement of cells and proteins (found in liver, spleen, bone marrow).
+
+##Function##
+Serve as the primary exchange vessels between blood and tissues.
+Allow diffusion of oxygen, carbon dioxide, nutrients, and metabolic wastes through their thin walls.
+Facilitate hormonal and immune exchanges between blood plasma and interstitial fluid.
+Play a key role in thermoregulation, adjusting blood flow to the skin or deep tissues as needed.
+Maintain tissue homeostasis by ensuring proper nutrient and gas delivery to every cell.

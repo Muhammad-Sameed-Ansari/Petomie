@@ -1,0 +1,17 @@
+#Lymph Nodes#
+
+##Location##
+Lymph nodes are small, bean-shaped structures found along lymphatic vessels.  
+They are grouped in key areas such as the neck (mandibular nodes), shoulders (prescapular nodes), armpits (axillary nodes), groin (inguinal nodes), and behind the knees (popliteal nodes).
+
+##Shape##
+Small, oval to round structures, each surrounded by a tough capsule.  
+They range from a few millimeters to over a centimeter in size.  
+Inside, they contain dense lymphoid tissue filled with lymphocytes and macrophages.
+
+##Function##
+- Filter lymph fluid to remove bacteria, viruses, and foreign particles.  
+- Contain immune cells that attack and destroy harmful substances.  
+- Produce antibodies that circulate through the lymph and blood.  
+- Swell temporarily during infections as immune activity increases.  
+- Help maintain clean, balanced body fluids and strong immune defense.

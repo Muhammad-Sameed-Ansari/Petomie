@@ -1,0 +1,23 @@
+#Lumbosacral Plexus#
+
+##Location##
+Situated in the caudal lumbar and sacral region of the spinal cord.
+Formed by the ventral branches (ventral rami) of the spinal nerves from L4 to S3 (with minor variations between species).
+Lies deep within the sublumbar muscles and extends into the pelvic region, giving rise to the major nerves of the hind limb and pelvic organs.
+
+##Shape##
+A complex network of interlacing nerve fibers that unite and divide into several major peripheral nerves.
+The plexus typically includes:
+Femoral Nerve: arises from L4–L6; innervates the quadriceps femoris and skin of the medial thigh.
+Obturator Nerve: from L4–L6; supplies the adductor muscles of the thigh.
+Sciatic Nerve: from L6–S2; the largest branch, supplying the hamstrings and dividing into the tibial and common peroneal nerves.
+Pudendal Nerve: from S1–S3; controls external anal sphincter, urethral sphincter, and perineal structures.
+Cranial and Caudal Gluteal Nerves: motor supply to gluteal muscles.
+Caudal Rectal and Pelvic Nerves: autonomic and sensory innervation to pelvic viscera.
+
+##Function##
+Provides motor and sensory innervation to the hind limbs, pelvic wall, and perineal region.
+Coordinates muscle control for movement, balance, and posture in the pelvic limbs.
+Transmits sensory information from the skin of the hind limbs and perineum.
+Includes autonomic fibers that regulate urinary, reproductive, and digestive functions within the pelvic cavity.
+Essential for weight-bearing, locomotion, and voluntary control of elimination functions.

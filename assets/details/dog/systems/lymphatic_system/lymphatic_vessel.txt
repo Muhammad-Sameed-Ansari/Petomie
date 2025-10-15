@@ -1,0 +1,18 @@
+#Lymphatic Vessels#
+
+##Location##
+Lymphatic vessels form a vast network that extends throughout the entire body.  
+They begin as tiny lymph capillaries in tissues, then join into larger vessels that run alongside veins and arteries.  
+These vessels eventually drain lymph fluid into the large veins near the heart.
+
+##Shape##
+Thin-walled tubes similar to veins but with more valves to ensure one-way flow.  
+Small capillaries are delicate and web-like, while larger vessels have smooth muscle that helps move lymph forward.  
+They appear translucent and are filled with clear fluid.
+
+##Function##
+- Transport lymph fluid from tissues back into the bloodstream.  
+- Prevent fluid buildup (edema) by draining excess interstitial fluid.  
+- Carry immune cells and antibodies throughout the body.  
+- Deliver lymph to lymph nodes for filtration.  
+- Maintain fluid balance and circulation of immune components.
