@@ -1,0 +1,28 @@
+#Pancreas#
+
+##Location##
+Located in the upper abdomen, nestled between the stomach and the first part of the small intestine (duodenum).
+It lies close to the right kidney and the liver, extending along the duodenal loop.
+
+###Shape###
+A soft, pale pink, lobulated gland shaped somewhat like an irregular “V.”
+It consists of two main lobes (right and left) joined by a central body.
+
+##Parts##
+###1. Right Lobe###
+Extends along the descending duodenum and is closely associated with the duodenal wall.
+Main site for digestive enzyme secretion.
+###2. Left Lobe###
+Lies toward the stomach and the liver, extending across the abdominal cavity.
+###3. Pancreatic Ducts###
+Small tubes that collect pancreatic secretions and carry them into the duodenum.
+Often join with the bile duct to release enzymes at the major duodenal papilla.
+###4. Islets of Langerhans###
+Clusters of endocrine cells scattered throughout the gland that produce hormones such as insulin and glucagon.
+
+##Function##
+Performs both exocrine and endocrine functions:
+Exocrine Function: Produces digestive enzymes (amylase, lipase, protease) and bicarbonate to neutralize stomach acid in the small intestine.
+Endocrine Function: Secretes hormones — insulin (lowers blood sugar), glucagon (raises blood sugar), and somatostatin (regulates secretion).
+Aids in digestion, metabolism, and blood sugar balance.
+Plays a vital role in nutrient absorption and maintaining energy homeostasis.

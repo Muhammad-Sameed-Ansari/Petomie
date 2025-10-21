@@ -1,7 +1,0 @@
-#Ureters#
-
-##Location##
-Extend from the renal pelvis to the urinary bladder.
-
-##Function##
-Transport urine from kidneys to bladder via peristalsis.

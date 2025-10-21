@@ -1,17 +1,33 @@
-#Major Vessels#
+#Veins#
 
 ##Location##
-Connected to heart and distributed throughout body.
+Veins are thin-walled vessels that carry oxygen-poor blood back to the heart.
+They lie closer to the skin’s surface and often appear bluish through the fur.
+
+##Shape##
+They are softer and more flexible than arteries and contain valves that keep blood flowing in one direction.
 
 ##Parts##
-- Aorta – Main systemic artery
-- Cranial & Caudal Vena Cava – Main systemic veins
-- Carotid Arteries – Supply head/brain
-- Jugular Veins – Drain head/neck
-- Subclavian/Brachial Arteries – Supply forelimbs
-- Femoral/External Iliac Arteries – Supply hindlimbs
-- Renal Arteries/Veins – Supply kidneys
-- Hepatic Portal Vein – Drains GI to liver
+###1. Vena Cava (Cranial & Caudal)###
+The largest veins in the body.
+Function: Bring blood from the upper and lower parts of the body into the right atrium.
+###2. Pulmonary Veins###
+Carry oxygen-rich blood from the lungs to the left atrium.
+###3. Jugular Veins###
+Found in the neck on both sides.
+Function: Drain blood from the head and brain.
+###4. Femoral Veins###
+Found in the hind limbs.
+Function: Return blood from the legs to the heart.
+###5. Renal Veins###
+Connected to the kidneys.
+Function: Return filtered blood back to circulation.
+###6. Coronary Veins###
+Found around the heart.
+Function: Drain deoxygenated blood from the heart muscle.
 
 ##Function##
-Transport blood to and from body regions.
+Return flow: Bring blood back to the heart for oxygenation.
+Storage: Contain most of the body’s blood volume.
+Temperature regulation: Control blood flow near the skin to manage heat.
+Waste transport: Carry waste-rich blood to the lungs and kidneys.

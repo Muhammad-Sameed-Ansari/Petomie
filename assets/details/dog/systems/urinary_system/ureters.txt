@@ -1,7 +1,16 @@
 #Ureters#
 
 ##Location##
-Muscular tubes from renal pelvis to urinary bladder.
+Extend from the kidneys to the urinary bladder, running along the dorsal abdominal wall.
 
-##Function##
-Propel urine to bladder via peristalsis; prevent reflux with intramural course.
+###Shape###
+Narrow, flexible muscular tubes about 2–3 mm in diameter.
+
+###Parts###
+Upper Section: Begins at the renal pelvis.
+Middle Section: Travels through the abdomen.
+Lower Section: Enters the bladder at an angle to prevent backflow.
+
+###Function###
+Carry urine from the kidneys to the bladder using rhythmic contractions (peristalsis).
+Prevent reflux of urine with valve-like openings into the bladder.

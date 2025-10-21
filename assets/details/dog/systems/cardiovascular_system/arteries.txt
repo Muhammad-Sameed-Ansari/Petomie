@@ -1,10 +1,33 @@
-#Cardiac Valves#
+#Arteries#
 
 ##Location##
-Between heart chambers and major outflow vessels.
+Arteries are strong, thick-walled vessels that carry oxygen-rich blood away from the heart to all parts of the body.
+They run deep under the skin and branch into smaller arterioles leading to capillaries.
+
+##Shape##
+They are thick and elastic, built to handle the pressure of each heartbeat.
 
 ##Parts##
-Tricuspid, Pulmonic, Mitral, Aortic
+###1. Aorta###
+The largest artery in the body.
+Function: Carries oxygenated blood from the left ventricle to the body.
+###2. Pulmonary Arteries###
+Carry oxygen-poor blood from the right ventricle to the lungs.
+Function: Allow gas exchange in the lungs.
+###3. Coronary Arteries###
+Found on the surface of the heart.
+Function: Supply the heart muscle itself with oxygen and nutrients.
+###4. Carotid Arteries###
+Located on both sides of the neck.
+Function: Supply oxygenated blood to the head and brain.
+###5. Femoral Arteries###
+Found in the inner thigh.
+Function: Supply blood to the hind limbs.
+###6. Renal Arteries###
+Connected to the kidneys.
+Function: Provide oxygenated blood for filtration.
 
 ##Function##
-Ensure one-way blood flow and prevent regurgitation.
+Transport: Carry oxygen and nutrients to all tissues.
+Regulation: Maintain proper blood pressure and flow.
+Temperature control: Adjust blood flow to conserve or release heat.

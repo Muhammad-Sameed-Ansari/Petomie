@@ -1,0 +1,40 @@
+#Arteries#
+
+##Location##
+Arteries are **thick, muscular blood vessels** that carry **oxygen-rich blood away from the heart** to all parts of the horse’s body.  
+They are found deep within the body and branch into smaller arterioles that lead to capillaries.
+
+##Shape##
+Arteries have **strong, elastic walls** that stretch with each heartbeat.  
+They can adjust their diameter to control blood flow and pressure.
+
+##Parts##
+
+###1. Aorta###
+- The largest artery leaving the left ventricle.  
+- **Function:** Carries oxygen-rich blood to the entire body.  
+
+###2. Pulmonary Arteries###
+- Carry oxygen-poor blood from the right ventricle to the lungs.  
+- **Function:** Allow gas exchange to occur in the lungs.  
+
+###3. Coronary Arteries###
+- Found on the surface of the heart.  
+- **Function:** Supply blood and oxygen directly to the heart muscle.  
+
+###4. Carotid Arteries###
+- Found on both sides of the neck.  
+- **Function:** Deliver oxygen-rich blood to the head and brain.  
+
+###5. Femoral Arteries###
+- Found in the inner thighs.  
+- **Function:** Supply blood to the hind limbs.  
+
+###6. Renal Arteries###
+- Connected to the kidneys.  
+- **Function:** Deliver blood for filtration and waste removal.  
+
+##Function##
+- **Transport:** Carry oxygen and nutrients throughout the body.  
+- **Pressure regulation:** Control blood pressure and distribution.  
+- **Support:** Assist in body temperature regulation by changing blood flow.  

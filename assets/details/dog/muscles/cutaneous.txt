@@ -1,0 +1,40 @@
+#Cutaneous Muscles#
+
+##Location##
+Located beneath the skin across much of the trunk, neck, and limbs, forming a thin, mobile muscular layer between the skin and underlying fascia.
+These muscles are particularly well developed in dogs, enabling movement of the skin independent of the deeper body muscles.
+
+##Shape##
+Composed of flat, thin, sheet-like muscles closely attached to the dermis.
+The fibers run superficially and are continuous with the fascia of surrounding regions.
+In dogs, they are most developed over the neck, shoulders, and thorax, forming visible skin twitches when stimulated.
+
+##Parts##
+###1. Cutaneous Trunci (Panniculus Carnosus)###
+Broad sheet covering the lateral thorax and abdomen.
+Origin: fascia over the latissimus dorsi and trunk.
+Insertion: dermis of the skin on the body wall.
+Function: Moves the skin, assists in twitch reflex to repel insects, and supports thermoregulation by altering skin tension.
+###2. Cutaneous Colli###
+Thin muscle at the ventral neck.
+Origin: manubrium and fascia of the sternum.
+Insertion: fascia of the neck and shoulder.
+Function: Tenses the skin of the neck and draws it caudally.
+###3. Cutaneous Omobrachialis###
+Extends over the shoulder and upper forelimb region.
+Function: Moves skin of the shoulder and aids in forelimb motion.
+###4. Platysma###
+Superficial muscle of the head and neck.
+Origin: fascia of the neck.
+Insertion: corners of the mouth and lips.
+Function: Retracts corners of the mouth and moves facial skin.
+###5. Cutaneous Maximus###
+Found along the lateral face and neck region.
+Function: Moves facial skin and lips, important in expression and communication.
+
+##Function##
+Skin movement: Allows independent motion of skin for defense and comfort (e.g., twitching).
+Protection: Assists in dislodging insects and external irritants.
+Communication: Enables subtle skin and facial expressions.
+Thermoregulation: Adjusts skin tension and surface area to assist heat exchange.
+Support: Maintains skin elasticity and tone.

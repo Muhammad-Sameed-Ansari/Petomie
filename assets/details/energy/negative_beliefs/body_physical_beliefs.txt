@@ -1,0 +1,25 @@
+#Body & Physical Beliefs#
+
+###TABLE_START###
+No.|Set 1|Set 2
+1.|My body is weak.|My body will always fail me.
+2.|My body is unsafe.|I cannot trust my body.
+3.|Pain is my normal state.|Pain will never leave me.
+4.|I am trapped in this body.|My body is my prison.
+5.|I am broken physically.|I will never heal.
+6.|My body betrays me.|My body turns against me.
+7.|I am too slow.|I am not built for strength.
+8.|I am too small/too big.|My size makes me wrong.
+9.|I have no control over my health.|Illness controls my life.
+10.|I must push my body past its limits.|Rest is weakness.
+11.|My body is unattractive.|My body is shameful.
+12.|I am at war with my body.|My body is my enemy.
+13.|I cannot trust my senses.|What I feel is always wrong.
+14.|My body is a burden to others.|Others will leave because of my body.
+15.|My body limits my freedom.|I can’t do what others can.
+16.|I am disconnected from my body.|I don’t belong in my physical form.
+17.|My body holds too much pain.|Healing feels impossible.
+18.|I must endure discomfort to prove my strength.|If I rest, I am failing.
+19.|My body’s needs are inconvenient.|Listening to my body is selfish.
+20.|My body doesn’t deserve kindness.|Caring for my body is a waste.
+###TABLE_END###

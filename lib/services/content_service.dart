@@ -14,12 +14,12 @@ class ContentService {
   static const Map<String, String> _sharedFolderMappings = {
     // Energy category folders (shared across all animals)
     'main_chakra': 'energy/chakras/main_chakra',
-    'aura_energy_field': 'energy/aura_energy_field',
-    'life_force_vital_energy': 'energy/life_force_vital_energy',
-    'energy_imbalances': 'energy/energy_imbalances',
-    'environmental_impacts': 'energy/energy_imbalances/environmental_impacts',
-    'energy_connections': 'energy/energy_connections',
-    'sacred_geometry_vibrational_patterns': 'energy/sacred_geometry_vibrational_patterns',
+    'aura': 'energy/aura',
+    'life_force': 'energy/life_force',
+    'imbalances': 'energy/imbalances',
+    'environmental_impacts': 'energy/imbalances/environmental_impacts',
+    'connections': 'energy/imbalances/connections',
+    'sacred_symbols': 'energy/sacred_symbols',
     'states_of_harmony': 'energy/states_of_harmony',
     'energetic_influences': 'energy/energetic_influences',
     'negative_beliefs': 'energy/negative_beliefs',
@@ -117,8 +117,8 @@ class ContentService {
         switch (subcategory.toLowerCase()) {
           case 'systems':
             return 'assets/images/$animalType/systems.webp';
-          case 'muscular system':
-            return 'assets/images/$animalType/muscular_system.webp';
+          case 'muscles':
+            return 'assets/images/$animalType/muscles.webp';
           case 'skeleton':
             // Check if it's a specific bone/part
             if (breadcrumbs.length > 2) {
@@ -131,7 +131,7 @@ class ContentService {
             return 'assets/images/$animalType/oragn_&_gland.webp';
           case 'sensory & external':
             // All images are now .webp format
-            final sensoryPath = 'assets/images/$animalType/sensory_&_external';
+            final sensoryPath = 'assets/images/$animalType/sensory';
             return '$sensoryPath.webp'; // Will fallback to logo if not found
           case 'energy':
             // Animal-specific energy subcategories
@@ -278,22 +278,22 @@ class ContentService {
     switch (breadcrumbLower) {
       case 'main chakra':
         return 'main_chakra';
-      case 'aura & energy field':
-        return 'aura_energy_field';
+      case 'aura':
+        return 'aura';
       
       // Note: Meridian categories are now handled by animal-specific logic
       // and are no longer shared across animals
       
-      case 'life force / vital energy':
-        return 'life_force_vital_energy';
-      case 'energy imbalances':
-        return 'energy_imbalances';
+      case 'life force':
+        return 'life_force';
+      case 'imbalances':
+        return 'imbalances';
       case 'environmental impacts':
         return 'environmental_impacts';
-      case 'energy connections':
-        return 'energy_connections';
-      case 'sacred geometry & vibrational patterns':
-        return 'sacred_geometry_vibrational_patterns';
+      case 'connections':
+        return 'connections';
+      case 'sacred symbols':
+        return 'sacred_symbols';
       case 'states of harmony':
         return 'states_of_harmony';
       case 'energetic influences':

@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart' as local_auth;
@@ -7,6 +8,14 @@ import '../themes/app_themes.dart';
 import '../utils/form_validators.dart';
 import '../widgets/auth_components.dart';
 import 'login_screen.dart';
+
+// Custom ScrollBehavior to hide scrollbar
+class HiddenScrollBehavior extends MaterialScrollBehavior {
+  @override
+  Widget buildScrollbar(BuildContext context, Widget child, ScrollableDetails details) {
+    return child; // Return child without scrollbar
+  }
+}
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -596,11 +605,13 @@ If you are concerned about your animal's health or suspect a medical condition, 
               constraints: const BoxConstraints(
                 maxWidth: 400, // Constrain width for web
               ),
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(horizontal: 24.0).copyWith(
-                  top: MediaQuery.of(context).padding.top + 16,
-                ),
-                child: Column(
+              child: ScrollConfiguration(
+                behavior: HiddenScrollBehavior(),
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.symmetric(horizontal: 24.0).copyWith(
+                    top: MediaQuery.of(context).padding.top + 16,
+                  ),
+                  child: Column(
                   children: [
                     const SizedBox(height: 40),
                     // Back Button (hidden on web)
@@ -856,7 +867,9 @@ If you are concerned about your animal's health or suspect a medical condition, 
                     ],
                   ),
                 ),
-                  ],
+                ],
+                ),
+                  
                 ),
               ),
             ),

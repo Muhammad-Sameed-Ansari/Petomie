@@ -1,13 +1,29 @@
 #Heart#
 
 ##Location##
-Located in the thoracic cavity between the lungs within the mediastinum.
+The heart is located in the thoracic cavity, between the lungs and slightly to the left of the midline.
+It lies behind the front legs and is protected by the ribs and sternum.
+
+##Shape##
+The dog’s heart is a muscular, cone-shaped organ about the size of a human fist (depending on breed).
+It has four chambers — two atria (upper) and two ventricles (lower) — enclosed in a thin membrane called the pericardium.
 
 ##Parts##
-- Right Atrium – Receives systemic venous blood
-- Right Ventricle – Pumps blood to lungs
-- Left Atrium – Receives oxygenated pulmonary blood
-- Left Ventricle – Pumps blood to body
+###1. Right Atrium###
+Receives oxygen-poor blood from the body.
+###2. Right Ventricle###
+Pumps blood through the pulmonary artery to the lungs to get oxygen.
+###3. Left Atrium###
+Receives oxygen-rich blood from the lungs.
+###4. Left Ventricle###
+The most powerful chamber that pumps blood through the aorta to the rest of the body.
+###5. Valves (Tricuspid, Pulmonary, Mitral, Aortic)###
+Control blood flow direction and prevent backflow.
+###6. Pericardium###
+A double-layered sac around the heart.
+Function: Protects and lubricates the heart as it beats.
 
 ##Function##
-Pumps blood to maintain circulation and oxygen delivery to tissues.
+Circulation: Pumps blood through the lungs and body.
+Oxygenation: Supplies tissues with oxygen and nutrients.
+Waste removal: Helps eliminate carbon dioxide.

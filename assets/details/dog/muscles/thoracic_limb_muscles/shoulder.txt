@@ -1,0 +1,33 @@
+#Shoulder#
+
+##Location##
+The shoulder of the dog is located at the junction of the neck and the forelimb.
+It connects the forelimb to the trunk via muscular attachments, as dogs—like horses—lack a clavicle.
+The shoulder region includes the scapula and the proximal part of the humerus, extending from the withers to the upper forelimb.
+
+##Shape##
+Broad and muscular, covering the flat, triangular scapula that lies against the thoracic wall.
+The scapula articulates distally with the humerus at the shoulder (glenohumeral) joint.
+The absence of a clavicle allows free movement and shock absorption during running and jumping.
+
+##Main Bones##
+- **Scapula:** Flat, triangular bone forming the upper portion of the shoulder; articulates with the humerus at the glenoid cavity.
+- **Humerus (Proximal End):** Rounded head articulates with the scapula to form the shoulder joint.
+
+##Main Muscles##
+- **Supraspinatus:** Located cranial to the scapular spine; extends and stabilizes the shoulder joint.
+- **Infraspinatus:** Lies caudal to the scapular spine; acts as a lateral stabilizer and prevents over-rotation of the joint.
+- **Deltoideus:** Covers the lateral surface of the scapula; flexes and abducts the shoulder.
+- **Subscapularis:** Found on the medial surface of the scapula; adducts the forelimb and stabilizes the shoulder.
+- **Teres Major:** Located caudomedially; flexes and medially rotates the shoulder.
+- **Teres Minor:** Lies lateral to the infraspinatus; assists in flexion and lateral rotation of the shoulder.
+- **Trapezius (Cervical and Thoracic Parts):** Elevates and rotates the scapula; assists in advancing or retracting the limb.
+- **Rhomboideus:** Lies deep to the trapezius; elevates and draws the scapula against the trunk.
+- **Serratus Ventralis:** Large, fan-shaped muscle attaching the scapula to the ribs; supports the trunk between the forelimbs and stabilizes the shoulder girdle.
+- **Omotransversarius:** Extends from the atlas to the spine of the scapula; protracts the limb forward.
+
+##Function##
+- Attaches the forelimb to the trunk through a muscular sling that provides stability and flexibility.
+- Allows forelimb movement through a wide range of motion during running, climbing, or digging.
+- Absorbs impact during locomotion and supports the body’s weight during stance.
+- Facilitates limb elevation, retraction, and protraction through coordinated muscle action.

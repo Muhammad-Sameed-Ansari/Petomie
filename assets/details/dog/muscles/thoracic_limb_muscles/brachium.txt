@@ -1,0 +1,26 @@
+#Brachium#
+
+##Location##
+The brachium, or upper arm, of the dog is the region between the shoulder joint and the elbow joint.
+It connects the scapula to the radius and ulna and forms the upper portion of the forelimb.
+
+##Shape##
+Contains the humerus, a single large bone surrounded by strong flexor and extensor muscles.
+The brachium is muscular and cylindrical, tapering toward the elbow.
+
+##Main Bones##
+- **Humerus:** The only bone in the brachium; articulates proximally with the scapula and distally with the radius and ulna.
+
+##Main Muscles##
+- **Biceps Brachii:** Located on the cranial aspect; flexes the elbow and extends the shoulder.
+- **Brachialis:** Lies on the lateral side; assists in elbow flexion.
+- **Triceps Brachii (long, lateral, medial, and accessory heads):** Occupies the caudal aspect; extends the elbow and supports weight-bearing.
+- **Tensor Fasciae Antebrachii:** Thin muscle on the medial side of the triceps; assists in elbow extension.
+- **Deltoideus:** Flexes and abducts the shoulder joint.
+- **Teres Major:** Flexes and medially rotates the shoulder.
+- **Coracobrachialis:** Small, stabilizing muscle on the medial side of the shoulder joint.
+
+##Function##
+- Controls flexion and extension of the shoulder and elbow joints.
+- Provides strength and support during weight-bearing and propulsion.
+- Contributes to forward motion of the forelimb during running and climbing.

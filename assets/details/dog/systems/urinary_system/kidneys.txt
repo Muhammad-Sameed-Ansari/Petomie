@@ -1,10 +1,27 @@
 #Kidneys#
 
 ##Location##
-Retroperitoneal in the dorsal abdomen.
+Situated in the upper abdominal cavity on either side of the spine, just behind the last ribs.
+The right kidney lies slightly more forward than the left, positioned close to the liver.
+Both are supported by surrounding fat and connective tissue within the retroperitoneal space.
+
+###Shape###
+Paired, smooth, reddish-brown, bean-shaped organs with a firm outer capsule.
+Each kidney has a convex lateral surface and a concave medial surface where the renal hilus (entry for vessels and ureter) is located.
 
 ##Parts##
-Cortex, medulla, renal pelvis.
+###1. Cortex###
+The outer layer containing nephrons, the microscopic filtering units that remove waste from blood.
+###2. Medulla###
+The inner region consisting of renal pyramids and collecting ducts that channel urine toward the renal pelvis.
+###3. Renal Pelvis###
+The central cavity that gathers urine from the medulla and funnels it into the ureter.
+###4. Renal Hilus###
+Indented medial area where the renal artery, vein, lymphatics, and ureter enter and exit the kidney.
 
 ##Function##
-Filter blood, produce urine, regulate fluid/electrolyte and acid–base balance.
+Filters metabolic waste and toxins from the bloodstream.
+Regulates fluid balance, electrolyte levels, and blood pressure.
+Maintains acid–base homeostasis for optimal cellular function.
+Produces hormones such as erythropoietin (stimulates red blood cell formation) and renin (regulates blood pressure).
+Contributes to the body’s detoxification and water conservation systems.

@@ -1,0 +1,41 @@
+#Veins#
+
+##Location##
+Veins are **thin-walled vessels** that carry **oxygen-poor blood back to the heart**.  
+They are located throughout the horse’s body and usually lie closer to the skin’s surface than arteries.
+
+##Shape##
+Veins have **thin, flexible walls** and contain **valves** that prevent blood from flowing backward.  
+They are less muscular than arteries and carry blood under lower pressure.
+
+##Parts##
+
+###1. Vena Cava (Cranial & Caudal)###
+- The largest veins in the body.  
+- **Function:** Return blood from the upper and lower body to the right atrium.  
+
+###2. Pulmonary Veins###
+- Carry oxygen-rich blood from the lungs to the left atrium.  
+- **Function:** Complete the oxygenation cycle.  
+
+###3. Jugular Veins###
+- Found on both sides of the neck.  
+- **Function:** Drain blood from the head and brain.  
+
+###4. Femoral Veins###
+- Found in the hind limbs.  
+- **Function:** Return blood from the legs to the heart.  
+
+###5. Renal Veins###
+- Connected to the kidneys.  
+- **Function:** Return filtered blood to circulation.  
+
+###6. Coronary Veins###
+- Found around the heart.  
+- **Function:** Drain deoxygenated blood from the heart muscle.  
+
+##Function##
+- **Return flow:** Carry blood back to the heart for re-oxygenation.  
+- **Waste transport:** Carry carbon dioxide and waste to be removed from the body.  
+- **Storage:** Contain most of the body’s blood volume when at rest.  
+- **Temperature regulation:** Adjust blood flow near the skin to manage body temperature.  

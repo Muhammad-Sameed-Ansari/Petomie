@@ -1,0 +1,34 @@
+#Capillaries#
+
+##Location##
+Capillaries are **microscopic blood vessels** found throughout the horse’s body.  
+They connect **arteries and veins**, forming dense networks in tissues and organs such as the **lungs, muscles, kidneys, intestines, and skin**.
+
+##Shape##
+Capillaries are **extremely thin and delicate**, made of a single layer of endothelial cells.  
+Their walls allow easy exchange of gases, nutrients, and waste products between blood and body tissues.
+
+##Parts##
+
+###1. Arterioles###
+- Small branches of arteries that lead to capillaries.  
+- **Function:** Control blood flow into capillary beds.  
+
+###2. Venules###
+- Small vessels that collect blood from capillaries and carry it to veins.  
+- **Function:** Transport deoxygenated blood back to the heart.  
+
+###3. Capillary Beds###
+- Networks of tiny capillaries within tissues.  
+- **Function:** Exchange oxygen, nutrients, and waste between blood and cells.  
+
+###4. Endothelial Cells###
+- Form the walls of capillaries.  
+- **Function:** Allow diffusion of oxygen, carbon dioxide, and nutrients.  
+
+##Function##
+- **Gas exchange:** Deliver oxygen and remove carbon dioxide.  
+- **Nutrient transport:** Supply nutrients and hormones to body tissues.  
+- **Waste removal:** Carry away waste and toxins.  
+- **Fluid balance:** Maintain hydration between blood and tissues.  
+- **Temperature control:** Help regulate body heat through surface circulation.  

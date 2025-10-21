@@ -1,0 +1,16 @@
+#Thymus#
+
+##Parts##
+###Cortex###
+Outer layer where immature **T-cells** (immune cells) are formed.  
+
+###Medulla###
+Inner zone where mature T-cells are released into circulation.  
+
+###Thymic Hormones###
+Produce **thymosin**, which trains T-cells to recognize and fight infections.  
+
+##Function##
+Essential for **immune development** in young horses.  
+Supports disease resistance by teaching immune cells to distinguish healthy tissue from invaders.  
+As horses age, the thymus shrinks, but its influence remains vital for long-term immune strength.

@@ -1,0 +1,27 @@
+#Large Intestine#
+
+##Location##
+Extends from the ileum of the small intestine to the anus, running along the lower and posterior part of the abdominal cavity.
+It lies partially on the right side and curves toward the midline before terminating at the rectum and anal canal.
+
+###Shape###
+A wider, shorter tube compared to the small intestine, with a smooth outer surface and a thicker wall.
+Adapted for water absorption, fermentation, and fecal formation.
+
+##Parts##
+###1. Cecum###
+A small, blind-ended pouch located at the junction between the ileum and colon.
+Aids in limited fermentation and microbial digestion of undigested food.
+###2. Colon###
+The largest section, divided into ascending, transverse, and descending portions.
+Responsible for absorbing water and electrolytes, compacting waste, and forming feces.
+###3. Rectum###
+The terminal section leading to the anus.
+Serves as a temporary storage site for feces before defecation.
+
+##Function##
+Absorbs water, sodium, and other electrolytes from undigested material.
+Ferments remaining nutrients with the help of beneficial gut bacteria.
+Forms and stores feces before elimination.
+Maintains healthy intestinal flora that aid in immune defense and vitamin synthesis (e.g., vitamin K).
+Supports hydration and electrolyte balance by reclaiming fluids from digestive waste.

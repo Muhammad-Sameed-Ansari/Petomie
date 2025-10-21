@@ -1,18 +1,25 @@
+#Self-Worth & Acceptance Beliefs#
 
 ###TABLE_START###
-Set 1|Set 2
-I am not worthy.|I don’t deserve love.
-I am broken.|I am unfixable.
-I am a burden to others.|My needs are too much.
-I am not lovable.|I am hard to love.
-I am less than others.|Others are better than me.
-I am invisible.|I am not important.
-I am not allowed to take up space.|I must shrink myself to be accepted.
-I am not enough as I am.|I must change to be loved.
-I am defined by my flaws.|My value is based on what I do.
-I am unworthy of good things.|Blessings are for others, not me.
-I am a mistake.|I was not meant to exist.
-I cannot forgive myself.|My past defines me.
-I am weak.|Strength is not for me.
-I don’t belong anywhere.|I am always on the outside.
+No.|Set 1|Set 2  
+1.|I am not worthy.|I don’t deserve love.  
+2.|I am broken.|I am unfixable.  
+3.|I am a burden to others.|My needs are too much.  
+4.|I am not lovable.|I am hard to love.  
+5.|I am less than others.|Others are better than me.  
+6.|I am invisible.|I am not important.  
+7.|I am not allowed to take up space.|I must shrink myself to be accepted.  
+8.|I am not enough as I am.|I must change to be loved.  
+9.|I am defined by my flaws.|My value is based on what I do.  
+10.|I am unworthy of good things.|Blessings are for others, not me.  
+11.|I am a mistake.|I was not meant to exist.  
+12.|I cannot forgive myself.|My past defines me.  
+13.|I am weak.|Strength is not for me.  
+14.|I don’t belong anywhere.|I am always on the outside.  
+15.|I am forgotten easily.|My presence doesn’t matter.  
+16.|I am undeserving of happiness.|Joy is for others, not for me.  
+17.|I am flawed beyond repair.|Healing isn’t possible for me.  
+18.|I am unimportant in the bigger picture.|No one would notice if I disappeared.  
+19.|I must earn my right to exist.|Being myself is never enough.  
+20.|I can’t accept love without proving my worth.|If I’m not perfect, I’ll be abandoned.  
 ###TABLE_END###

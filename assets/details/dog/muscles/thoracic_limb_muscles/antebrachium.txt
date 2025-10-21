@@ -1,0 +1,30 @@
+#Antebrachium#
+
+##Location##
+The antebrachium, or forearm, of the dog lies between the elbow joint and the carpus (wrist).
+It connects the brachium to the manus and forms the middle segment of the forelimb.
+
+##Shape##
+Composed of two long parallel bones—the radius and ulna—surrounded by powerful flexor and extensor muscles.
+Unlike in horses, the dog’s radius and ulna are separate, allowing pronation and supination of the forelimb.
+The antebrachium is elongated and cylindrical, tapering toward the carpus.
+
+##Main Bones##
+- **Radius:** The main weight-bearing bone of the forearm; broad proximally, tapering distally to articulate with the carpus.
+- **Ulna:** Runs parallel and lateral to the radius; forms the olecranon process (the point of the elbow) and allows leverage for muscle attachment.
+
+##Main Muscles##
+- **Extensor Carpi Radialis:** Extends the carpus and stabilizes the wrist during weight-bearing.
+- **Common Digital Extensor:** Extends the digits and carpus.
+- **Lateral Digital Extensor:** Extends the lateral digits and assists in balance.
+- **Flexor Carpi Radialis:** Flexes the carpus; located medially.
+- **Flexor Carpi Ulnaris:** Flexes the carpus; located caudally.
+- **Superficial Digital Flexor:** Flexes the digits and carpus.
+- **Deep Digital Flexor:** Lies deep to the superficial flexor; flexes the digits.
+- **Pronator Teres:** Rotates the paw inward (pronation).
+- **Supinator:** Rotates the paw outward (supination).
+
+##Function##
+- Provides flexion, extension, rotation, and stability to the forearm and paw.
+- Allows manipulation of the paw during movement, grasping, and digging.
+- Supports the body’s weight during stance and absorbs shock during locomotion.

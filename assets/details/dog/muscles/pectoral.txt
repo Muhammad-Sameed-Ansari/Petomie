@@ -1,0 +1,29 @@
+#Pectoral Muscles#
+
+##Location##
+The pectoral muscles of the dog are located on the ventral (underside) region of the thorax between the forelimbs.
+They connect the sternum to the humerus and shoulder region, forming the muscular chest that supports and moves the forelimbs.
+
+##Shape##
+Composed of two main paired muscle groups—superficial and deep—both broad, flat, and fan-shaped.
+These muscles vary in thickness, covering the sternum and cranial thorax, and taper laterally to insert on the forelimb.
+
+##Main Muscles##
+- **Superficial Pectoral Muscles (Descending and Transverse Parts):**
+  - Located on the cranial chest, extending from the first few sternebrae to the humerus.
+  - The descending part runs obliquely downward and outward; the transverse part lies deeper and runs horizontally.
+  - **Function:** Adducts the forelimb (pulls it toward the midline) and assists in protraction.
+
+- **Deep Pectoral Muscle (Ascending Pectoral):**
+  - Lies beneath the superficial pectorals; originates from the entire length of the sternum and inserts on the greater and lesser tubercles of the humerus.
+  - **Function:** Retracts the forelimb and draws the trunk forward when the limb is fixed; supports the thorax during movement.
+
+- **Subclavius (in some breeds, vestigial or absent):**
+  - Small, thin muscle near the cranial edge of the deep pectoral; assists with stabilization of the shoulder joint.
+
+##Function##
+- Adduct the forelimbs, pulling them toward the body’s midline.
+- Support the weight of the trunk between the forelimbs.
+- Aid in protraction and retraction of the forelimb during locomotion.
+- Stabilize the shoulder and assist in absorbing impact during landing and stance.
+- Play a role in drawing the trunk forward when the limb is fixed to the ground.

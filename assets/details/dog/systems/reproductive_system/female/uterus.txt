@@ -1,23 +1,38 @@
 #Uterus#
 
 ##Location##
-Situated within the pelvic cavity, extending forward into the caudal part of the abdominal cavity.
+Located within the abdominal and pelvic cavities.
 Lies between the urinary bladder (ventrally) and the rectum (dorsally).
-In the horse, the uterus consists of a uterine body and two long, slender uterine horns that extend forward toward the ovaries.
+In dogs, the uterus has a very short body and two long, coiled uterine horns that extend forward toward the ovaries, where embryo implantation and fetal development occur.
 
-##Shape##
-A hollow, muscular, Y-shaped organ composed of three main regions:
-Uterine Body: short, central part where the two horns merge; connects caudally with the cervix.
-Uterine Horns: paired tubular extensions that project cranially toward each ovary; site of embryo development in many species.
-Cervix: caudal, thick-walled portion that separates the uterus from the vagina.
-The uterine wall has three layers:
-Endometrium: inner mucosal lining rich in glands and blood vessels.
-Myometrium: thick smooth muscle layer responsible for contractions.
-Perimetrium: outer serous covering continuous with the peritoneum.
+###Shape###
+A hollow, muscular, Y-shaped organ with a short central body and two long, flexible horns.
+The walls are thick and elastic, allowing for expansion during pregnancy.
+
+##Parts##
+
+###1. Uterine Body###
+A small central section where the two uterine horns join together before connecting to the cervix.
+
+###2. Uterine Horns###
+Long, coiled tubes extending toward each ovary.
+These are the main sites of embryo implantation and fetal growth during pregnancy.
+
+###3. Cervix###
+A short, muscular passage connecting the uterus to the vagina.
+Remains tightly closed except during estrus and parturition to protect the uterus from infection.
+
+###4. Uterine Wall Layers###
+
+Endometrium – Inner mucosal lining that nourishes embryos and changes during the reproductive cycle.
+
+Myometrium – Middle muscular layer responsible for contractions during birth and uterine movement.
+
+Perimetrium – Outer protective serous covering continuous with the peritoneum.
 
 ##Function##
-Provides a nurturing environment for embryo and fetal development.
-Secretes nutrients and maintains the uterine environment for implantation.
-Contracts rhythmically during labor to expel the fetus and after birth to aid uterine involution.
-Acts as a passageway for sperm to reach the uterine tubes during fertilization.
-Responds to hormonal changes during the estrous cycle to regulate reproductive readiness.
+Provides a safe, nourishing environment for embryo implantation and fetal development.
+Expands significantly to accommodate multiple fetuses during gestation.
+Contracts during labor to deliver puppies and later returns to normal size (involution).
+Acts as a passageway for sperm to reach the uterine tubes for fertilization.
+Responds to hormonal changes throughout the estrous cycle to prepare for pregnancy.

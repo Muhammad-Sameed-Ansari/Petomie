@@ -1,7 +1,0 @@
-#Medulla Oblongata#
-
-##Location##
-Caudal brainstem.
-
-##Function##
-Autonomic centers for HR, BP, breathing.

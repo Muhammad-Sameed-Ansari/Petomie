@@ -1,0 +1,59 @@
+#Facial Expression Muscles#
+
+##Location##
+Located in the **head region**, surrounding the eyes, lips, nostrils, and ears.  
+These muscles are arranged superficially beneath the skin of the face and are primarily attached to the facial bones and skin rather than to other muscles.  
+They are innervated by branches of the **facial nerve (cranial nerve VII)**.
+
+##Shape##
+Thin, flat, and highly elastic muscles that interlace with connective tissue and the skin.  
+They vary in size and direction, forming a complex network that allows **fine, precise movements** of facial structures for expression, communication, and sensory control.
+
+##Parts##
+
+###1. Levator Nasolabialis###
+- Runs along the face from the nasal bone toward the upper lip and nostril.  
+- Elevates the upper lip and dilates the nostrils.  
+
+###2. Caninus###
+- Lies along the lateral aspect of the muzzle.  
+- Retracts the upper lip and helps dilate the nostril.  
+
+###3. Zygomaticus###
+- Extends from the facial crest to the mouth corner.  
+- Retracts the commissure (corner) of the lips.  
+
+###4. Buccinator###
+- Broad muscle of the cheek, lying between the maxilla and mandible.  
+- Compresses the cheek during chewing, keeping food between the teeth.  
+
+###5. Orbicularis Oris###
+- Circular muscle surrounding the lips.  
+- Closes and puckers the mouth.  
+
+###6. Levator Labii Superioris###
+- Long, thin muscle running along the face and nose.  
+- Elevates the upper lip, assisting in “flehmen” response.  
+
+###7. Depressor Labii Inferioris###
+- Found on the lateral aspect of the lower jaw.  
+- Lowers the lower lip.  
+
+###8. Orbicularis Oculi###
+- Circular muscle surrounding the eye.  
+- Closes the eyelids and protects the eye.  
+
+###9. Frontoscutularis & Auricular Muscles###
+- Surround the base of the ears.  
+- Move and rotate the ears to detect sound direction and express mood.  
+
+###10. Mentalis###
+- Located on the chin.  
+- Elevates and wrinkles the skin of the chin, controlling lower lip movement.  
+
+##Function##
+- Control **facial expressions** used in communication, such as ear position, nostril flare, and lip tension.  
+- Facilitate **feeding and drinking** by manipulating lips and cheeks.  
+- Protect the eyes through **blinking and squinting**.  
+- Aid in **breathing regulation** via nostril dilation.  
+- Support **social signaling and sensory awareness**, essential in equine body language and interaction.  

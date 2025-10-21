@@ -1,0 +1,10 @@
+#Brain#
+
+##Location##
+Enclosed within the skull, connected to the spinal cord through the foramen magnum.
+
+###Shape###
+Oval, divided into cerebrum, cerebellum, and brainstem.
+
+##Function##
+Processes sensory input, controls movement, balance, and vital body functions.

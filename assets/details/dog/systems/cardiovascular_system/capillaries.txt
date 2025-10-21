@@ -1,21 +1,29 @@
 #Capillaries#
 
 ##Location##
-Found throughout nearly all tissues and organs of the body, forming dense networks between the smallest arteries (arterioles) and veins (venules).
-They are most abundant in metabolically active tissues such as muscles, lungs, kidneys, liver, and glands, where constant exchange of substances is vital.
+Capillaries are tiny blood vessels that connect arteries and veins.
+They form networks throughout the entire body, especially in the lungs, skin, muscles, kidneys, and brain.
 
 ##Shape##
-Extremely small, thin-walled blood vessels — typically only one endothelial cell thick.
-Their diameter (5–10 micrometers) allows passage of red blood cells in single file.
-Arranged in vast branching networks that form capillary beds, connecting the arterial and venous circulation.
-Three main types are recognized:
-Continuous capillaries: tight junctions, minimal permeability (found in skin, muscle, brain).
-Fenestrated capillaries: small pores for fluid and nutrient exchange (found in kidneys, intestines, endocrine glands).
-Sinusoidal capillaries: large openings allowing movement of cells and proteins (found in liver, spleen, bone marrow).
+They are microscopic and one cell thick, allowing gases and nutrients to pass through their thin walls easily.
+
+##Parts##
+###1. Arterioles###
+Small branches of arteries leading into capillaries.
+Function: Regulate blood flow into tissues.
+###2. Venules###
+Small vessels that collect blood from capillaries.
+Function: Carry deoxygenated blood back to the veins.
+###3. Capillary Beds###
+Networks of capillaries in tissues.
+Function: Exchange oxygen, nutrients, and waste between blood and cells.
+###4. Endothelial Cells###
+Form the walls of capillaries.
+Function: Allow diffusion of oxygen, carbon dioxide, and nutrients.
 
 ##Function##
-Serve as the primary exchange vessels between blood and tissues.
-Allow diffusion of oxygen, carbon dioxide, nutrients, and metabolic wastes through their thin walls.
-Facilitate hormonal and immune exchanges between blood plasma and interstitial fluid.
-Play a key role in thermoregulation, adjusting blood flow to the skin or deep tissues as needed.
-Maintain tissue homeostasis by ensuring proper nutrient and gas delivery to every cell.
+Gas exchange: Deliver oxygen and remove carbon dioxide.
+Nutrient supply: Provide energy and hydration to cells.
+Waste removal: Carry waste away for excretion.
+Fluid balance: Regulate water and nutrient movement between tissues and blood.
+Temperature regulation: Expand or contract to help control body heat.

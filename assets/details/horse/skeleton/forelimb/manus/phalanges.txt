@@ -1,0 +1,16 @@
+#Phalanges#
+
+##Location##
+Extend distally from the metacarpus to form the lower part of the limb (digit).  
+Horses have one functional digit per limb, consisting of three phalanges aligned vertically below the cannon bone.
+
+##Shape##
+- **First Phalanx (P1, Long Pastern Bone):** elongated, cylindrical bone between the fetlock and pastern joints.  
+- **Second Phalanx (P2, Short Pastern Bone):** shorter, wedge-shaped bone between the pastern and coffin joints.  
+- **Third Phalanx (P3, Coffin Bone):** triangular, flattened bone enclosed within the hoof capsule.
+
+##Function##
+Provide structure and leverage to the distal limb.  
+Support body weight and absorb shock during locomotion.  
+Serve as attachment sites for tendons and ligaments that control flexion, extension, and stabilization of the limb.  
+P3 forms the framework for the hoof and bears much of the body’s weight during stance.

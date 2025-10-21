@@ -1,0 +1,20 @@
+#Motor Nerves#
+
+##Location##
+Motor nerves extend from the **spinal cord and brainstem** to the **muscles and glands** of the horse’s body.  
+They are found in all limbs, the head, neck, and trunk, controlling voluntary and involuntary muscle activity.
+
+###Shape###
+Bundles of **long fibers** leaving the spinal cord and branching into smaller nerves that connect to muscle fibers.  
+They often run beside arteries and veins within the body.
+
+##Function##
+- Carry **commands from the brain** to muscles to produce movement.  
+- Control **voluntary muscles** for walking, trotting, running, chewing, and facial motion.  
+- Manage **involuntary muscles** in the heart, intestines, and glands.  
+- Two main types:  
+  - **Somatic Motor Nerves:** voluntary control of skeletal muscles.  
+  - **Visceral Motor Nerves:** control smooth muscles and glands automatically.  
+- Work together with sensory nerves to maintain coordination and body balance.  
+
+Damage to these nerves can cause stiffness, weakness, or paralysis in the affected area.

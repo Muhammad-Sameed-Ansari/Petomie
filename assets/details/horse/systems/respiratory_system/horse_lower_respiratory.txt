@@ -1,0 +1,40 @@
+#Respiratory System – Lower Tract#
+
+##Location##
+The lower respiratory tract includes the **bronchi, bronchioles, lungs, alveoli, diaphragm, and pleura**.  
+It occupies the **thoracic cavity**, protected by the ribs and sternum.
+
+##Shape##
+A system of branching tubes ending in clusters of air sacs, surrounded by elastic lung tissue for efficient breathing and gas exchange.
+
+##Parts##
+
+###1. Bronchi###
+- Two main tubes branching from the trachea.  
+- **Function:** Carry air to each lung.  
+
+###2. Bronchioles###
+- Smaller airways branching throughout the lung tissue.  
+- **Function:** Regulate airflow and distribute air evenly.  
+
+###3. Alveoli###
+- Microscopic sacs surrounded by capillaries.  
+- **Function:** Exchange oxygen and carbon dioxide between air and blood.  
+
+###4. Lungs###
+- Two large organs filling most of the chest cavity.  
+- **Function:** Oxygenate blood and remove carbon dioxide.  
+
+###5. Diaphragm###
+- Large muscular sheet separating the chest and abdomen.  
+- **Function:** Expands and contracts to draw air in and push it out.  
+
+###6. Pleura###
+- Thin double-layered membrane surrounding the lungs.  
+- **Function:** Reduces friction and protects the lungs.  
+
+##Function##
+- **Gas exchange:** Provides oxygen and removes carbon dioxide.  
+- **Ventilation:** Controls air movement in and out of the lungs.  
+- **Elastic support:** Maintains lung shape and volume.  
+- **Efficiency:** Allows powerful, rapid breathing during running.  

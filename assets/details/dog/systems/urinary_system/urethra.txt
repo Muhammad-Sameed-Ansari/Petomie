@@ -1,7 +1,19 @@
 #Urethra#
 
 ##Location##
-Extends from bladder neck through pelvic canal to external orifice.
+Extends from the bladder neck to the external opening.
+In males, it runs through the penis; in females, it’s shorter and opens behind the vaginal opening.
 
-##Function##
-Conducts urine to exterior; in males also conducts semen.
+###Shape###
+A tubular passage lined with mucous membrane and surrounded by smooth and skeletal muscles.
+
+###Parts###
+Internal Sphincter: Located at the bladder neck; involuntary control.
+External Sphincter: Near the exit; voluntary control.
+Pelvic Section (both sexes): Carries urine out.
+Penile Section (males): Also carries semen during reproduction.
+
+###Function###
+Transports urine from bladder to outside of the body.
+Controls urination through sphincter action.
+In males, serves as a dual passage for semen and urine.

@@ -1,18 +1,35 @@
 #Sympathetic Nervous System#
 
 ##Location##
-Thoracolumbar outflow: Preganglionic cell bodies in spinal cord segments T1–L4/5.
-Chain of ganglia runs parallel to the vertebral column.
+The sympathetic nervous system runs mainly along the middle and lower back region of the spinal cord.
+Its nerve fibers leave the spinal cord between T1 and L4 and connect to two long chains of nerve centers (ganglia) that sit beside the spine.
+From there, the nerves branch out to the heart, lungs, eyes, digestive system, skin, and blood vessels.
 
-##Parts##
-- Sympathetic Chain & Paravertebral Ganglia
-- Cervicothoracic (stellate) ganglion
-- Middle & Cranial Cervical ganglia
-- Prevertebral ganglia (celiac, cranial/caudal mesenteric)
+###Shape###
+Two long chains of small nerve clusters connected by thin fibers, like a ladder running along both sides of the spine.
+Each cluster sends tiny nerve branches to different organs and tissues.
 
 ##Function##
-""Fight or Flight"" response:
-- Increases heart rate and blood pressure
-- Dilates pupils and bronchi
-- Redirects blood flow to muscles
-- Inhibits digestion and bladder contraction
+The sympathetic system prepares the dog’s body to act quickly in stressful or active situations.
+It is often called the “fight or flight” system.
+
+Increases heart rate and blood pressure to pump more oxygen to muscles.
+
+Expands airways to breathe easier.
+
+Widens pupils for sharper vision.
+
+Redirects blood away from the stomach to the muscles.
+
+Reduces saliva and digestion when the dog is excited or scared.
+
+Releases stored energy from the liver and fat for quick use.
+
+Activates sweat glands (especially in paw pads).
+
+##Examples##
+When a dog gets startled, sees another dog, or runs after a toy — the sympathetic system speeds up the heart, breathing, and muscles for fast action.
+
+##Notes##
+Too much sympathetic activity (from stress or fear) can cause tension, poor digestion, or anxiety.
+Rest, calm routines, and safe surroundings help bring this system back into balance.

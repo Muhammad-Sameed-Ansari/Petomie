@@ -1,26 +1,37 @@
 #Cranial Nerves#
 
 ##Location##
-Emerge directly from the brain and brainstem, passing through foramina of the skull.
-They supply sensory and motor fibers to the head, neck, and upper thoracic and abdominal organs (via the vagus nerve).
-Each nerve pair arises in sequence from the most rostral (front) to the most caudal (rear) part of the brain.
+Cranial nerves arise directly from the brain, mostly from the brainstem, and extend to the head, face, neck, and some internal organs.
+Dogs have 12 pairs of cranial nerves — one pair on each side of the body.
 
-##Shape##
-Twelve paired nerves with distinct origins and terminations:
-I – Olfactory – Smell (nasal cavity)
-II – Optic – Vision (retina → brain)
-III – Oculomotor – Eye movement, pupil constriction
-IV – Trochlear – Eye rotation (dorsal oblique muscle)
-V – Trigeminal – Facial sensation, chewing muscles
-VI – Abducens – Lateral eye movement (lateral rectus)
-VII – Facial – Facial expression, taste, saliva/tear secretion
-VIII – Vestibulocochlear – Hearing and balance
-IX – Glossopharyngeal – Taste, swallowing, salivation
-X – Vagus – Parasympathetic to thoracic and abdominal organs
-XI – Accessory – Neck and shoulder movement
-XII – Hypoglossal – Tongue movement
+###Shape###
+Small paired nerve bundles that exit the skull through tiny openings (foramina) and spread to muscles, glands, and sensory organs in the head.
 
 ##Function##
-Provide sensory input (smell, taste, sight, hearing, balance) and motor output (eye, facial, tongue, and neck movement).
-Regulate gland secretion, swallowing, speech, and autonomic control of organs such as the heart and gut.
-Crucial for communication, survival behaviors, and sensory awareness.
+Each cranial nerve has a specific role — some are sensory, some motor, and some mixed:
+
+Olfactory (I): smell
+
+Optic (II): vision
+
+Oculomotor (III): eye movement and pupil control
+
+Trochlear (IV): moves one eye muscle (superior oblique)
+
+Trigeminal (V): feeling in face and mouth; chewing
+
+Abducens (VI): moves the eyes outward
+
+Facial (VII): facial expression, tear and saliva production, taste on tongue
+
+Vestibulocochlear (VIII): hearing and balance
+
+Glossopharyngeal (IX): taste, swallowing, and salivation
+
+Vagus (X): controls internal organs (heart, lungs, digestion)
+
+Accessory (XI): moves neck and shoulder muscles
+
+Hypoglossal (XII): tongue movement
+
+Together, they control facial movement, hearing, smell, balance, sight, taste, and many reflexes of the head and neck.

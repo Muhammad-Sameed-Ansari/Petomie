@@ -1,0 +1,36 @@
+#Adipose Tissue#
+
+##Location##
+Adipose tissue is **fat-storing connective tissue** found **under the skin**, **around internal organs**, and **between muscles** in horses.  
+Common areas include the **neck crest, tailhead, ribs, and abdomen**.  
+There are two main types: **white adipose tissue** and **brown adipose tissue**.
+
+##Shape##
+It appears as **soft, yellowish tissue** composed of round fat cells (adipocytes).  
+These cells store energy as fat and are surrounded by connective fibers and blood vessels.
+
+##Parts##
+
+###1. White Adipose Tissue###
+- The main type of fat in adult horses.  
+- Found under the skin and around organs.  
+- **Function:** Stores energy, cushions organs, and insulates the body.  
+
+###2. Brown Adipose Tissue###
+- More active in foals, located around the shoulders, neck, and spine.  
+- **Function:** Generates heat to help maintain body temperature.  
+
+###3. Subcutaneous Fat###
+- Found just beneath the skin.  
+- **Function:** Provides insulation, protects against cold, and stores energy.  
+
+###4. Visceral Fat###
+- Found around internal organs.  
+- **Function:** Protects and supports internal structures.  
+
+##Function##
+- **Energy storage:** Stores energy in the form of fat for later use.  
+- **Protection:** Cushions organs and joints against impact.  
+- **Insulation:** Maintains body temperature by reducing heat loss.  
+- **Metabolic function:** Produces hormones that regulate energy balance.  
+- **Healing:** Provides energy for recovery and tissue repair.  

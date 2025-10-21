@@ -1,0 +1,24 @@
+#Brachium#
+
+##Location##
+The brachium, or upper arm, of the horse is the region between the shoulder joint and the elbow joint.
+It connects the scapula to the radius and ulna and forms the upper portion of the forelimb between the scapular and antebrachial regions.
+
+##Shape##
+Contains a single large bone, the humerus, which is enveloped by powerful muscles responsible for flexion and extension of the shoulder and elbow joints.
+These muscles are arranged around the humerus as cranial, caudal, and medial groups.
+
+##Main Muscles##
+- Biceps Brachii: Large, fusiform muscle located on the cranial surface; flexes the elbow and extends the shoulder, playing a role in the stay apparatus.
+- Brachialis: Lies on the lateral aspect of the humerus; assists in flexion of the elbow joint.
+- Triceps Brachii (long, lateral, and medial heads): Occupies the caudal region; the main extensor of the elbow and supports weight-bearing during stance.
+- Tensor Fasciae Antebrachii: Lies over the triceps medially; extends the elbow and tenses the antebrachial fascia.
+- Deltoideus: Thick, triangular muscle on the lateral shoulder; flexes the shoulder joint.
+- Teres Major: Located caudomedially to the shoulder joint; flexes and medially rotates the shoulder.
+- Coracobrachialis: Small, elongated muscle on the medial aspect of the shoulder; stabilizes the shoulder joint during movement.
+
+##Function##
+- Provides powerful movement for flexion and extension of the shoulder and elbow joints.
+- Supports the weight of the trunk through the forelimb during locomotion.
+- Maintains limb stability during the stance phase and contributes to propulsion.
+- Assists in the horse’s stay apparatus by locking the elbow and shoulder joints for standing rest.

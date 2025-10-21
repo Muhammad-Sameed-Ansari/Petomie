@@ -1,0 +1,20 @@
+#Brain#
+
+##Location##
+The brain is inside the dog’s skull and protected by bone.  
+It connects to the spinal cord through an opening at the base of the skull.  
+It is cushioned by fluid and soft layers of tissue called the meninges.
+
+###Shape###
+Rounded and smooth with three main parts:  
+- **Cerebrum** – the biggest part, which controls thinking, learning, and voluntary actions.  
+- **Cerebellum** – behind the cerebrum, helps with balance, posture, and smooth movement.  
+- **Brainstem** – connects the brain to the spinal cord and controls breathing, heartbeat, and digestion.
+
+##Function##
+- Thinks, learns, and makes decisions.  
+- Sends messages that move muscles and control actions.  
+- Keeps balance and coordination.  
+- Controls heart rate, breathing, and body temperature.  
+- Stores memories and emotions.  
+- Helps the dog respond to the world around it.

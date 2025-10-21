@@ -6,8 +6,10 @@ Extend outward through the peripheral nervous system to reach muscles and glands
 
 ##Shape##
 Long, myelinated fibers transmitting impulses from the CNS to effector organs.
-###Two main types###
+Two main types:
+
 Somatic Motor Fibers: Voluntary control of skeletal muscles (walking, running, posture, barking).
+
 Autonomic Motor Fibers: Involuntary control of smooth and cardiac muscles (heart, intestines, glands).
 Each motor nerve branches into smaller terminals that connect directly to muscle fibers at the neuromuscular junction.
 

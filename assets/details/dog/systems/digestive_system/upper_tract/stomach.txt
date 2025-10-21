@@ -1,0 +1,31 @@
+#Stomach#
+
+##Location##
+Situated in the upper abdomen, slightly to the left side beneath the ribs and behind the liver.
+It lies between the esophagus and the small intestine (duodenum) and is part of the upper digestive tract.
+
+###Shape###
+A curved, muscular, sac-like organ with thick walls and internal folds called rugae, which allow expansion after eating.
+The stomach’s outer surface is smooth, while the inner lining secretes acid and digestive enzymes.
+
+##Parts##
+###1. Cardia###
+The entry region where the esophagus joins the stomach.
+Contains the cardiac sphincter, which prevents backflow of food and acid.
+###2. Fundus###
+The rounded, upper dome-shaped section that stores swallowed food and gases.
+###3. Body###
+The largest central portion where food is mixed and broken down by gastric juices and muscular contractions.
+###4. Pylorus###
+The narrow lower portion leading to the duodenum (first part of the small intestine).
+Contains the pyloric sphincter, which regulates the passage of digested food.
+###5. Sphincters###
+Cardiac Sphincter: Controls entry of food from the esophagus.
+Pyloric Sphincter: Controls the release of chyme into the small intestine.
+
+##Function##
+Mixes food with hydrochloric acid and digestive enzymes to begin protein digestion.
+Kills harmful bacteria through gastric acidity.
+Breaks food into a semi-liquid mixture called chyme for transfer to the small intestine.
+Stores food temporarily and regulates its movement into the intestine.
+Assists in nutrient absorption by initiating chemical digestion.

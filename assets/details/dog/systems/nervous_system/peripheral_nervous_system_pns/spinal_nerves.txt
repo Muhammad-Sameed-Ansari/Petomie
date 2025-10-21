@@ -1,23 +1,31 @@
 #Spinal Nerves#
 
 ##Location##
-Emerge in bilateral pairs from each segment of the spinal cord, exiting through the intervertebral foramina.
-Extend outward to innervate the neck, trunk, limbs, and tail.
-Originate from cervical, thoracic, lumbar, sacral, and caudal regions.
+Spinal nerves branch out from the spinal cord, running through spaces between the vertebrae.
+Each segment of the spinal cord gives rise to a pair of nerves — one on each side — forming 36 pairs in total (C1–C8, T1–T13, L1–L7, S1–S3, and Cd1–Cd5).
 
-##Shape##
-Each spinal nerve consists of two roots:
-Dorsal Root: Sensory (afferent) fibers carrying information to the spinal cord.
-Ventral Root: Motor (efferent) fibers sending signals from the spinal cord to muscles and glands.
-Grouped as:
-Cervical (C1–C8) – Neck, forelimbs, diaphragm
-Thoracic (T1–T13) – Chest wall, intercostal muscles, trunk
-Lumbar (L1–L7) – Abdominal wall, hind limbs
-Sacral (S1–S3) – Pelvic organs, tail, perineum
-Caudal (Cd1–Cd5) – Tail movement and sensation
+###Shape###
+Short roots that merge into a single mixed nerve, then split into dorsal (sensory) and ventral (motor) branches.
+They appear like ladder rungs along the spine, sending smaller nerves to skin, muscles, and organs.
 
 ##Function##
-Act as communication highways between the brain and body.
-Transmit sensory signals to the CNS and motor commands to limbs and organs.
-Coordinate reflexes, voluntary movement, balance, and postural adjustments.
-Also contribute to autonomic control of viscera and blood flow.
+
+Transmit signals between the spinal cord and body.
+
+Motor fibers: control muscle contractions for movement.
+
+Sensory fibers: carry information about touch, pain, and temperature.
+
+Autonomic fibers: control involuntary actions like heart rate and digestion.
+
+Main groups:
+
+Cervical Nerves (C1–C8): control neck and front limb muscles (via brachial plexus).
+
+Thoracic Nerves (T1–T13): connect to chest, ribs, and upper back.
+
+Lumbar Nerves (L1–L7): control back, abdomen, and hind limbs.
+
+Sacral Nerves (S1–S3): affect tail, bladder, and bowel.
+
+Caudal Nerves (Cd1–Cd5): serve the tail and skin around the anus.

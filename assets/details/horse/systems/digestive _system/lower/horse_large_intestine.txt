@@ -1,0 +1,19 @@
+#Large Intestine#
+
+##Location##
+Occupies most of the abdominal cavity and follows the small intestine, ending at the rectum.
+
+##Shape##
+A broad, coiled tube (around 7 meters long) specialized for fermentation and water absorption.
+
+##Parts##
+- **Cecum:** Large fermentation chamber where fibrous material is broken down by microbes.  
+- **Large Colon:** Absorbs nutrients from fermentation, especially volatile fatty acids.  
+- **Small Colon:** Absorbs remaining water and forms fecal balls.  
+- **Rectum:** Temporary storage before elimination.
+
+##Function##
+- Ferments fibrous plant material with bacteria to produce energy.  
+- Absorbs water, electrolytes, and nutrients from digesta.  
+- Forms and stores feces before defecation.  
+- Houses beneficial gut flora crucial for health and digestion.

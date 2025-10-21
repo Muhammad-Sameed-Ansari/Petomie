@@ -1,0 +1,25 @@
+#Cranial Nerves#
+
+##Location##
+Cranial nerves arise directly from the **brain**, mainly from the **brainstem**, and extend to the **head, face, neck, and some internal organs**.  
+Horses have **12 pairs** of cranial nerves — one pair on each side of the body.
+
+###Shape###
+Small paired nerve bundles that leave the skull through tiny openings and connect to the muscles, glands, and sensory organs of the head.
+
+##Function##
+Each cranial nerve has a **specific role** — some sensory, some motor, and some both:  
+1. **Olfactory (I):** smell  
+2. **Optic (II):** vision  
+3. **Oculomotor (III):** eye movement and pupil control  
+4. **Trochlear (IV):** moves one eye muscle (superior oblique)  
+5. **Trigeminal (V):** facial sensation and chewing  
+6. **Abducens (VI):** moves the eyes outward  
+7. **Facial (VII):** facial expression, tear and saliva production, taste  
+8. **Vestibulocochlear (VIII):** hearing and balance  
+9. **Glossopharyngeal (IX):** taste, swallowing, salivation  
+10. **Vagus (X):** controls heart, lungs, and digestion  
+11. **Accessory (XI):** neck and shoulder muscle movement  
+12. **Hypoglossal (XII):** tongue movement  
+
+Together, these nerves control head movement, facial expression, chewing, swallowing, sight, hearing, and internal organ activity.

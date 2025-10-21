@@ -1,0 +1,37 @@
+#Heart#
+
+##Location##
+The horse’s heart is located in the **thoracic cavity**, between the lungs and slightly to the left side of the chest.  
+It lies behind the elbow joint and is protected by the ribs.
+
+##Shape##
+The heart is a **large, cone-shaped muscular organ** with four chambers: two atria (upper) and two ventricles (lower).  
+It weighs about 3.5 to 4.5 kg in an average-sized horse and is enclosed in a fibrous sac called the **pericardium**.
+
+##Parts##
+
+###1. Right Atrium###
+- Receives oxygen-poor blood from the body through large veins.  
+
+###2. Right Ventricle###
+- Pumps blood to the lungs via the **pulmonary artery** to receive oxygen.  
+
+###3. Left Atrium###
+- Collects oxygen-rich blood from the lungs through the **pulmonary veins**.  
+
+###4. Left Ventricle###
+- The strongest chamber that pumps oxygenated blood through the **aorta** to the rest of the body.  
+
+###5. Heart Valves###
+- Include the tricuspid, pulmonary, mitral, and aortic valves.  
+- **Function:** Keep blood flowing in one direction and prevent backflow.  
+
+###6. Pericardium###
+- A protective sac surrounding the heart.  
+- **Function:** Reduces friction and anchors the heart in place.  
+
+##Function##
+- **Circulation:** Pumps blood through the lungs and body.  
+- **Oxygenation:** Sends blood to the lungs to receive oxygen and back to the tissues.  
+- **Pressure maintenance:** Keeps blood flowing evenly through vessels.  
+- **Waste transport:** Removes carbon dioxide and metabolic waste.  

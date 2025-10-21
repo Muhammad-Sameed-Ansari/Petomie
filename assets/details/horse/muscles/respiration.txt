@@ -1,0 +1,60 @@
+#Respiration Muscles#
+
+##Location##
+Located primarily in the **thoracic region**, surrounding the **rib cage**, **diaphragm**, and **abdominal wall**.  
+These muscles form the walls of the thorax and abdomen, working together to expand and compress the chest cavity for breathing.  
+They connect the ribs, sternum, and vertebrae, extending into the diaphragm and abdominal muscles.
+
+##Shape##
+Composed of **flat, sheet-like and intercostal muscles**, combined with the **dome-shaped diaphragm**.  
+Include both **inspiratory (inhalation)** and **expiratory (exhalation)** muscles that coordinate rhythmically to control airflow and pressure changes within the lungs.  
+Their fibers run in alternating directions between ribs, providing both strength and elasticity.
+
+##Parts##
+
+###1. Diaphragm###
+- Dome-shaped muscular partition between thoracic and abdominal cavities.  
+- Originates from the lumbar vertebrae, ribs, and sternum.  
+- Inserts into the central tendon.  
+- Contracts during inspiration, flattening to increase thoracic volume.  
+
+###2. External Intercostal Muscles###
+- Located between the ribs, fibers running caudoventrally.  
+- Elevate the ribs during inspiration, expanding the chest cavity.  
+
+###3. Internal Intercostal Muscles###
+- Deep to the external intercostals, fibers run cranioventrally.  
+- Depress the ribs during expiration, reducing thoracic volume.  
+
+###4. Serratus Dorsalis Cranialis###
+- Upper lateral thoracic region.  
+- Elevates ribs to assist inspiration.  
+
+###5. Serratus Dorsalis Caudalis###
+- Caudal thoracic region.  
+- Depresses ribs during expiration.  
+
+###6. Scalenus###
+- Extends from cervical vertebrae to the first few ribs.  
+- Stabilizes the cranial ribs and assists in inspiration.  
+
+###7. Rectus Thoracis###
+- Small muscle along the lateral thorax.  
+- Aids in lifting the first ribs during inspiration.  
+
+###8. Transversus Thoracis###
+- Inner surface of the sternum and costal cartilages.  
+- Draws ribs downward during expiration.  
+
+###9. Abdominal Muscles###
+*(Assist in forced expiration by pushing abdominal organs against the diaphragm.)*  
+- **External Abdominal Oblique** – compresses abdomen, assists expiration.  
+- **Internal Abdominal Oblique** – deep to external layer, helps force exhalation.  
+- **Transversus Abdominis** – deepest layer, stabilizes and compresses the trunk.  
+- **Rectus Abdominis** – runs along the sternum to pubis, aids expiration and posture.  
+
+##Function##
+- **Inspiration:** Diaphragm and external intercostals expand the thoracic cavity, drawing air into the lungs.  
+- **Expiration:** Internal intercostals and abdominal muscles reduce thoracic volume, forcing air out.  
+- **Forced breathing:** Abdominal muscles and serratus dorsalis enhance active expiration.  
+- **Support:** Maintain thoracic stability, assist posture, and protect internal organs.  

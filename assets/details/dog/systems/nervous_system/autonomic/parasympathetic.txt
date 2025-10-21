@@ -1,15 +1,34 @@
 #Parasympathetic Nervous System#
 
 ##Location##
-Craniosacral outflow: Preganglionic cell bodies in brainstem (CN III, VII, IX, X) and sacral spinal cord (S1–S3).
+The parasympathetic system starts in the brainstem and the lower end of the spinal cord (sacral area).
+The vagus nerve, which travels from the brain down through the neck, connects to the heart, lungs, and digestive organs.
+Other smaller nerves reach the eyes, salivary glands, bladder, and intestines.
 
-##Parts##
-- Vagus Nerve (CN X) – Thoracic & abdominal viscera
-- Pelvic Nerves – Pelvic viscera, bladder, colon
+###Shape###
+Long nerve fibers travel from the brain and spinal cord to small control centers (ganglia) near or inside the organs.
+From there, short branches connect directly to the muscles or glands they control.
 
 ##Function##
-""Rest and Digest"" response:
-- Slows heart rate
-- Stimulates digestion and salivation
-- Contracts bladder for urination
-- Promotes energy storage and recovery
+The parasympathetic system helps the body rest, digest, and recover after activity.
+It is the opposite of the sympathetic system and works to bring the body back to normal.
+
+Slows down the heart rate and lowers blood pressure.
+
+Stimulates digestion and saliva flow.
+
+Increases gut movement for healthy digestion.
+
+Constricts pupils back to normal size.
+
+Helps with urination and bowel movements.
+
+Encourages healing and relaxation after stress or exercise.
+
+##Examples##
+After eating or during rest, the parasympathetic system helps the dog relax, digest food, and breathe deeply.
+When the dog feels calm and safe, this system is dominant.
+
+##Notes##
+The parasympathetic system helps the body recharge and recover.
+Regular rest, calm feeding, and gentle interactions support its healthy function.

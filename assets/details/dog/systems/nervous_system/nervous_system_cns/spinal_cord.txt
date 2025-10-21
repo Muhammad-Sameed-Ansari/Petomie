@@ -1,7 +1,17 @@
 #Spinal Cord#
 
 ##Location##
-Vertebral canal.
+The spinal cord runs inside the backbone from the brain to the lower back.  
+It is protected by the vertebrae and surrounded by fluid that cushions it from bumps and pressure.
+
+###Shape###
+A long, tube-like cord made of nerves.  
+It runs through the neck, chest, and back and has small branches (spinal nerves) that spread to all parts of the body.
 
 ##Function##
-Signal transmission; segmental reflexes.
+- Carries messages between the brain and the body.  
+- Sends information from the skin, muscles, and organs to the brain.  
+- Sends brain commands to the muscles for movement.  
+- Controls reflexes, like pulling a paw away from something hot.  
+- Helps the body stay balanced and coordinated.  
+- Makes sure messages travel quickly and smoothly.

@@ -1,0 +1,34 @@
+#Crus Muscles#
+
+##Between the stifle and hock##
+###1. Gastrocnemius###
+Two-headed muscle forming the calf.
+Extends hock, flexes stifle, and supports stance.
+###2. Superficial Digital Flexor###
+Lies over the gastrocnemius.
+Flexes digits and stifle, extends the hock.
+###3. Deep Digital Flexor###
+Deep muscle with three heads uniting into a common tendon.
+Flexes digits and extends the hock.
+###4. Peroneus Longus###
+Superficial muscle on the lateral crus.
+Flexes the hock and rotates the paw medially.
+###5. Peroneus Brevis###
+Lies deep to peroneus longus.
+Flexes the hock.
+###6. Tibialis Cranialis###
+On the cranial side of the tibia.
+Flexes the hock and rotates paw laterally.
+###7. Long Digital Extensor###
+Originates from the femur and extends to the digits.
+Extends the digits and flexes the hock.
+###8. Lateral Digital Extensor###
+Small muscle lateral to the tibia.
+Extends the fifth digit.
+###9. Popliteus###
+Small triangular muscle on the caudal surface of the stifle.
+Flexes the stifle and rotates the tibia medially.
+
+##Function##
+Coordinate flexion and extension of the stifle and hock.
+Control paw placement and assist with shock absorption and propulsion.

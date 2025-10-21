@@ -1,0 +1,23 @@
+#Urinary Bladder#
+
+###Location###
+Lies in the pelvic cavity just behind the pubic bone, between the rectum and the abdominal wall.
+When full, the bladder expands into the abdominal cavity; when empty, it lies entirely within the pelvis.
+
+###Shape###
+A hollow, muscular, pear-shaped sac lined with transitional epithelium that allows for expansion and contraction.
+Its smooth inner walls prevent friction and facilitate efficient storage.
+
+###Parts###
+- **Apex:** Rounded cranial tip of the bladder.
+- **Body:** Central expandable portion where urine is stored.
+- **Neck:** Narrow region leading into the urethra.
+- **Trigone:** A triangular region formed by the openings of the two ureters and the start of the urethra.
+- **Sphincters:** Circular muscles that control urine flow.
+
+###Function###
+- Temporarily stores urine until excretion.
+- Expands to accommodate increasing urine volume without a rise in internal pressure.
+- Contracts during urination through smooth muscle action.
+- Maintains controlled release through internal (involuntary) and external (voluntary) sphincters.
+- Plays a role in electrolyte and fluid balance through sensory feedback to the kidneys.

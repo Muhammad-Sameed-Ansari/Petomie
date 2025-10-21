@@ -1,0 +1,15 @@
+#Pineal Gland#
+
+##Parts##
+###Pinealocytes###
+Specialized cells that secrete **melatonin**, primarily at night in response to darkness.  
+
+###Nerve Pathways###
+Receive signals from the eyes, detecting day length and light levels.  
+
+###Blood Capillaries###
+Distribute melatonin through the bloodstream to influence other glands.  
+
+##Function##
+Produces **melatonin**, a hormone that regulates **sleep cycles**, **seasonal breeding**, and **circadian rhythm**.  
+It helps synchronize reproductive activity with daylight hours and promotes rest, recovery, and mood balance.

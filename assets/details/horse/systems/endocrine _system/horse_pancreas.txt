@@ -1,0 +1,16 @@
+#Pancreatic Islets (Islets of Langerhans)#
+
+##Parts##
+###Alpha Cells###
+Produce **glucagon**, which raises blood sugar by releasing stored glucose.  
+
+###Beta Cells###
+Produce **insulin**, which lowers blood sugar by allowing glucose to enter cells.  
+
+###Delta Cells###
+Produce **somatostatin**, which balances the activity of insulin and glucagon.  
+
+##Function##
+Maintains **stable blood glucose levels** to supply energy to cells, muscles, and the brain.  
+Prevents sugar imbalance, fatigue, and metabolic disorders.  
+Proper function supports endurance, focus, and performance during work.

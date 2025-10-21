@@ -1,0 +1,18 @@
+#Pharynx#
+
+##Location##
+A short muscular passage behind the mouth and nasal cavity, connecting to the esophagus and larynx.
+
+##Shape##
+A funnel-shaped chamber shared by the digestive and respiratory systems.
+
+##Parts##
+- **Nasopharynx:** Upper portion behind nasal cavity.
+- **Oropharynx:** Central portion behind the mouth.
+- **Laryngopharynx:** Lower portion leading to esophagus.
+
+##Function##
+- Directs food from the mouth to the esophagus.
+- Closes off airways during swallowing.
+- Prevents aspiration of feed into the lungs.
+- Coordinates breathing and swallowing reflexes.

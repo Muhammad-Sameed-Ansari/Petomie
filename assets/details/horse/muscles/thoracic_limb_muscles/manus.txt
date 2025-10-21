@@ -1,0 +1,25 @@
+#Manus#
+
+##Location##
+The manus, or forefoot, of the horse is the distal region of the forelimb, located below the carpus (knee) and extending to the hoof.
+It includes the metacarpal bones, phalanges, and associated sesamoid bones that make up the lower limb and hoof structures.
+
+##Shape##
+Elongated and specialized for supporting weight and absorbing shock.
+The horse has only one functional digit (digit III), corresponding to the middle finger in humans.
+The surrounding structures form a single strong column from the cannon bone to the hoof.
+
+##Main Bones##
+- **Metacarpal III (Cannon Bone):** The main weight-bearing bone of the manus.
+- **Metacarpal II and IV (Splint Bones):** Small, slender bones on either side of the cannon; provide lateral support.
+- **Proximal Phalanx (P1 / Long Pastern Bone):** Connects the fetlock joint to the short pastern.
+- **Middle Phalanx (P2 / Short Pastern Bone):** Between the long pastern and coffin bone.
+- **Distal Phalanx (P3 / Coffin Bone):** Enclosed within the hoof capsule; forms the internal structure of the hoof.
+- **Proximal Sesamoids (2):** Located at the back of the fetlock joint; serve as pulleys for tendons.
+- **Distal Sesamoid (Navicular Bone):** Found beneath the coffin joint; reduces friction during tendon movement.
+
+##Function##
+- Supports and bears the entire body weight during stance and motion.
+- Provides shock absorption through the joints, tendons, and hoof structures.
+- Enables propulsion by transforming muscular energy into forward movement.
+- Maintains stability and balance while allowing elastic recoil during gait.

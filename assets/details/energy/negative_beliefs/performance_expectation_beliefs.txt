@@ -1,19 +1,25 @@
 #Performance & Expectation Beliefs#
 
 ###TABLE_START###
-Set 1|Set 2
-I am never good enough.|No matter what I do, it will never be enough.
-I must always be perfect.|Mistakes make me a failure.
-I am only valued for what I achieve.|My worth depends on my performance.
-If I slow down, I will be punished.|Rest equals laziness.
-I must meet everyone’s expectations.|Disappointing others is unforgivable.
-I am responsible for everyone’s happiness.|Others’ needs always come before mine.
-I must always work harder.|I can never relax or let my guard down.
-I am defined by my results.|Failure means I am worthless.
-I have to earn love through success.|Praise is rare and conditional.
-If I don’t succeed, I will be rejected.|Criticism means I am broken.
-I can’t say no to demands.|Boundaries make me selfish.
-Pressure is the only way to get things done.|Ease means I am slacking.
-I must prove myself constantly.|I can never stop striving.
-I am only as good as my last success.|The bar will always keep moving higher.
+No.|Set 1|Set 2
+1.|I am never good enough.|No matter what I do, it will never be enough.
+2.|I must always be perfect.|Mistakes make me a failure.
+3.|I am only valued for what I achieve.|My worth depends on my performance.
+4.|If I slow down, I will be punished.|Rest equals laziness.
+5.|I must meet everyone’s expectations.|Disappointing others is unforgivable.
+6.|I am responsible for everyone’s happiness.|Others’ needs always come before mine.
+7.|I must always work harder.|I can never relax or let my guard down.
+8.|I am defined by my results.|Failure means I am worthless.
+9.|I have to earn love through success.|Praise is rare and conditional.
+10.|If I don’t succeed, I will be rejected.|Criticism means I am broken.
+11.|I can’t say no to demands.|Boundaries make me selfish.
+12.|Pressure is the only way to get things done.|Ease means I am slacking.
+13.|I must prove myself constantly.|I can never stop striving.
+14.|I am only as good as my last success.|The bar will always keep moving higher.
+15.|If I rest, I will fall behind.|There is always someone better than me.
+16.|My value disappears when I fail.|I must sacrifice myself to deserve love.
+17.|If I take a break, I’ll lose everything I’ve built.|Contentment means I’m not trying hard enough.
+18.|Achievement equals safety.|Failure means rejection.
+19.|Recognition is the only proof I matter.|Perfection is the only acceptable standard.
+20.|If I stop performing, I’ll be forgotten.|Success is the only way to be loved.
 ###TABLE_END###

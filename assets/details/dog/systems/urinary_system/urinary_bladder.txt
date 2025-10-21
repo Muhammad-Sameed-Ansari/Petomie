@@ -1,7 +1,19 @@
 #Urinary Bladder#
 
 ##Location##
-Caudal abdomen/pelvic cavity.
+Situated in the lower abdomen (pelvic cavity), behind the pubic bone.
+When full, it expands into the abdominal cavity.
 
-##Function##
-Stores urine; detrusor contraction and sphincter relaxation allow micturition.
+###Shape###
+A hollow, elastic, muscular sac that changes shape as it fills or empties.
+
+###Parts###
+Apex: Rounded cranial end.
+Body: Central portion.
+Neck: Narrows into the urethra.
+Trigone: Triangular area where ureters and urethra meet.
+
+###Function###
+Stores urine until voluntary urination.
+Expands and contracts to manage urine flow.
+Controls release through internal and external sphincters.

@@ -1,0 +1,25 @@
+#Pharynx#
+
+##Location##
+Located behind the nasal and oral cavities, forming the upper part of both the digestive and respiratory tracts.
+It extends from the base of the skull to the beginning of the esophagus and larynx.
+
+###Shape###
+A muscular, funnel-shaped tube lined with mucous membrane, connecting the nasal and oral passages to the larynx and esophagus.
+
+##Parts##
+
+###1. Nasopharynx###
+Upper section located behind the nasal cavity; connects to the nasal passages and helps conduct air to the larynx.
+
+###2. Oropharynx###
+Middle section located behind the mouth; shared by both food and air pathways.
+
+###3. Laryngopharynx###
+Lower section leading to the esophagus (for food) and larynx (for air).
+
+##Function##
+Acts as a shared chamber for both respiratory and digestive systems.
+Guides food and liquids into the esophagus during swallowing.
+Prevents food from entering the airways through coordinated muscle and soft palate movement.
+Supports breathing, swallowing, and vocalization by directing airflow and maintaining pressure balance.

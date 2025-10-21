@@ -1,0 +1,32 @@
+#Pituitary Gland (Hypophysis)#
+
+##Parts##
+###Anterior Lobe (Adenohypophysis)###
+Produces hormones that control other glands and major body functions.
+Key secretions include:
+
+Growth Hormone (GH): Stimulates growth, muscle repair, and metabolism.
+
+Thyroid-Stimulating Hormone (TSH): Activates thyroid hormone release for energy control.
+
+Adrenocorticotropic Hormone (ACTH): Signals adrenal glands to produce cortisol for stress and immune regulation.
+
+Follicle-Stimulating Hormone (FSH) & Luteinizing Hormone (LH): Control sperm production, ovulation, and hormone cycles.
+
+Prolactin: Promotes milk production after giving birth.
+
+###Posterior Lobe (Neurohypophysis)###
+Releases hormones made by the hypothalamus:
+
+Oxytocin: Causes uterine contractions during birth and milk ejection.
+
+Antidiuretic Hormone (ADH): Regulates body water by signaling kidneys to retain fluid.
+
+###Infundibulum###
+Connects the pituitary to the hypothalamus, transferring hormonal and nerve signals for precise control.
+
+##Function##
+Acts as the master gland that regulates most other endocrine glands.
+Maintains growth, water balance, stress control, reproduction, and energy regulation.
+Pituitary dysfunction can lead to Cushing’s disease, causing excess cortisol and symptoms like hair loss, thirst, and fatigue.
+Coordinates growth, reproduction, stress response, and water balance by regulating other hormone-producing glands.
