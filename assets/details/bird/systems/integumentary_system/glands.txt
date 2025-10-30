@@ -1,0 +1,26 @@
+#Integumentary System – Glands (Bird)#
+
+##Location##
+Found mainly at the **base of the tail**, though some species have additional small glands on other parts of the body.
+
+##Shape##
+Small, tubular or lobed structures specialized for secretion and preening.
+
+##Parts##
+
+###1. Uropygial (Preen) Gland###
+- Located at the tail base.  
+- **Function:** Secretes oil for feather waterproofing and conditioning.  
+
+###2. Salt Glands (in seabirds)###
+- Found near the eyes or nasal openings.  
+- **Function:** Excrete excess salt from the bloodstream.  
+
+###3. Other Minor Glands###
+- Rare or vestigial in most species.  
+- **Function:** Assist in lubrication and protection.  
+
+##Function##
+- **Waterproofing:** Maintains feather condition and buoyancy.  
+- **Protection:** Prevents microbial growth on feathers.  
+- **Osmoregulation:** Maintains salt balance in marine species.  

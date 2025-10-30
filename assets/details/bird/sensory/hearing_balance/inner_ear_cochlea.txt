@@ -1,0 +1,30 @@
+#Inner Ear – Auditory (Cochlear) Part#
+
+##Location##
+Embedded within the **otic capsule** of the skull’s temporal region, medial to the middle ear.
+
+###Shape###
+A short, slightly curved **cochlear duct** (not coiled like mammals) containing the **basilar papilla** (avian equivalent of the organ of Corti).  
+Ends in the **lagena**, a specialized terminal region in many birds.
+
+##Parts##
+###1. Basilar Papilla###
+Sensory epithelium with hair cells on the basilar membrane.  
+**Function:** Converts mechanical vibrations into nerve impulses (hearing).
+
+###2. Tectorial Structure###
+Gelatinous overlying membrane contacting hair cell stereocilia.  
+**Function:** Mediates shearing forces for mechanoelectrical transduction.
+
+###3. Oval and Round Windows###
+Membrane-covered openings between middle and inner ear.  
+**Function:** Admit mechanical input (oval) and allow pressure relief (round).
+
+###4. Lagena###
+Terminal specialization at the distal end of the cochlea.  
+**Function:** Extends frequency sensitivity; may aid low-frequency detection (species-dependent).
+
+##Function##
+- **Auditory Transduction:** Hair cells translate vibrations to neural signals via the cochlear branch of CN VIII.  
+- **Frequency Analysis:** Regional tuning along basilar papilla.  
+- **Sensitivity Optimization:** Structural specializations enhance hearing relevant to species ecology.

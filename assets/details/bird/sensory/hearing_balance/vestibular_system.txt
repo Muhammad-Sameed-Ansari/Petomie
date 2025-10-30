@@ -1,0 +1,30 @@
+#Vestibular System (Balance)#
+
+##Location##
+Medial to the middle ear within the **bony labyrinth** of the inner ear, continuous with the cochlear region.
+
+###Shape###
+Interconnected sacs and **three semicircular canals** oriented roughly orthogonally to detect angular and linear acceleration.
+
+##Parts##
+###1. Semicircular Canals (Anterior, Posterior, Lateral)###
+Fluid-filled loops with sensory **ampullae**.  
+**Function:** Detect **angular acceleration** (head rotation).
+
+###2. Utricle###
+Otolith organ connected to semicircular canals.  
+**Function:** Senses **horizontal linear acceleration** and head tilt.
+
+###3. Saccule###
+Smaller otolith organ.  
+**Function:** Senses **vertical linear acceleration** and vibration.
+
+###4. Hair Cells with Otoconia###
+Sensory cells topped by crystals in maculae.  
+**Function:** Translate motion/tilt into neural signals.
+
+##Function##
+- **Equilibrium:** Maintains posture and gaze stabilization during flight and perching.  
+- **Reflexes:** Drives vestibulo-ocular and vestibulospinal reflexes for head/eye coordination.  
+- **Navigation:** Aids spatial orientation with visual and proprioceptive input.  
+- **Integration:** Signals travel via vestibular branch of CN VIII to brainstem and cerebellum.

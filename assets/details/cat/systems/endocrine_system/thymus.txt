@@ -1,0 +1,16 @@
+#Thymus#
+
+##Parts##
+###Cortex###
+Outer layer where young **T-lymphocytes** are created and begin training.  
+
+###Medulla###
+Inner region where mature T-cells are released into the bloodstream.  
+
+###Thymic Hormones###
+Produce **thymosin**, which helps immune cells recognize harmful invaders.  
+
+##Function##
+Supports **immune development** in kittens by producing and training T-cells.  
+Strengthens disease resistance early in life and protects against infections.  
+Shrinks with age as the immune system matures but remains essential for strong defense.

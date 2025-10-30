@@ -1,0 +1,21 @@
+#Integumentary System – Hair Follicle Receptors (Dog)#
+
+##Location##
+Located at the **base of each hair follicle** within the dermis.
+
+##Shape##
+Fine network of sensory nerve endings wrapped around the hair bulb.
+
+##Parts##
+
+###1. Merkel Cells###
+- Specialized tactile cells at follicle bases.  
+- **Function:** Detect light touch and vibration.  
+
+###2. Sensory Nerve Endings###
+- Nerve fibers surrounding the follicle.  
+- **Function:** Respond to hair movement and pressure changes.  
+
+##Function##
+- **Sensation:** Provides detailed tactile information.  
+- **Awareness:** Detects nearby movement and environmental stimuli.  

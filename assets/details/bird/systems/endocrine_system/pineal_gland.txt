@@ -1,0 +1,24 @@
+#Pineal Gland#
+
+##Location##
+Located in the **dorsal region of the brain**, near the midline above the cerebellum.  
+Lies close to the skull surface to sense light.
+
+###Shape###
+Small, round to conical gland composed of light-sensitive pinealocytes.  
+Highly vascular and connected to visual centers of the brain.
+
+##Parts##
+###1. Pinealocytes###
+Specialized cells responsive to light.  
+**Function:** Secrete melatonin.
+
+###2. Nerve Fibers###
+Connect to visual and hypothalamic regions.  
+**Function:** Transmit light and circadian information.
+
+##Function##
+- **Circadian Rhythm:** Regulates sleep-wake cycles.  
+- **Seasonal Behavior:** Controls migration and breeding timing.  
+- **Hormonal Modulation:** Balances melatonin and reproductive hormones.  
+- **Light Sensitivity:** Acts as a biological clock.

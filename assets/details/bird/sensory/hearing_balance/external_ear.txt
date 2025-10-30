@@ -1,0 +1,27 @@
+#External Ear#
+
+##Location##
+Located on the **lateral sides of the head**, posterior to the eyes and beneath layers of **auricular (ear covert) feathers**.  
+Opens to the outside via the **external acoustic meatus** (no projecting pinna like mammals).
+
+###Shape###
+A short canal leading inward, surrounded by specialized feathers shaped to channel and protect sound entry.  
+Feather arrangement can be asymmetrical in some species (e.g., owls) to aid sound localization.
+
+##Parts##
+###1. Auricular (Ear Covert) Feathers###
+Specialized contour feathers over the ear opening.  
+**Function:** Streamline airflow in flight and filter/guide sound into the meatus.
+
+###2. External Acoustic Meatus###
+Short tube leading to the tympanic membrane.  
+**Function:** Conducts sound waves; protects the middle ear.
+
+###3. Skin and Glands###
+Lining of meatus with minimal ceruminous activity.  
+**Function:** Maintains canal health and reduces debris.
+
+##Function##
+- **Sound Capture:** Directs and modulates incoming sound.  
+- **Protection:** Shields tympanic membrane from dust and turbulence.  
+- **Aerodynamics:** Reduces drag and noise interference during flight.

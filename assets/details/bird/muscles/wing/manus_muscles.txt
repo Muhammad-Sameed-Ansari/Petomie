@@ -1,0 +1,33 @@
+#Manus Muscles#
+
+##Location##
+Distal part of the wing beyond the wrist joint, forming the **hand region** that supports the primary flight feathers.  
+Includes the **carpometacarpus and digits**.
+
+##Shape##
+Small, delicate, and highly tendinous muscles responsible for **fine feather and wingtip control**.
+
+##Parts##
+
+###1. Extensor Digitorum Communis###
+- Dorsal surface of the manus.  
+- **Function:** Extends the digits and spreads the primary feathers during flight.
+
+###2. Flexor Digitorum Profundus###
+- Ventral surface of the manus.  
+- **Function:** Flexes the digits and aids in feather folding.
+
+###3. Abductor Pollicis Longus###
+- Arises from the radius and ulna.  
+- **Function:** Abducts the first digit and adjusts feather position during turns.
+
+###4. Intrinsic Feather Muscles###
+- Small muscles along feather shafts.  
+- **Function:** Fine-tune feather angles for steering and braking.  
+
+---
+
+##Function##
+- **Feather Movement:** Controls spread, rotation, and folding of primary feathers.  
+- **Flight Precision:** Adjusts wingtip orientation for steering and braking.  
+- **Maintenance:** Assists in preening and feather alignment.  

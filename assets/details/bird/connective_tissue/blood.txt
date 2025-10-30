@@ -1,0 +1,32 @@
+#Blood#
+
+##Location##
+Circulates within the **cardiovascular system**: heart, arteries, capillaries, and veins.  
+Perfuses **all tissues**, delivering gases and nutrients.
+
+###Shape###
+A fluid connective tissue composed of **plasma** and **formed elements**.  
+Avian **red blood cells are oval and nucleated**; leukocytes include heterophils (granulocytes), lymphocytes, monocytes, basophils, and eosinophils.
+
+##Parts##
+
+###1. Plasma###
+- Liquid component carrying **water, proteins, electrolytes, and hormones**.  
+- **Function:** Solvent and transport medium.
+
+###2. Erythrocytes (RBCs)###
+- Nucleated, oval cells.  
+- **Function:** Transport **oxygen and carbon dioxide**.
+
+###3. Leukocytes (WBCs)###
+- Heterophils, lymphocytes, monocytes, basophils, eosinophils.  
+- **Function:** Immune defense and inflammation control.
+
+###4. Thrombocytes###
+- Nucleated platelet-like cells.  
+- **Function:** **Clotting** and vessel repair.
+
+##Function##
+- **Transport:** Gases, nutrients, wastes, and hormones.  
+- **Regulation:** pH, temperature, and fluid balance.  
+- **Protection:** Clotting and immune surveillance.  

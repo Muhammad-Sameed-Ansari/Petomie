@@ -1,0 +1,29 @@
+#Sciatic Nerve (Ischiadic Nerve)#
+
+##Location##
+Emerges from the **lumbosacral plexus** deep in the pelvis and passes caudolateral to the hip into the **posterior thigh**, coursing between major thigh muscles toward the **knee** and **shank**.
+
+###Shape###
+A large, cord‑like **mixed nerve** that divides distally into **tibial** and **fibular (peroneal)** components.
+
+##Parts##
+###1. Proximal Trunk###
+Formed by convergence of plexus roots.  
+**Function:** Conducts high‑volume motor and sensory fibers to the hindlimb.
+
+###2. Muscular Branches###
+Branches to thigh flexors/extensors (species‑dependent).  
+**Function:** Power locomotion, perching grip, and take‑off thrust.
+
+###3. Tibial Division###
+Medial continuation at the knee.  
+**Function:** Innervates caudal leg and plantar foot; assists in gripping perch.
+
+###4. Fibular (Peroneal) Division###
+Lateral division near the knee.  
+**Function:** Innervates craniolateral leg and dorsal foot; assists in digit extension and positioning.
+
+##Function##
+- **Motor:** Principal drive to thigh, leg, and foot musculature.  
+- **Sensory:** Collects cutaneous and proprioceptive input from hindlimb.  
+- **Coordination:** Enables powerful stance and precise toe control on perches.

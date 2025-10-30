@@ -1,0 +1,32 @@
+#Olfactory System (Smell)#
+
+##Location##
+Centered in the **nasal cavity**, with **olfactory epithelium** lining dorsal nasal regions and **olfactory bulbs** at the front of the brain.  
+Olfactory nerves (Cranial Nerve I) pass through the skull to connect epithelium to the bulbs.
+
+###Shape###
+Consists of a **sensory epithelium** with ciliated receptor neurons, supporting cells, and mucus, plus bulb and tract structures in the brain.  
+Extent and thickness vary by species depending on reliance on smell.
+
+##Parts##
+###1. Olfactory Epithelium###
+Ciliated receptor neurons and supporting cells.  
+**Function:** Detect airborne odor molecules.
+
+###2. Olfactory Bulbs###
+Paired neural structures at brain’s anterior.  
+**Function:** Process and relay smell signals to higher centers.
+
+###3. Olfactory Nerves (CN I)###
+Bundles of axons from receptor neurons.  
+**Function:** Transmit signals from epithelium to bulbs.
+
+##Function##
+- **Foraging:** Locates food sources (e.g., carrion, marine prey).  
+- **Navigation:** Assists homing and migration in some species.  
+- **Social/Mating Cues:** Contributes to individual and nest recognition.  
+- **Integration:** Works alongside vision and hearing for environmental awareness.
+
+###Species Variation###
+Olfactory acuity differs greatly.  
+**Kiwis, vultures, and seabirds** show strong smell capability, while many **songbirds and raptors** rely more on vision; their olfactory regions are proportionally smaller.

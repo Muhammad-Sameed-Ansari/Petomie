@@ -1,24 +1,31 @@
 #Ovaries#
 
 ##Location##
-Paired female reproductive organs located in the dorsal region of the abdominal cavity, just behind (caudal to) the kidneys.
-They are suspended by the mesovarium, a fold of connective tissue that anchors them to the body wall.
+Situated in the **abdominal cavity** just caudal to the **kidneys**, one on each side.  
+Each ovary is enclosed by the **ovarian bursa** and is connected to the **uterine tube** and **uterine horn** by ligaments.
 
 ###Shape###
-Small, oval-shaped glands with a firm outer surface and a soft inner structure. Their size and appearance vary with age and reproductive cycle.
+**Small, oval organs** with a smooth surface that changes with the cycle.  
+Firm in texture and richly supplied with blood vessels and nerves.
 
 ##Parts##
 
-###1. Ovarian Cortex###
-The outer layer containing follicles at different stages of development. It produces oocytes (eggs) and secretes hormones.
+###1. Follicles###
+Fluid‑filled structures where **oocytes (eggs)** mature; number and size vary with the estrous cycle.
 
-###2. Ovarian Medulla###
-The inner region composed of connective tissue, blood vessels, lymphatics, and nerves that nourish and support ovarian function.
+###2. Corpus Luteum###
+A **temporary endocrine structure** that forms after ovulation and secretes **progesterone** to support pregnancy (or diestrus).
 
 ###3. Ovarian Bursa###
-A peritoneal sac that partially encloses the ovary, helping to capture released oocytes and guide them into the uterine tube.
+A **peritoneal sac** that partially encloses the ovary and infundibulum, guiding the oocyte into the uterine tube.
 
-##Function##
-Produces ova (eggs) for reproduction.
-Secretes sex hormones—estrogen and progesterone—which regulate the estrous cycle, reproductive behavior, and secondary sex characteristics.
-Maintains hormonal balance necessary for fertility and overall female reproductive health.
+###4. Ovarian Stroma###
+Connective tissue framework containing vessels and developing follicles.
+
+###5. Ligaments###
+**Suspensory and proper ovarian ligaments** that anchor the ovary to the abdominal wall and uterus.
+
+###Function###
+Produce and release **oocytes** for fertilization.  
+Secrete **estrogen and progesterone** that regulate the **estrous cycle**, pregnancy, and mammary development.  
+Coordinate with the **hypothalamus and pituitary** to control reproductive timing.

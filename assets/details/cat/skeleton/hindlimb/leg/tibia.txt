@@ -1,0 +1,26 @@
+#Tibia#
+
+##Location##
+Located in the lower hindlimb between the stifle (knee) and hock joints.  
+The tibia is the main weight-bearing bone of the cat’s leg, forming the shin region and providing stability and strength during walking, running, and jumping.
+
+###Parts###
+1. **Proximal End** – Broad upper section articulating with the femur to form the stifle joint.  
+   Features:  
+   - **Medial and Lateral Condyles**: Smooth surfaces articulating with the femoral condyles.  
+   - **Intercondylar Eminence**: Central ridge for attachment of cruciate ligaments.  
+   - **Tibial Tuberosity**: Prominent projection for attachment of the patellar ligament.
+
+2. **Body (Shaft)** – Long, slightly triangular shaft extending down the leg.  
+   Provides attachment for muscles controlling movement of the hock and digits.  
+   Includes a sharp **tibial crest** on the anterior surface, visible under the skin.
+
+3. **Distal End** – Narrow lower end forming part of the hock joint.  
+   Articulates with the talus (tibial tarsal bone) to form the main hinge joint of the hock.  
+   Contains the **medial malleolus**, which provides stability to the hock.
+
+##Function##
+ Bears the cat’s weight and transmits it from the femur to the hock.  
+ Serves as the main structural support of the lower leg.  
+ Provides attachment for major flexor and extensor muscles.  
+ Enables agile and powerful hindlimb motion during running, climbing, and jumping.

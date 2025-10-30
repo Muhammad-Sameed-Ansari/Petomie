@@ -1,0 +1,26 @@
+#Brachial Plexus#
+
+##Location##
+The brachial plexus is found deep within the **shoulder region (axilla)**, between the lower neck and the upper front leg.  
+It is formed by the **ventral branches of spinal nerves C6 to T2** in the cat.
+
+###Shape###
+A thick **bundle of interconnected nerves** that branch and spread through the chest, shoulder, and forelimb areas.  
+From this plexus, several smaller nerves emerge to supply the muscles and skin of the forelimb.
+
+##Function##
+- The brachial plexus controls **movement and sensation** in the cat’s front limbs.  
+- It sends **motor commands** to the muscles of the shoulder, elbow, and paw, and receives **sensory signals** from the skin and joints of the forelimb.  
+- Major nerves arising from the brachial plexus include:  
+  - **Suprascapular Nerve:** moves the shoulder (supraspinatus and infraspinatus muscles).  
+  - **Subscapular Nerve:** rotates the shoulder inward.  
+  - **Musculocutaneous Nerve:** bends the elbow and provides feeling along the forearm.  
+  - **Radial Nerve:** extends the elbow, wrist, and toes; essential for standing and walking.  
+  - **Median Nerve:** controls the front paw’s flexor muscles and sensation on the lower forelimb.  
+  - **Ulnar Nerve:** helps flex the paw and provides feeling to the paw and digits.  
+  - **Thoracodorsal Nerve:** activates muscles of the shoulder and upper back.  
+  - **Lateral Thoracic Nerve:** moves chest wall muscles and controls skin sensation.  
+
+##Notes##
+Injury to the brachial plexus can cause weakness, loss of coordination, or paralysis of the front limb.  
+Mild injury may result in partial movement loss, while severe damage can cause total limb paralysis.

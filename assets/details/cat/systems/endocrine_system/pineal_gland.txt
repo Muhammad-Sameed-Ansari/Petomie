@@ -1,0 +1,15 @@
+#Pineal Gland#
+
+##Parts##
+###Pinealocytes###
+Specialized cells that produce **melatonin**, a hormone secreted mainly at night.  
+
+###Nerve Fibers###
+Receive signals from light-sensitive pathways, helping the gland detect changes in daylight.  
+
+###Blood Capillaries###
+Distribute melatonin to all parts of the body through circulation.  
+
+##Function##
+Produces **melatonin**, which regulates **sleep-wake cycles**, **daily rhythms**, and **seasonal behavior**.  
+Helps cats adjust activity to light and darkness and influences rest, alertness, and mood stability.

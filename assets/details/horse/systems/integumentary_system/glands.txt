@@ -1,0 +1,26 @@
+#Integumentary System – Glands (Horse)#
+
+##Location##
+Distributed throughout the **dermis**, often associated with hair follicles or located in specialized skin regions.
+
+##Shape##
+Microscopic tubular glands specialized for secretion and cooling.
+
+##Parts##
+
+###1. Sebaceous Glands###
+- Attached to hair follicles.  
+- **Function:** Secrete sebum to lubricate the hair and skin.  
+
+###2. Sweat Glands###
+- Present across most of the skin, especially the neck, shoulders, and flanks.  
+- **Function:** Control temperature through sweat evaporation.  
+
+###3. Mammary Glands###
+- Located between the hind limbs in mares.  
+- **Function:** Produce milk for foals.  
+
+##Function##
+- **Thermoregulation:** Maintains body temperature during exertion.  
+- **Lubrication:** Keeps skin and coat supple.  
+- **Excretion:** Eliminates small amounts of waste through sweat.  

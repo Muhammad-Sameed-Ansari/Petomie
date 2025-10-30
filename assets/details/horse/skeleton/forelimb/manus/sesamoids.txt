@@ -1,15 +1,20 @@
-#Sesamoids#
+#Sesamoid Bones#
 
 ##Location##
-Located at the distal end of the metacarpus and at the distal interphalangeal joint.  
-The **proximal sesamoid bones** are found at the back of the fetlock joint (metacarpophalangeal joint), one on each side of the distal end of the third metacarpal (cannon bone).  
-The **distal sesamoid bone (navicular bone)** lies behind the distal interphalangeal joint between the second and third phalanges.
+Located at the major joint regions of the forelimb, particularly at the fetlock and coffin joints.  
+Sesamoid bones are embedded within tendons to reduce friction and enhance joint function.
 
-##Shape##
-- **Proximal sesamoids:** small, wedge-shaped bones embedded within the suspensory ligament.  
-- **Distal sesamoid (navicular):** boat-shaped, flat bone that sits behind the coffin joint.
+###Parts###
+1. **Proximal Sesamoid Bones (2 per limb)** – Found at the back of the fetlock joint behind the metacarpophalangeal articulation.  
+   Embedded in the suspensory ligament and act as pulleys for the flexor tendons.  
+   Distribute stress and prevent hyperextension of the fetlock.
+
+2. **Distal Sesamoid Bone (Navicular Bone)** – Located behind the coffin joint between the short and distal phalanges.  
+   Provides a smooth surface for the deep digital flexor tendon.  
+   Reduces friction and assists in the flexion of the lower limb.
 
 ##Function##
-Act as pulleys for flexor tendons, reducing friction and stress during movement.  
-Assist in distributing pressure within the fetlock and coffin joints.  
-Play a key role in the **stay apparatus**, supporting the limb during weight bearing and preventing overextension of the joints.
+ Improve tendon efficiency and joint stability.  
+ Reduce wear on tendons and ligaments during movement.  
+ Act as levers that enhance flexion and propulsion.  
+ Protect joints from excessive stress and impact.

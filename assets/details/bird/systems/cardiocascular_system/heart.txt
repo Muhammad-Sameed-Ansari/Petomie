@@ -1,0 +1,40 @@
+#Heart#
+
+##Location##
+Located in the **thoracic cavity**, between the lungs, slightly shifted to the left.  
+Enclosed in a thin **pericardial sac**, supported by air sacs and the sternum.
+
+###Shape###
+A **four-chambered muscular organ**, similar to mammals but proportionally **larger and more powerful** to sustain flight.  
+The walls of the left ventricle are particularly thick to pump oxygen-rich blood to the body.
+
+##Parts##
+###1. Right Atrium###
+Receives deoxygenated blood from the body through the vena cavae.  
+**Function:** Channels blood into the right ventricle.
+
+###2. Right Ventricle###
+Pumps deoxygenated blood to the lungs via pulmonary arteries.  
+**Function:** Facilitates gas exchange in the lungs.
+
+###3. Left Atrium###
+Receives oxygenated blood from the lungs.  
+**Function:** Directs oxygen-rich blood into the left ventricle.
+
+###4. Left Ventricle###
+Thickest chamber; pumps oxygenated blood to the entire body.  
+**Function:** Supplies high-pressure flow to sustain flight muscles.
+
+###5. Aortic Arch (Right)###
+Birds retain only the right arch (unlike mammals).  
+**Function:** Carries blood from the left ventricle to systemic arteries.
+
+###6. Pericardium###
+Membranous sac enclosing the heart.  
+**Function:** Protects and lubricates during rhythmic movement.
+
+##Function##
+- **Circulation:** Maintains continuous blood flow through lungs and body.  
+- **Oxygen Supply:** Meets high metabolic demands during flight.  
+- **Temperature Control:** Assists in thermoregulation.  
+- **Efficiency:** Fully separates oxygenated and deoxygenated blood.

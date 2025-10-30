@@ -1,38 +1,31 @@
 #Uterus#
 
 ##Location##
-Located within the abdominal and pelvic cavities.
-Lies between the urinary bladder (ventrally) and the rectum (dorsally).
-In dogs, the uterus has a very short body and two long, coiled uterine horns that extend forward toward the ovaries, where embryo implantation and fetal development occur.
+Located in the **pelvic and cranial abdominal cavity**, between the **urinary bladder** (ventral) and **colon/rectum** (dorsal).  
+Continues cranially from the **cervix** and divides into two long **uterine horns**.
 
 ###Shape###
-A hollow, muscular, Y-shaped organ with a short central body and two long, flexible horns.
-The walls are thick and elastic, allowing for expansion during pregnancy.
+A **bicornuate, hollow, muscular organ** with **long horns** and a **short uterine body**, adapted for litters.
 
 ##Parts##
 
-###1. Uterine Body###
-A small central section where the two uterine horns join together before connecting to the cervix.
+###1. Uterine Horns###
+Long paired tubes where **implantation** and **fetal development** primarily occur.
 
-###2. Uterine Horns###
-Long, coiled tubes extending toward each ovary.
-These are the main sites of embryo implantation and fetal growth during pregnancy.
+###2. Uterine Body###
+Short central segment joining the horns to the cervix.
 
-###3. Cervix###
-A short, muscular passage connecting the uterus to the vagina.
-Remains tightly closed except during estrus and parturition to protect the uterus from infection.
+###3. Endometrium###
+**Inner mucosal lining** that undergoes cyclic changes and forms the maternal component of the placenta.
 
-###4. Uterine Wall Layers###
+###4. Myometrium###
+**Muscular middle layer** that contracts during parturition.
 
-Endometrium – Inner mucosal lining that nourishes embryos and changes during the reproductive cycle.
+###5. Perimetrium###
+**Serosal outer layer** providing protection and support.
 
-Myometrium – Middle muscular layer responsible for contractions during birth and uterine movement.
-
-Perimetrium – Outer protective serous covering continuous with the peritoneum.
-
-##Function##
-Provides a safe, nourishing environment for embryo implantation and fetal development.
-Expands significantly to accommodate multiple fetuses during gestation.
-Contracts during labor to deliver puppies and later returns to normal size (involution).
-Acts as a passageway for sperm to reach the uterine tubes for fertilization.
-Responds to hormonal changes throughout the estrous cycle to prepare for pregnancy.
+###Function###
+Serves as the **site for implantation** and **gestation**.  
+Nourishes embryos and fetuses via placental exchange.  
+Contracts to expel fetuses and placentas during **parturition**.  
+Responds to ovarian hormones to regulate the **estrous cycle**.

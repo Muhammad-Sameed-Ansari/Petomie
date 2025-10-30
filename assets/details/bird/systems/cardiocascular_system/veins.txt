@@ -1,0 +1,35 @@
+#Veins#
+
+##Location##
+Form a widespread network returning **deoxygenated blood** from the body to the **right atrium**.
+
+###Shape###
+Thin-walled and equipped with **valves** to prevent backflow.  
+Often run parallel to arteries and merge into larger trunks.
+
+##Parts##
+###1. Jugular Veins###
+Large paired veins in the neck.  
+**Function:** Drain blood from the head and brain.
+
+###2. Brachial Veins###
+Located in the wings.  
+**Function:** Return blood from wing muscles.
+
+###3. Hepatic Portal Vein###
+Connects digestive organs to the liver.  
+**Function:** Filters and processes nutrient-rich blood.
+
+###4. Renal Portal System###
+Unique to birds and reptiles.  
+**Function:** Channels blood from hindlimbs through the kidneys for filtration.
+
+###5. Caudal Vena Cava###
+Main vessel returning blood to the heart.  
+**Function:** Collects systemic venous blood.
+
+##Function##
+- **Return Flow:** Bring deoxygenated blood to the heart.  
+- **Filtration:** Aid waste removal via renal system.  
+- **Regulation:** Maintain one-way circulation.  
+- **Thermoregulation:** Balance temperature during activity.

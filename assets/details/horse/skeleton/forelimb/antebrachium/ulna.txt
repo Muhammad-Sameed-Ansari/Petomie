@@ -1,16 +1,23 @@
 #Ulna#
 
 ##Location##
-Situated on the caudal (back) side of the forelimb, partially fused with the radius.  
-Extends from the elbow joint, forming part of the olecranon process, and tapers distally as it merges with the radius in the mid to lower forelimb.
+Located in the forelimb alongside the radius, extending from the elbow joint to the mid-forearm.  
+In the horse, the ulna is partly fused with the radius, forming a single composite structure that supports limited rotation but strong stability.
 
-##Shape##
-Long, slender bone that is incomplete in the horse.  
-The **proximal end** forms the **olecranon**, which is a large, prominent projection serving as the point of the elbow.  
-The **shaft** is thin and narrow, gradually fading and becoming fused with the radius.  
-The **distal portion** is reduced or absent, leaving the ulna non-weight-bearing.
+###Parts###
+1. **Olecranon Process** – The large projection at the upper end of the ulna forming the point of the elbow.  
+   Serves as the attachment site for the triceps brachii muscle, enabling powerful limb extension.
+
+2. **Body (Shaft)** – The elongated portion that tapers toward the middle of the radius.  
+   Fused with the radius in the mid and distal regions.  
+   Provides structural support for the forelimb.
+
+3. **Distal End** – The lower part of the ulna that becomes narrow and indistinct as it merges with the radius.  
+   Contributes to joint stability and transmits forces from the elbow to the radius.
 
 ##Function##
-Forms the **point of the elbow**, providing leverage for the triceps muscle during limb extension.  
-Acts as a stabilizer for the elbow joint.  
-Although largely fused and reduced, it retains an important role in attachment for muscles controlling elbow movement.
+ Acts as a lever arm for the triceps muscle during elbow extension.  
+ Strengthens the forearm and stabilizes the elbow joint.  
+ Supports muscle attachment and transmits force to the radius.  
+ Provides structure and rigidity to the forelimb during movement.  
+ Contributes to flexion, extension, and shock absorption at the elbow joint.

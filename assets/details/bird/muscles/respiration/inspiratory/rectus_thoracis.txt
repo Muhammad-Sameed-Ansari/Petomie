@@ -1,0 +1,20 @@
+#Rectus Thoracis – Avian (Inspiratory)#
+
+##Location##
+Short muscle spanning the first rib and cranial sternum along the ventrolateral thorax.
+
+###Shape###
+Narrow, longitudinal band linking the 1st costal arch to the sternum.
+
+##Parts##
+
+###1. First-Rib Attachment###
+- Originates on the cranial costal arch.  
+- **Function:** Pulls the first rib cranially during inspiration.
+
+###2. Sternal Attachment###
+- Inserts on the manubrial/cranial sternum region.  
+- **Function:** Couples first-rib motion to sternal excursion.
+
+##Function##
+Assists cranial rib elevation and sternal excursion, augmenting inspiratory expansion of the thorax.

@@ -1,0 +1,20 @@
+#Abdominal Muscles – Respiratory Role (Avian Expiratory)#
+
+##Location##
+Lateral and ventral abdominal wall surrounding the coelomic cavity.
+
+###Components###
+External oblique, internal oblique, transversus abdominis, and rectus abdominis acting together as abdominal compressors.
+
+##Parts##
+
+###1. Lateral Abdominal Wall###
+- Obliquus externus/internus and transversus form layered sheets.  
+- **Function:** Increase intra‑coelomic pressure to expel air from air sacs.
+
+###2. Rectus Complex###
+- Rectus abdominis along the midline within the rectus sheath.  
+- **Function:** Supports ventral trunk flexion and drives abdominal expiration.
+
+##Function##
+Actively compress the coelomic cavity and air sacs to drive expiration, especially during flight, calling, or strenuous activity.

@@ -1,18 +1,24 @@
 #Radius#
 
 ##Location##
-Located in the forelimb between the elbow and the carpus (knee).  
-Lies cranial (in front of) and fused with the ulna for most of its length.  
-Forms the main weight-bearing bone of the forearm.
+Located in the forelimb between the elbow (humerus) above and the carpus (knee) below.  
+The radius is the main weight-bearing bone of the forearm, forming the foundation for stability and motion.
 
-##Shape##
-Strong, cylindrical bone slightly flattened craniocaudally.  
-The **proximal end** articulates with the humerus at the elbow joint.  
-The **distal end** articulates with the proximal row of carpal bones.  
-The bone widens distally for stability and support during load-bearing.
+###Parts###
+1. **Proximal End** – The upper portion articulating with the humerus at the elbow joint.  
+   Includes the **radial head**, which fits into the humeral condyle, and the **radial tuberosity**, providing attachment for the biceps brachii muscle.
+
+2. **Body (Shaft)** – The long, slightly curved middle section of the bone.  
+   Provides strength and stability for weight bearing.  
+   Serves as the attachment site for forearm muscles.
+
+3. **Distal End** – The lower portion articulating with the carpal bones.  
+   Forms part of the radiocarpal (knee) joint.  
+   Includes the **styloid process**, which stabilizes the carpus and provides attachment for ligaments.
 
 ##Function##
-Serves as the **primary weight-bearing bone** of the forearm.  
-Transmits forces from the humerus to the carpus during locomotion.  
-Provides broad surfaces for muscular attachment and stabilizes the elbow and carpal joints.  
-Supports flexion and extension of the forelimb with minimal rotation due to fusion with the ulna.
+ Forms the main structure of the forearm and supports body weight.  
+ Articulates with the humerus and carpus for limb flexion and extension.  
+ Provides attachment for muscles controlling the forelimb.  
+ Transmits forces from the upper limb to the knee.  
+ Stabilizes the forelimb during locomotion and impact.

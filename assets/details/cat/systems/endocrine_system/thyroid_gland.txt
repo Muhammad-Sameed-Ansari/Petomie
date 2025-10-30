@@ -1,0 +1,16 @@
+#Thyroid Gland#
+
+##Parts##
+###Right and Left Lobes###
+Located beside the trachea, below the larynx. They are reddish-brown and connected by a thin bridge of tissue.  
+
+###Thyroid Follicles###
+Store and release **T3 (triiodothyronine)** and **T4 (thyroxine)**, which control metabolic rate and energy use.  
+
+###Parafollicular Cells###
+Secrete **calcitonin**, which lowers calcium levels in the blood by storing calcium in bones.  
+
+##Function##
+Regulates **metabolism**, **body temperature**, **growth**, and **energy production**.  
+Maintains healthy skin, coat, heart rate, and digestion.  
+In cats, overactivity (hyperthyroidism) is common in older individuals, causing weight loss, hyperactivity, and increased appetite.

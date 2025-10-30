@@ -1,0 +1,34 @@
+#Hindlimb Muscles – Pes (Avian)#
+
+##Location##
+Located in the distal limb (foot), surrounding the tarsometatarsus and digits. Responsible for grasping, perching, and locomotion.
+
+###Components###
+Intrinsic muscles of the foot and tendinous continuations of crus muscles controlling digital movement.
+
+##Parts##
+
+###1. M. Flexor Digitorum Brevis###
+- From tarsometatarsus to middle phalanges.  
+- **Function:** Flexes the digits; maintains grip during perching.
+
+###2. M. Extensor Digitorum Brevis###
+- Dorsal tarsometatarsus to proximal phalanges.  
+- **Function:** Extends the toes and stabilizes the foot dorsally.
+
+###3. M. Flexor Hallucis Brevis###
+- From plantar surface to hallux.  
+- **Function:** Flexes the hallux and enhances grasping strength.
+
+###4. M. Abductor Digiti II and IV###
+- From plantar fascia to corresponding digits.  
+- **Function:** Spread or stabilize toes during landing and grasping.
+
+###5. M. Interossei###
+- Between metatarsals.  
+- **Function:** Fine control of toe position and pressure distribution.
+
+##Function##
+Provide digital control for grasping branches and prey.  
+Stabilize the foot during perching, walking, and landing.  
+Coordinate with crus tendons for automatic toe flexion when perching (the “perching mechanism”).

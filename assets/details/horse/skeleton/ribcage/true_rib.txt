@@ -1,16 +1,45 @@
 #True Ribs#
 
 ##Location##
-The true ribs are the first eight pairs of ribs attached to the thoracic vertebrae at the back and directly to the sternum at the front via costal cartilage.  
-They form the upper part of the ribcage and surround the chest cavity.
+Located in the thoracic region of the horse’s body, attached directly to the thoracic vertebrae and the sternum.  
+Horses typically have **18 pairs of ribs**, with the **first 8 pairs classified as true ribs** because they connect directly to the sternum via costal cartilage.
 
-##Shape##
-Long, curved, and slightly flattened bones that wrap around the thorax.  
-Each rib has a bony portion connected to a flexible cartilage section.  
-The curvature allows the chest to expand during breathing.
+###Parts###
+1. **Rib 1** – The shortest and most curved rib.  
+   Connects to the first thoracic vertebra (T1) and the manubrium of the sternum.  
+   Provides attachment for neck and shoulder muscles, including the scalenus and serratus ventralis.
+
+2. **Rib 2** – Slightly longer and broader than rib 1.  
+   Supports the upper chest and protects major blood vessels entering the thoracic cavity.  
+   Assists in stabilizing the shoulder girdle.
+
+3. **Rib 3** – Provides attachment for pectoral and intercostal muscles.  
+   Contributes to the shape and strength of the upper thoracic wall.  
+   Participates in expansion and contraction during respiration.
+
+4. **Rib 4** – Located beneath the scapula region.  
+   Protects the cranial portion of the lungs and heart.  
+   Serves as an anchoring point for deep thoracic muscles involved in breathing.
+
+5. **Rib 5** – Lies midway along the chest wall.  
+   Provides structural support and muscle attachment for the intercostal and abdominal regions.  
+   Contributes to thoracic rigidity and flexibility during locomotion.
+
+6. **Rib 6** – Forms part of the mid-thoracic cage.  
+   Aids in lung expansion and ribcage mobility.  
+   Connects to the sternum through a long, flexible cartilage joint.
+
+7. **Rib 7** – Slightly longer and flatter.  
+   Protects the middle section of the lungs and heart.  
+   Supports the intercostal spaces used in breathing rhythm and stability.
+
+8. **Rib 8** – The last true rib.  
+   Marks the transition between true and false ribs.  
+   Connects to the sternum through cartilage and provides muscle attachment for abdominal and thoracic muscles.
 
 ##Function##
-- Protects vital organs such as the heart and lungs.  
-- Provides strong yet flexible support for the upper body.  
-- Aids in respiration by allowing expansion of the chest cavity.  
-- Serves as an attachment site for intercostal and pectoral muscles.
+ Protects the heart, lungs, and major blood vessels within the thoracic cavity.  
+ Provides structure and stability to the chest wall.  
+ Assists in breathing by expanding and contracting the thoracic cavity.  
+ Serves as attachment points for intercostal, pectoral, and abdominal muscles.  
+ Contributes to overall flexibility and motion during respiration and locomotion.

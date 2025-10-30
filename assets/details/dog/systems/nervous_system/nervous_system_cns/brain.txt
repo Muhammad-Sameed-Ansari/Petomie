@@ -1,20 +1,36 @@
 #Brain#
 
 ##Location##
-The brain is inside the dog’s skull and protected by bone.  
-It connects to the spinal cord through an opening at the base of the skull.  
-It is cushioned by fluid and soft layers of tissue called the meninges.
+Located within the cranial cavity of the skull and protected by the cranial bones and meninges.  
+It connects to the spinal cord through the foramen magnum and serves as the control center of the dog’s nervous system.
 
-###Shape###
-Rounded and smooth with three main parts:  
-- **Cerebrum** – the biggest part, which controls thinking, learning, and voluntary actions.  
-- **Cerebellum** – behind the cerebrum, helps with balance, posture, and smooth movement.  
-- **Brainstem** – connects the brain to the spinal cord and controls breathing, heartbeat, and digestion.
+###Parts###
+1. **Cerebrum** – The largest and most developed part of the brain.  
+   Divided into left and right hemispheres, it manages voluntary movement, learning, memory, and behavior.  
+   Interprets sensory information such as vision, hearing, and touch, and regulates decision-making and awareness.
+
+2. **Cerebellum** – Positioned below and behind the cerebrum.  
+   Coordinates posture, movement, balance, and muscle tone.  
+   Ensures smooth and accurate motion during running, jumping, and precise body control.
+
+3. **Brainstem** – Includes the midbrain, pons, and medulla oblongata.  
+   Serves as the communication link between the brain and spinal cord.  
+   Controls involuntary life-support functions such as breathing, heart rate, blood pressure, and reflex actions.
+
+4. **Diencephalon** – Composed of the thalamus and hypothalamus.  
+   The thalamus acts as a relay station for sensory impulses traveling to the cerebrum.  
+   The hypothalamus regulates hunger, thirst, temperature, sleep, and emotional behavior, and influences hormonal activity via the pituitary gland.
+
+5. **Pituitary Gland** – Connected to the hypothalamus and functions as the body’s main endocrine gland.  
+   Releases hormones that regulate metabolism, growth, stress response, and reproductive cycles.
+
+6. **Olfactory Bulbs** – Situated at the front of the brain above the nasal cavity.  
+   Highly developed in dogs, they process scent information crucial for navigation, hunting, and social communication.
 
 ##Function##
-- Thinks, learns, and makes decisions.  
-- Sends messages that move muscles and control actions.  
-- Keeps balance and coordination.  
-- Controls heart rate, breathing, and body temperature.  
-- Stores memories and emotions.  
-- Helps the dog respond to the world around it.
+Controls voluntary movement, coordination, and reflexes.  
+Regulates vital systems such as breathing, heart rate, and digestion.  
+Processes sensory input from all parts of the body.  
+Governs behavior, emotional response, and social interaction.  
+Supports memory, learning, and environmental awareness.  
+Ensures balance and precise motion during physical activity.

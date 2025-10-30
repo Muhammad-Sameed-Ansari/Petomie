@@ -1,34 +1,44 @@
 #Crus Muscles#
 
-##Between the stifle and hock##
+##Location##
+Found between the **stifle (knee)** and **hock (tarsus)**, forming the muscular calf of the dog’s hindlimb.  
+Control the movements of the hock and digits.
+
+##Shape##
+Long and narrow muscles that taper into tendons extending toward the paw.  
+Divided into cranial, caudal, and lateral compartments for controlled motion.
+
+##Parts##
+
 ###1. Gastrocnemius###
-Two-headed muscle forming the calf.
-Extends hock, flexes stifle, and supports stance.
-###2. Superficial Digital Flexor###
-Lies over the gastrocnemius.
-Flexes digits and stifle, extends the hock.
-###3. Deep Digital Flexor###
-Deep muscle with three heads uniting into a common tendon.
-Flexes digits and extends the hock.
+- Large two-headed muscle forming the calf.  
+- Extends hock and flexes stifle.  
+
+###2. Soleus###
+- Small muscle beside gastrocnemius.  
+- Assists in hock extension.  
+
+###3. Tibialis Cranialis###
+- Located on the cranial aspect of the shin.  
+- Flexes hock and rotates paw medially.  
+
 ###4. Peroneus Longus###
-Superficial muscle on the lateral crus.
-Flexes the hock and rotates the paw medially.
-###5. Peroneus Brevis###
-Lies deep to peroneus longus.
-Flexes the hock.
-###6. Tibialis Cranialis###
-On the cranial side of the tibia.
-Flexes the hock and rotates paw laterally.
-###7. Long Digital Extensor###
-Originates from the femur and extends to the digits.
-Extends the digits and flexes the hock.
-###8. Lateral Digital Extensor###
-Small muscle lateral to the tibia.
-Extends the fifth digit.
-###9. Popliteus###
-Small triangular muscle on the caudal surface of the stifle.
-Flexes the stifle and rotates the tibia medially.
+- Lateral muscle along the outer leg.  
+- Flexes hock and rotates paw outward.  
+
+###5. Extensor Digitorum Longus###
+- Cranial muscle running to the digits.  
+- Extends digits and flexes hock.  
+
+###6. Flexor Digitorum Longus###
+- Deep caudal muscle.  
+- Flexes digits and extends hock.  
+
+###7. Popliteus###
+- Small triangular muscle behind the stifle.  
+- Rotates leg medially and stabilizes stifle joint.  
 
 ##Function##
-Coordinate flexion and extension of the stifle and hock.
-Control paw placement and assist with shock absorption and propulsion.
+Flex and extend the hock and digits.  
+Provide support, propulsion, and balance during walking, running, and jumping.  
+Assist in precise foot placement and landing control.  

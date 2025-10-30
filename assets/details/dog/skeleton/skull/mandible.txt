@@ -1,14 +1,38 @@
 #Mandible#
 
 ##Location##
-Forms the lower jaw and articulates with the temporal bone at the temporomandibular joint (TMJ).
+Located in the lower part of the skull, forming the lower jaw of the dog.  
+It is the largest and strongest bone of the skull and articulates with the temporal bones at the temporomandibular joints (TMJ).  
+The mandible supports the lower teeth and enables chewing, biting, and vocalization.
 
-##Shape##
-Consists of two halves (hemimandibles) joined at the mandibular symphysis; each half has a horizontal body and vertical ramus.
+###Parts###
+1. **Body of the Mandible** – The horizontal portion forming the base of the jaw.  
+   Houses the lower teeth within alveolar sockets.  
+   Contains the mandibular canal for blood vessels and nerves.  
+   Merges at the midline at the mandibular symphysis.
 
-##Parts##
-Body – Horizontal part housing lower teeth.
-Ramus – Vertical ascending part forming jaw joint.
-Condylar Process – Articulates with temporal bone at TMJ.
-Coronoid Process – Dorsal projection providing attachment for temporalis muscle.
-Mandibular Symphysis – Joint connecting left and right halves rostrally.
+2. **Ramus of the Mandible** – The vertical section extending upward from the body.  
+   Provides attachment for strong chewing muscles.  
+   Articulates with the skull through the TMJ for jaw movement.
+
+3. **Coronoid Process** – The dorsal projection of the ramus.  
+   Serves as the attachment site for the temporal muscle, elevating the jaw.
+
+4. **Condylar Process** – Rounded projection forming the articular surface of the TMJ.  
+   Allows hinge and sliding motions during chewing and biting.
+
+5. **Mandibular Notch** – Curved depression between the coronoid and condylar processes.  
+   Provides space for vessels and nerves passing to the lower jaw.
+
+6. **Mandibular Angle** – Junction between the body and ramus.  
+   Serves as an attachment point for the masseter and digastric muscles.
+
+7. **Mental Foramina** – Small openings on the lateral surface of the mandible.  
+   Allow passage of nerves and vessels to the lips and chin.
+
+##Function##
+ Supports the lower teeth and enables chewing and biting.  
+ Provides movement for mastication through the TMJ.  
+ Protects nerves and blood vessels of the lower face.  
+ Serves as attachment for facial and masticatory muscles.  
+ Contributes to the structure and symmetry of the skull.

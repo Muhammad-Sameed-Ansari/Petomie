@@ -1,0 +1,28 @@
+#Phalanges (Wing Digits)#
+
+##Location##
+Form the **distal section of the wing**, attached to the **metacarpals** of the carpometacarpus.  
+Correspond to the **digits (fingers)** in other animals, though highly reduced in birds.
+
+###Shape###
+Small, jointed bones arranged into **three primary digits** (I, II, and III).  
+Lightweight and partly fused for stability during flight.
+
+##Parts##
+
+###1. Digit I (Alular Digit)###
+- Shortest digit, supports the **alula**.  
+- **Function:** Provides fine control during low-speed flight and landing.  
+
+###2. Digit II (Major Digit)###
+- Central and largest digit.  
+- **Function:** Anchors the **primary flight feathers** and supports wing extension.  
+
+###3. Digit III (Minor Digit)###
+- Small and partially fused to the carpometacarpus.  
+- **Function:** Adds stability to the wing tip.  
+
+##Function##
+- **Flight Control:** Fine-tunes feather positioning for lift and steering.  
+- **Flexibility:** Allows limited motion for aerodynamic adjustments.  
+- **Support:** Strengthens wing edges and feather alignment.  

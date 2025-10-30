@@ -1,0 +1,23 @@
+#Thyroid Glands#
+
+##Location##
+Paired glands located on each side of the **trachea** near the thoracic inlet.
+
+###Shape###
+Small, oval, reddish-brown glands surrounded by connective tissue.  
+Highly vascular and often asymmetric in size.
+
+##Parts##
+###1. Follicles###
+Microscopic sacs filled with colloid.  
+**Function:** Store thyroglobulin, the precursor of thyroid hormones.
+
+###2. Capillary Network###
+Dense blood supply surrounding follicles.  
+**Function:** Facilitates hormone release.
+
+##Function##
+- **Metabolism:** Controls basal metabolic rate.  
+- **Growth and Molt:** Regulates feather replacement and body growth.  
+- **Thermoregulation:** Maintains body temperature.  
+- **Development:** Affects nervous system maturation.

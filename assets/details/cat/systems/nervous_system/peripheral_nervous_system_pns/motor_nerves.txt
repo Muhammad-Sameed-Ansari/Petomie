@@ -1,0 +1,20 @@
+#Motor Nerves#
+
+##Location##
+Motor nerves extend from the **spinal cord and brainstem** to the **muscles and glands** of the body.  
+They are found throughout the head, trunk, and limbs, controlling voluntary and involuntary movements.
+
+###Shape###
+Bundles of **long, cord-like fibers** that leave the spinal cord and branch into smaller nerves connecting to muscles.  
+They often travel next to blood vessels and other nerves.
+
+##Function##
+- Carry **movement commands** from the brain and spinal cord to the muscles.  
+- Allow the cat to **walk, run, stretch, blink, and groom**.  
+- Control both **voluntary muscles** (those the cat moves consciously) and **involuntary muscles** (those that work automatically).  
+- Two main types:  
+  - **Somatic Motor Nerves:** control voluntary muscles for posture, walking, jumping, chewing, or tail movement.  
+  - **Visceral Motor Nerves:** part of the autonomic system; control smooth muscles in internal organs and glands.  
+- Keep the body balanced and coordinated by responding quickly to signals from the sensory nerves.  
+
+Damage to motor nerves can cause weakness, loss of coordination, or paralysis in affected muscles.

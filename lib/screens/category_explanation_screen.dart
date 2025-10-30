@@ -29,6 +29,12 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
   @override
   void initState() {
     super.initState();
+    
+    // Debug information about the image path
+    print('DEBUG: CategoryExplanationScreen initialized');
+    print('DEBUG: Category name: ${widget.categoryName}');
+    print('DEBUG: Image path: ${widget.imagePath}');
+    
     _animationController = AnimationController(
       duration: const Duration(milliseconds: 800),
       vsync: this,
@@ -149,7 +155,8 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stackTrace) {
                             print('DEBUG: Failed to load image (mobile): ${widget.imagePath}');
-                            print('DEBUG: Error: $error');
+                            print('DEBUG: Error details: $error');
+                            print('DEBUG: Stack trace: $stackTrace');
                             return _buildImageFallback(context);
                           },
                         ),
@@ -264,13 +271,14 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
           if (section.title.isNotEmpty)
             Container(
               margin: const EdgeInsets.only(bottom: 16),
-              child: Text(
+              child: _buildFormattedText(
+                context,
                 section.title,
-                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                Theme.of(context).textTheme.headlineSmall?.copyWith(
                   fontWeight: FontWeight.bold,
                   color: Theme.of(context).colorScheme.primary,
                 ),
-                textAlign: isWeb ? TextAlign.center : TextAlign.start,
+                isWeb ? TextAlign.center : TextAlign.start,
               ),
             ),
           
@@ -307,14 +315,15 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
               width: 1,
             ),
           ),
-          child: Text(
+          child: _buildFormattedText(
+            context,
             subheadingTitle,
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            Theme.of(context).textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.w600,
               fontSize: isWeb ? 18 : 16,
               color: Theme.of(context).colorScheme.primary,
             ),
-            textAlign: isWeb ? TextAlign.center : TextAlign.start,
+            isWeb ? TextAlign.center : TextAlign.start,
           ),
         );
       }
@@ -338,14 +347,15 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
             ),
           ],
         ),
-        child: Text(
+        child: _buildFormattedText(
+          context,
           content,
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+          Theme.of(context).textTheme.bodyMedium?.copyWith(
             height: 1.6,
             fontSize: isWeb ? 16 : null,
             color: Theme.of(context).colorScheme.onSurface,
           ),
-          textAlign: isWeb ? TextAlign.center : TextAlign.start,
+          isWeb ? TextAlign.center : TextAlign.start,
         ),
       );
     }
@@ -403,16 +413,15 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                     vertical: isDesktop ? 16 : (isTablet ? 14 : 12),
                     horizontal: isDesktop ? 12 : (isTablet ? 10 : 8),
                   ),
-                  child: Text(
+                  child: _buildFormattedText(
+                    context,
                     header,
-                    style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                    Theme.of(context).textTheme.titleSmall?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: Theme.of(context).colorScheme.primary,
                       fontSize: isDesktop ? 14 : (isTablet ? 13 : 12),
                     ),
-                    textAlign: TextAlign.center,
-                    maxLines: null, // Allow unlimited lines for headers
-                    softWrap: true,
+                    TextAlign.center,
                   ),
                 );
               }).toList(),
@@ -429,16 +438,15 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                       vertical: isDesktop ? 14 : (isTablet ? 12 : 10),
                       horizontal: isDesktop ? 12 : (isTablet ? 10 : 8),
                     ),
-                    child: Text(
+                    child: _buildFormattedText(
+                      context,
                       cell,
-                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                      Theme.of(context).textTheme.bodySmall?.copyWith(
                         fontSize: isDesktop ? 13 : (isTablet ? 12 : 11),
                         color: Theme.of(context).colorScheme.onSurface,
                         height: 1.4,
                       ),
-                      textAlign: TextAlign.center,
-                      maxLines: null, // Allow unlimited lines for cell content
-                      softWrap: true,
+                      TextAlign.center,
                     ),
                   );
                 }).toList(),
@@ -489,14 +497,15 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                   topRight: Radius.circular(16),
                 ),
               ),
-              child: Text(
+              child: _buildFormattedText(
+                context,
                 expandableData.title,
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                Theme.of(context).textTheme.titleLarge?.copyWith(
                   fontWeight: FontWeight.bold,
                   color: Theme.of(context).colorScheme.primary,
                   fontSize: isDesktop ? 20 : (isTablet ? 18 : 16),
                 ),
-                textAlign: isWeb ? TextAlign.center : TextAlign.start,
+                isWeb ? TextAlign.center : TextAlign.start,
               ),
             ),
           
@@ -516,6 +525,53 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
           }).toList(),
         ],
       ),
+    );
+  }
+
+  /// Build formatted text with bold support for **text** patterns
+  Widget _buildFormattedText(BuildContext context, String text, TextStyle? baseStyle, TextAlign textAlign) {
+    final spans = <TextSpan>[];
+    final pattern = RegExp(r'\*\*(.*?)\*\*');
+    int lastMatchEnd = 0;
+
+    for (final match in pattern.allMatches(text)) {
+      // Add text before the match (normal text)
+      if (match.start > lastMatchEnd) {
+        spans.add(TextSpan(
+          text: text.substring(lastMatchEnd, match.start),
+          style: baseStyle,
+        ));
+      }
+
+      // Add the matched bold text (without the ** markers)
+      spans.add(TextSpan(
+        text: match.group(1), // The text inside **...**
+        style: baseStyle?.copyWith(fontWeight: FontWeight.bold),
+      ));
+
+      lastMatchEnd = match.end;
+    }
+
+    // Add any remaining text after the last match
+    if (lastMatchEnd < text.length) {
+      spans.add(TextSpan(
+        text: text.substring(lastMatchEnd),
+        style: baseStyle,
+      ));
+    }
+
+    // If no matches found, return simple Text widget
+    if (spans.isEmpty) {
+      return Text(
+        text,
+        style: baseStyle,
+        textAlign: textAlign,
+      );
+    }
+
+    return RichText(
+      text: TextSpan(children: spans),
+      textAlign: textAlign,
     );
   }
 
@@ -819,8 +875,9 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                       widget.imagePath,
                       fit: BoxFit.cover,
                       errorBuilder: (context, error, stackTrace) {
-                        print('DEBUG: Failed to load image: ${widget.imagePath}');
-                        print('DEBUG: Error: $error');
+                        print('DEBUG: Failed to load image (web): ${widget.imagePath}');
+                        print('DEBUG: Error details: $error');
+                        print('DEBUG: Stack trace: $stackTrace');
                         return _buildImageFallback(context);
                       },
                     ),
@@ -878,6 +935,7 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
       fit: BoxFit.cover,
       errorBuilder: (context, error, stackTrace) {
         print('DEBUG: Logo fallback also failed, using gradient fallback');
+        print('DEBUG: Original image path was: ${widget.imagePath}');
         return Container(
           width: double.infinity,
           height: double.infinity,
@@ -909,6 +967,17 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                   ),
                   textAlign: TextAlign.center,
                 ),
+                if (isWeb) ...[
+                  const SizedBox(height: 4),
+                  Text(
+                    'Image not found: ${widget.imagePath}',
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                      color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+                      fontSize: 10,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
               ],
             ),
           ),
@@ -1165,6 +1234,53 @@ class _ExpandableItemWidgetState extends State<_ExpandableItemWidget>
     });
   }
 
+  /// Build formatted text with bold support for **text** patterns
+  Widget _buildFormattedTextForExpandable(BuildContext context, String text, TextStyle? baseStyle, TextAlign textAlign) {
+    final spans = <TextSpan>[];
+    final pattern = RegExp(r'\*\*(.*?)\*\*');
+    int lastMatchEnd = 0;
+
+    for (final match in pattern.allMatches(text)) {
+      // Add text before the match (normal text)
+      if (match.start > lastMatchEnd) {
+        spans.add(TextSpan(
+          text: text.substring(lastMatchEnd, match.start),
+          style: baseStyle,
+        ));
+      }
+
+      // Add the matched bold text (without the ** markers)
+      spans.add(TextSpan(
+        text: match.group(1), // The text inside **...**
+        style: baseStyle?.copyWith(fontWeight: FontWeight.bold),
+      ));
+
+      lastMatchEnd = match.end;
+    }
+
+    // Add any remaining text after the last match
+    if (lastMatchEnd < text.length) {
+      spans.add(TextSpan(
+        text: text.substring(lastMatchEnd),
+        style: baseStyle,
+      ));
+    }
+
+    // If no matches found, return simple Text widget
+    if (spans.isEmpty) {
+      return Text(
+        text,
+        style: baseStyle,
+        textAlign: textAlign,
+      );
+    }
+
+    return RichText(
+      text: TextSpan(children: spans),
+      textAlign: textAlign,
+    );
+  }
+
   /// Build rich content with support for paragraphs, bullet points, and formatting
   Widget _buildRichContent(BuildContext context, String content) {
     final lines = content.split('\n');
@@ -1215,14 +1331,15 @@ class _ExpandableItemWidgetState extends State<_ExpandableItemWidget>
                 ),
               ),
               Expanded(
-                child: Text(
+                child: _buildFormattedTextForExpandable(
+                  context,
                   bulletText,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  Theme.of(context).textTheme.bodyMedium?.copyWith(
                     height: 1.5,
                     fontSize: widget.isDesktop ? 14 : (widget.isTablet ? 13 : 12),
                     color: Theme.of(context).colorScheme.onSurface,
                   ),
-                  textAlign: widget.isWeb ? TextAlign.center : TextAlign.start,
+                  widget.isWeb ? TextAlign.center : TextAlign.start,
                 ),
               ),
             ],
@@ -1233,14 +1350,15 @@ class _ExpandableItemWidgetState extends State<_ExpandableItemWidget>
         textWidget = Container(
           width: double.infinity,
           margin: const EdgeInsets.only(bottom: 8),
-          child: Text(
+          child: _buildFormattedTextForExpandable(
+            context,
             line,
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+            Theme.of(context).textTheme.bodyMedium?.copyWith(
               height: 1.6,
               fontSize: widget.isDesktop ? 15 : (widget.isTablet ? 14 : 13),
               color: Theme.of(context).colorScheme.onSurface,
             ),
-            textAlign: widget.isWeb ? TextAlign.center : TextAlign.start,
+            widget.isWeb ? TextAlign.center : TextAlign.start,
           ),
         );
       }
@@ -1279,14 +1397,15 @@ class _ExpandableItemWidgetState extends State<_ExpandableItemWidget>
               child: Row(
                 children: [
                   Expanded(
-                    child: Text(
+                    child: _buildFormattedTextForExpandable(
+                      context,
                       widget.item.title,
-                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      Theme.of(context).textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.w600,
                         color: Theme.of(context).colorScheme.onSurface,
                         fontSize: widget.isDesktop ? 18 : (widget.isTablet ? 16 : 15),
                       ),
-                      textAlign: widget.isWeb ? TextAlign.center : TextAlign.start,
+                      widget.isWeb ? TextAlign.center : TextAlign.start,
                     ),
                   ),
                   const SizedBox(width: 12),

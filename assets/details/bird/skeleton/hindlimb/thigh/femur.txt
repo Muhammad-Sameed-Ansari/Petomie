@@ -1,0 +1,28 @@
+#Femur#
+
+##Location##
+Located in the **thigh region** of the bird’s hindlimb, between the **pelvis** and the **tibiotarsus**.  
+It articulates proximally with the **acetabulum** of the pelvis and distally with the **tibiotarsus** and **fibula**.
+
+###Shape###
+A **short, robust, and slightly curved bone**, positioned more horizontally than in most mammals.  
+Contains **pneumatic openings** connected to air sacs, reducing weight while maintaining strength.
+
+##Parts##
+
+###1. Head###
+- Rounded proximal end articulating with the acetabulum.  
+- **Function:** Enables rotation and flexion of the leg.  
+
+###2. Shaft###
+- Strong and slightly curved.  
+- **Function:** Supports muscle attachment and transfers forces during walking and landing.  
+
+###3. Distal End###
+- Contains condyles for articulation with the tibiotarsus and fibula.  
+- **Function:** Forms the knee joint and transmits locomotor forces.  
+
+##Function##
+- **Support:** Bears the weight of the body during stance and motion.  
+- **Locomotion:** Provides leverage for walking, running, and perching.  
+- **Respiratory Integration:** Pneumatic openings connect to air sacs, aiding in body-lightening and thermoregulation.  

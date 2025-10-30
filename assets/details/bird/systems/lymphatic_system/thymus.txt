@@ -1,0 +1,28 @@
+#Thymus#
+
+##Location##
+Paired elongated lobes lying **along both sides of the neck** beside the jugular veins.  
+Each lobe corresponds to a cervical spinal segment.
+
+###Shape###
+Narrow, ribbon-like organ divided into multiple lobes.  
+Prominent in young birds and regresses with age.
+
+##Parts##
+###1. Cortex###
+Outer dense region of lymphocytes.  
+**Function:** Site of T-cell proliferation.
+
+###2. Medulla###
+Inner lighter region with fewer cells.  
+**Function:** Maturation of T-cells before release into circulation.
+
+###3. Connective Capsule###
+Thin fibrous covering separating lobes.  
+**Function:** Protects tissue and supports blood supply.
+
+##Function##
+- **Immunity:** Produces and matures T-lymphocytes.  
+- **Development:** Essential for early immune system formation.  
+- **Endocrine Role:** Releases hormones regulating immune function.  
+- **Involution:** Shrinks after maturity but leaves functional T-cell population.

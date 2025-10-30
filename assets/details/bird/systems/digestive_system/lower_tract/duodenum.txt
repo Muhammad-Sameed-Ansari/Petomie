@@ -1,0 +1,26 @@
+#Duodenum#
+
+##Location##
+Begins at the **pylorus of the gizzard** and forms a loop around the **pancreas**, continuing to the jejunum.
+
+###Shape###
+Forms a U-shaped loop with two parallel limbs.  
+Has thin, folded mucosa to maximize absorption and facilitate enzyme mixing.
+
+##Parts##
+###1. Descending Limb###
+Receives bile and pancreatic secretions.  
+**Function:** Mixes digestive fluids with partially digested food.
+
+###2. Pancreatic Loop###
+Encircles the pancreas.  
+**Function:** Integrates enzyme flow for chemical digestion.
+
+###3. Ascending Limb###
+Connects to jejunum.  
+**Function:** Continues nutrient absorption.
+
+##Function##
+- **Digestion:** Mixes bile and pancreatic enzymes.  
+- **Absorption:** Begins nutrient uptake.  
+- **Integration:** Coordinates flow between gizzard and small intestine.

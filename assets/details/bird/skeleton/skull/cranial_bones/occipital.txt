@@ -1,0 +1,32 @@
+#Occipital Bone#
+
+##Location##
+Forms the **posterior and ventral part of the skull**, surrounding the **foramen magnum**.  
+Connects the skull to the **first cervical vertebra (atlas)**.
+
+###Shape###
+Complex bone composed of **basioccipital, exoccipitals, and supraoccipital** regions.  
+These may fuse to form a single occipital plate.
+
+##Parts##
+
+###1. Foramen Magnum###
+- Large opening at the skull base.  
+- **Function:** Passage for the spinal cord.  
+
+###2. Occipital Condyle###
+- Smooth articular surface below the foramen magnum.  
+- **Function:** Articulates with the atlas vertebra for head movement.  
+
+###3. Supraoccipital Region###
+- Upper part forming the nuchal crest.  
+- **Function:** Provides attachment for neck muscles.  
+
+###4. Exoccipitals###
+- Lateral portions flanking the foramen magnum.  
+- **Function:** Support cranial nerves and vessels exiting the skull.  
+
+##Function##
+- **Support:** Connects the skull to the vertebral column.  
+- **Protection:** Encases the brainstem and spinal cord junction.  
+- **Movement:** Enables controlled head flexion and rotation.  

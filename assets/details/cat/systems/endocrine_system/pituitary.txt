@@ -1,0 +1,23 @@
+#Pituitary Gland (Hypophysis)#
+
+##Parts##
+###Anterior Lobe (Adenohypophysis)###
+Produces and releases hormones that regulate growth, metabolism, stress, and reproduction.  
+Key hormones include:  
+- **GH (Growth Hormone):** Promotes growth and tissue repair.  
+- **TSH (Thyroid-Stimulating Hormone):** Activates the thyroid gland.  
+- **ACTH:** Stimulates the adrenal glands to produce cortisol.  
+- **FSH & LH:** Control reproductive cycles and fertility.  
+- **Prolactin:** Supports milk production in nursing queens.  
+
+###Posterior Lobe (Neurohypophysis)###
+Stores and releases hormones produced by the hypothalamus:  
+- **ADH (Antidiuretic Hormone):** Regulates water balance by controlling kidney absorption.  
+- **Oxytocin:** Triggers uterine contractions during birth and milk letdown during nursing.  
+
+###Infundibulum (Pituitary Stalk)###
+Connects the gland to the hypothalamus, allowing nerve signals to regulate hormone release.
+
+##Function##
+Acts as the **master gland** of the endocrine system. It controls the activity of other glands, including the thyroid, adrenal glands, and gonads.  
+It maintains growth, metabolism, stress balance, reproduction, and hydration throughout the body.

@@ -1,0 +1,37 @@
+#Hindlimb Muscles – Crus (Avian)#
+
+##Location##
+Located in the lower leg (shank) between the knee and the ankle joint, surrounding the tibiotarsus and fibula.
+
+###Components###
+Include the flexors and extensors of the tarsus and digits, contributing to propulsion, balance, and perching stability.
+
+##Parts##
+
+###1. M. Gastrocnemius###
+- From femoral condyles and tendon of femorotibialis to the Achilles tendon and tarsometatarsus.  
+- **Function:** Extends the tarsus and aids in propulsion during walking and takeoff.
+
+###2. M. Tibialis Cranialis###
+- From tibia to tarsometatarsus.  
+- **Function:** Flexes the tarsus and elevates the foot during swing phase.
+
+###3. M. Flexor Digitorum Longus###
+- From posterior tibia to digital phalanges.  
+- **Function:** Flexes the toes and maintains grip during perching.
+
+###4. M. Flexor Hallucis Longus###
+- From fibula and tibia to hallux and digits.  
+- **Function:** Flexes the hallux and contributes to grasping and landing control.
+
+###5. M. Extensor Digitorum Longus###
+- From lateral femoral condyle to digits.  
+- **Function:** Extends the toes and stabilizes the foot during stance.
+
+###6. M. Peroneus Longus###
+- From fibula to tarsometatarsus.  
+- **Function:** Flexes and everts the tarsus; stabilizes the foot laterally.
+
+##Function##
+Provide extension and flexion of the tarsus and digits for walking, landing, and takeoff.  
+Enable gripping and shock absorption during perching and locomotion.

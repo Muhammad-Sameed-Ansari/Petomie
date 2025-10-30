@@ -55,14 +55,18 @@ class ContentService {
     
     // Handle empty breadcrumbs
     if (breadcrumbs.isEmpty) {
+      print('DEBUG: Empty breadcrumbs, using fallback logo');
       return 'assets/images/logo_transparent.png';
     }
     
     // Get the animal type (first breadcrumb)
     final animalType = breadcrumbs.first.toLowerCase();
+    print('DEBUG: Animal type: $animalType');
     
     // Handle Energy categories (shared across animals)
     if (breadcrumbs.contains('Energy')) {
+      print('DEBUG: Processing Energy category');
+      
       // Handle Chakras subcategories
       if (breadcrumbs.contains('Chakras')) {
         if (breadcrumbs.contains('Main Chakra')) {
@@ -72,9 +76,12 @@ class ContentService {
           return imagePath;
         } else if (breadcrumbs.contains('Secondary Chakra')) {
           // Secondary chakra images
-          return 'assets/images/energy/chakras/secondary_chakra/${_processImageFilename(categoryId)}.webp';
+          final imagePath = 'assets/images/energy/chakras/secondary_chakra/${_processImageFilename(categoryId)}.webp';
+          print('DEBUG: Secondary chakra image path: $imagePath');
+          return imagePath;
         }
         // General chakras image
+        print('DEBUG: Using general chakras image');
         return 'assets/images/energy/chakras.webp';
       }
       
@@ -98,7 +105,9 @@ class ContentService {
         }
         
         // Fallback for other animals - use general meridians image
-        return 'assets/images/$animalType/energy/meridians.webp';
+        final fallbackPath = 'assets/images/$animalType/energy/meridians.webp';
+        print('DEBUG: Meridian fallback path: $fallbackPath');
+        return fallbackPath;
       }
       
       // Other energy subcategories (like aura, etc.)
@@ -109,46 +118,77 @@ class ContentService {
     
     // Handle animal-specific categories
     if (['dog', 'cat', 'horse', 'bird', 'cow', 'rabbit', 'guineapig'].contains(animalType)) {
+      print('DEBUG: Processing animal-specific category for $animalType');
+      
       // Check for specific subcategories
       if (breadcrumbs.length > 1) {
         final subcategory = breadcrumbs[1];
+        print('DEBUG: Subcategory: $subcategory');
         
         // Handle different subcategory types
         switch (subcategory.toLowerCase()) {
           case 'systems':
-            return 'assets/images/$animalType/systems.webp';
+            final path = 'assets/images/$animalType/systems.webp';
+            print('DEBUG: Systems image path: $path');
+            return path;
           case 'muscles':
-            return 'assets/images/$animalType/muscles.webp';
+            final path = 'assets/images/$animalType/muscles.webp';
+            print('DEBUG: Muscles image path: $path');
+            return path;
           case 'skeleton':
             // Check if it's a specific bone/part
             if (breadcrumbs.length > 2) {
               final bonePart = _processImageFilename(categoryId);
-              return 'assets/images/$animalType/skeleton/$bonePart.webp';
+              final path = 'assets/images/$animalType/skeleton/$bonePart.webp';
+              print('DEBUG: Specific skeleton part path: $path');
+              return path;
             }
-            return 'assets/images/$animalType/skeleton.webp';
-          case 'organ & gland':
-          case 'oragn & gland': // Handle typo in existing files
-            return 'assets/images/$animalType/oragn_&_gland.webp';
+            final path = 'assets/images/$animalType/skeleton.webp';
+            print('DEBUG: General skeleton path: $path');
+            return path;
+          case 'organs':
+          case 'organ':
+            final path = 'assets/images/$animalType/organs.webp';
+            print('DEBUG: Organs image path: $path');
+            return path;
+          case 'glands':
+          case 'gland':
+            final path = 'assets/images/$animalType/glands.webp';
+            print('DEBUG: Glands image path: $path');
+            return path;
+          case 'connective tissue':
+            final path = 'assets/images/$animalType/connective_tissue.webp';
+            print('DEBUG: Connective tissue image path: $path');
+            return path;
           case 'sensory & external':
-            // All images are now .webp format
-            final sensoryPath = 'assets/images/$animalType/sensory';
-            return '$sensoryPath.webp'; // Will fallback to logo if not found
+          case 'sensory':
+            final path = 'assets/images/$animalType/sensory.webp';
+            print('DEBUG: Sensory image path: $path');
+            return path;
           case 'energy':
             // Animal-specific energy subcategories
             if (breadcrumbs.length > 2) {
               final energySubcat = _processImageFilename(breadcrumbs[2]);
-              return 'assets/images/$animalType/energy/$energySubcat.webp';
+              final path = 'assets/images/$animalType/energy/$energySubcat.webp';
+              print('DEBUG: Animal energy subcategory path: $path');
+              return path;
             }
-            return 'assets/images/$animalType/energy.webp';
+            final path = 'assets/images/$animalType/energy.webp';
+            print('DEBUG: Animal energy path: $path');
+            return path;
           default:
             // Try to find image based on subcategory name
             final subcatPath = _processImageFilename(subcategory);
-            return 'assets/images/$animalType/$subcatPath.webp';
+            final path = 'assets/images/$animalType/$subcatPath.webp';
+            print('DEBUG: Default subcategory path: $path');
+            return path;
         }
       }
       
       // Default animal image
-      return 'assets/images/$animalType.webp';
+      final defaultPath = 'assets/images/$animalType.webp';
+      print('DEBUG: Default animal image path: $defaultPath');
+      return defaultPath;
     }
     
     // Final fallback

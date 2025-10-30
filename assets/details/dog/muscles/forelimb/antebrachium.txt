@@ -1,0 +1,69 @@
+#Antebrachium Muscles#
+
+##Location##
+Located between the **elbow and carpus (wrist)**, forming the middle section of the forelimb.  
+These muscles control **flexion and extension** of the carpus and digits, and also assist in **rotation and stabilization** of the forearm.
+
+##Shape##
+Composed of **long, strap-like and tendinous muscles** arranged into **cranial (extensor)** and **caudal (flexor)** groups.  
+Their elongated tendons continue into the manus to control precise paw and claw movements.
+
+##Parts##
+
+###Cranial (Extensor) Group###
+
+###1. Extensor Carpi Radialis###
+- On the dorsolateral forearm.  
+- **Function:** Extends carpus and stabilizes wrist during movement.  
+
+###2. Common Digital Extensor###
+- Along dorsal midline of forearm.  
+- **Function:** Extends digits II–V and carpus.  
+
+###3. Lateral Digital Extensor###
+- Lateral to the common digital extensor.  
+- **Function:** Extends digits III–V independently.  
+
+###4. Ulnaris Lateralis###
+- On caudolateral forearm.  
+- **Function:** Extends or flexes carpus depending on position.  
+
+###5. Supinator###
+- Wraps around proximal radius.  
+- **Function:** Rotates paw laterally (supination).  
+
+---
+
+###Caudal (Flexor) Group###
+
+###6. Flexor Carpi Radialis###
+- Medial side of forearm.  
+- **Function:** Flexes carpus and stabilizes forelimb.  
+
+###7. Flexor Carpi Ulnaris###
+- Has humeral and ulnar heads.  
+- **Function:** Flexes carpus and supports weight.  
+
+###8. Superficial Digital Flexor###
+- Between carpal flexors.  
+- **Function:** Flexes proximal interphalangeal joints and carpus.  
+
+###9. Deep Digital Flexor###
+- Deepest layer, with three heads.  
+- **Function:** Flexes digits and retracts claws.  
+
+###10. Pronator Teres###
+- Medial side of elbow.  
+- **Function:** Rotates paw medially (pronation).  
+
+###11. Pronator Quadratus###
+- Flat muscle between radius and ulna.  
+- **Function:** Maintains pronation and stabilizes forearm.  
+
+---
+
+##Function##
+- **Extension:** Dorsal group extends carpus and digits.  
+- **Flexion:** Ventral group flexes carpus and digits.  
+- **Rotation:** Supinator and pronators rotate paw for grooming and coordination.  
+- **Stability:** Supports carpal and digital joints during movement.  

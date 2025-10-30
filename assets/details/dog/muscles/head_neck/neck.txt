@@ -1,50 +1,68 @@
 #Neck Muscles#
 
 ##Location##
-These muscles are found in the neck area, between the head and shoulders.
-They help dogs move their head and neck, swallow, breathe, and support the head’s weight.
+Situated along the **cervical region**, connecting the **head, shoulders, and thorax**.  
+These muscles provide essential support for **head and neck motion, posture, and coordination** during locomotion and communication.
 
 ##Shape##
-The neck muscles are made up of long, flat, and layered muscles.
-The outer muscles help move the head and shoulders, while the deeper ones keep the neck strong and stable.
+Composed of **elongated and layered muscles**, arranged to balance strength and flexibility.  
+They allow both fine head movement and strong extension for pulling or stabilizing actions.
 
 ##Parts##
+
 ###1. Brachiocephalicus###
-Long muscle that runs from the head and neck to the front leg.
-Function: Pulls the leg forward or bends the neck and head to the side.
+Long, strap-like muscle from the head and neck to the humerus.  
+- Pulls the forelimb forward  
+- Flexes the neck laterally when one side contracts  
+- Extends the shoulder joint
+
 ###2. Sternocephalicus###
-From the chest (sternum) to the head.
-Function: Bends the neck and turns the head to one side.
-###3. Sternohyoideus###
-From the chest to the base of the tongue.
-Function: Helps pull the tongue and throat backward when swallowing.
-###4. Sternothyroideus###
-Beside the sternohyoideus.
-Function: Helps move the throat and voice box (larynx) backward.
-###5. Omotransversarius###
-Runs from the shoulder to the top of the neck.
-Function: Pulls the front leg forward or turns the neck sideways.
+Runs from the sternum to the skull.  
+- Flexes the head and neck  
+- Assists in head turning
+
+###3. Splenius###
+Broad, flat dorsal neck muscle beneath the trapezius.  
+- Elevates and extends the head and neck  
+- Assists in lateral flexion
+
+###4. Semispinalis Capitis###
+Deep dorsal muscle connecting the upper thoracic vertebrae to the skull.  
+- Extends and stabilizes the neck  
+- Elevates the head
+
+###5. Longus Colli###
+Deep ventral muscle along the cervical vertebrae.  
+- Flexes the neck ventrally  
+- Stabilizes the vertebral column
+
 ###6. Trapezius (Cervical Part)###
-Large triangular muscle at the top of the neck and shoulders.
-Function: Lifts and moves the shoulder blade (scapula).
-###7. Splenius###
-Lies under the trapezius on the upper neck.
-Function: Raises and extends the head and neck, or bends them to one side.
-###8. Serratus Ventralis###
-Fan-shaped muscle connecting the neck and ribs to the shoulder blade.
-Function: Supports the body between the front legs and moves the shoulder.
-###9. Longus Colli###
-Deep muscle along the underside of the neck.
-Function: Bends the neck down and helps stabilize the spine.
-###10. Longus Capitis###
-Lies in front of the longus colli, connecting the neck to the skull.
-Function: Helps bend the head forward.
-###11. Scalenus###
-Connects the neck to the ribs.
-Function: Helps with breathing by lifting the ribs during inhaling.
+Superficial triangular muscle covering the neck.  
+- Elevates and advances the scapula  
+- Assists forelimb motion
+
+###7. Rhomboideus###
+Deep to trapezius, extending from the neck to the scapula.  
+- Elevates and rotates the scapula  
+- Stabilizes the shoulder
+
+###8. Omotransversarius###
+Narrow muscle between the atlas and scapula.  
+- Pulls the forelimb forward  
+- Flexes the neck laterally
+
+###9. Serratus Ventralis (Cervical Part)###
+Fan-shaped muscle linking cervical vertebrae to the scapula.  
+- Supports the trunk  
+- Raises the neck and stabilizes the shoulder
+
+###10. Nuchal Ligament###
+Elastic ligament from the skull to the thoracic vertebrae.  
+- Supports the head  
+- Allows passive head elevation with minimal effort
 
 ##Function##
-Moves the head and neck: Helps the dog look around or bend its head.
-Supports the head: Keeps the neck strong for balance and posture.
-Swallowing and breathing: Moves the throat and larynx for swallowing and helps with breathing.
-Moves the shoulders: Connects the neck to the front legs for coordinated movement.
+- Enables **flexion, extension, and lateral bending** of the neck  
+- Supports **head posture and motion** during activity  
+- Assists in **forelimb coordination and stabilization**  
+- Provides **balance and flexibility** during movement  

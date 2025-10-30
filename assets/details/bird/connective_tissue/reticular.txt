@@ -1,0 +1,26 @@
+#Reticular Connective Tissue#
+
+##Location##
+Forms the **framework (stroma)** of **lymphoid organs** such as the **spleen, thymus, and Bursa of Fabricius**, as well as **bone marrow** and parts of the **liver**.
+
+###Shape###
+Composed of **fine, branching reticular fibers** made of **type III collagen**, forming a supportive network that holds cells in place.
+
+##Parts##
+
+###1. Reticular Fibers###
+- Fine collagen strands forming a delicate mesh.  
+- **Function:** Provides internal scaffolding for organs.
+
+###2. Reticular Cells###
+- Specialized fibroblasts maintaining reticular fibers.  
+- **Function:** Support and regulate tissue structure.
+
+###3. Lymphoid Cells###
+- Lymphocytes, plasma cells, and macrophages residing within the mesh.  
+- **Function:** Immune defense and filtration.  
+
+##Function##
+- **Structural Support:** Maintains organ integrity and shape.  
+- **Cell Anchorage:** Provides a network for immune and blood cells.  
+- **Filtration:** Retains debris and microorganisms for immune removal.  

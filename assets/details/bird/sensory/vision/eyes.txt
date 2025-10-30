@@ -1,0 +1,41 @@
+#Eyes#
+
+##Location##
+Positioned on either side of the head within the **bony orbits**.  
+Large in proportion to skull size, providing a wide field of view.  
+In predatory birds, eyes are oriented more forward for enhanced depth perception.
+
+###Shape###
+Spherical to tubular, depending on species.  
+Raptors have **tubular eyes** for magnified distance vision, while songbirds have more rounded eyes for a broader field of view.
+
+##Parts##
+###1. Cornea###
+Transparent, curved front layer.  
+**Function:** Refracts and focuses incoming light.
+
+###2. Lens###
+Soft, spherical, and highly flexible.  
+**Function:** Adjusts shape to focus at varying distances.
+
+###3. Iris###
+Colored muscular ring surrounding the pupil.  
+**Function:** Controls light entry; color varies by species and age.
+
+###4. Retina###
+Inner sensory layer containing photoreceptors (rods and cones).  
+**Function:** Converts light into nerve signals sent to the brain.
+
+###5. Nictitating Membrane###
+Transparent third eyelid that moves horizontally across the eye.  
+**Function:** Protects and moistens the eye during flight, feeding, or dust exposure without obstructing vision.
+
+###6. Sclera###
+Tough outer layer forming the white of the eye, supported by bony **sclerotic rings**.  
+**Function:** Maintains eye shape and protects internal structures.
+
+##Function##
+- **Vision:** Provides high-resolution image detection and color perception.  
+- **Protection:** Shields eyes from debris and desiccation during flight.  
+- **Adaptation:** Eye structure varies with lifestyle (predator vs. prey).  
+- **Focus Adjustment:** Rapid accommodation for sharp distance and near vision.

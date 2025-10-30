@@ -1,0 +1,30 @@
+#Integumentary System – Glands (Cat)#
+
+##Location##
+Distributed within the dermis, connected to hair follicles and skin pores.
+
+##Shape##
+Microscopic glandular structures, each specialized for secretion or communication.
+
+##Parts##
+
+###1. Sebaceous Glands###
+- Small glands near hair follicles.  
+- **Function:** Produce sebum to lubricate and waterproof fur and skin.  
+
+###2. Sweat Glands###
+- Found primarily on paw pads.  
+- **Function:** Help with scent marking and minimal temperature control.  
+
+###3. Scent Glands###
+- Present on the face, tail base, and paws.  
+- **Function:** Release pheromones for marking and communication.  
+
+###4. Mammary Glands###
+- Located along the abdomen.  
+- **Function:** Produce milk for kittens.  
+
+##Function##
+- **Lubrication:** Keeps skin supple and fur healthy.  
+- **Communication:** Releases scent signals for identification and marking.  
+- **Protection:** Aids in defense and minor temperature regulation.  

@@ -1,14 +1,22 @@
 #Metacarpals#
 
 ##Location##
-Located between the carpus (knee) and the fetlock joint.  
-Consists of one large central bone (third metacarpal) and two smaller, vestigial bones on either side.
+Located between the carpus (knee) and the fetlock joint in the horse’s forelimb.  
+The metacarpal region forms the cannon area and provides the main structural support for the front limb.
 
-##Shape##
-- **Third Metacarpal (Cannon Bone):** large, cylindrical bone forming the main shaft of the lower limb.  
-- **Second and Fourth Metacarpals (Medial and Lateral Splint Bones):** slender rods attached to the sides of the cannon bone, tapering distally.
+###Parts###
+1. **Third Metacarpal (Cannon Bone)** – The largest and weight-bearing bone of the forelimb.  
+   Extends from the distal row of carpal bones to the proximal phalanx.  
+   Articulates proximally with the carpus and distally with the sesamoid bones and long pastern.  
+   Serves as the main shaft transmitting force during locomotion.
+
+2. **Second and Fourth Metacarpals (Splint Bones)** – Slender bones located on each side of the cannon bone.  
+   Run parallel to the cannon bone and taper toward the distal end.  
+   Provide lateral support and help stabilize the forelimb.  
+   Fuse partially with the cannon bone in mature horses.
 
 ##Function##
-Support the upper limb and transmit forces between the carpus and phalanges.  
-Provide attachment sites for ligaments, tendons, and the suspensory apparatus.  
-The cannon bone bears most of the weight, while the splint bones add lateral stability and serve as remnants of ancestral multiple digits.
+ Support and transfer weight from the upper limb to the lower limb.  
+ Provide attachment for suspensory ligaments and interosseous structures.  
+ Maintain limb alignment and absorb shock during movement.  
+ Contribute to stability and flexibility of the fetlock joint.

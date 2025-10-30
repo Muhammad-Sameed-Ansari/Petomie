@@ -1,0 +1,23 @@
+#Central Tarsal Bone#
+
+##Location##
+Located in the midsection of the tarsus (hock) between the talus and the distal row of tarsal bones.  
+In the cat, this bone forms the central connection between the upper and lower tarsal rows, contributing to flexibility and stability of the hindlimb.
+
+###Parts###
+1. **Dorsal Surface** – Articulates with the talus (tibial tarsal bone) above.  
+   Forms part of the proximal intertarsal joint.  
+   Supports limited flexion and extension during hock movement.
+
+2. **Plantar Surface** – Articulates with the second and third tarsal bones below.  
+   Helps distribute weight evenly through the tarsal arch.  
+   Provides attachment points for short ligaments that stabilize the joint.
+
+3. **Medial and Lateral Facets** – Smooth articular areas connecting to adjacent tarsal bones.  
+   Maintain alignment and prevent rotation within the joint.
+
+##Function##
+ Acts as a central stabilizing bone of the hock.  
+ Distributes pressure from the upper to the lower tarsal row.  
+ Allows smooth transfer of force during locomotion.  
+ Enhances joint flexibility and shock absorption during walking and jumping.

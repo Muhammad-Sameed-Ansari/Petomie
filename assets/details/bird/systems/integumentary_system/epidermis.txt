@@ -1,0 +1,28 @@
+#Integumentary System – Epidermis (Bird)#
+
+##Location##
+The epidermis forms the **outermost layer** of the bird’s skin, covering the entire body, legs, feet, and head.  
+It lies above the dermis and forms the base for feathers, scales, and beak coverings.
+
+##Shape##
+A **thin, keratinized layer** of epithelial cells that continuously renews.  
+Thicker in areas exposed to friction such as feet and thinner on wings and abdomen.
+
+##Parts##
+
+###1. Stratum Corneum###
+- Outermost layer of flattened keratinized cells.  
+- **Function:** Provides waterproof protection and reduces water loss.  
+
+###2. Stratum Basale###
+- Deep layer where new skin cells form.  
+- **Function:** Generates new cells and anchors feathers and scales.  
+
+###3. Keratinocytes###
+- Major cell type of the epidermis.  
+- **Function:** Produce keratin for feathers, scales, and beak.  
+
+##Function##
+- **Protection:** Shields the body from dehydration and injury.  
+- **Keratin production:** Forms feathers, scales, and beak coverings.  
+- **Regeneration:** Replaces old or damaged cells.  

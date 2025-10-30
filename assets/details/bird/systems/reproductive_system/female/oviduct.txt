@@ -1,0 +1,35 @@
+#Oviduct#
+
+##Location##
+Extends from the **ovary to the cloaca** along the left side of the abdominal cavity.  
+Highly coiled and suspended by a thin mesentery.
+
+###Shape###
+Long, muscular tube divided into **five distinct regions**, each with specialized glands and functions for egg formation.
+
+##Parts##
+###1. Infundibulum###
+Funnel-shaped opening near the ovary.  
+**Function:** Receives ovum; site of fertilization.
+
+###2. Magnum###
+Longest section of oviduct.  
+**Function:** Secretes albumen (egg white).
+
+###3. Isthmus###
+Narrow middle segment.  
+**Function:** Adds shell membranes around the egg.
+
+###4. Shell Gland (Uterus)###
+Thicker-walled portion near cloaca.  
+**Function:** Deposits calcium shell and pigments.
+
+###5. Vagina###
+Muscular terminal section.  
+**Function:** Expels egg into cloaca.
+
+##Function##
+- **Egg Formation:** Sequentially forms egg layers.  
+- **Transport:** Moves egg toward cloaca via peristaltic movement.  
+- **Fertilization:** Occurs in infundibulum before albumen is added.  
+- **Protection:** Coats ovum with multiple protective layers.

@@ -1,0 +1,33 @@
+#Femur#
+
+##Location##
+Located in the upper hindlimb, between the pelvis and the tibia.  
+The femur is the longest and strongest bone in the cat’s body, forming the thigh region.  
+It articulates proximally with the pelvis at the hip joint and distally with the tibia and patella at the stifle joint.
+
+###Parts###
+1. **Head** – Rounded upper portion that fits into the acetabulum of the pelvis.  
+   Forms the ball-and-socket hip joint, allowing multidirectional movement.  
+   Connected to the shaft by a narrow **neck**.
+
+2. **Greater Trochanter** – Large lateral projection near the head.  
+   Serves as the attachment site for gluteal muscles responsible for hindlimb extension and abduction.
+
+3. **Lesser Trochanter** – Small medial projection below the neck.  
+   Provides attachment for iliopsoas muscles that flex the hip.
+
+4. **Body (Shaft)** – Long, slightly curved central portion of the bone.  
+   Provides strength, supports muscle attachment, and transmits forces during motion.
+
+5. **Medial and Lateral Condyles** – Rounded distal prominences that articulate with the tibia.  
+   Form the stifle joint and allow flexion and extension of the hindlimb.
+
+6. **Trochlea of Femur** – Smooth groove between the condyles on the cranial surface.  
+   Guides the patella and ensures stable movement during limb extension.
+
+##Function##
+ Forms the structural foundation of the thigh.  
+ Supports major muscles involved in locomotion.  
+ Transfers weight from the pelvis to the lower limb.  
+ Enables flexion, extension, and rotation of the hindlimb.  
+ Provides leverage for jumping, running, and climbing.

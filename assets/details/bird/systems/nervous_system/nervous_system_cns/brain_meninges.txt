@@ -1,0 +1,31 @@
+#Brain Meninges and Cerebrospinal Fluid#
+
+##Location##
+Surround the **brain and spinal cord**, forming protective coverings within the cranial and vertebral cavities.
+
+###Shape###
+Three layered membranes enclosing cerebrospinal fluid (CSF) within subarachnoid spaces.  
+Adapted for lightweight protection suitable for avian skulls.
+
+##Parts##
+###1. Dura Mater###
+Tough outer fibrous layer attached to skull.  
+**Function:** Provides mechanical protection and structure.
+
+###2. Arachnoid Mater###
+Middle thin membrane forming CSF-filled space.  
+**Function:** Allows CSF circulation and shock absorption.
+
+###3. Pia Mater###
+Delicate inner layer adhering to brain and spinal surface.  
+**Function:** Supplies blood vessels and nutrients to nervous tissue.
+
+###4. Cerebrospinal Fluid (CSF)###
+Clear fluid circulating through ventricles and central canal.  
+**Function:** Cushions brain, maintains pressure, and removes waste.
+
+##Function##
+- **Protection:** Absorbs shocks during flight and movement.  
+- **Nutrition:** Delivers oxygen and nutrients to CNS tissue.  
+- **Waste Removal:** Clears metabolites and supports ionic balance.  
+- **Pressure Maintenance:** Keeps consistent intracranial environment.

@@ -1,0 +1,28 @@
+#Auditory Ossicles#
+
+##Location##
+Located within the middle ear cavity, enclosed by the temporal bone of the skull.  
+The auditory ossicles form a small chain of bones connecting the tympanic membrane (eardrum) to the oval window of the inner ear.  
+In horses, as in most mammals, there are **three auditory ossicles** that transmit and amplify sound vibrations.
+
+###Parts###
+1. **Malleus (Hammer)** – The largest and outermost ossicle, attached to the tympanic membrane.  
+   Receives sound vibrations from the eardrum and transfers them to the incus.  
+   Composed of a head, neck, and manubrium (handle) that anchors it to the membrane.  
+   Converts sound waves in air into mechanical vibrations.
+
+2. **Incus (Anvil)** – The middle bone positioned between the malleus and stapes.  
+   Functions as a lever that passes vibrations efficiently from the malleus to the stapes.  
+   Supported by small ligaments that maintain precise alignment for optimal sound conduction.
+
+3. **Stapes (Stirrup)** – The smallest and innermost bone, shaped like a stirrup.  
+   Its footplate fits into the oval window of the cochlea.  
+   Transmits vibrations into the inner ear fluid, initiating the process of hearing.  
+   Acts as a bridge between mechanical vibration and neural sound perception.
+
+##Function##
+ Transmits sound vibrations from the eardrum to the inner ear.  
+ Amplifies mechanical energy for efficient auditory transmission.  
+ Protects the delicate inner ear from excessive vibration via the acoustic reflex.  
+ Maintains sound clarity and frequency sensitivity.  
+ Enables conversion of air vibrations into fluid motion within the cochlea for auditory perception.

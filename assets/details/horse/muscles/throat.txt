@@ -1,26 +1,45 @@
 #Throat Muscles#
 
 ##Location##
-The throat muscles of the horse are located in the ventral and lateral regions of the neck, surrounding the pharynx, larynx, and hyoid apparatus.
-They connect the lower jaw, tongue, and larynx to the sternum and shoulder region, forming the muscular base of the throat.
+Located in the **upper neck and throat region**, connecting the **mouth, pharynx, larynx, and esophagus**.  
+These muscles form the walls of the **pharyngeal and laryngeal passages**, controlling **swallowing, breathing, and sound**.
 
 ##Shape##
-Composed of long strap-like muscles, narrow bands, and fan-shaped sheets.
-They form several layers—superficial, middle, and deep—encompassing the structures of the throat and upper airway.
+Made of **thin, layered muscles** that wrap around the **pharynx and larynx**, supported by the **hyoid apparatus**.  
+Most are **paired muscles**, working together to move the tongue, larynx, and soft palate during swallowing and vocalization.
 
-##Main Muscles##
-- Sternohyoideus: Extends from the sternum to the basihyoid bone; lies along the ventral midline of the neck.
-- Sternothyroideus: Runs parallel and lateral to the sternohyoideus, from the sternum to the thyroid cartilage of the larynx.
-- Omohyoideus: Extends from the shoulder fascia near the scapula to the basihyoid bone; separates the external jugular vein from the carotid artery.
-- Geniohyoideus: Located deep to the mandible, connecting the chin to the basihyoid bone; assists in swallowing.
-- Mylohyoideus: Thin, sheet-like muscle forming the floor of the mouth, connecting both sides of the mandible.
-- Hyoid Muscles (Group): Include several small muscles connecting the hyoid bones to the skull and larynx, stabilizing these structures during swallowing and vocalization.
-- Pharyngeal Constrictors (Cricopharyngeus, Thyropharyngeus, Hyopharyngeus): Encircle the pharynx; contract sequentially to push food into the esophagus.
-- Cricoarytenoideus Dorsalis: Controls the abduction of the arytenoid cartilages; vital for opening the airway during breathing.
+##Parts##
+
+###1. Pharyngeal Constrictor Muscles###
+- **Cricopharyngeus, Thyropharyngeus, Hyopharyngeus**  
+- Surround the pharynx in a circular arrangement.  
+- **Function:** Contract in sequence to push food from the pharynx into the esophagus during swallowing.
+
+###2. Palatine and Pterygopharyngeal Muscles###
+- Located near the **soft palate** and upper throat.  
+- **Function:** Lift and tense the soft palate, closing the nasal passage during swallowing.  
+
+###3. Hyoid Muscles###
+- Connect the **tongue, larynx, and skull** via the **hyoid bones**.  
+- Include **geniohyoideus, sternohyoideus, and thyrohyoideus**.  
+- **Function:** Move the larynx and tongue forward or backward to aid swallowing and breathing.  
+
+###4. Laryngeal Muscles###
+- Surround the **larynx (voice box)** and control the opening of the airway.  
+- Include **cricoarytenoideus dorsalis, cricoarytenoideus lateralis, thyroarytenoideus, and cricothyroideus**.  
+- **Function:** Open and close the airway, adjust the vocal cords, and protect the trachea during swallowing.  
+
+###5. Sternothyroideus###
+- Extends from the sternum to the thyroid cartilage of the larynx.  
+- **Function:** Draws the larynx backward after swallowing and helps in respiration.  
+
+###6. Cricothyroideus###
+- Between cricoid and thyroid cartilages.  
+- **Function:** Tenses the vocal cords to alter pitch and tone of vocal sounds.  
 
 ##Function##
-- Control movement of the larynx and pharynx during swallowing and breathing.
-- Stabilize and move the hyoid apparatus and tongue.
-- Protect the airway and regulate airflow to the lungs.
-- Support vocalization, chewing, and swallowing.
-- Maintain throat and neck posture and coordination during locomotion.
+- **Swallowing:** Moves food from the mouth to the esophagus in a coordinated wave.  
+- **Breathing:** Opens and stabilizes the airway during inhalation and exhalation.  
+- **Vocalization:** Controls vocal cords for neighing and other sounds.  
+- **Protection:** Prevents food from entering the airway.  
+- **Coordination:** Works with tongue and hyoid structures to synchronize swallowing and respiration.  

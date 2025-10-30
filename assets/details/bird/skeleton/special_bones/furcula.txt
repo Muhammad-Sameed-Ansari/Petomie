@@ -1,0 +1,28 @@
+#Furcula (Wishbone)#
+
+##Location##
+Located at the **front of the thorax**, between the two **coracoids** and above the **sternum**.  
+It connects to the **shoulder girdle** and forms part of the **avian flight apparatus**.
+
+###Shape###
+A **V-shaped bone** formed by the fusion of the two clavicles.  
+Elastic and spring-like, allowing movement and recoil during wingbeats.
+
+##Parts##
+
+###1. Clavicular Branches###
+- The two arms forming the “V.”  
+- **Function:** Connect the coracoids and transmit forces between the wings.  
+
+###2. Interclavicular Angle###
+- Point where the two arms meet ventrally.  
+- **Function:** Absorbs and releases energy during flight strokes.  
+
+###3. Hypocleidium###
+- Small median projection on the ventral end.  
+- **Function:** Connects to the sternum and strengthens the pectoral connection.  
+
+##Function##
+- **Flight Mechanics:** Acts as a spring to store and release energy during wingbeats.  
+- **Support:** Strengthens the shoulder girdle.  
+- **Protection:** Shields thoracic structures from excessive wing force.  

@@ -1,0 +1,27 @@
+#Spleen#
+
+##Location##
+Located between the **proventriculus** and **pancreas**, on the right side of the body near the duodenal loop.
+
+###Shape###
+Small, round to oval organ (red to dark brown) with smooth surface.  
+Lacks lobulation and is encased in a thin connective capsule.
+
+##Parts##
+###1. Capsule###
+Connective covering with blood vessels.  
+**Function:** Provides structural support.
+
+###2. White Pulp###
+Lymphoid tissue with immune cells.  
+**Function:** Filters blood and initiates immune responses.
+
+###3. Red Pulp###
+Contains red blood cells and macrophages.  
+**Function:** Removes aged erythrocytes and stores iron.
+
+##Function##
+- **Filtration:** Cleanses blood of debris and pathogens.  
+- **Immune Response:** Produces lymphocytes and antibodies.  
+- **Recycling:** Destroys old blood cells and recycles components.  
+- **Storage:** Serves as a reservoir for blood and immune cells.

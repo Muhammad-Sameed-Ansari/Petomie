@@ -1,16 +1,23 @@
-#Floating Rib#
+#Floating Ribs#
 
 ##Location##
-The 18th pair of ribs are the floating ribs, located at the lower end of the ribcage.  
-They attach to the last thoracic vertebra but do not connect to the sternum or other ribs.
+Located at the caudal (rear) end of the ribcage, posterior to the false ribs.  
+In horses, the **last pair of ribs (usually the 18th)** are considered floating ribs because they do not attach directly or indirectly to the sternum.  
+They are connected only to the thoracic vertebrae and terminate freely in the musculature of the flank.
 
-##Shape##
-Shorter, thinner, and more mobile than the other ribs.  
-They have a free lower end that lies within the flank area.  
-Their flexibility prevents injury to the abdomen during movement.
+###Parts###
+1. **Rib 18 (Floating Rib)** – The final and most caudal rib in the thoracic series.  
+   Connects dorsally to the 18th thoracic vertebra (T18) but has no ventral attachment to the sternum.  
+   Ends in the abdominal musculature, contributing to flexibility and flank movement.  
+   Provides protection for the posterior portion of the lungs and part of the abdominal organs.
+
+2. **Cartilaginous End (Costal Cartilage)** – Short and often reduced compared to the true ribs.  
+   Embedded in muscle rather than attaching to the sternum.  
+   Provides limited elasticity and allows movement during breathing and bending.
 
 ##Function##
-- Protects the upper abdominal organs near the flank area.  
-- Provides flexibility and range of motion at the caudal end of the ribcage.  
-- Allows the ribcage to expand and contract more freely.  
-- Supports muscle attachment for breathing and body movement.
+ Protects the posterior thoracic and upper abdominal organs.  
+ Provides flexibility to the rear part of the ribcage.  
+ Assists in expansion and contraction of the thoracic cavity during respiration.  
+ Serves as an attachment site for abdominal and intercostal muscles.  
+ Contributes to mobility of the flank region and aids in body flexibility during locomotion.

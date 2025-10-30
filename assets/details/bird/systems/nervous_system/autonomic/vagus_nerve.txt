@@ -1,0 +1,30 @@
+#Vagus Nerve (Cranial Nerve X)#
+
+##Location##
+Originates from the **medulla oblongata** and travels down both sides of the neck beside the **common carotid arteries**, continuing to thoracic and abdominal organs.
+
+###Shape###
+A long mixed (motor, sensory, and parasympathetic) nerve branching extensively through the thorax and abdomen.
+
+##Parts##
+###1. Cervical Branches###
+Supply neck muscles and glands.  
+**Function:** Assist in swallowing and vocalization.
+
+###2. Thoracic Branches###
+Form cardiac and pulmonary plexuses.  
+**Function:** Slow heart rate and regulate respiration.
+
+###3. Abdominal Branches###
+Reach the stomach, liver, and intestines.  
+**Function:** Stimulate digestion and peristalsis.
+
+###4. Recurrent Laryngeal Nerve###
+Loops around major arteries.  
+**Function:** Controls syrinx and vocal muscles for sound production.
+
+##Function##
+- **Parasympathetic Control:** Slows heart rate and promotes digestion.  
+- **Respiratory Regulation:** Coordinates breathing rhythm.  
+- **Digestive Activation:** Enhances glandular secretion and motility.  
+- **Vocal Function:** Innervates syrinx for vocalization.

@@ -1,0 +1,28 @@
+#Ceca (Paired Ceca)#
+
+##Location##
+Located at the **junction of the ileum and large intestine**.  
+Usually paired and positioned symmetrically on both sides.
+
+###Shape###
+Two elongated, blind-ended sacs varying in length and development among species.  
+Lined with lymphoid tissue and microbial flora.
+
+##Parts##
+###1. Openings###
+Connect ceca to the ileum.  
+**Function:** Allow entry of undigested material.
+
+###2. Lumen###
+Interior cavity containing bacteria.  
+**Function:** Site of microbial fermentation.
+
+###3. Lymphoid Tissue###
+Located in walls.  
+**Function:** Provides immune defense.
+
+##Function##
+- **Fermentation:** Breaks down cellulose and complex carbohydrates.  
+- **Absorption:** Reabsorbs water and nutrients.  
+- **Immunity:** Houses beneficial bacteria and immune cells.  
+- **Waste Processing:** Prepares material for excretion.

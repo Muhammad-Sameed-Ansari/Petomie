@@ -1,0 +1,18 @@
+#Central Tarsal – Avian Status#
+
+##Location##
+In mammals (e.g., cats), a **central tarsal** may be distinct.  
+In birds, **no separate central tarsal** exists in adults — it is **incorporated into the fused complexes** of the ankle region.
+
+###Shape###
+The would-be central element is **integrated** within:  
+- The **tibiotarsus** (proximal complex), or  
+- The **tarsometatarsus** (distal complex), depending on species-specific development.
+
+##Parts##
+- Not identifiable as a discrete bone in adult birds.  
+- Considered a **developmental component** of the fused tarsal mass.
+
+##Function##
+- **Structural Integration:** Contributes to joint surfaces and rigidity through fusion.  
+- **Adaptation:** Eliminating separate central elements reduces weight and simplifies the ankle for efficient locomotion.  

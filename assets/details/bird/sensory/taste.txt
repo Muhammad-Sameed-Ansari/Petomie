@@ -1,0 +1,33 @@
+#Taste Organs (Gustatory System)#
+
+##Location##
+Taste buds are located mainly on the **roof of the mouth (choanal region)**, **base of the oral cavity**, and along the **tongue margins** (species dependent).  
+Fewer in number than mammals, often clustered near areas contacting food during swallowing.
+
+###Shape###
+Microscopic **taste buds** embedded within the oral epithelium, forming small pits or pores that open to the surface.  
+Associated with gustatory nerve fibers from cranial nerves VII, IX.
+
+##Parts##
+###1. Taste Bud Pores###
+Openings on the mucosal surface.  
+**Function:** Allow dissolved chemicals to contact receptor cells.
+
+###2. Receptor (Gustatory) Cells###
+Specialized epithelial cells.  
+**Function:** Transduce chemical stimuli (sweet, salty, sour, bitter, umami) into nerve signals.
+
+###3. Supporting Cells###
+Surround receptor cells.  
+**Function:** Provide structural and metabolic support.
+
+##Function##
+- **Food Selection:** Distinguish palatable from harmful substances.  
+- **Nutrient Detection:** Sense salts, amino acids, and sugars for diet regulation.  
+- **Protective Reflexes:** Trigger rejection of bitter or toxic items.  
+- **Integration:** Work with tactile cues during feeding to guide swallowing.
+
+###Species Variation###
+Number and distribution of taste buds vary widely.  
+Waterfowl and chickens may have **hundreds**; parrots and pigeons often have fewer.  
+Some species rely more on vision and touch than taste.

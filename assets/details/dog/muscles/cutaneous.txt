@@ -1,40 +1,38 @@
-#Cutaneous Muscles#
+#Cutaneous Muscle#
 
 ##Location##
-Located beneath the skin across much of the trunk, neck, and limbs, forming a thin, mobile muscular layer between the skin and underlying fascia.
-These muscles are particularly well developed in dogs, enabling movement of the skin independent of the deeper body muscles.
+Situated within the **superficial fascia** just beneath the skin, covering the **neck, trunk, and limbs**.  
+Most developed along the **lateral thorax and abdomen**, with extensions to the **shoulder, flank, and thigh**.  
+In the dog, this muscle is particularly thick along the sides and used extensively for body shaking.
 
 ##Shape##
-Composed of flat, thin, sheet-like muscles closely attached to the dermis.
-The fibers run superficially and are continuous with the fascia of surrounding regions.
-In dogs, they are most developed over the neck, shoulders, and thorax, forming visible skin twitches when stimulated.
+A **broad, thin muscular sheet** of fine fibers interlaced with connective tissue.  
+It lies loosely over the deep fascia, allowing large skin movements.  
+Strongest over the **cutaneous trunci region** and thinner over limbs and dorsal areas.
 
 ##Parts##
-###1. Cutaneous Trunci (Panniculus Carnosus)###
-Broad sheet covering the lateral thorax and abdomen.
-Origin: fascia over the latissimus dorsi and trunk.
-Insertion: dermis of the skin on the body wall.
-Function: Moves the skin, assists in twitch reflex to repel insects, and supports thermoregulation by altering skin tension.
+
+###1. Cutaneous Trunci###
+- The largest part of the cutaneous system.  
+- Covers the sides of the thorax and abdomen.  
+- Extends forward to the shoulder and backward to the thigh.  
+- Attached to the fascia over the triceps and latissimus dorsi.  
+
 ###2. Cutaneous Colli###
-Thin muscle at the ventral neck.
-Origin: manubrium and fascia of the sternum.
-Insertion: fascia of the neck and shoulder.
-Function: Tenses the skin of the neck and draws it caudally.
+- Located on the ventral neck.  
+- Arises from the manubrium of the sternum and extends obliquely backward.  
+- Thicker in males; assists with ventral neck skin movement.  
+
 ###3. Cutaneous Omobrachialis###
-Extends over the shoulder and upper forelimb region.
-Function: Moves skin of the shoulder and aids in forelimb motion.
-###4. Platysma###
-Superficial muscle of the head and neck.
-Origin: fascia of the neck.
-Insertion: corners of the mouth and lips.
-Function: Retracts corners of the mouth and moves facial skin.
-###5. Cutaneous Maximus###
-Found along the lateral face and neck region.
-Function: Moves facial skin and lips, important in expression and communication.
+- Small muscle near the shoulder region.  
+- Connects the skin over the shoulder and upper limb.  
+
+###4. Facial Cutaneous Areas###
+- Small, superficial slips associated with skin over the lips, cheeks, and ears.  
+- Functionally linked with facial expression muscles.  
 
 ##Function##
-Skin movement: Allows independent motion of skin for defense and comfort (e.g., twitching).
-Protection: Assists in dislodging insects and external irritants.
-Communication: Enables subtle skin and facial expressions.
-Thermoregulation: Adjusts skin tension and surface area to assist heat exchange.
-Support: Maintains skin elasticity and tone.
+- Produces **skin twitching (panniculus reflex)** to repel insects or irritants.  
+- Enables **body shaking** to remove water or debris.  
+- Enhances **skin mobility** during movement and stretching.  
+- Assists with **thermoregulation** by increasing airflow over the skin.  

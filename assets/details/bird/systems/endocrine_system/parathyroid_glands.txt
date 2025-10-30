@@ -1,0 +1,22 @@
+#Parathyroid Glands#
+
+##Location##
+Small paired glands located near or embedded in the **thyroid glands**.  
+Sometimes found independently along the carotid arteries.
+
+###Shape###
+Tiny, flattened bodies composed of chief cells and connective tissue.
+
+##Parts##
+###1. Chief Cells###
+Main secretory cells.  
+**Function:** Produce parathyroid hormone (PTH).
+
+###2. Blood Capillaries###
+Dense vascular supply.  
+**Function:** Rapid hormone distribution.
+
+##Function##
+- **Calcium Regulation:** Increases calcium release from bones.  
+- **Phosphate Balance:** Promotes phosphate excretion via kidneys.  
+- **Bone Health:** Maintains mineral levels essential for muscle and nerve function.

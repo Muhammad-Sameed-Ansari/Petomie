@@ -1,0 +1,36 @@
+#Brain#
+
+##Location##
+Situated within the cranial cavity of the skull, the brain is securely enclosed by the cranial bones and protected by the meninges.  
+It connects to the spinal cord at the foramen magnum, forming the central hub of the horse’s nervous system.
+
+###Parts###
+1. **Cerebrum** – The largest region of the brain, divided into left and right hemispheres.  
+   Responsible for voluntary movement, sensory interpretation, memory, learning, and conscious thought.  
+   Controls decision-making, coordination of complex actions, and response to stimuli.
+
+2. **Cerebellum** – Located beneath the cerebrum at the back of the brain.  
+   Regulates balance, muscle coordination, fine motor control, and spatial awareness.  
+   Ensures smooth, precise movement during locomotion and posture adjustment.
+
+3. **Brainstem** – Comprises the midbrain, pons, and medulla oblongata.  
+   Acts as the communication link between the brain and spinal cord.  
+   Controls essential involuntary functions such as heart rate, breathing, swallowing, and reflexes.
+
+4. **Diencephalon** – Includes the thalamus and hypothalamus.  
+   The thalamus processes and relays sensory signals to the cerebrum.  
+   The hypothalamus regulates hunger, thirst, temperature, sleep, and endocrine functions through the pituitary gland.
+
+5. **Pituitary Gland** – Attached to the hypothalamus and known as the “master gland.”  
+   Releases hormones that control growth, metabolism, and reproductive cycles.
+
+6. **Olfactory Bulbs** – Located at the front of the brain, above the nasal cavity.  
+   Receive and process information about scents, vital for environmental recognition and social communication.
+
+##Function##
+, Coordinates all voluntary and involuntary bodily functions.  
+, Processes sensory input from vision, hearing, smell, taste, and touch.  
+, Regulates balance, posture, and movement precision.  
+, Controls vital systems such as respiration, heart rhythm, and digestion.  
+, Supports cognitive abilities, learning, memory, and emotional behavior.  
+, Integrates sensory data to create awareness of the environment and guide adaptive responses.

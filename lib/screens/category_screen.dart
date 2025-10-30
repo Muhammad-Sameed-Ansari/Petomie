@@ -247,7 +247,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
         if (hasContent) {
           // Load content and navigate to explanation screen
           final explanationText = await contentService.getExplanationText(category.id, fullBreadcrumbs);
-          final imagePath = contentService.getImagePath(category.id, fullBreadcrumbs);
+          
+          // Use category's predefined imagePath if available, otherwise generate one
+          final imagePath = category.imagePath ?? contentService.getImagePath(category.id, fullBreadcrumbs);
+          
+          print('DEBUG: CategoryScreen - Content loaded for ${category.label}');
+          print('DEBUG: CategoryScreen - Category has imagePath: ${category.imagePath != null}');
+          print('DEBUG: CategoryScreen - Final image path: $imagePath');
+          print('DEBUG: CategoryScreen - Explanation length: ${explanationText.length}');
           
           if (mounted && explanationText.isNotEmpty) {
             Navigator.of(context).push(

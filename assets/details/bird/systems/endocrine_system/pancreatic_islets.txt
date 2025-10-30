@@ -1,0 +1,26 @@
+#Pancreas (Endocrine Part – Islets of Langerhans)#
+
+##Location##
+Located within the **duodenal loop**, extending between the limbs of the duodenum.
+
+###Shape###
+Elongated, lobulated organ composed of both endocrine and exocrine tissue.  
+Endocrine cells form small clusters known as islets of Langerhans.
+
+##Parts##
+###1. Alpha Cells###
+Secrete glucagon.  
+**Function:** Raise blood glucose by stimulating glycogen breakdown.
+
+###2. Beta Cells###
+Secrete insulin.  
+**Function:** Lower blood glucose by promoting uptake into cells.
+
+###3. Delta Cells###
+Secrete somatostatin.  
+**Function:** Inhibit other pancreatic secretions.
+
+##Function##
+- **Glucose Regulation:** Balances blood sugar levels.  
+- **Energy Metabolism:** Supports sustained muscle activity.  
+- **Coordination:** Integrates with liver and adrenal glands for metabolic control.

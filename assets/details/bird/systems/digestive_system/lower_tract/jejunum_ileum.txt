@@ -1,0 +1,24 @@
+#Jejunum and Ileum#
+
+##Location##
+Extends from the **duodenum** to the **ceca**.  
+Suspended by the mesentery in the middle abdomen.
+
+###Shape###
+Long, coiled sections of small intestine with numerous villi and microvilli.  
+Folded mucosa increases surface area for nutrient absorption.
+
+##Parts##
+###1. Jejunum###
+Proximal portion with dense vascularization.  
+**Function:** Absorbs carbohydrates, proteins, and fats.
+
+###2. Ileum###
+Distal portion leading to the ceca.  
+**Function:** Absorbs remaining nutrients and bile salts.
+
+##Function##
+- **Absorption:** Main site of nutrient uptake.  
+- **Transport:** Moves digested material to large intestine.  
+- **Support:** Provides surface area for efficient digestion.  
+- **Integration:** Links upper and lower digestive systems.

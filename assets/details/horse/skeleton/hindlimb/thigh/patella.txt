@@ -1,0 +1,29 @@
+#Patella#
+
+##Location##
+Located at the front of the stifle joint in the hindlimb.  
+The patella is a large, triangular sesamoid bone embedded in the tendon of the quadriceps femoris muscle.  
+It lies between the femur and tibia, forming part of the stifle joint and acting as a protective and mechanical structure.
+
+###Parts###
+1. **Base** – The broad, proximal part of the bone.  
+   Provides attachment for the quadriceps tendon.  
+   Transmits muscle force from the thigh to the lower leg during limb extension.
+
+2. **Apex** – The pointed distal tip of the patella.  
+   Attaches to the middle patellar ligament, which connects to the tibial tuberosity.  
+   Plays a key role in the locking mechanism of the stifle.
+
+3. **Articular Surface** – Smooth posterior surface that articulates with the femoral trochlea.  
+   Covered by thick cartilage to reduce friction during movement.  
+   Guides the patella along the femur during flexion and extension.
+
+4. **Medial and Lateral Ridges** – Raised borders that help secure the patella within the trochlear groove.  
+   The medial ridge is involved in the passive locking mechanism of the stifle, unique to horses.
+
+##Function##
+ Protects the stifle joint and enhances limb movement efficiency.  
+ Acts as a fulcrum to increase the leverage of the quadriceps muscle.  
+ Facilitates extension of the hindlimb and enables the stay apparatus for standing at rest.  
+ Provides stability and reduces friction during locomotion.  
+ Plays an essential role in the horse’s ability to lock the hindlimb when standing.

@@ -1,0 +1,28 @@
+#Phalanges (Toe Bones)#
+
+##Location##
+Form the **distal part of the hindlimb**, extending from the **tarsometatarsus** to the **claws or nails**.  
+They compose the **toes (digits)** used for perching, walking, or grasping.
+
+###Shape###
+Small, jointed bones forming a series of segments within each digit.  
+The number and length of phalanges vary depending on the bird’s lifestyle (perching, raptorial, aquatic, etc.).
+
+##Parts##
+
+###1. Proximal Phalanges###
+- Articulate with the tarsometatarsus.  
+- **Function:** Provide strength for toe flexion.  
+
+###2. Middle Phalanges###
+- Intermediate bones between proximal and distal segments.  
+- **Function:** Add flexibility and range of motion.  
+
+###3. Distal Phalanges###
+- Terminal bones supporting the claws or talons.  
+- **Function:** Allow grasping, perching, or catching prey.  
+
+##Function##
+- **Locomotion:** Enable walking, perching, or grasping.  
+- **Balance:** Maintain stability during movement or rest.  
+- **Adaptation:** Shape and number vary according to species’ habits (e.g., raptors vs. perching birds).  

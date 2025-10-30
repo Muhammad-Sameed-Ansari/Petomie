@@ -1,0 +1,32 @@
+#Tibiotarsus#
+
+##Location##
+Located in the **lower leg** of the bird, between the **femur** (above) and the **tarsometatarsus** (below).  
+It forms the **main weight-bearing bone** of the hindlimb and connects the knee joint to the hock joint.
+
+###Shape###
+A **long, strong, and slightly curved bone** formed by the fusion of the **tibia** and **proximal tarsal bones**.  
+This fusion makes the bone lightweight yet durable, ideal for supporting perching, walking, or landing.
+
+##Parts##
+
+###1. Proximal End###
+- Articulates with the femur at the knee joint.  
+- **Function:** Supports flexion and extension at the knee.  
+
+###2. Shaft###
+- Long and cylindrical with a nutrient foramen for blood supply.  
+- **Function:** Provides attachment for leg muscles and tendons.  
+
+###3. Distal End###
+- Expanded area that connects to the tarsometatarsus.  
+- **Function:** Forms the upper part of the hock joint, allowing smooth movement.  
+
+###4. Cnemial Crests###
+- Bony ridges near the proximal end.  
+- **Function:** Anchor points for strong extensor muscles of the leg.  
+
+##Function##
+- **Support:** Primary bone for weight-bearing and leg stability.  
+- **Locomotion:** Facilitates walking, running, and landing by transmitting muscle forces.  
+- **Adaptation:** Fused design enhances strength without increasing mass, crucial for flight.  

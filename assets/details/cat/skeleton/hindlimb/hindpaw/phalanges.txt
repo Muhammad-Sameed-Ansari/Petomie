@@ -1,0 +1,23 @@
+#Phalanges#
+
+##Location##
+Form the digits (toes) of the hindlimb, extending from the metatarsals to the claws.  
+Each digit contains three phalanges, except the first, which has two.
+
+###Parts###
+1. **Proximal Phalanx** – The first bone of each toe.  
+   Articulates with the corresponding metatarsal bone.  
+   Provides attachment for flexor tendons enabling toe movement.
+
+2. **Middle Phalanx** – The intermediate bone between proximal and distal phalanges.  
+   Shorter and smaller, allowing fine control of toe motion.
+
+3. **Distal Phalanx** – The terminal bone forming the core of the claw.  
+   Curved and sharp, covered by the keratinized claw sheath.  
+   Supports the retractable claw mechanism controlled by digital flexor and extensor tendons.
+
+##Function##
+ Enable precise control and retraction of claws.  
+ Assist in walking, climbing, and grasping.  
+ Provide flexibility and grip for agile movement.  
+ Bear weight and absorb impact during locomotion.

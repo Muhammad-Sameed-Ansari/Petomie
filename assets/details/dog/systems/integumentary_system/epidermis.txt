@@ -1,0 +1,28 @@
+#Integumentary System – Epidermis (Dog)#
+
+##Location##
+The epidermis forms the **outermost layer** of the dog’s skin and covers the entire body surface.  
+It lies above the dermis and provides the first line of defense against environmental factors.
+
+##Shape##
+A **thin, flexible sheet** of keratinized epithelial cells.  
+It varies in thickness, being thicker on paw pads and nose, and thinner on areas such as the abdomen.
+
+##Parts##
+
+###1. Stratum Corneum###
+- Outermost layer made of dead, keratinized cells.  
+- **Function:** Provides a waterproof and protective barrier.  
+
+###2. Stratum Basale###
+- Deepest epidermal layer where new skin cells are produced.  
+- **Function:** Regenerates the epidermis and forms the basis of skin healing.  
+
+###3. Melanocytes###
+- Specialized pigment-producing cells.  
+- **Function:** Produce melanin that protects against UV light and defines coat color.  
+
+##Function##
+- **Protection:** Shields body from injury, dehydration, and infection.  
+- **Barrier:** Prevents water loss and entry of harmful agents.  
+- **Pigmentation:** Regulates coloration and UV protection.  

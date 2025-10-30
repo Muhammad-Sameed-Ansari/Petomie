@@ -1,28 +1,28 @@
 #Testes#
 
 ##Location##
-Situated within the scrotum, a small sac of skin located behind the penis.
-They hang outside the body to maintain a slightly cooler temperature, which supports healthy sperm production.
+Located within the **scrotum**, a pouch of skin positioned between the hind legs and behind the penis.  
+Each testis is suspended by the **spermatic cord**, which contains blood vessels, nerves, and the vas deferens.
 
 ###Shape###
-Smooth, oval organs covered by a thin protective membrane.
-Each testis is roughly the size of a walnut in a medium-sized dog.
+**Oval, smooth, and firm structures** enclosed in a fibrous capsule known as the **tunica albuginea**.  
+Internally divided into lobules containing seminiferous tubules.
 
 ##Parts##
 
-###1. Outer Cover (Tunica)###
-Protective connective tissue layer surrounding the testis.
+###1. Seminiferous Tubules###
+Highly coiled tubes responsible for **sperm production (spermatogenesis)**.
 
-###2. Seminiferous Tubules###
-Microscopic coiled tubes where sperm cells are produced.
+###2. Interstitial Cells (Leydig Cells)###
+Located between the seminiferous tubules and produce **testosterone**.
 
-###3. Rete Testis###
-Network of channels that collect and transport sperm from the seminiferous tubules.
+###3. Tunica Albuginea###
+A dense connective tissue capsule that encloses and protects the testis.
 
-###4. Blood Vessels and Supporting Tissue###
-Provide nutrients, oxygen, and hormonal exchange for testicular function.
+###4. Mediastinum Testis###
+The central connective structure that supports blood vessels and ducts within the testis.
 
-##Function##
-Produce and store sperm cells for reproduction.
-Secrete testosterone, the primary male hormone that influences fertility, behavior, and physical traits.
-Maintain optimal temperature for sperm production through the cooling mechanism of the scrotum.
+###Function###
+Produce **sperm cells** for reproduction.  
+Secrete **testosterone**, which regulates male sexual characteristics and behavior.  
+Maintain an optimal temperature for sperm development via the **scrotal positioning** and thermoregulatory mechanisms.

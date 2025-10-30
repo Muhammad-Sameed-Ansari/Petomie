@@ -1,0 +1,23 @@
+#Adrenal Glands#
+
+##Location##
+Paired glands located **anterior to the kidneys**, embedded in surrounding fat tissue.
+
+###Shape###
+Flattened, yellowish organs composed of two functional regions—cortex and medulla.  
+Highly vascular and irregular in outline.
+
+##Parts##
+###1. Cortex###
+Outer layer producing corticosteroids.  
+**Function:** Regulates metabolism, stress response, and electrolyte balance.
+
+###2. Medulla###
+Inner region producing catecholamines (adrenaline, noradrenaline).  
+**Function:** Controls fight-or-flight reactions.
+
+##Function##
+- **Stress Response:** Releases hormones for flight and alertness.  
+- **Metabolism:** Regulates carbohydrate and protein metabolism.  
+- **Osmoregulation:** Maintains salt and water balance.  
+- **Energy Mobilization:** Supports endurance and thermoregulation during flight.

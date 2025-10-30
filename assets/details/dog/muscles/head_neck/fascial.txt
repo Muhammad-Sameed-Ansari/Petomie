@@ -1,48 +1,67 @@
-#Facial Muscles#
+#Facial Expression Muscles#
 
 ##Location##
-These muscles are found around the eyes, mouth, nose, and ears.
-They are attached to the skin instead of bone, which allows dogs to make facial expressions, move their lips and ears, and control blinking and whisker movement.
+Found around the **eyes, nose, mouth, and ears**, attached mainly to the skin and superficial fascia.  
+These muscles enable **facial movement and communication**, reflecting emotional and sensory responses.
 
 ##Shape##
-They are thin, flat, and delicate muscles that sit just under the skin.
-They work together to create expressions, help with communication, and support basic actions like blinking, chewing, and sniffing.
+Consist of **thin, flat, and finely controlled muscles** arranged around facial openings and features.  
+They provide expressive mobility for eyelids, lips, nostrils, and ears.
 
 ##Parts##
-###1. Orbicularis Oris###
-Encircles the mouth.
-Function: Closes the lips and helps control mouth movements for eating, barking, and licking.
-###2. Buccinator###
-Found in the cheek area.
-Function: Keeps food inside the mouth while chewing and helps move it toward the teeth.
+
+###1. Orbicularis Oculi###
+Encircles the eyes.  
+- Closes eyelids and assists blinking  
+- Protects and moistens the eyes
+
+###2. Levator Nasolabialis###
+Runs along the nose toward the upper lip.  
+- Elevates the lip  
+- Dilates the nostrils for breathing or alertness
+
 ###3. Zygomaticus###
-Runs from the cheekbone to the corner of the mouth.
-Function: Pulls the lips backward and upward, helping form expressions and smiles.
-###4. Levator Nasolabialis###
-From the forehead to the upper lip and nose.
-Function: Raises the upper lip and widens the nostrils.
-###5. Orbicularis Oculi###
-Surrounds the eye.
-Function: Closes the eyelids for blinking and protecting the eye.
-###6. Frontalis###
-Located on the forehead.
-Function: Moves the skin above the eyes and helps raise the eyebrows.
-###7. Platysma###
-Large thin sheet over the side of the neck and lower face.
-Function: Pulls the corners of the mouth back and tightens facial skin.
-###8. Retractor Anguli Oculi Lateralis###
-Runs behind the eye.
-Function: Pulls the corner of the eyelid outward to protect the eye.
-###9. Parotidoauricularis###
-Extends from the ear to the neck.
-Function: Moves the ear backward.
-###10. Zygomaticoauricularis & Frontoscutularis###
-Small ear muscles near the top of the head.
-Function: Move the ears forward, backward, and sideways to detect sounds.
+From zygomatic arch to mouth corners.  
+- Retracts lips and corners of mouth  
+- Aids in producing “smiling” expressions
+
+###4. Buccinator###
+Forms the cheek wall.  
+- Keeps food between teeth during chewing  
+- Controls cheek tension
+
+###5. Orbicularis Oris###
+Encircles the lips.  
+- Closes the mouth and controls lip shape  
+- Important for barking and licking
+
+###6. Platysma###
+Superficial sheet over the lateral face and neck.  
+- Retracts lips and mouth corners  
+- Expresses tension or fear
+
+###7. Frontalis###
+On the forehead region.  
+- Moves skin above eyes  
+- Contributes to ear movement
+
+###8. Mentalis###
+Located on the chin.  
+- Moves the lower lip and chin skin  
+- Expresses discomfort or curiosity
+
+###9. Auricular Muscles###
+Surround ears and control ear movement.  
+- Rotate and tilt ears for sound localization  
+- Express alertness or submission
+
+###10. Vibrissal Muscles###
+Around muzzle and upper lip.  
+- Move whiskers for sensory input  
+- Aid in spatial awareness and tactile exploration
 
 ##Function##
-Expression: Allows dogs to show emotions like happiness, curiosity, or alertness.
-Eating & drinking: Moves lips, cheeks, and mouth during chewing and swallowing.
-Protection: Helps blink and close eyes to protect against dust or injury.
-Communication: Moves ears and lips for body language and social signals.
-Sensation: Helps control whiskers, which sense objects and movement around the face.
+- Allow **communication through expression**  
+- Assist **feeding, grooming, and vocalization**  
+- Move **whiskers and ears** for sensory awareness  
+- Control **eye and lip motion** for protection and emotion  

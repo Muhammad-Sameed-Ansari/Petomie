@@ -1,48 +1,45 @@
 #Throat Muscles#
 
 ##Location##
-These muscles are found in the front of the neck, around the throat, voice box (larynx), and upper part of the windpipe (trachea).
-They control swallowing, breathing, and vocal sounds and help support the tongue and airway.
+Located in the **neck and upper throat region**, connecting the **mouth, pharynx, larynx, and esophagus**.  
+These muscles surround the **airway and food passage**, controlling **swallowing, breathing, and vocalization**.
 
 ##Shape##
-They are thin, flat, and strap-like muscles that connect the chest, jaw, and throat.
-Some lie on the surface, while others sit deeper around the larynx and pharynx (throat cavity).
+Made of **small paired muscles** arranged in layers around the **pharynx (throat)** and **larynx (voice box)**.  
+They are mostly thin, strap-like, or circular, forming a coordinated muscular tube that moves food and controls airflow.
 
 ##Parts##
-###1. Sternohyoideus###
-Runs from the chest bone (sternum) to the base of the tongue (hyoid bone).
-Function: Pulls the tongue and larynx backward during swallowing.
-###2. Sternothyroideus###
-Lies beside the sternohyoideus.
-Function: Pulls the larynx backward and helps protect the airway during swallowing.
-###3. Thyrohyoideus###
-Connects the voice box (thyroid cartilage) to the hyoid bone.
-Function: Shortens the space between the larynx and hyoid to help with swallowing.
-###4. Mylohyoideus###
-Forms the floor of the mouth.
-Function: Lifts the floor of the mouth and tongue when swallowing.
-###5. Geniohyoideus###
-Lies beneath the tongue.
-Function: Pulls the hyoid bone and larynx forward to help food pass through the throat.
-###6. Omohyoideus###
-Thin muscle from the shoulder area to the hyoid.
-Function: Moves the hyoid and throat backward and helps stabilize the neck during swallowing.
-###7. Cricothyroideus###
-On the surface of the larynx.
-Function: Tightens the vocal cords and helps control sound and pitch.
-###8. Cricoarytenoideus Dorsalis###
-Located at the back of the larynx.
-Function: Opens the airway by pulling the vocal cords apart for breathing.
-###9. Cricoarytenoideus Lateralis###
-On the side of the larynx.
-Function: Closes the airway when swallowing or barking.
-###10. Thyroarytenoideus###
-Forms part of the vocal folds.
-Function: Adjusts tension in the vocal cords to fine-tune the dog’s bark or growl.
+
+###1. Pharyngeal Constrictor Muscles###
+- **Cricopharyngeus, Thyropharyngeus, Hyopharyngeus**  
+- Form the outer wall of the pharynx.  
+- **Function:** Contract in sequence to push food from the throat into the esophagus during swallowing.
+
+###2. Palatine and Pterygopharyngeal Muscles###
+- Located near the soft palate and upper pharynx.  
+- **Function:** Raise or tense the soft palate and help close the nasal passage when swallowing.  
+
+###3. Hyoid Muscles###
+- Connect the **tongue, larynx, and base of skull** via the hyoid bones.  
+- Include **geniohyoideus, sternohyoideus, and thyrohyoideus**.  
+- **Function:** Move the tongue and larynx forward or backward during swallowing and breathing.  
+
+###4. Laryngeal Muscles###
+- Surround the **larynx (voice box)**.  
+- Include **cricoarytenoideus dorsalis, cricoarytenoideus lateralis, thyroarytenoideus, and cricothyroideus**.  
+- **Function:** Open and close the airway, adjust vocal cords for breathing and barking.  
+
+###5. Sternothyroideus###
+- Extends from sternum to thyroid cartilage of the larynx.  
+- **Function:** Pulls larynx backward after swallowing.  
+
+###6. Cricothyroideus###
+- Connects cricoid and thyroid cartilages.  
+- **Function:** Tenses the vocal cords, adjusting pitch of sound.  
 
 ##Function##
-Swallowing: Moves the tongue, throat, and larynx to guide food safely into the esophagus.
-Breathing: Controls how open or closed the airway is.
-Vocalization: Adjusts and tightens the vocal cords to make sounds.
-Protection: Prevents food or water from entering the lungs.
-Support: Keeps the throat stable when the dog moves its head or neck.
+- **Swallowing:** Moves food from mouth to esophagus safely.  
+- **Airway Control:** Opens or closes the larynx during breathing and prevents choking.  
+- **Vocalization:** Adjusts vocal cords for barking and growling.  
+- **Protection:** Closes airway during swallowing to prevent food from entering lungs.  
+- **Coordination:** Works together with tongue and soft palate for smooth breathing and eating.  

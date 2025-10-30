@@ -1,0 +1,37 @@
+#Brachium Muscles#
+
+##Location##
+Situated between the **shoulder and elbow**, surrounding the **humerus**.  
+These muscles control **flexion and extension of the elbow joint**.
+
+##Shape##
+Long, cylindrical muscles organized into **cranial (flexor)** and **caudal (extensor)** groups.
+
+##Parts##
+
+###Cranial (Flexor) Group###
+
+###1. Biceps Brachii###
+- Large muscle on cranial humerus.  
+- **Function:** Extends shoulder and flexes elbow; stabilizes limb during stance.  
+
+###2. Brachialis###
+- Lies lateral to biceps brachii.  
+- **Function:** Flexes elbow and assists with limb folding during movement.  
+
+---
+
+###Caudal (Extensor) Group###
+
+###3. Triceps Brachii###
+- Composed of long, lateral, and medial heads.  
+- **Function:** Extends elbow and supports body weight during stance.  
+
+###4. Tensor Fasciae Antebrachii###
+- Lies medial to triceps.  
+- **Function:** Extends elbow and tightens antebrachial fascia.  
+
+##Function##
+- **Flexion:** Achieved by biceps and brachialis.  
+- **Extension:** Controlled by triceps and tensor fasciae.  
+- **Stabilization:** Maintains elbow alignment during motion and weight-bearing.  

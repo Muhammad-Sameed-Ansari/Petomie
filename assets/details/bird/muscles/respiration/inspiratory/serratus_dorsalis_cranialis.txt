@@ -1,0 +1,20 @@
+#Serratus Dorsalis Cranialis – Avian (Inspiratory)#
+
+##Location##
+Dorsolateral thorax, arising from thoracolumbar fascia and inserting on the cranial ribs.
+
+###Shape###
+Fan-shaped slips running caudoventrally onto the 1st–several cranial ribs.
+
+##Parts##
+
+###1. Cranial Rib Slips###
+- Individual digitations to ribs 1–4 (species variable).  
+- **Function:** Elevate cranial ribs for thoracic expansion.
+
+###2. Fascia Origin###
+- From dorsal thoracolumbar fascia.  
+- **Function:** Transmits dorsal trunk forces to the rib cage during inspiration.
+
+##Function##
+Elevates cranial ribs and increases thoracic volume, supporting inspiratory airflow into the air sacs.

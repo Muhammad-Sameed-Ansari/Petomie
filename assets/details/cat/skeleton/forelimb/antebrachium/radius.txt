@@ -1,0 +1,24 @@
+#Radius#
+
+##Location##
+Located in the forelimb between the elbow (humerus) above and the carpus (wrist) below.  
+The radius is the main weight-bearing bone of the forearm, forming the structural axis for motion and strength.
+
+###Parts###
+1. **Proximal End** – Upper section articulating with the humerus at the elbow joint.  
+   Includes the **head of the radius**, which fits into the capitulum of the humerus, and the **radial tuberosity**, an attachment for the biceps brachii muscle.
+
+2. **Body (Shaft)** – Long, slightly curved central portion of the bone.  
+   Provides attachment for forearm muscles and supports stability during limb motion.  
+   Lies closely beside the ulna, allowing limited rotation for precise limb movement.
+
+3. **Distal End** – Lower section articulating with the carpal bones.  
+   Contains the **styloid process**, which anchors ligaments of the wrist and ensures joint stability.  
+   Forms the major part of the radiocarpal joint.
+
+##Function##
+ Acts as the primary support bone of the forearm.  
+ Enables flexion, extension, and rotation of the forelimb.  
+ Provides attachment for muscles controlling the paw and elbow.  
+ Transmits force from the upper limb to the wrist.  
+ Stabilizes the forearm during walking, climbing, and jumping.

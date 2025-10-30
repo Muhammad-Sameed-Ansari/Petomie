@@ -1,0 +1,22 @@
+#Fibula#
+
+##Location##
+Located along the lateral side of the tibia in the lower hindlimb.  
+The fibula is a slender, partially fused bone extending from the stifle to the hock region.  
+In horses, the fibula is reduced in size compared to other species, serving primarily as a stabilizing structure.
+
+###Parts###
+1. **Head of Fibula** – Proximal end articulating with the lateral condyle of the tibia.  
+   Provides attachment for ligaments of the stifle joint.
+
+2. **Body (Shaft)** – The midsection of the fibula is thin and incomplete in horses.  
+   Fused with the tibia for most of its length, contributing to limb stability.
+
+3. **Distal End (Lateral Malleolus)** – Small, separate piece near the hock joint.  
+   Articulates with the calcaneus and lateral tarsal bones, adding lateral reinforcement.
+
+##Function##
+ Provides minor structural support to the tibia.  
+ Contributes to stability of the stifle and hock joints.  
+ Serves as an attachment site for lateral muscles and ligaments.  
+ Assists in maintaining balance and alignment of the lower hindlimb.

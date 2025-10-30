@@ -1,0 +1,32 @@
+#Facial Expression Muscles – Avian#
+
+##Location##
+Located in the integument of the avian face around the eyelids, rictal commissures, cere, and periorbital region. These superficial muscles act on soft tissues rather than extensive facial musculature as in mammals.
+
+###Components###
+Eyelid movers, nictitating membrane muscles, and rictal/commissural controllers.
+
+##Parts##
+
+###1. Orbicularis Oculi###
+- Circular fibers surrounding the eyelid margins.  
+- **Function:** Closes the palpebrae and protects the cornea.
+
+###2. Levator Palpebrae Superioris###
+- Dorsal orbit to the upper eyelid.  
+- **Function:** Elevates the upper eyelid to widen the palpebral fissure.
+
+###3. Depressor Palpebrae Inferioris###
+- Ventral orbit to the lower eyelid.  
+- **Function:** Lowers the lower eyelid.
+
+###4. Quadratus (or Pyramidalis) Membranae Nictitantis###
+- Posterior orbit to the nictitating membrane.  
+- **Function:** Sweeps the nictitating membrane across the cornea for protection and moistening.
+
+###5. Rictalis/Commissuralis Group###
+- Small muscles at the beak commissures.  
+- **Function:** Adjust the rictal opening and soft tissues for feeding, tactile exploration, and displays.
+
+##Function##
+Control eyelid movements and the nictitating membrane, and shape the rictal commissures. Provide limited but purposeful facial adjustments for protection, feeding, sensory modulation, and social signaling.

@@ -1,0 +1,32 @@
+#Sympathetic Chain#
+
+##Location##
+Runs along both sides of the **vertebral column**, extending from the neck to the cloacal region.  
+Closely associated with spinal nerves and blood vessels.
+
+###Shape###
+A longitudinal chain of **ganglia** connected by interganglionic fibers.  
+Prominent near the cervical, thoracic, and abdominal regions.
+
+##Parts##
+###1. Cervical Ganglia###
+Include superior, middle, and inferior cervical ganglia.  
+**Function:** Supply head, neck, and heart with sympathetic fibers.
+
+###2. Thoracic Ganglia###
+Located near ribs and lungs.  
+**Function:** Regulate heart rate, bronchodilation, and flight muscle blood flow.
+
+###3. Abdominal Ganglia###
+Distributed around kidneys and intestines.  
+**Function:** Control vasoconstriction and glandular secretion.
+
+###4. Interganglionic Fibers###
+Connect ganglia in a continuous chain.  
+**Function:** Coordinate signals along the trunk.
+
+##Function##
+- **Flight Response:** Increases heart rate and respiration.  
+- **Circulation Control:** Diverts blood to muscles during activity.  
+- **Thermoregulation:** Adjusts feather and skin blood flow.  
+- **Coordination:** Synchronizes visceral organ responses to stress.

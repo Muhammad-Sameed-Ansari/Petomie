@@ -1,0 +1,64 @@
+#Antebrachium Muscles#
+
+##Location##
+Located between the **elbow and carpus (knee)**, forming the middle portion of the forelimb.  
+These muscles manage **flexion, extension, and rotation** of the carpus and digits.
+
+##Shape##
+Composed of **long, spindle-shaped muscles** with extended tendons reaching the carpus and hoof.  
+Divided into **cranial (extensor)** and **caudal (flexor)** groups.
+
+##Parts##
+
+###Cranial (Extensor) Group###
+
+###1. Extensor Carpi Radialis###
+- On the dorsolateral forearm.  
+- **Function:** Extends carpus and stabilizes the knee joint.  
+
+###2. Common Digital Extensor###
+- Central dorsal muscle.  
+- **Function:** Extends digits and assists carpal extension.  
+
+###3. Lateral Digital Extensor###
+- Lateral to the common extensor.  
+- **Function:** Extends digit IV and aids in carpal stability.  
+
+###4. Ulnaris Lateralis###
+- Caudolateral surface of forearm.  
+- **Function:** Flexes carpus and supports stability during stance.  
+
+###5. Supinator###
+- Proximal forearm region.  
+- **Function:** Rotates forelimb laterally; assists in stabilization.  
+
+---
+
+###Caudal (Flexor) Group###
+
+###6. Flexor Carpi Radialis###
+- Medial forearm surface.  
+- **Function:** Flexes carpus and maintains stability during motion.  
+
+###7. Flexor Carpi Ulnaris###
+- Has humeral and ulnar heads.  
+- **Function:** Flexes carpus and aids load absorption.  
+
+###8. Superficial Digital Flexor###
+- Lies between carpal flexors.  
+- **Function:** Flexes digits and supports fetlock joint.  
+
+###9. Deep Digital Flexor###
+- Deepest muscle with three heads.  
+- **Function:** Flexes all phalangeal joints and supports hoof mechanics.  
+
+###10. Pronator Teres###
+- Small muscle near elbow.  
+- **Function:** Rotates forearm medially (limited in horse).  
+
+---
+
+##Function##
+- **Extension:** Achieved by cranial muscles to advance limb.  
+- **Flexion:** Caudal muscles flex carpus and digits during stance.  
+- **Support:** Stabilize joints and control impact during locomotion.  

@@ -1,14 +1,34 @@
 #Hyoid Apparatus#
 
 ##Location##
-Located in the throat region, suspended between the skull and larynx. Supports the tongue, larynx, and pharynx, aiding in swallowing and vocalization.
+Located in the throat region, suspended between the mandible and the larynx.  
+The hyoid apparatus supports the tongue, pharynx, and larynx, allowing coordinated movements for swallowing, vocalization, and breathing.  
+It consists of several small bones connected by cartilage and joints.
 
-##Shape##
-A chain-like series of small paired bones connected by cartilage, forming a U-shaped structure.
+###Parts###
+1. **Basihyoid Bone** – The central, unpaired bone of the apparatus.  
+   Positioned transversely between the mandibular rami.  
+   Serves as the anchor point for other hyoid bones and supports the base of the tongue.
 
-##Parts##
-Basihyoid – Central unpaired bone forming the base of the apparatus, located on the midline.
-Thyrohyoid – Paired bones connecting the basihyoid to the thyroid cartilage of the larynx.
-Ceratohyoid – Paired bones connecting basihyoid to epihyoid.
-Epihyoid – Small paired bones linking ceratohyoid to stylohyoid.
-Stylohyoid – Long paired bones extending dorsally to the temporal bone, anchoring the hyoid to the skull.
+2. **Thyrohyoid Bones (2)** – Paired bones extending caudally from the basihyoid toward the larynx.  
+   Connect to the thyroid cartilage and stabilize the larynx during swallowing and vocalization.
+
+3. **Ceratohyoid Bones (2)** – Connect the basihyoid with the epihyoid.  
+   Provide linkage between the central and upper elements, allowing flexibility for tongue and laryngeal motion.
+
+4. **Epihyoid Bones (2)** – Small slender bones connecting the ceratohyoid and stylohyoid bones.  
+   Serve as part of the flexible bridge within the apparatus.
+
+5. **Stylohyoid Bones (2)** – The longest and most dorsal elements.  
+   Extend upward and backward to attach near the skull’s tympanohyoid cartilage.  
+   Support the tongue and larynx and assist in swallowing motion.
+
+6. **Tympanohyoid Cartilage** – Connective segment linking the stylohyoid bone to the temporal bone.  
+   Acts as a flexible attachment to the skull, permitting limited movement.
+
+##Function##
+ Supports the tongue, larynx, and pharynx.  
+ Provides structural alignment for swallowing, vocalization, and respiration.  
+ Serves as an anchor for muscles controlling tongue and throat movements.  
+ Allows flexible yet stable articulation between the mouth and throat structures.  
+ Contributes to coordinated actions during eating, drinking, and barking.

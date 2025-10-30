@@ -1,0 +1,29 @@
+#Enteric Plexuses (Intrinsic Gut Nervous System)#
+
+##Location##
+Embedded in the **walls of the digestive tract** from the esophagus to the cloaca.  
+Most prominent in the **gizzard, intestines, and cloacal region**.
+
+###Shape###
+Two main interconnected networks of nerve cells and fibers within the intestinal wall:  
+- **Myenteric (Auerbach’s) Plexus** – between muscle layers  
+- **Submucosal (Meissner’s) Plexus** – beneath mucosal lining
+
+##Parts##
+###1. Myenteric Plexus###
+Located between circular and longitudinal muscle layers.  
+**Function:** Controls peristaltic movements and gut motility.
+
+###2. Submucosal Plexus###
+Situated beneath mucosal lining.  
+**Function:** Regulates secretion and local blood flow.
+
+###3. Interneurons and Ganglia###
+Small clusters linking local reflex arcs.  
+**Function:** Coordinate digestion without central input.
+
+##Function##
+- **Autonomous Control:** Manages digestion independently of CNS.  
+- **Peristalsis:** Generates rhythmic contractions for food propulsion.  
+- **Secretion:** Controls mucus and enzyme release.  
+- **Integration:** Communicates with vagus and sympathetic nerves for overall digestive harmony.

@@ -1,13 +1,46 @@
-#Mastication#
+#Mastication Muscles#
 
 ##Location##
-Muscles of mastication are located on the sides of the face and skull, surrounding the mandible, zygomatic arch, and temporal region. They connect the lower jaw to the skull and are highly developed in the horse due to the grinding motion required for fibrous feed.
+Located around the **jaw, cheeks, and temporal region**, connecting the **mandible to the skull**.  
+They are responsible for **chewing, grinding, and jaw stabilization** during feeding.
 
 ##Shape##
-Composed of large, powerful paired muscles including the masseter, temporalis, and pterygoid muscles. The masseter is thick and rectangular along the jaw angle, the temporalis is fan-shaped on the temporal fossa, and the pterygoids are deep and rounded within the pterygoid fossa.
+Composed of **large, strong, and layered muscles** adapted for side-to-side grinding motions typical of herbivores.
+
+##Parts##
+
+###1. Masseter###
+Large muscle on the cheek’s lateral surface.  
+- Origin: zygomatic arch  
+- Insertion: lateral mandible  
+- **Function:** Closes jaw, moves it side-to-side, and provides chewing force  
+
+###2. Temporalis###
+Covers the temporal region.  
+- Origin: temporal fossa  
+- Insertion: coronoid process of mandible  
+- **Function:** Elevates and retracts the jaw  
+
+###3. Medial Pterygoid###
+Inside the mandible.  
+- Origin: pterygoid fossa  
+- Insertion: medial mandible  
+- **Function:** Elevates and moves jaw laterally  
+
+###4. Lateral Pterygoid###
+Deep, small muscle.  
+- Origin: sphenoid bone  
+- Insertion: mandibular neck and joint capsule  
+- **Function:** Moves jaw forward and side-to-side  
+
+###5. Digastricus###
+Located ventrally along the jaw.  
+- Origin: occipital region  
+- Insertion: mandible  
+- **Function:** Opens mouth by lowering mandible  
 
 ##Function##
-Enable chewing and grinding of food through elevation, depression, and lateral movement of the mandible
-Provide strong bite force to break down coarse plant material
-Assist in stabilizing the temporomandibular joint during mastication
-Coordinate with tongue and cheek muscles for efficient feed processing
+- Performs **grinding and chewing motions** for plant material  
+- Controls **jaw elevation, depression, and lateral movement**  
+- Maintains **jaw stability during chewing**  
+- Coordinates with **tongue and facial muscles** for effective feeding  

@@ -1,0 +1,28 @@
+#Lymph Vessels#
+
+##Location##
+Distributed throughout the body, paralleling veins and capillaries.  
+Present in the **skin, muscles, viscera, and mesenteries**, connecting to lymph hearts and veins.
+
+###Shape###
+Thin-walled transparent tubes equipped with **valves** that prevent backflow.  
+Lack the distinct nodes found in mammals but form extensive drainage networks.
+
+##Parts##
+###1. Superficial Lymph Vessels###
+Located under the skin.  
+**Function:** Drain tissue fluid from surface regions.
+
+###2. Deep Lymph Vessels###
+Surround internal organs and muscles.  
+**Function:** Collect interstitial fluid and metabolic waste.
+
+###3. Valves###
+Internal flaps ensuring one-way flow.  
+**Function:** Maintain lymph direction toward veins.
+
+##Function##
+- **Fluid Balance:** Returns excess tissue fluid to venous circulation.  
+- **Transport:** Carries immune cells and proteins.  
+- **Support:** Works with lymph hearts to sustain steady lymph flow.  
+- **Immunity:** Distributes immune factors from lymphoid tissues.

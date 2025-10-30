@@ -1,0 +1,35 @@
+#Sensory Receptors#
+
+##Location##
+Distributed throughout the **skin, feathers, muscles, eyes, ears, beak, and internal organs**.  
+Concentrated in wings, head, and feet for flight and balance control.
+
+###Shape###
+Specialized nerve endings or sensory cells adapted to detect specific stimuli such as light, vibration, or pressure.
+
+##Parts##
+###1. Visual Receptors###
+Located in the retina of the eye.  
+**Function:** Detect light and color; provide acute vision for flight navigation.
+
+###2. Auditory and Vestibular Receptors###
+In the inner ear (cochlea and semicircular canals).  
+**Function:** Detect sound and maintain balance and spatial orientation.
+
+###3. Tactile Receptors###
+In skin, beak, and tongue (Herbst and Grandry corpuscles).  
+**Function:** Detect touch, vibration, and pressure during feeding and perching.
+
+###4. Proprioceptors###
+Within muscles and tendons.  
+**Function:** Sense body and wing position for balance and flight control.
+
+###5. Visceral Receptors###
+Embedded in internal organs.  
+**Function:** Monitor stretch, pressure, and chemical conditions.
+
+##Function##
+- **Sensory Detection:** Transmit information about environment and body state.  
+- **Flight Adjustment:** Enable precise control of wing and tail movement.  
+- **Balance Maintenance:** Integrate visual and vestibular input.  
+- **Environmental Awareness:** Guide navigation, feeding, and communication.

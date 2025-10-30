@@ -1,0 +1,28 @@
+#Diffuse Lymphoid Tissue#
+
+##Location##
+Scattered throughout the **digestive, respiratory, and integumentary systems**.  
+Most abundant in **intestinal mucosa (Peyer's patches)**, **trachea**, and **skin**.
+
+###Shape###
+Irregular clusters or nodules of lymphocytes within connective tissue layers.  
+May appear as organized follicles or diffuse accumulations.
+
+##Parts##
+###1. Mucosal Lymphoid Tissue###
+In intestines and respiratory tracts.  
+**Function:** Detects and responds to antigens entering via food or air.
+
+###2. Cutaneous Lymphoid Clusters###
+Found in skin and feather follicles.  
+**Function:** Local defense and wound protection.
+
+###3. Associated Follicles###
+Around cloaca and pharynx.  
+**Function:** Coordinate immune surveillance.
+
+##Function##
+- **Local Immunity:** Provides first-line defense at body surfaces.  
+- **Detection:** Triggers immune responses to pathogens.  
+- **Communication:** Links innate and adaptive immunity.  
+- **Maintenance:** Ensures ongoing immune readiness in adult birds.

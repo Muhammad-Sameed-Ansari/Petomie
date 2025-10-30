@@ -1,24 +1,26 @@
 #Uterine Tubes (Oviducts)#
 
 ##Location##
-Paired tubular structures extending from each ovary to the uterine horns, positioned within the dorsal region of the abdominal cavity.
-Each tube is partially enclosed by the mesosalpinx, a fold of the broad ligament that supports and stabilizes it.
+Extend from the **ovaries** (within the ovarian bursa) to the **uterine horns** in the cranial abdomen.  
+Each tube lies in the **broad ligament**.
 
 ###Shape###
-Delicate, slender tubes with smooth muscular walls and a fine inner lining that helps guide the egg toward the uterus.
+**Narrow, coiled tubes** lined with ciliated epithelium.  
+Composed of **infundibulum**, **ampulla**, and **isthmus**.
 
 ##Parts##
 
 ###1. Infundibulum###
-A funnel-shaped, fringed (fimbriae) opening near the ovary that captures the ovulated oocyte.
+A **funnel‑shaped opening** with **fimbriae** that captures the ovulated oocyte from the ovarian bursa.
 
 ###2. Ampulla###
-The wider middle section where fertilization usually occurs. Its inner surface is lined with cilia to help move the egg.
+The **wider middle segment**; usual **site of fertilization**.  
+Secretion and cilia support gametes and early embryo.
 
 ###3. Isthmus###
-The narrow lower section that connects to the uterine horn, guiding the fertilized egg into the uterus.
+The **narrow distal segment** that transports the embryo to the uterine horn.
 
-##Function##
-Transports oocytes from the ovaries to the uterus.
-Provides the site for fertilization between egg and sperm.
-Secretes nourishing fluids that support gametes and early embryo development during their passage.
+###Function###
+Capture the **oocyte** at ovulation.  
+Provide the **site for fertilization** and early embryonic support.  
+Transport the fertilized egg to the **uterine horn** via ciliary action and gentle muscular contractions.

@@ -1,0 +1,23 @@
+#Sphenoid Bone#
+
+##Location##
+Complex bone at the base of the skull between the occipital and ethmoid bones.  
+Forms a central part of the cranial floor.
+
+###Parts###
+1. **Body** – Central section forming part of the cranial base; may contain sphenoid sinus.  
+   Supports the brain above.
+
+2. **Greater Wings** – Extend laterally to form part of the skull wall.  
+   Contain foramina for cranial nerves and vessels.
+
+3. **Pterygoid Processes** – Descend ventrally; attachment for pterygoid muscles.  
+   Involved in jaw movement mechanics.
+
+4. **Optic Canal** – Passage for the optic nerve from the brain to the orbit.  
+   Critical for vision pathways.
+
+##Function##
+ Supports basal brain structures and transmits cranial nerves.  
+ Provides muscle attachment for jaw and palate function.  
+ Contributes to cranial stability and orbital boundaries.

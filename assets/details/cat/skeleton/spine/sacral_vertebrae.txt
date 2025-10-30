@@ -1,0 +1,22 @@
+#Sacral Vertebrae#
+
+##Location##
+Located between the lumbar and caudal (tail) vertebrae, forming the sacrum.  
+Cats typically have **3 sacral vertebrae (S1–S3)**, fused into a single structure that connects the spine to the pelvis.
+
+###Parts###
+1. **S1** – The first sacral vertebra, articulating with the last lumbar vertebra (L7).  
+   Forms the sacroiliac joint with the pelvis.  
+   Transmits weight from the spine to the hind limbs.
+
+2. **S2** – Middle portion of the sacrum.  
+   Provides attachment for pelvic ligaments and muscles of the hindquarters.
+
+3. **S3** – Posterior portion articulating with the first caudal vertebra (Cd1).  
+   Marks the transition between the sacrum and tail.
+
+##Function##
+ Connects the spine to the pelvis.  
+ Transfers body weight to the hind limbs.  
+ Stabilizes the pelvis during locomotion.  
+ Supports the hindquarters and tail movement.

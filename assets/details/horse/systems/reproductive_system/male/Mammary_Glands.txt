@@ -1,7 +1,7 @@
 #Mammary Glands (Stallion)#
 
 ##Location##
-Located on the ventral surface of the abdomen between the forelimbs and groin area, similar in position to the mare’s glands.  
+Located on the **ventral surface** of the abdomen between the forelimbs and groin area, similar in position to the mare’s glands.  
 Stallions typically have **two small, undeveloped mammary glands** with small, nonfunctional teats.
 
 ###Shape###
@@ -19,7 +19,7 @@ Two small, nonfunctional teats located near the sheath area.
 ###3. Duct System###
 Minimal or absent; no active glandular secretion.
 
-##Function##
+###Function###
 No reproductive or lactational function.  
 Remain hormonally inactive under normal testosterone levels.  
 Occasionally respond to hormonal imbalance with slight enlargement.  

@@ -1,0 +1,33 @@
+#Pectoral Muscles – Avian#
+
+##Location##
+Occupy the ventral thoracic region of the bird, attaching the sternum, keel, and coracoid to the humerus. Form the major flight muscle mass on the chest and ventral wing base.
+
+###Components###
+Large, powerful muscles responsible for wing depression, elevation, and stabilization during flight.
+
+##Parts##
+
+###1. M. Pectoralis Major###
+- Broad, triangular muscle covering the ventral thorax; originates from the keel and sternum and inserts on the deltopectoral crest of the humerus.  
+- **Function:** Produces the powerful downstroke of the wing during flight.
+
+###2. M. Supracoracoideus###
+- Lies deep to the pectoralis; originates from the sternum and passes dorsally through the triosseal canal to the humerus.  
+- **Function:** Elevates and rotates the wing upward during the upstroke (acts via a pulley mechanism).
+
+###3. M. Subcoracoideus###
+- Small muscle beneath the coracoid.  
+- **Function:** Stabilizes the shoulder joint during flight and assists in humeral rotation.
+
+###4. M. Sternocoracoideus###
+- From sternum to coracoid.  
+- **Function:** Draws the coracoid medially, stabilizing the pectoral girdle during wing movement.
+
+###5. M. Coracobrachialis###
+- Arises from the coracoid and inserts on the humerus.  
+- **Function:** Supports the shoulder joint and limits excessive humeral motion.
+
+##Function##
+Generate the primary forces for the wing’s power stroke (downstroke) and recovery stroke (upstroke).  
+Provide stabilization of the pectoral girdle and shoulder joint during flight, takeoff, and landing.

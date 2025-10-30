@@ -1,0 +1,38 @@
+#Hindlimb Muscles – Hip & Thigh (Avian)#
+
+##Location##
+Located between the pelvis and the knee joint, surrounding the femur and articulating with the ilium, ischium, and pubis. These muscles form the main mass of the avian hindlimb.
+
+###Components###
+Comprise extensors and flexors of the hip and knee, abductors, adductors, and rotators, contributing to walking, perching, and takeoff power.
+
+##Parts##
+
+###1. M. Iliotibialis Lateralis###
+- From ilium to tibia.  
+- **Function:** Extends the knee and stabilizes the thigh during stance and locomotion.
+
+###2. M. Femorotibialis (lateralis, medialis, intermedius)###
+- From femur to tibial crest.  
+- **Function:** Primary extensor of the knee joint; supports propulsion during walking and takeoff.
+
+###3. M. Caudofemoralis###
+- From caudal vertebrae to femur.  
+- **Function:** Retracts the thigh and assists in limb extension.
+
+###4. M. Obturatorius (externus and internus)###
+- Around the obturator foramen.  
+- **Function:** Rotates the femur laterally and stabilizes the hip joint.
+
+###5. M. Puboischiofemoralis###
+- From pubis and ischium to femur.  
+- **Function:** Flexes and adducts the thigh.
+
+###6. M. Iliotrochantericus###
+- From ilium to greater trochanter of the femur.  
+- **Function:** Flexes the thigh and stabilizes the hip during flight or landing.
+
+##Function##
+Extend, flex, and rotate the hip and knee joints.  
+Provide power for takeoff, walking, perching, and controlled landing.  
+Maintain posture and balance by stabilizing the pelvis and femur.

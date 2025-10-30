@@ -1,0 +1,32 @@
+#Hyoid Apparatus#
+
+##Location##
+Located on the **ventral side of the skull**, extending from the **base of the tongue** backward along the **floor of the oropharynx** and into the **neck region**.  
+The hyoid apparatus supports the **tongue and larynx**, and its elongated structure varies among species depending on feeding behavior.
+
+###Shape###
+Composed of **slender, paired rods and central elements** that may be elongated or curved.  
+In some birds (e.g., woodpeckers), the hyoid extends far behind the skull for specialized tongue projection.
+
+##Parts##
+
+###1. Basihyal###
+- Central anchor bone at the base of the tongue.  
+- **Function:** Provides attachment for tongue muscles.  
+
+###2. Ceratobranchials###
+- Paired rods extending laterally from the basihyal.  
+- **Function:** Support the sides of the tongue and laryngeal structure.  
+
+###3. Epibranchials###
+- Continue from the ceratobranchials posteriorly.  
+- **Function:** Extend beneath or around the skull, aiding in tongue retraction.  
+
+###4. Urohyal###
+- Median posterior element connected to the trachea.  
+- **Function:** Assists in larynx movement and swallowing.  
+
+##Function##
+- **Tongue Support:** Provides a firm base for tongue muscles.  
+- **Feeding Adaptation:** Enables specialized tongue extension and retraction.  
+- **Respiratory Assistance:** Coordinates tongue and larynx movement during breathing and vocalization.  

@@ -1,0 +1,28 @@
+#Optic Nerve#
+
+##Location##
+Emerges from the **posterior surface of the eyeball**, extending toward the **optic lobes** of the midbrain.  
+Crosses at the **optic chiasm**, where fibers partially decussate (cross over).
+
+###Shape###
+Thick, cylindrical bundle of nerve fibers covered by a myelin sheath.  
+Adapted for rapid impulse transmission.
+
+##Parts##
+###1. Retinal Ganglion Fibers###
+Axons originating from retinal neurons.  
+**Function:** Transmit visual signals from retina to brain.
+
+###2. Optic Chiasm###
+Junction where optic nerves from both eyes meet and partially cross.  
+**Function:** Enables binocular integration and depth perception.
+
+###3. Optic Tract###
+Continues from chiasm to optic lobes.  
+**Function:** Delivers visual information for processing.
+
+##Function##
+- **Signal Transmission:** Carries visual impulses from eyes to brain.  
+- **Image Integration:** Allows comparison of input from both eyes.  
+- **Coordination:** Facilitates reflexes and movement responses to visual stimuli.  
+- **Processing Link:** Connects directly to large optic lobes in birds for rapid response.

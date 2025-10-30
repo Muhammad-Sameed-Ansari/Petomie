@@ -1,0 +1,22 @@
+#Ultimobranchial Glands#
+
+##Location##
+Located near the **thyroid glands** or embedded in the wall of large blood vessels in the neck.
+
+###Shape###
+Small, pale oval glands distinct from the thyroid.  
+Composed of calcitonin-secreting cells arranged in clusters.
+
+##Parts##
+###1. Parafollicular (C) Cells###
+Hormone-secreting cells.  
+**Function:** Produce calcitonin to lower blood calcium levels.
+
+###2. Connective Capsule###
+Surrounds and protects the gland.  
+**Function:** Maintains structural integrity.
+
+##Function##
+- **Calcium Homeostasis:** Reduces blood calcium concentration.  
+- **Bone Regulation:** Counteracts parathyroid hormone activity.  
+- **Specialization:** Unique gland in birds for fine-tuned calcium control.

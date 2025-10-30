@@ -1,0 +1,56 @@
+#Shoulder Muscles#
+
+##Location##
+Located around the **scapular region**, connecting the **neck, thorax, and humerus**.  
+These muscles stabilize the shoulder joint and move the forelimb during locomotion.
+
+##Shape##
+Composed of **broad, strong muscles** surrounding the scapula.  
+Divided into **extrinsic (connecting limb to body)** and **intrinsic (within shoulder)** muscle groups.
+
+##Parts##
+
+###Extrinsic Muscles###
+
+###1. Trapezius###
+- Divided into cervical and thoracic parts.  
+- **Function:** Elevates and advances the scapula; aids in forelimb movement.  
+
+###2. Rhomboideus###
+- Lies deep to the trapezius.  
+- **Function:** Draws scapula upward and forward; maintains trunk stability.  
+
+###3. Serratus Ventralis###
+- Large, fan-shaped muscle connecting scapula to thorax.  
+- **Function:** Suspends trunk between forelimbs and supports weight-bearing.  
+
+###4. Omotransversarius###
+- Narrow muscle from atlas to scapular spine.  
+- **Function:** Advances limb and flexes neck laterally.  
+
+###Intrinsic Muscles###
+
+###5. Supraspinatus###
+- Fills supraspinous fossa of scapula.  
+- **Function:** Extends shoulder and stabilizes scapulohumeral joint.  
+
+###6. Infraspinatus###
+- Occupies infraspinous fossa.  
+- **Function:** Flexes shoulder and prevents excessive medial rotation.  
+
+###7. Subscapularis###
+- Medial surface of scapula.  
+- **Function:** Adducts and stabilizes shoulder joint.  
+
+###8. Teres Major###
+- Caudal border of scapula.  
+- **Function:** Flexes shoulder and rotates humerus medially.  
+
+###9. Deltoideus###
+- Covers lateral shoulder.  
+- **Function:** Flexes shoulder and assists abduction.  
+
+##Function##
+- **Support:** Maintain shoulder stability and trunk suspension.  
+- **Movement:** Enable limb protraction, retraction, and rotation.  
+- **Coordination:** Absorb impact and align shoulder joint during motion.  

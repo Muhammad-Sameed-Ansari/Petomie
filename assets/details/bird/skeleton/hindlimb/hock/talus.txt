@@ -1,0 +1,25 @@
+#Talus (Astragalus) – Avian Equivalent#
+
+##Location##
+In birds, the **talus (astragalus)** is not a separate bone.  
+It is **fused to the proximal tibia** early in development to form the **tibiotarsus** (upper ankle/leg bone).  
+Functionally contributes to the **knee-to-hock linkage**, with the ankle joint occurring between the **tibiotarsus (proximal)** and **tarsometatarsus (distal)**.
+
+###Shape###
+Exists as part of the **proximal tarsal complex** incorporated into the tibiotarsus.  
+Appears as **articular surfaces and ridges** rather than a free-standing bone.
+
+##Parts##
+
+###1. Proximal Tarsal Ossification###
+- Fused into the tibial epiphysis.  
+- **Function:** Forms part of the smooth joint surfaces for flexion/extension.
+
+###2. Tibial Condyles & Crests (Related Structures)###
+- Adjacent bony features of the tibiotarsus.  
+- **Function:** Provide attachment for ligaments and guide ankle motion.
+
+##Function##
+- **Joint Formation:** Contributes to the proximal side of the **intertarsal (hock) joint**.  
+- **Stability:** Fusion reduces bone count while maintaining strength for perching and landing.  
+- **Efficiency:** Lightens the limb, an adaptation for flight.  

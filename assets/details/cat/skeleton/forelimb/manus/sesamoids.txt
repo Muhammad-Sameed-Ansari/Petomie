@@ -1,0 +1,22 @@
+#Sesamoid Bones#
+
+##Location##
+Small bones embedded within tendons near the joints of the forelimb, particularly around the wrist and digits.  
+They assist in reducing friction and increasing tendon leverage.
+
+###Parts###
+1. **Palmar Sesamoids (at Metacarpophalangeal Joints)** – Located on the palmar surface at the base of each toe.  
+   Paired bones that protect tendons as they pass over the joints.  
+   Aid in distributing stress during flexion.
+
+2. **Dorsal Sesamoids** – Smaller sesamoid bones found on the dorsal aspect of the digits.  
+   Help guide tendons and provide balance during extension.
+
+3. **Sesamoid of the Abductor Pollicis Longus** – Found near the first digit (dewclaw).  
+   Enhances leverage for thumb movement and stability.
+
+##Function##
+ Increase mechanical efficiency of tendons.  
+ Reduce friction and wear during flexion and extension.  
+ Stabilize the joints and assist in smooth limb movement.  
+ Support precise paw motion during climbing and landing.

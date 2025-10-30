@@ -1,0 +1,35 @@
+#Capillaries#
+
+##Location##
+Capillaries are **tiny blood vessels** found throughout the entire body.  
+They form a network that connects **arteries** (which carry blood away from the heart) with **veins** (which return blood to the heart).  
+They are especially dense in tissues that need a lot of oxygen, such as the **lungs, muscles, kidneys, and brain**.
+
+##Shape##
+Capillaries are **microscopic, thin-walled tubes** — only one cell thick.  
+Their delicate walls allow oxygen, nutrients, and waste to move easily between blood and body tissues.
+
+##Parts##
+
+###1. Arterioles###
+- The smallest branches of arteries.  
+- **Function:** Deliver oxygenated blood into capillaries and control blood pressure in tissues.  
+
+###2. Venules###
+- Small vessels that connect capillaries to veins.  
+- **Function:** Collect deoxygenated blood and carry it back toward the heart.  
+
+###3. Capillary Beds###
+- Networks of many capillaries within a tissue.  
+- **Function:** Provide oxygen and nutrients to cells while collecting carbon dioxide and waste.  
+
+###4. Endothelial Cells###
+- The single layer of cells forming the capillary wall.  
+- **Function:** Allow exchange of gases, nutrients, and waste between blood and tissues.  
+
+##Function##
+- **Gas exchange:** Deliver oxygen to tissues and remove carbon dioxide.  
+- **Nutrient delivery:** Supply nutrients, hormones, and water to body cells.  
+- **Waste removal:** Carry away waste products for excretion.  
+- **Temperature regulation:** Expand or contract to control heat loss.  
+- **Balance:** Maintain fluid exchange between blood and tissues.  

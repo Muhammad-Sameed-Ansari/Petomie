@@ -1,0 +1,20 @@
+#Serratus Dorsalis Caudalis – Avian (Expiratory)#
+
+##Location##
+Dorsolateral thorax, arising from thoracolumbar fascia and inserting on caudal ribs.
+
+###Shape###
+Oblique slips running cranioventrally to ribs in the caudal thorax.
+
+##Parts##
+
+###1. Caudal Rib Slips###
+- Digitations to ribs in the caudal half of the cage.  
+- **Function:** Draw ribs caudally to reduce thoracic volume.
+
+###2. Dorsal Fascia Origin###
+- From thoracolumbar fascia.  
+- **Function:** Anchors muscle for effective rib retraction.
+
+##Function##
+Retracts caudal ribs to assist active expiration and air‑sac compression.

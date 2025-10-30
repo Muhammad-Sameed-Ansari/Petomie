@@ -1,0 +1,22 @@
+#Sesamoid Bones#
+
+##Location##
+Small bones embedded within tendons at major joint regions.  
+In the cat’s hindlimb, sesamoid bones are found around the stifle, hock, and digits, serving to improve tendon efficiency and protect joints.
+
+###Parts###
+1. **Patella (Kneecap)** – The largest sesamoid bone located in front of the stifle joint.  
+   Embedded in the tendon of the quadriceps femoris muscle.  
+   Enhances leverage for limb extension.
+
+2. **Proximal Sesamoids** – Found at the back of the metatarsophalangeal joints (base of the toes).  
+   Paired small bones that guide tendons and prevent hyperextension.
+
+3. **Distal Sesamoids** – Located near the distal interphalangeal joints (tip of the toes).  
+   Aid in smooth tendon movement during flexion and retraction of the claws.
+
+##Function##
+ Improve tendon leverage and reduce friction.  
+ Stabilize joints and assist in flexion and extension.  
+ Protect tendons from excessive stress.  
+ Enhance precision and strength in feline movement.

@@ -1,0 +1,28 @@
+#Auditory Ossicles#
+
+##Location##
+Located within the **middle ear cavity**, between the **tympanic membrane (eardrum)** and the **inner ear (cochlea)**.  
+Birds possess a single ossicle called the **columella (stapes)**, which transmits sound vibrations.
+
+###Shape###
+A **slender, rod-like bone** with expanded ends — one attached to the eardrum and the other to the oval window of the inner ear.  
+Surrounded by a small air-filled chamber continuous with the pneumatic system of the skull.
+
+##Parts##
+
+###1. Columella (Stapes)###
+- Only auditory ossicle in birds.  
+- **Function:** Conducts vibrations from the tympanic membrane to the inner ear fluid.  
+
+###2. Extracolumella###
+- Cartilaginous extension at the outer end of the columella.  
+- **Function:** Connects the ossicle to the eardrum for effective sound transmission.  
+
+###3. Footplate###
+- Flattened inner end of the columella fitting into the oval window.  
+- **Function:** Transmits mechanical energy to the cochlear fluids.  
+
+##Function##
+- **Sound Transmission:** Transfers and amplifies sound vibrations to the inner ear.  
+- **Protection:** Dampens excessive vibrations to protect the sensory cells.  
+- **Balance Integration:** Works with the inner ear to coordinate auditory and equilibrium functions.  

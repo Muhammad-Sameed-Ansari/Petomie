@@ -1,0 +1,28 @@
+#Skin Receptors (Tactile)#
+
+##Location##
+Distributed throughout the **integument**—skin of the head, neck, trunk, wings, legs, and around feather follicles.  
+Densities vary by region; elevated around beak base, feet, and wing edges involved in perching and flight.
+
+###Shape###
+Microscopic **mechanoreceptors** embedded in dermis and around follicles.  
+Appear as encapsulated corpuscles (Grandry, Herbst) or unencapsulated endings (Merkel complexes).
+
+##Parts##
+###1. Grandry Corpuscles (Rapid‑Adapting)###
+Flattened, layered end‑organs near the epidermis (especially in waterfowl).  
+**Function:** Detect **light touch and low‑frequency vibration**, useful for object discrimination on wet/soft surfaces.
+
+###2. Herbst Corpuscles (Rapid‑Adapting, Deep)###
+Elongated, onion‑like encapsulated receptors around **feather follicles, periosteum, tendons**, and plantar skin.  
+**Function:** Sense **pressure and high‑frequency vibration**; important for detecting airflow and substrate changes.
+
+###3. Merkel Cell–Neurite Complexes (Slow‑Adapting)###
+Superficial, disc‑like endings in epidermis.  
+**Function:** Encode **sustained pressure and texture**, aiding grip and surface evaluation.
+
+##Function##
+- **Touch Detection:** Perceive pressure, vibration, and texture across the body.  
+- **Grip & Posture:** Support precise foot placement and perching stability.  
+- **Feather Feedback:** Provide signals from follicle bases for orientation and grooming.  
+- **Flight Modulation:** Contribute to sensing airflow and wing–air interactions.

@@ -1,0 +1,28 @@
+#Autonomic Nervous System (ANS)#
+
+##Location##
+Distributed throughout the body, connecting the **central nervous system** to internal organs such as the heart, lungs, digestive tract, and glands.  
+Lies along the vertebral column and within visceral walls.
+
+###Shape###
+A network of **nerve chains, ganglia, and plexuses** extending from the neck to the cloacal region.  
+Divided into **sympathetic**, **parasympathetic**, and **enteric** components.
+
+##Parts##
+###1. Sympathetic Division###
+Arises from the thoracolumbar spinal cord and runs along the vertebral column.  
+**Function:** Prepares the body for activity ("fight or flight").
+
+###2. Parasympathetic Division###
+Originates from cranial (especially vagus) and sacral regions.  
+**Function:** Conserves energy and maintains normal bodily functions ("rest and digest").
+
+###3. Enteric Division###
+Embedded within digestive tract walls.  
+**Function:** Controls intestinal motility and secretion independently.
+
+##Function##
+- **Involuntary Control:** Regulates heart rate, respiration, digestion, and pupil size.  
+- **Coordination:** Maintains balance between excitation (sympathetic) and relaxation (parasympathetic).  
+- **Adaptation:** Enables rapid physiological shifts between flight activity and resting states.  
+- **Autonomy:** Supports vital organ function without conscious input.

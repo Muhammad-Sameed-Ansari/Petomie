@@ -1,0 +1,72 @@
+#Shoulder Muscles#
+
+##Location##
+Located around the **scapula and proximal humerus**, forming the connection between the trunk and the forelimb.  
+These muscles stabilize the shoulder joint, control limb movement, and support body weight during standing, walking, and climbing.
+
+##Shape##
+Composed of **broad, flat, and fan-shaped muscles**, with deeper spindle-shaped stabilizers.  
+They surround the scapula laterally, medially, and dorsally, allowing both powerful and precise motion of the limb.
+
+##Parts##
+
+###1. Deltoideus###
+- Divided into acromial and scapular parts.  
+- Origin: spine and acromion of the scapula.  
+- Insertion: deltoid tuberosity of the humerus.  
+- **Function:** Flexes the shoulder and abducts the forelimb.  
+
+###2. Supraspinatus###
+- Occupies the supraspinous fossa of the scapula.  
+- Insertion: greater tubercle of the humerus.  
+- **Function:** Extends and stabilizes the shoulder joint.  
+
+###3. Infraspinatus###
+- Located in the infraspinous fossa of the scapula.  
+- Insertion: lateral aspect of greater tubercle of the humerus.  
+- **Function:** Flexes, extends, and stabilizes the shoulder; rotates the limb laterally.  
+
+###4. Subscapularis###
+- Lies on the medial surface of the scapula.  
+- Insertion: lesser tubercle of the humerus.  
+- **Function:** Adducts and stabilizes the shoulder; rotates limb medially.  
+
+###5. Teres Major###
+- Caudal to the subscapularis.  
+- Origin: caudal border of the scapula.  
+- Insertion: teres major tuberosity on humerus.  
+- **Function:** Flexes and rotates the shoulder medially.  
+
+###6. Teres Minor###
+- Small muscle located caudal to the infraspinatus.  
+- Origin: caudal border of the scapula.  
+- Insertion: teres minor tuberosity.  
+- **Function:** Flexes and rotates the shoulder laterally.  
+
+###7. Coracobrachialis###
+- Small, spindle-shaped muscle on the medial aspect of the shoulder.  
+- Origin: coracoid process of the scapula.  
+- Insertion: proximal medial humerus.  
+- **Function:** Adducts and stabilizes the shoulder joint.  
+
+###8. Trapezius (Cervical and Thoracic Parts)###
+- Large superficial muscle over the neck and shoulder.  
+- Elevates, abducts, and advances the scapula.  
+
+###9. Omotransversarius###
+- Extends from atlas to acromion.  
+- Advances the limb and flexes the neck laterally.  
+
+###10. Rhomboideus###
+- Deep to trapezius, connecting scapula to spine.  
+- Elevates the scapula and supports the limb.  
+
+###11. Serratus Ventralis###
+- Large fan-shaped muscle attaching scapula to ribs.  
+- Supports trunk and acts as a sling between forelimbs.  
+
+##Function##
+- **Flexion and extension of shoulder joint:** by deltoideus, supraspinatus, infraspinatus, and teres group.  
+- **Rotation of limb:** infraspinatus and teres minor (lateral), subscapularis and teres major (medial).  
+- **Adduction and stabilization:** subscapularis, coracobrachialis, serratus ventralis.  
+- **Support and elevation:** trapezius, rhomboideus, and serratus ventralis maintain scapular stability during movement.  

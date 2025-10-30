@@ -1,16 +1,33 @@
 #False Ribs#
 
 ##Location##
-The false ribs are the 9th to 17th pairs of ribs.  
-They attach to the thoracic vertebrae at the back but connect to each other or to the cartilage of the true ribs rather than directly to the sternum.
+Located in the caudal (rear) portion of the ribcage, between the true and floating ribs.  
+In horses, the **last 10 pairs of ribs (Ribs 9–18)** are considered false ribs because they do not attach directly to the sternum.  
+Instead, their costal cartilages connect indirectly through the cartilage of the preceding rib, forming the costal arch.
 
-##Shape##
-Slightly shorter and flatter than the true ribs.  
-The lower ends are connected by cartilage, forming a flexible arch.  
-The false ribs still contribute to the ribcage’s protective shape.
+###Parts###
+1. **Rib 9** – Marks the beginning of the false ribs.  
+   Attaches dorsally to the ninth thoracic vertebra (T9).  
+   Ventrally connects to the cartilage of rib 8, contributing to the costal arch.  
+   Provides protection for the caudal portion of the lungs and part of the diaphragm.
+
+2. **Rib 10–Rib 14** – Middle false ribs forming the flexible lateral walls of the thorax.  
+   Each connects dorsally to its corresponding thoracic vertebra.  
+   Ventrally, the cartilages join the rib in front, allowing movement during respiration.  
+   Provide attachment for intercostal and abdominal muscles that assist in breathing and trunk support.
+
+3. **Rib 15–Rib 17** – Caudal false ribs located near the flank.  
+   Shorter and more slanted than anterior ribs.  
+   Help protect the liver, stomach, and spleen.  
+   Contribute to expansion of the thoracic cavity during inhalation.
+
+4. **Rib 18** – The last rib, often considered both a false and floating rib.  
+   Attaches dorsally to T18 but lacks sternal connection.  
+   Ends in the musculature of the flank, allowing flexibility in the posterior ribcage.
 
 ##Function##
-- Extend the protective area of the thoracic cavity.  
-- Support the lungs and abdominal organs.  
-- Allow chest movement during breathing through flexible connections.  
-- Provide attachment points for muscles of the thorax and abdomen.
+ Protects vital abdominal and thoracic organs including the liver, stomach, and spleen.  
+ Provides flexibility and movement to the caudal ribcage.  
+ Assists in breathing by expanding and contracting the thoracic wall.  
+ Serves as an attachment site for intercostal and abdominal muscles.  
+ Supports the transition between the rigid thoracic region and the flexible flank area.

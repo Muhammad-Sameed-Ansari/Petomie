@@ -1,0 +1,28 @@
+#Pecten Oculi#
+
+##Location##
+Projects from the **optic disc** into the vitreous body of the eye.  
+Unique to birds and located within the posterior chamber.
+
+###Shape###
+Fan-shaped, pleated, and highly vascular structure composed of pigmented blood vessels.  
+Varies in size and number of folds among species (typically 10–15 pleats).
+
+##Parts##
+###1. Vascular Folds###
+Thin ridges containing dense capillaries.  
+**Function:** Supply nutrients and oxygen to the retina.
+
+###2. Pigmented Cells###
+Dark melanin-rich tissue.  
+**Function:** Absorbs excess light to minimize glare.
+
+###3. Basal Attachment###
+Anchored to the optic disc.  
+**Function:** Supports stability and prevents movement during eye motion.
+
+##Function##
+- **Nutrition:** Delivers nutrients to the avascular retina.  
+- **Optical Clarity:** Reduces retinal blood vessels, improving visual sharpness.  
+- **Light Absorption:** Minimizes internal reflection and glare.  
+- **Evolutionary Adaptation:** Enhances high-resolution vision without impairing transparency.

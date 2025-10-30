@@ -1,0 +1,29 @@
+#Middle Ear#
+
+##Location##
+Air-filled cavity between the **tympanic membrane** and the **inner ear (oval window)**, connected to the pharynx via the **Eustachian (pharyngotympanic) tube**.
+
+###Shape###
+Compact space containing a **single ossicle** (the **columella**, homologous to the stapes) with supporting ligaments and muscles.
+
+##Parts##
+###1. Tympanic Membrane###
+Thin membrane separating external canal from middle ear.  
+**Function:** Vibrates in response to sound waves.
+
+###2. Columella (Stapes)###
+Single auditory ossicle contacting the oval window.  
+**Function:** Transmits and amplifies vibrations to inner ear fluids.
+
+###3. Eustachian Tube###
+Canal connecting middle ear to pharynx (often paired openings).  
+**Function:** Equalizes air pressure across the tympanic membrane.
+
+###4. Middle Ear Muscles and Ligaments###
+Small stabilizing structures.  
+**Function:** Tension control on the columella and membrane; protects from excessive vibration.
+
+##Function##
+- **Impedance Matching:** Efficient transfer of airborne sound to fluid-filled inner ear.  
+- **Pressure Equalization:** Maintains optimal membrane motion.  
+- **Protection:** Damps loud sounds and mechanical shocks.

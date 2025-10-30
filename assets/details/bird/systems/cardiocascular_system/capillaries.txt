@@ -1,0 +1,32 @@
+#Capillaries#
+
+##Location##
+Microscopic vessels connecting arteries and veins throughout all tissues.  
+Extremely dense in **flight muscles**, lungs, and brain.
+
+###Shape###
+Tiny, one-cell-thick tubes forming intricate networks.  
+Walls consist of **endothelial cells** for rapid exchange.
+
+##Parts##
+###1. Pulmonary Capillaries###
+Surround air capillaries in lungs.  
+**Function:** Exchange oxygen and carbon dioxide.
+
+###2. Systemic Capillaries###
+Spread through organs and muscles.  
+**Function:** Deliver oxygen and nutrients, remove wastes.
+
+###3. Hepatic Capillaries###
+Located within the liver.  
+**Function:** Filter and process absorbed nutrients.
+
+###4. Renal Capillaries###
+Located in the kidneys.  
+**Function:** Assist in filtration and excretion.
+
+##Function##
+- **Exchange:** Transfer gases, nutrients, and waste.  
+- **Efficiency:** Dense networks ensure rapid oxygen delivery.  
+- **Temperature Control:** Adjust blood flow as needed.  
+- **Metabolic Support:** Sustain tissue function during flight.

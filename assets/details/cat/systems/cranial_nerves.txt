@@ -1,0 +1,34 @@
+#Cranial Nerves#
+
+##Location##
+Cranial nerves come directly from the brain, mainly from the underside of the brainstem.  
+There are twelve pairs in total, one on each side of the head.  
+They pass through small openings in the skull and connect the brain to the eyes, ears, nose, mouth, and facial muscles.  
+Each nerve serves a special function related to movement, sensation, or internal control.
+
+##Shape##
+Each cranial nerve is a bundle of nerve fibers wrapped in protective tissue.  
+Some carry only sensory signals, others only motor signals, and some do both.  
+They are numbered I to XII according to where they leave the brain — from front to back.
+
+### The 12 Cranial Nerves in Cats
+1. **Olfactory (I):** Smell — detects scents in the nose.  
+2. **Optic (II):** Vision — carries signals from the eyes to the brain.  
+3. **Oculomotor (III):** Eye movement and pupil constriction.  
+4. **Trochlear (IV):** Controls one eye muscle for upward and sideways motion.  
+5. **Trigeminal (V):** Touch and pain in the face and mouth; chewing muscles.  
+6. **Abducens (VI):** Controls side movement of the eyes.  
+7. **Facial (VII):** Facial expression, taste on the front of the tongue, tear and saliva production.  
+8. **Vestibulocochlear (VIII):** Hearing and balance.  
+9. **Glossopharyngeal (IX):** Taste (back of tongue), swallowing, and saliva production.  
+10. **Vagus (X):** Controls internal organs (heart, lungs, digestive tract); also helps with swallowing and voice.  
+11. **Accessory (XI):** Neck and shoulder movement.  
+12. **Hypoglossal (XII):** Tongue movement for eating and grooming.
+
+##Function##
+- Transmit signals between the brain and the head, neck, and some internal organs.  
+- Control smell, sight, hearing, taste, and balance.  
+- Manage facial movements, swallowing, and vocal sounds.  
+- Regulate automatic actions like breathing, heart rate, and digestion.  
+- Support expression, feeding, grooming, and social communication.  
+- Keep sensory and motor functions well-coordinated for survival and comfort.

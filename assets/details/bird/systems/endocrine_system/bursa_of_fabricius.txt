@@ -1,0 +1,23 @@
+#Bursa of Fabricius#
+
+##Location##
+Located **dorsal to the cloaca**, present only in young birds.  
+Regresses with age and disappears in adults.
+
+###Shape###
+Pouch-like organ lined with lymphoid tissue.  
+Connected to the cloaca by a narrow duct.
+
+##Parts##
+###1. Folds of Mucosa###
+Contain numerous lymphoid follicles.  
+**Function:** Site of B-lymphocyte development.
+
+###2. Lymphoid Tissue###
+Active during juvenile stage.  
+**Function:** Supports immune and endocrine interactions.
+
+##Function##
+- **Immunity:** Produces B-cells for adaptive immune response.  
+- **Hormonal Role:** Interacts with other endocrine organs during development.  
+- **Growth Regulation:** Affects immune maturation and reproduction indirectly.

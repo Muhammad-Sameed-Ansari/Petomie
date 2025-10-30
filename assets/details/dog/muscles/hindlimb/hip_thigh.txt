@@ -1,42 +1,48 @@
-#Gluteal & Hamstring Muscles#
+#Hip and Thigh Muscles#
 
 ##Location##
-Located on the lateral and caudal aspects of the pelvis and thigh. These muscles provide the main propulsive power for the hindlimbs, controlling hip extension, abduction, and limb retraction.
+Situated between the **pelvis and stifle (knee)**, surrounding the femur.  
+These muscles are responsible for limb power and joint movement during locomotion.
 
 ##Shape##
-Large, strong muscle groups including the gluteals and hamstrings, forming the bulk of the hindquarter.
+Long, cylindrical muscles forming the bulk of the upper hindlimb.  
+Grouped along the cranial, caudal, and medial sides for coordinated hip and stifle action.
 
 ##Parts##
-###1. Superficial Gluteal###
-Smallest of the gluteal muscles
-Extends hip
-Abducts hindlimb
-###2. Middle Gluteal###
-Largest gluteal muscle
-Extends and abducts hip
-Rotates pelvic limb medially
-###3. Deep Gluteal###
-Lies beneath middle gluteal
-Abducts limb
-Stabilizes hip joint
-###4. Tensor Fasciae Latae###
-Triangular muscle on lateral thigh
-Flexes hip
-Tenses fascia lata and extends stifle via patellar ligament
-###5. Biceps Femoris###
-Largest hamstring muscle
-Extends hip, stifle, and tarsus
-Flexes stifle when limb is non-weight-bearing
-###6. Semitendinosus###
-Caudal thigh muscle
-Extends hip and tarsus
-Flexes stifle
-###7. Semimembranosus###
-Medial to semitendinosus
-Extends hip
-Flexes or extends stifle depending on limb position
+
+###1. Biceps Femoris###
+- Large muscle on the lateral thigh.  
+- Extends hip and stifle, flexes hock.  
+
+###2. Semitendinosus###
+- Caudal thigh muscle running to the tibia.  
+- Extends hip and hock, flexes stifle.  
+
+###3. Semimembranosus###
+- Lies medial to semitendinosus.  
+- Extends hip and adducts limb.  
+
+###4. Quadriceps Femoris###
+- Large muscle group on the cranial thigh.  
+- Extends stifle and flexes hip.  
+
+###5. Sartorius###
+- Thin, strap-like muscle on the medial thigh.  
+- Flexes hip and stifle.  
+
+###6. Gracilis###
+- Broad muscle on the inner thigh.  
+- Adducts limb and extends hip and hock.  
+
+###7. Pectineus###
+- Small medial muscle.  
+- Adducts and stabilizes the femur.  
+
+###8. Adductor###
+- Deep muscle of the medial thigh.  
+- Draws limb inward and stabilizes stance.  
 
 ##Function##
-Provide the main driving force for running, jumping, and climbing
-Extend the hip and tarsus, and stabilize the stifle
-Control limb abduction and medial rotation of the thigh
+Extend and flex hip, stifle, and hock joints.  
+Provide power for propulsion, stability, and balance during running or jumping.  
+Maintain limb alignment and posture.  

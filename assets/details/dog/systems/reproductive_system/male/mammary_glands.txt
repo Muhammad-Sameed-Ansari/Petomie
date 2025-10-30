@@ -1,26 +1,27 @@
-#Mammary Glands (Male)#
+#Mammary Glands (Male Dog)#
 
 ##Location##
-Situated on the ventral surface of the thoracic, abdominal, and inguinal regions, similar in position to those of the female.
-Male dogs typically have four to five pairs of small, undeveloped mammary glands arranged in two rows extending from the chest to the groin.
+Located along the **ventral surface** of the body, extending from the chest to the groin.  
+Male dogs generally have **four to five pairs** of small, undeveloped mammary glands arranged symmetrically.
 
 ###Shape###
-Small, flat structures beneath the skin, each associated with a tiny nipple (teat).
-They remain smooth and nonfunctional due to low levels of reproductive hormones.
+Flat, **nonfunctional glands** beneath the skin with small nipples.  
+Covered by fine hair and connected by underdeveloped ducts.
 
 ##Parts##
 
 ###1. Mammary Glands###
-Present but rudimentary, composed mainly of connective and fatty tissue rather than glandular alveoli.
+Composed mainly of **connective and fatty tissue** with minimal glandular elements.
 
-###2. Nipples (Teats)###
-Visible externally along the ventral line; smaller and less prominent than in females.
+###2. Nipples###
+Small, round structures on the ventral surface.  
+Usually nonfunctional but may show slight changes with hormonal imbalance.
 
-###3. Ducts###
-Present but undeveloped, typically nonfunctional and lacking active secretory tissue.
+###3. Duct System###
+Underdeveloped and inactive, with no capacity for milk production.
 
-##Function##
-No reproductive or lactational function in normal males.
-Remain hormonally inactive under typical testosterone influence.
-Can occasionally enlarge slightly with hormonal imbalance (e.g., excess estrogen).
-Serve as homologous structures to the female mammary glands, reflecting shared embryonic development.
+###Function###
+No reproductive or lactational function.  
+Remain hormonally inactive under normal testosterone levels.  
+Occasionally enlarge due to hormonal imbalance or endocrine disorders.  
+Represent **homologous structures** to the female mammary glands, showing shared embryonic development.

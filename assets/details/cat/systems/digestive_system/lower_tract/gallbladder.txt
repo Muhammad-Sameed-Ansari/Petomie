@@ -1,0 +1,17 @@
+#Gallbladder#
+
+##Location##
+Nestled between the lobes of the liver.
+
+##Shape##
+Small, pear-shaped sac with thin walls.
+
+##Parts##
+- **Fundus:** Rounded end where bile accumulates.  
+- **Body:** Main section for bile storage.  
+- **Neck:** Connects to the cystic duct.  
+
+##Function##
+- Stores and concentrates bile from the liver.  
+- Releases bile into the duodenum during digestion.  
+- Aids in fat breakdown and absorption.

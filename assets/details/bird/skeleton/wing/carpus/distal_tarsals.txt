@@ -1,0 +1,24 @@
+#Distal Tarsals#
+
+##Location##
+Situated between the **proximal tarsals** (part of the tibiotarsus) and the **metatarsals** of the foot.  
+In birds, these bones are **fused with the metatarsals** to form the **tarsometatarsus**.
+
+###Shape###
+Small, flattened bones that fuse early in development, creating a single elongated structure.  
+Provide articulation for the digits and attachment for tendons.
+
+##Parts##
+
+###1. Distal Tarsal I–IV###
+- Represent the distal series, fused to the metatarsals.  
+- **Function:** Support digit alignment and strength.  
+
+###2. Hypotarsus###
+- Ridge on the proximal end of the tarsometatarsus.  
+- **Function:** Guides flexor tendons to the toes.  
+
+##Function##
+- **Integration:** Combines stability and lightness through fusion.  
+- **Support:** Provides the base for toe articulation.  
+- **Locomotion:** Aids efficient energy transfer during walking or perching.  

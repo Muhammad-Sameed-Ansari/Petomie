@@ -1,19 +1,23 @@
-#Carpus (Proximal Row)#
+#Proximal Row of Tarsal Bones#
 
 ##Location##
-The proximal row of the carpal bones is located in the upper part of the horse’s carpus (knee joint), between the radius (forearm bone) and the distal carpal row.  
-It forms the upper section of the knee and articulates directly with the distal end of the radius.
+Located at the upper portion of the hock joint, between the tibia and fibula above and the central and distal tarsal bones below.  
+The proximal row of the horse’s tarsus consists of two major bones — the talus and the calcaneus — which form the upper hinge of the hock and provide strength and leverage to the hindlimb.
 
-##Shape##
-The proximal row of the carpus contains four bones arranged side by side:  
-- **Radial carpal bone** – the largest bone, located on the medial (inner) side beneath the radius.  
-- **Intermediate carpal bone** – lies between the radial and ulnar carpal bones, sharing articulation with the radius above and the second and third carpals below.  
-- **Ulnar carpal bone** – smaller, on the lateral (outer) side beneath the ulna, articulating with the fourth carpal below.  
-- **Accessory carpal bone** – a distinct, round bone projecting backward from the lateral side of the joint, forming the point of attachment for several ligaments and tendons.
+###Parts###
+1. **Talus (Tibial Tarsal Bone)** – The medial and dorsal bone of the proximal row.  
+   Articulates with the tibia at the tibio-tarsal joint.  
+   Possesses a pulley-shaped trochlea that guides flexion and extension of the hock.  
+   Transmits the body’s weight from the leg to the lower tarsal bones.
+
+2. **Calcaneus (Fibular Tarsal Bone)** – The lateral and posterior bone forming the heel or point of the hock.  
+   Extends upward and backward to form the calcaneal tuber, the attachment site for the Achilles tendon.  
+   Articulates with the talus medially and the fourth tarsal bone distally.  
+   Provides leverage and mechanical advantage for the powerful flexor muscles of the hindlimb.
 
 ##Function##
-- Forms the upper portion of the carpal (knee) joint, enabling forelimb flexion and extension.  
-- Absorbs concussion and distributes forces from the radius to the lower carpal bones.  
-- Provides attachment for tendons and ligaments that stabilize the carpus.  
-- The accessory carpal bone acts as a lever for muscles and tendons, aiding in limb movement.  
-- Contributes to the strength, support, and flexibility of the horse’s forelimb.
+ Form the upper joint of the hock, enabling hinge-like motion.  
+ Support body weight and transmit force from the leg to the foot.  
+ Provide leverage for propulsion and shock absorption.  
+ Serve as attachment points for key tendons and ligaments.  
+ Maintain strength and stability of the hock during locomotion.

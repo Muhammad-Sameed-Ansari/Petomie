@@ -1,0 +1,16 @@
+#Adrenal Glands (Cortex and Medulla)#
+
+##Parts##
+###Adrenal Cortex###
+Outer layer that produces steroid hormones:  
+- **Cortisol:** Controls stress, inflammation, and metabolism.  
+- **Aldosterone:** Balances sodium and potassium, maintaining blood pressure.  
+- **Sex Steroids:** Small amounts influence mood and body strength.  
+
+###Adrenal Medulla###
+Inner layer that produces adrenaline (**epinephrine**) and noradrenaline (**norepinephrine**). These hormones activate the “fight or flight” response.  
+
+##Function##
+Regulates **stress response, metabolism, and water balance**.  
+During excitement or fear, the adrenal glands increase heart rate and alertness.  
+Prolonged stress can lead to adrenal fatigue, affecting energy and immunity.

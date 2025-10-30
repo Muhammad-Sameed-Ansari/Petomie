@@ -1,0 +1,24 @@
+#Tarsals – Avian Overview#
+
+##Location##
+The **tarsal bones** of birds are divided developmentally into **proximal** and **distal** sets, but in adults they are **fused** into two major bones:  
+- **Proximal tarsals → TIBIOTARSUS** (fused with tibia; upper ankle)  
+- **Distal tarsals → TARSOMETATARSUS** (fused with metatarsals; lower ankle/foot)
+
+###Shape###
+Instead of multiple small bones, birds have **two elongated fused elements** forming the intertarsal (hock) joint.
+
+##Parts##
+
+###1. Proximal Complex (Tibiotarsus)###
+- Fusion of tibia + proximal tarsals.  
+- **Function:** Forms the **upper** articular surface of the ankle.
+
+###2. Distal Complex (Tarsometatarsus)###
+- Fusion of distal tarsals + metatarsals.  
+- **Function:** Forms the **lower** articular surface and supports the toes.
+
+##Function##
+- **Lightweight Strength:** Fewer bones reduce mass without sacrificing stability.  
+- **Locomotion:** Creates a strong, spring-like **hock joint** for perching, walking, and landing.  
+- **Efficiency:** Streamlined design supports flight-related energy savings.  

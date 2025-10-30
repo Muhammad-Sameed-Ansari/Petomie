@@ -1,0 +1,46 @@
+#Upper Respiratory System#
+
+##Location##
+Extends from the **external nares (nostrils)** to the **syrinx** at the base of the trachea.  
+Occupies the upper head and neck region, connecting the external environment to the lower respiratory tract.
+
+###Shape###
+A series of hollow passages and cartilaginous tubes lined with ciliated epithelium and mucus-secreting glands.  
+Adapted to filter, warm, and moisten inhaled air before it reaches the lungs.
+
+##Parts##
+
+###1. External Nares###
+Openings on the beak, often protected by a keratinized rim or operculum.  
+**Function:** Admit and filter air entering the nasal cavity.
+
+###2. Nasal Cavity###
+Divided into chambers by **nasal conchae (turbinates)**.  
+**Function:** Warm and humidify incoming air; trap dust and pathogens.
+
+###3. Infraorbital Sinus###
+Large cavity below the eyes connected to the nasal passages.  
+**Function:** Equalizes pressure, reduces skull weight, and can aid in sound resonance.
+
+###4. Glottis###
+Opening into the larynx; lacks an epiglottis.  
+**Function:** Controls airflow to the trachea.
+
+###5. Larynx###
+Cartilaginous structure at the base of the tongue.  
+**Function:** Regulates airflow but does not produce sound (unlike in mammals).
+
+###6. Trachea###
+Long tube supported by complete cartilaginous rings.  
+**Function:** Conducts air to the syrinx and lower system.
+
+###7. Syrinx###
+Located at the junction of the trachea and bronchi.  
+**Function:** Primary organ of sound production; varies in complexity among species.
+
+##Function##
+- **Air Filtration:** Removes dust and microorganisms.  
+- **Conditioning:** Warms and moistens inhaled air.  
+- **Protection:** Mucus and cilia trap and expel debris.  
+- **Communication:** Produces vocalizations through the syrinx.  
+- **Conduction:** Directs air efficiently to the lower respiratory system.

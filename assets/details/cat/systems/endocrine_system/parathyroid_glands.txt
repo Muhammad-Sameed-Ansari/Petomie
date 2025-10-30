@@ -1,0 +1,16 @@
+#Parathyroid Glands#
+
+##Parts##
+###Chief Cells###
+Produce **parathyroid hormone (PTH)** to raise calcium levels in the blood.  
+
+###Oxyphil Cells###
+Support calcium metabolism and may act as hormone reserves.  
+
+###Small Blood Vessels###
+Allow rapid hormone release into circulation.  
+
+##Function##
+Regulates calcium and phosphorus balance in the body, ensuring healthy **bones, teeth, muscles, and nerve function**.  
+Works with **calcitonin** from the thyroid gland to keep calcium levels stable.  
+Prevents low calcium levels that could lead to tremors or weakness.

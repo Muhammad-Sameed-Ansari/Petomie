@@ -1,0 +1,32 @@
+#Tendons#
+
+##Location##
+Attach **muscle to bone** across the body, especially prominent in the **wing (wrist/hand)** and **hindlimb**.  
+Many avian tendons are **long and cord-like**, running through sheaths and pulleys.
+
+###Shape###
+Dense regular connective tissue with **parallel collagen fibers**; may show **tendon ossification** in legs of some species for added stiffness.
+
+##Parts##
+
+###1. Extensor/Flexor Carpi Tendons###
+- Cross the **carpus** to control **wrist** movement.  
+- **Function:** Extend/flex the wing during flight and folding.
+
+###2. Digital Flexor/Extensor Tendons###
+- Run to the **digits of the manus and foot** within sheaths.  
+- **Function:** Control feathers and grasping during perching.
+
+###3. Supracoracoideus Tendon###
+- Passes through the **triosseal canal** to the dorsal humerus.  
+- **Function:** Lifts the wing on the **upstroke**.
+
+###4. Retinacula (Flexor/Extensor)###
+- Fibrous bands at the **carpus and tarsus**.  
+- **Function:** Hold tendons in place and prevent bowstringing.
+
+##Function##
+- **Force Transmission:** Convey muscle power to bones.  
+- **Elastic Storage:** Recoil aids efficiency in flight and running.  
+- **Precision:** Guide fine movements of feathers and digits.  
+- **Protection:** Sheaths and pulleys reduce friction and wear.  

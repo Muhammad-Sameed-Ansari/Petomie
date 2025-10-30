@@ -1,17 +1,25 @@
-#Vas Deferens (Sperm Duct)#
+#Sperm Duct (Vas Deferens)#
 
-###Location###
-Connects the epididymis to the urethra inside the body, running through the pelvic area.
+##Location##
+Extends from the **tail of the epididymis** through the **spermatic cord** into the pelvic cavity.  
+Joins the ducts of the accessory glands before entering the **urethra** near the bladder neck.
 
 ###Shape###
-A narrow, muscular tube that pushes sperm forward during ejaculation.
+A **narrow, muscular tube** with a small lumen and a slightly coiled path.  
+The wall is thick and lined with smooth muscle.
 
-###Parts###
-- **Beginning:** Joins the epididymis.
-- **Middle Section:** Passes through the body wall.
-- **End (Ampulla):** Joins the urethra near the bladder.
+##Parts##
+
+###1. Proximal Segment###
+Begins at the epididymis and carries sperm into the pelvic region.
+
+###2. Ampulla###
+A **dilated terminal portion** serving as a temporary reservoir for sperm.
+
+###3. Terminal Segment###
+Merges with ducts from the accessory glands to form the **ejaculatory duct**, opening into the urethra.
 
 ###Function###
-- Carries sperm from the epididymis to the urethra.
-- Stores sperm for a short time.
-- Pushes sperm forward with strong muscular contractions.
+Transports **mature sperm** from the epididymis to the urethra during ejaculation.  
+Serves as a **temporary storage chamber**.  
+Contracts rhythmically during ejaculation to propel sperm forward.

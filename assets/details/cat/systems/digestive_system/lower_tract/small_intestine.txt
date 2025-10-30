@@ -1,0 +1,18 @@
+#Small Intestine#
+
+##Location##
+Extends from the stomach to the large intestine, coiled in the central abdominal cavity.
+
+##Shape##
+A long, narrow, flexible tube lined with villi to maximize nutrient absorption.
+
+##Parts##
+- **Duodenum:** First section receiving bile and pancreatic enzymes.  
+- **Jejunum:** Middle section where most digestion and nutrient absorption occur.  
+- **Ileum:** Final section connecting to the large intestine, absorbing remaining nutrients.
+
+##Function##
+- Completes digestion of proteins, carbohydrates, and fats.  
+- Absorbs nutrients, vitamins, and minerals into the bloodstream.  
+- Moves chyme toward the colon with rhythmic contractions.  
+- Maintains gut flora balance and supports immune defense.

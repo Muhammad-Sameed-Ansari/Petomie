@@ -1,0 +1,31 @@
+#Kidneys#
+
+##Location##
+Paired organs located deep within the **synsacral cavity** of the pelvis, fitting into bony depressions on either side of the vertebral column.  
+Each kidney lies along the dorsal wall of the body cavity, extending from the thoracic to the pelvic region.
+
+###Shape###
+Elongated and **three-lobed** (cranial, middle, and caudal lobes).  
+Dark reddish-brown in color with a granular appearance due to dense vascularization.  
+The kidneys are compact and fixed in position, unlike those of mammals.
+
+##Parts##
+###1. Renal Lobes###
+Each kidney is divided into three lobes.  
+**Function:** Independent filtration and excretion units.
+
+###2. Nephrons###
+Microscopic functional units, of two types:  
+- **Cortical (reptilian type):** Lack loops of Henle; produce concentrated uric acid.  
+- **Medullary (mammalian type):** Limited loops of Henle; assist water reabsorption.  
+**Function:** Filter blood and regulate osmotic balance.
+
+###3. Renal Portal System###
+Unique vascular network that brings blood from the hindlimbs to the kidneys.  
+**Function:** Allows dual blood supply for efficient filtration.
+
+##Function##
+- **Filtration:** Removes nitrogenous wastes from blood.  
+- **Excretion:** Produces uric acid instead of urea, minimizing water loss.  
+- **Osmoregulation:** Maintains ionic and fluid balance.  
+- **Adaptation:** Supports water conservation for flight and arid habitats.

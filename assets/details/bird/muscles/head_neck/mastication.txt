@@ -1,0 +1,36 @@
+#Mastication Muscles – Avian#
+
+##Location##
+Situated around the upper and lower beak (maxilla and mandible) and the suspensorium (quadrate–pterygoid–palatine complex). Lie laterally on the skull and in the medial palatal region, controlling beak closure, opening, and cranial kinesis.
+
+###Components###
+Jaw adductors, jaw abductors, and suspensorial protractors/retractors coordinating upper- and lower-beak movements.
+
+##Parts##
+
+###1. Adductor Mandibulae Externus (AME)###
+- Lateral cranial surface to the mandibular ramus.  
+- **Function:** Primary beak closer; elevates the mandible.
+
+###2. Pterygoideus (medialis and lateralis)###
+- From pterygoid/palatine region to the mandible.  
+- **Function:** Powerful adduction and mediolateral control of the lower beak.
+
+###3. Pseudotemporalis (superficialis and profundus)###
+- Temporal fossa to the mandible.  
+- **Function:** Assists beak closure and stabilizes the jaw joint.
+
+###4. Depressor Mandibulae###
+- Caudolateral skull to the retroarticular process of the mandible.  
+- **Function:** Opens the beak; antagonist to adductors.
+
+###5. Protractor Pterygoidei et Quadrati###
+- Palatal region to pterygoid/quadrate.  
+- **Function:** Protracts the suspensorium, aiding upper-beak elevation (cranial kinesis).
+
+###6. Retractor Pterygoidei###
+- Caudal palatal attachments to pterygoid.  
+- **Function:** Retracts the suspensorium; modulates upper-beak depression.
+
+##Function##
+Generate forces for beak closure and opening, position the quadrate–pterygoid–palatine complex, and enable cranial kinesis for feeding, preening, vocalization, and object manipulation.

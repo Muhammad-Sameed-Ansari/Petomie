@@ -1,0 +1,24 @@
+#Patella#
+
+##Location##
+Located at the **front of the knee joint**, embedded within the **tendon of the quadriceps femoris**.  
+It lies between the **distal femur** and **proximal tibiotarsus**, forming part of the extensor mechanism of the leg.
+
+###Shape###
+A **small, flat, and elongated sesamoid bone**, varying in size among bird species.  
+In strong-running or large birds (e.g., ostriches, chickens), it is more distinct and ossified, while in smaller birds it may be partially cartilaginous.
+
+##Parts##
+
+###1. Tendinous Connection###
+- Embedded within the tendon of the quadriceps femoris.  
+- **Function:** Transmits muscle force from the thigh to the leg.  
+
+###2. Articular Surface###
+- Smooth posterior side that glides over the femoral trochlea.  
+- **Function:** Reduces friction at the knee joint.  
+
+##Function##
+- **Leverage:** Increases the mechanical advantage of the quadriceps tendon during leg extension.  
+- **Protection:** Shields the knee joint and underlying tendon from stress.  
+- **Stability:** Guides tendon motion and maintains alignment through flexion and extension.  

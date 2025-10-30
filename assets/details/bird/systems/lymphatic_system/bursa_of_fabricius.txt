@@ -1,0 +1,28 @@
+#Bursa of Fabricius#
+
+##Location##
+Situated **dorsal to the cloaca**, connected via a short duct.  
+Active in juveniles and regresses in adults.
+
+###Shape###
+Pouch-like sac with folded mucosal walls lined by lymphoid follicles.  
+Highly vascular and hormonally active.
+
+##Parts##
+###1. Mucosal Folds###
+Contain lymphoid follicles.  
+**Function:** Support B-cell development.
+
+###2. Epithelial Covering###
+Protective lining of folds.  
+**Function:** Maintains internal environment for cell growth.
+
+###3. Lymphoid Follicles###
+Packed with developing B-lymphocytes.  
+**Function:** Produce immune-competent B-cells.
+
+##Function##
+- **B-Cell Maturation:** Generates and trains antibody-producing cells.  
+- **Immune Education:** Central to early adaptive immunity.  
+- **Endocrine Interaction:** Coordinates with thymus and spleen in immune regulation.  
+- **Regression:** Disappears after maturity when immune competence is established.

@@ -1,0 +1,69 @@
+#Antebrachium Muscles#
+
+##Location##
+Located between the **elbow and carpus (wrist)**, forming the middle section of the forelimb.  
+These muscles control **flexion and extension** of the carpus and digits, and also assist in **rotation and stabilization** of the forearm.
+
+##Shape##
+Composed of **long, strap-like and tendinous muscles** arranged into **cranial (extensor)** and **caudal (flexor)** groups.  
+Their elongated tendons continue into the manus to control precise paw and claw movements.
+
+##Parts##
+
+###Cranial (Extensor) Group###
+
+###1. Extensor Carpi Radialis Longus & Brevis###
+- Located on the dorsolateral surface of the forearm.  
+- **Function:** Extend the carpus and stabilize the wrist during limb extension.  
+
+###2. Common Digital Extensor###
+- Runs along the dorsal midline of the forearm.  
+- **Function:** Extends the carpus and digits II–V.  
+
+###3. Lateral Digital Extensor###
+- Lies lateral to the common digital extensor.  
+- **Function:** Extends digits III–V independently.  
+
+###4. Extensor Carpi Ulnaris (Ulnaris Lateralis)###
+- On the caudolateral side of the forearm.  
+- **Function:** Extends or flexes the carpus depending on limb position.  
+
+###5. Supinator###
+- Short, broad muscle wrapping around the proximal radius.  
+- **Function:** Rotates the paw laterally (supination).  
+
+---
+
+###Caudal (Flexor) Group###
+
+###6. Flexor Carpi Radialis###
+- Medial forearm surface.  
+- **Function:** Flexes the carpus and stabilizes the forelimb.  
+
+###7. Flexor Carpi Ulnaris###
+- Consists of humeral and ulnar heads.  
+- **Function:** Flexes the carpus and aids in weight support.  
+
+###8. Superficial Digital Flexor###
+- Lies between the two carpal flexors.  
+- **Function:** Flexes the carpus and proximal interphalangeal joints of digits II–V.  
+
+###9. Deep Digital Flexor###
+- Deepest flexor; has three heads inserting on the distal phalanges.  
+- **Function:** Flexes all digital joints and retracts claws.  
+
+###10. Pronator Teres###
+- Small, oblique muscle on the medial side of the elbow.  
+- **Function:** Rotates the paw medially (pronation).  
+
+###11. Pronator Quadratus###
+- Flat muscle between radius and ulna.  
+- **Function:** Maintains pronation and stabilizes the forearm bones.  
+
+---
+
+##Function##
+- **Extension:** Performed by dorsal muscles (extensors).  
+- **Flexion:** Performed by ventral muscles (flexors).  
+- **Rotation:** Supinator and pronator muscles rotate the paw for grooming and precision.  
+- **Stabilization:** Maintains carpal and digital joint integrity during locomotion and weight-bearing.  

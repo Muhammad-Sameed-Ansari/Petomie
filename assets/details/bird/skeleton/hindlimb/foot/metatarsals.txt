@@ -1,0 +1,28 @@
+#Metatarsals (Tarsometatarsus)#
+
+##Location##
+Located in the **lower leg (hindlimb)** between the **distal tarsals** and the **phalanges (toes)**.  
+In birds, the metatarsals are **fused with the distal tarsal bones** to form the **tarsometatarsus**.
+
+###Shape###
+A **single elongated bone** formed by the fusion of three metatarsals.  
+The central shaft is strong yet lightweight, providing leverage for walking, perching, or landing.
+
+##Parts##
+
+###1. Proximal End###
+- Articulates with the distal tarsals of the tibiotarsus.  
+- **Function:** Forms the ankle joint and transmits leg forces to the foot.  
+
+###2. Shaft###
+- Long and narrow with small foramina (openings).  
+- **Function:** Provides rigidity and attachment for tendons.  
+
+###3. Distal End###
+- Divides into three trochleae (condyles) for the digits.  
+- **Function:** Allows controlled toe movement for perching and grasping.  
+
+##Function##
+- **Support:** Acts as the central bone of the lower limb.  
+- **Locomotion:** Transmits forces from the leg to the toes during walking or landing.  
+- **Adaptation:** Provides strength and elasticity suited to perching, running, or swimming species.  

@@ -1,0 +1,17 @@
+#Pancreas#
+
+##Location##
+Located near the duodenum and stomach within the abdominal cavity.
+
+##Shape##
+A soft, flattened gland with both digestive and hormonal functions.
+
+##Parts##
+- **Exocrine Portion:** Produces digestive enzymes.  
+- **Endocrine Portion:** Contains the islets of Langerhans that secrete insulin and glucagon.  
+
+##Function##
+- Produces enzymes to digest fats, proteins, and carbohydrates.  
+- Regulates blood sugar levels through insulin and glucagon.  
+- Supports nutrient absorption and metabolism.  
+- Maintains digestive efficiency and balance.

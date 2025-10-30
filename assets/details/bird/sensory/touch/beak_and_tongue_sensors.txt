@@ -1,0 +1,28 @@
+#Beak and Tongue Tactile Sensors#
+
+##Location##
+Concentrated in the **rhamphotheca (beak sheath)**, beak tip organ regions, and along the **tongue surface** and margins.  
+Dense fields occur at the tip and edges that contact food or substrate.
+
+###Shape###
+Clusters of **encapsulated and non‑encapsulated mechanoreceptors** associated with dermal papillae and nerve endings beneath keratin layers.  
+Organization varies with feeding ecology (e.g., probing vs. manipulating).
+
+##Parts##
+###1. Beak Tip Mechanoreceptors###
+Grandry‑ and Herbst‑type endings concentrated at the tip and lateral edges.  
+**Function:** Detect **fine pressure, vibration, and micro‑texture** for precise picking, probing, and object manipulation.
+
+###2. Lamellated End‑Organs within Beak Sheath###
+Elongated Herbst‑like corpuscles within the rhamphotheca.  
+**Function:** Sense **dynamic forces** during cracking, peeling, or tool‑like use of the beak.
+
+###3. Tongue Surface Mechanoreceptors###
+Superficial Merkel complexes and small encapsulated endings along papillae.  
+**Function:** Provide **tactile mapping** of food size, orientation, and movement during handling.
+
+##Function##
+- **Fine Manipulation:** Enables accurate grasping, shelling, and positioning of items.  
+- **Probing Feedback:** Conveys force and vibration cues from substrate or prey.  
+- **Safety & Precision:** Prevents overforce and injury by continuous tactile monitoring.  
+- **Coordination:** Integrates with jaw and hyoid muscles for controlled movements.

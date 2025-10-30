@@ -1,0 +1,20 @@
+#External Intercostal – Avian (Inspiratory)#
+
+##Location##
+Occupies the outer intercostal spaces between successive ribs of the bird’s thoracic wall.
+
+###Shape###
+Thin muscular slips with fibers running caudoventrally from the cranial rib to the next caudal rib.
+
+##Parts##
+
+###1. Intercostal Slip Fibers###
+- Span adjacent ribs, fused with external oblique aponeuroses laterally.  
+- **Function:** Elevate and rotate ribs laterally during inspiration.
+
+###2. Costochondral Attachments###
+- Insert near costochondral junctions and costal cartilages.  
+- **Function:** Couple rib motion to sternal excursion for thoracic expansion.
+
+##Function##
+Elevate the ribs and assist sternal excursion, expanding the thorax and air sacs during inspiration.

@@ -1,38 +1,28 @@
 #Mammary Glands#
 
 ##Location##
-Located on the ventral surface of the thoracic, abdominal, and inguinal regions.
-Dogs typically have five pairs (ten total) of mammary glands arranged in two parallel rows extending from the chest to the groin area.
-Each gland lies within the subcutaneous tissue and is associated with a nipple or teat.
+Arranged in **two parallel chains** along the ventral body wall from thorax to groin.  
+Most bitches have **4–5 pairs** (total 8–10 glands), numbered cranial to caudal.
 
 ###Shape###
-Flattened, lobular glands surrounded by connective and fatty tissue.
-Each gland has ducts that converge toward the nipple, allowing milk secretion during lactation.
-The size and fullness of the glands vary depending on hormonal stage, pregnancy, or lactation.
+**Lobulated glandular tissue** with prominent **nipples (teats)**.  
+Size varies with cycle, pregnancy, and lactation.
 
 ##Parts##
 
-###1. Thoracic Mammary Glands###
-The front pair or pairs located on the chest region.
+###1. Gland Lobes/Lobules###
+Milk‑secreting units composed of **alveoli** lined by secretory epithelium.
 
-###2. Abdominal Mammary Glands###
-Middle pairs located along the belly, between thoracic and inguinal regions.
+###2. Duct System###
+**Lactiferous ducts and sinuses** that convey milk to the teat openings.
 
-###3. Inguinal Mammary Glands###
-The rear pair located in the groin area, often the largest and most functional during nursing.
+###3. Nipples (Teats)###
+External outlets with multiple **teat canals**; 6–20 openings depending on gland.
 
-###4. Nipple (Teat)###
-The external projection containing multiple openings of the milk ducts for nursing.
+###4. Supporting Tissues###
+Skin, connective tissue, and blood/lymph supply that support function and drainage.
 
-###5. Glandular Tissue###
-Secretory units (alveoli) that produce milk under hormonal influence.
-
-###6. Duct System###
-Network of small tubes carrying milk from alveoli to the nipple.
-
-##Function##
-Produces and secretes milk to nourish newborn puppies after birth.
-Responds to hormonal changes, primarily prolactin and oxytocin, to initiate and release milk.
-Provides essential antibodies (colostrum) for immune protection of the puppies.
-Acts as a secondary sexual feature influenced by reproductive hormones, showing enlargement during heat, pregnancy, or lactation.
-Supports maternal bonding and nurturing behaviors through sensory stimulation during nursing.
+###Function###
+Produce and deliver **milk** to nourish puppies.  
+Respond to **hormonal cues** (estrogen, progesterone, prolactin, oxytocin).  
+Provide **passive immunity** via colostrum in the early postpartum period.

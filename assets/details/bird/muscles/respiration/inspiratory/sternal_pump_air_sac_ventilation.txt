@@ -1,0 +1,24 @@
+#Sternal–Rib Pump – Air-Sac Ventilation (Avian Inspiratory Mechanism)#
+
+##Location##
+Involves the sternum, coracosternal and costovertebral joints, ribs (including uncinate processes), and associated musculature of the ventral and lateral thorax.
+
+###Structure###
+A kinetic linkage where inspiratory muscles elevate/rotate ribs and move the sternum ventrally and cranially, expanding the thoracic cavity and air sacs (birds lack a diaphragm).
+
+##Parts##
+
+###1. Triosseal/Sternal Excursion###
+- Sternum moves via coracosternal joints.  
+- **Function:** Ventral/cranial excursion increases thoracic volume.
+
+###2. Rib Rotation with Uncinate Processes###
+- Ribs rotate laterally; uncinate processes reinforce lever arms.  
+- **Function:** Expands thoracic width and supports inspiratory mechanics.
+
+###3. Costovertebral/Costosternal Coupling###
+- Joint geometry coordinates bucket‑handle and pump‑handle motions.  
+- **Function:** Harmonizes rib and sternal movement to fill air sacs.
+
+##Function##
+Provide the primary mechanical expansion for inspiration in birds by coordinated sternal excursion and rib rotation, ventilating anterior and posterior air sacs.
