@@ -394,8 +394,16 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
         borderRadius: BorderRadius.circular(16),
         child: Table(
           // Use flexible column widths to fit all columns without scrolling
+          // Make "No." column narrower since it only contains numbers
           columnWidths: Map.fromEntries(
-            List.generate(columnCount, (index) => MapEntry(index, const FlexColumnWidth())),
+            List.generate(columnCount, (index) {
+              final header = tableData.headers[index];
+              if (header == "No.") {
+                return MapEntry(index, const FixedColumnWidth(60.0));
+              } else {
+                return MapEntry(index, const FlexColumnWidth());
+              }
+            }),
           ),
           border: TableBorder.all(
             color: Theme.of(context).colorScheme.outline.withOpacity(0.3),

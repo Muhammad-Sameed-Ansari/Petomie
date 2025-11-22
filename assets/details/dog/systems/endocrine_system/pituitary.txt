@@ -1,32 +1,24 @@
-#Pituitary Gland (Hypophysis)#
+#Pituitary Gland#
 
-##Parts##
-###Anterior Lobe (Adenohypophysis)###
-Produces hormones that control other glands and major body functions.
-Key secretions include:
+The pituitary gland lies beneath the brain in the sella turcica and governs other endocrine glands.  
+It releases hormones controlling growth, reproduction, and metabolism.  
+Energetically, it represents coordination, trust, and balanced leadership.
 
-Growth Hormone (GH): Stimulates growth, muscle repair, and metabolism.
+###Parts###
 
-Thyroid-Stimulating Hormone (TSH): Activates thyroid hormone release for energy control.
+##Anterior Lobe (Adenohypophysis)##  
+Produces growth hormone, TSH, ACTH, LH, FSH, and prolactin.  
+Energetically, symbolizes purpose, cooperation, and nurturing leadership.
 
-Adrenocorticotropic Hormone (ACTH): Signals adrenal glands to produce cortisol for stress and immune regulation.
+##Posterior Lobe (Neurohypophysis)##  
+Stores oxytocin and vasopressin from the hypothalamus.  
+Energetically, reflects loyalty and connection.
 
-Follicle-Stimulating Hormone (FSH) & Luteinizing Hormone (LH): Control sperm production, ovulation, and hormone cycles.
+###Function###  
+Coordinates hormonal signals to maintain growth and stability.  
+Energetically, governs trust and balance between action and rest.
 
-Prolactin: Promotes milk production after giving birth.
-
-###Posterior Lobe (Neurohypophysis)###
-Releases hormones made by the hypothalamus:
-
-Oxytocin: Causes uterine contractions during birth and milk ejection.
-
-Antidiuretic Hormone (ADH): Regulates body water by signaling kidneys to retain fluid.
-
-###Infundibulum###
-Connects the pituitary to the hypothalamus, transferring hormonal and nerve signals for precise control.
-
-##Function##
-Acts as the master gland that regulates most other endocrine glands.
-Maintains growth, water balance, stress control, reproduction, and energy regulation.
-Pituitary dysfunction can lead to Cushing’s disease, causing excess cortisol and symptoms like hair loss, thirst, and fatigue.
-Coordinates growth, reproduction, stress response, and water balance by regulating other hormone-producing glands.
+###Common Imbalances###  
+Underactivity: fatigue or apathy.  
+Overactivity: tension or anxiety.  
+Disconnection: imbalance between giving and receiving.

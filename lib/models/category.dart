@@ -812,6 +812,332 @@ class CategoryData {
 
   // Get muscles categories for a specific animal
   static List<Category> getMusclesCategoriesForAnimal(String animalId) {
+    String animal = animalId.toLowerCase();
+    
+    // For horse and dog, use the specific implementations based on actual file structure
+    if (animal == 'horse') {
+      return _getHorseMusclesCategories();
+    } else if (animal == 'dog') {
+      return _getDogMusclesCategories();
+    }
+    
+    // Default implementation for bird and cat (to be updated later)
+    return _getDefaultMusclesCategories(animalId);
+  }
+
+  // Horse muscles categories based on actual folder structure
+  static List<Category> _getHorseMusclesCategories() {
+    return [
+      // Abdominal
+      Category(
+        id: 'abdominal',
+        label: 'Abdominal',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/abdominal.webp',
+        subcategories: [
+          Category(id: 'central', label: 'Central', icon: Icons.fitness_center),
+          Category(id: 'deep_layer', label: 'Deep Layer', icon: Icons.fitness_center),
+          Category(id: 'middle_layer', label: 'Middle Layer', icon: Icons.fitness_center),
+          Category(id: 'superficial_layer', label: 'Superficial Layer', icon: Icons.fitness_center),
+          Category(id: 'ventral', label: 'Ventral', icon: Icons.fitness_center),
+        ],
+      ),
+      // Back
+      Category(
+        id: 'back',
+        label: 'Back',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/back.webp',
+        subcategories: [
+          Category(id: 'deep_layer_core_stability', label: 'Deep Layer Core Stability', icon: Icons.fitness_center),
+          Category(id: 'epaxial_muscles', label: 'Epaxial Muscles', icon: Icons.fitness_center),
+          Category(id: 'hypaxial_muscles', label: 'Hypaxial Muscles', icon: Icons.fitness_center),
+          Category(id: 'intermediate_layer_force_transmission', label: 'Intermediate Layer Force Transmission', icon: Icons.fitness_center),
+          Category(id: 'superficial_layer_movement_power', label: 'Superficial Layer Movement Power', icon: Icons.fitness_center),
+        ],
+      ),
+      // Cutaneous (single file)
+      Category(
+        id: 'cutaneous',
+        label: 'Cutaneous',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/cutaneous.webp',
+      ),
+      // Forelimb
+      Category(
+        id: 'forelimb',
+        label: 'Forelimb',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/forelimb.webp',
+        subcategories: [
+          Category(id: 'antebrachium', label: 'Antebrachium', icon: Icons.fitness_center),
+          Category(id: 'brachium', label: 'Brachium', icon: Icons.fitness_center),
+          Category(id: 'deltoid_group', label: 'Deltoid Group', icon: Icons.fitness_center),
+          Category(id: 'manus', label: 'Manus', icon: Icons.fitness_center),
+          Category(id: 'pronator_muscles', label: 'Pronator Muscles', icon: Icons.fitness_center),
+          Category(id: 'shoulder', label: 'Shoulder', icon: Icons.fitness_center),
+          Category(id: 'supinator_muscle', label: 'Supinator Muscle', icon: Icons.fitness_center),
+        ],
+      ),
+      // Head & Neck
+      Category(
+        id: 'head_neck',
+        label: 'Head & Neck',
+        icon: Icons.face,
+        imagePath: 'assets/images/muscles/head_neck.webp',
+        subcategories: [
+          Category(id: 'fascial', label: 'Fascial', icon: Icons.fitness_center),
+          Category(id: 'laryngeal', label: 'Laryngeal', icon: Icons.fitness_center),
+          Category(id: 'mastication', label: 'Mastication', icon: Icons.fitness_center),
+          Category(id: 'neck', label: 'Neck', icon: Icons.fitness_center),
+          Category(id: 'pharyngeal', label: 'Pharyngeal', icon: Icons.fitness_center),
+          Category(id: 'throat', label: 'Throat', icon: Icons.fitness_center),
+          Category(id: 'tongue', label: 'Tongue', icon: Icons.fitness_center),
+        ],
+      ),
+      // Hindlimb
+      Category(
+        id: 'hindlimb',
+        label: 'Hindlimb',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/hindlimb.webp',
+        subcategories: [
+          Category(id: 'crus', label: 'Crus', icon: Icons.fitness_center),
+          Category(id: 'gluteal', label: 'Gluteal', icon: Icons.fitness_center),
+          Category(id: 'hip_thigh', label: 'Hip Thigh', icon: Icons.fitness_center),
+          Category(id: 'medial_thigh', label: 'Medial Thigh', icon: Icons.fitness_center),
+          Category(id: 'pes', label: 'Pes', icon: Icons.fitness_center),
+          Category(id: 'popliteus', label: 'Popliteus', icon: Icons.fitness_center),
+        ],
+      ),
+      // Pectoral
+      Category(
+        id: 'pectoral',
+        label: 'Pectoral',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/pectoral.webp',
+        subcategories: [
+          Category(id: 'deep', label: 'Deep', icon: Icons.fitness_center),
+          Category(id: 'superficial', label: 'Superficial', icon: Icons.fitness_center),
+        ],
+      ),
+      // Pelvic
+      Category(
+        id: 'pelvic',
+        label: 'Pelvic',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/pelvic.webp',
+        subcategories: [
+          Category(id: 'anal_sphincters', label: 'Anal Sphincters', icon: Icons.fitness_center),
+          Category(id: 'anus', label: 'Anus', icon: Icons.fitness_center),
+          Category(id: 'perineal', label: 'Perineal', icon: Icons.fitness_center),
+        ],
+      ),
+      // Respiration
+      Category(
+        id: 'respiration',
+        label: 'Respiration',
+        icon: Icons.air,
+        imagePath: 'assets/images/muscles/respiration.webp',
+        subcategories: [
+          Category(
+            id: 'expiratory',
+            label: 'Expiratory',
+            icon: Icons.air,
+            subcategories: [
+              Category(id: 'abdominal_muscles_respiration', label: 'Abdominal Muscles Respiration', icon: Icons.air),
+              Category(id: 'internal_intercostal', label: 'Internal Intercostal', icon: Icons.air),
+              Category(id: 'serratus_dorsalis_caudalis', label: 'Serratus Dorsalis Caudalis', icon: Icons.air),
+              Category(id: 'transversus_thoracis', label: 'Transversus Thoracis', icon: Icons.air),
+            ],
+          ),
+          Category(
+            id: 'inspiratory',
+            label: 'Inspiratory',
+            icon: Icons.air,
+            subcategories: [
+              Category(id: 'diaphragm', label: 'Diaphragm', icon: Icons.air),
+              Category(id: 'external_intercostal', label: 'External Intercostal', icon: Icons.air),
+              Category(id: 'rectus_thoracis', label: 'Rectus Thoracis', icon: Icons.air),
+              Category(id: 'scalenus', label: 'Scalenus', icon: Icons.air),
+              Category(id: 'serratus_dorsalis_cranialis', label: 'Serratus Dorsalis Cranialis', icon: Icons.air),
+            ],
+          ),
+        ],
+      ),
+      // Stay Apparatus (single file)
+      Category(
+        id: 'stay_apparatus',
+        label: 'Stay Apparatus',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/stay_apparatus.webp',
+      ),
+      // Tail
+      Category(
+        id: 'tail',
+        label: 'Tail',
+        icon: Icons.pets,
+        imagePath: 'assets/images/muscles/tail.webp',
+        subcategories: [
+          Category(id: 'deep_muscles', label: 'Deep Muscles', icon: Icons.pets),
+          Category(id: 'surface_muscles', label: 'Surface Muscles', icon: Icons.pets),
+          Category(id: 'tail_muscles', label: 'Tail Muscles', icon: Icons.pets),
+        ],
+      ),
+    ];
+  }
+
+  // Dog muscles categories based on actual folder structure
+  static List<Category> _getDogMusclesCategories() {
+    return [
+      // Abdominal
+      Category(
+        id: 'abdominal',
+        label: 'Abdominal',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/abdominal.webp',
+        subcategories: [
+          Category(id: 'central', label: 'Central', icon: Icons.fitness_center),
+          Category(id: 'deep_layer', label: 'Deep Layer', icon: Icons.fitness_center),
+          Category(id: 'middle_layer', label: 'Middle Layer', icon: Icons.fitness_center),
+          Category(id: 'superficial_layer', label: 'Superficial Layer', icon: Icons.fitness_center),
+          Category(id: 'ventral', label: 'Ventral', icon: Icons.fitness_center),
+        ],
+      ),
+      // Back
+      Category(
+        id: 'back',
+        label: 'Back',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/back.webp',
+        subcategories: [
+          Category(id: 'deep_layer_core_stability', label: 'Deep Layer Core Stability', icon: Icons.fitness_center),
+          Category(id: 'epaxial_muscles', label: 'Epaxial Muscles', icon: Icons.fitness_center),
+          Category(id: 'hypaxial_muscles', label: 'Hypaxial Muscles', icon: Icons.fitness_center),
+          Category(id: 'intermediate_layer_force_transmission', label: 'Intermediate Layer Force Transmission', icon: Icons.fitness_center),
+          Category(id: 'superficial_layer_movement_power', label: 'Superficial Layer Movement Power', icon: Icons.fitness_center),
+        ],
+      ),
+      // Forelimb
+      Category(
+        id: 'forelimb',
+        label: 'Forelimb',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/forelimb.webp',
+        subcategories: [
+          Category(id: 'antebrachium', label: 'Antebrachium', icon: Icons.fitness_center),
+          Category(id: 'brachium', label: 'Brachium', icon: Icons.fitness_center),
+          Category(id: 'deltoid_group', label: 'Deltoid Group', icon: Icons.fitness_center),
+          Category(id: 'manus', label: 'Manus', icon: Icons.fitness_center),
+          Category(id: 'pronator_muscles', label: 'Pronator Muscles', icon: Icons.fitness_center),
+          Category(id: 'shoulder', label: 'Shoulder', icon: Icons.fitness_center),
+          Category(id: 'supinator_muscle', label: 'Supinator Muscle', icon: Icons.fitness_center),
+          Category(id: 'trapezius', label: 'Trapezius', icon: Icons.fitness_center),
+        ],
+      ),
+      // Head & Neck
+      Category(
+        id: 'head_neck',
+        label: 'Head & Neck',
+        icon: Icons.face,
+        imagePath: 'assets/images/muscles/head_neck.webp',
+        subcategories: [
+          Category(id: 'fascial', label: 'Fascial', icon: Icons.fitness_center),
+          Category(id: 'laryngeal', label: 'Laryngeal', icon: Icons.fitness_center),
+          Category(id: 'mastication', label: 'Mastication', icon: Icons.fitness_center),
+          Category(id: 'neck', label: 'Neck', icon: Icons.fitness_center),
+          Category(id: 'pharyngeal', label: 'Pharyngeal', icon: Icons.fitness_center),
+          Category(id: 'throat', label: 'Throat', icon: Icons.fitness_center),
+          Category(id: 'tongue', label: 'Tongue', icon: Icons.fitness_center),
+        ],
+      ),
+      // Hindlimb
+      Category(
+        id: 'hindlimb',
+        label: 'Hindlimb',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/hindlimb.webp',
+        subcategories: [
+          Category(id: 'crus', label: 'Crus', icon: Icons.fitness_center),
+          Category(id: 'gluteal', label: 'Gluteal', icon: Icons.fitness_center),
+          Category(id: 'hip_thigh', label: 'Hip Thigh', icon: Icons.fitness_center),
+          Category(id: 'medial_thigh', label: 'Medial Thigh', icon: Icons.fitness_center),
+          Category(id: 'pes', label: 'Pes', icon: Icons.fitness_center),
+          Category(id: 'popliteus', label: 'Popliteus', icon: Icons.fitness_center),
+        ],
+      ),
+      // Pectoral
+      Category(
+        id: 'pectoral',
+        label: 'Pectoral',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/pectoral.webp',
+        subcategories: [
+          Category(id: 'deep', label: 'Deep', icon: Icons.fitness_center),
+          Category(id: 'superficial', label: 'Superficial', icon: Icons.fitness_center),
+        ],
+      ),
+      // Pelvic
+      Category(
+        id: 'pelvic',
+        label: 'Pelvic',
+        icon: Icons.fitness_center,
+        imagePath: 'assets/images/muscles/pelvic.webp',
+        subcategories: [
+          Category(id: 'anal_sphincters', label: 'Anal Sphincters', icon: Icons.fitness_center),
+          Category(id: 'cutaneous', label: 'Cutaneous', icon: Icons.fitness_center),
+          Category(id: 'perineal', label: 'Perineal', icon: Icons.fitness_center),
+        ],
+      ),
+      // Respiration
+      Category(
+        id: 'respiration',
+        label: 'Respiration',
+        icon: Icons.air,
+        imagePath: 'assets/images/muscles/respiration.webp',
+        subcategories: [
+          Category(
+            id: 'expiratory',
+            label: 'Expiratory',
+            icon: Icons.air,
+            subcategories: [
+              Category(id: 'abdominal_muscles_respiration', label: 'Abdominal Muscles Respiration', icon: Icons.air),
+              Category(id: 'internal_intercostal', label: 'Internal Intercostal', icon: Icons.air),
+              Category(id: 'rectus_thoracis', label: 'Rectus Thoracis', icon: Icons.air),
+              Category(id: 'serratus_dorsalis_cranialis', label: 'Serratus Dorsalis Cranialis', icon: Icons.air),
+            ],
+          ),
+          Category(
+            id: 'inspiratory',
+            label: 'Inspiratory',
+            icon: Icons.air,
+            subcategories: [
+              Category(id: 'diaphragm', label: 'Diaphragm', icon: Icons.air),
+              Category(id: 'external_intercostal', label: 'External Intercostal', icon: Icons.air),
+              Category(id: 'scalenus', label: 'Scalenus', icon: Icons.air),
+              Category(id: 'serratus_dorsalis_caudalis', label: 'Serratus Dorsalis Caudalis', icon: Icons.air),
+              Category(id: 'transversus_thoracis', label: 'Transversus Thoracis', icon: Icons.air),
+            ],
+          ),
+        ],
+      ),
+      // Tail
+      Category(
+        id: 'tail',
+        label: 'Tail',
+        icon: Icons.pets,
+        imagePath: 'assets/images/muscles/tail.webp',
+        subcategories: [
+          Category(id: 'deep_muscles', label: 'Deep Muscles', icon: Icons.pets),
+          Category(id: 'surface_muscles', label: 'Surface Muscles', icon: Icons.pets),
+          Category(id: 'tail_muscles', label: 'Tail Muscles', icon: Icons.pets),
+        ],
+      ),
+    ];
+  }
+
+  // Default muscles categories for bird and cat (to be updated later)
+  static List<Category> _getDefaultMusclesCategories(String animalId) {
     final categories = <Category>[];
 
     // Abdominal muscles - different for each animal
@@ -1315,8 +1641,6 @@ class CategoryData {
   static IconData _getSystemIcon(String systemId) {
     switch (systemId) {
       case 'cardiovascular_system':
-      case 'cariovascular_system':
-      case 'cardiocascular_system':
         return Icons.bloodtype;
       case 'respiratory_system':
         return Icons.air;
@@ -1328,7 +1652,7 @@ class CategoryData {
       case 'reproductive_system':
         return Icons.favorite;
       case 'endocrine_system':
-      case 'endocrine _system':
+      case 'endocrine_system':
         return Icons.scatter_plot;
       case 'lymphatic_system':
         return Icons.water;
@@ -1346,9 +1670,37 @@ class CategoryData {
         return Icons.linear_scale;
       case 'regional_lymph_nodes':
         return Icons.water;
+      case 'lower_tract':
+      case 'upper_tract':
+      case 'upper':
+      case 'lower':
+        return Icons.restaurant;
+      case 'autonomic':
+      case 'cns':
+      case 'pns':
+        return Icons.psychology;
+      case 'female':
+      case 'male':
+        return Icons.favorite;
+      case 'lumbar_plexus':
+      case 'sacra_plexus':
+      case 'major_nerves':
+        return Icons.linear_scale;
       default:
         return Icons.category;
     }
+  }
+
+  /// Build categories recursively from file/folder structure
+  /// Returns a list of Category objects based on the given directory path
+  static List<Category> _buildCategoriesFromPath(String animalId, String relativePath) {
+    // For now, we'll hardcode the structure based on what we discovered
+    // In a real implementation, you'd use dart:io to read the directory
+    // but since Flutter assets are compiled, we need to specify them explicitly
+    
+    // This is a placeholder that will be replaced by actual hardcoded structure
+    // based on the file system analysis
+    return [];
   }
 
   static List<Category> getSystemsCategoriesForAnimal(String animalId) {
@@ -1369,295 +1721,73 @@ class CategoryData {
 
   static List<Category> _getHorseSystemsCategories() {
     return [
-      // Cardiovascular System
+      // Cardiovascular System (note: folder has typo "cariovascular system")
       Category(
         id: 'cardiovascular_system',
-        label: 'Cardiovascular System',
-        icon: Icons.bloodtype,
+        label: _systemIdToLabel('cardiovascular_system'),
+        icon: _getSystemIcon('cardiovascular_system'),
         imagePath: 'assets/images/systems/cardiovascular_system.webp',
         subcategories: [
-          Category(id: 'arteries', label: 'Arteries', icon: Icons.check_circle),
-          Category(id: 'capillaries', label: 'Capillaries', icon: Icons.linear_scale),
-          Category(id: 'heart', label: 'Heart', icon: Icons.favorite),
-          Category(id: 'veins', label: 'Veins', icon: Icons.linear_scale),
+          Category(id: 'arteries', label: _systemIdToLabel('arteries'), icon: Icons.linear_scale),
+          Category(id: 'blood', label: _systemIdToLabel('blood'), icon: Icons.bloodtype),
+          Category(id: 'capillaries', label: _systemIdToLabel('capillaries'), icon: Icons.linear_scale),
+          Category(id: 'heart', label: _systemIdToLabel('heart'), icon: Icons.favorite),
+          Category(id: 'pericardium', label: _systemIdToLabel('pericardium'), icon: Icons.favorite),
+          Category(id: 'veins', label: _systemIdToLabel('veins'), icon: Icons.linear_scale),
         ],
       ),
-      // Cranial Nerves (standalone)
+      // Cranial Nerves
       Category(
         id: 'cranial_nerves',
-        label: 'Cranial Nerves',
-        icon: Icons.psychology,
-      ),
-      // Digestive System
-      Category(
-        id: 'digestive _system',
-        label: 'Digestive System',
-        icon: Icons.restaurant,
-        imagePath: 'assets/images/systems/digestive_system.webp',
+        label: _systemIdToLabel('cranial_nerves'),
+        icon: _getSystemIcon('cranial_nerves'),
         subcategories: [
-          Category(
-            id: 'lower_tract',
-            label: 'Lower Tract',
-            icon: Icons.emoji_food_beverage,
-            subcategories: [
-              Category(id: 'anus', label: 'Anus', icon: Icons.air),
-              Category(id: 'large_intestine', label: 'Large Intestine', icon: Icons.air),
-              Category(id: 'liver', label: 'Liver', icon: Icons.air),
-              Category(id: 'pancreas', label: 'Pancreas', icon: Icons.air),
-              Category(id: 'rectum', label: 'Rectum', icon: Icons.air),
-              Category(id: 'small_intestine', label: 'Small Intestine', icon: Icons.air),
-            ],
-          ),
-          Category(
-            id: 'upper_tract',
-            label: 'Upper Tract',
-            icon: Icons.emoji_food_beverage,
-            subcategories: [
-              Category(id: 'esophagus', label: 'Esophagus', icon: Icons.air),
-              Category(id: 'mouth', label: 'Mouth', icon: Icons.air),
-              Category(id: 'pharynx', label: 'Pharynx', icon: Icons.air),
-              Category(id: 'salivary_glands', label: 'Salivary Glands', icon: Icons.air),
-              Category(id: 'stomach', label: 'Stomach', icon: Icons.air),
-              Category(id: 'teeth', label: 'Teeth', icon: Icons.air),
-              Category(id: 'tongue', label: 'Tongue', icon: Icons.air),
-            ],
-          ),
-        ],
-      ),
-      // Endocrine System
-      Category(
-        id: 'endocrine _system',
-        label: 'Endocrine System',
-        icon: Icons.scatter_plot,
-        imagePath: 'assets/images/systems/endocrine_system.webp',
-        subcategories: [
-          Category(id: 'adrenal_glands', label: 'Adrenal Glands', icon: Icons.scatter_plot),
-          Category(id: 'endocrine_axis', label: 'Endocrine Axis', icon: Icons.scatter_plot),
-          Category(id: 'gonads', label: 'Gonads', icon: Icons.scatter_plot),
-          Category(id: 'hypothalamus', label: 'Hypothalamus', icon: Icons.scatter_plot),
-          Category(id: 'pancreatic_islets', label: 'Pancreatic Islets', icon: Icons.scatter_plot),
-          Category(id: 'parathyroid_glands', label: 'Parathyroid Glands', icon: Icons.scatter_plot),
-          Category(id: 'pineal_gland', label: 'Pineal Gland', icon: Icons.scatter_plot),
-          Category(id: 'pituitary', label: 'Pituitary', icon: Icons.scatter_plot),
-          Category(id: 'thymus', label: 'Thymus', icon: Icons.scatter_plot),
-          Category(id: 'thyroid_gland', label: 'Thyroid Gland', icon: Icons.scatter_plot),
-        ],
-      ),
-      // Hepatobiliary System
-      Category(
-        id: 'hepatobiliary_system',
-        label: 'Hepatobiliary System',
-        icon: Icons.local_hospital,
-        subcategories: [
-          Category(id: 'bile_ducts', label: 'Bile Ducts', icon: Icons.linear_scale),
-          Category(id: 'duodenal_entry', label: 'Duodenal Entry', icon: Icons.air),
-          Category(id: 'liver', label: 'Liver', icon: Icons.air),
-        ],
-      ),
-      // Integumentary System
-      Category(
-        id: 'integumentary_system',
-        label: 'Integumentary System',
-        icon: Icons.layers,
-        subcategories: [
-          Category(id: 'dermis', label: 'Dermis', icon: Icons.layers),
-          Category(id: 'epidermis', label: 'Epidermis', icon: Icons.layers),
-          Category(id: 'glands', label: 'Glands', icon: Icons.scatter_plot),
-          Category(id: 'hair_coat', label: 'Hair Coat', icon: Icons.brush),
-          Category(id: 'hair_follicle_receptors', label: 'Hair Follicle Receptors', icon: Icons.sensors),
-          Category(id: 'hypodermis', label: 'Hypodermis', icon: Icons.layers),
-          Category(id: 'mane_tail', label: 'Mane Tail', icon: Icons.brush),
-          Category(id: 'pigmentation_color_patterns', label: 'Pigmentation Color Patterns', icon: Icons.palette),
-          Category(id: 'protective_structures', label: 'Protective Structures', icon: Icons.shield),
-          Category(id: 'whiskers_vibrissae', label: 'Whiskers Vibrissae', icon: Icons.sensors),
-        ],
-      ),
-      // Lumbosacral Plexus
-      Category(
-        id: 'lumbosacral_plexus',
-        label: 'Lumbosacral Plexus',
-        icon: Icons.linear_scale,
-        subcategories: [
-          Category(id: 'lumbosacral_plexus', label: 'Lumbosacral Plexus', icon: Icons.linear_scale),
-          Category(id: 'major_nerves_femoral_obturator_sciatic_pudendal', label: 'Major Nerves Femoral Obturator Sciatic Pudendal', icon: Icons.linear_scale),
-          Category(id: 'sacral_plexus_l5_s5', label: 'Sacral Plexus L5 S5', icon: Icons.linear_scale),
-        ],
-      ),
-      // Lymphatic System
-      Category(
-        id: 'lymphatic_system',
-        label: 'Lymphatic System',
-        icon: Icons.water,
-        imagePath: 'assets/images/systems/lymphatic_system.webp',
-        subcategories: [
-          Category(id: 'lymph_fluid', label: 'Lymph Fluid', icon: Icons.water),
-          Category(id: 'lymph_nodes', label: 'Lymph Nodes', icon: Icons.water),
-          Category(id: 'lymphatic_vessel', label: 'Lymphatic Vessel', icon: Icons.water),
-          Category(id: 'spleen', label: 'Spleen', icon: Icons.water),
-          Category(id: 'thymus', label: 'Thymus', icon: Icons.water),
-          Category(id: 'tonsils', label: 'Tonsils', icon: Icons.water),
-        ],
-      ),
-      // Nervous System
-      Category(
-        id: 'nervous_system',
-        label: 'Nervous System',
-        icon: Icons.psychology,
-        imagePath: 'assets/images/systems/nervous_system.webp',
-        subcategories: [
-          Category(
-            id: 'autonomic',
-            label: 'Autonomic',
-            icon: Icons.settings,
-            subcategories: [
-              Category(id: 'enteric_nervous_system', label: 'Enteric Nervous System', icon: Icons.settings),
-              Category(id: 'parasympathetic', label: 'Parasympathetic', icon: Icons.settings),
-              Category(id: 'sympathetic', label: 'Sympathetic', icon: Icons.settings),
-            ],
-          ),
-          Category(
-            id: 'nervous_system_cns',
-            label: 'Nervous System (CNS)',
-            icon: Icons.psychology,
-            subcategories: [
-              Category(id: 'brain', label: 'Brain', icon: Icons.psychology),
-              Category(id: 'meninges_ventricles', label: 'Meninges Ventricles', icon: Icons.psychology),
-              Category(id: 'spinal_cord', label: 'Spinal Cord', icon: Icons.psychology),
-            ],
-          ),
-          Category(
-            id: 'peripheral_nervous_system_pns',
-            label: 'Peripheral Nervous System (PNS)',
-            icon: Icons.scatter_plot,
-            subcategories: [
-              Category(id: 'brachial_plexus', label: 'Brachial Plexus', icon: Icons.scatter_plot),
-              Category(id: 'cranial_nerves', label: 'Cranial Nerves', icon: Icons.scatter_plot),
-              Category(id: 'motor_nerves', label: 'Motor Nerves', icon: Icons.scatter_plot),
-              Category(id: 'sensory_nerves', label: 'Sensory Nerves', icon: Icons.scatter_plot),
-              Category(id: 'spinal_nerves', label: 'Spinal Nerves', icon: Icons.scatter_plot),
-            ],
-          ),
-        ],
-      ),
-      // Reproductive System
-      Category(
-        id: 'reproductive_system',
-        label: 'Reproductive System',
-        icon: Icons.favorite,
-        imagePath: 'assets/images/systems/reproductive_system.webp',
-        subcategories: [
-          Category(
-            id: 'female',
-            label: 'Female',
-            icon: Icons.female,
-            subcategories: [
-              Category(id: 'cervix', label: 'Cervix', icon: Icons.circle),
-              Category(id: 'external_genitalia', label: 'External Genitalia', icon: Icons.crop_portrait),
-              Category(id: 'mammary_glands', label: 'Mammary Glands', icon: Icons.scatter_plot),
-              Category(id: 'ovaries', label: 'Ovaries', icon: Icons.circle),
-              Category(id: 'Placenta_Horse', label: 'Placenta Horse', icon: Icons.favorite),
-              Category(id: 'placenta', label: 'Placenta', icon: Icons.favorite),
-              Category(id: 'uterine_tubes', label: 'Uterine Tubes', icon: Icons.linear_scale),
-              Category(id: 'uterus', label: 'Uterus', icon: Icons.favorite),
-              Category(id: 'vagina', label: 'Vagina', icon: Icons.linear_scale),
-            ],
-          ),
-          Category(
-            id: 'male',
-            label: 'Male',
-            icon: Icons.male,
-            subcategories: [
-              Category(id: 'accessory_glands', label: 'Accessory Glands', icon: Icons.scatter_plot),
-              Category(id: 'epididymis', label: 'Epididymis', icon: Icons.circle),
-              Category(id: 'mammary_glands', label: 'Mammary Glands', icon: Icons.scatter_plot),
-              Category(id: 'penis', label: 'Penis', icon: Icons.scatter_plot),
-              Category(id: 'prepuce', label: 'Prepuce', icon: Icons.scatter_plot),
-              Category(id: 'sperm_duct', label: 'Sperm Duct', icon: Icons.linear_scale),
-              Category(id: 'testes', label: 'Testes', icon: Icons.circle),
-            ],
-          ),
-        ],
-      ),
-      // Respiratory System
-      Category(
-        id: 'respiratory_system',
-        label: 'Respiratory System',
-        icon: Icons.air,
-        imagePath: 'assets/images/systems/respiratory_system.webp',
-        subcategories: [
-          Category(id: 'lower_airways', label: 'Lower Airways', icon: Icons.air),
-          Category(id: 'upper_airways', label: 'Upper Airways', icon: Icons.air),
-        ],
-      ),
-      // Urinary System
-      Category(
-        id: 'urinary_system',
-        label: 'Urinary System',
-        icon: Icons.water_drop,
-        imagePath: 'assets/images/systems/urinary_system.webp',
-        subcategories: [
-          Category(id: 'kidneys', label: 'Kidneys', icon: Icons.water_drop),
-          Category(id: 'ureters', label: 'Ureters', icon: Icons.linear_scale),
-          Category(id: 'urethra', label: 'Urethra', icon: Icons.linear_scale),
-          Category(id: 'urinary_bladder', label: 'Urinary Bladder', icon: Icons.opacity),
-        ],
-      ),
-    ];
-  }
-
-  static List<Category> _getDogSystemsCategories() {
-    return [
-      // Brachial Plexus (standalone)
-      Category(
-        id: 'brachial_plexus_c6_t2',
-        label: 'Brachial Plexus C6 T2',
-        icon: Icons.linear_scale,
-      ),
-      // Cardiovascular System
-      Category(
-        id: 'cardiovascular_system',
-        label: 'Cardiovascular System',
-        icon: Icons.bloodtype,
-        imagePath: 'assets/images/systems/cardiovascular_system.webp',
-        subcategories: [
-          Category(id: 'arteries', label: 'Arteries', icon: Icons.check_circle),
-          Category(id: 'capillaries', label: 'Capillaries', icon: Icons.linear_scale),
-          Category(id: 'heart', label: 'Heart', icon: Icons.favorite),
-          Category(id: 'veins', label: 'Veins', icon: Icons.linear_scale),
+          Category(id: 'abducent_nerve_vi', label: _systemIdToLabel('abducent_nerve_vi'), icon: Icons.psychology),
+          Category(id: 'accessory_nerve_xi', label: _systemIdToLabel('accessory_nerve_xi'), icon: Icons.psychology),
+          Category(id: 'facial_nerve_vii', label: _systemIdToLabel('facial_nerve_vii'), icon: Icons.psychology),
+          Category(id: 'glossopharyngeal_nerve_ix', label: _systemIdToLabel('glossopharyngeal_nerve_ix'), icon: Icons.psychology),
+          Category(id: 'hypoglossal_nerve_xii', label: _systemIdToLabel('hypoglossal_nerve_xii'), icon: Icons.psychology),
+          Category(id: 'oculomotor_nerve_iii', label: _systemIdToLabel('oculomotor_nerve_iii'), icon: Icons.psychology),
+          Category(id: 'olfactory_nerve_i', label: _systemIdToLabel('olfactory_nerve_i'), icon: Icons.psychology),
+          Category(id: 'optic_nerve_ii', label: _systemIdToLabel('optic_nerve_ii'), icon: Icons.psychology),
+          Category(id: 'trigeminal_nerve_v', label: _systemIdToLabel('trigeminal_nerve_v'), icon: Icons.psychology),
+          Category(id: 'trochlear_nerve_iv', label: _systemIdToLabel('trochlear_nerve_iv'), icon: Icons.psychology),
+          Category(id: 'vagus_nerve_x', label: _systemIdToLabel('vagus_nerve_x'), icon: Icons.psychology),
+          Category(id: 'vestibulocochlear_nerve_viii', label: _systemIdToLabel('vestibulocochlear_nerve_viii'), icon: Icons.psychology),
         ],
       ),
       // Digestive System
       Category(
         id: 'digestive_system',
-        label: 'Digestive System',
-        icon: Icons.restaurant,
+        label: _systemIdToLabel('digestive_system'),
+        icon: _getSystemIcon('digestive_system'),
         imagePath: 'assets/images/systems/digestive_system.webp',
         subcategories: [
           Category(
             id: 'lower_tract',
-            label: 'Lower Tract',
-            icon: Icons.emoji_food_beverage,
+            label: _systemIdToLabel('lower_tract'),
+            icon: _getSystemIcon('lower_tract'),
             subcategories: [
-              Category(id: 'anus', label: 'Anus', icon: Icons.air),
-              Category(id: 'gallbladder', label: 'Gallbladder', icon: Icons.air),
-              Category(id: 'liver', label: 'Liver', icon: Icons.air),
-              Category(id: 'pancreas', label: 'Pancreas', icon: Icons.air),
+              Category(id: 'anus', label: _systemIdToLabel('anus'), icon: Icons.circle),
+              Category(id: 'large_intestine', label: _systemIdToLabel('large_intestine'), icon: Icons.linear_scale),
+              Category(id: 'liver', label: _systemIdToLabel('liver'), icon: Icons.local_hospital),
+              Category(id: 'pancreas', label: _systemIdToLabel('pancreas'), icon: Icons.scatter_plot),
+              Category(id: 'rectum', label: _systemIdToLabel('rectum'), icon: Icons.circle),
+              Category(id: 'small_intestine', label: _systemIdToLabel('small_intestine'), icon: Icons.linear_scale),
             ],
           ),
           Category(
             id: 'upper_tract',
-            label: 'Upper Tract',
-            icon: Icons.emoji_food_beverage,
+            label: _systemIdToLabel('upper_tract'),
+            icon: _getSystemIcon('upper_tract'),
             subcategories: [
-              Category(id: 'esophagus', label: 'Esophagus', icon: Icons.air),
-              Category(id: 'large_intestine', label: 'Large Intestine', icon: Icons.air),
-              Category(id: 'mouth', label: 'Mouth', icon: Icons.air),
-              Category(id: 'pharynx', label: 'Pharynx', icon: Icons.air),
-              Category(id: 'rectum', label: 'Rectum', icon: Icons.air),
-              Category(id: 'salivary_glands', label: 'Salivary Glands', icon: Icons.air),
-              Category(id: 'small_intestine', label: 'Small Intestine', icon: Icons.air),
-              Category(id: 'stomach', label: 'Stomach', icon: Icons.air),
-              Category(id: 'teeth', label: 'Teeth', icon: Icons.air),
+              Category(id: 'esophagus', label: _systemIdToLabel('esophagus'), icon: Icons.linear_scale),
+              Category(id: 'mouth', label: _systemIdToLabel('mouth'), icon: Icons.circle),
+              Category(id: 'pharynx', label: _systemIdToLabel('pharynx'), icon: Icons.circle),
+              Category(id: 'salivary_glands', label: _systemIdToLabel('salivary_glands'), icon: Icons.scatter_plot),
+              Category(id: 'stomach', label: _systemIdToLabel('stomach'), icon: Icons.restaurant),
+              Category(id: 'teeth', label: _systemIdToLabel('teeth'), icon: Icons.circle),
+              Category(id: 'tongue', label: _systemIdToLabel('tongue'), icon: Icons.circle),
             ],
           ),
         ],
@@ -1665,20 +1795,345 @@ class CategoryData {
       // Endocrine System
       Category(
         id: 'endocrine_system',
-        label: 'Endocrine System',
-        icon: Icons.scatter_plot,
+        label: _systemIdToLabel('endocrine_system'),
+        icon: _getSystemIcon('endocrine_system'),
         imagePath: 'assets/images/systems/endocrine_system.webp',
         subcategories: [
-          Category(id: 'adrenal_glands', label: 'Adrenal Glands', icon: Icons.scatter_plot),
-          Category(id: 'endocrine_axis', label: 'Endocrine Axis', icon: Icons.scatter_plot),
-          Category(id: 'gonads', label: 'Gonads', icon: Icons.scatter_plot),
-          Category(id: 'hypothalamus', label: 'Hypothalamus', icon: Icons.scatter_plot),
-          Category(id: 'pancreatic_islets', label: 'Pancreatic Islets', icon: Icons.scatter_plot),
-          Category(id: 'parathyroid_glands', label: 'Parathyroid Glands', icon: Icons.scatter_plot),
-          Category(id: 'pineal_gland', label: 'Pineal Gland', icon: Icons.scatter_plot),
-          Category(id: 'pituitary', label: 'Pituitary', icon: Icons.scatter_plot),
-          Category(id: 'thymus', label: 'Thymus', icon: Icons.scatter_plot),
-          Category(id: 'thyroid_gland', label: 'Thyroid Gland', icon: Icons.scatter_plot),
+          Category(id: 'adrenal_glands', label: _systemIdToLabel('adrenal_glands'), icon: Icons.scatter_plot),
+          Category(id: 'endocrine_axis', label: _systemIdToLabel('endocrine_axis'), icon: Icons.scatter_plot),
+          Category(id: 'gonads', label: _systemIdToLabel('gonads'), icon: Icons.scatter_plot),
+          Category(id: 'hypothalamus', label: _systemIdToLabel('hypothalamus'), icon: Icons.scatter_plot),
+          Category(id: 'pancreas_endocrine', label: _systemIdToLabel('pancreas_endocrine'), icon: Icons.scatter_plot),
+          Category(id: 'parathyroid_glands', label: _systemIdToLabel('parathyroid_glands'), icon: Icons.scatter_plot),
+          Category(id: 'pineal_gland', label: _systemIdToLabel('pineal_gland'), icon: Icons.scatter_plot),
+          Category(id: 'pituitary', label: _systemIdToLabel('pituitary'), icon: Icons.scatter_plot),
+          Category(id: 'thymus_endocrine', label: _systemIdToLabel('thymus_endocrine'), icon: Icons.scatter_plot),
+          Category(id: 'thyroid_gland', label: _systemIdToLabel('thyroid_gland'), icon: Icons.scatter_plot),
+        ],
+      ),
+      // Hepatobiliary System
+      Category(
+        id: 'hepatobiliary_system',
+        label: _systemIdToLabel('hepatobiliary_system'),
+        icon: _getSystemIcon('hepatobiliary_system'),
+        subcategories: [
+          Category(id: 'bile_canaliculi', label: _systemIdToLabel('bile_canaliculi'), icon: Icons.linear_scale),
+          Category(id: 'bile_ducts', label: _systemIdToLabel('bile_ducts'), icon: Icons.linear_scale),
+          Category(id: 'bile_storage_and_flow', label: _systemIdToLabel('bile_storage_and_flow'), icon: Icons.water),
+          Category(id: 'common_bile_duct', label: _systemIdToLabel('common_bile_duct'), icon: Icons.linear_scale),
+          Category(id: 'cystic_duct', label: _systemIdToLabel('cystic_duct'), icon: Icons.linear_scale),
+          Category(id: 'hepatic_artery', label: _systemIdToLabel('hepatic_artery'), icon: Icons.linear_scale),
+          Category(id: 'hepatic_ducts', label: _systemIdToLabel('hepatic_ducts'), icon: Icons.linear_scale),
+          Category(id: 'hepatic_lobules', label: _systemIdToLabel('hepatic_lobules'), icon: Icons.circle),
+          Category(id: 'hepatic_vein', label: _systemIdToLabel('hepatic_vein'), icon: Icons.linear_scale),
+          Category(id: 'kupffer_cells', label: _systemIdToLabel('kupffer_cells'), icon: Icons.circle),
+          Category(id: 'liver', label: _systemIdToLabel('liver'), icon: Icons.local_hospital),
+          Category(id: 'portal_vein', label: _systemIdToLabel('portal_vein'), icon: Icons.linear_scale),
+        ],
+      ),
+      // Integumentary System
+      Category(
+        id: 'integumentary_system',
+        label: _systemIdToLabel('integumentary_system'),
+        icon: _getSystemIcon('integumentary_system'),
+        subcategories: [
+          Category(id: 'dermis', label: _systemIdToLabel('dermis'), icon: Icons.layers),
+          Category(id: 'epidermis', label: _systemIdToLabel('epidermis'), icon: Icons.layers),
+          Category(id: 'glands', label: _systemIdToLabel('glands'), icon: Icons.scatter_plot),
+          Category(id: 'hair_coat', label: _systemIdToLabel('hair_coat'), icon: Icons.brush),
+          Category(id: 'hair_follicle_receptors', label: _systemIdToLabel('hair_follicle_receptors'), icon: Icons.sensors),
+          Category(id: 'hypodermis', label: _systemIdToLabel('hypodermis'), icon: Icons.layers),
+          Category(id: 'mane_tail', label: _systemIdToLabel('mane_tail'), icon: Icons.brush),
+          Category(id: 'pigmentation_color_patterns', label: _systemIdToLabel('pigmentation_color_patterns'), icon: Icons.palette),
+          Category(id: 'protective_structures', label: _systemIdToLabel('protective_structures'), icon: Icons.shield),
+          Category(id: 'whiskers_vibrissae', label: _systemIdToLabel('whiskers_vibrissae'), icon: Icons.sensors),
+        ],
+      ),
+      // Lumbosacral Plexus
+      Category(
+        id: 'lumbosacral_plexus',
+        label: _systemIdToLabel('lumbosacral_plexus'),
+        icon: _getSystemIcon('lumbosacral_plexus'),
+        subcategories: [
+          Category(
+            id: 'lumbar_plexus',
+            label: _systemIdToLabel('lumbar_plexus'),
+            icon: _getSystemIcon('lumbar_plexus'),
+            subcategories: [
+              Category(id: 'femoral_nerve', label: _systemIdToLabel('femoral_nerve'), icon: Icons.linear_scale),
+              Category(id: 'lateral_cutaneous_femoral_nerve', label: _systemIdToLabel('lateral_cutaneous_femoral_nerve'), icon: Icons.linear_scale),
+              Category(id: 'obturator_nerve', label: _systemIdToLabel('obturator_nerve'), icon: Icons.linear_scale),
+            ],
+          ),
+          Category(
+            id: 'major_nerves',
+            label: _systemIdToLabel('major_nerves'),
+            icon: _getSystemIcon('major_nerves'),
+            subcategories: [
+              Category(id: 'brachial_plexus', label: _systemIdToLabel('brachial_plexus'), icon: Icons.linear_scale),
+              Category(id: 'median_nerve', label: _systemIdToLabel('median_nerve'), icon: Icons.linear_scale),
+              Category(id: 'radial_nerve', label: _systemIdToLabel('radial_nerve'), icon: Icons.linear_scale),
+              Category(id: 'ulnar_nerve', label: _systemIdToLabel('ulnar_nerve'), icon: Icons.linear_scale),
+            ],
+          ),
+          Category(
+            id: 'sacra_plexus',
+            label: _systemIdToLabel('sacra_plexus'),
+            icon: _getSystemIcon('sacra_plexus'),
+            subcategories: [
+              Category(id: 'gluteal_nerves', label: _systemIdToLabel('gluteal_nerves'), icon: Icons.linear_scale),
+              Category(id: 'pudendal_nerve', label: _systemIdToLabel('pudendal_nerve'), icon: Icons.linear_scale),
+              Category(id: 'sciatic_nerve', label: _systemIdToLabel('sciatic_nerve'), icon: Icons.linear_scale),
+            ],
+          ),
+        ],
+      ),
+      // Lymphatic System
+      Category(
+        id: 'lymphatic_system',
+        label: _systemIdToLabel('lymphatic_system'),
+        icon: _getSystemIcon('lymphatic_system'),
+        imagePath: 'assets/images/systems/lymphatic_system.webp',
+        subcategories: [
+          Category(id: 'lymph', label: _systemIdToLabel('lymph'), icon: Icons.water),
+          Category(id: 'lymph_capillaries', label: _systemIdToLabel('lymph_capillaries'), icon: Icons.water),
+          Category(id: 'lymph_nodes', label: _systemIdToLabel('lymph_nodes'), icon: Icons.water),
+          Category(id: 'lymph_vessels', label: _systemIdToLabel('lymph_vessels'), icon: Icons.water),
+          Category(id: 'peyers_patches', label: _systemIdToLabel('peyers_patches'), icon: Icons.water),
+          Category(id: 'right_lymphatic_duct', label: _systemIdToLabel('right_lymphatic_duct'), icon: Icons.water),
+          Category(id: 'spleen', label: _systemIdToLabel('spleen'), icon: Icons.water),
+          Category(id: 'thoracic_duct', label: _systemIdToLabel('thoracic_duct'), icon: Icons.water),
+          Category(id: 'thymus', label: _systemIdToLabel('thymus'), icon: Icons.water),
+          Category(id: 'tonsils', label: _systemIdToLabel('tonsils'), icon: Icons.water),
+        ],
+      ),
+      // Nervous System
+      Category(
+        id: 'nervous_system',
+        label: _systemIdToLabel('nervous_system'),
+        icon: _getSystemIcon('nervous_system'),
+        imagePath: 'assets/images/systems/nervous_system.webp',
+        subcategories: [
+          Category(
+            id: 'autonomic',
+            label: _systemIdToLabel('autonomic'),
+            icon: _getSystemIcon('autonomic'),
+            subcategories: [
+              Category(id: 'enteric_system', label: _systemIdToLabel('enteric_system'), icon: Icons.settings),
+              Category(id: 'parasympathetic', label: _systemIdToLabel('parasympathetic'), icon: Icons.settings),
+              Category(id: 'sympathetic', label: _systemIdToLabel('sympathetic'), icon: Icons.settings),
+            ],
+          ),
+          Category(
+            id: 'cns',
+            label: _systemIdToLabel('cns').toUpperCase(),
+            icon: _getSystemIcon('cns'),
+            subcategories: [
+              Category(id: 'brain', label: _systemIdToLabel('brain'), icon: Icons.psychology),
+              Category(id: 'brainstem', label: _systemIdToLabel('brainstem'), icon: Icons.psychology),
+              Category(id: 'cerebellum', label: _systemIdToLabel('cerebellum'), icon: Icons.psychology),
+              Category(id: 'spinal_cord', label: _systemIdToLabel('spinal_cord'), icon: Icons.psychology),
+            ],
+          ),
+          Category(
+            id: 'pns',
+            label: _systemIdToLabel('pns').toUpperCase(),
+            icon: _getSystemIcon('pns'),
+            subcategories: [
+              Category(id: 'brachial_plexus', label: _systemIdToLabel('brachial_plexus'), icon: Icons.scatter_plot),
+              Category(id: 'cranial_nerves', label: _systemIdToLabel('cranial_nerves'), icon: Icons.scatter_plot),
+              Category(id: 'motor_nerves', label: _systemIdToLabel('motor_nerves'), icon: Icons.scatter_plot),
+              Category(id: 'sensory_nerves', label: _systemIdToLabel('sensory_nerves'), icon: Icons.scatter_plot),
+              Category(id: 'spinal_nerves', label: _systemIdToLabel('spinal_nerves'), icon: Icons.scatter_plot),
+            ],
+          ),
+        ],
+      ),
+      // Reproductive System
+      Category(
+        id: 'reproductive_system',
+        label: _systemIdToLabel('reproductive_system'),
+        icon: _getSystemIcon('reproductive_system'),
+        imagePath: 'assets/images/systems/reproductive_system.webp',
+        subcategories: [
+          Category(
+            id: 'female',
+            label: _systemIdToLabel('female'),
+            icon: _getSystemIcon('female'),
+            subcategories: [
+              Category(id: 'cervix', label: _systemIdToLabel('cervix'), icon: Icons.circle),
+              Category(id: 'external_genitalia', label: _systemIdToLabel('external_genitalia'), icon: Icons.crop_portrait),
+              Category(id: 'mammary_glands', label: _systemIdToLabel('mammary_glands'), icon: Icons.scatter_plot),
+              Category(id: 'ovaries', label: _systemIdToLabel('ovaries'), icon: Icons.circle),
+              Category(id: 'placenta', label: _systemIdToLabel('placenta'), icon: Icons.favorite),
+              Category(id: 'uterine_tubes', label: _systemIdToLabel('uterine_tubes'), icon: Icons.linear_scale),
+              Category(id: 'uterus', label: _systemIdToLabel('uterus'), icon: Icons.favorite),
+              Category(id: 'vagina', label: _systemIdToLabel('vagina'), icon: Icons.linear_scale),
+            ],
+          ),
+          Category(
+            id: 'male',
+            label: _systemIdToLabel('male'),
+            icon: _getSystemIcon('male'),
+            subcategories: [
+              Category(id: 'accessory_glands', label: _systemIdToLabel('accessory_glands'), icon: Icons.scatter_plot),
+              Category(id: 'epididymis', label: _systemIdToLabel('epididymis'), icon: Icons.circle),
+              Category(id: 'mammary_glands', label: _systemIdToLabel('mammary_glands'), icon: Icons.scatter_plot),
+              Category(id: 'penis', label: _systemIdToLabel('penis'), icon: Icons.scatter_plot),
+              Category(id: 'prepuce', label: _systemIdToLabel('prepuce'), icon: Icons.scatter_plot),
+              Category(id: 'sperm_duct', label: _systemIdToLabel('sperm_duct'), icon: Icons.linear_scale),
+              Category(id: 'testes', label: _systemIdToLabel('testes'), icon: Icons.circle),
+            ],
+          ),
+        ],
+      ),
+      // Respiratory System
+      Category(
+        id: 'respiratory_system',
+        label: _systemIdToLabel('respiratory_system'),
+        icon: _getSystemIcon('respiratory_system'),
+        imagePath: 'assets/images/systems/respiratory_system.webp',
+        subcategories: [
+          Category(
+            id: 'lower',
+            label: _systemIdToLabel('lower'),
+            icon: _getSystemIcon('lower'),
+            subcategories: [
+              Category(id: 'alveoli', label: _systemIdToLabel('alveoli'), icon: Icons.circle),
+              Category(id: 'bronchi', label: _systemIdToLabel('bronchi'), icon: Icons.linear_scale),
+              Category(id: 'bronchioles', label: _systemIdToLabel('bronchioles'), icon: Icons.linear_scale),
+              Category(id: 'diaphragm', label: _systemIdToLabel('diaphragm'), icon: Icons.fitness_center),
+              Category(id: 'lungs', label: _systemIdToLabel('lungs'), icon: Icons.air),
+              Category(id: 'pleura', label: _systemIdToLabel('pleura'), icon: Icons.layers),
+              Category(id: 'trachea', label: _systemIdToLabel('trachea'), icon: Icons.linear_scale),
+            ],
+          ),
+          Category(
+            id: 'upper',
+            label: _systemIdToLabel('upper'),
+            icon: _getSystemIcon('upper'),
+            subcategories: [
+              Category(id: 'epiglottis', label: _systemIdToLabel('epiglottis'), icon: Icons.layers),
+              Category(id: 'ethmoid_turbinates', label: _systemIdToLabel('ethmoid_turbinates'), icon: Icons.layers),
+              Category(id: 'eustachian_tube', label: _systemIdToLabel('eustachian_tube'), icon: Icons.linear_scale),
+              Category(id: 'guttural_pouches', label: _systemIdToLabel('guttural_pouches'), icon: Icons.circle),
+              Category(id: 'larynx', label: _systemIdToLabel('larynx'), icon: Icons.record_voice_over),
+              Category(id: 'nasal_cavities', label: _systemIdToLabel('nasal_cavities'), icon: Icons.circle),
+              Category(id: 'nasal_septum', label: _systemIdToLabel('nasal_septum'), icon: Icons.layers),
+              Category(id: 'nasal_turbinates', label: _systemIdToLabel('nasal_turbinates'), icon: Icons.layers),
+              Category(id: 'nostrils', label: _systemIdToLabel('nostrils'), icon: Icons.circle),
+              Category(id: 'paranasal_sinuses', label: _systemIdToLabel('paranasal_sinuses'), icon: Icons.circle),
+              Category(id: 'pharynx', label: _systemIdToLabel('pharynx'), icon: Icons.circle),
+              Category(id: 'soft_palate', label: _systemIdToLabel('soft_palate'), icon: Icons.layers),
+            ],
+          ),
+        ],
+      ),
+      // Urinary System
+      Category(
+        id: 'urinary_system',
+        label: _systemIdToLabel('urinary_system'),
+        icon: _getSystemIcon('urinary_system'),
+        imagePath: 'assets/images/systems/urinary_system.webp',
+        subcategories: [
+          Category(id: 'kidneys', label: _systemIdToLabel('kidneys'), icon: Icons.water_drop),
+          Category(id: 'ureters', label: _systemIdToLabel('ureters'), icon: Icons.linear_scale),
+          Category(id: 'urethra', label: _systemIdToLabel('urethra'), icon: Icons.linear_scale),
+          Category(id: 'urinary_bladder', label: _systemIdToLabel('urinary_bladder'), icon: Icons.opacity),
+        ],
+      ),
+    ];
+  }
+
+  static List<Category> _getDogSystemsCategories() {
+    return [
+      Category(
+        id: 'cardiovascular_system',
+        label: _systemIdToLabel('cardiovascular_system'),
+        icon: _getSystemIcon('cardiovascular_system'),
+        imagePath: 'assets/images/systems/cardiovascular_system.webp',
+        subcategories: [
+          Category(id: 'arteries', label: _systemIdToLabel('arteries'), icon: Icons.linear_scale),
+          Category(id: 'blood', label: _systemIdToLabel('blood'), icon: Icons.bloodtype),
+          Category(id: 'capillaries', label: _systemIdToLabel('capillaries'), icon: Icons.linear_scale),
+          Category(id: 'heart', label: _systemIdToLabel('heart'), icon: Icons.favorite),
+          Category(id: 'pericardium', label: _systemIdToLabel('pericardium'), icon: Icons.favorite),
+          Category(id: 'veins', label: _systemIdToLabel('veins'), icon: Icons.linear_scale),
+        ],
+      ),
+      // Cranial Nerves
+      Category(
+        id: 'cranial_nerves',
+        label: _systemIdToLabel('cranial_nerves'),
+        icon: _getSystemIcon('cranial_nerves'),
+        subcategories: [
+          Category(id: 'abducent_nerve_vi', label: _systemIdToLabel('abducent_nerve_vi'), icon: Icons.psychology),
+          Category(id: 'accessory_nerve_xi', label: _systemIdToLabel('accessory_nerve_xi'), icon: Icons.psychology),
+          Category(id: 'facial_nerve_vii', label: _systemIdToLabel('facial_nerve_vii'), icon: Icons.psychology),
+          Category(id: 'glossopharyngeal_nerve_ix', label: _systemIdToLabel('glossopharyngeal_nerve_ix'), icon: Icons.psychology),
+          Category(id: 'hypoglossal_nerve_xii', label: _systemIdToLabel('hypoglossal_nerve_xii'), icon: Icons.psychology),
+          Category(id: 'oculomotor_nerve_iii', label: _systemIdToLabel('oculomotor_nerve_iii'), icon: Icons.psychology),
+          Category(id: 'olfactory_nerve_i', label: _systemIdToLabel('olfactory_nerve_i'), icon: Icons.psychology),
+          Category(id: 'optic_nerve_ii', label: _systemIdToLabel('optic_nerve_ii'), icon: Icons.psychology),
+          Category(id: 'trigeminal_nerve_v', label: _systemIdToLabel('trigeminal_nerve_v'), icon: Icons.psychology),
+          Category(id: 'trochlear_nerve_iv', label: _systemIdToLabel('trochlear_nerve_iv'), icon: Icons.psychology),
+          Category(id: 'vagus_nerve_x', label: _systemIdToLabel('vagus_nerve_x'), icon: Icons.psychology),
+          Category(id: 'vestibulocochlear_nerve_viii', label: _systemIdToLabel('vestibulocochlear_nerve_viii'), icon: Icons.psychology),
+        ],
+      ),
+      // Digestive System
+      Category(
+        id: 'digestive_system',
+        label: _systemIdToLabel('digestive_system'),
+        icon: _getSystemIcon('digestive_system'),
+        imagePath: 'assets/images/systems/digestive_system.webp',
+        subcategories: [
+          Category(
+            id: 'lower_tract',
+            label: _systemIdToLabel('lower_tract'),
+            icon: _getSystemIcon('lower_tract'),
+            subcategories: [
+              Category(id: 'anus', label: _systemIdToLabel('anus'), icon: Icons.circle),
+              Category(id: 'large_intestine', label: _systemIdToLabel('large_intestine'), icon: Icons.linear_scale),
+              Category(id: 'liver', label: _systemIdToLabel('liver'), icon: Icons.local_hospital),
+              Category(id: 'pancreas', label: _systemIdToLabel('pancreas'), icon: Icons.scatter_plot),
+              Category(id: 'rectum', label: _systemIdToLabel('rectum'), icon: Icons.circle),
+              Category(id: 'small_intestine', label: _systemIdToLabel('small_intestine'), icon: Icons.linear_scale),
+            ],
+          ),
+          Category(
+            id: 'upper_tract',
+            label: _systemIdToLabel('upper_tract'),
+            icon: _getSystemIcon('upper_tract'),
+            subcategories: [
+              Category(id: 'esophagus', label: _systemIdToLabel('esophagus'), icon: Icons.linear_scale),
+              Category(id: 'mouth', label: _systemIdToLabel('mouth'), icon: Icons.circle),
+              Category(id: 'pharynx', label: _systemIdToLabel('pharynx'), icon: Icons.circle),
+              Category(id: 'salivary_glands', label: _systemIdToLabel('salivary_glands'), icon: Icons.scatter_plot),
+              Category(id: 'stomach', label: _systemIdToLabel('stomach'), icon: Icons.restaurant),
+              Category(id: 'teeth', label: _systemIdToLabel('teeth'), icon: Icons.circle),
+              Category(id: 'tongue', label: _systemIdToLabel('tongue'), icon: Icons.circle),
+            ],
+          ),
+        ],
+      ),
+      // Endocrine System
+      Category(
+        id: 'endocrine_system',
+        label: _systemIdToLabel('endocrine_system'),
+        icon: _getSystemIcon('endocrine_system'),
+        imagePath: 'assets/images/systems/endocrine_system.webp',
+        subcategories: [
+          Category(id: 'adrenal_glands', label: _systemIdToLabel('adrenal_glands'), icon: Icons.scatter_plot),
+          Category(id: 'endocrine_axis', label: _systemIdToLabel('endocrine_axis'), icon: Icons.scatter_plot),
+          Category(id: 'gonads', label: _systemIdToLabel('gonads'), icon: Icons.scatter_plot),
+          Category(id: 'hypothalamus', label: _systemIdToLabel('hypothalamus'), icon: Icons.scatter_plot),
+          Category(id: 'pancreas_endocrine', label: _systemIdToLabel('pancreas_endocrine'), icon: Icons.scatter_plot),
+          Category(id: 'parathyroid_glands', label: _systemIdToLabel('parathyroid_glands'), icon: Icons.scatter_plot),
+          Category(id: 'pineal_gland', label: _systemIdToLabel('pineal_gland'), icon: Icons.scatter_plot),
+          Category(id: 'pituitary', label: _systemIdToLabel('pituitary'), icon: Icons.scatter_plot),
+          Category(id: 'thymus_endocrine', label: _systemIdToLabel('thymus_endocrine'), icon: Icons.scatter_plot),
+          Category(id: 'thyroid_gland', label: _systemIdToLabel('thyroid_gland'), icon: Icons.scatter_plot),
         ],
       ),
       // Integumentary System
@@ -1835,7 +2290,7 @@ class CategoryData {
     return [
       // Cardiovascular System (note: typo in folder name)
       Category(
-        id: 'cariovascular_system',
+        id: 'cardiovascular_system',
         label: 'Cardiovascular System',
         icon: Icons.bloodtype,
         imagePath: 'assets/images/systems/cardiovascular_system.webp',
@@ -2281,340 +2736,739 @@ class CategoryData {
   static List<Category> getSkeletalSystemCategoriesForAnimal(String animalId) {
     String animal = animalId.toLowerCase();
     
-    if (['dog', 'horse', 'cat', 'bird'].contains(animal)) {
-      List<Category> categories = [];
+    if (animal == 'horse') {
+      return _getHorseSkeletalCategories();
+    } else if (animal == 'dog') {
+      return _getDogSkeletalCategories();
+    } else if (animal == 'cat' || animal == 'bird') {
+      // Placeholder for cat and bird - to be implemented later
+      return _getDefaultSkeletalCategories();
+    }
+    
+    return _getDefaultSkeletalCategories();
+  }
 
-      // Skull - common structure for all animals
-      categories.add(
-        Category(
-          id: 'skull', 
-          label: 'Skull', 
-          icon: Icons.psychology,
-          imagePath: 'assets/images/$animalId/skeleton/skull.webp',
-          subcategories: [
-            Category(
-              id: 'cranial_bones',
-              label: 'Cranial Bones',
-              icon: Icons.psychology,
-              subcategories: [
-                Category(id: 'ethmoid', label: 'Ethmoid', icon: Icons.psychology),
-                Category(id: 'frontal', label: 'Frontal', icon: Icons.psychology),
-                Category(id: 'occipital', label: 'Occipital', icon: Icons.psychology),
-                Category(id: 'parietal', label: 'Parietal', icon: Icons.psychology),
-                Category(id: 'sphenoid', label: 'Sphenoid', icon: Icons.psychology),
-                Category(id: 'temporal', label: 'Temporal', icon: Icons.psychology),
-              ],
-            ),
-            Category(
-              id: 'facial_bones',
-              label: 'Facial Bones',
-              icon: Icons.face,
-              subcategories: [
-                Category(id: 'incisive', label: 'Incisive', icon: Icons.face),
-                Category(id: 'lacrimal', label: 'Lacrimal', icon: Icons.face),
-                Category(id: 'maxilla', label: 'Maxilla', icon: Icons.face),
-                Category(id: 'nasal', label: 'Nasal', icon: Icons.face),
-                Category(id: 'palatine', label: 'Palatine', icon: Icons.face),
-                Category(id: 'vomer', label: 'Vomer', icon: Icons.face),
-                Category(id: 'zygomatic', label: 'Zygomatic', icon: Icons.face),
-              ],
-            ),
-            Category(id: 'mandible', label: 'Mandible', icon: Icons.architecture),
-            Category(id: 'hyoid_apparatus', label: 'Hyoid Apparatus', icon: Icons.straighten),
-            Category(id: 'auditory_ossicles', label: 'Auditory Ossicles', icon: Icons.hearing),
-          ],
-        ),
-      );
-
-      // Spine - common for all animals
-      categories.add(
-        Category(
-          id: 'spine', 
-          label: 'Spine', 
-          icon: Icons.view_column,
-          subcategories: [
-            Category(id: 'cervical_vertebrae', label: 'Cervical Vertebrae', icon: Icons.view_column),
-            Category(id: 'thoracic_vertebrae', label: 'Thoracic Vertebrae', icon: Icons.view_column),
-            Category(id: 'lumbar_vertebrae', label: 'Lumbar Vertebrae', icon: Icons.view_column),
-            Category(id: 'sacral_vertebrae', label: 'Sacral Vertebrae', icon: Icons.view_column),
-            Category(id: 'caudal_vertebrae', label: 'Caudal Vertebrae', icon: Icons.view_column),
-          ],
-        ),
-      );
-
-      // Ribcage - common for all animals
-      categories.add(
-        Category(
-          id: 'ribcage', 
-          label: 'Ribcage', 
-          icon: Icons.border_all,
-          subcategories: [
-            Category(id: 'true_rib', label: 'True Rib', icon: Icons.border_all),
-            Category(id: 'false_rib', label: 'False Rib', icon: Icons.border_all),
-            Category(id: 'floating_rib_13', label: 'Floating Rib 13', icon: Icons.border_all),
-            Category(id: 'sternum', label: 'Sternum', icon: Icons.straighten),
-          ],
-        ),
-      );
-
-      // Shoulder Girdle - different for birds
-      if (animal == 'bird') {
-        categories.add(
+  // Horse skeletal system categories based on actual folder structure
+  static List<Category> _getHorseSkeletalCategories() {
+    return [
+      // Skull
+      Category(
+        id: 'skull',
+        label: 'Skull',
+        icon: Icons.psychology,
+        imagePath: 'assets/images/horse/skeleton/skull.webp',
+        subcategories: [
           Category(
-            id: 'shoulder_girdle', 
-            label: 'Shoulder Girdle', 
-            icon: Icons.accessibility,
+            id: 'cranial_bones',
+            label: 'Cranial Bones',
+            icon: Icons.psychology,
             subcategories: [
-              Category(id: 'scapula', label: 'Scapula', icon: Icons.accessibility),
-              Category(id: 'clavicle', label: 'Clavicle', icon: Icons.accessibility),
-              Category(id: 'coracoid', label: 'Coracoid', icon: Icons.accessibility),
+              Category(id: 'ethmoid', label: 'Ethmoid', icon: Icons.psychology),
+              Category(id: 'frontal', label: 'Frontal', icon: Icons.psychology),
+              Category(id: 'occipital', label: 'Occipital', icon: Icons.psychology),
+              Category(id: 'parietal', label: 'Parietal', icon: Icons.psychology),
+              Category(id: 'sphenoid', label: 'Sphenoid', icon: Icons.psychology),
+              Category(id: 'temporal', label: 'Temporal', icon: Icons.psychology),
             ],
           ),
-        );
-      } else {
-        categories.add(
           Category(
-            id: 'shoulder_girdle', 
-            label: 'Shoulder Girdle', 
-            icon: Icons.accessibility,
+            id: 'facial_bones',
+            label: 'Facial Bones',
+            icon: Icons.face,
             subcategories: [
-              Category(id: 'scapula', label: 'Scapula', icon: Icons.accessibility),
+              Category(id: 'incisive', label: 'Incisive', icon: Icons.face),
+              Category(id: 'lacrimal', label: 'Lacrimal', icon: Icons.face),
+              Category(id: 'maxilla', label: 'Maxilla', icon: Icons.face),
+              Category(id: 'nasal', label: 'Nasal', icon: Icons.face),
+              Category(id: 'palatine', label: 'Palatine', icon: Icons.face),
+              Category(id: 'vomer', label: 'Vomer', icon: Icons.face),
+              Category(id: 'zygomatic', label: 'Zygomatic', icon: Icons.face),
             ],
           ),
-        );
-      }
-
-      // Forelimb/Wing - birds have wings, others have forelimbs
-      if (animal == 'bird') {
-        categories.add(
           Category(
-            id: 'wing', 
-            label: 'Wing', 
-            icon: Icons.flight,
+            id: 'accessory_bones',
+            label: 'Accessory Bones',
+            icon: Icons.architecture,
             subcategories: [
-              Category(id: 'humerus', label: 'Humerus', icon: Icons.accessibility),
-              Category(
-                id: 'carpus',
-                label: 'Carpus',
-                icon: Icons.grid_view,
-                subcategories: [
-                  Category(id: 'distal_tarsals', label: 'Distal Tarsals', icon: Icons.accessibility),
-                  Category(id: 'proximal_tarsals', label: 'Proximal Tarsals', icon: Icons.accessibility),
-                ],
-              ),
-              Category(
-                id: 'manus',
-                label: 'Manus',
-                icon: Icons.pan_tool,
-                subcategories: [
-                  Category(id: 'metacarpals', label: 'Metacarpals', icon: Icons.accessibility),
-                  Category(id: 'phalanges', label: 'Phalanges', icon: Icons.accessibility),
-                  Category(id: 'sesamoids', label: 'Sesamoids', icon: Icons.accessibility),
-                ],
-              ),
+              Category(id: 'auditory_ossicles', label: 'Auditory Ossicles', icon: Icons.hearing),
+              Category(id: 'hyoid_apparatus', label: 'Hyoid Apparatus', icon: Icons.straighten),
+              Category(id: 'mandible', label: 'Mandible', icon: Icons.architecture),
             ],
           ),
-        );
-      } else {
-        categories.add(
+        ],
+      ),
+      // Spine
+      Category(
+        id: 'spine',
+        label: 'Spine',
+        icon: Icons.view_column,
+        subcategories: [
           Category(
-            id: 'forelimb', 
-            label: 'Forelimb', 
-            icon: Icons.accessibility,
+            id: 'cervical_vertebrae',
+            label: 'Cervical Vertebrae',
+            icon: Icons.view_column,
             subcategories: [
-              Category(
-                id: 'brachium',
-                label: 'Brachium',
-                icon: Icons.grid_view,
-                subcategories: [
-                  Category(id: 'humerus', label: 'Humerus', icon: Icons.accessibility),
-                ],
-              ),
-              Category(
-                id: 'antebrachium',
-                label: 'Antebrachium',
-                icon: Icons.grid_view,
-                subcategories: [
-                  Category(id: 'radius', label: 'Radius', icon: Icons.accessibility),
-                  Category(id: 'ulna', label: 'Ulna', icon: Icons.accessibility),
-                ],
-              ),
-              Category(
-                id: 'carpus',
-                label: 'Carpus',
-                icon: Icons.grid_view,
-                subcategories: [
-                  Category(id: 'distal_row', label: 'Distal Row', icon: Icons.accessibility),
-                  Category(id: 'proximal_row', label: 'Proximal Row', icon: Icons.accessibility),
-                ],
-              ),
-              Category(
-                id: 'manus',
-                label: 'Manus',
-                icon: Icons.pan_tool,
-                subcategories: [
-                  Category(id: 'metacarpals', label: 'Metacarpals', icon: Icons.accessibility),
-                  Category(id: 'phalanges', label: 'Phalanges', icon: Icons.accessibility),
-                  Category(id: 'sesamoids', label: 'Sesamoids', icon: Icons.accessibility),
-                ],
-              ),
+              Category(id: 'c1', label: 'C1', icon: Icons.view_column),
+              Category(id: 'c2', label: 'C2', icon: Icons.view_column),
+              Category(id: 'c3', label: 'C3', icon: Icons.view_column),
+              Category(id: 'c4', label: 'C4', icon: Icons.view_column),
+              Category(id: 'c5', label: 'C5', icon: Icons.view_column),
+              Category(id: 'c6', label: 'C6', icon: Icons.view_column),
+              Category(id: 'c7', label: 'C7', icon: Icons.view_column),
             ],
           ),
-        );
-      }
-
-      // Hindlimb - different structures for different animals
-      List<Category> hindlimbSubcategories = [
-        Category(id: 'pelvis', label: 'Pelvis', icon: Icons.accessibility),
-        Category(
-          id: 'thigh',
-          label: 'Thigh',
-          icon: Icons.straighten,
-          subcategories: [
-            Category(id: 'femur', label: 'Femur', icon: Icons.accessibility),
-            Category(id: 'patella', label: 'Patella', icon: Icons.accessibility),
-          ],
-        ),
-        Category(
-          id: 'leg',
-          label: 'Leg',
-          icon: Icons.straighten,
-          subcategories: animal == 'bird' ? [
-            Category(id: 'tibiotarsus', label: 'Tibiotarsus', icon: Icons.accessibility),
-            Category(id: 'fibula', label: 'Fibula', icon: Icons.accessibility),
-          ] : [
-            Category(id: 'tibia', label: 'Tibia', icon: Icons.accessibility),
-            Category(id: 'fibula', label: 'Fibula', icon: Icons.accessibility),
-          ],
-        ),
-        Category(
-          id: 'hock',
-          label: 'Hock',
-          icon: Icons.grid_view,
-          subcategories: [
-            Category(id: 'calcaneus', label: 'Calcaneus', icon: Icons.accessibility),
-            Category(id: 'central_tarsal', label: 'Central Tarsal', icon: Icons.accessibility),
-            Category(id: 'talus', label: 'Talus', icon: Icons.accessibility),
-            Category(id: 'tarsals', label: 'Tarsals', icon: Icons.accessibility),
-          ],
-        ),
-      ];
-
-      // Add foot/paw based on animal type
-      if (animal == 'horse') {
-        hindlimbSubcategories.add(
+          Category(
+            id: 'thoracic_vertebrae',
+            label: 'Thoracic Vertebrae',
+            icon: Icons.view_column,
+            subcategories: [
+              Category(id: 't1', label: 'T1', icon: Icons.view_column),
+              Category(id: 't2', label: 'T2', icon: Icons.view_column),
+              Category(id: 't3', label: 'T3', icon: Icons.view_column),
+              Category(id: 't4', label: 'T4', icon: Icons.view_column),
+              Category(id: 't5', label: 'T5', icon: Icons.view_column),
+              Category(id: 't6', label: 'T6', icon: Icons.view_column),
+              Category(id: 't7', label: 'T7', icon: Icons.view_column),
+              Category(id: 't8', label: 'T8', icon: Icons.view_column),
+              Category(id: 't9', label: 'T9', icon: Icons.view_column),
+              Category(id: 't10', label: 'T10', icon: Icons.view_column),
+              Category(id: 't11', label: 'T11', icon: Icons.view_column),
+              Category(id: 't12', label: 'T12', icon: Icons.view_column),
+              Category(id: 't13', label: 'T13', icon: Icons.view_column),
+              Category(id: 't14', label: 'T14', icon: Icons.view_column),
+              Category(id: 't15', label: 'T15', icon: Icons.view_column),
+              Category(id: 't16', label: 'T16', icon: Icons.view_column),
+              Category(id: 't17', label: 'T17', icon: Icons.view_column),
+              Category(id: 't18', label: 'T18', icon: Icons.view_column),
+            ],
+          ),
+          Category(
+            id: 'lumber_vertebrae',
+            label: 'Lumber Vertebrae',
+            icon: Icons.view_column,
+            subcategories: [
+              Category(id: 'l1', label: 'L1', icon: Icons.view_column),
+              Category(id: 'l2', label: 'L2', icon: Icons.view_column),
+              Category(id: 'l3', label: 'L3', icon: Icons.view_column),
+              Category(id: 'l4', label: 'L4', icon: Icons.view_column),
+              Category(id: 'l5', label: 'L5', icon: Icons.view_column),
+              Category(id: 'l6', label: 'L6', icon: Icons.view_column),
+            ],
+          ),
+          Category(
+            id: 'sacral_vertebrae',
+            label: 'Sacral Vertebrae',
+            icon: Icons.view_column,
+            subcategories: [
+              Category(id: 's1', label: 'S1', icon: Icons.view_column),
+              Category(id: 's2', label: 'S2', icon: Icons.view_column),
+              Category(id: 's3', label: 'S3', icon: Icons.view_column),
+              Category(id: 's4', label: 'S4', icon: Icons.view_column),
+              Category(id: 's5', label: 'S5', icon: Icons.view_column),
+            ],
+          ),
+          Category(
+            id: 'caudal_vertebrae',
+            label: 'Caudal Vertebrae',
+            icon: Icons.view_column,
+            subcategories: [
+              Category(id: 'co1', label: 'Co1', icon: Icons.view_column),
+              Category(id: 'co2', label: 'Co2', icon: Icons.view_column),
+              Category(id: 'co3', label: 'Co3', icon: Icons.view_column),
+              Category(id: 'co4', label: 'Co4', icon: Icons.view_column),
+              Category(id: 'co5', label: 'Co5', icon: Icons.view_column),
+              Category(id: 'co6', label: 'Co6', icon: Icons.view_column),
+              Category(id: 'co7', label: 'Co7', icon: Icons.view_column),
+              Category(id: 'co8', label: 'Co8', icon: Icons.view_column),
+              Category(id: 'co9', label: 'Co9', icon: Icons.view_column),
+              Category(id: 'co10', label: 'Co10', icon: Icons.view_column),
+              Category(id: 'co11', label: 'Co11', icon: Icons.view_column),
+              Category(id: 'co12', label: 'Co12', icon: Icons.view_column),
+              Category(id: 'co13', label: 'Co13', icon: Icons.view_column),
+              Category(id: 'co14', label: 'Co14', icon: Icons.view_column),
+              Category(id: 'co15', label: 'Co15', icon: Icons.view_column),
+              Category(id: 'co16', label: 'Co16', icon: Icons.view_column),
+              Category(id: 'co17', label: 'Co17', icon: Icons.view_column),
+              Category(id: 'co18', label: 'Co18', icon: Icons.view_column),
+              Category(id: 'co19', label: 'Co19', icon: Icons.view_column),
+              Category(id: 'co20', label: 'Co20', icon: Icons.view_column),
+              Category(id: 'co21', label: 'Co21', icon: Icons.view_column),
+            ],
+          ),
+          Category(
+            id: 'discs',
+            label: 'Discs',
+            icon: Icons.album,
+            subcategories: [
+              Category(id: 'cervical_intervertebral_discs', label: 'Cervical Intervertebral Discs', icon: Icons.album),
+              Category(id: 'coccygeal_intervertebral_discs', label: 'Coccygeal Intervertebral Discs', icon: Icons.album),
+              Category(id: 'lumbar_intervertebral_discs', label: 'Lumbar Intervertebral Discs', icon: Icons.album),
+              Category(id: 'sacral_intervertebral_discs', label: 'Sacral Intervertebral Discs', icon: Icons.album),
+              Category(id: 'thoracic_intervertebral_discs', label: 'Thoracic Intervertebral Discs', icon: Icons.album),
+            ],
+          ),
+        ],
+      ),
+      // Ribcage
+      Category(
+        id: 'ribcage',
+        label: 'Ribcage',
+        icon: Icons.border_all,
+        subcategories: [
+          Category(
+            id: 'true_ribs',
+            label: 'True Ribs',
+            icon: Icons.border_all,
+            subcategories: [
+              Category(id: 'rib_1', label: 'Rib 1', icon: Icons.border_all),
+              Category(id: 'rib_2', label: 'Rib 2', icon: Icons.border_all),
+              Category(id: 'rib_3', label: 'Rib 3', icon: Icons.border_all),
+              Category(id: 'rib_4', label: 'Rib 4', icon: Icons.border_all),
+              Category(id: 'rib_5', label: 'Rib 5', icon: Icons.border_all),
+              Category(id: 'rib_6', label: 'Rib 6', icon: Icons.border_all),
+              Category(id: 'rib_7', label: 'Rib 7', icon: Icons.border_all),
+              Category(id: 'rib_8', label: 'Rib 8', icon: Icons.border_all),
+            ],
+          ),
+          Category(
+            id: 'false_ribs',
+            label: 'False Ribs',
+            icon: Icons.border_all,
+            subcategories: [
+              Category(id: 'rib_9', label: 'Rib 9', icon: Icons.border_all),
+              Category(id: 'rib_10', label: 'Rib 10', icon: Icons.border_all),
+              Category(id: 'rib_11', label: 'Rib 11', icon: Icons.border_all),
+              Category(id: 'rib_12', label: 'Rib 12', icon: Icons.border_all),
+              Category(id: 'rib_13', label: 'Rib 13', icon: Icons.border_all),
+            ],
+          ),
+          Category(
+            id: 'floating_ribs',
+            label: 'Floating Ribs',
+            icon: Icons.border_all,
+            subcategories: [
+              Category(id: 'rib_14', label: 'Rib 14', icon: Icons.border_all),
+              Category(id: 'rib_15', label: 'Rib 15', icon: Icons.border_all),
+            ],
+          ),
+          Category(id: 'costal_cartilage', label: 'Costal Cartilage', icon: Icons.layers),
+          Category(id: 'sternum', label: 'Sternum', icon: Icons.straighten),
+          Category(id: 'xiphoid_cartilage', label: 'Xiphoid Cartilage', icon: Icons.layers),
+        ],
+      ),
+      // Forelimb
+      Category(
+        id: 'forelimb',
+        label: 'Forelimb',
+        icon: Icons.accessibility,
+        subcategories: [
+          Category(id: 'scapula', label: 'Scapula', icon: Icons.accessibility),
+          Category(id: 'humerus', label: 'Humerus', icon: Icons.accessibility),
+          Category(
+            id: 'antebrachium',
+            label: 'Antebrachium',
+            icon: Icons.grid_view,
+            subcategories: [
+              Category(id: 'radius', label: 'Radius', icon: Icons.accessibility),
+              Category(id: 'ulna', label: 'Ulna', icon: Icons.accessibility),
+            ],
+          ),
+          Category(
+            id: 'carpus',
+            label: 'Carpus',
+            icon: Icons.grid_view,
+            subcategories: [
+              Category(id: 'distal_tarsals', label: 'Distal Tarsals', icon: Icons.accessibility),
+              Category(id: 'proximal_tarsals', label: 'Proximal Tarsals', icon: Icons.accessibility),
+            ],
+          ),
+          Category(
+            id: 'manus',
+            label: 'Manus',
+            icon: Icons.pan_tool,
+            subcategories: [
+              Category(id: 'metacarpals', label: 'Metacarpals', icon: Icons.accessibility),
+              Category(id: 'phalanges', label: 'Phalanges', icon: Icons.accessibility),
+              Category(id: 'sesamoids', label: 'Sesamoids', icon: Icons.accessibility),
+            ],
+          ),
+        ],
+      ),
+      // Hindlimb
+      Category(
+        id: 'hindlimb',
+        label: 'Hindlimb',
+        icon: Icons.grid_view,
+        subcategories: [
+          Category(id: 'pelvis', label: 'Pelvis', icon: Icons.accessibility),
+          Category(
+            id: 'thigh',
+            label: 'Thigh',
+            icon: Icons.straighten,
+            subcategories: [
+              Category(id: 'femur', label: 'Femur', icon: Icons.accessibility),
+              Category(id: 'patella', label: 'Patella', icon: Icons.accessibility),
+            ],
+          ),
+          Category(
+            id: 'leg',
+            label: 'Leg',
+            icon: Icons.straighten,
+            subcategories: [
+              Category(id: 'fibula', label: 'Fibula', icon: Icons.accessibility),
+              Category(id: 'tibia', label: 'Tibia', icon: Icons.accessibility),
+            ],
+          ),
+          Category(
+            id: 'hock',
+            label: 'Hock',
+            icon: Icons.grid_view,
+            subcategories: [
+              Category(id: 'calcaneus', label: 'Calcaneus', icon: Icons.accessibility),
+              Category(id: 'central_tarsal', label: 'Central Tarsal', icon: Icons.accessibility),
+              Category(id: 'talus', label: 'Talus', icon: Icons.accessibility),
+              Category(id: 'tarsals', label: 'Tarsals', icon: Icons.accessibility),
+            ],
+          ),
           Category(
             id: 'hindhoof',
             label: 'Hindhoof',
             icon: Icons.pan_tool,
             subcategories: [
-              Category(id: 'metatarsals_i_v', label: 'Metatarsals I-V', icon: Icons.accessibility),
+              Category(id: 'metatarsals_i_v', label: 'Metatarsals I V', icon: Icons.accessibility),
               Category(id: 'phalanges', label: 'Phalanges', icon: Icons.accessibility),
               Category(id: 'sesamoids', label: 'Sesamoids', icon: Icons.accessibility),
             ],
           ),
-        );
-      } else if (animal == 'bird') {
-        hindlimbSubcategories.add(
+        ],
+      ),
+      // Dentition
+      Category(
+        id: 'dentition',
+        label: 'Dentition',
+        icon: Icons.emoji_food_beverage,
+        imagePath: 'assets/images/horse//skeleton/dentition.webp',
+        subcategories: [
           Category(
-            id: 'foot',
-            label: 'Foot',
+            id: 'upper',
+            label: 'Upper',
+            icon: Icons.star,
+            imagePath: 'assets/images/horse/skeleton/dentition/upper.webp',
+            subcategories: [
+              Category(
+                id: 'upper_left',
+                label: 'Upper Left',
+                icon: Icons.star,
+                imagePath: 'assets/images/horse/skeleton/dentition/upper/upper_left.webp',
+                subcategories: [
+                  Category(id: 'canine', label: 'Canine', icon: Icons.star),
+                  Category(id: 'incisor_1', label: 'Incisor 1', icon: Icons.star),
+                  Category(id: 'incisor_2', label: 'Incisor 2', icon: Icons.star),
+                  Category(id: 'incisor_3', label: 'Incisor 3', icon: Icons.star),
+                  Category(id: 'molar_1', label: 'Molar 1', icon: Icons.star),
+                  Category(id: 'molar_2', label: 'Molar 2', icon: Icons.star),
+                  Category(id: 'molar_3', label: 'Molar 3', icon: Icons.star),
+                  Category(id: 'premolar_1', label: 'Premolar 1', icon: Icons.star),
+                  Category(id: 'premolar_2', label: 'Premolar 2', icon: Icons.star),
+                  Category(id: 'premolar_3', label: 'Premolar 3', icon: Icons.star),
+                  Category(id: 'premolar_4', label: 'Premolar 4', icon: Icons.star),
+                ],
+              ),
+              Category(
+                id: 'upper_right',
+                label: 'Upper Right',
+                icon: Icons.star,
+                imagePath: 'assets/images/horse/skeleton/dentition/upper/upper_right.webp',
+                subcategories: [
+                  Category(id: 'canine', label: 'Canine', icon: Icons.star),
+                  Category(id: 'incisor_1', label: 'Incisor 1', icon: Icons.star),
+                  Category(id: 'incisor_2', label: 'Incisor 2', icon: Icons.star),
+                  Category(id: 'incisor_3', label: 'Incisor 3', icon: Icons.star),
+                  Category(id: 'molar_1', label: 'Molar 1', icon: Icons.star),
+                  Category(id: 'molar_2', label: 'Molar 2', icon: Icons.star),
+                  Category(id: 'molar_3', label: 'Molar 3', icon: Icons.star),
+                  Category(id: 'premolar_1', label: 'Premolar 1', icon: Icons.star),
+                  Category(id: 'premolar_2', label: 'Premolar 2', icon: Icons.star),
+                  Category(id: 'premolar_3', label: 'Premolar 3', icon: Icons.star),
+                  Category(id: 'premolar_4', label: 'Premolar 4', icon: Icons.star),
+                ],
+              ),
+            ],
+          ),
+          Category(
+            id: 'lower',
+            label: 'Lower',
+            icon: Icons.star,
+            imagePath: 'assets/images/horse/skeleton/dentition/lower.webp',
+            subcategories: [
+              Category(
+                id: 'lower_left',
+                label: 'Lower Left',
+                icon: Icons.star,
+                imagePath: 'assets/images/horse/skeleton/dentition/lower/lower_left.webp',
+                subcategories: [
+                  Category(id: 'canine', label: 'Canine', icon: Icons.star),
+                  Category(id: 'incisor_1', label: 'Incisor 1', icon: Icons.star),
+                  Category(id: 'incisor_2', label: 'Incisor 2', icon: Icons.star),
+                  Category(id: 'incisor_3', label: 'Incisor 3', icon: Icons.star),
+                  Category(id: 'molar_1', label: 'Molar 1', icon: Icons.star),
+                  Category(id: 'molar_2', label: 'Molar 2', icon: Icons.star),
+                  Category(id: 'molar_3', label: 'Molar 3', icon: Icons.star),
+                  Category(id: 'premolar_1', label: 'Premolar 1', icon: Icons.star),
+                  Category(id: 'premolar_2', label: 'Premolar 2', icon: Icons.star),
+                  Category(id: 'premolar_3', label: 'Premolar 3', icon: Icons.star),
+                  Category(id: 'premolar_4', label: 'Premolar 4', icon: Icons.star),
+                ],
+              ),
+              Category(
+                id: 'lower_right',
+                label: 'Lower Right',
+                icon: Icons.star,
+                imagePath: 'assets/images/horse/skeleton/dentition/lower/lower_right.webp',
+                subcategories: [
+                  Category(id: 'canine', label: 'Canine', icon: Icons.star),
+                  Category(id: 'incisor_1', label: 'Incisor 1', icon: Icons.star),
+                  Category(id: 'incisor_2', label: 'Incisor 2', icon: Icons.star),
+                  Category(id: 'incisor_3', label: 'Incisor 3', icon: Icons.star),
+                  Category(id: 'molar_1', label: 'Molar 1', icon: Icons.star),
+                  Category(id: 'molar_2', label: 'Molar 2', icon: Icons.star),
+                  Category(id: 'molar_3', label: 'Molar 3', icon: Icons.star),
+                  Category(id: 'premolar_1', label: 'Premolar 1', icon: Icons.star),
+                  Category(id: 'premolar_2', label: 'Premolar 2', icon: Icons.star),
+                  Category(id: 'premolar_3', label: 'Premolar 3', icon: Icons.star),
+                  Category(id: 'premolar_4', label: 'Premolar 4', icon: Icons.star),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
+    ];
+  }
+
+  // Dog skeletal system categories based on actual folder structure
+  static List<Category> _getDogSkeletalCategories() {
+    return [
+      // Skull
+      Category(
+        id: 'skull',
+        label: 'Skull',
+        icon: Icons.psychology,
+        imagePath: 'assets/images/dog/skeleton/skull.webp',
+        subcategories: [
+          Category(
+            id: 'cranial_bones',
+            label: 'Cranial Bones',
+            icon: Icons.psychology,
+            subcategories: [
+              Category(id: 'ethmoid', label: 'Ethmoid', icon: Icons.psychology),
+              Category(id: 'frontal', label: 'Frontal', icon: Icons.psychology),
+              Category(id: 'occipital', label: 'Occipital', icon: Icons.psychology),
+              Category(id: 'parietal', label: 'Parietal', icon: Icons.psychology),
+              Category(id: 'sphenoid', label: 'Sphenoid', icon: Icons.psychology),
+              Category(id: 'temporal', label: 'Temporal', icon: Icons.psychology),
+            ],
+          ),
+          Category(
+            id: 'facial_bones',
+            label: 'Facial Bones',
+            icon: Icons.face,
+            subcategories: [
+              Category(id: 'incisive', label: 'Incisive', icon: Icons.face),
+              Category(id: 'lacrimal', label: 'Lacrimal', icon: Icons.face),
+              Category(id: 'maxilla', label: 'Maxilla', icon: Icons.face),
+              Category(id: 'nasal', label: 'Nasal', icon: Icons.face),
+              Category(id: 'palatine', label: 'Palatine', icon: Icons.face),
+              Category(id: 'vomer', label: 'Vomer', icon: Icons.face),
+              Category(id: 'zygomatic', label: 'Zygomatic', icon: Icons.face),
+            ],
+          ),
+          Category(
+            id: 'accessory_bones',
+            label: 'Accessory Bones',
+            icon: Icons.architecture,
+            subcategories: [
+              Category(id: 'hyoid', label: 'Hyoid', icon: Icons.straighten),
+              Category(id: 'mandible', label: 'Mandible', icon: Icons.architecture),
+              Category(id: 'pterygoid', label: 'Pterygoid', icon: Icons.architecture),
+              Category(id: 'turbinate', label: 'Turbinate', icon: Icons.architecture),
+            ],
+          ),
+        ],
+      ),
+      // Spine
+      Category(
+        id: 'spine',
+        label: 'Spine',
+        icon: Icons.view_column,
+        subcategories: [
+          Category(
+            id: 'cervical_vertebrae',
+            label: 'Cervical Vertebrae',
+            icon: Icons.view_column,
+            subcategories: [
+              Category(id: 'c1', label: 'C1', icon: Icons.view_column),
+              Category(id: 'c2', label: 'C2', icon: Icons.view_column),
+              Category(id: 'c3', label: 'C3', icon: Icons.view_column),
+              Category(id: 'c4', label: 'C4', icon: Icons.view_column),
+              Category(id: 'c5', label: 'C5', icon: Icons.view_column),
+              Category(id: 'c6', label: 'C6', icon: Icons.view_column),
+              Category(id: 'c7', label: 'C7', icon: Icons.view_column),
+            ],
+          ),
+          Category(
+            id: 'thoracic_vertebrae',
+            label: 'Thoracic Vertebrae',
+            icon: Icons.view_column,
+            subcategories: [], // Add if needed based on actual files
+          ),
+          Category(
+            id: 'lumber_vertebrae',
+            label: 'Lumber Vertebrae',
+            icon: Icons.view_column,
+            subcategories: [], // Add if needed based on actual files
+          ),
+          Category(
+            id: 'sacral_vertebrae',
+            label: 'Sacral Vertebrae',
+            icon: Icons.view_column,
+            subcategories: [], // Add if needed based on actual files
+          ),
+          Category(
+            id: 'caudal_vertebrae',
+            label: 'Caudal Vertebrae',
+            icon: Icons.view_column,
+            subcategories: [], // Add if needed based on actual files
+          ),
+          Category(
+            id: 'discs',
+            label: 'Discs',
+            icon: Icons.album,
+            subcategories: [], // Add if needed based on actual files
+          ),
+        ],
+      ),
+      // Ribcage
+      Category(
+        id: 'ribcage',
+        label: 'Ribcage',
+        icon: Icons.border_all,
+        subcategories: [
+          Category(
+            id: 'true_ribs',
+            label: 'True Ribs',
+            icon: Icons.border_all,
+            subcategories: [
+              Category(id: 'rib_1', label: 'Rib 1', icon: Icons.border_all),
+              Category(id: 'rib_2', label: 'Rib 2', icon: Icons.border_all),
+              Category(id: 'rib_3', label: 'Rib 3', icon: Icons.border_all),
+              Category(id: 'rib_4', label: 'Rib 4', icon: Icons.border_all),
+              Category(id: 'rib_5', label: 'Rib 5', icon: Icons.border_all),
+              Category(id: 'rib_6', label: 'Rib 6', icon: Icons.border_all),
+              Category(id: 'rib_7', label: 'Rib 7', icon: Icons.border_all),
+              Category(id: 'rib_8', label: 'Rib 8', icon: Icons.border_all),
+            ],
+          ),
+          Category(
+            id: 'false_ribs',
+            label: 'False Ribs',
+            icon: Icons.border_all,
+            subcategories: [], // Add if needed based on actual files
+          ),
+          Category(
+            id: 'floating_ribs',
+            label: 'Floating Ribs',
+            icon: Icons.border_all,
+            subcategories: [], // Add if needed based on actual files
+          ),
+          Category(id: 'costal_cartilage', label: 'Costal Cartilage', icon: Icons.layers),
+          Category(id: 'intercostal_muscles', label: 'Intercostal Muscles', icon: Icons.fitness_center),
+          Category(id: 'xiphoid_cartilage', label: 'Xiphoid Cartilage', icon: Icons.layers),
+        ],
+      ),
+      // Scapula (standalone)
+      Category(id: 'scapula', label: 'Scapula', icon: Icons.accessibility),
+      // Forelimb
+      Category(
+        id: 'forelimb',
+        label: 'Forelimb',
+        icon: Icons.accessibility,
+        subcategories: [
+          Category(id: 'humerus', label: 'Humerus', icon: Icons.accessibility),
+          Category(
+            id: 'antebrachium',
+            label: 'Antebrachium',
+            icon: Icons.grid_view,
+            subcategories: [
+              Category(id: 'radius', label: 'Radius', icon: Icons.accessibility),
+              Category(id: 'ulna', label: 'Ulna', icon: Icons.accessibility),
+            ],
+          ),
+          Category(
+            id: 'carpus',
+            label: 'Carpus',
+            icon: Icons.grid_view,
+            subcategories: [
+              Category(id: 'distal_row', label: 'Distal Row', icon: Icons.accessibility),
+              Category(id: 'proximal_row', label: 'Proximal Row', icon: Icons.accessibility),
+            ],
+          ),
+          Category(
+            id: 'manus',
+            label: 'Manus',
             icon: Icons.pan_tool,
             subcategories: [
-              Category(id: 'metatarsals', label: 'Metatarsals', icon: Icons.accessibility),
+              Category(id: 'metacarpals', label: 'Metacarpals', icon: Icons.accessibility),
               Category(id: 'phalanges', label: 'Phalanges', icon: Icons.accessibility),
               Category(id: 'sesamoids', label: 'Sesamoids', icon: Icons.accessibility),
             ],
           ),
-        );
-      } else { // dog and cat
-        hindlimbSubcategories.add(
+        ],
+      ),
+      // Hindlimb
+      Category(
+        id: 'hindlimb',
+        label: 'Hindlimb',
+        icon: Icons.grid_view,
+        subcategories: [
+          Category(id: 'pelvis', label: 'Pelvis', icon: Icons.accessibility),
+          Category(
+            id: 'thigh',
+            label: 'Thigh',
+            icon: Icons.straighten,
+            subcategories: [
+              Category(id: 'femur', label: 'Femur', icon: Icons.accessibility),
+              Category(id: 'patella', label: 'Patella', icon: Icons.accessibility),
+            ],
+          ),
+          Category(
+            id: 'leg',
+            label: 'Leg',
+            icon: Icons.straighten,
+            subcategories: [
+              Category(id: 'fibula', label: 'Fibula', icon: Icons.accessibility),
+              Category(id: 'tibia', label: 'Tibia', icon: Icons.accessibility),
+            ],
+          ),
+          Category(
+            id: 'hock',
+            label: 'Hock',
+            icon: Icons.grid_view,
+            subcategories: [
+              Category(id: 'calcaneus', label: 'Calcaneus', icon: Icons.accessibility),
+              Category(id: 'central_tarsal', label: 'Central Tarsal', icon: Icons.accessibility),
+              Category(id: 'talus', label: 'Talus', icon: Icons.accessibility),
+              Category(id: 'tarsals', label: 'Tarsals', icon: Icons.accessibility),
+            ],
+          ),
           Category(
             id: 'hindpaw',
             label: 'Hindpaw',
             icon: Icons.pan_tool,
             subcategories: [
-              Category(id: 'metatarsals_i_v', label: 'Metatarsals I-V', icon: Icons.accessibility),
+              Category(id: 'metatarsals_i_v', label: 'Metatarsals I V', icon: Icons.accessibility),
               Category(id: 'phalanges', label: 'Phalanges', icon: Icons.accessibility),
               Category(id: 'sesamoids', label: 'Sesamoids', icon: Icons.accessibility),
             ],
           ),
-        );
-      }
-
-      categories.add(
-        Category(
-          id: 'hindlimb', 
-          label: 'Hindlimb', 
-          icon: Icons.grid_view,
-          subcategories: hindlimbSubcategories,
-        ),
-      );
-
-      // Special Bones - different for each animal
-      if (animal == 'dog' || animal == 'cat') {
-        categories.add(
+        ],
+      ),
+      // Dentition
+      Category(
+        id: 'dentition',
+        label: 'Dentition',
+        icon: Icons.emoji_food_beverage,
+        imagePath: 'assets/images/systems/dentition.webp',
+        subcategories: [
           Category(
-            id: 'special_bones', 
-            label: 'Special Bones', 
+            id: 'upper',
+            label: 'Upper',
             icon: Icons.star,
-            subcategories: [
-              Category(id: 'os_penis_baculum', label: 'Os Penis Baculum', icon: Icons.star),
-            ],
-          ),
-        );
-      } else if (animal == 'bird') {
-        categories.add(
-          Category(
-            id: 'special_bones', 
-            label: 'Special Bones', 
-            icon: Icons.star,
-            subcategories: [
-              Category(id: 'furcula', label: 'Furcula', icon: Icons.star),
-              Category(id: 'pygostyle', label: 'Pygostyle', icon: Icons.star),
-              Category(id: 'synsacrum', label: 'Synsacrum', icon: Icons.star),
-              Category(id: 'uncinate_processes', label: 'Uncinate Processes', icon: Icons.star),
-            ],
-          ),
-        );
-      }
-
-      // Dentition - common for horse, dog, cat (birds don't have teeth)
-      if (animal != 'bird') {
-        categories.add(
-          Category(
-            id: 'dentition', 
-            label: 'Dentition', 
-            icon: Icons.emoji_food_beverage,
-            imagePath: 'assets/images/systems/dentition.webp',
             subcategories: [
               Category(
-                id: 'upper', 
-                label: 'Upper', 
+                id: 'upper_left',
+                label: 'Upper Left',
                 icon: Icons.star,
                 subcategories: [
-                  Category(id: 'left', label: 'Left', icon: Icons.star),
-                  Category(id: 'right', label: 'Right', icon: Icons.star),
+                  Category(id: 'canine', label: 'Canine', icon: Icons.star),
+                  Category(id: 'incisor_1', label: 'Incisor 1', icon: Icons.star),
+                  Category(id: 'incisor_2', label: 'Incisor 2', icon: Icons.star),
+                  Category(id: 'incisor_3', label: 'Incisor 3', icon: Icons.star),
+                  Category(id: 'molar_1', label: 'Molar 1', icon: Icons.star),
+                  Category(id: 'molar_2', label: 'Molar 2', icon: Icons.star),
+                  Category(id: 'premolar_1', label: 'Premolar 1', icon: Icons.star),
+                  Category(id: 'premolar_2', label: 'Premolar 2', icon: Icons.star),
+                  Category(id: 'premolar_3', label: 'Premolar 3', icon: Icons.star),
+                  Category(id: 'premolar_4', label: 'Premolar 4', icon: Icons.star),
                 ],
               ),
               Category(
-                id: 'lower', 
-                label: 'Lower', 
+                id: 'upper_right',
+                label: 'Upper Right',
                 icon: Icons.star,
                 subcategories: [
-                  Category(id: 'left', label: 'Left', icon: Icons.star),
-                  Category(id: 'right', label: 'Right', icon: Icons.star),
+                  Category(id: 'canine', label: 'Canine', icon: Icons.star),
+                  Category(id: 'incisor_1', label: 'Incisor 1', icon: Icons.star),
+                  Category(id: 'incisor_2', label: 'Incisor 2', icon: Icons.star),
+                  Category(id: 'incisor_3', label: 'Incisor 3', icon: Icons.star),
+                  Category(id: 'molar_1', label: 'Molar 1', icon: Icons.star),
+                  Category(id: 'molar_2', label: 'Molar 2', icon: Icons.star),
+                  Category(id: 'premolar_1', label: 'Premolar 1', icon: Icons.star),
+                  Category(id: 'premolar_2', label: 'Premolar 2', icon: Icons.star),
+                  Category(id: 'premolar_3', label: 'Premolar 3', icon: Icons.star),
+                  Category(id: 'premolar_4', label: 'Premolar 4', icon: Icons.star),
                 ],
               ),
             ],
           ),
-        );
-      }
+          Category(
+            id: 'lower',
+            label: 'Lower',
+            icon: Icons.star,
+            subcategories: [
+              Category(
+                id: 'lower_left',
+                label: 'Lower Left',
+                icon: Icons.star,
+                subcategories: [
+                  Category(id: 'canine', label: 'Canine', icon: Icons.star),
+                  Category(id: 'incisor_1', label: 'Incisor 1', icon: Icons.star),
+                  Category(id: 'incisor_2', label: 'Incisor 2', icon: Icons.star),
+                  Category(id: 'incisor_3', label: 'Incisor 3', icon: Icons.star),
+                  Category(id: 'molar_1', label: 'Molar 1', icon: Icons.star),
+                  Category(id: 'molar_2', label: 'Molar 2', icon: Icons.star),
+                  Category(id: 'premolar_1', label: 'Premolar 1', icon: Icons.star),
+                  Category(id: 'premolar_2', label: 'Premolar 2', icon: Icons.star),
+                  Category(id: 'premolar_3', label: 'Premolar 3', icon: Icons.star),
+                  Category(id: 'premolar_4', label: 'Premolar 4', icon: Icons.star),
+                ],
+              ),
+              Category(
+                id: 'lower_right',
+                label: 'Lower Right',
+                icon: Icons.star,
+                subcategories: [
+                  Category(id: 'canine', label: 'Canine', icon: Icons.star),
+                  Category(id: 'incisor_1', label: 'Incisor 1', icon: Icons.star),
+                  Category(id: 'incisor_2', label: 'Incisor 2', icon: Icons.star),
+                  Category(id: 'incisor_3', label: 'Incisor 3', icon: Icons.star),
+                  Category(id: 'molar_1', label: 'Molar 1', icon: Icons.star),
+                  Category(id: 'molar_2', label: 'Molar 2', icon: Icons.star),
+                  Category(id: 'premolar_1', label: 'Premolar 1', icon: Icons.star),
+                  Category(id: 'premolar_2', label: 'Premolar 2', icon: Icons.star),
+                  Category(id: 'premolar_3', label: 'Premolar 3', icon: Icons.star),
+                  Category(id: 'premolar_4', label: 'Premolar 4', icon: Icons.star),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
+    ];
+  }
 
-      return categories;
-    }
-    
-    // Default skeletal system categories for other animals
+  // Default skeletal system categories for other animals
+  static List<Category> _getDefaultSkeletalCategories() {
     return [
       Category(id: 'bones', label: 'Bones', icon: Icons.straighten),
       Category(id: 'joints', label: 'Joints', icon: Icons.join_inner),
@@ -2668,25 +3522,25 @@ class CategoryData {
           id: 'external_ear',
           label: 'External Ear',
           icon: Icons.hearing,
-          imagePath: 'assets/images/sensory/hearing_balance/external_ear.webp',
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance/external_ear.webp',
         ),
         Category(
           id: 'inner_ear_cochlea',
           label: 'Inner Ear Cochlea',
           icon: Icons.hearing,
-          imagePath: 'assets/images/sensory/hearing_balance/inner_ear_cochlea.webp',
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance/inner_ear_cochlea.webp',
         ),
         Category(
           id: 'middle_ear',
           label: 'Middle Ear',
           icon: Icons.hearing,
-          imagePath: 'assets/images/sensory/hearing_balance/middle_ear.webp',
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance/middle_ear.webp',
         ),
         Category(
           id: 'vestibular_system',
           label: 'Vestibular System',
           icon: Icons.balance,
-          imagePath: 'assets/images/sensory/hearing_balance/vestibular_system.webp',
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance/vestibular_system.webp',
         ),
       ];
     } else {
@@ -2696,13 +3550,13 @@ class CategoryData {
           id: 'auditory_structures',
           label: 'Auditory Structures',
           icon: Icons.hearing,
-          imagePath: 'assets/images/sensory/hearing_balance/auditory_structures.webp',
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance/auditory_structures.webp',
         ),
         Category(
           id: 'vestibular_structures',
           label: 'Vestibular Structures',
           icon: Icons.balance,
-          imagePath: 'assets/images/sensory/hearing_balance/vestibular_structures.webp',
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance/vestibular_structures.webp',
         ),
       ];
     }
@@ -2710,7 +3564,7 @@ class CategoryData {
       id: 'hearing_balance',
       label: 'Hearing & Balance',
       icon: Icons.hearing,
-      imagePath: 'assets/images/sensory/hearing_balance.webp',
+      imagePath: 'assets/images/$animalId/sensory/hearing_balance.webp',
       subcategories: hearingBalanceSubcategories,
     ));
 
@@ -2719,7 +3573,7 @@ class CategoryData {
       id: 'smell',
       label: 'Smell',
       icon: Icons.air,
-      imagePath: 'assets/images/sensory/smell.webp',
+      imagePath: 'assets/images/$animalId/sensory/smell.webp',
     ));
 
     // Taste - single file for all animals
@@ -2727,7 +3581,7 @@ class CategoryData {
       id: 'taste',
       label: 'Taste',
       icon: Icons.emoji_food_beverage,
-      imagePath: 'assets/images/sensory/taste.webp',
+      imagePath: 'assets/images/$animalId/sensory/taste.webp',
     ));
 
     // Touch - different for each animal
@@ -2774,7 +3628,7 @@ class CategoryData {
       id: 'touch',
       label: 'Touch',
       icon: Icons.touch_app,
-      imagePath: 'assets/images/sensory/touch.webp',
+      imagePath: 'assets/images/$animalId/sensory/touch.webp',
       subcategories: touchSubcategories,
     ));
 
@@ -2817,10 +3671,10 @@ class CategoryData {
           imagePath: 'assets/images/sensory/vision/accessory_system.webp',
         ),
         Category(
-          id: 'visual_system',
-          label: 'Visual System',
+          id: 'system_structures',
+          label: 'System Structures',
           icon: Icons.visibility,
-          imagePath: 'assets/images/sensory/vision/visual_system.webp',
+          imagePath: 'assets/images/sensory/vision/system_structures.webp',
         ),
       ];
     }
@@ -2828,7 +3682,7 @@ class CategoryData {
       id: 'vision',
       label: 'Vision',
       icon: Icons.visibility,
-      imagePath: 'assets/images/sensory/vision.webp',
+      imagePath: 'assets/images/$animalId/sensory/vision.webp',
       subcategories: visionSubcategories,
     ));
 
@@ -3284,7 +4138,27 @@ class CategoryData {
                 label: 'Testes',
                 icon: Icons.scatter_plot,
                 imagePath: 'assets/images/organs/pelvis/male/testes.webp',
-              ),
+             ),
+             if (animalId.toLowerCase() == 'horse') ...[
+               Category(
+                 id: 'penis',
+                 label: 'Penis',
+                 icon: Icons.scatter_plot,
+                 imagePath: 'assets/images/organs/pelvis/male/penis.webp',
+               ),
+               Category(
+                 id: 'sheath',
+                 label: 'Sheath',
+                 icon: Icons.scatter_plot,
+                 imagePath: 'assets/images/organs/pelvis/male/sheath.webp',
+               ),
+               Category(
+                 id: 'spermatic_cord',
+                 label: 'Spermatic Cord',
+                 icon: Icons.scatter_plot,
+                 imagePath: 'assets/images/organs/pelvis/male/spermatic_cord.webp',
+               ),
+             ],
             ],
           ),
           Category(
@@ -3354,6 +4228,14 @@ class CategoryData {
             imagePath: 'assets/images/organs/reproductive_organs/female/vagina.webp',
           ),
         ] : [
+          if (animalId.toLowerCase() == 'horse') ...[
+            Category(
+              id: 'gonads',
+              label: 'Gonads',
+              icon: Icons.scatter_plot,
+              imagePath: 'assets/images/organs/reproductive_organs/female/gonads.webp',
+            ),
+          ],
           Category(
             id: 'cervix',
             label: 'Cervix',
@@ -3429,6 +4311,38 @@ class CategoryData {
             imagePath: 'assets/images/organs/reproductive_organs/male/testes.webp',
           ),
         ] : [
+          if (animalId.toLowerCase() == 'horse') ...[
+            Category(
+              id: 'accessory_glands',
+              label: 'Accessory Glands',
+              icon: Icons.scatter_plot,
+              imagePath: 'assets/images/organs/reproductive_organs/male/accessory_glands.webp',
+            ),
+            Category(
+              id: 'gonads',
+              label: 'Gonads',
+              icon: Icons.scatter_plot,
+              imagePath: 'assets/images/organs/reproductive_organs/male/gonads.webp',
+            ),
+            Category(
+              id: 'scrotum',
+              label: 'Scrotum',
+              icon: Icons.scatter_plot,
+              imagePath: 'assets/images/organs/reproductive_organs/male/scrotum.webp',
+            ),
+            Category(
+              id: 'sheath',
+              label: 'Sheath',
+              icon: Icons.scatter_plot,
+              imagePath: 'assets/images/organs/reproductive_organs/male/sheath.webp',
+            ),
+            Category(
+              id: 'spermatic_cord',
+              label: 'Spermatic Cord',
+              icon: Icons.scatter_plot,
+              imagePath: 'assets/images/organs/reproductive_organs/male/spermatic_cord.webp',
+            ),
+          ],
               Category(
                 id: 'epididymis',
                 label: 'Epididymis',
@@ -3503,322 +4417,420 @@ class CategoryData {
 
   // Get glands categories for a specific animal
   static List<Category> getGlandsCategoriesForAnimal(String animalId) {
-    final categories = <Category>[];
-
-    // Dermal glands - different for each animal
-    List<Category> dermalSubcategories;
-    if (animalId.toLowerCase() == 'bird') {
-      dermalSubcategories = [
-        Category(
-          id: 'cere_gland',
-          label: 'Cere Gland',
-          icon: Icons.layers,
-          imagePath: 'assets/images/glands/dermal/cere_gland.webp',
-        ),
-        Category(
-          id: 'cutaneous_glands',
-          label: 'Cutaneous Glands',
-          icon: Icons.layers,
-          imagePath: 'assets/images/glands/dermal/cutaneous_glands.webp',
-        ),
-        Category(
-          id: 'sebaceous_glands',
-          label: 'Sebaceous Glands',
-          icon: Icons.layers,
-          imagePath: 'assets/images/glands/dermal/sebaceous_glands.webp',
-        ),
-        Category(
-          id: 'uropygial_gland',
-          label: 'Uropygial Gland',
-          icon: Icons.layers,
-          imagePath: 'assets/images/glands/dermal/uropygial_gland.webp',
-        ),
-      ];
+    if (animalId.toLowerCase() == 'horse') {
+      return _getHorseGlandsCategories();
+    } else if (animalId.toLowerCase() == 'dog') {
+      return _getDogGlandsCategories();
+    } else if (animalId.toLowerCase() == 'bird') {
+      return _getBirdGlandsCategories();
     } else {
-      // Common dermal glands for horse, dog, and cat
-      dermalSubcategories = [
-        Category(
-          id: 'eccrine_glands',
-          label: 'Eccrine Glands',
-          icon: Icons.layers,
-          imagePath: 'assets/images/glands/dermal/eccrine_glands.webp',
-        ),
-        Category(
-          id: 'sebaceous_glands',
-          label: 'Sebaceous Glands',
-          icon: Icons.layers,
-          imagePath: 'assets/images/glands/dermal/sebaceous_glands.webp',
-        ),
-        Category(
-          id: 'sweat_glands',
-          label: 'Sweat Glands',
-          icon: Icons.layers,
-          imagePath: 'assets/images/glands/dermal/sweat_glands.webp',
-        ),
-      ];
+      // Default for cat and other animals (to be implemented later)
+      return [];
     }
-    categories.add(Category(
-      id: 'dermal',
-      label: 'Dermal',
-      icon: Icons.layers,
-      imagePath: 'assets/images/glands/dermal.webp',
-      subcategories: dermalSubcategories,
-    ));
+  }
 
-    // Mammary glands - only for horse, dog, and cat (not bird)
-    if (animalId.toLowerCase() != 'bird') {
-      List<Category> mammarySubcategories;
-      if (animalId.toLowerCase() == 'dog') {
-        mammarySubcategories = [
-          Category(
-            id: 'bitch',
-            label: 'Bitch',
-            icon: Icons.scatter_plot,
-            imagePath: 'assets/images/glands/mammary/bitch.webp',
-          ),
-          Category(
-            id: 'dog',
-            label: 'Dog',
-            icon: Icons.scatter_plot,
-            imagePath: 'assets/images/glands/mammary/dog.webp',
-          ),
-      ];
-    } else if (animalId.toLowerCase() == 'horse') {
-        mammarySubcategories = [
-          Category(
-            id: 'mare',
-            label: 'Mare',
-            icon: Icons.scatter_plot,
-            imagePath: 'assets/images/glands/mammary/mare.webp',
-          ),
-          Category(
-            id: 'stallion',
-            label: 'Stallion',
-            icon: Icons.scatter_plot,
-            imagePath: 'assets/images/glands/mammary/stallion.webp',
-          ),
-        ];
-      } else if (animalId.toLowerCase() == 'cat') {
-        mammarySubcategories = [
-          Category(
-            id: 'queen',
-            label: 'Queen',
-            icon: Icons.scatter_plot,
-            imagePath: 'assets/images/glands/mammary/queen.webp',
-          ),
-          Category(
-            id: 'tom',
-            label: 'Tom',
-            icon: Icons.scatter_plot,
-            imagePath: 'assets/images/glands/mammary/tom.webp',
-          ),
-        ];
-      } else {
-        mammarySubcategories = [];
-    }
-    categories.add(Category(
+  // Helper method for horse glands
+  static List<Category> _getHorseGlandsCategories() {
+    return [
+      Category(
+        id: 'dermal',
+        label: 'Dermal',
+        icon: Icons.layers,
+        imagePath: 'assets/images/glands/dermal.webp',
+        subcategories: [
+          Category(id: 'eccrine_glands', label: 'Eccrine Glands', icon: Icons.water_drop),
+          Category(id: 'sebaceous_glands', label: 'Sebaceous Glands', icon: Icons.layers),
+          Category(id: 'sweat_glands', label: 'Sweat Glands', icon: Icons.water_drop),
+        ],
+      ),
+      Category(
+        id: 'digestive',
+        label: 'Digestive',
+        icon: Icons.restaurant,
+        imagePath: 'assets/images/glands/digestive.webp',
+        subcategories: [
+          Category(id: 'bile_duct_glands', label: 'Bile Duct Glands', icon: Icons.restaurant),
+          Category(id: 'brunner_glands', label: 'Brunner Glands', icon: Icons.restaurant),
+          Category(id: 'gastric_glands', label: 'Gastric Glands', icon: Icons.restaurant),
+          Category(id: 'goblet_cells', label: 'Goblet Cells', icon: Icons.restaurant),
+          Category(id: 'intestinal_glands', label: 'Intestinal Glands', icon: Icons.restaurant),
+          Category(id: 'von_ebners_glands', label: 'Von Ebners Glands', icon: Icons.restaurant),
+        ],
+      ),
+      Category(
+        id: 'endocrine',
+        label: 'Endocrine',
+        icon: Icons.scatter_plot,
+        imagePath: 'assets/images/glands/endocrine.webp',
+        subcategories: [
+          Category(id: 'adrenal_glands', label: 'Adrenal Glands', icon: Icons.scatter_plot),
+          Category(id: 'pancreas_endocrine', label: 'Pancreas Endocrine', icon: Icons.scatter_plot),
+          Category(id: 'parathyroid_glands', label: 'Parathyroid Glands', icon: Icons.scatter_plot),
+          Category(id: 'pineal_gland', label: 'Pineal Gland', icon: Icons.scatter_plot),
+          Category(id: 'pituitary_gland', label: 'Pituitary Gland', icon: Icons.scatter_plot),
+          Category(id: 'thymus_gland', label: 'Thymus Gland', icon: Icons.scatter_plot),
+          Category(id: 'thyroid_gland', label: 'Thyroid Gland', icon: Icons.scatter_plot),
+        ],
+      ),
+      Category(
+        id: 'immune',
+        label: 'Immune',
+        icon: Icons.shield,
+        imagePath: 'assets/images/glands/immune.webp',
+        subcategories: [
+          Category(id: 'hymus_gland', label: 'Hymus Gland', icon: Icons.shield),
+          Category(id: 'lymph_glands', label: 'Lymph Glands', icon: Icons.water),
+          Category(id: 'lymph_nodes', label: 'Lymph Nodes', icon: Icons.water),
+          Category(id: 'spleen', label: 'Spleen', icon: Icons.shield),
+        ],
+      ),
+      Category(
         id: 'mammary',
         label: 'Mammary',
-      icon: Icons.scatter_plot,
-        imagePath: 'assets/images/glands/mammary.webp',
-        subcategories: mammarySubcategories,
-      ));
-    }
-
-    // Ocular glands - different for each animal
-    List<Category> ocularSubcategories;
-    if (animalId.toLowerCase() == 'bird') {
-      ocularSubcategories = [
-        Category(
-          id: 'gland_of_the_third_eyelid',
-          label: 'Gland of the Third Eyelid',
-          icon: Icons.visibility,
-          imagePath: 'assets/images/glands/ocular/gland_of_the_third_eyelid.webp',
-        ),
-        Category(
-          id: 'harderian_gland',
-          label: 'Harderian Gland',
-          icon: Icons.visibility,
-          imagePath: 'assets/images/glands/ocular/harderian_gland.webp',
-        ),
-        Category(
-          id: 'lacrimal_gland',
-          label: 'Lacrimal Gland',
-          icon: Icons.visibility,
-          imagePath: 'assets/images/glands/ocular/lacrimal_gland.webp',
-        ),
-        Category(
-          id: 'nictitating_membrane_gland',
-          label: 'Nictitating Membrane Gland',
-          icon: Icons.visibility,
-          imagePath: 'assets/images/glands/ocular/nictitating_membrane_gland.webp',
-        ),
-      ];
-    } else {
-      // Common ocular glands for horse, dog, and cat
-      ocularSubcategories = [
-        Category(
-          id: 'conjunctival_glands',
-          label: 'Conjunctival Glands',
-          icon: Icons.visibility,
-          imagePath: 'assets/images/glands/ocular/conjunctival_glands.webp',
-        ),
-        Category(
-          id: 'gland_of_the_third_eyelid',
-          label: 'Gland of the Third Eyelid',
-          icon: Icons.visibility,
-          imagePath: 'assets/images/glands/ocular/gland_of_the_third_eyelid.webp',
-        ),
-        Category(
-          id: 'lacrimal_gland',
-          label: 'Lacrimal Gland',
-          icon: Icons.visibility,
-          imagePath: 'assets/images/glands/ocular/lacrimal_gland.webp',
-        ),
-        Category(
-          id: 'meibomian_glands',
-          label: 'Meibomian Glands',
-          icon: Icons.visibility,
-          imagePath: 'assets/images/glands/ocular/meibomian_glands.webp',
-        ),
-      ];
-    }
-    categories.add(Category(
-      id: 'ocular',
-      label: 'Ocular',
-      icon: Icons.visibility,
-      imagePath: 'assets/images/glands/ocular.webp',
-      subcategories: ocularSubcategories,
-    ));
-
-    // Perianal glands - only for dog and cat
-    if (animalId.toLowerCase() == 'dog' || animalId.toLowerCase() == 'cat') {
-      List<Category> perianalSubcategories = [
-        Category(
-          id: 'anal_sacs',
-          label: 'Anal Sacs',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/perianal/anal_sacs.webp',
-        ),
-      ];
-      if (animalId.toLowerCase() == 'dog') {
-        perianalSubcategories.add(Category(
-          id: 'perianal_glands',
-          label: 'Perianal Glands',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/perianal_glands.webp',
-        ));
-      }
-      categories.add(Category(
-        id: 'perianal',
-        label: 'Perianal',
         icon: Icons.scatter_plot,
-        imagePath: 'assets/images/glands/perianal_glands.webp',
-        subcategories: perianalSubcategories,
-      ));
-    }
+        imagePath: 'assets/images/glands/mammary.webp',
+        subcategories: [
+          Category(id: 'mare', label: 'Mare', icon: Icons.scatter_plot),
+          Category(id: 'stallion', label: 'Stallion', icon: Icons.scatter_plot),
+        ],
+      ),
+      Category(
+        id: 'ocular',
+        label: 'Ocular',
+        icon: Icons.visibility,
+        imagePath: 'assets/images/glands/ocular.webp',
+        subcategories: [
+          Category(id: 'conjunctival_glands', label: 'Conjunctival Glands', icon: Icons.visibility),
+          Category(id: 'gland_of_the_third_eyelid', label: 'Gland Of The Third Eyelid', icon: Icons.visibility),
+          Category(id: 'harderian_gland', label: 'Harderian Gland', icon: Icons.visibility),
+          Category(id: 'lacrimal_gland', label: 'Lacrimal Gland', icon: Icons.visibility),
+          Category(id: 'meibomian_glands', label: 'Meibomian Glands', icon: Icons.visibility),
+          Category(id: 'tarsal_glands', label: 'Tarsal Glands', icon: Icons.visibility),
+        ],
+      ),
+      Category(
+        id: 'reproductive',
+        label: 'Reproductive',
+        icon: Icons.favorite,
+        imagePath: 'assets/images/glands/reproductive.webp',
+        subcategories: [
+          Category(
+            id: 'female',
+            label: 'Female',
+            icon: Icons.favorite,
+            subcategories: [
+              Category(id: 'ovarian_glands', label: 'Ovarian Glands', icon: Icons.favorite),
+              Category(id: 'urethral_glands', label: 'Urethral Glands', icon: Icons.favorite),
+              Category(id: 'uterine_glands', label: 'Uterine Glands', icon: Icons.favorite),
+              Category(id: 'vestibular_glands', label: 'Vestibular Glands', icon: Icons.favorite),
+              Category(id: 'vulvar_glands', label: 'Vulvar Glands', icon: Icons.favorite),
+            ],
+          ),
+          Category(
+            id: 'male',
+            label: 'Male',
+            icon: Icons.favorite,
+            subcategories: [
+              Category(id: 'bulbourethral_glands', label: 'Bulbourethral Glands', icon: Icons.favorite),
+              Category(id: 'preputial_glands', label: 'Preputial Glands', icon: Icons.favorite),
+              Category(id: 'prostate_gland', label: 'Prostate Gland', icon: Icons.favorite),
+              Category(id: 'urethral_glands', label: 'Urethral Glands', icon: Icons.favorite),
+            ],
+          ),
+        ],
+      ),
+      Category(
+        id: 'respiratory',
+        label: 'Respiratory',
+        icon: Icons.air,
+        imagePath: 'assets/images/glands/respiratory.webp',
+        subcategories: [
+          Category(id: 'bronchial_glands', label: 'Bronchial Glands', icon: Icons.air),
+          Category(id: 'laryngeal_glands', label: 'Laryngeal Glands', icon: Icons.air),
+          Category(id: 'nasal_glands', label: 'Nasal Glands', icon: Icons.air),
+          Category(id: 'tracheal_glands', label: 'Tracheal Glands', icon: Icons.air),
+        ],
+      ),
+      Category(
+        id: 'salivary',
+        label: 'Salivary',
+        icon: Icons.scatter_plot,
+        imagePath: 'assets/images/glands/salivary.webp',
+        subcategories: [
+          Category(id: 'mandibular_gland', label: 'Mandibular Gland', icon: Icons.scatter_plot),
+          Category(id: 'parotid_gland', label: 'Parotid Gland', icon: Icons.scatter_plot),
+          Category(id: 'sublingual_gland', label: 'Sublingual Gland', icon: Icons.scatter_plot),
+        ],
+      ),
+      Category(
+        id: 'scent_protective',
+        label: 'Scent Protective',
+        icon: Icons.sensors,
+        imagePath: 'assets/images/glands/scent_protective.webp',
+        subcategories: [
+          Category(id: 'anal_glands', label: 'Anal Glands', icon: Icons.sensors),
+          Category(id: 'anal_sacs', label: 'Anal Sacs', icon: Icons.sensors),
+          Category(id: 'ceruminous_glands', label: 'Ceruminous Glands', icon: Icons.sensors),
+          Category(id: 'harderian_gland', label: 'Harderian Gland', icon: Icons.sensors),
+        ],
+      ),
+    ];
+  }
 
-    // Salivary glands - different for each animal
-    List<Category> salivarySubcategories;
-    if (animalId.toLowerCase() == 'bird') {
-      salivarySubcategories = [
-        Category(
-          id: 'angular_glands',
-          label: 'Angular Glands',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/angular_glands.webp',
-        ),
-        Category(
-          id: 'anterior_lingual_glands',
-          label: 'Anterior Lingual Glands',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/anterior_lingual_glands.webp',
-        ),
-        Category(
-          id: 'cricoarytenoid_glands',
-          label: 'Cricoarytenoid Glands',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/cricoarytenoid_glands.webp',
-        ),
-        Category(
-          id: 'palatine_glands',
-          label: 'Palatine Glands',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/palatine_glands.webp',
-        ),
-        Category(
-          id: 'posterior_lingual_glands',
-          label: 'Posterior Lingual Glands',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/posterior_lingual_glands.webp',
-        ),
-      ];
-    } else if (animalId.toLowerCase() == 'horse') {
-      salivarySubcategories = [
-        Category(
-          id: 'buccal_gland',
-          label: 'Buccal Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/buccal_gland.webp',
-        ),
-        Category(
-          id: 'mandibular_gland',
-          label: 'Mandibular Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/mandibular_gland.webp',
-        ),
-        Category(
-          id: 'parotid_gland',
-          label: 'Parotid Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/parotid_gland.webp',
-        ),
-        Category(
-          id: 'sublingual_gland',
-          label: 'Sublingual Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/sublingual_gland.webp',
-        ),
-      ];
-    } else if (animalId.toLowerCase() == 'dog' || animalId.toLowerCase() == 'cat') {
-      salivarySubcategories = [
-        Category(
-          id: 'mandibular_gland',
-          label: 'Mandibular Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/mandibular_gland.webp',
-        ),
-        Category(
-          id: 'parotid_gland',
-          label: 'Parotid Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/parotid_gland.webp',
-        ),
-        Category(
-          id: 'sublingual_gland',
-          label: 'Sublingual Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/sublingual_gland.webp',
-        ),
-        Category(
-          id: 'zygomatic_gland',
-          label: 'Zygomatic Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/salivary/zygomatic_gland.webp',
-        ),
-      ];
-    } else {
-      salivarySubcategories = [];
-    }
-    categories.add(Category(
-      id: 'salivary',
-      label: 'Salivary',
-      icon: Icons.scatter_plot,
-      imagePath: 'assets/images/glands/salivary.webp',
-      subcategories: salivarySubcategories,
-    ));
+  // Helper method for dog glands
+  static List<Category> _getDogGlandsCategories() {
+    return [
+      Category(
+        id: 'dermal',
+        label: 'Dermal',
+        icon: Icons.layers,
+        imagePath: 'assets/images/glands/dermal.webp',
+        subcategories: [
+          Category(id: 'eccrine_glands', label: 'Eccrine Glands', icon: Icons.water_drop),
+          Category(id: 'sebaceous_glands', label: 'Sebaceous Glands', icon: Icons.layers),
+          Category(id: 'sweat_glands', label: 'Sweat Glands', icon: Icons.water_drop),
+        ],
+      ),
+      Category(
+        id: 'digestive',
+        label: 'Digestive',
+        icon: Icons.restaurant,
+        imagePath: 'assets/images/glands/digestive.webp',
+        subcategories: [
+          Category(id: 'bile_duct_glands', label: 'Bile Duct Glands', icon: Icons.restaurant),
+          Category(id: 'brunner_glands', label: 'Brunner Glands', icon: Icons.restaurant),
+          Category(id: 'gastric_glands', label: 'Gastric Glands', icon: Icons.restaurant),
+          Category(id: 'goblet_cells', label: 'Goblet Cells', icon: Icons.restaurant),
+          Category(id: 'intestinal_glands', label: 'Intestinal Glands', icon: Icons.restaurant),
+          Category(id: 'von_ebners_glands', label: 'Von Ebners Glands', icon: Icons.restaurant),
+        ],
+      ),
+      Category(
+        id: 'endocrine',
+        label: 'Endocrine',
+        icon: Icons.scatter_plot,
+        imagePath: 'assets/images/glands/endocrine.webp',
+        subcategories: [
+          Category(id: 'adrenal_glands', label: 'Adrenal Glands', icon: Icons.scatter_plot),
+          Category(id: 'pancreas_endocrine', label: 'Pancreas Endocrine', icon: Icons.scatter_plot),
+          Category(id: 'parathyroid_glands', label: 'Parathyroid Glands', icon: Icons.scatter_plot),
+          Category(id: 'pineal_gland', label: 'Pineal Gland', icon: Icons.scatter_plot),
+          Category(id: 'pituitary_gland', label: 'Pituitary Gland', icon: Icons.scatter_plot),
+          Category(id: 'thyroid_gland', label: 'Thyroid Gland', icon: Icons.scatter_plot),
+        ],
+      ),
+      Category(
+        id: 'immune',
+        label: 'Immune',
+        icon: Icons.shield,
+        imagePath: 'assets/images/glands/immune.webp',
+        subcategories: [
+          Category(id: 'lymph_glands', label: 'Lymph Glands', icon: Icons.water),
+          Category(id: 'lymph_nodes', label: 'Lymph Nodes', icon: Icons.water),
+          Category(id: 'spleen', label: 'Spleen', icon: Icons.shield),
+          Category(id: 'thymus_gland', label: 'Thymus Gland', icon: Icons.shield),
+        ],
+      ),
+      Category(
+        id: 'mammary',
+        label: 'Mammary',
+        icon: Icons.scatter_plot,
+        imagePath: 'assets/images/glands/mammary.webp',
+        subcategories: [
+          Category(id: 'bitch', label: 'Bitch', icon: Icons.scatter_plot),
+          Category(id: 'dog', label: 'Dog', icon: Icons.scatter_plot),
+        ],
+      ),
+      Category(
+        id: 'ocular',
+        label: 'Ocular',
+        icon: Icons.visibility,
+        imagePath: 'assets/images/glands/ocular.webp',
+        subcategories: [
+          Category(id: 'conjunctival_glands', label: 'Conjunctival Glands', icon: Icons.visibility),
+          Category(id: 'gland_of_the_third_eyelid', label: 'Gland Of The Third Eyelid', icon: Icons.visibility),
+          Category(id: 'harderian_gland', label: 'Harderian Gland', icon: Icons.visibility),
+          Category(id: 'lacrimal_gland', label: 'Lacrimal Gland', icon: Icons.visibility),
+          Category(id: 'meibomian_glands', label: 'Meibomian Glands', icon: Icons.visibility),
+          Category(id: 'tarsal_glands', label: 'Tarsal Glands', icon: Icons.visibility),
+        ],
+      ),
+      Category(
+        id: 'reproductive',
+        label: 'Reproductive',
+        icon: Icons.favorite,
+        imagePath: 'assets/images/glands/reproductive.webp',
+        subcategories: [
+          Category(
+            id: 'female',
+            label: 'Female',
+            icon: Icons.favorite,
+            subcategories: [
+              Category(id: 'ovarian_glands', label: 'Ovarian Glands', icon: Icons.favorite),
+              Category(id: 'urethral_glands', label: 'Urethral Glands', icon: Icons.favorite),
+              Category(id: 'uterine_glands', label: 'Uterine Glands', icon: Icons.favorite),
+              Category(id: 'vestibular_glands', label: 'Vestibular Glands', icon: Icons.favorite),
+              Category(id: 'vulvar_glands', label: 'Vulvar Glands', icon: Icons.favorite),
+            ],
+          ),
+          Category(
+            id: 'male',
+            label: 'Male',
+            icon: Icons.favorite,
+            subcategories: [
+              Category(id: 'bulbourethral_glands', label: 'Bulbourethral Glands', icon: Icons.favorite),
+              Category(id: 'preputial_glands', label: 'Preputial Glands', icon: Icons.favorite),
+              Category(id: 'prostate_gland', label: 'Prostate Gland', icon: Icons.favorite),
+              Category(id: 'urethral_glands', label: 'Urethral Glands', icon: Icons.favorite),
+            ],
+          ),
+        ],
+      ),
+      Category(
+        id: 'respiratory',
+        label: 'Respiratory',
+        icon: Icons.air,
+        imagePath: 'assets/images/glands/respiratory.webp',
+        subcategories: [
+          Category(id: 'laryngeal_glands', label: 'Laryngeal Glands', icon: Icons.air),
+          Category(id: 'nasal_glands', label: 'Nasal Glands', icon: Icons.air),
+          Category(id: 'pharyngeal_glands', label: 'Pharyngeal Glands', icon: Icons.air),
+        ],
+      ),
+      Category(
+        id: 'salivary',
+        label: 'Salivary',
+        icon: Icons.scatter_plot,
+        imagePath: 'assets/images/glands/salivary.webp',
+        subcategories: [
+          Category(id: 'mandibular_gland', label: 'Mandibular Gland', icon: Icons.scatter_plot),
+          Category(id: 'parotid_gland', label: 'Parotid Gland', icon: Icons.scatter_plot),
+          Category(id: 'sublingual_gland', label: 'Sublingual Gland', icon: Icons.scatter_plot),
+          Category(id: 'zygomatic_gland', label: 'Zygomatic Gland', icon: Icons.scatter_plot),
+        ],
+      ),
+      Category(
+        id: 'scent_protective',
+        label: 'Scent Protective',
+        icon: Icons.sensors,
+        imagePath: 'assets/images/glands/scent_protective.webp',
+        subcategories: [
+          Category(id: 'anal_glands', label: 'Anal Glands', icon: Icons.sensors),
+          Category(id: 'anal_sacs', label: 'Anal Sacs', icon: Icons.sensors),
+          Category(id: 'ceruminous_glands', label: 'Ceruminous Glands', icon: Icons.sensors),
+          Category(id: 'harderian_gland', label: 'Harderian Gland', icon: Icons.sensors),
+          Category(id: 'perianal_glands', label: 'Perianal Glands', icon: Icons.sensors),
+        ],
+      ),
+    ];
+  }
 
-    return categories;
+  // Helper method for bird glands (existing functionality preserved)
+  static List<Category> _getBirdGlandsCategories() {
+    return [
+      Category(
+        id: 'dermal',
+        label: 'Dermal',
+        icon: Icons.layers,
+        imagePath: 'assets/images/glands/dermal.webp',
+        subcategories: [
+          Category(
+            id: 'cere_gland',
+            label: 'Cere Gland',
+            icon: Icons.layers,
+            imagePath: 'assets/images/glands/dermal/cere_gland.webp',
+          ),
+          Category(
+            id: 'cutaneous_glands',
+            label: 'Cutaneous Glands',
+            icon: Icons.layers,
+            imagePath: 'assets/images/glands/dermal/cutaneous_glands.webp',
+          ),
+          Category(
+            id: 'sebaceous_glands',
+            label: 'Sebaceous Glands',
+            icon: Icons.layers,
+            imagePath: 'assets/images/glands/dermal/sebaceous_glands.webp',
+          ),
+          Category(
+            id: 'uropygial_gland',
+            label: 'Uropygial Gland',
+            icon: Icons.layers,
+            imagePath: 'assets/images/glands/dermal/uropygial_gland.webp',
+          ),
+        ],
+      ),
+      Category(
+        id: 'ocular',
+        label: 'Ocular',
+        icon: Icons.visibility,
+        imagePath: 'assets/images/glands/ocular.webp',
+        subcategories: [
+          Category(
+            id: 'gland_of_the_third_eyelid',
+            label: 'Gland of the Third Eyelid',
+            icon: Icons.visibility,
+            imagePath: 'assets/images/glands/ocular/gland_of_the_third_eyelid.webp',
+          ),
+          Category(
+            id: 'harderian_gland',
+            label: 'Harderian Gland',
+            icon: Icons.visibility,
+            imagePath: 'assets/images/glands/ocular/harderian_gland.webp',
+          ),
+          Category(
+            id: 'lacrimal_gland',
+            label: 'Lacrimal Gland',
+            icon: Icons.visibility,
+            imagePath: 'assets/images/glands/ocular/lacrimal_gland.webp',
+          ),
+          Category(
+            id: 'nictitating_membrane_gland',
+            label: 'Nictitating Membrane Gland',
+            icon: Icons.visibility,
+            imagePath: 'assets/images/glands/ocular/nictitating_membrane_gland.webp',
+          ),
+        ],
+      ),
+      Category(
+        id: 'salivary',
+        label: 'Salivary',
+        icon: Icons.scatter_plot,
+        imagePath: 'assets/images/glands/salivary.webp',
+        subcategories: [
+          Category(
+            id: 'angular_glands',
+            label: 'Angular Glands',
+            icon: Icons.scatter_plot,
+            imagePath: 'assets/images/glands/salivary/angular_glands.webp',
+          ),
+          Category(
+            id: 'anterior_lingual_glands',
+            label: 'Anterior Lingual Glands',
+            icon: Icons.scatter_plot,
+            imagePath: 'assets/images/glands/salivary/anterior_lingual_glands.webp',
+          ),
+          Category(
+            id: 'cricoarytenoid_glands',
+            label: 'Cricoarytenoid Glands',
+            icon: Icons.scatter_plot,
+            imagePath: 'assets/images/glands/salivary/cricoarytenoid_glands.webp',
+          ),
+          Category(
+            id: 'palatine_glands',
+            label: 'Palatine Glands',
+            icon: Icons.scatter_plot,
+            imagePath: 'assets/images/glands/salivary/palatine_glands.webp',
+          ),
+          Category(
+            id: 'posterior_lingual_glands',
+            label: 'Posterior Lingual Glands',
+            icon: Icons.scatter_plot,
+            imagePath: 'assets/images/glands/salivary/posterior_lingual_glands.webp',
+          ),
+        ],
+      ),
+    ];
   }
 
   /// Get anatomy categories for a specific animal with caching
