@@ -840,18 +840,7 @@ If you are concerned about your animal's health or suspect a medical condition, 
                           ),
                           TextButton(
                             onPressed: () {
-                              Navigator.of(context).pushReplacement(
-                                PageRouteBuilder(
-                                  pageBuilder: (context, animation, secondaryAnimation) =>
-                                      const LoginScreen(),
-                                  transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                                    return FadeTransition(
-                                      opacity: animation,
-                                      child: child,
-                                    );
-                                  },
-                                ),
-                              );
+                              Navigator.of(context).pop();
                             },
                             child: Text(
                               'Sign In',
