@@ -343,10 +343,8 @@ flutter:
     - assets/details/cat/skeleton/skull/facial_bones/
     - assets/details/cat/skeleton/spine/
     - assets/details/cat/skeleton/ribcage/
-    - assets/details/cat/skeleton/shoulder_girdle/
     - assets/details/cat/skeleton/forelimb/
     - assets/details/cat/skeleton/forelimb/antebrachium/
-    - assets/details/cat/skeleton/forelimb/brachium/
     - assets/details/cat/skeleton/forelimb/carpus/
     - assets/details/cat/skeleton/forelimb/manus/
     - assets/details/cat/skeleton/hindlimb/
@@ -354,16 +352,22 @@ flutter:
     - assets/details/cat/skeleton/hindlimb/leg/
     - assets/details/cat/skeleton/hindlimb/hock/
     - assets/details/cat/skeleton/hindlimb/thigh/
-    - assets/details/cat/skeleton/special_bones/
     - assets/details/cat/skeleton/dentition/
     - assets/details/cat/skeleton/dentition/upper/
     - assets/details/cat/skeleton/dentition/lower/
     - assets/details/cat/glands/
-    - assets/details/cat/glands/salivary/
-    - assets/details/cat/glands/ocular/
     - assets/details/cat/glands/dermal/
-    - assets/details/cat/glands/perianal/
+    - assets/details/cat/glands/digestive/
+    - assets/details/cat/glands/endocrine/
+    - assets/details/cat/glands/immune/
     - assets/details/cat/glands/mammary/
+    - assets/details/cat/glands/ocular/
+    - assets/details/cat/glands/reproductive/
+    - assets/details/cat/glands/reproductive/female/
+    - assets/details/cat/glands/reproductive/male/
+    - assets/details/cat/glands/respiratory/
+    - assets/details/cat/glands/salivary/
+    - assets/details/cat/glands/scent_protective/
     - assets/details/cat/connective_tissue/
     - assets/details/cat/organs/
     - assets/details/cat/organs/head/
@@ -383,6 +387,7 @@ flutter:
     - assets/details/cat/muscles/head_neck/
     - assets/details/cat/muscles/hindlimb/
     - assets/details/cat/muscles/pectoral/
+    - assets/details/cat/muscles/pelvic/
     - assets/details/cat/muscles/respiration/
     - assets/details/cat/muscles/respiration/expiratory/
     - assets/details/cat/muscles/respiration/inspiratory/
@@ -397,10 +402,8 @@ flutter:
     - assets/details/cat/skeleton/skull/facial_bones/
     - assets/details/cat/skeleton/spine/
     - assets/details/cat/skeleton/ribcage/
-    - assets/details/cat/skeleton/shoulder_girdle/
     - assets/details/cat/skeleton/forelimb/
     - assets/details/cat/skeleton/forelimb/antebrachium/
-    - assets/details/cat/skeleton/forelimb/brachium/
     - assets/details/cat/skeleton/forelimb/carpus/
     - assets/details/cat/skeleton/forelimb/manus/
     - assets/details/cat/skeleton/hindlimb/
@@ -408,26 +411,33 @@ flutter:
     - assets/details/cat/skeleton/hindlimb/leg/
     - assets/details/cat/skeleton/hindlimb/hock/
     - assets/details/cat/skeleton/hindlimb/thigh/
-    - assets/details/cat/skeleton/special_bones/
     - assets/details/cat/skeleton/dentition/
     - assets/details/cat/skeleton/dentition/upper/
     - assets/details/cat/skeleton/dentition/lower/
     - assets/details/cat/systems/
     - assets/details/cat/systems/cardiovascular_system/
+    - assets/details/cat/systems/cranial_nerves/
     - assets/details/cat/systems/digestive_system/
     - assets/details/cat/systems/digestive_system/lower_tract/
     - assets/details/cat/systems/digestive_system/upper_tract/
     - assets/details/cat/systems/endocrine_system/
+    - assets/details/cat/systems/hepatobiliary_system/
     - assets/details/cat/systems/integumentary_system/
+    - assets/details/cat/systems/lumbosacral_plexus/
+    - assets/details/cat/systems/lumbosacral_plexus/lumbar_plexus/
+    - assets/details/cat/systems/lumbosacral_plexus/major_nerves/
+    - assets/details/cat/systems/lumbosacral_plexus/sacral_plexus/
     - assets/details/cat/systems/lymphatic_system/
     - assets/details/cat/systems/nervous_system/
     - assets/details/cat/systems/nervous_system/autonomic/
-    - assets/details/cat/systems/nervous_system/nervous_system_cns/
-    - assets/details/cat/systems/nervous_system/peripheral_nervous_system_pns/
+    - assets/details/cat/systems/nervous_system/cns/
+    - assets/details/cat/systems/nervous_system/pns/
     - assets/details/cat/systems/reproductive_system/
     - assets/details/cat/systems/reproductive_system/female/
     - assets/details/cat/systems/reproductive_system/male/
     - assets/details/cat/systems/respiratory_system/
+    - assets/details/cat/systems/respiratory_system/lower/
+    - assets/details/cat/systems/respiratory_system/upper/
     - assets/details/cat/systems/urinary_system/
     - assets/details/bird/
     - assets/details/bird/energy/
@@ -435,25 +445,40 @@ flutter:
     - assets/details/bird/energy/chakras/secondary_chakra/
     - assets/details/bird/energy/meridians/primary_meridian/
     - assets/details/bird/energy/meridians/extraordinary_meridian/
+    - assets/details/bird/energy/meridians/energy_balance_in_the_body/
     - assets/details/bird/connective_tissue/
     - assets/details/bird/glands/
     - assets/details/bird/glands/dermal/
+    - assets/details/bird/glands/endocrine/
+    - assets/details/bird/glands/immune/
     - assets/details/bird/glands/ocular/
+    - assets/details/bird/glands/reproductive/
+    - assets/details/bird/glands/reproductive/female/
+    - assets/details/bird/glands/reproductive/male/
     - assets/details/bird/glands/salivary/
+    - assets/details/bird/glands/scent_protective/
     - assets/details/bird/muscles/
     - assets/details/bird/muscles/abdominal/
     - assets/details/bird/muscles/back/
+    - assets/details/bird/muscles/back/spine/
+    - assets/details/bird/muscles/flight/
     - assets/details/bird/muscles/head_neck/
+    - assets/details/bird/muscles/head_neck/throat/
     - assets/details/bird/muscles/hindlimb/
+    - assets/details/bird/muscles/pelvic/
     - assets/details/bird/muscles/respiration/
     - assets/details/bird/muscles/respiration/expiratory/
     - assets/details/bird/muscles/respiration/inspiratory/
     - assets/details/bird/muscles/tail/
+    - assets/details/bird/muscles/voice/
     - assets/details/bird/muscles/wing/
     - assets/details/bird/organs/
     - assets/details/bird/organs/abdomen/
     - assets/details/bird/organs/head/
     - assets/details/bird/organs/neck/
+    - assets/details/bird/organs/pelvis/
+    - assets/details/bird/organs/pelvis/female/
+    - assets/details/bird/organs/pelvis/male/
     - assets/details/bird/organs/reproductive_organs/
     - assets/details/bird/organs/reproductive_organs/female/
     - assets/details/bird/organs/reproductive_organs/male/
@@ -469,6 +494,8 @@ flutter:
     - assets/details/bird/skeleton/hindlimb/leg/
     - assets/details/bird/skeleton/hindlimb/thigh/
     - assets/details/bird/skeleton/ribcage/
+    - assets/details/bird/skeleton/ribcage/true_ribs/
+    - assets/details/bird/skeleton/ribcage/false_ribs/
     - assets/details/bird/skeleton/shoulder_girdle/
     - assets/details/bird/skeleton/skull/
     - assets/details/bird/skeleton/skull/cranial_bones/
@@ -476,26 +503,33 @@ flutter:
     - assets/details/bird/skeleton/special_bones/
     - assets/details/bird/skeleton/spine/
     - assets/details/bird/skeleton/wing/
+    - assets/details/bird/skeleton/wing/antebrachium/
     - assets/details/bird/skeleton/wing/carpus/
     - assets/details/bird/skeleton/wing/manus/
     - assets/details/bird/systems/
     - assets/details/bird/systems/cardiovascular_system/
+    - assets/details/bird/systems/cranial_nerves/
     - assets/details/bird/systems/digestive_system/
     - assets/details/bird/systems/digestive_system/lower_tract/
     - assets/details/bird/systems/digestive_system/upper_tract/
     - assets/details/bird/systems/endocrine_system/
     - assets/details/bird/systems/integumentary_system/
     - assets/details/bird/systems/lumbosacral_plexus/
+    - assets/details/bird/systems/lumbosacral_plexus/lumbar_plexus/
+    - assets/details/bird/systems/lumbosacral_plexus/major_nerves/
+    - assets/details/bird/systems/lumbosacral_plexus/sacral_plexus/
     - assets/details/bird/systems/lymphatic_system/
     - assets/details/bird/systems/nervous_system/
     - assets/details/bird/systems/nervous_system/autonomic/
-    - assets/details/bird/systems/nervous_system/nervous_system_cns/
-    - assets/details/bird/systems/nervous_system/peripheral_nervous_system_pns/
+    - assets/details/bird/systems/nervous_system/cns/
+    - assets/details/bird/systems/nervous_system/pns/
     - assets/details/bird/systems/reproductive_system/
     - assets/details/bird/systems/reproductive_system/female/
     - assets/details/bird/systems/reproductive_system/male/
     - assets/details/bird/systems/respiratory_system/
-    - assets/details/bird/systems/urinary_system/
+    - assets/details/bird/systems/respiratory_system/lower/
+    - assets/details/bird/systems/respiratory_system/upper/
+    - assets/details/bird/systems/water_balance_system/
     - assets/images/horse/
     - assets/images/dog/
     - assets/images/cat/

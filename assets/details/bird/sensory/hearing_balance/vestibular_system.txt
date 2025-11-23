@@ -1,30 +1,27 @@
-#Vestibular System (Balance)#
+#Vestibular System#
 
-##Location##
-Medial to the middle ear within the **bony labyrinth** of the inner ear, continuous with the cochlear region.
+The bird’s vestibular system maintains balance, coordination, and spatial orientation — essential for flight.  
+Energetically, it represents stability, movement harmony, and centered awareness.
 
-###Shape###
-Interconnected sacs and **three semicircular canals** oriented roughly orthogonally to detect angular and linear acceleration.
+###Parts###
 
-##Parts##
-###1. Semicircular Canals (Anterior, Posterior, Lateral)###
-Fluid-filled loops with sensory **ampullae**.  
-**Function:** Detect **angular acceleration** (head rotation).
+##Semicircular Canals##
+Fluid-filled loops detecting rotational movements.  
+Energetically, symbolize fluidity, adaptability, and directional awareness.
 
-###2. Utricle###
-Otolith organ connected to semicircular canals.  
-**Function:** Senses **horizontal linear acceleration** and head tilt.
+##Utricle and Saccule##
+Detect linear movement and gravitational pull.  
+Energetically, reflect grounding, stability, and inner equilibrium.
 
-###3. Saccule###
-Smaller otolith organ.  
-**Function:** Senses **vertical linear acceleration** and vibration.
+##Vestibular Nerve##
+Carries balance signals to the brain.  
+Energetically, embodies coordination and connection.
 
-###4. Hair Cells with Otoconia###
-Sensory cells topped by crystals in maculae.  
-**Function:** Translate motion/tilt into neural signals.
+###Function###
+The vestibular system helps birds balance during perching, walking, and flying.  
+Energetically, it anchors presence, motion harmony, and centered awareness.
 
-##Function##
-- **Equilibrium:** Maintains posture and gaze stabilization during flight and perching.  
-- **Reflexes:** Drives vestibulo-ocular and vestibulospinal reflexes for head/eye coordination.  
-- **Navigation:** Aids spatial orientation with visual and proprioceptive input.  
-- **Integration:** Signals travel via vestibular branch of CN VIII to brainstem and cerebellum.
+###Common Imbalances###
+Dizziness: infection or injury.  
+Unsteady movement: nerve disruption.  
+Energetically, imbalance may represent instability, overwhelm, or loss of direction.

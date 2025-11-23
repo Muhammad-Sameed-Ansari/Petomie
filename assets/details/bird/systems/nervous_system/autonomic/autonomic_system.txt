@@ -1,28 +1,42 @@
-#Autonomic Nervous System (ANS)#
+#Autonomic Nervous System#
 
 ##Location##
-Distributed throughout the body, connecting the **central nervous system** to internal organs such as the heart, lungs, digestive tract, and glands.  
-Lies along the vertebral column and within visceral walls.
+The autonomic nervous system (ANS) extends throughout the bird’s entire body, regulating involuntary functions in the heart, lungs, digestive tract, glands, and smooth muscles.  
+It operates through sympathetic, parasympathetic, and enteric components.
 
 ###Shape###
-A network of **nerve chains, ganglia, and plexuses** extending from the neck to the cloacal region.  
-Divided into **sympathetic**, **parasympathetic**, and **enteric** components.
+A distributed network of nerves and ganglia forming two chains along the spine and extensive branches within organs.
 
-##Parts##
-###1. Sympathetic Division###
-Arises from the thoracolumbar spinal cord and runs along the vertebral column.  
-**Function:** Prepares the body for activity ("fight or flight").
+###Parts###
 
-###2. Parasympathetic Division###
-Originates from cranial (especially vagus) and sacral regions.  
-**Function:** Conserves energy and maintains normal bodily functions ("rest and digest").
+##Sympathetic Division##
+Activates alertness, flight reactions, and energy mobilization.  
+Energetically, symbolizes **strength, protection, and decisive action**.
 
-###3. Enteric Division###
-Embedded within digestive tract walls.  
-**Function:** Controls intestinal motility and secretion independently.
+##Parasympathetic Division##
+Promotes rest, digestion, and internal repair.  
+Energetically, represents **calmness, renewal, and emotional softness**.
 
-##Function##
-- **Involuntary Control:** Regulates heart rate, respiration, digestion, and pupil size.  
-- **Coordination:** Maintains balance between excitation (sympathetic) and relaxation (parasympathetic).  
-- **Adaptation:** Enables rapid physiological shifts between flight activity and resting states.  
-- **Autonomy:** Supports vital organ function without conscious input.
+##Enteric Division##
+Controls digestive motility and secretions.  
+Energetically, embodies **intuition, inner processing, and emotional digestion**.
+
+###Function###
+Regulates heart rate, respiration, digestion, glandular activity, circulation, and internal balance.  
+Energetically, governs **emotional regulation, internal rhythm, and harmony**.
+
+###Energetic Connection###
+Chakras: Solar Plexus, Heart, Sacral  
+Meridians: Stomach, Spleen, Kidney  
+Emotional Meaning: Balance, resilience, inner harmony  
+Balanced Energy: Calm reactions, stable internal systems
+
+###Common Imbalances###
+Stress overload, digestive changes, irregular heart rhythm  
+Energetically, emotional overwhelm or instability
+
+###Energetic Healing Suggestions###
+Colors: Yellow, green, blue  
+Crystals: Citrine, amazonite, fluorite  
+Element: Water & Air  
+Affirmation: “My body balances itself with ease and harmony.”

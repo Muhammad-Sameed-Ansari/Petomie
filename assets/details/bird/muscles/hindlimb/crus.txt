@@ -1,37 +1,28 @@
-#Hindlimb Muscles – Crus (Avian)#
+#Hindlimb Crus Muscles#
 
-##Location##
-Located in the lower leg (shank) between the knee and the ankle joint, surrounding the tibiotarsus and fibula.
+The crus muscles form the lower leg region between the knee and the ankle.  
+They provide leverage, support perching actions, and help control foot movement during walking and landing.  
+Energetically, they represent adaptability, precision, and stable progression.
 
-###Components###
-Include the flexors and extensors of the tarsus and digits, contributing to propulsion, balance, and perching stability.
+###Parts###
 
-##Parts##
+##Gastrocnemius##  
+A major extensor of the ankle, essential for jumping and push-off.  
+Energetically, it symbolizes power, lift, and upward movement.
 
-###1. M. Gastrocnemius###
-- From femoral condyles and tendon of femorotibialis to the Achilles tendon and tarsometatarsus.  
-- **Function:** Extends the tarsus and aids in propulsion during walking and takeoff.
+##Flexor Digitorum Longus##  
+Controls toe flexion and gripping during perching.  
+Energetically, it reflects connection, grounding, and secure attachment.
 
-###2. M. Tibialis Cranialis###
-- From tibia to tarsometatarsus.  
-- **Function:** Flexes the tarsus and elevates the foot during swing phase.
+##Tibialis Cranialis##  
+Aids in lifting the foot and stabilizing the lower limb.  
+Energetically, it represents clarity, direction, and smooth transitions.
 
-###3. M. Flexor Digitorum Longus###
-- From posterior tibia to digital phalanges.  
-- **Function:** Flexes the toes and maintains grip during perching.
+###Function###  
+These muscles guide lower leg motion, support perching grip, and stabilize the limb during landing and walking.  
+Energetically, they support focus, adaptability, and secure movement.
 
-###4. M. Flexor Hallucis Longus###
-- From fibula and tibia to hallux and digits.  
-- **Function:** Flexes the hallux and contributes to grasping and landing control.
-
-###5. M. Extensor Digitorum Longus###
-- From lateral femoral condyle to digits.  
-- **Function:** Extends the toes and stabilizes the foot during stance.
-
-###6. M. Peroneus Longus###
-- From fibula to tarsometatarsus.  
-- **Function:** Flexes and everts the tarsus; stabilizes the foot laterally.
-
-##Function##
-Provide extension and flexion of the tarsus and digits for walking, landing, and takeoff.  
-Enable gripping and shock absorption during perching and locomotion.
+###Common Imbalances###  
+Strain: overuse from gripping or repetitive landing.  
+Weakness: reduced stability or climbing ability.  
+Energetically, imbalance may reflect difficulty holding on or maintaining direction.
