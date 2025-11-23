@@ -6,11 +6,31 @@ import '../providers/subscription_provider.dart';
 import '../themes/app_themes.dart';
 import '../models/category.dart';
 import '../widgets/category_grid.dart';
+import '../widgets/scroll_to_top_button.dart';
 import 'category_screen.dart';
 import 'subscription_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  late final ScrollController _scrollController;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController = ScrollController();
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -154,49 +174,58 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Theme.of(context).colorScheme.background,
-              Theme.of(context).colorScheme.background.withOpacity(0.8),
-            ],
-          ),
-        ),
-        child: CategoryGrid(
-          categories: CategoryData.mainCategories,
-          title: 'Choose an Animal',
-          onCategoryTap: (Category category) {
-            // Lazily load subcategories only when animal is selected
-            final categoryWithSubcategories = CategoryData.getMainCategoryWithSubcategories(category.id);
-            Navigator.of(context).push(
-              PageRouteBuilder(
-                pageBuilder: (context, animation, secondaryAnimation) => CategoryScreen(
-                  categories: categoryWithSubcategories?.subcategories ?? [],
-                  title: '${category.label} Anatomy',
-                  breadcrumbs: [category.label],
-                ),
-                transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                  const begin = Offset(1.0, 0.0);
-                  const end = Offset.zero;
-                  const curve = Curves.easeInOutCubic;
-
-                  var tween = Tween(begin: begin, end: end).chain(
-                    CurveTween(curve: curve),
-                  );
-
-                  return SlideTransition(
-                    position: animation.drive(tween),
-                    child: child,
-                  );
-                },
-                transitionDuration: const Duration(milliseconds: 300),
+      body: Stack(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Theme.of(context).colorScheme.background,
+                  Theme.of(context).colorScheme.background.withOpacity(0.8),
+                ],
               ),
-            );
-          },
-        ),
+            ),
+            child: CategoryGrid(
+              categories: CategoryData.mainCategories,
+              title: 'Choose an Animal',
+              scrollController: _scrollController,
+              onCategoryTap: (Category category) {
+                // Lazily load subcategories only when animal is selected
+                final categoryWithSubcategories = CategoryData.getMainCategoryWithSubcategories(category.id);
+                Navigator.of(context).push(
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => CategoryScreen(
+                      categories: categoryWithSubcategories?.subcategories ?? [],
+                      title: '${category.label} Anatomy',
+                      breadcrumbs: [category.label],
+                    ),
+                    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                      const begin = Offset(1.0, 0.0);
+                      const end = Offset.zero;
+                      const curve = Curves.easeInOutCubic;
+
+                      var tween = Tween(begin: begin, end: end).chain(
+                        CurveTween(curve: curve),
+                      );
+
+                      return SlideTransition(
+                        position: animation.drive(tween),
+                        child: child,
+                      );
+                    },
+                    transitionDuration: const Duration(milliseconds: 300),
+                  ),
+                );
+              },
+            ),
+          ),
+          ScrollToTopButton(
+            scrollController: _scrollController,
+            alignment: Alignment.bottomRight,
+          ),
+        ],
       ),
     );
   }

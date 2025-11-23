@@ -6,12 +6,14 @@ class CategoryGrid extends StatelessWidget {
   final List<app_category.Category> categories;
   final Function(app_category.Category category)? onCategoryTap;
   final String? title;
+  final ScrollController? scrollController;
 
   const CategoryGrid({
     super.key,
     required this.categories,
     this.onCategoryTap,
     this.title,
+    this.scrollController,
   });
 
   @override
@@ -42,6 +44,7 @@ class CategoryGrid extends StatelessWidget {
         scrollbars: !isWeb, // Hide scrollbars on web
       ),
       child: GridView.builder(
+        controller: scrollController,
         padding: EdgeInsets.symmetric(horizontal: horizontalPadding, vertical: 10),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: crossAxisCount,

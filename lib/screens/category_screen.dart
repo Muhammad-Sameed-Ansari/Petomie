@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import '../models/category.dart' as app_category;
 import '../widgets/category_grid.dart';
+import '../widgets/scroll_to_top_button.dart';
 import '../providers/auth_provider.dart' as local_auth;
 import '../providers/theme_provider.dart';
 import '../providers/subscription_provider.dart';
@@ -34,6 +35,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
   late String _currentTitle;
   late List<String> _currentBreadcrumbs;
   late String _animalId; // Store the animal ID for lazy loading
+  late final ScrollController _scrollController;
   
   // Navigation stack to keep track of categories for proper back navigation
   final List<List<app_category.Category>> _navigationStack = [];
@@ -41,6 +43,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
   @override
   void initState() {
     super.initState();
+    _scrollController = ScrollController();
     _currentCategories = widget.categories;
     _currentTitle = widget.title;
     _currentBreadcrumbs = List.from(widget.breadcrumbs);
@@ -50,6 +53,12 @@ class _CategoryScreenState extends State<CategoryScreen> {
     
     // Initialize navigation stack with the initial categories
     _navigationStack.add(List.from(_currentCategories));
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
   }
 
   void _onCategoryTap(app_category.Category category) {
@@ -766,73 +775,82 @@ class _CategoryScreenState extends State<CategoryScreen> {
           ),
         ],
       ),
-      body: Column(
+      body: Stack(
         children: [
-          // Breadcrumb section
-          if (_currentBreadcrumbs.isNotEmpty)
-            Container(
-              width: double.infinity,
-              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.surface,
-                borderRadius: BorderRadius.circular(12),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.05),
-                    blurRadius: 10,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
-              ),
-              child: kIsWeb 
-                ? Center(
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: _buildWebBreadcrumbs(context),
-                      ),
-                    ),
-                  )
-                : Row(
-                    children: [
-                      Icon(
-                        Icons.home,
-                        size: 16,
-                        color: Theme.of(context).colorScheme.primary,
-                      ),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: _buildMobileBreadcrumbs(context, breadcrumbCategories),
-                          ),
-                        ),
+          Column(
+            children: [
+              // Breadcrumb section
+              if (_currentBreadcrumbs.isNotEmpty)
+                Container(
+                  width: double.infinity,
+                  margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.surface,
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.05),
+                        blurRadius: 10,
+                        offset: const Offset(0, 2),
                       ),
                     ],
                   ),
-            ),
-          
-          // Category grid
-          Expanded(
-            child: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Theme.of(context).colorScheme.background,
-                    Theme.of(context).colorScheme.background.withOpacity(0.8),
-                  ],
+                  child: kIsWeb 
+                    ? Center(
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: _buildWebBreadcrumbs(context),
+                          ),
+                        ),
+                      )
+                    : Row(
+                        children: [
+                          Icon(
+                            Icons.home,
+                            size: 16,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                children: _buildMobileBreadcrumbs(context, breadcrumbCategories),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                ),
+              
+              // Category grid
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Theme.of(context).colorScheme.background,
+                        Theme.of(context).colorScheme.background.withOpacity(0.8),
+                      ],
+                    ),
+                  ),
+                  child: CategoryGrid(
+                    categories: _currentCategories,
+                    scrollController: _scrollController,
+                    onCategoryTap: _onCategoryTap,
+                  ),
                 ),
               ),
-              child: CategoryGrid(
-                categories: _currentCategories,
-                onCategoryTap: _onCategoryTap,
-              ),
-            ),
+            ],
+          ),
+          ScrollToTopButton(
+            scrollController: _scrollController,
+            alignment: Alignment.bottomRight,
           ),
         ],
       ),

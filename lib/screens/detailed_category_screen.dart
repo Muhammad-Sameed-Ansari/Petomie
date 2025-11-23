@@ -7,6 +7,7 @@ import '../providers/theme_provider.dart';
 import '../providers/subscription_provider.dart';
 import '../themes/app_themes.dart';
 import '../services/content_service.dart';
+import '../widgets/scroll_to_top_button.dart';
 import 'subscription_screen.dart';
 import 'category_explanation_screen.dart';
 
@@ -32,14 +33,22 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
   late List<Category> _currentCategories;
   late String _currentTitle;
   late List<String> _currentBreadcrumbs;
+  late final ScrollController _scrollController;
 
   @override
   void initState() {
     super.initState();
+    _scrollController = ScrollController();
     
     _currentCategories = widget.categories;
     _currentTitle = widget.title;
     _currentBreadcrumbs = List.from(widget.breadcrumbs);
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
   }
 
   void _onCategoryTap(Category category) {
@@ -352,69 +361,40 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
           ),
         ],
       ),
-      body: Column(
+      body: Stack(
         children: [
-          // Breadcrumb section
-          if (_currentBreadcrumbs.isNotEmpty)
-            Container(
-              width: double.infinity,
-              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.surface,
-                borderRadius: BorderRadius.circular(12),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.05),
-                    blurRadius: 10,
-                    offset: const Offset(0, 2),
+          Column(
+            children: [
+              // Breadcrumb section
+              if (_currentBreadcrumbs.isNotEmpty)
+                Container(
+                  width: double.infinity,
+                  margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.surface,
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.05),
+                        blurRadius: 10,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              child: kIsWeb 
-                ? Center(
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Icon(
-                            Icons.home,
-                            size: 16,
-                            color: Theme.of(context).colorScheme.primary,
-                          ),
-                          const SizedBox(width: 8),
-                          ...breadcrumbCategories.expand((cat) => [
-                            Icon(
-                              Icons.chevron_right,
-                              size: 14,
-                              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
-                            ),
-                            const SizedBox(width: 8),
-                            Icon(
-                              cat.icon,
-                              size: 16,
-                              color: Theme.of(context).colorScheme.primary,
-                            ),
-                            const SizedBox(width: 8),
-                          ]),
-                        ],
-                      ),
-                    ),
-                  )
-                : Row(
-                    children: [
-                      Icon(
-                        Icons.home,
-                        size: 16,
-                        color: Theme.of(context).colorScheme.primary,
-                      ),
-                      const SizedBox(width: 8),
-                      Expanded(
+                  child: kIsWeb 
+                    ? Center(
                         child: SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
+                            mainAxisSize: MainAxisSize.min,
                             children: [
+                              Icon(
+                                Icons.home,
+                                size: 16,
+                                color: Theme.of(context).colorScheme.primary,
+                              ),
+                              const SizedBox(width: 8),
                               ...breadcrumbCategories.expand((cat) => [
                                 Icon(
                                   Icons.chevron_right,
@@ -432,30 +412,68 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
                             ],
                           ),
                         ),
+                      )
+                    : Row(
+                        children: [
+                          Icon(
+                            Icons.home,
+                            size: 16,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                children: [
+                                  ...breadcrumbCategories.expand((cat) => [
+                                    Icon(
+                                      Icons.chevron_right,
+                                      size: 14,
+                                      color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+                                    ),
+                                    const SizedBox(width: 8),
+                                    Icon(
+                                      cat.icon,
+                                      size: 16,
+                                      color: Theme.of(context).colorScheme.primary,
+                                    ),
+                                    const SizedBox(width: 8),
+                                  ]),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
+                ),
+              
+              
+              // Category grid with enhanced layout for longer names
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Theme.of(context).colorScheme.background,
+                        Theme.of(context).colorScheme.background.withOpacity(0.8),
+                      ],
+                    ),
                   ),
-            ),
-          
-          
-          // Category grid with enhanced layout for longer names
-          Expanded(
-            child: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Theme.of(context).colorScheme.background,
-                    Theme.of(context).colorScheme.background.withOpacity(0.8),
-                  ],
+                  child: _EnhancedCategoryGrid(
+                    categories: _currentCategories,
+                    scrollController: _scrollController,
+                    onCategoryTap: _onCategoryTap,
+                  ),
                 ),
               ),
-              child: _EnhancedCategoryGrid(
-                categories: _currentCategories,
-                onCategoryTap: _onCategoryTap,
-              ),
-            ),
+            ],
+          ),
+          ScrollToTopButton(
+            scrollController: _scrollController,
+            alignment: Alignment.bottomRight,
           ),
         ],
       ),
@@ -588,15 +606,18 @@ class _DetailedCategoryScreenState extends State<DetailedCategoryScreen> {
 class _EnhancedCategoryGrid extends StatelessWidget {
   final List<Category> categories;
   final Function(Category category)? onCategoryTap;
+  final ScrollController? scrollController;
 
   const _EnhancedCategoryGrid({
     required this.categories,
     this.onCategoryTap,
+    this.scrollController,
   });
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      controller: scrollController,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,

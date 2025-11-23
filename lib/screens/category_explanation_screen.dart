@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
+import '../widgets/scroll_to_top_button.dart';
 
 class CategoryExplanationScreen extends StatefulWidget {
   final String categoryName;
@@ -84,163 +85,171 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
 
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
-      body: CustomScrollView(
-        controller: _scrollController,
-        slivers: [
-          // Custom App Bar with Image
-          SliverAppBar(
-            expandedHeight: imageHeight,
-            floating: false,
-            pinned: true,
-            backgroundColor: Theme.of(context).colorScheme.surface,
-            elevation: 0,
-            leading: Container(
-              margin: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.surface.withOpacity(0.9),
-                borderRadius: BorderRadius.circular(12),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    blurRadius: 8,
-                    offset: const Offset(0, 2),
+      body: Stack(
+        children: [
+          CustomScrollView(
+            controller: _scrollController,
+            slivers: [
+              // Custom App Bar with Image
+              SliverAppBar(
+                expandedHeight: imageHeight,
+                floating: false,
+                pinned: true,
+                backgroundColor: Theme.of(context).colorScheme.surface,
+                elevation: 0,
+                leading: Container(
+                  margin: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.surface.withOpacity(0.9),
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        blurRadius: 8,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child: IconButton(
+                    icon: Icon(
+                      Icons.arrow_back_ios_new,
+                      color: Theme.of(context).colorScheme.onSurface,
+                    ),
+                    onPressed: () => Navigator.of(context).pop(),
+                  ),
+                ),
+                actions: [
+                  Container(
+                    margin: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.surface.withOpacity(0.9),
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          blurRadius: 8,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                    child: IconButton(
+                      icon: Icon(
+                        themeProvider.themeMode == ThemeModeOption.system
+                            ? Icons.brightness_auto
+                            : themeProvider.isDarkMode
+                                ? Icons.dark_mode
+                                : Icons.light_mode,
+                        color: Theme.of(context).colorScheme.onSurface,
+                      ),
+                      onPressed: () => _showThemeSelectionDialog(context, themeProvider),
+                    ),
                   ),
                 ],
-              ),
-              child: IconButton(
-                icon: Icon(
-                  Icons.arrow_back_ios_new,
-                  color: Theme.of(context).colorScheme.onSurface,
-                ),
-                onPressed: () => Navigator.of(context).pop(),
-              ),
-            ),
-            actions: [
-              Container(
-                margin: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.surface.withOpacity(0.9),
-                  borderRadius: BorderRadius.circular(12),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.2),
-                      blurRadius: 8,
-                      offset: const Offset(0, 2),
-                    ),
-                  ],
-                ),
-                child: IconButton(
-                  icon: Icon(
-                    themeProvider.themeMode == ThemeModeOption.system
-                        ? Icons.brightness_auto
-                        : themeProvider.isDarkMode
-                            ? Icons.dark_mode
-                            : Icons.light_mode,
-                    color: Theme.of(context).colorScheme.onSurface,
+                flexibleSpace: FlexibleSpaceBar(
+                  background: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      // Main Image - Advanced constraint handling for web
+                      Positioned.fill(
+                        child: isWeb 
+                          ? _buildWebOptimizedImage(context, screenWidth, screenHeight, imageHeight, isDesktop, isTablet, isMobile)
+                          : Image.asset(
+                              widget.imagePath,
+                              fit: BoxFit.cover,
+                              errorBuilder: (context, error, stackTrace) {
+                                print('DEBUG: Failed to load image (mobile): ${widget.imagePath}');
+                                print('DEBUG: Error details: $error');
+                                print('DEBUG: Stack trace: $stackTrace');
+                                return _buildImageFallback(context);
+                              },
+                            ),
+                      ),
+                      
+                      // Gradient Overlay
+                      Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              Colors.transparent,
+                              Colors.transparent,
+                              Theme.of(context).colorScheme.background.withOpacity(0.3),
+                              Theme.of(context).colorScheme.background.withOpacity(0.7),
+                            ],
+                            stops: const [0.0, 0.4, 0.8, 1.0],
+                          ),
+                        ),
+                      ),
+                      
+                      // Title Overlay
+                      Positioned(
+                        bottom: 20,
+                        left: 20,
+                        right: 20,
+                        child: FadeTransition(
+                          opacity: _fadeAnimation,
+                          child: SlideTransition(
+                            position: _slideAnimation,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                              decoration: BoxDecoration(
+                                color: Theme.of(context).colorScheme.surface.withOpacity(0.95),
+                                borderRadius: BorderRadius.circular(16),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withOpacity(0.2),
+                                    blurRadius: 15,
+                                    offset: const Offset(0, 5),
+                                  ),
+                                ],
+                              ),
+                              child: Text(
+                                _extractPageTitle(widget.explanation) ?? widget.categoryName,
+                                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  color: Theme.of(context).colorScheme.onSurface,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                  onPressed: () => _showThemeSelectionDialog(context, themeProvider),
+                ),
+              ),
+
+              // Content Section
+              SliverToBoxAdapter(
+                child: FadeTransition(
+                  opacity: _fadeAnimation,
+                  child: SlideTransition(
+                    position: _slideAnimation,
+                    child: Container(
+                      width: double.infinity,
+                      constraints: isWeb ? const BoxConstraints(maxWidth: 1200) : null,
+                      margin: isWeb ? const EdgeInsets.symmetric(horizontal: 20) : EdgeInsets.zero,
+                      padding: EdgeInsets.all(isWeb ? 32 : 24),
+                      child: Center(
+                        child: Column(
+                          crossAxisAlignment: isWeb ? CrossAxisAlignment.center : CrossAxisAlignment.start,
+                          children: [
+                            // Explanation Content
+                            _buildExplanationContent(context),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],
-            flexibleSpace: FlexibleSpaceBar(
-              background: Stack(
-                fit: StackFit.expand,
-                children: [
-                  // Main Image - Advanced constraint handling for web
-                  Positioned.fill(
-                    child: isWeb 
-                      ? _buildWebOptimizedImage(context, screenWidth, screenHeight, imageHeight, isDesktop, isTablet, isMobile)
-                      : Image.asset(
-                          widget.imagePath,
-                          fit: BoxFit.cover,
-                          errorBuilder: (context, error, stackTrace) {
-                            print('DEBUG: Failed to load image (mobile): ${widget.imagePath}');
-                            print('DEBUG: Error details: $error');
-                            print('DEBUG: Stack trace: $stackTrace');
-                            return _buildImageFallback(context);
-                          },
-                        ),
-                  ),
-                  
-                  // Gradient Overlay
-                  Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [
-                          Colors.transparent,
-                          Colors.transparent,
-                          Theme.of(context).colorScheme.background.withOpacity(0.3),
-                          Theme.of(context).colorScheme.background.withOpacity(0.7),
-                        ],
-                        stops: const [0.0, 0.4, 0.8, 1.0],
-                      ),
-                    ),
-                  ),
-                  
-                  // Title Overlay
-                  Positioned(
-                    bottom: 20,
-                    left: 20,
-                    right: 20,
-                    child: FadeTransition(
-                      opacity: _fadeAnimation,
-                      child: SlideTransition(
-                        position: _slideAnimation,
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-                          decoration: BoxDecoration(
-                            color: Theme.of(context).colorScheme.surface.withOpacity(0.95),
-                            borderRadius: BorderRadius.circular(16),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.2),
-                                blurRadius: 15,
-                                offset: const Offset(0, 5),
-                              ),
-                            ],
-                          ),
-                          child: Text(
-                            _extractPageTitle(widget.explanation) ?? widget.categoryName,
-                            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                              fontWeight: FontWeight.bold,
-                              color: Theme.of(context).colorScheme.onSurface,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
           ),
-
-          // Content Section
-          SliverToBoxAdapter(
-            child: FadeTransition(
-              opacity: _fadeAnimation,
-              child: SlideTransition(
-                position: _slideAnimation,
-                child: Container(
-                  width: double.infinity,
-                  constraints: isWeb ? const BoxConstraints(maxWidth: 1200) : null,
-                  margin: isWeb ? const EdgeInsets.symmetric(horizontal: 20) : EdgeInsets.zero,
-                  padding: EdgeInsets.all(isWeb ? 32 : 24),
-                  child: Center(
-                    child: Column(
-                      crossAxisAlignment: isWeb ? CrossAxisAlignment.center : CrossAxisAlignment.start,
-                      children: [
-                        // Explanation Content
-                        _buildExplanationContent(context),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
+          ScrollToTopButton(
+            scrollController: _scrollController,
+            alignment: Alignment.bottomRight,
           ),
         ],
       ),

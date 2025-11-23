@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../models/subscription.dart';
 import '../providers/subscription_provider.dart';
 import '../themes/app_themes.dart';
+import '../widgets/scroll_to_top_button.dart';
 
 class SubscriptionScreen extends StatefulWidget {
   final bool showCloseButton;
@@ -23,12 +24,14 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
   late AnimationController _animationController;
   late Animation<double> _fadeAnimation;
   late Animation<Offset> _slideAnimation;
+  late final ScrollController _scrollController;
   
   SubscriptionType _selectedType = SubscriptionType.yearly;
 
   @override
   void initState() {
     super.initState();
+    _scrollController = ScrollController();
     _animationController = AnimationController(
       duration: const Duration(milliseconds: 800),
       vsync: this,
@@ -60,6 +63,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
 
   @override
   void dispose() {
+    _scrollController.dispose();
     _animationController.dispose();
     super.dispose();
   }
@@ -137,48 +141,66 @@ class _SubscriptionScreenState extends State<SubscriptionScreen>
   Widget _buildActiveSubscriptionView(SubscriptionProvider provider) {
     final subscription = provider.currentSubscription;
     
-    return CustomScrollView(
-      slivers: [
-        _buildAppBar(title: 'Your Subscription'),
-        SliverPadding(
-          padding: const EdgeInsets.all(16),
-          sliver: SliverList(
-            delegate: SliverChildListDelegate([
-              _buildSubscriptionStatusCard(subscription),
-              const SizedBox(height: 24),
-              _buildFeaturesCard(),
-              const SizedBox(height: 24),
-              _buildManageSubscriptionCard(provider),
-              const SizedBox(height: 100),
-            ]),
-          ),
+    return Stack(
+      children: [
+        CustomScrollView(
+          controller: _scrollController,
+          slivers: [
+            _buildAppBar(title: 'Your Subscription'),
+            SliverPadding(
+              padding: const EdgeInsets.all(16),
+              sliver: SliverList(
+                delegate: SliverChildListDelegate([
+                  _buildSubscriptionStatusCard(subscription),
+                  const SizedBox(height: 24),
+                  _buildFeaturesCard(),
+                  const SizedBox(height: 24),
+                  _buildManageSubscriptionCard(provider),
+                  const SizedBox(height: 100),
+                ]),
+              ),
+            ),
+          ],
+        ),
+        ScrollToTopButton(
+          scrollController: _scrollController,
+          alignment: Alignment.bottomRight,
         ),
       ],
     );
   }
 
   Widget _buildSubscriptionPlansView(SubscriptionProvider provider) {
-    return CustomScrollView(
-      slivers: [
-        _buildAppBar(title: 'Premium Subscription'),
-        SliverPadding(
-          padding: const EdgeInsets.all(16),
-          sliver: SliverList(
-            delegate: SliverChildListDelegate([
-              _buildHeaderSection(),
-              const SizedBox(height: 32),
-              _buildSubscriptionPlans(provider),
-              const SizedBox(height: 24),
-              _buildFeaturesCard(),
-              const SizedBox(height: 24),
-              _buildSubscribeButton(provider),
-              const SizedBox(height: 16),
-              _buildRestoreButton(provider),
-              const SizedBox(height: 16),
-              _buildTermsAndPrivacy(),
-              const SizedBox(height: 100),
-            ]),
-          ),
+    return Stack(
+      children: [
+        CustomScrollView(
+          controller: _scrollController,
+          slivers: [
+            _buildAppBar(title: 'Premium Subscription'),
+            SliverPadding(
+              padding: const EdgeInsets.all(16),
+              sliver: SliverList(
+                delegate: SliverChildListDelegate([
+                  _buildHeaderSection(),
+                  const SizedBox(height: 32),
+                  _buildSubscriptionPlans(provider),
+                  const SizedBox(height: 24),
+                  _buildFeaturesCard(),
+                  const SizedBox(height: 24),
+                  _buildSubscribeButton(provider),
+                  const SizedBox(height: 16),
+                  _buildRestoreButton(provider),
+                  const SizedBox(height: 16),
+                  _buildTermsAndPrivacy(),
+                  const SizedBox(height: 100),
+                ]),
+              ),
+            ),
+          ],
+        ),
+        ScrollToTopButton(
+          scrollController: _scrollController,
+          alignment: Alignment.bottomRight,
         ),
       ],
     );
