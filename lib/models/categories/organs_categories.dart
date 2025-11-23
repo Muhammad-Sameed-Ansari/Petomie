@@ -802,6 +802,12 @@ class OrgansCategories {
           icon: Icons.scatter_plot,
           imagePath: 'assets/images/organs/reproductive_organs/female/vagina.webp',
         ),
+        Category(
+          id: 'gonads',
+          label: 'Gonads',
+          icon: Icons.scatter_plot,
+          imagePath: 'assets/images/organs/reproductive_organs/female/gonads.webp',
+        ),
       ];
 
       reproductiveMaleSubcategories = [
@@ -840,6 +846,12 @@ class OrgansCategories {
           label: 'Testes',
           icon: Icons.scatter_plot,
           imagePath: 'assets/images/organs/reproductive_organs/male/testes.webp',
+        ),
+        Category(
+          id: 'gonads',
+          label: 'Gonads',
+          icon: Icons.scatter_plot,
+          imagePath: 'assets/images/organs/reproductive_organs/male/gonads.webp',
         ),
       ];
     }
