@@ -337,6 +337,11 @@ class EnergyCategories {
       if (animal == 'horse') {
         extraordinaryMeridianSubs = [
           Category(
+            id: 'conception_vessel', 
+            label: 'Conception Vessel', 
+            icon: Icons.horizontal_split,
+          ),
+          Category(
             id: 'governing_vessel', 
             label: 'Governing Vessel', 
             icon: Icons.vertical_split,

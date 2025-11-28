@@ -444,24 +444,41 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
               }).toList(),
             ),
             // Data rows
-            ...tableData.rows.map((row) {
+            ...tableData.rows.asMap().entries.map((rowEntry) {
+              final rowIndex = rowEntry.key;
+              final row = rowEntry.value;
+              
               return TableRow(
                 decoration: BoxDecoration(
                   color: Theme.of(context).colorScheme.surface,
                 ),
-                children: row.map((cell) {
+                children: row.asMap().entries.map((cellEntry) {
+                  final cellIndex = cellEntry.key;
+                  final cell = cellEntry.value;
+                  final isSubheading = rowIndex < tableData.isSubheading.length && 
+                                       cellIndex < tableData.isSubheading[rowIndex].length &&
+                                       tableData.isSubheading[rowIndex][cellIndex];
+                  
                   return Container(
                     padding: EdgeInsets.symmetric(
                       vertical: isDesktop ? 14 : (isTablet ? 12 : 10),
                       horizontal: isDesktop ? 12 : (isTablet ? 10 : 8),
                     ),
+                    decoration: isSubheading ? BoxDecoration(
+                      color: Theme.of(context).colorScheme.secondaryContainer.withOpacity(0.3),
+                      borderRadius: BorderRadius.circular(4),
+                    ) : null,
                     child: _buildFormattedText(
                       context,
                       cell,
                       Theme.of(context).textTheme.bodySmall?.copyWith(
                         fontSize: isDesktop ? 13 : (isTablet ? 12 : 11),
-                        color: Theme.of(context).colorScheme.onSurface,
+                        color: isSubheading 
+                          ? Theme.of(context).colorScheme.primary
+                          : Theme.of(context).colorScheme.onSurface,
                         height: 1.4,
+                        fontWeight: isSubheading ? FontWeight.bold : FontWeight.normal,
+                        fontStyle: isSubheading ? FontStyle.italic : FontStyle.normal,
                       ),
                       TextAlign.center,
                     ),
@@ -719,6 +736,7 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
     try {
       final headers = <String>[];
       final rows = <List<String>>[];
+      final isSubheading = <List<bool>>[];
       
       int i = startIndex + 1; // Skip TABLE_START line
       
@@ -740,8 +758,24 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
         }
         
         if (line.isNotEmpty && line.contains('|')) {
-          final rowData = line.split('|').map((cell) => cell.trim()).toList();
+          final cells = line.split('|').map((cell) => cell.trim()).toList();
+          final rowData = <String>[];
+          final rowSubheading = <bool>[];
+          
+          // Check each cell for sub-heading markers (*text*)
+          for (String cell in cells) {
+            if (cell.startsWith('*') && cell.endsWith('*') && cell.length > 2) {
+              // This is a sub-heading - remove the asterisks
+              rowData.add(cell.substring(1, cell.length - 1));
+              rowSubheading.add(true);
+            } else {
+              rowData.add(cell);
+              rowSubheading.add(false);
+            }
+          }
+          
           rows.add(rowData);
+          isSubheading.add(rowSubheading);
         }
         i++;
         
@@ -752,7 +786,14 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
       }
       
       if (headers.isNotEmpty && rows.isNotEmpty) {
-        return _TableParseResult(TableData(headers: headers, rows: rows), i);
+        return _TableParseResult(
+          TableData(
+            headers: headers, 
+            rows: rows, 
+            isSubheading: isSubheading
+          ), 
+          i
+        );
       }
       
       return null;
@@ -1140,11 +1181,13 @@ class ExplanationSection {
 class TableData {
   final List<String> headers;
   final List<List<String>> rows;
+  final List<List<bool>> isSubheading; // Tracks which cells are sub-headings
 
   TableData({
     required this.headers,
     required this.rows,
-  });
+    List<List<bool>>? isSubheading,
+  }) : isSubheading = isSubheading ?? List.generate(rows.length, (i) => List.filled(rows[i].length, false));
 }
 
 class ExpandableData {
