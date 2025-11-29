@@ -161,7 +161,7 @@ class OrgansCategories {
       id: 'abdomen',
       label: 'Abdomen',
       icon: Icons.restaurant,
-      imagePath: 'assets/images/organs/abdomen.webp',
+      imagePath: 'assets/images/organs/abdomen_${animalId}.webp',
       subcategories: abdominalSubcategories,
     ));
 
@@ -206,19 +206,19 @@ class OrgansCategories {
           id: 'ear',
           label: 'Ear',
           icon: Icons.hearing,
-          imagePath: 'assets/images/organs/head/ear.webp',
+          imagePath: 'assets/images/organs/head/ear_${animalId}.webp',
         ),
         Category(
           id: 'eye',
           label: 'Eye',
           icon: Icons.visibility,
-          imagePath: 'assets/images/organs/head/eye.webp',
+          imagePath: 'assets/images/organs/head/eye_${animalId}.webp',
         ),
         Category(
           id: 'nose',
           label: 'Nose',
           icon: Icons.air,
-          imagePath: 'assets/images/organs/head/nose.webp',
+          imagePath: 'assets/images/organs/head/nose_${animalId}.webp',
         ),
       ];
     }
@@ -226,7 +226,7 @@ class OrgansCategories {
       id: 'head',
       label: 'Head',
       icon: Icons.face,
-      imagePath: 'assets/images/organs/head.webp',
+      imagePath: 'assets/images/organs/head_${animalId}.webp',
       subcategories: headSubcategories,
     ));
 
@@ -235,7 +235,7 @@ class OrgansCategories {
       id: 'neck',
       label: 'Neck',
       icon: Icons.restaurant,
-      imagePath: 'assets/images/organs/neck.webp',
+      imagePath: 'assets/images/organs/neck_${animalId}.webp',
       subcategories: [
         Category(
           id: 'esophagus',
@@ -271,7 +271,7 @@ class OrgansCategories {
         id: 'pelvis',
         label: 'Pelvis',
         icon: Icons.restaurant,
-        imagePath: 'assets/images/organs/pelvis.webp',
+        imagePath: 'assets/images/organs/pelvis_${animalId}.webp',
         subcategories: [
           Category(
             id: 'female',
@@ -426,7 +426,7 @@ class OrgansCategories {
         id: 'pelvis',
         label: 'Pelvis',
         icon: Icons.restaurant,
-        imagePath: 'assets/images/organs/pelvis.webp',
+        imagePath: 'assets/images/organs/pelvis_${animalId}.webp',
         subcategories: [
           Category(
             id: 'anus',
@@ -860,7 +860,7 @@ class OrgansCategories {
       id: 'reproductive_organs',
       label: 'Reproductive Organs',
       icon: Icons.face,
-      imagePath: 'assets/images/organs/reproductive_organs.webp',
+      imagePath: 'assets/images/organs/reproductive_organs_${animalId}.webp',
       subcategories: [
         Category(
           id: 'female',
@@ -884,7 +884,7 @@ class OrgansCategories {
       id: 'thorax',
       label: 'Thorax',
       icon: Icons.accessibility,
-      imagePath: 'assets/images/organs/thorax.webp',
+      imagePath: 'assets/images/organs/thorax_${animalId}.webp',
       subcategories: [
         Category(
           id: 'diaphragm',

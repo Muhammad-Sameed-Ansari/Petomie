@@ -232,9 +232,6 @@ flutter:
     - assets/details/horse/skeleton/hindlimb/leg/
     - assets/details/horse/skeleton/hindlimb/hock/
     - assets/details/horse/skeleton/hindlimb/thigh/
-    - assets/details/horse/skeleton/dentition/
-    - assets/details/horse/skeleton/dentition/upper/
-    - assets/details/horse/skeleton/dentition/lower/
     - assets/details/horse/sensory/
     - assets/details/horse/sensory/vision/
     - assets/details/horse/sensory/hearing_balance/
@@ -356,9 +353,6 @@ flutter:
     - assets/details/cat/skeleton/hindlimb/leg/
     - assets/details/cat/skeleton/hindlimb/hock/
     - assets/details/cat/skeleton/hindlimb/thigh/
-    - assets/details/cat/skeleton/dentition/
-    - assets/details/cat/skeleton/dentition/upper/
-    - assets/details/cat/skeleton/dentition/lower/
     - assets/details/cat/glands/
     - assets/details/cat/glands/dermal/
     - assets/details/cat/glands/digestive/
@@ -417,7 +411,11 @@ flutter:
     - assets/details/cat/skeleton/hindlimb/thigh/
     - assets/details/cat/skeleton/dentition/
     - assets/details/cat/skeleton/dentition/upper/
+    - assets/details/cat/skeleton/dentition/upper/upper_left/
+    - assets/details/cat/skeleton/dentition/upper/upper_right/
     - assets/details/cat/skeleton/dentition/lower/
+    - assets/details/cat/skeleton/dentition/lower/lower_left/
+    - assets/details/cat/skeleton/dentition/lower/lower_right/
     - assets/details/cat/systems/
     - assets/details/cat/systems/cardiovascular_system/
     - assets/details/cat/systems/cranial_nerves/
@@ -583,6 +581,10 @@ flutter:
     - assets/images/energy/sacred_symbols/
     - assets/images/energy/states_of_harmony/
     - assets/images/energy/energetic_influences/
+    - assets/images/skeleton/
+    - assets/images/skeleton/dentition/
+    - assets/images/skeleton/dentition/upper/
+    - assets/images/skeleton/dentition/lower/
     - assets/images/glands/
     - assets/images/glands/endocrine/
     - assets/images/organs/

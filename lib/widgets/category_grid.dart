@@ -50,7 +50,7 @@ class CategoryGrid extends StatelessWidget {
           crossAxisCount: crossAxisCount,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
-          childAspectRatio: 0.85,
+          childAspectRatio: 0.80, // Slightly taller cards for better text fit
         ),
         itemCount: categories.length,
         itemBuilder: (context, index) {
@@ -181,10 +181,10 @@ class _CategoryCardState extends State<_CategoryCard>
                         ),
                       ),
                       child: Column(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
                           // Image section
                           Expanded(
-                            flex: 3,
                             child: Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
@@ -238,34 +238,35 @@ class _CategoryCardState extends State<_CategoryCard>
                           ),
                           
                           // Label section
-                          Expanded(
-                            flex: 1,
-                            child: Container(
-                              width: double.infinity,
-                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                              decoration: BoxDecoration(
-                                color: widget.category.isComingSoon
-                                    ? Colors.grey.withOpacity(0.7)
-                                    : Theme.of(context).colorScheme.surface.withOpacity(1.0),
-                                border: Border(
-                                  top: BorderSide(
-                                    color: Theme.of(context).colorScheme.outline.withOpacity(0.2),
-                                    width: 1,
-                                  ),
+                          Container(
+                            width: double.infinity,
+                            constraints: const BoxConstraints(
+                              minHeight: 55, // Ensure enough space for 2 lines
+                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                            decoration: BoxDecoration(
+                              color: widget.category.isComingSoon
+                                  ? Colors.grey.withOpacity(0.7)
+                                  : Theme.of(context).colorScheme.surface.withOpacity(1.0),
+                              border: Border(
+                                top: BorderSide(
+                                  color: Theme.of(context).colorScheme.outline.withOpacity(0.2),
+                                  width: 1,
                                 ),
                               ),
-                              child: Center(
-                                child: Text(
-                                  widget.category.label,
-                                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                                        fontWeight: FontWeight.w600,
-                                        color: Theme.of(context).colorScheme.onSurface.withOpacity(widget.category.isComingSoon ? 0.6 : 1.0),
-                                        fontSize: 16,
-                                      ),
-                                  textAlign: TextAlign.center,
-                                  maxLines: 2,
-                                  overflow: TextOverflow.ellipsis,
-                                ),
+                            ),
+                            child: Center(
+                              child: Text(
+                                widget.category.label,
+                                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                                      fontWeight: FontWeight.w600,
+                                      color: Theme.of(context).colorScheme.onSurface.withOpacity(widget.category.isComingSoon ? 0.6 : 1.0),
+                                      fontSize: 15,
+                                      height: 1.2, // Tighter line height for better fit
+                                    ),
+                                textAlign: TextAlign.center,
+                                maxLines: 2,
+                                overflow: TextOverflow.visible,
                               ),
                             ),
                           ),
