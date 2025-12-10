@@ -10,11 +10,9 @@ class ContentService {
   final Map<String, String> _contentCache = {};
   
   // Define shared folder mappings (parent category ID -> folder path)
-  // Note: meridians are now animal-specific, not shared
+  // Note: meridians, chakras, and aura are now animal-specific, not shared
   static const Map<String, String> _sharedFolderMappings = {
     // Energy category folders (shared across all animals)
-    'main_chakra': 'energy/chakras/main_chakra',
-    'aura': 'energy/aura',
     'life_force': 'energy/life_force',
     'imbalances': 'energy/imbalances',
     'environmental_impacts': 'energy/imbalances/environmental_impacts',
@@ -24,6 +22,36 @@ class ContentService {
     'energetic_influences': 'energy/energetic_influences',
     'negative_beliefs': 'energy/negative_beliefs',
     'unresolved_emotions': 'energy/unresolved_emotions',
+    
+    // Holistic Remedies category folders (shared across all animals)
+    'holistic_remedies': 'holistic_remedies',
+    'australian_bush_flowers': 'holistic_remedies/australian_bush_flowers',
+    'a_to_b': 'holistic_remedies/australian_bush_flowers/a_to_b',
+    'c_to_d': 'holistic_remedies/australian_bush_flowers/c_to_d',
+    'e_to_h': 'holistic_remedies/australian_bush_flowers/e_to_h',
+    'i_to_m': 'holistic_remedies/australian_bush_flowers/i_to_m',
+    'n_to_r': 'holistic_remedies/australian_bush_flowers/n_to_r',
+    's_to_z': 'holistic_remedies/australian_bush_flowers/s_to_z',
+    'additional': 'holistic_remedies/australian_bush_flowers/additional',
+    'bach_flowers': 'holistic_remedies/bach_flowers',
+    'despondency_and_despair': 'holistic_remedies/bach_flowers/despondency_and_despair',
+    'fear': 'holistic_remedies/bach_flowers/fear',
+    'lack_of_interest': 'holistic_remedies/bach_flowers/lack_of_interest',
+    'loneliness': 'holistic_remedies/bach_flowers/loneliness',
+    'over_care_for_others': 'holistic_remedies/bach_flowers/over_care_for_others',
+    'oversensitivity': 'holistic_remedies/bach_flowers/oversensitivity',
+    'uncertainty': 'holistic_remedies/bach_flowers/uncertainty',
+    'crystals': 'holistic_remedies/crystals',
+    'animal_human_connection': 'holistic_remedies/crystals/animal_human_connection',
+    'calming_and_sleep': 'holistic_remedies/crystals/calming_and_sleep',
+    'chakra_specific': 'holistic_remedies/crystals/chakra_specific',
+    'emotional_healing': 'holistic_remedies/crystals/emotional_healing',
+    'energy_and_vitality': 'holistic_remedies/crystals/energy_and_vitality',
+    'grounding_and_protection': 'holistic_remedies/crystals/grounding_and_protection',
+    'manifestation_and_abundance': 'holistic_remedies/crystals/manifestation_and_abundance',
+    'mental_clarity_and_focus': 'holistic_remedies/crystals/mental_clarity_and_focus',
+    'spiritual_connection': 'holistic_remedies/crystals/spiritual_connection',
+    'trauma_and_heart_healing': 'holistic_remedies/crystals/trauma_and_heart_healing',
   };
 
   /// Get explanation text for a category using dynamic path resolution
@@ -211,6 +239,11 @@ class ContentService {
   String _buildAssetPath(String categoryId, List<String> breadcrumbs) {
     print('DEBUG: Building asset path for categoryId: $categoryId, breadcrumbs: $breadcrumbs');
     
+    // Check if this is a chakra-related category (now animal-specific)
+    if (_isChakraCategory(breadcrumbs)) {
+      return _buildAnimalSpecificChakraPath(categoryId, breadcrumbs);
+    }
+    
     // Check if this is a meridian-related category (now animal-specific)
     if (_isMeridianCategory(breadcrumbs)) {
       return _buildAnimalSpecificMeridianPath(categoryId, breadcrumbs);
@@ -252,6 +285,42 @@ class ContentService {
     
     final finalPath = pathSegments.join('/');
     print('DEBUG: Using breadcrumb-based path: $finalPath');
+    return finalPath;
+  }
+  
+  /// Check if the breadcrumbs indicate a chakra category
+  bool _isChakraCategory(List<String> breadcrumbs) {
+    return breadcrumbs.any((breadcrumb) => 
+      breadcrumb.toLowerCase() == 'main chakra' ||
+      breadcrumb.toLowerCase() == 'secondary chakra' ||
+      breadcrumb.toLowerCase() == 'cosmic chakra'
+    );
+  }
+  
+  /// Build animal-specific chakra path
+  String _buildAnimalSpecificChakraPath(String categoryId, List<String> breadcrumbs) {
+    if (breadcrumbs.isEmpty) {
+      return 'assets/details/$categoryId.txt';
+    }
+    
+    // Get animal type (first breadcrumb)
+    String animalType = breadcrumbs[0].toLowerCase();
+    
+    // Determine chakra type
+    String chakraType = 'main_chakra'; // default
+    if (breadcrumbs.any((b) => b.toLowerCase() == 'secondary chakra')) {
+      chakraType = 'secondary_chakra';
+    } else if (breadcrumbs.any((b) => b.toLowerCase() == 'cosmic chakra')) {
+      chakraType = 'cosmic_chakra';
+    } else if (breadcrumbs.any((b) => b.toLowerCase() == 'main chakra')) {
+      chakraType = 'main_chakra';
+    }
+    
+    // Build path for animal-specific chakra
+    String filename = _processFilename(categoryId);
+    String finalPath = 'assets/details/$animalType/energy/chakras/$chakraType/$filename.txt';
+    
+    print('DEBUG: Using animal-specific chakra path: $finalPath');
     return finalPath;
   }
   
@@ -316,14 +385,10 @@ class ContentService {
     
     // Exact string matches for category names
     switch (breadcrumbLower) {
-      case 'main chakra':
-        return 'main_chakra';
-      case 'aura':
-        return 'aura';
-      
-      // Note: Meridian categories are now handled by animal-specific logic
+      // Note: Chakra, Meridian, and Aura categories are now handled by animal-specific logic
       // and are no longer shared across animals
       
+      // Energy categories
       case 'life force':
         return 'life_force';
       case 'imbalances':
@@ -342,6 +407,83 @@ class ContentService {
         return 'negative_beliefs';
       case 'unresolved emotions':
         return 'unresolved_emotions';
+      
+      // Holistic Remedies categories
+      case 'holistic remedies':
+        return 'holistic_remedies';
+      case 'australian bush flowers':
+        return 'australian_bush_flowers';
+      case 'a to b':
+      case 'a-to-b':
+        return 'a_to_b';
+      case 'c to d':
+      case 'c-to-d':
+        return 'c_to_d';
+      case 'e to h':
+      case 'e-to-h':
+        return 'e_to_h';
+      case 'i to m':
+      case 'i-to-m':
+        return 'i_to_m';
+      case 'n to r':
+      case 'n-to-r':
+        return 'n_to_r';
+      case 's to z':
+      case 's-to-z':
+        return 's_to_z';
+      case 'additional':
+        return 'additional';
+      case 'bach flowers':
+        return 'bach_flowers';
+      case 'despondency and despair':
+      case 'despondency & despair':
+        return 'despondency_and_despair';
+      case 'fear':
+        return 'fear';
+      case 'lack of interest':
+        return 'lack_of_interest';
+      case 'loneliness':
+        return 'loneliness';
+      case 'over care for others':
+      case 'over-care for others':
+        return 'over_care_for_others';
+      case 'oversensitivity':
+      case 'over sensitivity':
+      case 'over-sensitivity':
+        return 'oversensitivity';
+      case 'uncertainty':
+        return 'uncertainty';
+      case 'crystals':
+        return 'crystals';
+      case 'animal human connection':
+      case 'animal-human connection':
+        return 'animal_human_connection';
+      case 'calming and sleep':
+      case 'calming & sleep':
+        return 'calming_and_sleep';
+      case 'chakra specific':
+      case 'chakra-specific':
+        return 'chakra_specific';
+      case 'emotional healing':
+        return 'emotional_healing';
+      case 'energy and vitality':
+      case 'energy & vitality':
+        return 'energy_and_vitality';
+      case 'grounding and protection':
+      case 'grounding & protection':
+        return 'grounding_and_protection';
+      case 'manifestation and abundance':
+      case 'manifestation & abundance':
+        return 'manifestation_and_abundance';
+      case 'mental clarity and focus':
+      case 'mental clarity & focus':
+        return 'mental_clarity_and_focus';
+      case 'spiritual connection':
+        return 'spiritual_connection';
+      case 'trauma and heart healing':
+      case 'trauma & heart healing':
+        return 'trauma_and_heart_healing';
+      
       default:
         return null;
     }

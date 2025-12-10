@@ -425,20 +425,23 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                 color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.5),
               ),
               children: tableData.headers.map((header) {
-                return Container(
-                  padding: EdgeInsets.symmetric(
-                    vertical: isDesktop ? 16 : (isTablet ? 14 : 12),
-                    horizontal: isDesktop ? 12 : (isTablet ? 10 : 8),
-                  ),
-                  child: _buildFormattedText(
-                    context,
-                    header,
-                    Theme.of(context).textTheme.titleSmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: Theme.of(context).colorScheme.primary,
-                      fontSize: isDesktop ? 14 : (isTablet ? 13 : 12),
+                return TableCell(
+                  verticalAlignment: TableCellVerticalAlignment.middle,
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      vertical: isDesktop ? 16 : (isTablet ? 14 : 12),
+                      horizontal: isDesktop ? 12 : (isTablet ? 10 : 8),
                     ),
-                    TextAlign.center,
+                    child: _buildFormattedText(
+                      context,
+                      header,
+                      Theme.of(context).textTheme.titleSmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: Theme.of(context).colorScheme.primary,
+                        fontSize: isDesktop ? 14 : (isTablet ? 13 : 12),
+                      ),
+                      TextAlign.center,
+                    ),
                   ),
                 );
               }).toList(),
@@ -459,28 +462,31 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                                        cellIndex < tableData.isSubheading[rowIndex].length &&
                                        tableData.isSubheading[rowIndex][cellIndex];
                   
-                  return Container(
-                    padding: EdgeInsets.symmetric(
-                      vertical: isDesktop ? 14 : (isTablet ? 12 : 10),
-                      horizontal: isDesktop ? 12 : (isTablet ? 10 : 8),
-                    ),
-                    decoration: isSubheading ? BoxDecoration(
-                      color: Theme.of(context).colorScheme.secondaryContainer.withOpacity(0.3),
-                      borderRadius: BorderRadius.circular(4),
-                    ) : null,
-                    child: _buildFormattedText(
-                      context,
-                      cell,
-                      Theme.of(context).textTheme.bodySmall?.copyWith(
-                        fontSize: isDesktop ? 13 : (isTablet ? 12 : 11),
-                        color: isSubheading 
-                          ? Theme.of(context).colorScheme.primary
-                          : Theme.of(context).colorScheme.onSurface,
-                        height: 1.4,
-                        fontWeight: isSubheading ? FontWeight.bold : FontWeight.normal,
-                        fontStyle: isSubheading ? FontStyle.italic : FontStyle.normal,
+                  return TableCell(
+                    verticalAlignment: TableCellVerticalAlignment.middle,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(
+                        vertical: isDesktop ? 14 : (isTablet ? 12 : 10),
+                        horizontal: isDesktop ? 12 : (isTablet ? 10 : 8),
                       ),
-                      TextAlign.center,
+                      decoration: isSubheading ? BoxDecoration(
+                        color: Theme.of(context).colorScheme.secondaryContainer.withOpacity(0.3),
+                        borderRadius: BorderRadius.circular(4),
+                      ) : null,
+                      child: _buildFormattedText(
+                        context,
+                        cell,
+                        Theme.of(context).textTheme.bodySmall?.copyWith(
+                          fontSize: isDesktop ? 13 : (isTablet ? 12 : 11),
+                          color: isSubheading 
+                            ? Theme.of(context).colorScheme.primary
+                            : Theme.of(context).colorScheme.onSurface,
+                          height: 1.4,
+                          fontWeight: isSubheading ? FontWeight.bold : FontWeight.normal,
+                          fontStyle: isSubheading ? FontStyle.italic : FontStyle.normal,
+                        ),
+                        TextAlign.center,
+                      ),
                     ),
                   );
                 }).toList(),
@@ -764,12 +770,15 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
           
           // Check each cell for sub-heading markers (*text*)
           for (String cell in cells) {
-            if (cell.startsWith('*') && cell.endsWith('*') && cell.length > 2) {
+            // Replace literal \n with actual newline characters
+            String processedCell = cell.replaceAll(r'\n', '\n');
+            
+            if (processedCell.startsWith('*') && processedCell.endsWith('*') && processedCell.length > 2) {
               // This is a sub-heading - remove the asterisks
-              rowData.add(cell.substring(1, cell.length - 1));
+              rowData.add(processedCell.substring(1, processedCell.length - 1));
               rowSubheading.add(true);
             } else {
-              rowData.add(cell);
+              rowData.add(processedCell);
               rowSubheading.add(false);
             }
           }

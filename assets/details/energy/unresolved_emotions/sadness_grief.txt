@@ -1,11 +1,15 @@
+#Calming & Sleep Crystal Chart#
 
-1. Sorrow
-2. Loneliness
-3. Heartache
-4. Hopelessness
-5. Mourning
-6. Despair
-7. Abandonment
-8. Emptiness
-9. Melancholy
-10. Regret
+###TABLE_START###
+No. | SET 1 | SET 2
+1. | **Amethyst**\nCalming the mind, deep sleep | **Lepidolite**\nAnxiety relief, emotional soothing
+2. | **Blue Lace Agate**\nGentle calming, reduces nervous tension | **Howlite**\nSlows thoughts, supports deep sleep
+3. | **Moonstone**\nEmotional balance, nighttime rest | **Selenite**\nClears mental clutter, calms energy
+4. | **Rose Quartz**\nSoft emotional soothing | **Angelite**\nPeaceful energy, tranquil mind
+5. | **Celestite**\nStrong calming frequency | **Aquamarine**\nReduces overwhelm and emotional stress
+6. | **Purple Fluorite**\nCalms mental chatter | **Smithsonite**\nEmotional relaxation, stress release
+7. | **Kunzite**\nHeart-calming, emotional peace | **Chrysoprase**\nNervous system relaxation
+8. | **Larimar**\nSerenity, tension release | **Opalite**\nEmotional softening, sleep support
+9. | **Hemimorphite**\nReduces anxiety | **Mangano Calcite**\nSettles emotions, gentle comfort
+10. | **Blue Calcite**\nDeep calming, great for sleep | **Sugilite**\nProtective, soothing rest support
+###TABLE_END###

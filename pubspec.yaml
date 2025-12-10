@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+8
+version: 1.0.0+9
 
 environment:
   sdk: ^3.9.2
@@ -91,9 +91,6 @@ flutter:
     - assets/images/
     - assets/details/
     - assets/details/energy/
-    - assets/details/energy/aura/
-    - assets/details/energy/chakras/
-    - assets/details/energy/chakras/main_chakra/
     - assets/details/energy/life_force/
     - assets/details/energy/imbalances/
     - assets/details/energy/imbalances/environmental_impacts/
@@ -103,10 +100,41 @@ flutter:
     - assets/details/energy/energetic_influences/
     - assets/details/energy/negative_beliefs/
     - assets/details/energy/unresolved_emotions/
+    - assets/details/holistic_remedies/
+    - assets/details/holistic_remedies/australian_bush_flowers/
+    - assets/details/holistic_remedies/australian_bush_flowers/a_to_b/
+    - assets/details/holistic_remedies/australian_bush_flowers/additional/
+    - assets/details/holistic_remedies/australian_bush_flowers/c_to_d/
+    - assets/details/holistic_remedies/australian_bush_flowers/e_to_h/
+    - assets/details/holistic_remedies/australian_bush_flowers/i_to_m/
+    - assets/details/holistic_remedies/australian_bush_flowers/n_to_r/
+    - assets/details/holistic_remedies/australian_bush_flowers/s_to_z/
+    - assets/details/holistic_remedies/bach_flowers/
+    - assets/details/holistic_remedies/bach_flowers/despondency_and_despair/
+    - assets/details/holistic_remedies/bach_flowers/fear/
+    - assets/details/holistic_remedies/bach_flowers/lack_of_interest/
+    - assets/details/holistic_remedies/bach_flowers/loneliness/
+    - assets/details/holistic_remedies/bach_flowers/over_care_for_others/
+    - assets/details/holistic_remedies/bach_flowers/oversensitivity/
+    - assets/details/holistic_remedies/bach_flowers/uncertainty/
+    - assets/details/holistic_remedies/crystals/
+    - assets/details/holistic_remedies/crystals/animal_human_connection/
+    - assets/details/holistic_remedies/crystals/calming_and_sleep/
+    - assets/details/holistic_remedies/crystals/chakra_specific/
+    - assets/details/holistic_remedies/crystals/emotional_healing/
+    - assets/details/holistic_remedies/crystals/energy_and_vitality/
+    - assets/details/holistic_remedies/crystals/grounding_and_protection/
+    - assets/details/holistic_remedies/crystals/manifestation_and_abundance/
+    - assets/details/holistic_remedies/crystals/mental_clarity_and_focus/
+    - assets/details/holistic_remedies/crystals/spiritual_connection/
+    - assets/details/holistic_remedies/crystals/trauma_and_heart_healing/
     - assets/details/dog/
     - assets/details/dog/energy/
     - assets/details/dog/energy/chakras/
+    - assets/details/dog/energy/chakras/main_chakra/
     - assets/details/dog/energy/chakras/secondary_chakra/
+    - assets/details/dog/energy/chakras/cosmic_chakra/
+    - assets/details/dog/energy/aura/
     - assets/details/dog/energy/meridians/primary_meridian/
     - assets/details/dog/energy/meridians/extraordinary_meridian/
     - assets/details/dog/energy/meridians/energy_balance_in_the_body/
@@ -211,10 +239,15 @@ flutter:
     - assets/details/dog/glands/respiratory/
     - assets/details/dog/glands/salivary/
     - assets/details/dog/glands/scent_protective/
+    - assets/details/dog/glands/scent_protective/protective/
+    - assets/details/dog/glands/scent_protective/scent/
     - assets/details/horse/
     - assets/details/horse/energy/
     - assets/details/horse/energy/chakras/
+    - assets/details/horse/energy/chakras/main_chakra/
     - assets/details/horse/energy/chakras/secondary_chakra/
+    - assets/details/horse/energy/chakras/cosmic_chakra/
+    - assets/details/horse/energy/aura/
     - assets/details/horse/energy/meridians/primary_meridian/
     - assets/details/horse/energy/meridians/extraordinary_meridian/
     - assets/details/horse/energy/meridians/energy_balance_in_the_body/
@@ -249,6 +282,8 @@ flutter:
     - assets/details/horse/glands/respiratory/
     - assets/details/horse/glands/salivary/
     - assets/details/horse/glands/scent_protective/
+    - assets/details/horse/glands/scent_protective/protective/
+    - assets/details/horse/glands/scent_protective/scent/
     - assets/details/horse/connective_tissue/
     - assets/details/horse/organs/
     - assets/details/horse/organs/head/
@@ -335,7 +370,10 @@ flutter:
     - assets/details/cat/
     - assets/details/cat/energy/
     - assets/details/cat/energy/chakras/
+    - assets/details/cat/energy/chakras/main_chakra/
     - assets/details/cat/energy/chakras/secondary_chakra/
+    - assets/details/cat/energy/chakras/cosmic_chakra/
+    - assets/details/cat/energy/aura/
     - assets/details/cat/energy/meridians/primary_meridian/
     - assets/details/cat/energy/meridians/extraordinary_meridian/
     - assets/details/cat/energy/meridians/energy_balance_in_the_body/
@@ -366,6 +404,8 @@ flutter:
     - assets/details/cat/glands/respiratory/
     - assets/details/cat/glands/salivary/
     - assets/details/cat/glands/scent_protective/
+    - assets/details/cat/glands/scent_protective/protective/
+    - assets/details/cat/glands/scent_protective/scent/
     - assets/details/cat/connective_tissue/
     - assets/details/cat/organs/
     - assets/details/cat/organs/head/
@@ -446,21 +486,28 @@ flutter:
     - assets/details/bird/
     - assets/details/bird/energy/
     - assets/details/bird/energy/chakras/
+    - assets/details/bird/energy/chakras/main_chakra/
     - assets/details/bird/energy/chakras/secondary_chakra/
+    - assets/details/bird/energy/chakras/cosmic_chakra/
+    - assets/details/bird/energy/aura/
     - assets/details/bird/energy/meridians/primary_meridian/
     - assets/details/bird/energy/meridians/extraordinary_meridian/
     - assets/details/bird/energy/meridians/energy_balance_in_the_body/
     - assets/details/bird/connective_tissue/
     - assets/details/bird/glands/
     - assets/details/bird/glands/dermal/
+    - assets/details/bird/glands/digestive/
     - assets/details/bird/glands/endocrine/
     - assets/details/bird/glands/immune/
     - assets/details/bird/glands/ocular/
     - assets/details/bird/glands/reproductive/
     - assets/details/bird/glands/reproductive/female/
     - assets/details/bird/glands/reproductive/male/
+    - assets/details/bird/glands/respiratory/
     - assets/details/bird/glands/salivary/
     - assets/details/bird/glands/scent_protective/
+    - assets/details/bird/glands/scent_protective/protective/
+    - assets/details/bird/glands/scent_protective/scent/
     - assets/details/bird/muscles/
     - assets/details/bird/muscles/abdominal/
     - assets/details/bird/muscles/back/
@@ -573,6 +620,7 @@ flutter:
     - assets/images/energy/chakras/
     - assets/images/energy/chakras/main_chakra/
     - assets/images/energy/chakras/secondary_chakra/
+    - assets/images/energy/chakras/cosmic_chakra/
     - assets/images/energy/imbalances/
     - assets/images/energy/imbalances/environmental_impacts/
     - assets/images/energy/imbalances/connections/

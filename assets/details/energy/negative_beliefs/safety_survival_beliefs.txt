@@ -1,25 +1,24 @@
-#Safety & Survival Beliefs#
+#Safety & Survival — Negative Beliefs (Horse)#
 
 ###TABLE_START###
-No.|Set 1|Set 2
-1.|The ground is never stable.|Noise means danger is near.
-2.|I am never truly safe, even when it’s quiet.|Stillness means danger is near.
-3.|The unknown is dangerous.|I must control everything to stay safe.
-4.|I have to watch everyone all the time.|Safety is not real; it is an illusion.
-5.|Rest is unsafe; sleep is risky.|I was born unsafe.
-6.|If I trust, I will get hurt.|The world will always hurt me.
-7.|Safety is temporary and can vanish.|Safety is only for others, not for me.
-8.|Danger comes when I least expect it.|I must stay invisible to survive.
-9.|The environment will turn against me.|I have to anticipate every threat.
-10.|Humans cannot be trusted with my safety.|Being alone means death.
-11.|Comfort means I am vulnerable.|Even the herd/flock/pack can turn on me.
-12.|If I feel joy, something bad will follow.|I must always be tense to survive.
-13.|I am a target for harm.|If I relax, I will lose control.
-14.|The past danger could return at any moment.|Every sound or movement means threat.
-15.|My body must stay alert at all times.|Letting my guard down means I won’t survive.
-16.|I can’t rely on anyone to protect me.|Fear keeps me alive.
-17.|The world is unpredictable and unsafe.|Peace means weakness.
-18.|If I move too fast or too slow, I’ll be hurt.|It’s never safe to stop watching.
-19.|I must hide my fear to stay protected.|Safety comes only through control.
-20.|Trusting calmness means I’ll be caught off guard.|It’s safer to expect pain than hope for peace.
+No. |SECTION 1 — (1–19) |No. |SECTION 2 — (20–38)
+1. |I am not safe |20. |I must always be alert
+2. |Danger is everywhere |21. |I cannot trust my surroundings
+3. |I am vulnerable |22. |I might get hurt at any moment
+4. |I must stay tense to survive |23. |I am not protected
+5. |I must hide my fear |24. |I am unsafe unless controlled
+6. |My body is not secure |25. |I must obey to avoid danger
+7. |I cannot rely on myself |26. |My instincts are wrong
+8. |I have no escape |27. |If I relax, something bad happens
+9. |I must not show weakness |28. |I must sacrifice comfort to survive
+10. |I am always at risk |29. |I am only safe alone
+11. |Others can harm me |30. |I cannot stop bad things
+12. |I must avoid drawing attention |31. |I am not strong enough
+13. |I am powerless |32. |My boundaries don’t matter
+14. |I must endure suffering |33. |I cannot protect myself
+15. |It is unsafe to express needs |34. |I must anticipate every threat
+16. |Pain is unavoidable |35. |Something bad will happen if I rest
+17. |I am fragile |36. |I must silence myself to stay safe
+18. |My environment controls me |37. |I cannot trust safety signals
+19. |I must be ready to flee |38. |Safety is not meant for me
 ###TABLE_END###

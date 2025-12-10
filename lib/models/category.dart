@@ -7,6 +7,7 @@ import 'categories/connective_tissue_categories.dart';
 import 'categories/organs_categories.dart';
 import 'categories/glands_categories.dart';
 import 'categories/sensory_categories.dart';
+import 'categories/holistic_remedies_categories.dart';
 
 /// Represents a category in the navigation hierarchy
 class Category {
@@ -93,6 +94,11 @@ class CategoryData {
     return SensoryCategories.getSensoryCategoriesForAnimal(animalId);
   }
 
+  /// Get holistic remedies categories for a specific animal
+  static List<Category> getHolisticRemediesCategoriesForAnimal(String animalId) {
+    return HolisticRemediesCategories.getHolisticRemediesCategoriesForAnimal(animalId);
+  }
+
   /// Get anatomy categories for a specific animal with caching
   static List<Category> getAnatomyCategoriesForAnimal(String animalId) {
     print("sameed - getAnatomyCategoriesForAnimal - animalId: $animalId");
@@ -160,6 +166,13 @@ class CategoryData {
         icon: Icons.visibility,
         imagePath: 'assets/images/$animalId/sensory.webp',
         subcategories: getSensoryCategoriesForAnimal(animalId),
+      ),
+      Category(
+        id: 'holistic_remedies',
+        label: 'Holistic Remedies',
+        icon: Icons.visibility,
+        imagePath: 'assets/images/$animalId/holistic_remedies.webp',
+        subcategories: getHolisticRemediesCategoriesForAnimal(animalId),
       ),
     ];
     

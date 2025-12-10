@@ -1,11 +1,25 @@
+#Positive Emotions Chart#
 
-1. Rage
-2. Resentment
-3. Bitterness
-4. Irritation
-5. Frustration
-6. Jealousy
-7. Envy
-8. Contempt
-9. Hatred
-10. Agitation
+###TABLE_START###
+No. | SECTION 1 | SECTION 2
+1. | Confidence\nSelf-Assurance | Playfulness\nLightheartedness
+2. | Courage\nInner Strength | Curiosity\nWonder
+3. | Joy\nDelight | Connection\nBelonging
+4. | Peace\nSerenity | Awareness\nPresence
+5. | Hope\nOptimism | Forgiveness\nRelease
+6. | Gratitude\nAppreciation | Freedom\nExpansion
+7. | Compassion\nKindness | Trustworthiness\nIntegrity
+8. | Trust\nSafety | Stability\nSecurity
+9. | Clarity\nFocus | Encouragement\nSupport
+10. | Enthusiasm\nMotivation | Compassion for Self\nGentleness
+11. | Resilience\nStability | Inner Peace\nStillness
+12. | Harmony\nBalance | Confidence in Self\nEmpowered Action
+13. | Love\nWarmth | Joyfulness\nCheerfulness
+14. | Acceptance\nOpenness | Appreciation of Life\nAwe
+15. | Inspiration\nCreativity | Hopefulness\nFaith
+16. | Empowerment\nBoldness | Emotional Strength\nSteadiness
+17. | Groundedness\nCenteredness | Vitality\nAliveness
+18. | Patience\nCalmness | Purpose\nDirection
+19. | Satisfaction\nFulfillment | Inner Alignment\nAuthenticity
+20. | Joyful Living\nPositivity | Inner Harmony\nWholeness
+###TABLE_END###

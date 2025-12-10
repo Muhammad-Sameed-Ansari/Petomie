@@ -18,86 +18,73 @@ class EnergyCategories {
     // Define chakra subcategories for Horse, Dog, Cat, and Bird
     List<Category> chakraSubcategories = [];
     if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
-      chakraSubcategories = [
+      String animal = animalId.toLowerCase();
+      
+      // Main Chakra - Common for all animals
+      List<Category> mainChakraSubs = [
+        Category(
+          id: 'root_chakra',
+          label: 'Root Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/main_chakra/root_chakra.webp',
+        ),
+        Category(
+          id: 'sacral_chakra',
+          label: 'Sacral Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/main_chakra/sacral_chakra.webp',
+        ),
+        Category(
+          id: 'solar_plexus_chakra',
+          label: 'Solar Plexus Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/main_chakra/solar_plexus_chakra.webp',
+        ),
+        Category(
+          id: 'heart_chakra',
+          label: 'Heart Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/main_chakra/heart_chakra.webp',
+        ),
+        Category(
+          id: 'throat_chakra',
+          label: 'Throat Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/main_chakra/throat_chakra.webp',
+        ),
+        Category(
+          id: 'third_eye_chakra',
+          label: 'Third Eye Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/main_chakra/third_eye_chakra.webp',
+        ),
+        Category(
+          id: 'crown_chakra',
+          label: 'Crown Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/main_chakra/crown_chakra.webp',
+        ),
+      ];
+
+      chakraSubcategories.add(
         Category(
           id: 'main_chakra',
           label: 'Main Chakra',
           icon: Icons.circle,
           imagePath: 'assets/images/energy/chakras/main_chakra.webp',
-          subcategories: [
-            Category(
-              id: 'root_chakra',
-              label: 'Root Chakra',
-              icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/root_chakra.webp',
-            ),
-            Category(
-              id: 'sacral_chakra',
-              label: 'Sacral Chakra',
-              icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/sacral_chakra.webp',
-            ),
-            Category(
-              id: 'solar_plexus_chakra',
-              label: 'Solar Plexus Chakra',
-              icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/solar_plexus_chakra.webp',
-            ),
-            Category(
-              id: 'heart_chakra',
-              label: 'Heart Chakra',
-              icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/heart_chakra.webp',
-            ),
-            Category(
-              id: 'throat_chakra',
-              label: 'Throat Chakra',
-              icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/throat_chakra.webp',
-            ),
-            Category(
-              id: 'third_eye_chakra',
-              label: 'Third Eye Chakra',
-              icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/third_eye_chakra.webp',
-            ),
-            Category(
-              id: 'crown_chakra',
-              label: 'Crown Chakra',
-              icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/crown_chakra.webp',
-            ),
-            Category(
-              id: 'brachial_shoulder_chakra',
-              label: 'Brachial/Shoulder Chakra',
-              icon: Icons.circle,
-              imagePath: 'assets/images/energy/chakras/main_chakra/brachial_shoulder_chakra.webp',
-            ),
-          ],
+          subcategories: mainChakraSubs,
         ),
-      ];
+      );
 
-      String animal = animalId.toLowerCase();
+      // Secondary Chakra - Different for each animal
       List<Category> secondarySubs = [];
       if (animal == 'horse') {
         secondarySubs = [
           Category(
-            id: 'hoof_chakras',
-            label: 'Hoof Chakras (4)',
+            id: 'brachial_chakra',
+            label: 'Brachial Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/hoof_chakras.webp',
-          ),
-          Category(
-            id: 'tail_chakra',
-            label: 'Tail Chakra',
-            icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.webp',
-          ),
-          Category(
-            id: 'nose_muzzle_chakra',
-            label: 'Nose/Muzzle Chakra',
-            icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/nose_chakra.webp',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/brachial_chakra.webp',
           ),
           Category(
             id: 'ear_chakra',
@@ -112,37 +99,10 @@ class EnergyCategories {
             imagePath: 'assets/images/energy/chakras/secondary_chakra/flank_chakras.webp',
           ),
           Category(
-            id: 'whorl_chakra',
-            label: 'Whorl Chakra',
+            id: 'hoof_chakras',
+            label: 'Hoof Chakras',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/whorl_chakra.webp',
-          ),
-          Category(
-            id: 'spleen_chakra',
-            label: 'Spleen Chakra',
-            icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.webp',
-          ),
-        ];
-      } else if (animal == 'dog') {
-        secondarySubs = [
-          Category(
-            id: 'paw_chakras',
-            label: 'Paw Chakras (4)',
-            icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.webp',
-          ),
-          Category(
-            id: 'tail_chakra',
-            label: 'Tail Chakra',
-            icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.webp',
-          ),
-          Category(
-            id: 'ear_chakra',
-            label: 'Ear Chakra',
-            icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.webp',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/hoof_chakras.webp',
           ),
           Category(
             id: 'nose_chakra',
@@ -156,20 +116,50 @@ class EnergyCategories {
             icon: Icons.circle,
             imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.webp',
           ),
-        ];
-      } else if (animal == 'cat') {
-        secondarySubs = [
-          Category(
-            id: 'paw_chakras',
-            label: 'Paw Chakras (4)',
-            icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.webp',
-          ),
           Category(
             id: 'tail_chakra',
             label: 'Tail Chakra',
             icon: Icons.circle,
             imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.webp',
+          ),
+          Category(
+            id: 'whorl_chakra',
+            label: 'Whorl Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/whorl_chakra.webp',
+          ),
+        ];
+      } else if (animal == 'dog') {
+        secondarySubs = [
+          Category(
+            id: 'brachial_chakra',
+            label: 'Brachial Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/brachial_chakra.webp',
+          ),
+          Category(
+            id: 'ear_chakra',
+            label: 'Ear Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.webp',
+          ),
+          Category(
+            id: 'flank_chakras',
+            label: 'Flank Chakras',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/flank_chakras.webp',
+          ),
+          Category(
+            id: 'nose_chakra',
+            label: 'Nose Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/nose_chakra.webp',
+          ),
+          Category(
+            id: 'paw_chakras',
+            label: 'Paw Chakras',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.webp',
           ),
           Category(
             id: 'spleen_chakra',
@@ -178,10 +168,25 @@ class EnergyCategories {
             imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.webp',
           ),
           Category(
-            id: 'whisker_chakras',
-            label: 'Whisker Chakras',
+            id: 'tail_chakra',
+            label: 'Tail Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/whisker_chakras.webp',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.webp',
+          ),
+          Category(
+            id: 'whorl_chakra',
+            label: 'Whorl Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/whorl_chakra.webp',
+          ),
+        ];
+      } else if (animal == 'cat') {
+        secondarySubs = [
+          Category(
+            id: 'brachial_chakra',
+            label: 'Brachial Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/brachial_chakra.webp',
           ),
           Category(
             id: 'ear_chakra',
@@ -189,15 +194,51 @@ class EnergyCategories {
             icon: Icons.circle,
             imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.webp',
           ),
+          Category(
+            id: 'flank_chakras',
+            label: 'Flank Chakras',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/flank_chakras.webp',
+          ),
+          Category(
+            id: 'nose_chakra',
+            label: 'Nose Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/nose_chakra.webp',
+          ),
+          Category(
+            id: 'paw_chakras',
+            label: 'Paw Chakras',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/paw_chakras.webp',
+          ),
+          Category(
+            id: 'spleen_chakra',
+            label: 'Spleen Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/spleen_chakra.webp',
+          ),
+          Category(
+            id: 'tail_chakra',
+            label: 'Tail Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_chakra.webp',
+          ),
+          Category(
+            id: 'whisker_chakras',
+            label: 'Whisker Chakras',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/whisker_chakras.webp',
+          ),
+          Category(
+            id: 'whorl_chakra',
+            label: 'Whorl Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/whorl_chakra.webp',
+          ),
         ];
       } else if (animal == 'bird') {
         secondarySubs = [
-          Category(
-            id: 'wing_chakras',
-            label: 'Wing Chakras (2)',
-            icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/wing_chakras.webp',
-          ),
           Category(
             id: 'beak_chakra',
             label: 'Beak Chakra',
@@ -205,22 +246,40 @@ class EnergyCategories {
             imagePath: 'assets/images/energy/chakras/secondary_chakra/beak_chakra.webp',
           ),
           Category(
-            id: 'feet_chakras',
-            label: 'Feet Chakras (2)',
+            id: 'brachial_chakra',
+            label: 'Brachial Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/feet_chakras.webp',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/brachial_chakra.webp',
           ),
           Category(
-            id: 'ear_side_head_chakras',
-            label: 'Ear/Side Head Chakras',
+            id: 'ear_side_head_chakra',
+            label: 'Ear Side Head Chakra',
             icon: Icons.circle,
-            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_chakra.webp',
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/ear_side_head_chakra.webp',
+          ),
+          Category(
+            id: 'feet_chakra',
+            label: 'Feet Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/feet_chakra.webp',
           ),
           Category(
             id: 'tail_feather_chakra',
-            label: 'Tail Feather Chakra', 
+            label: 'Tail Feather Chakra',
             icon: Icons.circle,
             imagePath: 'assets/images/energy/chakras/secondary_chakra/tail_feather_chakra.webp',
+          ),
+          Category(
+            id: 'whorl_chakra',
+            label: 'Whorl Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/whorl_chakra.webp',
+          ),
+          Category(
+            id: 'wing_chakra',
+            label: 'Wing Chakra',
+            icon: Icons.circle,
+            imagePath: 'assets/images/energy/chakras/secondary_chakra/wing_chakra.webp',
           ),
         ];
       }
@@ -236,6 +295,38 @@ class EnergyCategories {
           ),
         );
       }
+
+      // Cosmic Chakra - Common for all animals
+      List<Category> cosmicChakraSubs = [
+        Category(
+          id: 'soul_star_chakra',
+          label: 'Soul Star Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/cosmic_chakra/soul_star_chakra.webp',
+        ),
+        Category(
+          id: 'brahmarandra_chakra',
+          label: 'Brahmarandra Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/cosmic_chakra/brahmarandra_chakra.webp',
+        ),
+        Category(
+          id: 'earth_star_chakra',
+          label: 'Earth Star Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/cosmic_chakra/earth_star_chakra.webp',
+        ),
+      ];
+
+      chakraSubcategories.add(
+        Category(
+          id: 'cosmic_chakra',
+          label: 'Cosmic Chakra',
+          icon: Icons.circle,
+          imagePath: 'assets/images/energy/chakras/cosmic_chakra.webp',
+          subcategories: cosmicChakraSubs,
+        ),
+      );
     }
 
     // Define aura & energy field subcategories for Horse, Dog, and Cat
@@ -255,8 +346,8 @@ class EnergyCategories {
           imagePath: 'assets/images/$animalId/energy/aura/magnitude.webp',
         ),
         Category(
-          id: 'boundary', 
-          label: 'Boundary', 
+          id: 'protection', 
+          label: 'Protection', 
           icon: Icons.shield,
           imagePath: 'assets/images/$animalId/energy/aura/boundary.webp',
         ),
@@ -479,14 +570,6 @@ class EnergyCategories {
           icon: Icons.linear_scale,
           imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian.webp',
           subcategories: extraordinaryMeridianSubs,
-        ),
-        Category(
-          id: 'energy_balance_in_the_body',
-          label: 'Energy Balance in the Body',
-          icon: Icons.balance,
-          subcategories: [
-            Category(id: 'yin_yang_balance', label: 'Yin-Yang Balance', icon: Icons.yard),
-          ],
         ),
       ];
     }

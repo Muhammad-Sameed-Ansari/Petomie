@@ -51,6 +51,7 @@ class GlandsCategories {
         id: 'digestive',
         label: 'Digestive',
         icon: Icons.restaurant,
+        imagePath: 'assets/images/glands/digestive.webp',
         subcategories: [
           Category(
             id: 'bile_duct_glands',
@@ -94,6 +95,7 @@ class GlandsCategories {
         id: 'endocrine',
         label: 'Endocrine',
         icon: Icons.biotech,
+        imagePath: 'assets/images/glands/endocrine.webp',
         subcategories: [
           Category(
             id: 'adrenal_glands',
@@ -143,6 +145,7 @@ class GlandsCategories {
         id: 'immune',
         label: 'Immune',
         icon: Icons.shield,
+        imagePath: 'assets/images/glands/immune.webp',
         subcategories: [
           Category(
             id: 'hymus_gland',
@@ -238,6 +241,7 @@ class GlandsCategories {
         id: 'reproductive',
         label: 'Reproductive',
         icon: Icons.favorite,
+        imagePath: 'assets/images/glands/reproductive.webp',
         subcategories: [
           Category(
             id: 'female',
@@ -313,6 +317,7 @@ class GlandsCategories {
         id: 'respiratory',
         label: 'Respiratory',
         icon: Icons.air,
+        imagePath: 'assets/images/glands/respiratory.webp',
         subcategories: [
           Category(
             id: 'bronchial_glands',
@@ -350,19 +355,19 @@ class GlandsCategories {
             id: 'mandibular_gland',
             label: 'Mandibular Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/horse/glands/salivary/mandibular_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'parotid_gland',
             label: 'Parotid Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/horse/glands/salivary/parotid_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'sublingual_gland',
             label: 'Sublingual Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/horse/glands/salivary/sublingual_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
         ],
       ),
@@ -372,28 +377,66 @@ class GlandsCategories {
         icon: Icons.pets,
         subcategories: [
           Category(
-            id: 'anal_glands',
-            label: 'Anal Glands',
-            icon: Icons.circle,
-            imagePath: 'assets/details/horse/glands/scent_protective/anal_glands.txt',
+            id: 'protective',
+            label: 'Protective',
+            icon: Icons.shield,
+            subcategories: [
+              Category(
+                id: 'ceruminous_glands',
+                label: 'Ceruminous Glands',
+                icon: Icons.hearing,
+                imagePath: 'assets/details/horse/glands/scent_protective/protective/ceruminous_glands.txt',
+              ),
+              Category(
+                id: 'lacrimal_gland',
+                label: 'Lacrimal Gland',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/horse/glands/scent_protective/protective/lacrimal_gland.txt',
+              ),
+              Category(
+                id: 'meibomian_glands',
+                label: 'Meibomian Glands',
+                icon: Icons.visibility,
+                imagePath: 'assets/details/horse/glands/scent_protective/protective/meibomian_glands.txt',
+              ),
+              Category(
+                id: 'sweat_glands',
+                label: 'Sweat Glands',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/horse/glands/scent_protective/protective/sweat_glands.txt',
+              ),
+              Category(
+                id: 'third_eyelid_gland',
+                label: 'Third Eyelid Gland',
+                icon: Icons.visibility,
+                imagePath: 'assets/details/horse/glands/scent_protective/protective/third_eyelid_gland.txt',
+              ),
+            ],
           ),
           Category(
-            id: 'anal_sacs',
-            label: 'Anal Sacs',
-            icon: Icons.circle_outlined,
-            imagePath: 'assets/details/horse/glands/scent_protective/anal_sacs.txt',
-          ),
-          Category(
-            id: 'ceruminous_glands',
-            label: 'Ceruminous Glands',
-            icon: Icons.hearing,
-            imagePath: 'assets/details/horse/glands/scent_protective/ceruminous_glands.txt',
-          ),
-          Category(
-            id: 'harderian_gland',
-            label: 'Harderian Gland',
-            icon: Icons.water_drop,
-            imagePath: 'assets/details/horse/glands/scent_protective/harderian_gland.txt',
+            id: 'scent',
+            label: 'Scent',
+            icon: Icons.pets,
+            subcategories: [
+              Category(
+                id: 'anal_glands',
+                label: 'Anal Glands',
+                icon: Icons.circle,
+                imagePath: 'assets/details/horse/glands/scent_protective/scent/anal_glands.txt',
+              ),
+              Category(
+                id: 'anal_sacs',
+                label: 'Anal Sacs',
+                icon: Icons.circle_outlined,
+                imagePath: 'assets/details/horse/glands/scent_protective/scent/anal_sacs.txt',
+              ),
+              Category(
+                id: 'sebaceous_glands',
+                label: 'Sebaceous Glands',
+                icon: Icons.bubble_chart,
+                imagePath: 'assets/details/horse/glands/scent_protective/scent/sebaceous_glands.txt',
+              ),
+            ],
           ),
         ],
       ),
@@ -433,6 +476,7 @@ class GlandsCategories {
         id: 'digestive',
         label: 'Digestive',
         icon: Icons.restaurant,
+        imagePath: 'assets/images/glands/digestive.webp',
         subcategories: [
           Category(
             id: 'bile_duct_glands',
@@ -476,6 +520,7 @@ class GlandsCategories {
         id: 'endocrine',
         label: 'Endocrine',
         icon: Icons.biotech,
+        imagePath: 'assets/images/glands/endocrine.webp',
         subcategories: [
           Category(
             id: 'adrenal_glands',
@@ -525,6 +570,7 @@ class GlandsCategories {
         id: 'immune',
         label: 'Immune',
         icon: Icons.shield,
+        imagePath: 'assets/images/glands/immune.webp',
         subcategories: [
           Category(
             id: 'lymph_glands',
@@ -620,6 +666,7 @@ class GlandsCategories {
         id: 'reproductive',
         label: 'Reproductive',
         icon: Icons.favorite,
+        imagePath: 'assets/images/glands/reproductive.webp',
         subcategories: [
           Category(
             id: 'female',
@@ -695,6 +742,7 @@ class GlandsCategories {
         id: 'respiratory',
         label: 'Respiratory',
         icon: Icons.air,
+        imagePath: 'assets/images/glands/respiratory.webp',
         subcategories: [
           Category(
             id: 'laryngeal_glands',
@@ -726,25 +774,25 @@ class GlandsCategories {
             id: 'mandibular_gland',
             label: 'Mandibular Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/dog/glands/salivary/mandibular_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'parotid_gland',
             label: 'Parotid Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/dog/glands/salivary/parotid_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'sublingual_gland',
             label: 'Sublingual Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/dog/glands/salivary/sublingual_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'zygomatic_gland',
             label: 'Zygomatic Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/dog/glands/salivary/zygomatic_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
         ],
       ),
@@ -752,36 +800,81 @@ class GlandsCategories {
         id: 'scent_protective',
         label: 'Scent & Protective',
         icon: Icons.pets,
+        imagePath: 'assets/images/glands/scent_protective_cat_dog.webp',
         subcategories: [
           Category(
-            id: 'anal_glands',
-            label: 'Anal Glands',
-            icon: Icons.circle,
-            imagePath: 'assets/details/dog/glands/scent_protective/anal_glands.txt',
+            id: 'protective',
+            label: 'Protective',
+            icon: Icons.shield,
+            subcategories: [
+              Category(
+                id: 'ceruminous_glands',
+                label: 'Ceruminous Glands',
+                icon: Icons.hearing,
+                imagePath: 'assets/details/dog/glands/scent_protective/protective/ceruminous_glands.txt',
+              ),
+              Category(
+                id: 'lacrimal_gland',
+                label: 'Lacrimal Gland',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/dog/glands/scent_protective/protective/lacrimal_gland.txt',
+              ),
+              Category(
+                id: 'meibomian_glands',
+                label: 'Meibomian Glands',
+                icon: Icons.visibility,
+                imagePath: 'assets/details/dog/glands/scent_protective/protective/meibomian_glands.txt',
+              ),
+              Category(
+                id: 'third_eyelid_gland',
+                label: 'Third Eyelid Gland',
+                icon: Icons.visibility,
+                imagePath: 'assets/details/dog/glands/scent_protective/protective/third_eyelid_gland.txt',
+              ),
+            ],
           ),
           Category(
-            id: 'anal_sacs',
-            label: 'Anal Sacs',
-            icon: Icons.circle_outlined,
-            imagePath: 'assets/details/dog/glands/scent_protective/anal_sacs.txt',
-          ),
-          Category(
-            id: 'ceruminous_glands',
-            label: 'Ceruminous Glands',
-            icon: Icons.hearing,
-            imagePath: 'assets/details/dog/glands/scent_protective/ceruminous_glands.txt',
-          ),
-          Category(
-            id: 'harderian_gland',
-            label: 'Harderian Gland',
-            icon: Icons.water_drop,
-            imagePath: 'assets/details/dog/glands/scent_protective/harderian_gland.txt',
-          ),
-          Category(
-            id: 'perianal_glands',
-            label: 'Perianal Glands',
+            id: 'scent',
+            label: 'Scent',
             icon: Icons.pets,
-            imagePath: 'assets/details/dog/glands/scent_protective/perianal_glands.txt',
+            subcategories: [
+              Category(
+                id: 'anal_glands',
+                label: 'Anal Glands',
+                icon: Icons.circle,
+                imagePath: 'assets/details/dog/glands/scent_protective/scent/anal_glands.txt',
+              ),
+              Category(
+                id: 'anal_sacs',
+                label: 'Anal Sacs',
+                icon: Icons.circle_outlined,
+                imagePath: 'assets/details/dog/glands/scent_protective/scent/anal_sacs.txt',
+              ),
+              Category(
+                id: 'harderian_gland',
+                label: 'Harderian Gland',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/dog/glands/scent_protective/scent/harderian_gland.txt',
+              ),
+              Category(
+                id: 'perianal_glands',
+                label: 'Perianal Glands',
+                icon: Icons.pets,
+                imagePath: 'assets/details/dog/glands/scent_protective/scent/perianal_glands.txt',
+              ),
+              Category(
+                id: 'sebaceous_glands',
+                label: 'Sebaceous Glands',
+                icon: Icons.bubble_chart,
+                imagePath: 'assets/details/dog/glands/scent_protective/scent/sebaceous_glands.txt',
+              ),
+              Category(
+                id: 'sweat_glands',
+                label: 'Sweat Glands',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/dog/glands/scent_protective/scent/sweat_glands.txt',
+              ),
+            ],
           ),
         ],
       ),
@@ -821,6 +914,7 @@ class GlandsCategories {
         id: 'digestive',
         label: 'Digestive',
         icon: Icons.restaurant,
+        imagePath: 'assets/images/glands/digestive.webp',
         subcategories: [
           Category(
             id: 'bile_duct_glands',
@@ -864,6 +958,7 @@ class GlandsCategories {
         id: 'endocrine',
         label: 'Endocrine',
         icon: Icons.biotech,
+        imagePath: 'assets/images/glands/endocrine.webp',
         subcategories: [
           Category(
             id: 'adrenal_glands',
@@ -913,6 +1008,7 @@ class GlandsCategories {
         id: 'immune',
         label: 'Immune',
         icon: Icons.shield,
+        imagePath: 'assets/images/glands/immune.webp',
         subcategories: [
           Category(
             id: 'lymph_glands',
@@ -1002,6 +1098,7 @@ class GlandsCategories {
         id: 'reproductive',
         label: 'Reproductive',
         icon: Icons.favorite,
+        imagePath: 'assets/images/glands/reproductive.webp',
         subcategories: [
           Category(
             id: 'female',
@@ -1077,6 +1174,7 @@ class GlandsCategories {
         id: 'respiratory',
         label: 'Respiratory',
         icon: Icons.air,
+        imagePath: 'assets/images/glands/respiratory.webp',
         subcategories: [
           Category(
             id: 'bronchial_glands',
@@ -1108,31 +1206,31 @@ class GlandsCategories {
             id: 'mandibular_gland',
             label: 'Mandibular Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/cat/glands/salivary/mandibular_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'molar_glands',
             label: 'Molar Glands',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/cat/glands/salivary/molar_glands.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'parotid_gland',
             label: 'Parotid Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/cat/glands/salivary/parotid_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'sublingual_gland',
             label: 'Sublingual Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/cat/glands/salivary/sublingual_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'zygomatic_gland',
             label: 'Zygomatic Gland',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/cat/glands/salivary/zygomatic_gland.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
         ],
       ),
@@ -1140,48 +1238,111 @@ class GlandsCategories {
         id: 'scent_protective',
         label: 'Scent & Protective',
         icon: Icons.pets,
+        imagePath: 'assets/images/glands/scent_protective_cat_dog.webp',
         subcategories: [
           Category(
-            id: 'anal_glands',
-            label: 'Anal Glands',
-            icon: Icons.circle,
-            imagePath: 'assets/details/cat/glands/scent_protective/anal_glands.txt',
+            id: 'protective',
+            label: 'Protective',
+            icon: Icons.shield,
+            subcategories: [
+              Category(
+                id: 'ceruminous_glands',
+                label: 'Ceruminous Glands',
+                icon: Icons.hearing,
+                imagePath: 'assets/details/cat/glands/scent_protective/protective/ceruminous_glands.txt',
+              ),
+              Category(
+                id: 'lacrimal_gland',
+                label: 'Lacrimal Gland',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/cat/glands/scent_protective/protective/lacrimal_gland.txt',
+              ),
+              Category(
+                id: 'meibomian_glands',
+                label: 'Meibomian Glands',
+                icon: Icons.visibility,
+                imagePath: 'assets/details/cat/glands/scent_protective/protective/meibomian_glands.txt',
+              ),
+              Category(
+                id: 'sweat_glands',
+                label: 'Sweat Glands',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/cat/glands/scent_protective/protective/sweat_glands.txt',
+              ),
+              Category(
+                id: 'third_eyelid_gland',
+                label: 'Third Eyelid Gland',
+                icon: Icons.visibility,
+                imagePath: 'assets/details/cat/glands/scent_protective/protective/third_eyelid_gland.txt',
+              ),
+            ],
           ),
           Category(
-            id: 'anal_sacs',
-            label: 'Anal Sacs',
-            icon: Icons.circle_outlined,
-            imagePath: 'assets/details/cat/glands/scent_protective/anal_sacs.txt',
-          ),
-          Category(
-            id: 'caudal_glands',
-            label: 'Caudal Glands',
+            id: 'scent',
+            label: 'Scent',
             icon: Icons.pets,
-            imagePath: 'assets/details/cat/glands/scent_protective/caudal_glands.txt',
-          ),
-          Category(
-            id: 'ceruminous_glands',
-            label: 'Ceruminous Glands',
-            icon: Icons.hearing,
-            imagePath: 'assets/details/cat/glands/scent_protective/ceruminous_glands.txt',
-          ),
-          Category(
-            id: 'harderian_gland',
-            label: 'Harderian Gland',
-            icon: Icons.water_drop,
-            imagePath: 'assets/details/cat/glands/scent_protective/harderian_gland.txt',
-          ),
-          Category(
-            id: 'perioral_glands',
-            label: 'Perioral Glands',
-            icon: Icons.circle,
-            imagePath: 'assets/details/cat/glands/scent_protective/perioral_glands.txt',
-          ),
-          Category(
-            id: 'temporal_glands',
-            label: 'Temporal Glands',
-            icon: Icons.circle,
-            imagePath: 'assets/details/cat/glands/scent_protective/temporal_glands.txt',
+            subcategories: [
+              Category(
+                id: 'anal_glands',
+                label: 'Anal Glands',
+                icon: Icons.circle,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/anal_glands.txt',
+              ),
+              Category(
+                id: 'anal_sacs',
+                label: 'Anal Sacs',
+                icon: Icons.circle_outlined,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/anal_sacs.txt',
+              ),
+              Category(
+                id: 'caudal_glands',
+                label: 'Caudal Glands',
+                icon: Icons.pets,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/caudal_glands.txt',
+              ),
+              Category(
+                id: 'harderian_gland',
+                label: 'Harderian Gland',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/harderian_gland.txt',
+              ),
+              Category(
+                id: 'interdigital_glands',
+                label: 'Interdigital Glands',
+                icon: Icons.pets,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/interdigital_glands.txt',
+              ),
+              Category(
+                id: 'perioral_glands',
+                label: 'Perioral Glands',
+                icon: Icons.circle,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/perioral_glands.txt',
+              ),
+              Category(
+                id: 'sebaceous_glands',
+                label: 'Sebaceous Glands',
+                icon: Icons.bubble_chart,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/sebaceous_glands.txt',
+              ),
+              Category(
+                id: 'submandibular_glands',
+                label: 'Submandibular Glands',
+                icon: Icons.circle,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/submandibular_glands.txt',
+              ),
+              Category(
+                id: 'supraorbital_glands',
+                label: 'Supraorbital Glands',
+                icon: Icons.circle,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/supraorbital_glands.txt',
+              ),
+              Category(
+                id: 'temporal_glands',
+                label: 'Temporal Glands',
+                icon: Icons.circle,
+                imagePath: 'assets/details/cat/glands/scent_protective/scent/temporal_glands.txt',
+              ),
+            ],
           ),
         ],
       ),
@@ -1230,9 +1391,72 @@ class GlandsCategories {
         ],
       ),
       Category(
+        id: 'digestive',
+        label: 'Digestive',
+        icon: Icons.restaurant,
+        imagePath: 'assets/images/glands/digestive.webp',
+        subcategories: [
+          Category(
+            id: 'cecal_glands',
+            label: 'Cecal Glands',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/digestive/cecal_glands.txt',
+          ),
+          Category(
+            id: 'crop_glands',
+            label: 'Crop Glands',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/digestive/crop_glands.txt',
+          ),
+          Category(
+            id: 'esophageal_glands',
+            label: 'Esophageal Glands',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/digestive/esophageal_glands.txt',
+          ),
+          Category(
+            id: 'gallbladder',
+            label: 'Gallbladder',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/digestive/gallbladder.txt',
+          ),
+          Category(
+            id: 'intestinal_glands',
+            label: 'Intestinal Glands',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/digestive/intestinal_glands.txt',
+          ),
+          Category(
+            id: 'liver',
+            label: 'Liver',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/digestive/liver.txt',
+          ),
+          Category(
+            id: 'pancreas',
+            label: 'Pancreas',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/digestive/pancreas.txt',
+          ),
+          Category(
+            id: 'proventricular_glands',
+            label: 'Proventricular Glands',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/digestive/proventricular_glands.txt',
+          ),
+          Category(
+            id: 'salivary_glands',
+            label: 'Salivary Glands',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/digestive/salivary_glands.txt',
+          ),
+        ],
+      ),
+      Category(
         id: 'endocrine',
         label: 'Endocrine',
         icon: Icons.biotech,
+        imagePath: 'assets/images/glands/endocrine.webp',
         subcategories: [
           Category(
             id: 'adrenal_glands',
@@ -1300,6 +1524,7 @@ class GlandsCategories {
         id: 'immune',
         label: 'Immune',
         icon: Icons.shield,
+        imagePath: 'assets/images/glands/immune.webp',
         subcategories: [
           Category(
             id: 'bursa_of_fabricius',
@@ -1363,6 +1588,7 @@ class GlandsCategories {
         id: 'reproductive',
         label: 'Reproductive',
         icon: Icons.favorite,
+        imagePath: 'assets/images/glands/reproductive.webp',
         subcategories: [
           Category(
             id: 'cloacal_region_glands',
@@ -1423,6 +1649,44 @@ class GlandsCategories {
         ],
       ),
       Category(
+        id: 'respiratory',
+        label: 'Respiratory',
+        icon: Icons.air,
+        imagePath: 'assets/images/glands/respiratory.webp',
+        subcategories: [
+          Category(
+            id: 'bronchial_mucous_cells',
+            label: 'Bronchial Mucous Cells',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/respiratory/bronchial_mucous_cells.txt',
+          ),
+          Category(
+            id: 'harderian_respiratory',
+            label: 'Harderian Respiratory',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/respiratory/harderian_respiratory.txt',
+          ),
+          Category(
+            id: 'infraorbital_gland',
+            label: 'Infraorbital Gland',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/respiratory/infraorbital_gland.txt',
+          ),
+          Category(
+            id: 'nasal_mucous_glands',
+            label: 'Nasal Mucous Glands',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/respiratory/nasal_mucous_glands.txt',
+          ),
+          Category(
+            id: 'tracheal_mucous_glands',
+            label: 'Tracheal Mucous Glands',
+            icon: Icons.category,
+            imagePath: 'assets/details/bird/glands/respiratory/tracheal_mucous_glands.txt',
+          ),
+        ],
+      ),
+      Category(
         id: 'salivary',
         label: 'Salivary',
         icon: Icons.water_drop,
@@ -1432,56 +1696,107 @@ class GlandsCategories {
             id: 'cricoidal_salivary_glands',
             label: 'Cricoidal Salivary Glands',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/bird/glands/salivary/cricoidal_salivary_glands.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'esophageal_mucous_glands',
             label: 'Esophageal Mucous Glands',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/bird/glands/salivary/esophageal_mucous_glands.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'lingual_salivary_glands',
             label: 'Lingual Salivary Glands',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/bird/glands/salivary/lingual_salivary_glands.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'mandibular_salivary_glands',
             label: 'Mandibular Salivary Glands',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/bird/glands/salivary/mandibular_salivary_glands.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
           Category(
             id: 'palatine_salivary_glands',
             label: 'Palatine Salivary Glands',
             icon: Icons.water_drop,
-            imagePath: 'assets/details/bird/glands/salivary/palatine_salivary_glands.txt',
+            imagePath: 'assets/images/glands/salivary.webp',
           ),
         ],
       ),
       Category(
-        id: 'scnet_protective',
+        id: 'scent_protective',
         label: 'Scent & Protective',
         icon: Icons.pets,
+        imagePath: 'assets/images/glands/scent_protective_bird.webp',
         subcategories: [
           Category(
-            id: 'aural_scent_glands',
-            label: 'Aural Scent Glands',
-            icon: Icons.hearing,
-            imagePath: 'assets/details/bird/glands/scnet_protective/aural_scent_glands.txt',
+            id: 'protective',
+            label: 'Protective',
+            icon: Icons.shield,
+            subcategories: [
+              Category(
+                id: 'harderian_gland',
+                label: 'Harderian Gland',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/bird/glands/scent_protective/protective/harderian_gland.txt',
+              ),
+              Category(
+                id: 'lacrimal_gland',
+                label: 'Lacrimal Gland',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/bird/glands/scent_protective/protective/lacrimal_gland.txt',
+              ),
+              Category(
+                id: 'meibomian_glands',
+                label: 'Meibomian Glands',
+                icon: Icons.visibility,
+                imagePath: 'assets/details/bird/glands/scent_protective/protective/meibomian_glands.txt',
+              ),
+              Category(
+                id: 'nasal_salt_glands',
+                label: 'Nasal Salt Glands',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/bird/glands/scent_protective/protective/nasal_salt_glands.txt',
+              ),
+              Category(
+                id: 'third_eyelid_gland',
+                label: 'Third Eyelid Gland',
+                icon: Icons.visibility,
+                imagePath: 'assets/details/bird/glands/scent_protective/protective/third_eyelid_gland.txt',
+              ),
+            ],
           ),
           Category(
-            id: 'skin_scent_micro_glands',
-            label: 'Skin Scent Micro Glands',
-            icon: Icons.spa,
-            imagePath: 'assets/details/bird/glands/scnet_protective/skin_scent_micro_glands.txt',
-          ),
-          Category(
-            id: 'uropygial_gland_scent_protective',
-            label: 'Uropygial Gland (Scent & Protective)',
-            icon: Icons.water_drop,
-            imagePath: 'assets/details/bird/glands/scnet_protective/uropygial_gland_scent_protective.txt',
+            id: 'scent',
+            label: 'Scent',
+            icon: Icons.pets,
+            subcategories: [
+              Category(
+                id: 'aural_scent_glands',
+                label: 'Aural Scent Glands',
+                icon: Icons.hearing,
+                imagePath: 'assets/details/bird/glands/scent_protective/scent/aural_scent_glands.txt',
+              ),
+              Category(
+                id: 'cloacal_gland',
+                label: 'Cloacal Gland',
+                icon: Icons.circle,
+                imagePath: 'assets/details/bird/glands/scent_protective/scent/cloacal_gland.txt',
+              ),
+              Category(
+                id: 'skin_scent_micro_glands',
+                label: 'Skin Scent Micro Glands',
+                icon: Icons.spa,
+                imagePath: 'assets/details/bird/glands/scent_protective/scent/skin_scent_micro_glands.txt',
+              ),
+              Category(
+                id: 'uropygial_gland',
+                label: 'Uropygial Gland',
+                icon: Icons.water_drop,
+                imagePath: 'assets/details/bird/glands/scent_protective/scent/uropygial_gland.txt',
+              ),
+            ],
           ),
         ],
       ),
