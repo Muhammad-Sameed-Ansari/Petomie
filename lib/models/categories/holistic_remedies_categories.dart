@@ -23,6 +23,59 @@ class HolisticRemediesCategories {
     
     // Define Australian Bush Flowers subcategories
     List<Category> australianBushFlowersSubcategories = [];
+
+    // Define Homeopathy subcategories (shared across all animals)
+    List<Category> homeopathySubcategories = [
+      Category(
+        id: 'chronic',
+        label: 'Chronic',
+        icon: Icons.healing,
+        imagePath: 'assets/images/holistic_remedies/homeopathy/chronic.webp',
+      ),
+      Category(
+        id: 'digestive',
+        label: 'Digestive',
+        icon: Icons.healing,
+        imagePath: 'assets/images/holistic_remedies/homeopathy/digestive.webp',
+      ),
+      Category(
+        id: 'emotional',
+        label: 'Emotional',
+        icon: Icons.healing,
+        imagePath: 'assets/images/holistic_remedies/homeopathy/emotional.webp',
+      ),
+      Category(
+        id: 'immune',
+        label: 'Immune',
+        icon: Icons.healing,
+        imagePath: 'assets/images/holistic_remedies/homeopathy/immune.webp',
+      ),
+      Category(
+        id: 'inflammation',
+        label: 'Inflammation',
+        icon: Icons.healing,
+        imagePath: 'assets/images/holistic_remedies/homeopathy/inflammation.webp',
+      ),
+      Category(
+        id: 'pain',
+        label: 'Pain',
+        icon: Icons.healing,
+        imagePath: 'assets/images/holistic_remedies/homeopathy/pain.webp',
+      ),
+      Category(
+        id: 'respiratory',
+        label: 'Respiratory',
+        icon: Icons.healing,
+        imagePath: 'assets/images/holistic_remedies/homeopathy/respiratory.webp',
+      ),
+      Category(
+        id: 'trauma',
+        label: 'Trauma',
+        icon: Icons.healing,
+        imagePath: 'assets/images/holistic_remedies/homeopathy/trauma.webp',
+      ),
+    ];
+
     if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       String animal = animalId.toLowerCase();
       
@@ -1560,6 +1613,12 @@ class HolisticRemediesCategories {
         icon: Icons.spa,
         imagePath: 'assets/images/holistic_remedies/australian_bush_flowers.webp',
         subcategories: australianBushFlowersSubcategories,
+      ),
+      Category(
+        id: 'homeopathy',
+        label: 'Homeopathy',
+        icon: Icons.healing,
+        subcategories: homeopathySubcategories,
       ),
     ];
     

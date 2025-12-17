@@ -33,6 +33,15 @@ class ContentService {
     's_to_z': 'holistic_remedies/australian_bush_flowers/s_to_z',
     'additional': 'holistic_remedies/australian_bush_flowers/additional',
     'bach_flowers': 'holistic_remedies/bach_flowers',
+    'homeopathy': 'holistic_remedies/homeopathy',
+    'chronic': 'holistic_remedies/homeopathy',
+    'digestive': 'holistic_remedies/homeopathy',
+    'emotional': 'holistic_remedies/homeopathy',
+    'immune': 'holistic_remedies/homeopathy',
+    'inflammation': 'holistic_remedies/homeopathy',
+    'pain': 'holistic_remedies/homeopathy',
+    'respiratory': 'holistic_remedies/homeopathy',
+    'trauma': 'holistic_remedies/homeopathy',
     'despondency_and_despair': 'holistic_remedies/bach_flowers/despondency_and_despair',
     'fear': 'holistic_remedies/bach_flowers/fear',
     'lack_of_interest': 'holistic_remedies/bach_flowers/lack_of_interest',
@@ -507,6 +516,26 @@ class ContentService {
       case 'trauma and heart healing':
       case 'trauma & heart healing':
         return 'trauma_and_heart_healing';
+      
+      // Homeopathy categories
+      case 'homeopathy':
+        return 'homeopathy';
+      case 'chronic':
+        return 'chronic';
+      case 'digestive':
+        return 'digestive';
+      case 'emotional':
+        return 'emotional';
+      case 'immune':
+        return 'immune';
+      case 'inflammation':
+        return 'inflammation';
+      case 'pain':
+        return 'pain';
+      case 'respiratory':
+        return 'respiratory';
+      case 'trauma':
+        return 'trauma';
       
       default:
         return null;
