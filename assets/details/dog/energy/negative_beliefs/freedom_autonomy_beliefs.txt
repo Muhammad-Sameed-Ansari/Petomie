@@ -1,0 +1,25 @@
+#Freedom & Autonomy#
+
+###TABLE_START###
+No. |SECTION 1 — (1–20) |No. |SECTION 2 — (21–40)
+1. |I am not free to explore my environment |21. |I must stay close or risk punishment
+2. |I cannot choose when to go outside |22. |I cannot choose safe distances
+3. |My freedom depends entirely on humans |23. |I must depend on humans for every move
+4. |I fear being confined or crated |24. |I fear being stopped from exploring
+5. |I cannot choose who approaches me |25. |I cannot show independence freely
+6. |I must wait for permission to act |26. |I must suppress my natural impulses
+7. |I am not allowed to follow my curiosity |27. |I cannot choose my safe spots
+8. |My instincts are restricted |28. |I fear losing room to run
+9. |I must suppress my need to roam |29. |I cannot protect my autonomy
+10. |I cannot choose when to rest or play |30. |I must adapt to unpredictable constraints
+11. |I fear being held back on a leash |31. |I cannot choose when to retreat
+12. |I cannot decide my boundaries |32. |I fear barriers that limit movement
+13. |I must ignore my desire to sniff or explore |33. |I cannot trust freedom to last
+14. |I am not free to express excitement |34. |I must behave to earn small freedoms
+15. |I fear losing access to outdoor spaces |35. |I cannot act spontaneously
+16. |I cannot choose my social interactions |36. |I must ignore discomfort when controlled
+17. |I must follow even when scared |37. |I fear losing choice during stress
+18. |My freedom is limited by rules |38. |My autonomy can be removed without warning
+19. |I cannot decide how far I can wander |39. |I must accept limitations silently
+20. |I fear sudden confinement |40. |Placeholder
+###TABLE_END###

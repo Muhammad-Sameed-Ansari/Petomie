@@ -119,11 +119,11 @@ class CategoryData {
         // Lazy load energy subcategories only when needed
       ),
       Category(
-        id: 'skeleton',
-        label: 'Skeleton',
-        icon: Icons.accessibility,
-        imagePath: 'assets/images/$animalId/skeleton.webp',
-        subcategories: getSkeletalSystemCategoriesForAnimal(animalId),
+        id: 'connective_tissue',
+        label: 'Connective Tissue',
+        icon: Icons.layers,
+        imagePath: 'assets/images/$animalId/connective_tissue.webp',
+        subcategories: getConnectiveTissueCategoriesForAnimal(animalId),
       ),
       Category(
         id: 'muscles',
@@ -131,13 +131,6 @@ class CategoryData {
         icon: Icons.fitness_center,
         imagePath: 'assets/images/$animalId/muscles.webp',
         subcategories: getMusclesCategoriesForAnimal(animalId),
-      ),
-      Category(
-        id: 'connective_tissue',
-        label: 'Connective Tissue',
-        icon: Icons.layers,
-        imagePath: 'assets/images/$animalId/connective_tissue.webp',
-        subcategories: getConnectiveTissueCategoriesForAnimal(animalId),
       ),
       Category(
         id: 'organs',
@@ -171,7 +164,7 @@ class CategoryData {
         id: 'holistic_remedies',
         label: 'Holistic Remedies',
         icon: Icons.visibility,
-        imagePath: 'assets/images/$animalId/holistic_remedies.webp',
+        imagePath: 'assets/images/holistic_remedies.webp',
         subcategories: getHolisticRemediesCategoriesForAnimal(animalId),
       ),
     ];

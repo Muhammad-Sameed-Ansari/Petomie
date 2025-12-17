@@ -1,0 +1,25 @@
+#Freedom & Autonomy#
+
+###TABLE_START###
+No. |SECTION 1 — (1–20) |No. |SECTION 2 — (21–40)
+1. |I am not free to choose my space |21. |I cannot choose my resting places freely
+2. |I cannot decide who enters my environment |22. |I must hide to keep freedom
+3. |My autonomy is disrupted by sudden changes |23. |I cannot trust others to respect boundaries
+4. |I fear being picked up without consent |24. |I fear loss of environmental control
+5. |I cannot choose when to be touched |25. |I cannot choose my sensory environment
+6. |I must retreat to feel free |26. |I must suppress my instinct to roam
+7. |I cannot express independence safely |27. |I cannot choose when to explore
+8. |My territory is not fully under my control |28. |I fear disruptions to my autonomy
+9. |I must tolerate unwanted interaction |29. |I cannot safely express independence
+10. |I fear losing safe hiding spots |30. |I must avoid dependence to stay free
+11. |I cannot choose my own routine |31. |I cannot select my environment
+12. |I must adapt to unpredictable environments |32. |I fear losing freedom during stress
+13. |I cannot decide when to come or go |33. |I cannot choose how much contact I receive
+14. |I fear confinement or blocked exits |34. |I must stay vigilant to preserve autonomy
+15. |I cannot choose my level of closeness |35. |I cannot determine my emotional space
+16. |I must control interactions to feel safe |36. |I fear forced interactions
+17. |I cannot express autonomy without judgment |37. |I cannot rely on consistency of my territory
+18. |I fear sudden restrictions |38. |My autonomy is constantly threatened
+19. |I cannot protect my personal space |39. |I must withdraw to stay sovereign
+20. |I must stay alert to maintain independence |40. |Placeholder
+###TABLE_END###

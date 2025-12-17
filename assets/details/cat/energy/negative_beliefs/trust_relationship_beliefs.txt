@@ -1,0 +1,25 @@
+#Trust & Relationship#
+
+###TABLE_START###
+No. |SECTION 1 — (1–20) |No. |SECTION 2 — (21–40)
+1. |I cannot trust humans easily |21. |I fear emotional closeness
+2. |I fear sudden touch |22. |Humans misread my signals
+3. |I must stay independent to feel safe |23. |I cannot trust my environment to stay stable
+4. |I cannot rely on others for comfort |24. |I fear intrusion
+5. |I am misunderstood when I express myself |25. |I must stay alert even with loved ones
+6. |I fear being restrained |26. |I fear dependence
+7. |I cannot trust people near my space |27. |I cannot trust routines to stay the same
+8. |I must observe before connecting |28. |I must hide to feel secure
+9. |I fear loud emotions |29. |I fear being misunderstood
+10. |I am only safe when distant |30. |I cannot rely on others for emotional stability
+11. |I cannot trust unpredictable behavior |31. |I must limit closeness to stay safe
+12. |I fear being mishandled |32. |I fear losing my safe space
+13. |I must hide pain to avoid danger |33. |I cannot trust sudden changes
+14. |I cannot rely on affection being consistent |34. |I must stay in control of interactions
+15. |I fear losing control |35. |I fear being overwhelmed
+16. |I cannot trust new animals |36. |I cannot trust easily after past experiences
+17. |I must protect my territory |37. |I must stay guarded even around trusted humans
+18. |I fear unfamiliar interactions |38. |I fear being seen when vulnerable
+19. |I cannot show vulnerability |39. |Relationship requires risks I struggle with
+20. |I must withdraw to stay safe |40. |Trust threatens my sense of safety
+###TABLE_END###

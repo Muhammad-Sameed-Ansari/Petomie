@@ -10,7 +10,7 @@ class ContentService {
   final Map<String, String> _contentCache = {};
   
   // Define shared folder mappings (parent category ID -> folder path)
-  // Note: meridians, chakras, and aura are now animal-specific, not shared
+  // Note: meridians, chakras, aura, negative_beliefs are now animal-specific, not shared
   static const Map<String, String> _sharedFolderMappings = {
     // Energy category folders (shared across all animals)
     'life_force': 'energy/life_force',
@@ -20,7 +20,6 @@ class ContentService {
     'sacred_symbols': 'energy/sacred_symbols',
     'states_of_harmony': 'energy/states_of_harmony',
     'energetic_influences': 'energy/energetic_influences',
-    'negative_beliefs': 'energy/negative_beliefs',
     'unresolved_emotions': 'energy/unresolved_emotions',
     
     // Holistic Remedies category folders (shared across all animals)
@@ -121,8 +120,6 @@ class ContentService {
           meridianType = 'extraordinary_meridian';
         } else if (breadcrumbs.contains('Primary Meridian')) {
           meridianType = 'primary_meridian';
-        } else if (breadcrumbs.contains('Energy Balance in the Body')) {
-          meridianType = 'energy_balance_in_the_body';
         }
         
         // Animal-specific meridian images (currently only horse has them)
@@ -249,6 +246,11 @@ class ContentService {
       return _buildAnimalSpecificMeridianPath(categoryId, breadcrumbs);
     }
     
+    // Check if this is a negative beliefs category (now animal-specific)
+    if (_isNegativeBeliefsCategory(breadcrumbs)) {
+      return _buildAnimalSpecificNegativeBeliefPath(categoryId, breadcrumbs);
+    }
+    
     // Determine the parent category from breadcrumbs to check if it's shared
     String? parentCategoryId = _getParentCategoryId(breadcrumbs);
     
@@ -348,8 +350,6 @@ class ContentService {
       meridianType = 'extraordinary_meridian';
     } else if (breadcrumbs.any((b) => b.toLowerCase().contains('primary'))) {
       meridianType = 'primary_meridian';
-    } else if (breadcrumbs.any((b) => b.toLowerCase().contains('energy balance'))) {
-      meridianType = 'energy_balance_in_the_body';
     }
     
     // Build path for animal-specific meridian
@@ -357,6 +357,30 @@ class ContentService {
     String finalPath = 'assets/details/$animalType/energy/meridians/$meridianType/$filename.txt';
     
     print('DEBUG: Using animal-specific meridian path: $finalPath');
+    return finalPath;
+  }
+  
+  /// Check if the breadcrumbs indicate a negative beliefs category
+  bool _isNegativeBeliefsCategory(List<String> breadcrumbs) {
+    return breadcrumbs.any((breadcrumb) => 
+      breadcrumb.toLowerCase() == 'negative beliefs'
+    );
+  }
+  
+  /// Build animal-specific negative beliefs path
+  String _buildAnimalSpecificNegativeBeliefPath(String categoryId, List<String> breadcrumbs) {
+    if (breadcrumbs.isEmpty) {
+      return 'assets/details/$categoryId.txt';
+    }
+    
+    // Get animal type (first breadcrumb)
+    String animalType = breadcrumbs[0].toLowerCase();
+    
+    // Build path for animal-specific negative beliefs
+    String filename = _processFilename(categoryId);
+    String finalPath = 'assets/details/$animalType/energy/negative_beliefs/$filename.txt';
+    
+    print('DEBUG: Using animal-specific negative beliefs path: $finalPath');
     return finalPath;
   }
   

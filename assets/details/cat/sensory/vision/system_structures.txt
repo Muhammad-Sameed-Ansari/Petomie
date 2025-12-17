@@ -1,34 +1,55 @@
 #System Structures#
 
-The cat’s integumentary system includes the skin, fur, and underlying connective tissues forming the body’s outer protection.  
-It maintains internal balance, supports thermoregulation, and provides sensory feedback.  
-Energetically, it represents **protection, identity, and expression** — the sacred boundary between inner and outer worlds.
+The cat’s visual system structures detect light, process visual input, and transmit signals to the brain.
+They are highly specialized for low-light vision, motion detection, and precision.
+Energetically, they represent perception, intuition, interpretation, and focused awareness.
 
 ###Parts###
 
-##Skin##  
-Composed of epidermis, dermis, and subcutaneous layers.  
-Provides protection, sensation, and temperature regulation.  
-Energetically, symbolizes **boundaries, resilience, and emotional defense**.
+##Retina##
+The light-sensitive layer at the back of the eye containing photoreceptors.
+Converts light into neural signals.
+Energetically, represents perception and awareness.
 
-##Fur##  
-Soft and dense covering that regulates temperature and enhances tactile sensitivity.  
-Energetically, represents **comfort, intuition, and energetic insulation**.
+##Rods##
+Photoreceptors specialized for low-light and motion detection.
+Highly developed in cats.
+Energetically, symbolize intuition, sensitivity, and awareness in darkness.
 
-##Connective Tissue##  
-Binds skin to underlying muscles and organs.  
-Energetically, reflects **unity, strength, and flexibility**.
+##Cones##
+Photoreceptors responsible for color and fine detail.
+Cats primarily perceive blue and green hues.
+Energetically, represent discernment and clarity.
 
-##Blood Vessels and Nerves##  
-Supply nourishment and sensory information.  
-Energetically, they embody **communication and life flow**.
+##Optic Disc##
+The point where the optic nerve exits the retina.
+Energetically, symbolizes transition and integration of perception.
 
-###Function###  
-The system structures maintain physical protection, regulate body temperature, and support sensory awareness.  
-They act as the interface between the cat and its environment.  
-Energetically, they balance **vulnerability and strength**, allowing authentic interaction.
+##Optic Nerve##
+Carries visual information from the eye to the brain.
+Energetically, represents communication and trust.
 
-###Common Imbalances###  
-Dry or irritated skin: dehydration or emotional sensitivity.  
-Shedding issues: stress or energetic release cycles.  
-Energetically, imbalance may reflect **lack of boundaries or overexposure**.
+##Optic Chiasm##
+Crossing of optic nerve fibers allowing coordination between both eyes.
+Energetically, reflects balance and integration.
+
+##Optic Tract##
+Transmits visual signals toward the brain.
+Energetically, symbolizes direction and continuity.
+
+##Lateral Geniculate Nucleus##
+Processes visual signals in the thalamus before reaching the cortex.
+Energetically, represents filtering and interpretation.
+
+##Visual Cortex##
+Located in the occipital lobe of the brain.
+Interprets visual information into meaningful images.
+Energetically, symbolizes understanding, awareness, and insight.
+
+###Function###
+Receive light, convert it into neural signals, process motion and detail, and interpret the environment accurately.
+Energetically, these structures support intuition, orientation, precision, and confident navigation.
+
+###Common Imbalances###
+Vision impairment, night vision issues, neurological visual disturbances.
+Energetically, imbalance may reflect confusion, fear, or difficulty interpreting visual input.

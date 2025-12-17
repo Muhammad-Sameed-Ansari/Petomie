@@ -375,6 +375,7 @@ class GlandsCategories {
         id: 'scent_protective',
         label: 'Scent & Protective',
         icon: Icons.pets,
+        imagePath: 'assets/images/glands/scent_protective_horse.webp',
         subcategories: [
           Category(
             id: 'protective',
@@ -418,18 +419,6 @@ class GlandsCategories {
             label: 'Scent',
             icon: Icons.pets,
             subcategories: [
-              Category(
-                id: 'anal_glands',
-                label: 'Anal Glands',
-                icon: Icons.circle,
-                imagePath: 'assets/details/horse/glands/scent_protective/scent/anal_glands.txt',
-              ),
-              Category(
-                id: 'anal_sacs',
-                label: 'Anal Sacs',
-                icon: Icons.circle_outlined,
-                imagePath: 'assets/details/horse/glands/scent_protective/scent/anal_sacs.txt',
-              ),
               Category(
                 id: 'sebaceous_glands',
                 label: 'Sebaceous Glands',

@@ -1,0 +1,24 @@
+#Safety & Survival#
+
+###TABLE_START###
+No. |SECTION 1 — (1–19) |No. |SECTION 2 — (20–38)
+1. |I am not safe |20. |I must always be alert
+2. |I cannot protect myself |21. |I cannot trust my environment
+3. |Danger can appear at any moment |22. |I might be harmed if I relax
+4. |I must stay tense to feel safe |23. |My home is unpredictable
+5. |I must hide my fear |24. |I am only safe when controlled
+6. |My body is at risk |25. |I must obey to avoid danger
+7. |I cannot rely on my instincts |26. |My signals are not understood
+8. |I have no control |27. |If I rest, I will miss a threat
+9. |I must not show weakness |28. |I must tolerate discomfort to stay safe
+10. |I am always in danger |29. |I am safer alone than with others
+11. |Others may attack me |30. |I cannot stop threats
+12. |I must avoid being noticed |31. |I am not strong enough to defend myself
+13. |I am powerless |32. |My boundaries are ignored
+14. |I must endure whatever happens |33. |I cannot protect what matters
+15. |It is unsafe to express emotions |34. |I must anticipate every danger
+16. |Pain is unavoidable |35. |Something bad will happen if I let go
+17. |I am fragile |36. |I must silence myself to survive
+18. |My safety depends on others |37. |I cannot read true safety signals
+19. |I must be ready to run |38. |Safety is not available to me
+###TABLE_END###

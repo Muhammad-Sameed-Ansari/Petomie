@@ -1,0 +1,25 @@
+#Trust & Relationship#
+
+###TABLE_START###
+No. |SECTION 1 — (1–20) |No. |SECTION 2 — (21–40)
+1. |I cannot trust humans to keep me safe |21. |I fear disapproval
+2. |I fear being left alone |22. |Connection feels unpredictable
+3. |I must please others to deserve love |23. |I cannot trust my environment socially
+4. |I cannot rely on people to return |24. |I must monitor everyone to stay safe
+5. |I am unworthy of affection |25. |I fear affection being taken away
+6. |I fear punishment for expressing myself |26. |I cannot trust changes in routine
+7. |I am unsure of my place in the family |27. |I must stay close or be forgotten
+8. |New people are dangerous |28. |I fear rejection from my pack
+9. |I cannot trust others with my needs |29. |I cannot communicate my needs safely
+10. |I fear losing my human |30. |I must earn every bit of love
+11. |I must hide fear to avoid trouble |31. |I fear loss more than connection
+12. |I am only loved when behaving perfectly |32. |I cannot trust myself to behave right
+13. |I cannot trust sudden movements |33. |Relationships require perfection from me
+14. |I fear being replaced |34. |I must hide discomfort to keep peace
+15. |I do not deserve comfort |35. |I fear confusing signals from humans
+16. |I cannot rely on my human during stress |36. |I cannot rely on promises of safety
+17. |I must anticipate danger in relationships |37. |I must guard myself emotionally
+18. |I fear being misunderstood |38. |I fear disappointing those I love
+19. |I cannot show vulnerability |39. |Trust makes me unsafe
+20. |I must follow to be accepted |40. |Missing belief filler 40
+###TABLE_END###

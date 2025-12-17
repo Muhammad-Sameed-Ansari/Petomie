@@ -1,31 +1,57 @@
 #System Structures#
 
-The system structures of the dog’s hearing and balance network connect the ear with the brain, muscles, and nervous system.  
-They integrate vibration, movement, and awareness into unified perception.  
-Energetically, they represent **connection, harmony, and synchronization**.
+The dog’s visual system structures are responsible for detecting light, processing visual information, and transmitting signals to the brain.
+They enable sight, motion detection, depth perception, and environmental awareness.
+Energetically, they represent perception, insight, interpretation, and how the dog understands and navigates the world.
 
 ###Parts###
 
-##Auditory Nerve##  
-Carries sound information to the brain.  
-Energetically, symbolizes **clarity in communication and understanding**.
+##Retina##
+The light-sensitive layer at the back of the eye containing photoreceptors.
+Converts light into neural signals.
+Energetically, represents perception, awareness, and how reality is received.
 
-##Vestibulocochlear Pathways##  
-Transmit balance and sound data simultaneously.  
-Energetically, represent **integration and unity of perception**.
+##Rods##
+Photoreceptor cells specialized for low-light and motion detection.
+Highly developed in dogs for night vision.
+Energetically, symbolize sensitivity, intuition, and awareness in darkness or uncertainty.
 
-##Cerebellum and Brainstem##  
-Process coordination and response to sound and motion.  
-Energetically, embody **awareness through rhythm and alignment**.
+##Cones##
+Photoreceptor cells responsible for color vision and detail.
+Dogs primarily perceive blue and yellow hues.
+Energetically, represent discernment, clarity, and focused perception.
 
-##Muscular Response System##  
-Links sensory input with movement and posture.  
-Energetically, reflects **adaptation and alignment** between awareness and action.
+##Optic Disc##
+The point where the optic nerve exits the retina.
+No photoreceptors are present.
+Energetically, symbolizes transition and integration of perception.
 
-###Function###  
-Integrate auditory and balance signals to maintain posture, movement, and awareness.  
-Energetically, they harmonize **perception with motion**, ensuring stability and clarity in all experiences.
+##Optic Nerve##
+Transmits visual information from the retina to the brain.
+Energetically, represents communication, trust, and information flow.
 
-###Common Imbalances###  
-Disorientation, poor coordination, or delayed response.  
-Energetically, imbalance may manifest as **confusion, lack of grounding, or disrupted flow of awareness**.
+##Optic Chiasm##
+The crossing point of optic nerve fibers.
+Allows coordination between both eyes.
+Energetically, reflects balance, integration, and coordination.
+
+##Optic Tract##
+Carries visual signals from the optic chiasm to the brain.
+Energetically, symbolizes direction and continuity of perception.
+
+##Lateral Geniculate Nucleus##
+Processes visual signals within the thalamus before reaching the cortex.
+Energetically, represents filtering, prioritization, and interpretation.
+
+##Visual Cortex##
+Located in the occipital lobe of the brain.
+Interprets visual information into meaningful images.
+Energetically, symbolizes understanding, meaning-making, and conscious awareness.
+
+###Function###
+Receive light, convert it into neural signals, transmit visual information, and interpret the environment accurately.
+Energetically, these structures support insight, awareness, orientation, and confident interaction with surroundings.
+
+###Common Imbalances###
+Vision loss, reduced night vision, neurological vision issues, or processing difficulties.
+Energetically, imbalance may reflect confusion, fear of perception, disorientation, or difficulty interpreting experiences.

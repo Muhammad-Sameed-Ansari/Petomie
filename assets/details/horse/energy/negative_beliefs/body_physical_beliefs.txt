@@ -1,0 +1,24 @@
+#Body & Physical#
+
+###TABLE_START###
+No. |SECTION 1 — (1–19) |No. |SECTION 2 — (20–38)
+1. |My body is weak |20. |My body will fail me
+2. |I cannot rely on my physical strength |21. |My body is unpredictable
+3. |I am physically fragile |22. |Movement is unsafe
+4. |I cannot recover from strain |23. |I must restrict my movements
+5. |Pain is unavoidable |24. |My physical needs are a burden
+6. |My body limits me |25. |I cannot express physical discomfort
+7. |I cannot trust my sensations |26. |I am not allowed to rest
+8. |My body betrays me |27. |If I show pain, I will be punished
+9. |I am physically powerless |28. |My body does not matter
+10. |I cannot handle pressure |29. |I must ignore my body signals
+11. |My posture/movement is wrong |30. |I must hide physical weakness
+12. |I cannot maintain balance |31. |I cannot stay physically grounded
+13. |I am too slow |32. |My physical needs are unimportant
+14. |I must endure physical discomfort |33. |I am not strong enough to cope
+15. |My body is unsafe to trust |34. |I cannot relax my body
+16. |My physical reactions are wrong |35. |I must push past physical limits
+17. |I am physically inadequate |36. |My body is a source of danger
+18. |I cannot control my body |37. |My physical state is always at risk
+19. |My body is not functioning correctly |38. |My physical form is not meant to thrive
+###TABLE_END###

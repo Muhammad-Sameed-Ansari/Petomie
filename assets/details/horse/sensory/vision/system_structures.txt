@@ -1,34 +1,55 @@
 #System Structures#
 
-The horse’s system structures form the framework connecting all organs, tissues, and energetic centers.  
-They coordinate the body’s physical and energetic flow, maintaining harmony between movement, function, and awareness.  
-Energetically, they represent unity, integration, and communication — the orchestra of life within the horse.
+The horse’s visual system structures detect light, process visual information, and transmit signals to the brain.
+They support panoramic vision, motion detection, and environmental awareness.
+Energetically, they represent perception, instinct, interpretation, and survival intelligence.
 
 ###Parts###
 
-##Skeletal Framework##  
-Provides structure, stability, and alignment.  
-Energetically, it symbolizes foundation and purpose.
+##Retina##
+The light-sensitive layer at the back of the eye.
+Converts light into neural signals.
+Energetically, represents perception and awareness.
 
-##Muscular and Fascial Networks##  
-Create motion and transmit energy throughout the body.  
-Energetically, they reflect flow, adaptability, and strength in connection.
+##Rods##
+Photoreceptors specialized for low-light and motion detection.
+Highly developed in horses.
+Energetically, symbolize sensitivity and instinct.
 
-##Circulatory and Lymphatic Systems##  
-Deliver nutrients, remove waste, and maintain vitality.  
-Energetically, they represent balance and renewal through movement.
+##Cones##
+Photoreceptors responsible for color and detail.
+Horses primarily perceive blue and yellow hues.
+Energetically, represent discernment and clarity.
 
-##Energetic Pathways (Meridians, Chakras, Fields)##  
-Link physical structures with emotional and spiritual flow.  
-Energetically, they embody communication, healing, and connection to life force.
+##Optic Disc##
+The exit point of the optic nerve from the retina.
+Energetically, symbolizes transition and integration.
 
-###Function###  
-System structures integrate all body functions, ensuring smooth communication between organs and energies.  
-They maintain balance between stability and movement, grounding and flow.  
-Energetically, they unify body, mind, and spirit, creating inner harmony and resilience.
+##Optic Nerve##
+Transmits visual information from the eye to the brain.
+Energetically, represents communication and trust.
 
-###Common Imbalances###  
-Fatigue: disrupted energy communication.  
-Muscle tension: blocked flow or imbalance.  
-Poor circulation: stagnation or weakness.  
-Energetically, imbalance may reflect disconnection between systems or disharmony between physical and energetic layers.
+##Optic Chiasm##
+Crossing of optic nerve fibers allowing coordination between both eyes.
+Energetically, reflects balance and integration.
+
+##Optic Tract##
+Carries visual signals toward the brain.
+Energetically, symbolizes direction and continuity.
+
+##Lateral Geniculate Nucleus##
+Processes visual signals within the thalamus.
+Energetically, represents filtering and interpretation.
+
+##Visual Cortex##
+Located in the occipital lobe.
+Interprets visual information into meaning.
+Energetically, symbolizes understanding and awareness.
+
+###Function###
+Receive light, convert it into neural signals, process motion and space, and interpret the environment.
+Energetically, these structures support orientation, instinctual safety, and confident movement.
+
+###Common Imbalances###
+Vision impairment, night vision issues, neurological visual disturbances.
+Energetically, imbalance may reflect disorientation, fear responses, or difficulty interpreting surroundings.

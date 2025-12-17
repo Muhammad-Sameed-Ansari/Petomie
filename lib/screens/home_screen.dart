@@ -198,7 +198,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   PageRouteBuilder(
                     pageBuilder: (context, animation, secondaryAnimation) => CategoryScreen(
                       categories: categoryWithSubcategories?.subcategories ?? [],
-                      title: '${category.label} Anatomy',
+                      // title: '${category.label} Anatomy',
+                      title: 'Petomie',
                       breadcrumbs: [category.label],
                     ),
                     transitionsBuilder: (context, animation, secondaryAnimation, child) {

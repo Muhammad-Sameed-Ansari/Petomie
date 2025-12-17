@@ -1,0 +1,24 @@
+#Safety & Survival#
+
+###TABLE_START###
+No. |SECTION 1 — (1–19) |No. |SECTION 2 — (20–38)
+1. |I am not safe |20. |I must stay alert for predators
+2. |I cannot trust my surroundings |21. |Every movement could be danger
+3. |I am vulnerable in open spaces |22. |If I relax, I may not escape
+4. |I must hide to survive |23. |My perch is not secure
+5. |I must silence my fear |24. |I am only safe when controlled
+6. |My wings/body are at risk |25. |I must obey to avoid harm
+7. |I cannot rely on my instincts |26. |My calls or signals won’t be understood
+8. |I have no control |27. |If I stop watching, danger will come
+9. |I must stay unnoticed |28. |I am safer alone than with others
+10. |I am always in danger |29. |I cannot stop threats
+11. |Others may attack me |30. |I am not strong enough to defend myself
+12. |I must avoid sudden movement |31. |My boundaries are ignored
+13. |I am powerless |32. |I cannot protect my flock or space
+14. |I must endure discomfort |33. |I must anticipate every threat
+15. |It is unsafe to express distress |34. |If I rest, harm may come
+16. |Pain is unavoidable |35. |Something bad will happen if I stop scanning
+17. |I am fragile |36. |I must silence myself to stay hidden
+18. |My safety depends on my vigilance |37. |I cannot read real safety cues
+19. |I must be ready to fly away |38. |Safety is not meant for me
+###TABLE_END###

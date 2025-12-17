@@ -1,0 +1,24 @@
+#Safety & Survival#
+
+###TABLE_START###
+No. |SECTION 1 — (1–19) |No. |SECTION 2 — (20–38)
+1. |I am not safe |20. |I must stay hyper‑aware
+2. |I cannot trust unfamiliar spaces |21. |Every sound could be danger
+3. |Others may harm me |22. |If I relax, I will be attacked
+4. |I must hide to stay safe |23. |My territory is not secure
+5. |I must suppress my fear |24. |I am only safe when in control
+6. |My body is vulnerable |25. |I must avoid conflict at all costs
+7. |I cannot rely on my instincts |26. |Showing weakness is dangerous
+8. |I have no escape |27. |I must endure discomfort to avoid threats
+9. |I must not draw attention |28. |I am safer alone than with others
+10. |I am always at risk |29. |I cannot stop danger from coming
+11. |Others cannot be trusted |30. |I am not strong enough to protect myself
+12. |I must appear confident to survive |31. |My boundaries will be ignored
+13. |I am powerless |32. |I cannot protect what matters
+14. |I must be silent to stay safe |33. |I must anticipate every threat
+15. |It is unsafe to express fear |34. |If I rest, harm may come
+16. |Pain is unavoidable |35. |Something bad will happen if I let go
+17. |I am fragile |36. |I must hide my true feelings to survive
+18. |My survival depends on caution |37. |I cannot read true safety signals
+19. |I must be ready to flee |38. |Safety is not meant for me
+###TABLE_END###

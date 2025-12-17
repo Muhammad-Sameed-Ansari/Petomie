@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../category.dart';
+import 'skeletal_categories.dart';
 
 class ConnectiveTissueCategories {
   /// Get connective tissue categories for a specific animal
@@ -7,6 +8,13 @@ class ConnectiveTissueCategories {
     // Horse, dog, and cat have the same connective tissue categories
     if (animalId == 'horse' || animalId == 'dog' || animalId == 'cat') {
       return [
+        Category(
+          id: 'skeleton',
+          label: 'Skeleton',
+          icon: Icons.accessibility,
+          imagePath: 'assets/images/$animalId/skeleton.webp',
+          subcategories: SkeletalCategories.getSkeletalSystemCategoriesForAnimal(animalId),
+        ),
         Category(
           id: 'adipose_tissue',
           label: 'Adipose Tissue',
@@ -55,6 +63,13 @@ class ConnectiveTissueCategories {
     // Bird has different connective tissue types
     if (animalId == 'bird') {
       return [
+        Category(
+          id: 'skeleton',
+          label: 'Skeleton',
+          icon: Icons.accessibility,
+          imagePath: 'assets/images/$animalId/skeleton.webp',
+          subcategories: SkeletalCategories.getSkeletalSystemCategoriesForAnimal(animalId),
+        ),
         Category(
           id: 'aponeuroses',
           label: 'Aponeuroses',

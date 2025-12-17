@@ -1,0 +1,25 @@
+#Trust & Relationship#
+
+###TABLE_START###
+No. |SECTION 1 — (1–20) |No. |SECTION 2 — (21–40)
+1. |I cannot trust hands reaching toward me |21. |I must stay alert even with familiar people
+2. |I fear sudden movement |22. |I fear unfamiliar birds or animals
+3. |I must stay vigilant to survive |23. |I cannot trust when boundaries shift
+4. |I cannot rely on humans near my cage |24. |I fear my needs going unnoticed
+5. |I fear losing freedom when bonding |25. |I must hide weakness
+6. |I must keep distance to feel safe |26. |I fear being confined
+7. |I cannot trust loud voices |27. |I cannot trust changes in my routine
+8. |I fear being grabbed or held |28. |I fear loud or sudden noises
+9. |I cannot rely on routine staying stable |29. |I must mask fear to avoid stress
+10. |I fear being alone |30. |I fear unpredictable affection
+11. |I must hide stress to stay safe |31. |I cannot rely on others for emotional safety
+12. |I cannot trust new environments |32. |I fear being mishandled
+13. |I fear losing my flock or person |33. |I must protect myself from instability
+14. |I must stay high or hidden to feel secure |34. |I fear losing my perch
+15. |I fear unpredictable touch |35. |I cannot trust chaotic environments
+16. |I cannot trust humans with my space |36. |I fear new objects or changes
+17. |I must watch everything to stay safe |37. |I must stay cautious in relationships
+18. |I fear falling or instability |38. |I fear vulnerability
+19. |I cannot rely on humans for safety |39. |I cannot trust my environment fully
+20. |I fear being ignored or forgotten |40. |Connection threatens my safety
+###TABLE_END###

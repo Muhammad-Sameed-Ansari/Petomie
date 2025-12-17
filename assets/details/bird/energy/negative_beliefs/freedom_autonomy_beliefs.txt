@@ -1,0 +1,25 @@
+#Freedom & Autonomy#
+
+###TABLE_START###
+No. |SECTION 1 — (1–20) |No. |SECTION 2 — (21–40)
+1. |I am not free to fly where I choose |21. |I must endure limitation without warning
+2. |I cannot decide when to leave my perch |22. |I cannot choose my viewing or sensory field
+3. |My freedom depends on cage doors and hands |23. |I fear losing altitude freedom
+4. |I fear confinement restricting my wings |24. |I cannot trust my environment to stay open
+5. |I cannot choose my altitude or distance |25. |I must hide fear when restricted
+6. |I must wait for humans to allow movement |26. |I cannot choose vocal expression freely
+7. |I cannot decide when to explore |27. |I fear being confined long term
+8. |My instincts for flight are limited |28. |I cannot select safe distances
+9. |I must suppress my need to roam |29. |I must adapt to unpredictable cages
+10. |I cannot choose when to retreat to safety |30. |I cannot choose how to navigate my space
+11. |I fear unpredictable restriction of movement |31. |I fear unpredictable human interference
+12. |I cannot trust new spaces to be safe |32. |I cannot fully express my instincts
+13. |I must stay where I am placed |33. |I must stay alert under restriction
+14. |I cannot choose where to perch freely |34. |I cannot choose when to glide or fly
+15. |I fear losing my ability to fly |35. |I fear losing access to open air
+16. |I cannot decide when to express energy |36. |I cannot select my comfort perch
+17. |I must remain still when expected |37. |I must endure forced stillness
+18. |I cannot pick my companions or flock |38. |I cannot rely on consistent freedom
+19. |I fear sudden closing of space |39. |My autonomy disappears without warning
+20. |I cannot choose my escape routes |40. |Placeholder
+###TABLE_END###

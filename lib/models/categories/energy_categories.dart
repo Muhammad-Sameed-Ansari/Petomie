@@ -833,6 +833,18 @@ class EnergyCategories {
           icon: Icons.flight,
           imagePath: 'assets/images/energy/negative_beliefs/freedom_autonomy_beliefs.webp',
         ),
+        Category(
+          id: 'control_obedience_beliefs',
+          label: 'Control & Obedience Beliefs',
+          icon: Icons.control_camera,
+          imagePath: 'assets/images/energy/negative_beliefs/control_obedience_beliefs.webp',
+        ),
+        Category(
+          id: 'responsibility_obligation_beliefs',
+          label: 'Responsibility & Obligation Beliefs',
+          icon: Icons.assignment,
+          imagePath: 'assets/images/energy/negative_beliefs/responsibility_obligation_beliefs.webp',
+        ),
       ];
     }
 
