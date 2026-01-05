@@ -1,13 +1,11 @@
-#Emotion Chart#
 
-###TABLE_START###
-No. | Category | Emotions (1–10)
-1. |Fear / Anxiety |1. Fear\n2. Worry\n3. Apprehension\n4. Nervousness\n5. Panic\n6. Unease\n7. Dread\n8. Insecurity\n9. Restlessness\n10. Overwhelm
-2. |Sadness / Grief |1. Sorrow\n2. Loneliness\n3. Heartache\n4. Hopelessness\n5. Mourning\n6. Despair\n7. Abandonment\n8. Emptiness\n9. Melancholy\n10. Regret
-3. |Anger / Frustration |1. Rage\n2. Resentment\n3. Bitterness\n4. Irritation\n5. Frustration\n6. Jealousy\n7. Envy\n8. Contempt\n9. Hatred\n10. Agitation
-4. |Shame / Guilt |1. Shame\n2. Embarrassment\n3. Humiliation\n4. Disgrace\n5. Self-blame\n6. Regretfulness\n7. Remorse\n8. Guilt\n9. Worthlessness\n10. Inadequacy
-5. |Stress / Pressure |1. Tension\n2. Pressure\n3. Restlessness\n4. Exhaustion\n5. Hyper-vigilance\n6. Stuckness\n7. Over-responsibility\n8. Duty-bound\n9. Strain\n10. Fatigue
-6. |Relationship Wounds |1. Betrayal\n2. Distrust\n3. Isolation\n4. Neglect\n5. Rejection\n6. Disconnection\n7. Abandonment (deep)\n8. Loneliness (persistent)\n9. Criticism (internalized)\n10. Comparison
-7. |Self-Image / Identity |1. Low self-esteem\n2. Doubt\n3. Hopeless striving\n4. Invisibility\n5. Failure\n6. Self-criticism\n7. Perfectionism\n8. Helplessness\n9. Powerlessness\n10. Alienation
-8. |Spiritual / Existential |1. Meaninglessness\n2. Disorientation\n3. Disconnection from source\n4. Isolation from life purpose\n5. Emptiness (spiritual)\n6. Hopelessness about future\n7. Doubt of self-worth\n8. Lack of belonging\n9. Desperation\n10. Void
-###TABLE_END###
+1. Fear
+2. Worry
+3. Apprehension
+4. Nervousness
+5. Panic
+6. Unease
+7. Dread
+8. Insecurity
+9. Restlessness
+10. Overwhelm

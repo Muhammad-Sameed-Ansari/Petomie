@@ -24,55 +24,117 @@ class HolisticRemediesCategories {
     // Define Australian Bush Flowers subcategories
     List<Category> australianBushFlowersSubcategories = [];
 
+    // Define Essential Oils subcategories (shared across all animals)
+    List<Category> essentialOilsSubcategories = [
+      Category(
+        id: 'calming_and_sleep_essential_oils',
+        label: 'Calming and Sleep',
+        icon: Icons.spa,
+        imagePath: 'assets/images/holistic_remedies/essential_oils.webp',
+      ),
+      Category(
+        id: 'focus_and_behaviour_essential_oils',
+        label: 'Focus and Behaviour',
+        icon: Icons.spa,
+        imagePath: 'assets/images/holistic_remedies/essential_oils.webp',
+      ),
+      Category(
+        id: 'grounding_and_safety_essential_oils',
+        label: 'Grounding and Safety',
+        icon: Icons.spa,
+        imagePath: 'assets/images/holistic_remedies/essential_oils.webp',
+      ),
+      Category(
+        id: 'heart_and_connection_essential_oils',
+        label: 'Heart and Connection',
+        icon: Icons.spa,
+        imagePath: 'assets/images/holistic_remedies/essential_oils.webp',
+      ),
+      Category(
+        id: 'physical_support_essential_oils',
+        label: 'Physical Support',
+        icon: Icons.spa,
+        imagePath: 'assets/images/holistic_remedies/essential_oils.webp',
+      ),
+      Category(
+        id: 'trauma_release_essential_oils',
+        label: 'Trauma Release',
+        icon: Icons.spa,
+        imagePath: 'assets/images/holistic_remedies/essential_oils.webp',
+      ),
+    ];
+
     // Define Homeopathy subcategories (shared across all animals)
     List<Category> homeopathySubcategories = [
       Category(
         id: 'chronic',
         label: 'Chronic',
         icon: Icons.healing,
-        imagePath: 'assets/images/holistic_remedies/homeopathy/chronic.webp',
+        imagePath: 'assets/images/holistic_remedies/homeopathy.webp',
       ),
       Category(
         id: 'digestive',
         label: 'Digestive',
         icon: Icons.healing,
-        imagePath: 'assets/images/holistic_remedies/homeopathy/digestive.webp',
+        imagePath: 'assets/images/holistic_remedies/homeopathy.webp',
       ),
       Category(
         id: 'emotional',
         label: 'Emotional',
         icon: Icons.healing,
-        imagePath: 'assets/images/holistic_remedies/homeopathy/emotional.webp',
+        imagePath: 'assets/images/holistic_remedies/homeopathy.webp',
       ),
       Category(
         id: 'immune',
         label: 'Immune',
         icon: Icons.healing,
-        imagePath: 'assets/images/holistic_remedies/homeopathy/immune.webp',
+        imagePath: 'assets/images/holistic_remedies/homeopathy.webp',
       ),
       Category(
         id: 'inflammation',
         label: 'Inflammation',
         icon: Icons.healing,
-        imagePath: 'assets/images/holistic_remedies/homeopathy/inflammation.webp',
+        imagePath: 'assets/images/holistic_remedies/homeopathy.webp',
       ),
       Category(
         id: 'pain',
         label: 'Pain',
         icon: Icons.healing,
-        imagePath: 'assets/images/holistic_remedies/homeopathy/pain.webp',
+        imagePath: 'assets/images/holistic_remedies/homeopathy.webp',
       ),
       Category(
         id: 'respiratory',
         label: 'Respiratory',
         icon: Icons.healing,
-        imagePath: 'assets/images/holistic_remedies/homeopathy/respiratory.webp',
+        imagePath: 'assets/images/holistic_remedies/homeopathy.webp',
       ),
       Category(
         id: 'trauma',
         label: 'Trauma',
         icon: Icons.healing,
-        imagePath: 'assets/images/holistic_remedies/homeopathy/trauma.webp',
+        imagePath: 'assets/images/holistic_remedies/homeopathy.webp',
+      ),
+    ];
+
+    // Define Supplements & Herbs subcategories (shared across all animals)
+    List<Category> supplementsHerbsSubcategories = [
+      Category(
+        id: 'common_supplements',
+        label: 'Common Supplements',
+        icon: Icons.medical_services,
+        imagePath: 'assets/images/holistic_remedies/supplements_herbs.webp',
+      ),
+      Category(
+        id: 'core_supplements',
+        label: 'Core Supplements',
+        icon: Icons.medical_services,
+        imagePath: 'assets/images/holistic_remedies/supplements_herbs.webp',
+      ),
+      Category(
+        id: 'supplements_TCM',
+        label: 'Supplements TCM',
+        icon: Icons.medical_services,
+        imagePath: 'assets/images/holistic_remedies/supplements_herbs.webp',
       ),
     ];
 
@@ -1615,10 +1677,25 @@ class HolisticRemediesCategories {
         subcategories: australianBushFlowersSubcategories,
       ),
       Category(
+        id: 'essential_oils',
+        label: 'Essential Oils',
+        icon: Icons.spa,
+        imagePath: 'assets/images/holistic_remedies/essential_oils.webp',
+        subcategories: essentialOilsSubcategories,
+      ),
+      Category(
         id: 'homeopathy',
         label: 'Homeopathy',
         icon: Icons.healing,
+        imagePath: 'assets/images/holistic_remedies/homeopathy.webp',
         subcategories: homeopathySubcategories,
+      ),
+      Category(
+        id: 'supplements_herbs',
+        label: 'Supplements & Herbs',
+        icon: Icons.medical_services,
+        imagePath: 'assets/images/holistic_remedies/supplements_herbs.webp',
+        subcategories: supplementsHerbsSubcategories,
       ),
     ];
     

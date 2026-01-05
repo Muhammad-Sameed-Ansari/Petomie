@@ -1,0 +1,48 @@
+#Role Distortions#
+
+Role distortions arise when fixed roles form within the relationship field.
+These roles shape interaction patterns and limit flexibility within the bond.
+
+###Role Distortions###
+
+##Upper##
+###TABLE_START###
+No. |SET 1 |SET 2
+1. |I am the protector |You are the vulnerable one
+2. |I am responsible |You depend on me
+3. |I must lead |You must follow
+4. |I am the strong one |You are fragile
+5. |I must take control |You cannot cope
+6. |I manage everything |I carry the role
+7. |I cannot step back |This is my job
+8. |I must stay in role |I cannot change
+9. |I hold the structure |The bond depends on me
+10. |I must perform |The role defines me
+###TABLE_END###
+
+##Lower##
+###TABLE_START###
+No. |SET 1 |SET 2
+1. |I feel trapped |I cannot be myself
+2. |I feel pressure |The role exhausts me
+3. |I feel restricted |I cannot shift
+4. |I feel unseen |Only the role is seen
+5. |I feel overburdened |I carry too much
+6. |I feel boxed in |No flexibility
+7. |I feel powerless |The role limits me
+8. |I feel misunderstood |The role hides me
+9. |I feel stuck |I cannot change
+10. |I feel defined |The bond controls me
+###TABLE_END###
+
+###Testing Guidance###
+Focus on the relationship field rather than on one individual alone.
+Sense which roles are active in the shared space.
+
+Use intuition alongside testing.
+Notice impulses to control, rescue, submit, or perform when sensing the bond.
+
+##Test for##
+whether roles are mutual or one-sided
+whether roles can soften or reorganize now
+Sometimes no specific testing is needed

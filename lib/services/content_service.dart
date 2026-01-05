@@ -21,6 +21,18 @@ class ContentService {
     'states_of_harmony': 'energy/states_of_harmony',
     'energetic_influences': 'energy/energetic_influences',
     'unresolved_emotions': 'energy/unresolved_emotions',
+    'core_imprints': 'energy/core_imprints',
+    'energy_attachments': 'energy/energy_attachments',
+    'entities_spirits': 'energy/entities_spirits',
+    'positive_integration': 'energy/positive_integration',
+    'post_traumatic': 'energy/post_traumatic',
+    'relationship_field': 'energy/relationship_field',
+    'internal': 'energy/relationship_field/internal',
+    'external': 'energy/relationship_field/external',
+    'statements': 'energy/statements',
+    'contracts_vows': 'energy',
+    'energetic_pathways': 'energy',
+    'portals_energy_gateways': 'energy',
     
     // Holistic Remedies category folders (shared across all animals)
     'holistic_remedies': 'holistic_remedies',
@@ -42,6 +54,13 @@ class ContentService {
     'pain': 'holistic_remedies/homeopathy',
     'respiratory': 'holistic_remedies/homeopathy',
     'trauma': 'holistic_remedies/homeopathy',
+    'essential_oils': 'holistic_remedies/essential_oils',
+    'calming_and_sleep_essential_oils': 'holistic_remedies/essential_oils',
+    'focus_and_behaviour_essential_oils': 'holistic_remedies/essential_oils',
+    'grounding_and_safety_essential_oils': 'holistic_remedies/essential_oils',
+    'heart_and_connection_essential_oils': 'holistic_remedies/essential_oils',
+    'physical_support_essential_oils': 'holistic_remedies/essential_oils',
+    'trauma_release_essential_oils': 'holistic_remedies/essential_oils',
     'despondency_and_despair': 'holistic_remedies/bach_flowers/despondency_and_despair',
     'fear': 'holistic_remedies/bach_flowers/fear',
     'lack_of_interest': 'holistic_remedies/bach_flowers/lack_of_interest',
@@ -245,6 +264,11 @@ class ContentService {
   String _buildAssetPath(String categoryId, List<String> breadcrumbs) {
     print('DEBUG: Building asset path for categoryId: $categoryId, breadcrumbs: $breadcrumbs');
     
+    // Check if this is a standalone shared energy category (contracts, pathways, portals)
+    if (_isStandaloneSharedEnergyCategory(categoryId)) {
+      return _buildStandaloneSharedEnergyCategoryPath(categoryId);
+    }
+    
     // Check if this is a chakra-related category (now animal-specific)
     if (_isChakraCategory(breadcrumbs)) {
       return _buildAnimalSpecificChakraPath(categoryId, breadcrumbs);
@@ -258,6 +282,11 @@ class ContentService {
     // Check if this is a negative beliefs category (now animal-specific)
     if (_isNegativeBeliefsCategory(breadcrumbs)) {
       return _buildAnimalSpecificNegativeBeliefPath(categoryId, breadcrumbs);
+    }
+    
+    // Check if this is a supplements & herbs category (animal-specific)
+    if (_isSupplementsHerbsCategory(breadcrumbs)) {
+      return _buildAnimalSpecificSupplementsHerbsPath(categoryId, breadcrumbs);
     }
     
     // Determine the parent category from breadcrumbs to check if it's shared
@@ -296,6 +325,24 @@ class ContentService {
     
     final finalPath = pathSegments.join('/');
     print('DEBUG: Using breadcrumb-based path: $finalPath');
+    return finalPath;
+  }
+  
+  /// Check if this is a standalone shared energy category
+  bool _isStandaloneSharedEnergyCategory(String categoryId) {
+    final categoryIdLower = categoryId.toLowerCase();
+    return categoryIdLower == 'contracts_vows' ||
+           categoryIdLower == 'contracts & vows' ||
+           categoryIdLower == 'energetic_pathways' ||
+           categoryIdLower == 'portals_energy_gateways' ||
+           categoryIdLower == 'portals & energy gateways';
+  }
+  
+  /// Build path for standalone shared energy categories
+  String _buildStandaloneSharedEnergyCategoryPath(String categoryId) {
+    String filename = _processFilename(categoryId);
+    String finalPath = 'assets/details/energy/$filename.txt';
+    print('DEBUG: Using standalone shared energy category path: $finalPath');
     return finalPath;
   }
   
@@ -393,6 +440,32 @@ class ContentService {
     return finalPath;
   }
   
+  /// Check if the breadcrumbs indicate a supplements & herbs category
+  bool _isSupplementsHerbsCategory(List<String> breadcrumbs) {
+    return breadcrumbs.any((breadcrumb) => 
+      breadcrumb.toLowerCase() == 'supplements & herbs' ||
+      breadcrumb.toLowerCase() == 'supplements and herbs' ||
+      breadcrumb.toLowerCase() == 'supplements_herbs'
+    );
+  }
+  
+  /// Build animal-specific supplements & herbs path
+  String _buildAnimalSpecificSupplementsHerbsPath(String categoryId, List<String> breadcrumbs) {
+    if (breadcrumbs.isEmpty) {
+      return 'assets/details/$categoryId.txt';
+    }
+    
+    // Get animal type (first breadcrumb)
+    String animalType = breadcrumbs[0].toLowerCase();
+    
+    // Build path for animal-specific supplements & herbs
+    String filename = _processFilename(categoryId);
+    String finalPath = 'assets/details/$animalType/holistic_remedies/supplements_herbs/$filename.txt';
+    
+    print('DEBUG: Using animal-specific supplements & herbs path: $finalPath');
+    return finalPath;
+  }
+  
   /// Extract parent category ID from breadcrumbs to determine folder structure
   String? _getParentCategoryId(List<String> breadcrumbs) {
     print('DEBUG: Looking for parent category in breadcrumbs: $breadcrumbs');
@@ -440,6 +513,33 @@ class ContentService {
         return 'negative_beliefs';
       case 'unresolved emotions':
         return 'unresolved_emotions';
+      case 'core imprints':
+        return 'core_imprints';
+      case 'energy attachments':
+        return 'energy_attachments';
+      case 'entities & spirits':
+      case 'entities and spirits':
+        return 'entities_spirits';
+      case 'positive integration':
+        return 'positive_integration';
+      case 'post traumatic':
+        return 'post_traumatic';
+      case 'relationship field':
+        return 'relationship_field';
+      case 'internal':
+        return 'internal';
+      case 'external':
+        return 'external';
+      case 'statements':
+        return 'statements';
+      case 'contracts & vows':
+      case 'contracts and vows':
+        return 'contracts_vows';
+      case 'energetic pathways':
+        return 'energetic_pathways';
+      case 'portals & energy gateways':
+      case 'portals and energy gateways':
+        return 'portals_energy_gateways';
       
       // Holistic Remedies categories
       case 'holistic remedies':
@@ -537,6 +637,26 @@ class ContentService {
       case 'trauma':
         return 'trauma';
       
+      // Essential Oils categories
+      case 'essential oils':
+        return 'essential_oils';
+      case 'calming and sleep':
+      case 'calming & sleep':
+        return 'calming_and_sleep_essential_oils';
+      case 'focus and behaviour':
+      case 'focus & behaviour':
+        return 'focus_and_behaviour_essential_oils';
+      case 'grounding and safety':
+      case 'grounding & safety':
+        return 'grounding_and_safety_essential_oils';
+      case 'heart and connection':
+      case 'heart & connection':
+        return 'heart_and_connection_essential_oils';
+      case 'physical support':
+        return 'physical_support_essential_oils';
+      case 'trauma release':
+        return 'trauma_release_essential_oils';
+      
       default:
         return null;
     }
@@ -561,6 +681,14 @@ class ContentService {
   
   /// Process a filename from category ID
   String _processFilename(String categoryId) {
+    // Special cases for specific energy categories
+    if (categoryId.toLowerCase() == 'contracts_vows' || categoryId.toLowerCase() == 'contracts & vows') {
+      return 'contracts&vows';
+    }
+    if (categoryId.toLowerCase() == 'portals_energy_gateways' || categoryId.toLowerCase() == 'portals & energy gateways') {
+      return 'portals_and_energy_gateways';
+    }
+    
     String filename = categoryId.toLowerCase()
         .replaceAll(' ', '_')
         .replaceAll('/', ':')  // Forward slash becomes colon (as seen in chakra files)

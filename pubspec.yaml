@@ -99,6 +99,15 @@ flutter:
     - assets/details/energy/states_of_harmony/
     - assets/details/energy/energetic_influences/
     - assets/details/energy/unresolved_emotions/
+    - assets/details/energy/core_imprints/
+    - assets/details/energy/energy_attachments/
+    - assets/details/energy/entities_spirits/
+    - assets/details/energy/positive_integration/
+    - assets/details/energy/post_traumatic/
+    - assets/details/energy/relationship_field/
+    - assets/details/energy/relationship_field/internal/
+    - assets/details/energy/relationship_field/external/
+    - assets/details/energy/statements/
     - assets/details/holistic_remedies/
     - assets/details/holistic_remedies/australian_bush_flowers/
     - assets/details/holistic_remedies/australian_bush_flowers/a_to_b/
@@ -128,7 +137,10 @@ flutter:
     - assets/details/holistic_remedies/crystals/spiritual_connection/
     - assets/details/holistic_remedies/crystals/trauma_and_heart_healing/
     - assets/details/holistic_remedies/homeopathy/
+    - assets/details/holistic_remedies/essential_oils/
     - assets/details/dog/
+    - assets/details/dog/holistic_remedies/
+    - assets/details/dog/holistic_remedies/supplements_herbs/
     - assets/details/dog/energy/
     - assets/details/dog/energy/chakras/
     - assets/details/dog/energy/chakras/main_chakra/
@@ -241,6 +253,8 @@ flutter:
     - assets/details/dog/glands/scent_protective/protective/
     - assets/details/dog/glands/scent_protective/scent/
     - assets/details/horse/
+    - assets/details/horse/holistic_remedies/
+    - assets/details/horse/holistic_remedies/supplements_herbs/
     - assets/details/horse/energy/
     - assets/details/horse/energy/chakras/
     - assets/details/horse/energy/chakras/main_chakra/
@@ -353,6 +367,8 @@ flutter:
     - assets/details/horse/systems/respiratory_system/upper/
     - assets/details/horse/systems/urinary_system/
     - assets/details/cat/
+    - assets/details/cat/holistic_remedies/
+    - assets/details/cat/holistic_remedies/supplements_herbs/
     - assets/details/cat/energy/
     - assets/details/cat/energy/chakras/
     - assets/details/cat/energy/chakras/main_chakra/
@@ -465,6 +481,8 @@ flutter:
     - assets/details/cat/systems/respiratory_system/upper/
     - assets/details/cat/systems/urinary_system/
     - assets/details/bird/
+    - assets/details/bird/holistic_remedies/
+    - assets/details/bird/holistic_remedies/supplements_herbs/
     - assets/details/bird/energy/
     - assets/details/bird/energy/chakras/
     - assets/details/bird/energy/chakras/main_chakra/
@@ -622,6 +640,7 @@ flutter:
     - assets/images/energy/sacred_symbols/
     - assets/images/energy/states_of_harmony/
     - assets/images/energy/energetic_influences/
+    - assets/images/energy/unresolved_emotions/
     - assets/images/skeleton/
     - assets/images/skeleton/dentition/
     - assets/images/skeleton/dentition/upper/

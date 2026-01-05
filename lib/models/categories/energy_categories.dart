@@ -750,47 +750,22 @@ class EnergyCategories {
       ];
     }
 
-    // Define energetic influences subcategories for Horse, Dog, and Cat
-    List<Category> energeticInfluencesSubcategories = [];
+    // Define contracts & vows - standalone category for Horse, Dog, Cat, and Bird
+    List<Category> contractsVowsSubcategories = [];
     if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
-      energeticInfluencesSubcategories = [
-        Category(
-          id: 'karmic_patterns',
-          label: 'Karmic Patterns',
-          icon: Icons.replay_circle_filled,
-          imagePath: 'assets/images/energy/energetic_influences/karmic_patterns.webp',
-        ),
-        Category(
-          id: 'contracts_vows',
-          label: 'Contracts & Vows',
-          icon: Icons.description,
-          imagePath: 'assets/images/energy/energetic_influences/contracts_vows.webp',
-        ),
-        Category(
-          id: 'portals_energy_gateways',
-          label: 'Portals & Energy Gateways',
-          icon: Icons.meeting_room,
-          imagePath: 'assets/images/energy/energetic_influences/portals_energy_gateways.webp',
-        ),
-        Category(
-          id: 'energy_attachments',
-          label: 'Energy Attachments',
-          icon: Icons.bug_report,
-          imagePath: 'assets/images/energy/energetic_influences/energy_attachments.webp',
-        ),
-        Category(
-          id: 'trauma_imprints',
-          label: 'Trauma Imprints',
-          icon: Icons.psychology,
-          imagePath: 'assets/images/energy/energetic_influences/trauma_imprints.webp',
-        ),
-        Category(
-          id: 'entities_spirit_attachments',
-          label: 'Entities & Spirit Attachments',
-          icon: Icons.visibility_off,
-          imagePath: 'assets/images/energy/energetic_influences/entities_spirit_attachments.webp',
-        ),
-      ];
+      contractsVowsSubcategories = [];
+    }
+
+    // Define energetic pathways - standalone category for Horse, Dog, Cat, and Bird
+    List<Category> energeticPathwaysSubcategories = [];
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      energeticPathwaysSubcategories = [];
+    }
+
+    // Define portals & energy gateways - standalone category for Horse, Dog, Cat, and Bird
+    List<Category> portalsEnergyGatewaysSubcategories = [];
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      portalsEnergyGatewaysSubcategories = [];
     }
 
     // Define negative beliefs subcategories for Horse, Dog, and Cat
@@ -848,18 +823,355 @@ class EnergyCategories {
       ];
     }
 
-    // Define unresolved emotions subcategories for Horse, Dog, and Cat
+    // Define core imprints subcategories for Horse, Dog, Cat, and Bird
+    List<Category> coreImprintsSubcategories = [];
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      coreImprintsSubcategories = [
+        Category(
+          id: 'energetic_boundaries',
+          label: 'Energetic Boundaries',
+          icon: Icons.border_outer,
+          imagePath: 'assets/images/energy/core_imprints/energetic_boundaries.webp',
+        ),
+        Category(
+          id: 'identity_or_role_imprints',
+          label: 'Identity or Role Imprints',
+          icon: Icons.person_pin,
+          imagePath: 'assets/images/energy/core_imprints/identity_or_role_imprints.webp',
+        ),
+        Category(
+          id: 'karmic_patterns',
+          label: 'Karmic Patterns',
+          icon: Icons.replay_circle_filled,
+          imagePath: 'assets/images/energy/core_imprints/karmic_patterns.webp',
+        ),
+        Category(
+          id: 'loyalty_imprints',
+          label: 'Loyalty Imprints',
+          icon: Icons.favorite,
+          imagePath: 'assets/images/energy/core_imprints/loyalty_imprints.webp',
+        ),
+        Category(
+          id: 'nervous_system_imprints',
+          label: 'Nervous System Imprints',
+          icon: Icons.grain,
+          imagePath: 'assets/images/energy/core_imprints/nervous_system_imprints.webp',
+        ),
+        Category(
+          id: 'residual_energetic_imprints',
+          label: 'Residual Energetic Imprints',
+          icon: Icons.blur_on,
+          imagePath: 'assets/images/energy/core_imprints/residual_energetic_imprints.webp',
+        ),
+        Category(
+          id: 'shadow_imprints',
+          label: 'Shadow Imprints',
+          icon: Icons.opacity,
+          imagePath: 'assets/images/energy/core_imprints/shadow_imprints.webp',
+        ),
+        Category(
+          id: 'soul_fragmentation',
+          label: 'Soul Fragmentation',
+          icon: Icons.broken_image,
+          imagePath: 'assets/images/energy/core_imprints/soul_fragmentation.webp',
+        ),
+      ];
+    }
+
+    // Define energy attachments subcategories for Horse, Dog, Cat, and Bird
+    List<Category> energyAttachmentsSubcategories = [];
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      energyAttachmentsSubcategories = [
+        Category(
+          id: 'emotional_imprints',
+          label: 'Emotional Imprints',
+          icon: Icons.sentiment_dissatisfied,
+          imagePath: 'assets/images/energy/energy_attachments/emotional_imprints.webp',
+        ),
+        Category(
+          id: 'energetic_cords_and_attachments',
+          label: 'Energetic Cords and Attachments',
+          icon: Icons.link,
+          imagePath: 'assets/images/energy/energy_attachments/energetic_cords_and_attachments.webp',
+        ),
+        Category(
+          id: 'inherited_emotional_imprints',
+          label: 'Inherited Emotional Imprints',
+          icon: Icons.family_restroom,
+          imagePath: 'assets/images/energy/energy_attachments/inherited_emotional_imprints.webp',
+        ),
+      ];
+    }
+
+    // Define entities & spirits subcategories for Horse, Dog, Cat, and Bird
+    List<Category> entitiesSpiritsSubcategories = [];
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      entitiesSpiritsSubcategories = [
+        Category(
+          id: 'ancestral_spirit_presence',
+          label: 'Ancestral Spirit Presence',
+          icon: Icons.escalator_warning,
+          imagePath: 'assets/images/energy/entities_spirits/ancestral_spirit_presence.webp',
+        ),
+        Category(
+          id: 'energetic_parasites',
+          label: 'Energetic Parasites',
+          icon: Icons.bug_report,
+          imagePath: 'assets/images/energy/entities_spirits/energetic_parasites.webp',
+        ),
+        Category(
+          id: 'entities_spirit_attachments',
+          label: 'Entities Spirit Attachments',
+          icon: Icons.visibility_off,
+          imagePath: 'assets/images/energy/entities_spirits/entities_spirit_attachments.webp',
+        ),
+        Category(
+          id: 'spirit_influence',
+          label: 'Spirit Influence',
+          icon: Icons.cloud,
+          imagePath: 'assets/images/energy/entities_spirits/spirit_influence.webp',
+        ),
+      ];
+    }
+
+    // Define positive integration subcategories for Horse, Dog, Cat, and Bird
+    List<Category> positiveIntegrationSubcategories = [];
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      positiveIntegrationSubcategories = [
+        Category(
+          id: 'positive_body_states',
+          label: 'Positive Body States',
+          icon: Icons.accessibility_new,
+          imagePath: 'assets/images/energy/positive_integration/positive_body_states.webp',
+        ),
+        Category(
+          id: 'positive_energy_states',
+          label: 'Positive Energy States',
+          icon: Icons.energy_savings_leaf,
+          imagePath: 'assets/images/energy/positive_integration/positive_energy_states.webp',
+        ),
+        Category(
+          id: 'positive_integration_beliefs',
+          label: 'Positive Integration Beliefs',
+          icon: Icons.psychology,
+          imagePath: 'assets/images/energy/positive_integration/positive_integration_beliefs.webp',
+        ),
+        Category(
+          id: 'positive_integration_emotions',
+          label: 'Positive Integration Emotions',
+          icon: Icons.sentiment_satisfied,
+          imagePath: 'assets/images/energy/positive_integration/positive_integration_emotions.webp',
+        ),
+        Category(
+          id: 'positive_nervous_system_states',
+          label: 'Positive Nervous System States',
+          icon: Icons.grain,
+          imagePath: 'assets/images/energy/positive_integration/positive_nervous_system_states.webp',
+        ),
+      ];
+    }
+
+    // Define post traumatic subcategories for Horse, Dog, Cat, and Bird
+    List<Category> postTraumaticSubcategories = [];
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      postTraumaticSubcategories = [
+        Category(
+          id: 'defensive_holding_pattern',
+          label: 'Defensive Holding Pattern',
+          icon: Icons.shield,
+          imagePath: 'assets/images/energy/post_traumatic/defensive_holding_pattern.webp',
+        ),
+        Category(
+          id: 'fear_collapse_response',
+          label: 'Fear Collapse Response',
+          icon: Icons.arrow_downward,
+          imagePath: 'assets/images/energy/post_traumatic/fear_collapse_response.webp',
+        ),
+        Category(
+          id: 'fight_freeze_conflict',
+          label: 'Fight Freeze Conflict',
+          icon: Icons.pause_circle,
+          imagePath: 'assets/images/energy/post_traumatic/fight_freeze_conflict.webp',
+        ),
+        Category(
+          id: 'freezing_response_pattern',
+          label: 'Freezing Response Pattern',
+          icon: Icons.ac_unit,
+          imagePath: 'assets/images/energy/post_traumatic/freezing_response_pattern.webp',
+        ),
+        Category(
+          id: 'instability_imprint',
+          label: 'Instability Imprint',
+          icon: Icons.swap_vert,
+          imagePath: 'assets/images/energy/post_traumatic/instability_imprint.webp',
+        ),
+        Category(
+          id: 'overwhelm_response',
+          label: 'Overwhelm Response',
+          icon: Icons.waves,
+          imagePath: 'assets/images/energy/post_traumatic/overwhelm_response.webp',
+        ),
+        Category(
+          id: 'physical_trauma',
+          label: 'Physical Trauma',
+          icon: Icons.health_and_safety,
+          imagePath: 'assets/images/energy/post_traumatic/physical_trauma.webp',
+        ),
+        Category(
+          id: 'shock_imprint',
+          label: 'Shock Imprint',
+          icon: Icons.flash_on,
+          imagePath: 'assets/images/energy/post_traumatic/shock_imprint.webp',
+        ),
+        Category(
+          id: 'startle_memory_loop',
+          label: 'Startle Memory Loop',
+          icon: Icons.loop,
+          imagePath: 'assets/images/energy/post_traumatic/startle_memory_loop.webp',
+        ),
+        Category(
+          id: 'trauma_points',
+          label: 'Trauma Points',
+          icon: Icons.location_on,
+          imagePath: 'assets/images/energy/post_traumatic/trauma_points.webp',
+        ),
+      ];
+    }
+
+    // Define relationship field subcategories for Horse, Dog, Cat, and Bird
+    List<Category> relationshipFieldSubcategories = [];
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      // Internal subcategories
+      List<Category> internalSubs = [
+        Category(
+          id: 'relationship_field_emotional',
+          label: 'Relationship Field Emotional',
+          icon: Icons.sentiment_dissatisfied,
+          imagePath: 'assets/images/energy/relationship_field/internal/relationship_field_emotional.webp',
+        ),
+        Category(
+          id: 'relationship_field_nervous',
+          label: 'Relationship Field Nervous',
+          icon: Icons.grain,
+          imagePath: 'assets/images/energy/relationship_field/internal/relationship_field_nervous.webp',
+        ),
+        Category(
+          id: 'relationship_field_roles',
+          label: 'Relationship Field Roles',
+          icon: Icons.people,
+          imagePath: 'assets/images/energy/relationship_field/internal/relationship_field_roles.webp',
+        ),
+        Category(
+          id: 'trauma_distorsion_internal',
+          label: 'Trauma Distorsion',
+          icon: Icons.warning,
+          imagePath: 'assets/images/energy/relationship_field/internal/trauma_distorsion.webp',
+        ),
+      ];
+
+      // External subcategories
+      List<Category> externalSubs = [
+        Category(
+          id: 'emotional_distortions',
+          label: 'Emotional Distortions',
+          icon: Icons.sentiment_dissatisfied,
+          imagePath: 'assets/images/energy/relationship_field/external/emotional_distortions.webp',
+        ),
+        Category(
+          id: 'nervous_system_distortion',
+          label: 'Nervous System Distortion',
+          icon: Icons.grain,
+          imagePath: 'assets/images/energy/relationship_field/external/nervous_system_distortion.webp',
+        ),
+        Category(
+          id: 'role_distortion',
+          label: 'Role Distortion',
+          icon: Icons.people,
+          imagePath: 'assets/images/energy/relationship_field/external/role_distortion.webp',
+        ),
+        Category(
+          id: 'trauma_distorsion_external',
+          label: 'Trauma Distorsion',
+          icon: Icons.warning,
+          imagePath: 'assets/images/energy/relationship_field/external/trauma_distorsion.webp',
+        ),
+      ];
+
+      relationshipFieldSubcategories = [
+        Category(
+          id: 'internal',
+          label: 'Internal',
+          icon: Icons.person,
+          subcategories: internalSubs,
+        ),
+        Category(
+          id: 'external',
+          label: 'External',
+          icon: Icons.people_outline,
+          subcategories: externalSubs,
+        ),
+      ];
+    }
+
+    // Define statements subcategories for Horse, Dog, Cat, and Bird
+    List<Category> statementsSubcategories = [];
+    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
+      statementsSubcategories = [
+        Category(
+          id: 'belief_loops',
+          label: 'Belief Loops',
+          icon: Icons.loop,
+          imagePath: 'assets/images/energy/statements/belief_loops.webp',
+        ),
+        Category(
+          id: 'expectation_patterns',
+          label: 'Expectation Patterns',
+          icon: Icons.rule,
+          imagePath: 'assets/images/energy/statements/expectation_patterns.webp',
+        ),
+        Category(
+          id: 'fear_of_patterns',
+          label: 'Fear Of Patterns',
+          icon: Icons.warning,
+          imagePath: 'assets/images/energy/statements/fear_of_patterns.webp',
+        ),
+        Category(
+          id: 'suggestion_imprints',
+          label: 'Suggestion Imprints',
+          icon: Icons.lightbulb,
+          imagePath: 'assets/images/energy/statements/suggestion_imprints.webp',
+        ),
+      ];
+    }
+
+    // Define unresolved emotions subcategories for Horse, Dog, Cat, and Bird
     List<Category> unresolvedEmotionsSubcategories = [];
     if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       unresolvedEmotionsSubcategories = [
-        Category(id: 'fear_anxiety', label: 'Fear / Anxiety', icon: Icons.warning),
-        Category(id: 'sadness_grief', label: 'Sadness / Grief', icon: Icons.sentiment_very_dissatisfied),
-        Category(id: 'anger_frustration', label: 'Anger / Frustration', icon: Icons.sentiment_very_dissatisfied),
-        Category(id: 'shame_guilt', label: 'Shame / Guilt', icon: Icons.sentiment_dissatisfied),
-        Category(id: 'stress_pressure', label: 'Stress / Pressure', icon: Icons.warning_amber),
-        Category(id: 'relationship_wounds', label: 'Relationship Wounds', icon: Icons.heart_broken),
-        Category(id: 'self_image_identity', label: 'Self-Image / Identity', icon: Icons.person),
-        Category(id: 'spiritual_existential', label: 'Spiritual / Existential', icon: Icons.spa),
+        Category(
+          id: 'primary_unresolved_emotions',
+          label: 'Primary Unresolved Emotions',
+          icon: Icons.sentiment_dissatisfied,
+          imagePath: 'assets/images/energy/unresolved_emotions/primary_unresolved_emotions.webp',
+        ),
+        Category(
+          id: 'unresolved_relational_emotions',
+          label: 'Unresolved Relational Emotions',
+          icon: Icons.heart_broken,
+          imagePath: 'assets/images/energy/unresolved_emotions/unresolved_relational_emotions.webp',
+        ),
+        Category(
+          id: 'unresolved_suppressed_emotions',
+          label: 'Unresolved Suppressed Emotions',
+          icon: Icons.lock,
+          imagePath: 'assets/images/energy/unresolved_emotions/unresolved_suppressed_emotions.webp',
+        ),
+        Category(
+          id: 'unresolved_survival_emotions',
+          label: 'Unresolved Survival Emotions',
+          icon: Icons.warning,
+          imagePath: 'assets/images/energy/unresolved_emotions/unresolved_survival_emotions.webp',
+        ),
       ];
     }
 
@@ -915,13 +1227,6 @@ class EnergyCategories {
         subcategories: statesOfHarmonySubcategories,
       ),
       Category(
-        id: 'energetic_influences',
-        label: 'Energetic Influences',
-        icon: Icons.waves,
-        imagePath: 'assets/images/$animalId/energy/energetic_influences.webp',
-        subcategories: energeticInfluencesSubcategories,
-      ),
-      Category(
         id: 'negative_beliefs',
         label: 'Negative Beliefs',
         icon: Icons.psychology_alt,
@@ -934,6 +1239,76 @@ class EnergyCategories {
         icon: Icons.sentiment_dissatisfied,
         imagePath: 'assets/images/$animalId/energy/unresolved_emotions.webp',
         subcategories: unresolvedEmotionsSubcategories,
+      ),
+      Category(
+        id: 'core_imprints',
+        label: 'Core Imprints',
+        icon: Icons.fingerprint,
+        imagePath: 'assets/images/energy/core_imprints.webp',
+        subcategories: coreImprintsSubcategories,
+      ),
+      Category(
+        id: 'energy_attachments',
+        label: 'Energy Attachments',
+        icon: Icons.link,
+        imagePath: 'assets/images/energy/energy_attachments.webp',
+        subcategories: energyAttachmentsSubcategories,
+      ),
+      Category(
+        id: 'entities_spirits',
+        label: 'Entities & Spirits',
+        icon: Icons.visibility_off,
+        imagePath: 'assets/images/energy/entities_spirits.webp',
+        subcategories: entitiesSpiritsSubcategories,
+      ),
+      Category(
+        id: 'positive_integration',
+        label: 'Positive Integration',
+        icon: Icons.add_circle,
+        imagePath: 'assets/images/energy/positive_integration.webp',
+        subcategories: positiveIntegrationSubcategories,
+      ),
+      Category(
+        id: 'post_traumatic',
+        label: 'Post Traumatic',
+        icon: Icons.healing,
+        imagePath: 'assets/images/energy/post_traumatic.webp',
+        subcategories: postTraumaticSubcategories,
+      ),
+      Category(
+        id: 'relationship_field',
+        label: 'Relationship Field',
+        icon: Icons.people,
+        imagePath: 'assets/images/energy/relationship_field.webp',
+        subcategories: relationshipFieldSubcategories,
+      ),
+      Category(
+        id: 'statements',
+        label: 'Statements',
+        icon: Icons.chat,
+        imagePath: 'assets/images/energy/statements.webp',
+        subcategories: statementsSubcategories,
+      ),
+      Category(
+        id: 'contracts_vows',
+        label: 'Contracts & Vows',
+        icon: Icons.description,
+        imagePath: 'assets/images/energy/contracts_vows.webp',
+        subcategories: contractsVowsSubcategories,
+      ),
+      Category(
+        id: 'energetic_pathways',
+        label: 'Energetic Pathways',
+        icon: Icons.route,
+        imagePath: 'assets/images/energy/energetic_pathways.webp',
+        subcategories: energeticPathwaysSubcategories,
+      ),
+      Category(
+        id: 'portals_energy_gateways',
+        label: 'Portals & Energy Gateways',
+        icon: Icons.meeting_room,
+        imagePath: 'assets/images/energy/portals_energy_gateways.webp',
+        subcategories: portalsEnergyGatewaysSubcategories,
       ),
     ];
     
