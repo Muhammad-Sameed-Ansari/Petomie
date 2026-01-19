@@ -1697,6 +1697,12 @@ class HolisticRemediesCategories {
         imagePath: 'assets/images/holistic_remedies/supplements_herbs.webp',
         subcategories: supplementsHerbsSubcategories,
       ),
+      Category(
+        id: 'animal_modalities',
+        label: 'Animal Modalities',
+        icon: Icons.medical_services,
+        imagePath: 'assets/images/holistic_remedies/animal_modalities.webp',
+      ),
     ];
     
     _cache[animalId] = categories;

@@ -14,21 +14,25 @@ class SensoryCategories {
           id: 'external_ear',
           label: 'External Ear',
           icon: Icons.hearing,
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance.webp',
         ),
         Category(
           id: 'inner_ear_cochlea',
           label: 'Inner Ear Cochlea',
           icon: Icons.hearing,
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance.webp',
         ),
         Category(
           id: 'middle_ear',
           label: 'Middle Ear',
           icon: Icons.hearing,
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance.webp',
         ),
         Category(
           id: 'vestibular_system',
           label: 'Vestibular System',
           icon: Icons.balance,
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance.webp',
         ),
       ];
     } else {
@@ -38,11 +42,13 @@ class SensoryCategories {
           id: 'auditory_structures',
           label: 'Auditory Structures',
           icon: Icons.hearing,
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance.webp',
         ),
         Category(
           id: 'vestibular_structures',
           label: 'Vestibular Structures',
           icon: Icons.balance,
+          imagePath: 'assets/images/$animalId/sensory/hearing_balance.webp',
         ),
       ];
     }
@@ -50,6 +56,7 @@ class SensoryCategories {
       id: 'hearing_balance',
       label: 'Hearing & Balance',
       icon: Icons.hearing,
+      imagePath: 'assets/images/$animalId/sensory/hearing_balance.webp',
       subcategories: hearingBalanceSubcategories,
     ));
 
@@ -58,6 +65,7 @@ class SensoryCategories {
       id: 'smell',
       label: 'Smell',
       icon: Icons.air,
+      imagePath: 'assets/images/$animalId/sensory/smell.webp',
     ));
 
     // Taste - single file for all animals
@@ -65,6 +73,7 @@ class SensoryCategories {
       id: 'taste',
       label: 'Taste',
       icon: Icons.emoji_food_beverage,
+      imagePath: 'assets/images/$animalId/sensory/taste.webp',
     ));
 
     // Touch - different for each animal
@@ -75,16 +84,19 @@ class SensoryCategories {
           id: 'beak_and_tongue_sensors',
           label: 'Beak and Tongue Sensors',
           icon: Icons.touch_app,
+          imagePath: 'assets/images/$animalId/sensory/touch.webp',
         ),
         Category(
           id: 'feather_mechanoreceptors',
           label: 'Feather Mechanoreceptors',
           icon: Icons.touch_app,
+          imagePath: 'assets/images/$animalId/sensory/touch.webp',
         ),
         Category(
           id: 'skin_receptors',
           label: 'Skin Receptors',
           icon: Icons.sensors,
+          imagePath: 'assets/images/$animalId/sensory/touch.webp',
         ),
       ];
     } else {
@@ -94,11 +106,13 @@ class SensoryCategories {
           id: 'cutaneous',
           label: 'Cutaneous',
           icon: Icons.touch_app,
+          imagePath: 'assets/images/$animalId/sensory/touch.webp',
         ),
         Category(
           id: 'proprioceptive',
           label: 'Proprioceptive',
           icon: Icons.sensors,
+          imagePath: 'assets/images/$animalId/sensory/touch.webp',
         ),
       ];
     }
@@ -106,6 +120,7 @@ class SensoryCategories {
       id: 'touch',
       label: 'Touch',
       icon: Icons.touch_app,
+      imagePath: 'assets/images/$animalId/sensory/touch.webp',
       subcategories: touchSubcategories,
     ));
 
@@ -117,21 +132,25 @@ class SensoryCategories {
           id: 'bird_retina',
           label: 'Bird Retina',
           icon: Icons.visibility,
+          imagePath: 'assets/images/$animalId/sensory/vision.webp',
         ),
         Category(
           id: 'eyes',
           label: 'Eyes',
           icon: Icons.visibility,
+          imagePath: 'assets/images/$animalId/sensory/vision.webp',
         ),
         Category(
           id: 'optic_nerve',
           label: 'Optic Nerve',
           icon: Icons.visibility,
+          imagePath: 'assets/images/$animalId/sensory/vision.webp',
         ),
         Category(
           id: 'pecten_oculi',
           label: 'Pecten Oculi',
           icon: Icons.visibility,
+          imagePath: 'assets/images/$animalId/sensory/vision.webp',
         ),
       ];
     } else {
@@ -141,11 +160,13 @@ class SensoryCategories {
           id: 'accessory_system',
           label: 'Accessory System',
           icon: Icons.visibility_off,
+          imagePath: 'assets/images/$animalId/sensory/vision.webp',
         ),
         Category(
           id: 'system_structures',
           label: 'System Structures',
           icon: Icons.visibility,
+          imagePath: 'assets/images/$animalId/sensory/vision.webp',
         ),
       ];
     }
@@ -153,6 +174,7 @@ class SensoryCategories {
       id: 'vision',
       label: 'Vision',
       icon: Icons.visibility,
+      imagePath: 'assets/images/$animalId/sensory/vision.webp',
       subcategories: visionSubcategories,
     ));
 

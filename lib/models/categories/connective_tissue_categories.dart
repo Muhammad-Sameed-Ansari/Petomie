@@ -122,7 +122,7 @@ class ConnectiveTissueCategories {
           id: 'reticular',
           label: 'Reticular',
           icon: Icons.grid_on,
-          imagePath: 'assets/images/connective_tissue/reticular.webp',
+          imagePath: 'assets/images/connective_tissue/elastic.webp',
         ),
         Category(
           id: 'tendons',

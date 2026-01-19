@@ -1,13 +1,11 @@
 #Negative Suggestion Imprints#
 
-Negative Suggestion imprints are external inputs that were heard, felt, sensed, or perceived and taken in as truth without conscious evaluation.
-They form when information is received during heightened sensitivity, authority dynamics, emotional charge, or lack of filtering.
+Negative Suggestion imprints are external inputs that were heard, felt, sensed, or perceived and taken in as truth without conscious evaluation
+They form when information is received during heightened sensitivity, authority dynamics, emotional charge, or lack of filtering
+NSI are received meanings that the system accepts as real before testing or direct experience occurs
 
-Suggestions are not beliefs.
-They are received meanings that the system accepts as real before testing or direct experience occurs.
-
-The entries describe suggestions the system received, not what is inherently negative or true.
-A suggestion reflects a meaning that was absorbed (e.g. “being seen = unsafe”), often through tone, emotion, or environment.
+The entries describe suggestions the system received, not what is inherently true
+A suggestion reflects a meaning that was absorbed (e.g. “being seen = unsafe”), often through tone, emotion, or environment
 
 ###Negative Suggestion Of ...###
 
@@ -30,9 +28,7 @@ No. | SET 1 | SET 2 | SET 3
 15. | Exposure | Visibility | Being seen
 ###TABLE_END###
 
-##Animals Do Not Evaluate Suggestions, They Absorb Them##
-
-##A Negative Suggestion Imprint May Show As##
+###A Negative Suggestion Imprint May Show As###
 Immediate changes in behavior following tone, words, or atmosphere
 Reacting as if something is true without direct experience
 Heightened alertness after human emotional states

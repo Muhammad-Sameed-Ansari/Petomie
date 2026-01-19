@@ -43,26 +43,60 @@ class CategoryGrid extends StatelessWidget {
       behavior: ScrollConfiguration.of(context).copyWith(
         scrollbars: !isWeb, // Hide scrollbars on web
       ),
-      child: GridView.builder(
-        controller: scrollController,
-        padding: EdgeInsets.symmetric(horizontal: horizontalPadding, vertical: 10),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: crossAxisCount,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
-          childAspectRatio: 0.80, // Slightly taller cards for better text fit
-        ),
-        itemCount: categories.length,
-        itemBuilder: (context, index) {
-          final category = categories[index];
-          return _CategoryCard(
-            category: category,
-            onTap: onCategoryTap != null
-                ? () => onCategoryTap!(category)
-                : null,
-          );
-        },
-      ),
+      child: isWeb && screenWidth > 800
+          ? CustomScrollView(
+              controller: scrollController,
+              slivers: [
+                SliverToBoxAdapter(
+                  child: Center(
+                    child: Container(
+                      constraints: BoxConstraints(maxWidth: maxWidth),
+                      padding: EdgeInsets.symmetric(horizontal: horizontalPadding, vertical: 10),
+                      child: GridView.builder(
+                        shrinkWrap: true,
+                        physics: const NeverScrollableScrollPhysics(),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: crossAxisCount,
+                          crossAxisSpacing: 20,
+                          mainAxisSpacing: 20,
+                          childAspectRatio: 0.80,
+                        ),
+                        itemCount: categories.length,
+                        itemBuilder: (context, index) {
+                          final category = categories[index];
+                          return _CategoryCard(
+                            category: category,
+                            onTap: onCategoryTap != null
+                                ? () => onCategoryTap!(category)
+                                : null,
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
+          : GridView.builder(
+              controller: scrollController,
+              padding: EdgeInsets.symmetric(horizontal: horizontalPadding, vertical: 10),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: crossAxisCount,
+                crossAxisSpacing: 20,
+                mainAxisSpacing: 20,
+                childAspectRatio: 0.80,
+              ),
+              itemCount: categories.length,
+              itemBuilder: (context, index) {
+                final category = categories[index];
+                return _CategoryCard(
+                  category: category,
+                  onTap: onCategoryTap != null
+                      ? () => onCategoryTap!(category)
+                      : null,
+                );
+              },
+            ),
     );
 
     return Column(
@@ -81,14 +115,7 @@ class CategoryGrid extends StatelessWidget {
           ),
         ],
         Expanded(
-          child: isWeb && screenWidth > 800
-              ? Center(
-                  child: Container(
-                    constraints: BoxConstraints(maxWidth: maxWidth),
-                    child: gridWidget,
-                  ),
-                )
-              : gridWidget,
+          child: gridWidget,
         ),
       ],
     );
@@ -261,7 +288,7 @@ class _CategoryCardState extends State<_CategoryCard>
                                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                                       fontWeight: FontWeight.w600,
                                       color: Theme.of(context).colorScheme.onSurface.withOpacity(widget.category.isComingSoon ? 0.6 : 1.0),
-                                      fontSize: 15,
+                                      fontSize: kIsWeb ? 18 : 15,
                                       height: 1.2, // Tighter line height for better fit
                                     ),
                                 textAlign: TextAlign.center,

@@ -365,61 +365,73 @@ class EnergyCategories {
           id: 'lung', 
           label: 'Lung (LU)', 
           icon: Icons.air,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/lung.webp',
         ),
         Category(
           id: 'large_intestine', 
           label: 'Large Intestine (LI)', 
           icon: Icons.restaurant,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/large_intestine.webp',
         ),
         Category(
           id: 'stomach', 
           label: 'Stomach (ST)', 
           icon: Icons.restaurant,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/stomach.webp',
         ),
         Category(
           id: 'spleen', 
           label: 'Spleen (SP)', 
           icon: Icons.scatter_plot,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/spleen.webp',
         ),
         Category(
           id: 'heart', 
           label: 'Heart (HT)', 
           icon: Icons.favorite,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/heart.webp',
         ),
         Category(
           id: 'small_intestine', 
           label: 'Small Intestine (SI)', 
           icon: Icons.restaurant,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/small_intestine.webp',
         ),
         Category(
           id: 'bladder', 
           label: 'Bladder (BL)', 
           icon: Icons.water_drop,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/bladder.webp',
         ),
         Category(
           id: 'kidney', 
           label: 'Kidney (KI)', 
           icon: Icons.water_drop,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/kidney.webp',
         ),
         Category(
           id: 'pericardium', 
           label: 'Pericardium (PC)', 
           icon: Icons.favorite_border,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/pericardium.webp',
         ),
         Category(
           id: 'triple_heater', 
           label: 'Triple Heater (TH)', 
           icon: Icons.whatshot,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/triple_heater.webp',
         ),
         Category(
           id: 'gall_bladder', 
-          label: 'Gall Bladder (GB)', 
+          label: 'Gallbladder (GB)', 
           icon: Icons.local_hospital,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/gall_bladder.webp',
         ),
         Category(
           id: 'liver', 
           label: 'Liver (LV)', 
           icon: Icons.local_hospital,
+          imagePath: 'assets/images/$animal/energy/meridians/primary_meridian/liver.webp',
         ),
       ];
 
@@ -431,41 +443,49 @@ class EnergyCategories {
             id: 'conception_vessel', 
             label: 'Conception Vessel', 
             icon: Icons.horizontal_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/conception_vessel.webp',
           ),
           Category(
             id: 'governing_vessel', 
             label: 'Governing Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/governing_vessel.webp',
           ),
           Category(
             id: 'penetrating_vessel', 
             label: 'Penetrating Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/penetrating_vessel.webp',
           ),
           Category(
             id: 'girdling_vessel', 
             label: 'Girdling Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/girdling_vessel.webp',
           ),
           Category(
             id: 'yin_heel_vessel', 
             label: 'Yin Heel Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_heel_vessel.webp',
           ),
           Category(
             id: 'yang_heel_vessel', 
             label: 'Yang Heel Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_heel_vessel.webp',
           ),
           Category(
             id: 'yin_linking_vessel', 
             label: 'Yin Linking Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_linking_vessel.webp',
           ),
           Category(
             id: 'yang_linking_vessel', 
             label: 'Yang Linking Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_linking_vessel.webp',
           ),
         ];
       } else if (animal == 'dog' || animal == 'cat') {
@@ -474,41 +494,49 @@ class EnergyCategories {
             id: 'conception_vessel', 
             label: 'Conception Vessel', 
             icon: Icons.horizontal_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/conception_vessel.webp',
           ),
           Category(
             id: 'governing_vessel', 
             label: 'Governing Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/governing_vessel.webp',
           ),
           Category(
             id: 'penetrating_vessel', 
             label: 'Penetrating Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/penetrating_vessel.webp',
           ),
           Category(
             id: 'girdling_vessel', 
             label: 'Girdling Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/girdling_vessel.webp',
           ),
           Category(
             id: 'yin_heel_vessel', 
             label: 'Yin Heel Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_heel_vessel.webp',
           ),
           Category(
             id: 'yang_heel_vessel', 
             label: 'Yang Heel Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_heel_vessel.webp',
           ),
           Category(
             id: 'yin_linking_vessel', 
             label: 'Yin Linking Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_linking_vessel.webp',
           ),
           Category(
             id: 'yang_linking_vessel', 
             label: 'Yang Linking Vessel', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_linking_vessel.webp',
           ),
         ];
       } else if (animal == 'bird') {
@@ -517,41 +545,49 @@ class EnergyCategories {
             id: 'ren_mai', 
             label: 'Ren Mai', 
             icon: Icons.horizontal_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/ren_mai.webp',
           ),
           Category(
             id: 'du_mai', 
             label: 'Du Mai', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/du_mai.webp',
           ),
           Category(
             id: 'chong_mai', 
             label: 'Chong Mai', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/chong_mai.webp',
           ),
           Category(
             id: 'dai_mai', 
             label: 'Dai Mai', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/dai_mai.webp',
           ),
           Category(
             id: 'yin_qiao_mai', 
             label: 'Yin Qiao Mai', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_qiao_mai.webp',
           ),
           Category(
             id: 'yang_qiao_mai', 
             label: 'Yang Qiao Mai', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_qiao_mai.webp',
           ),
           Category(
             id: 'yin_wei_mai', 
             label: 'Yin Wei Mai', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_wei_mai.webp',
           ),
           Category(
             id: 'yang_wei_mai', 
             label: 'Yang Wei Mai', 
             icon: Icons.vertical_split,
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_wei_mai.webp',
           ),
         ];
       }
@@ -609,12 +645,12 @@ class EnergyCategories {
     List<Category> imbalancesSubcategories = [];
     if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
       imbalancesSubcategories = [
-        Category(
-          id: 'stress_overwhelm', 
-          label: 'Stress & Overwhelm', 
-          icon: Icons.warning,
-          imagePath: 'assets/images/energy/imbalances/stress_overwhelm.webp',
-        ),
+        // Category(
+        //   id: 'stress_overwhelm', 
+        //   label: 'Stress & Overwhelm', 
+        //   icon: Icons.warning,
+        //   imagePath: 'assets/images/energy/imbalances/stress_overwhelm.webp',
+        // ),
         Category(
           id: 'energy_leaks',
           label: 'Energy Leaks',
@@ -641,38 +677,38 @@ class EnergyCategories {
             ),
           ],
         ),
-        Category(
-          id: 'connections',
-          label: 'Connections',
-          icon: Icons.eco,
-          imagePath: 'assets/images/energy/imbalances/connections.webp',
-          subcategories: [
-            Category(
-              id: 'cord_with_humans', 
-              label: 'Cord with Humans', 
-              icon: Icons.wifi,
-              imagePath: 'assets/images/energy/imbalances/connections/cord_with_humans.webp',
-            ),
-            Category(
-              id: 'cord_with_other_animals', 
-              label: 'Cord with Other Animals', 
-              icon: Icons.pets,
-              imagePath: 'assets/images/energy/imbalances/connections/cord_with_other_animals.webp',
-            ),
-            Category(
-              id: 'connection_to_nature', 
-              label: 'Connection to Nature', 
-              icon: Icons.terrain,
-              imagePath: 'assets/images/energy/imbalances/connections/connection_to_nature.webp',
-            ),
-            Category(
-              id: 'spiritual_connection', 
-              label: 'Spiritual Connection', 
-              icon: Icons.spa,
-              imagePath: 'assets/images/energy/imbalances/connections/spiritual_connection.webp',
-            ),
-          ],
-        ),
+        // Category(
+        //   id: 'connections',
+        //   label: 'Connections',
+        //   icon: Icons.eco,
+        //   imagePath: 'assets/images/energy/imbalances/connections.webp',
+        //   subcategories: [
+        //     Category(
+        //       id: 'cord_with_humans', 
+        //       label: 'Cord with Humans', 
+        //       icon: Icons.wifi,
+        //       imagePath: 'assets/images/energy/imbalances/connections/cord_with_humans.webp',
+        //     ),
+        //     Category(
+        //       id: 'cord_with_other_animals', 
+        //       label: 'Cord with Other Animals', 
+        //       icon: Icons.pets,
+        //       imagePath: 'assets/images/energy/imbalances/connections/cord_with_other_animals.webp',
+        //     ),
+        //     Category(
+        //       id: 'connection_to_nature', 
+        //       label: 'Connection to Nature', 
+        //       icon: Icons.terrain,
+        //       imagePath: 'assets/images/energy/imbalances/connections/connection_to_nature.webp',
+        //     ),
+        //     Category(
+        //       id: 'spiritual_connection', 
+        //       label: 'Spiritual Connection', 
+        //       icon: Icons.spa,
+        //       imagePath: 'assets/images/energy/imbalances/connections/spiritual_connection.webp',
+        //     ),
+        //   ],
+        // ),
       ];
     }
 
@@ -1152,25 +1188,25 @@ class EnergyCategories {
           id: 'primary_unresolved_emotions',
           label: 'Primary Unresolved Emotions',
           icon: Icons.sentiment_dissatisfied,
-          imagePath: 'assets/images/energy/unresolved_emotions/primary_unresolved_emotions.webp',
+          imagePath: 'assets/images/$animalId/energy/unresolved_emotions.webp',
         ),
         Category(
           id: 'unresolved_relational_emotions',
           label: 'Unresolved Relational Emotions',
           icon: Icons.heart_broken,
-          imagePath: 'assets/images/energy/unresolved_emotions/unresolved_relational_emotions.webp',
+          imagePath: 'assets/images/$animalId/energy/unresolved_emotions.webp',
         ),
         Category(
           id: 'unresolved_suppressed_emotions',
           label: 'Unresolved Suppressed Emotions',
           icon: Icons.lock,
-          imagePath: 'assets/images/energy/unresolved_emotions/unresolved_suppressed_emotions.webp',
+          imagePath: 'assets/images/$animalId/energy/unresolved_emotions.webp',
         ),
         Category(
           id: 'unresolved_survival_emotions',
           label: 'Unresolved Survival Emotions',
           icon: Icons.warning,
-          imagePath: 'assets/images/energy/unresolved_emotions/unresolved_survival_emotions.webp',
+          imagePath: 'assets/images/$animalId/energy/unresolved_emotions.webp',
         ),
       ];
     }
@@ -1198,13 +1234,13 @@ class EnergyCategories {
         imagePath: 'assets/images/$animalId/energy/meridians.webp',
         subcategories: meridiansSubcategories,
       ),
-      Category(
-        id: 'life_force',
-        label: 'Life Force',
-        icon: Icons.energy_savings_leaf,
-        imagePath: 'assets/images/energy/life_force.webp',
-        subcategories: lifeForceSubcategories,
-      ),
+      // Category(
+      //   id: 'life_force',
+      //   label: 'Life Force',
+      //   icon: Icons.energy_savings_leaf,
+      //   imagePath: 'assets/images/energy/life_force.webp',
+      //   subcategories: lifeForceSubcategories,
+      // ),
       Category(
         id: 'imbalances',
         label: 'Imbalances',
@@ -1251,7 +1287,7 @@ class EnergyCategories {
         id: 'energy_attachments',
         label: 'Energy Attachments',
         icon: Icons.link,
-        imagePath: 'assets/images/energy/energy_attachments.webp',
+        imagePath: 'assets/images/energy/energy_attachments_${animalId}.webp',
         subcategories: energyAttachmentsSubcategories,
       ),
       Category(

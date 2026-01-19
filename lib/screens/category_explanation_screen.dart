@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../providers/theme_provider.dart';
 import '../widgets/scroll_to_top_button.dart';
 
@@ -438,7 +440,7 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                       Theme.of(context).textTheme.titleSmall?.copyWith(
                         fontWeight: FontWeight.bold,
                         color: Theme.of(context).colorScheme.primary,
-                        fontSize: isDesktop ? 14 : (isTablet ? 13 : 12),
+                        fontSize: isDesktop ? 17 : (isTablet ? 16 : 15),
                       ),
                       TextAlign.center,
                     ),
@@ -476,8 +478,8 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
                       child: _buildFormattedText(
                         context,
                         cell,
-                        Theme.of(context).textTheme.bodySmall?.copyWith(
-                          fontSize: isDesktop ? 13 : (isTablet ? 12 : 11),
+                        Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          fontSize: isDesktop ? 16 : (isTablet ? 15 : 14),
                           color: isSubheading 
                             ? Theme.of(context).colorScheme.primary
                             : Theme.of(context).colorScheme.onSurface,
@@ -571,10 +573,12 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
   /// Build formatted text with bold support for **text** patterns
   Widget _buildFormattedText(BuildContext context, String text, TextStyle? baseStyle, TextAlign textAlign) {
     final spans = <TextSpan>[];
-    final pattern = RegExp(r'\*\*(.*?)\*\*');
+    
+    // Combined pattern to match both bold (**text**) and links (<a href="url">text</a>)
+    final combinedPattern = RegExp(r'\*\*(.*?)\*\*|<a\s+href=[' "'" r'"' "'" r'](.+?)[' "'" r'"' "'" r'\s]*>(.+?)</a>');
     int lastMatchEnd = 0;
 
-    for (final match in pattern.allMatches(text)) {
+    for (final match in combinedPattern.allMatches(text)) {
       // Add text before the match (normal text)
       if (match.start > lastMatchEnd) {
         spans.add(TextSpan(
@@ -583,11 +587,29 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
         ));
       }
 
-      // Add the matched bold text (without the ** markers)
-      spans.add(TextSpan(
-        text: match.group(1), // The text inside **...**
-        style: baseStyle?.copyWith(fontWeight: FontWeight.bold),
-      ));
+      // Check if it's a bold match or link match
+      if (match.group(1) != null) {
+        // This is a bold text match (**text**)
+        spans.add(TextSpan(
+          text: match.group(1), // The text inside **...**
+          style: baseStyle?.copyWith(fontWeight: FontWeight.bold),
+        ));
+      } else if (match.group(2) != null && match.group(3) != null) {
+        // This is a hyperlink match (<a href="url">text</a>)
+        final url = match.group(2)!;
+        final linkText = match.group(3)!;
+        
+        spans.add(TextSpan(
+          text: linkText,
+          style: baseStyle?.copyWith(
+            color: Theme.of(context).colorScheme.primary,
+            decoration: TextDecoration.underline,
+            fontWeight: FontWeight.w500,
+          ),
+          recognizer: TapGestureRecognizer()
+            ..onTap = () => _launchURL(url),
+        ));
+      }
 
       lastMatchEnd = match.end;
     }
@@ -613,6 +635,37 @@ class _CategoryExplanationScreenState extends State<CategoryExplanationScreen>
       text: TextSpan(children: spans),
       textAlign: textAlign,
     );
+  }
+
+  /// Launch URL in the browser
+  Future<void> _launchURL(String urlString) async {
+    try {
+      final uri = Uri.parse(urlString);
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(
+          uri,
+          mode: LaunchMode.externalApplication,
+        );
+      } else {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('Could not open link: $urlString'),
+              backgroundColor: Theme.of(context).colorScheme.error,
+            ),
+          );
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Error opening link: $e'),
+            backgroundColor: Theme.of(context).colorScheme.error,
+          ),
+        );
+      }
+    }
   }
 
   /// Extract page title from #Title# format (first line)
@@ -1303,13 +1356,15 @@ class _ExpandableItemWidgetState extends State<_ExpandableItemWidget>
     });
   }
 
-  /// Build formatted text with bold support for **text** patterns
+/// Build formatted text with bold support for **text** patterns and hyperlinks for <a href="url">text</a>
   Widget _buildFormattedTextForExpandable(BuildContext context, String text, TextStyle? baseStyle, TextAlign textAlign) {
     final spans = <TextSpan>[];
-    final pattern = RegExp(r'\*\*(.*?)\*\*');
+    
+    // Combined pattern to match both bold (**text**) and links (<a href="url">text</a>)
+    final combinedPattern = RegExp(r'\*\*(.*?)\*\*|<a\s+href=[' "'" r'"' "'" r'](.+?)[' "'" r'"' "'" r'\s]*>(.+?)</a>');
     int lastMatchEnd = 0;
 
-    for (final match in pattern.allMatches(text)) {
+    for (final match in combinedPattern.allMatches(text)) {
       // Add text before the match (normal text)
       if (match.start > lastMatchEnd) {
         spans.add(TextSpan(
@@ -1318,11 +1373,54 @@ class _ExpandableItemWidgetState extends State<_ExpandableItemWidget>
         ));
       }
 
-      // Add the matched bold text (without the ** markers)
-      spans.add(TextSpan(
-        text: match.group(1), // The text inside **...**
-        style: baseStyle?.copyWith(fontWeight: FontWeight.bold),
-      ));
+      // Check if it's a bold match or link match
+      if (match.group(1) != null) {
+        // This is a bold text match (**text**)
+        spans.add(TextSpan(
+          text: match.group(1), // The text inside **...** 
+          style: baseStyle?.copyWith(fontWeight: FontWeight.bold),
+        ));
+      } else if (match.group(2) != null && match.group(3) != null) {
+        // This is a hyperlink match (<a href="url">text</a>)
+        final url = match.group(2)!;
+        final linkText = match.group(3)!;
+        
+        spans.add(TextSpan(
+          text: linkText,
+          style: baseStyle?.copyWith(
+            color: Theme.of(context).colorScheme.primary,
+            decoration: TextDecoration.underline,
+            fontWeight: FontWeight.w500,
+          ),
+          recognizer: TapGestureRecognizer()
+            ..onTap = () async {
+              try {
+                final uri = Uri.parse(url);
+                if (await canLaunchUrl(uri)) {
+                  await launchUrl(uri, mode: LaunchMode.externalApplication);
+                } else {
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('Could not open link: $url'),
+                        backgroundColor: Theme.of(context).colorScheme.error,
+                      ),
+                    );
+                  }
+                }
+              } catch (e) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Error opening link: $e'),
+                      backgroundColor: Theme.of(context).colorScheme.error,
+                    ),
+                  );
+                }
+              }
+            },
+        ));
+      }
 
       lastMatchEnd = match.end;
     }

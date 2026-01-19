@@ -10,7 +10,7 @@ Essential oils may be used aromatically, energetically, or topically when approp
 ###Calming & Sleep – Essential Oils###
 
 ###TABLE_START###
-No. | SET 1 | SET 2 | SET 3
+**No.** | **SET 1** | **SET 2** | **SET 3**
 1. | Lavender\nDeep calming, promotes restful sleep | Roman Chamomile\nSoothes anxiety, nervous tension | Ylang Ylang\nRelaxes emotional stress, slows racing thoughts
 2. | Vetiver\nGrounding, calms overstimulation | Clary Sage\nBalances nervous system | Marjoram\nRelaxes muscles, eases tension
 3. | Mandarin\nGentle calming, ideal for animals | Bergamot\nReduces stress, emotional uplift | Petitgrain\nCalms nervous agitation

@@ -1,6 +1,10 @@
 import 'package:flutter/services.dart';
 
 /// Service to manage category explanation content
+/// 
+/// Supports the following formatting in text files:
+/// - **bold text** - Text enclosed in double asterisks will be rendered as bold
+/// - <a href="url">link text</a> - HTML anchor tags will be rendered as clickable hyperlinks
 class ContentService {
   static final ContentService _instance = ContentService._internal();
   factory ContentService() => _instance;
@@ -474,7 +478,7 @@ class ContentService {
     // Check in reverse order to find the most specific match
     for (int i = breadcrumbs.length - 1; i >= 0; i--) {
       String breadcrumb = breadcrumbs[i];
-      String? matchedId = _getExactMatch(breadcrumb);
+      String? matchedId = _getExactMatch(breadcrumb, breadcrumbs);
       if (matchedId != null) {
         print('DEBUG: Found exact match "$matchedId" for breadcrumb "$breadcrumb"');
         return matchedId;
@@ -486,7 +490,7 @@ class ContentService {
   }
   
   /// Get exact match for a breadcrumb to a folder ID
-  String? _getExactMatch(String breadcrumb) {
+  String? _getExactMatch(String breadcrumb, List<String> breadcrumbs) {
     final breadcrumbLower = breadcrumb.toLowerCase().trim();
     
     // Exact string matches for category names
@@ -623,17 +627,29 @@ class ContentService {
       case 'chronic':
         return 'chronic';
       case 'digestive':
-        return 'digestive';
+        // Only match digestive for homeopathy context to avoid conflict with other categories
+        if (breadcrumbs.any((b) => b.toLowerCase().contains('homeopathy') || b.toLowerCase().contains('holistic remedies'))) {
+          return 'digestive';
+        }
+        return null;
       case 'emotional':
         return 'emotional';
       case 'immune':
-        return 'immune';
+        // Only match immune for homeopathy context to avoid conflict with other categories
+        if (breadcrumbs.any((b) => b.toLowerCase().contains('homeopathy') || b.toLowerCase().contains('holistic remedies'))) {
+          return 'immune';
+        }
+        return null;
       case 'inflammation':
         return 'inflammation';
       case 'pain':
         return 'pain';
       case 'respiratory':
-        return 'respiratory';
+        // Only match respiratory for homeopathy context to avoid conflict with glands
+        if (breadcrumbs.any((b) => b.toLowerCase().contains('homeopathy') || b.toLowerCase().contains('holistic remedies'))) {
+          return 'respiratory';
+        }
+        return null;
       case 'trauma':
         return 'trauma';
       

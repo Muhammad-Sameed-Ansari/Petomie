@@ -1,15 +1,13 @@
 #Fear Of Patterns#
 
 Fear of patterns are recurring survival-based imprints that activate when a perceived threat is anticipated rather than present.
-They form when the system learns to expect danger, loss, or harm and begins to respond in advance.
-
-Once formed, fear of patterns no longer require an actual threat to be active.
+They form when the system learns to expect danger, loss, or harm and begins to respond in advance
+Once formed, fear of patterns no longer require an actual threat to be active
 The anticipation alone is enough to trigger the response.
 
 ##Fear pulls anticipated threat into the present##
 
 ###Common Effects###
-##Fear of patterns may contribute to##
 Avoidance behaviors
 Anxiety or hypervigilance
 Freeze or shutdown responses
@@ -51,9 +49,7 @@ No. | SET 1 | SET 2 | SET 3
 10. | Change | Things being different | Loss of familiarity
 ###TABLE_END###
 
-##Animals Do Not Rationalize Fear, They Embody It##
-
-##A Fear Of Pattern In Animals May Show As##
+###A Fear Of Pattern May Show As###
 Avoidance of specific places, people, or objects
 Heightened alertness without present threat
 Freeze, flight, or startle responses

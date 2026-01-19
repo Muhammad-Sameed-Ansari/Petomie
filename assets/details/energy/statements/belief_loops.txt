@@ -6,15 +6,7 @@ Once formed, the loop no longer needs the original event to stay active—it rep
 
 They often form through conditioning, trauma, repeated experiences, or mirroring their human environment.
 
-##Belief loop is a stored program influencing##
-Nervous system responses
-Emotional reactions
-Behavioral patterns
-Physical tension and stress responses
-Energy field organization
-
 ###How Belief Loops Form###
-##Belief loops may form through##
 Repeated exposure to the same experience
 Trauma or shock that was never resolved
 Learned helplessness or learned protection
@@ -30,7 +22,6 @@ Experienced → Interpreted → Stored → Replayed → Reinforced
 ##The loop pulls the past into the present##
 
 ###Common Effects###
-##Belief loops may contribute to##
 Repetitive behaviors
 Anxiety or hypervigilance
 Shutdown or freeze responses
@@ -72,9 +63,7 @@ No. | SET 1 | SET 2 | SET 3
 10. | I am dependent | Separation causes harm | Attachment equals safety
 ###TABLE_END###
 
-##Animals do not rationalize beliefs, They embody them##
-
-##An animal belief loop may show as##
+###A belief loop may show as###
 Repeating the same reaction even when conditions change
 Responding to past energy rather than current reality
 Holding tension without visible cause
