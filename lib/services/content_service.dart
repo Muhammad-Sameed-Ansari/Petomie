@@ -83,6 +83,17 @@ class ContentService {
     'mental_clarity_and_focus': 'holistic_remedies/crystals/mental_clarity_and_focus',
     'spiritual_connection': 'holistic_remedies/crystals/spiritual_connection',
     'trauma_and_heart_healing': 'holistic_remedies/crystals/trauma_and_heart_healing',
+    
+    // Environmental category folders (shared across all animals)
+    'environmental': 'environmental',
+    'chemical_environment': 'environmental',
+    'climatic_seasonal_environment': 'environmental',
+    'emf_environment': 'environmental',
+    'geopathic_earth_energies': 'environmental',
+    'human_emotional_environment': 'environmental',
+    'physical_environment': 'environmental',
+    'routine_management_environment': 'environmental',
+    'social_environment': 'environmental',
   };
 
   /// Get explanation text for a category using dynamic path resolution
@@ -672,6 +683,26 @@ class ContentService {
         return 'physical_support_essential_oils';
       case 'trauma release':
         return 'trauma_release_essential_oils';
+      
+      // Environmental categories
+      case 'environmental':
+        return 'environmental';
+      case 'chemical environment':
+        return 'chemical_environment';
+      case 'climatic seasonal environment':
+        return 'climatic_seasonal_environment';
+      case 'emf environment':
+        return 'emf_environment';
+      case 'geopathic earth energies':
+        return 'geopathic_earth_energies';
+      case 'human emotional environment':
+        return 'human_emotional_environment';
+      case 'physical environment':
+        return 'physical_environment';
+      case 'routine management environment':
+        return 'routine_management_environment';
+      case 'social environment':
+        return 'social_environment';
       
       default:
         return null;

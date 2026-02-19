@@ -9,13 +9,6 @@ class ConnectiveTissueCategories {
     if (animalId == 'horse' || animalId == 'dog' || animalId == 'cat') {
       return [
         Category(
-          id: 'skeleton',
-          label: 'Skeleton',
-          icon: Icons.accessibility,
-          imagePath: 'assets/images/$animalId/skeleton.webp',
-          subcategories: SkeletalCategories.getSkeletalSystemCategoriesForAnimal(animalId),
-        ),
-        Category(
           id: 'adipose_tissue',
           label: 'Adipose Tissue',
           icon: Icons.layers,
@@ -64,13 +57,6 @@ class ConnectiveTissueCategories {
     if (animalId == 'bird') {
       return [
         Category(
-          id: 'skeleton',
-          label: 'Skeleton',
-          icon: Icons.accessibility,
-          imagePath: 'assets/images/$animalId/skeleton.webp',
-          subcategories: SkeletalCategories.getSkeletalSystemCategoriesForAnimal(animalId),
-        ),
-        Category(
           id: 'aponeuroses',
           label: 'Aponeuroses',
           icon: Icons.layers,
@@ -80,7 +66,7 @@ class ConnectiveTissueCategories {
           id: 'areolar',
           label: 'Areolar',
           icon: Icons.grain,
-          imagePath: 'assets/images/connective_tissue/areolar.webp',
+          imagePath: 'assets/images/connective_tissue/elastic.webp',
         ),
         Category(
           id: 'blood',

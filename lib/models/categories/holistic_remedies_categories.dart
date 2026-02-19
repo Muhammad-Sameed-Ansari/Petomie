@@ -122,19 +122,19 @@ class HolisticRemediesCategories {
         id: 'common_supplements',
         label: 'Common Supplements',
         icon: Icons.medical_services,
-        imagePath: 'assets/images/holistic_remedies/supplements_herbs.webp',
+        imagePath: 'assets/images/holistic_remedies/supplements_herbs/common_supplements.webp',
       ),
       Category(
         id: 'core_supplements',
         label: 'Core Supplements',
         icon: Icons.medical_services,
-        imagePath: 'assets/images/holistic_remedies/supplements_herbs.webp',
+        imagePath: 'assets/images/holistic_remedies/supplements_herbs/core_supplements.webp',
       ),
       Category(
         id: 'supplements_TCM',
         label: 'Supplements TCM',
         icon: Icons.medical_services,
-        imagePath: 'assets/images/holistic_remedies/supplements_herbs.webp',
+        imagePath: 'assets/images/holistic_remedies/supplements_herbs/supplements_TCM.webp',
       ),
     ];
 

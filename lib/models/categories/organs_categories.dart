@@ -259,7 +259,7 @@ class OrgansCategories {
           id: 'larynx',
           label: 'Larynx',
           icon: Icons.mic,
-          imagePath: 'assets/images/organs/neck/larynx_${animalId}.webp',
+          imagePath: 'assets/images/organs/neck/larynx.webp',
         ),
         Category(
           id: 'trachea',
@@ -289,43 +289,43 @@ class OrgansCategories {
                 id: 'cloaca',
                 label: 'Cloaca',
                 icon: Icons.scatter_plot,
-                imagePath: 'assets/images/organs/pelvis/female/cloaca.webp',
+                imagePath: 'assets/images/organs/reproductive_organs/female/cloaca.webp',
               ),
               Category(
                 id: 'infundibulum',
                 label: 'Infundibulum',
                 icon: Icons.scatter_plot,
-                imagePath: 'assets/images/organs/pelvis/female/infundibulum.webp',
+                imagePath: 'assets/images/organs/reproductive_organs/female/infundibulum.webp',
               ),
               Category(
                 id: 'isthmus',
                 label: 'Isthmus',
                 icon: Icons.scatter_plot,
-                imagePath: 'assets/images/organs/pelvis/female/isthmus.webp',
+                imagePath: 'assets/images/organs/reproductive_organs/female/isthmus.webp',
               ),
               Category(
                 id: 'magnum',
                 label: 'Magnum',
                 icon: Icons.scatter_plot,
-                imagePath: 'assets/images/organs/pelvis/female/magnum.webp',
+                imagePath: 'assets/images/organs/reproductive_organs/female/magnum.webp',
               ),
               Category(
                 id: 'ovary',
                 label: 'Ovary',
                 icon: Icons.scatter_plot,
-                imagePath: 'assets/images/organs/pelvis/female/ovary.webp',
+                imagePath: 'assets/images/organs/reproductive_organs/female/ovary.webp',
               ),
               Category(
                 id: 'shell_gland',
                 label: 'Shell Gland',
                 icon: Icons.scatter_plot,
-                imagePath: 'assets/images/organs/pelvis/female/shell_gland.webp',
+                imagePath: 'assets/images/organs/reproductive_organs/female/uterus_shell_gland.webp',
               ),
               Category(
                 id: 'vagina',
                 label: 'Vagina',
                 icon: Icons.scatter_plot,
-                imagePath: 'assets/images/organs/pelvis/female/vagina.webp',
+                imagePath: 'assets/images/organs/reproductive_organs/female/vagina.webp',
               ),
             ],
           ),
@@ -344,12 +344,6 @@ class OrgansCategories {
               Category(
                 id: 'phallus',
                 label: 'Phallus',
-                icon: Icons.scatter_plot,
-                imagePath: 'assets/images/organs/pelvis/male/bird_back.webp',
-              ),
-              Category(
-                id: 'sperm_duct',
-                label: 'Sperm Duct',
                 icon: Icons.scatter_plot,
                 imagePath: 'assets/images/organs/pelvis/male/bird_back.webp',
               ),
@@ -483,12 +477,6 @@ class OrgansCategories {
     if (animalId.toLowerCase() == 'bird') {
       reproductiveFemaleSubcategories = [
         Category(
-          id: 'cloaca',
-          label: 'Cloaca',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/organs/reproductive_organs/female/cloaca.webp',
-        ),
-        Category(
           id: 'infundibulum',
           label: 'Infundibulum',
           icon: Icons.scatter_plot,
@@ -519,20 +507,14 @@ class OrgansCategories {
           imagePath: 'assets/images/organs/reproductive_organs/female/uterus_shell_gland.webp',
         ),
         Category(
-          id: 'vagina',
-          label: 'Vagina',
+          id: 'oviduct',
+          label: 'Oviduct',
           icon: Icons.scatter_plot,
-          imagePath: 'assets/images/organs/reproductive_organs/female/vagina.webp',
+          imagePath: 'assets/images/organs/reproductive_organs/female/oviduct.webp',
         ),
       ];
 
       reproductiveMaleSubcategories = [
-        Category(
-          id: 'epididymis',
-          label: 'Epididymis',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/organs/reproductive_organs/male/epididymis.webp',
-        ),
         Category(
           id: 'phallus',
           label: 'Phallus',
@@ -540,28 +522,10 @@ class OrgansCategories {
           imagePath: 'assets/images/organs/reproductive_organs/male/phallus.webp',
         ),
         Category(
-          id: 'sperm_duct',
-          label: 'Sperm Duct',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/organs/reproductive_organs/male/sperm_duct.webp',
-        ),
-        Category(
           id: 'testes',
           label: 'Testes',
           icon: Icons.scatter_plot,
           imagePath: 'assets/images/organs/reproductive_organs/male/testes.webp',
-        ),
-        Category(
-          id: 'cloaca',
-          label: 'Cloaca',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/organs/reproductive_organs/male/cloaca.webp',
-        ),
-        Category(
-          id: 'cloacal_protuberance',
-          label: 'Cloacal Protuberance',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/organs/reproductive_organs/male/cloacal_protuberance.webp',
         ),
       ];
     } else if (animalId.toLowerCase() == 'horse') {
@@ -621,19 +585,13 @@ class OrgansCategories {
           id: 'sperm_duct',
           label: 'Sperm Duct',
           icon: Icons.scatter_plot,
-          imagePath: 'assets/images/organs/reproductive_organs/male/sperm_duct.webp',
+          imagePath: 'assets/images/organs/reproductive_organs/male/sperm_duct_horse.webp',
         ),
         Category(
           id: 'testes',
           label: 'Testes',
           icon: Icons.scatter_plot,
           imagePath: 'assets/images/organs/reproductive_organs/male/testes.webp',
-        ),
-        Category(
-          id: 'prostate_gland',
-          label: 'Prostate Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/reproductive/male/prostate_gland.webp',
         ),
       ];
     } else if (animalId.toLowerCase() == 'cat') {
@@ -695,12 +653,6 @@ class OrgansCategories {
           icon: Icons.scatter_plot,
           imagePath: 'assets/images/organs/reproductive_organs/male/testes.webp',
         ),
-        Category(
-          id: 'prostate_gland',
-          label: 'Prostate Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/reproductive/male/prostate_gland.webp',
-        ),
       ];
     } else {
       // Dog
@@ -733,7 +685,7 @@ class OrgansCategories {
           id: 'vagina',
           label: 'Vagina',
           icon: Icons.scatter_plot,
-          imagePath: 'assets/images/organs/reproductive_organs/female/vagina.webp',
+          imagePath: 'assets/images/organs/reproductive_organs/female/vagina_dog.webp',
         )
       ];
 
@@ -761,12 +713,6 @@ class OrgansCategories {
           label: 'Testes',
           icon: Icons.scatter_plot,
           imagePath: 'assets/images/organs/reproductive_organs/male/testes.webp',
-        ),
-        Category(
-          id: 'prostate_gland',
-          label: 'Prostate Gland',
-          icon: Icons.scatter_plot,
-          imagePath: 'assets/images/glands/reproductive/male/prostate_gland.webp',
         ),
       ];
     }

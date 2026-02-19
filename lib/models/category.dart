@@ -8,6 +8,7 @@ import 'categories/organs_categories.dart';
 import 'categories/glands_categories.dart';
 import 'categories/sensory_categories.dart';
 import 'categories/holistic_remedies_categories.dart';
+import 'categories/environmental_categories.dart';
 
 /// Represents a category in the navigation hierarchy
 class Category {
@@ -99,6 +100,11 @@ class CategoryData {
     return HolisticRemediesCategories.getHolisticRemediesCategoriesForAnimal(animalId);
   }
 
+  /// Get environmental categories for a specific animal
+  static List<Category> getEnvironmentalCategoriesForAnimal(String animalId) {
+    return EnvironmentalCategories.getEnvironmentalCategoriesForAnimal(animalId);
+  }
+
   /// Get anatomy categories for a specific animal with caching
   static List<Category> getAnatomyCategoriesForAnimal(String animalId) {
     print("sameed - getAnatomyCategoriesForAnimal - animalId: $animalId");
@@ -117,6 +123,13 @@ class CategoryData {
         icon: Icons.flash_on,
         imagePath: 'assets/images/$animalId/energy.webp',
         // Lazy load energy subcategories only when needed
+      ),
+      Category(
+        id: 'skeleton',
+        label: 'Skeleton',
+        icon: Icons.accessibility,
+        imagePath: 'assets/images/$animalId/skeleton.webp',
+        subcategories: getSkeletalSystemCategoriesForAnimal(animalId),
       ),
       Category(
         id: 'connective_tissue',
@@ -166,6 +179,13 @@ class CategoryData {
         icon: Icons.visibility,
         imagePath: 'assets/images/holistic_remedies.webp',
         subcategories: getHolisticRemediesCategoriesForAnimal(animalId),
+      ),
+      Category(
+        id: 'environmental',
+        label: 'Environmental',
+        icon: Icons.nature,
+        imagePath: 'assets/images/environmental.webp',
+        subcategories: getEnvironmentalCategoriesForAnimal(animalId),
       ),
     ];
     

@@ -563,31 +563,31 @@ class EnergyCategories {
             id: 'dai_mai', 
             label: 'Dai Mai', 
             icon: Icons.vertical_split,
-            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/dai_mai.webp',
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/chong_mai.webp',
           ),
           Category(
             id: 'yin_qiao_mai', 
             label: 'Yin Qiao Mai', 
             icon: Icons.vertical_split,
-            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_qiao_mai.webp',
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/chong_mai.webp',
           ),
           Category(
             id: 'yang_qiao_mai', 
             label: 'Yang Qiao Mai', 
             icon: Icons.vertical_split,
-            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_qiao_mai.webp',
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/chong_mai.webp',
           ),
           Category(
             id: 'yin_wei_mai', 
             label: 'Yin Wei Mai', 
             icon: Icons.vertical_split,
-            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yin_wei_mai.webp',
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/chong_mai.webp',
           ),
           Category(
             id: 'yang_wei_mai', 
             label: 'Yang Wei Mai', 
             icon: Icons.vertical_split,
-            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/yang_wei_mai.webp',
+            imagePath: 'assets/images/$animal/energy/meridians/extraordinary_meridian/chong_mai.webp',
           ),
         ];
       }
@@ -763,25 +763,6 @@ class EnergyCategories {
           label: 'Hamsa Hand',
           icon: Icons.rotate_right,
           imagePath: 'assets/images/energy/sacred_symbols/hamsa_hand.webp',
-        ),
-      ];
-    }
-
-    // Define states of harmony subcategories for Horse, Dog, and Cat
-    List<Category> statesOfHarmonySubcategories = [];
-    if (['horse', 'dog', 'cat', 'bird'].contains(animalId.toLowerCase())) {
-      statesOfHarmonySubcategories = [
-        Category(
-          id: 'balance',
-          label: 'Balance',
-          icon: Icons.balance,
-          imagePath: 'assets/images/energy/states_of_harmony/balance.webp',
-        ),
-        Category(
-          id: 'disharmony',
-          label: 'Disharmony',
-          icon: Icons.warning_amber,
-          imagePath: 'assets/images/energy/states_of_harmony/disharmony.webp',
         ),
       ];
     }
@@ -1081,25 +1062,25 @@ class EnergyCategories {
       List<Category> internalSubs = [
         Category(
           id: 'relationship_field_emotional',
-          label: 'Relationship Field Emotional',
+          label: 'Emotional Distortions',
           icon: Icons.sentiment_dissatisfied,
-          imagePath: 'assets/images/energy/relationship_field/internal/relationship_field_emotional.webp',
+          imagePath: 'assets/images/energy/relationship_field/internal/emotional_distortions.webp',
         ),
         Category(
           id: 'relationship_field_nervous',
-          label: 'Relationship Field Nervous',
+          label: 'Nervous System Distortion',
           icon: Icons.grain,
-          imagePath: 'assets/images/energy/relationship_field/internal/relationship_field_nervous.webp',
+          imagePath: 'assets/images/energy/relationship_field/internal/nervous_system_distortion.webp',
         ),
         Category(
           id: 'relationship_field_roles',
-          label: 'Relationship Field Roles',
+          label: 'Role Distortion',
           icon: Icons.people,
-          imagePath: 'assets/images/energy/relationship_field/internal/relationship_field_roles.webp',
+          imagePath: 'assets/images/energy/relationship_field/internal/role_distortion.webp',
         ),
         Category(
           id: 'trauma_distorsion_internal',
-          label: 'Trauma Distorsion',
+          label: 'Trauma Distortions',
           icon: Icons.warning,
           imagePath: 'assets/images/energy/relationship_field/internal/trauma_distorsion.webp',
         ),
@@ -1138,12 +1119,14 @@ class EnergyCategories {
           id: 'internal',
           label: 'Internal',
           icon: Icons.person,
+          imagePath: 'assets/images/energy/relationship_field/internal.webp',
           subcategories: internalSubs,
         ),
         Category(
           id: 'external',
           label: 'External',
           icon: Icons.people_outline,
+          imagePath: 'assets/images/energy/relationship_field/external.webp',
           subcategories: externalSubs,
         ),
       ];
@@ -1254,13 +1237,6 @@ class EnergyCategories {
         icon: Icons.hexagon,
         imagePath: 'assets/images/energy/sacred_symbols.webp',
         subcategories: sacredSymbolsSubcategories,
-      ),
-      Category(
-        id: 'states_of_harmony',
-        label: 'States of Harmony',
-        icon: Icons.self_improvement,
-        imagePath: 'assets/images/energy/states_of_harmony.webp',
-        subcategories: statesOfHarmonySubcategories,
       ),
       Category(
         id: 'negative_beliefs',

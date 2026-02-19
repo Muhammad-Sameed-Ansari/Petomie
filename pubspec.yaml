@@ -90,6 +90,7 @@ flutter:
   assets:
     - assets/images/
     - assets/details/
+    - assets/details/environmental/
     - assets/details/energy/
     - assets/details/energy/life_force/
     - assets/details/energy/imbalances/
@@ -151,38 +152,38 @@ flutter:
     - assets/details/dog/energy/meridians/extraordinary_meridian/
     - assets/details/dog/energy/negative_beliefs/
     - assets/details/dog/connective_tissue/
-    - assets/details/dog/connective_tissue/skeleton/
-    - assets/details/dog/connective_tissue/skeleton/skull/
-    - assets/details/dog/connective_tissue/skeleton/skull/cranial_bones/
-    - assets/details/dog/connective_tissue/skeleton/skull/facial_bones/
-    - assets/details/dog/connective_tissue/skeleton/skull/accessory_bones/
-    - assets/details/dog/connective_tissue/skeleton/skull/dentition/
-    - assets/details/dog/connective_tissue/skeleton/skull/dentition/upper/
-    - assets/details/dog/connective_tissue/skeleton/skull/dentition/upper/upper_left/
-    - assets/details/dog/connective_tissue/skeleton/skull/dentition/upper/upper_right/
-    - assets/details/dog/connective_tissue/skeleton/skull/dentition/lower/
-    - assets/details/dog/connective_tissue/skeleton/skull/dentition/lower/lower_left/
-    - assets/details/dog/connective_tissue/skeleton/skull/dentition/lower/lower_right/
-    - assets/details/dog/connective_tissue/skeleton/spine/
-    - assets/details/dog/connective_tissue/skeleton/spine/cervical_vertebrae/
-    - assets/details/dog/connective_tissue/skeleton/spine/thoracic_vertebrae/
-    - assets/details/dog/connective_tissue/skeleton/spine/lumber_vertebrae/
-    - assets/details/dog/connective_tissue/skeleton/spine/sacral_vertebrae/
-    - assets/details/dog/connective_tissue/skeleton/spine/caudal_vertebrae/
-    - assets/details/dog/connective_tissue/skeleton/spine/discs/
-    - assets/details/dog/connective_tissue/skeleton/ribcage/
-    - assets/details/dog/connective_tissue/skeleton/ribcage/true_ribs/
-    - assets/details/dog/connective_tissue/skeleton/ribcage/false_ribs/
-    - assets/details/dog/connective_tissue/skeleton/ribcage/floating_ribs/
-    - assets/details/dog/connective_tissue/skeleton/forelimb/
-    - assets/details/dog/connective_tissue/skeleton/forelimb/antebrachium/
-    - assets/details/dog/connective_tissue/skeleton/forelimb/carpus/
-    - assets/details/dog/connective_tissue/skeleton/forelimb/manus/
-    - assets/details/dog/connective_tissue/skeleton/hindlimb/
-    - assets/details/dog/connective_tissue/skeleton/hindlimb/hindpaw/
-    - assets/details/dog/connective_tissue/skeleton/hindlimb/leg/
-    - assets/details/dog/connective_tissue/skeleton/hindlimb/hock/
-    - assets/details/dog/connective_tissue/skeleton/hindlimb/thigh/
+    - assets/details/dog/skeleton/
+    - assets/details/dog/skeleton/skull/
+    - assets/details/dog/skeleton/skull/cranial_bones/
+    - assets/details/dog/skeleton/skull/facial_bones/
+    - assets/details/dog/skeleton/skull/accessory_bones/
+    - assets/details/dog/skeleton/skull/dentition/
+    - assets/details/dog/skeleton/skull/dentition/upper/
+    - assets/details/dog/skeleton/skull/dentition/upper/upper_left/
+    - assets/details/dog/skeleton/skull/dentition/upper/upper_right/
+    - assets/details/dog/skeleton/skull/dentition/lower/
+    - assets/details/dog/skeleton/skull/dentition/lower/lower_left/
+    - assets/details/dog/skeleton/skull/dentition/lower/lower_right/
+    - assets/details/dog/skeleton/spine/
+    - assets/details/dog/skeleton/spine/cervical_vertebrae/
+    - assets/details/dog/skeleton/spine/thoracic_vertebrae/
+    - assets/details/dog/skeleton/spine/lumber_vertebrae/
+    - assets/details/dog/skeleton/spine/sacral_vertebrae/
+    - assets/details/dog/skeleton/spine/caudal_vertebrae/
+    - assets/details/dog/skeleton/spine/discs/
+    - assets/details/dog/skeleton/ribcage/
+    - assets/details/dog/skeleton/ribcage/true_ribs/
+    - assets/details/dog/skeleton/ribcage/false_ribs/
+    - assets/details/dog/skeleton/ribcage/floating_ribs/
+    - assets/details/dog/skeleton/forelimb/
+    - assets/details/dog/skeleton/forelimb/antebrachium/
+    - assets/details/dog/skeleton/forelimb/carpus/
+    - assets/details/dog/skeleton/forelimb/manus/
+    - assets/details/dog/skeleton/hindlimb/
+    - assets/details/dog/skeleton/hindlimb/hindpaw/
+    - assets/details/dog/skeleton/hindlimb/leg/
+    - assets/details/dog/skeleton/hindlimb/hock/
+    - assets/details/dog/skeleton/hindlimb/thigh/
     - assets/details/dog/muscles/
     - assets/details/dog/muscles/abdominal/
     - assets/details/dog/muscles/back/
@@ -284,34 +285,38 @@ flutter:
     - assets/details/horse/glands/scent_protective/protective/
     - assets/details/horse/glands/scent_protective/scent/
     - assets/details/horse/connective_tissue/
-    - assets/details/horse/connective_tissue/skeleton/
-    - assets/details/horse/connective_tissue/skeleton/skull/
-    - assets/details/horse/connective_tissue/skeleton/skull/cranial_bones/
-    - assets/details/horse/connective_tissue/skeleton/skull/facial_bones/
-    - assets/details/horse/connective_tissue/skeleton/skull/accessory_bones/
-    - assets/details/horse/connective_tissue/skeleton/skull/dentition/
-    - assets/details/horse/connective_tissue/skeleton/skull/dentition/upper/
-    - assets/details/horse/connective_tissue/skeleton/skull/dentition/upper/upper_left/
-    - assets/details/horse/connective_tissue/skeleton/skull/dentition/upper/upper_right/
-    - assets/details/horse/connective_tissue/skeleton/skull/dentition/lower/
-    - assets/details/horse/connective_tissue/skeleton/skull/dentition/lower/lower_left/
-    - assets/details/horse/connective_tissue/skeleton/skull/dentition/lower/lower_right/
-    - assets/details/horse/connective_tissue/skeleton/spine/
-    - assets/details/horse/connective_tissue/skeleton/spine/cervical_vertebrae/
-    - assets/details/horse/connective_tissue/skeleton/spine/thoracic_vertebrae/
-    - assets/details/horse/connective_tissue/skeleton/spine/lumber_vertebrae/
-    - assets/details/horse/connective_tissue/skeleton/spine/sacral_vertebrae/
-    - assets/details/horse/connective_tissue/skeleton/spine/caudal_vertebrae/
-    - assets/details/horse/connective_tissue/skeleton/spine/discs/
-    - assets/details/horse/connective_tissue/skeleton/ribcage/
-    - assets/details/horse/connective_tissue/skeleton/ribcage/true_ribs/
-    - assets/details/horse/connective_tissue/skeleton/ribcage/false_ribs/
-    - assets/details/horse/connective_tissue/skeleton/ribcage/floating_ribs/
-    - assets/details/horse/connective_tissue/skeleton/hindlimb/
-    - assets/details/horse/connective_tissue/skeleton/hindlimb/hindhoof/
-    - assets/details/horse/connective_tissue/skeleton/hindlimb/leg/
-    - assets/details/horse/connective_tissue/skeleton/hindlimb/hock/
-    - assets/details/horse/connective_tissue/skeleton/hindlimb/thigh/
+    - assets/details/horse/skeleton/
+    - assets/details/horse/skeleton/skull/
+    - assets/details/horse/skeleton/skull/cranial_bones/
+    - assets/details/horse/skeleton/skull/facial_bones/
+    - assets/details/horse/skeleton/skull/accessory_bones/
+    - assets/details/horse/skeleton/skull/dentition/
+    - assets/details/horse/skeleton/skull/dentition/upper/
+    - assets/details/horse/skeleton/skull/dentition/upper/upper_left/
+    - assets/details/horse/skeleton/skull/dentition/upper/upper_right/
+    - assets/details/horse/skeleton/skull/dentition/lower/
+    - assets/details/horse/skeleton/skull/dentition/lower/lower_left/
+    - assets/details/horse/skeleton/skull/dentition/lower/lower_right/
+    - assets/details/horse/skeleton/spine/
+    - assets/details/horse/skeleton/spine/cervical_vertebrae/
+    - assets/details/horse/skeleton/spine/thoracic_vertebrae/
+    - assets/details/horse/skeleton/spine/lumber_vertebrae/
+    - assets/details/horse/skeleton/spine/sacral_vertebrae/
+    - assets/details/horse/skeleton/spine/caudal_vertebrae/
+    - assets/details/horse/skeleton/spine/discs/
+    - assets/details/horse/skeleton/ribcage/
+    - assets/details/horse/skeleton/ribcage/true_ribs/
+    - assets/details/horse/skeleton/ribcage/false_ribs/
+    - assets/details/horse/skeleton/ribcage/floating_ribs/
+    - assets/details/horse/skeleton/forelimb/
+    - assets/details/horse/skeleton/forelimb/antebrachium/
+    - assets/details/horse/skeleton/forelimb/carpus/
+    - assets/details/horse/skeleton/forelimb/manus/
+    - assets/details/horse/skeleton/hindlimb/
+    - assets/details/horse/skeleton/hindlimb/hindhoof/
+    - assets/details/horse/skeleton/hindlimb/leg/
+    - assets/details/horse/skeleton/hindlimb/hock/
+    - assets/details/horse/skeleton/hindlimb/thigh/
     - assets/details/horse/organs/
     - assets/details/horse/organs/head/
     - assets/details/horse/organs/neck/
@@ -417,38 +422,38 @@ flutter:
     - assets/details/cat/sensory/touch/
     - assets/details/cat/sensory/vision/
     - assets/details/cat/connective_tissue/
-    - assets/details/cat/connective_tissue/skeleton/
-    - assets/details/cat/connective_tissue/skeleton/skull/
-    - assets/details/cat/connective_tissue/skeleton/skull/cranial_bones/
-    - assets/details/cat/connective_tissue/skeleton/skull/facial_bones/
-    - assets/details/cat/connective_tissue/skeleton/skull/accessory_bones/
-    - assets/details/cat/connective_tissue/skeleton/skull/dentition/
-    - assets/details/cat/connective_tissue/skeleton/skull/dentition/upper/
-    - assets/details/cat/connective_tissue/skeleton/skull/dentition/upper/upper_left/
-    - assets/details/cat/connective_tissue/skeleton/skull/dentition/upper/upper_right/
-    - assets/details/cat/connective_tissue/skeleton/skull/dentition/lower/
-    - assets/details/cat/connective_tissue/skeleton/skull/dentition/lower/lower_left/
-    - assets/details/cat/connective_tissue/skeleton/skull/dentition/lower/lower_right/
-    - assets/details/cat/connective_tissue/skeleton/spine/
-    - assets/details/cat/connective_tissue/skeleton/spine/cervical_vertebrae/
-    - assets/details/cat/connective_tissue/skeleton/spine/thoracic_vertebrae/
-    - assets/details/cat/connective_tissue/skeleton/spine/lumber_vertebrae/
-    - assets/details/cat/connective_tissue/skeleton/spine/sacral_vertebrae/
-    - assets/details/cat/connective_tissue/skeleton/spine/caudal_vertebrae/
-    - assets/details/cat/connective_tissue/skeleton/spine/discs/
-    - assets/details/cat/connective_tissue/skeleton/ribcage/
-    - assets/details/cat/connective_tissue/skeleton/ribcage/true_ribs/
-    - assets/details/cat/connective_tissue/skeleton/ribcage/false_ribs/
-    - assets/details/cat/connective_tissue/skeleton/ribcage/floating_ribs/
-    - assets/details/cat/connective_tissue/skeleton/forelimb/
-    - assets/details/cat/connective_tissue/skeleton/forelimb/antebrachium/
-    - assets/details/cat/connective_tissue/skeleton/forelimb/carpus/
-    - assets/details/cat/connective_tissue/skeleton/forelimb/manus/
-    - assets/details/cat/connective_tissue/skeleton/hindlimb/
-    - assets/details/cat/connective_tissue/skeleton/hindlimb/hindpaw/
-    - assets/details/cat/connective_tissue/skeleton/hindlimb/leg/
-    - assets/details/cat/connective_tissue/skeleton/hindlimb/hock/
-    - assets/details/cat/connective_tissue/skeleton/hindlimb/thigh/
+    - assets/details/cat/skeleton/
+    - assets/details/cat/skeleton/skull/
+    - assets/details/cat/skeleton/skull/cranial_bones/
+    - assets/details/cat/skeleton/skull/facial_bones/
+    - assets/details/cat/skeleton/skull/accessory_bones/
+    - assets/details/cat/skeleton/skull/dentition/
+    - assets/details/cat/skeleton/skull/dentition/upper/
+    - assets/details/cat/skeleton/skull/dentition/upper/upper_left/
+    - assets/details/cat/skeleton/skull/dentition/upper/upper_right/
+    - assets/details/cat/skeleton/skull/dentition/lower/
+    - assets/details/cat/skeleton/skull/dentition/lower/lower_left/
+    - assets/details/cat/skeleton/skull/dentition/lower/lower_right/
+    - assets/details/cat/skeleton/spine/
+    - assets/details/cat/skeleton/spine/cervical_vertebrae/
+    - assets/details/cat/skeleton/spine/thoracic_vertebrae/
+    - assets/details/cat/skeleton/spine/lumber_vertebrae/
+    - assets/details/cat/skeleton/spine/sacral_vertebrae/
+    - assets/details/cat/skeleton/spine/caudal_vertebrae/
+    - assets/details/cat/skeleton/spine/discs/
+    - assets/details/cat/skeleton/ribcage/
+    - assets/details/cat/skeleton/ribcage/true_ribs/
+    - assets/details/cat/skeleton/ribcage/false_ribs/
+    - assets/details/cat/skeleton/ribcage/floating_ribs/
+    - assets/details/cat/skeleton/forelimb/
+    - assets/details/cat/skeleton/forelimb/antebrachium/
+    - assets/details/cat/skeleton/forelimb/carpus/
+    - assets/details/cat/skeleton/forelimb/manus/
+    - assets/details/cat/skeleton/hindlimb/
+    - assets/details/cat/skeleton/hindlimb/hindpaw/
+    - assets/details/cat/skeleton/hindlimb/leg/
+    - assets/details/cat/skeleton/hindlimb/hock/
+    - assets/details/cat/skeleton/hindlimb/thigh/
     - assets/details/cat/systems/
     - assets/details/cat/systems/cardiovascular_system/
     - assets/details/cat/systems/cranial_nerves/
@@ -533,30 +538,30 @@ flutter:
     - assets/details/bird/sensory/touch/
     - assets/details/bird/sensory/vision/
     - assets/details/bird/connective_tissue/
-    - assets/details/bird/connective_tissue/skeleton/
-    - assets/details/bird/connective_tissue/skeleton/hindlimb/
-    - assets/details/bird/connective_tissue/skeleton/hindlimb/foot/
-    - assets/details/bird/connective_tissue/skeleton/hindlimb/hock/
-    - assets/details/bird/connective_tissue/skeleton/hindlimb/leg/
-    - assets/details/bird/connective_tissue/skeleton/hindlimb/thigh/
-    - assets/details/bird/connective_tissue/skeleton/ribcage/
-    - assets/details/bird/connective_tissue/skeleton/ribcage/true_ribs/
-    - assets/details/bird/connective_tissue/skeleton/ribcage/false_ribs/
-    - assets/details/bird/connective_tissue/skeleton/shoulder_girdle/
-    - assets/details/bird/connective_tissue/skeleton/skull/
-    - assets/details/bird/connective_tissue/skeleton/skull/cranial_bones/
-    - assets/details/bird/connective_tissue/skeleton/skull/facial_bones/
-    - assets/details/bird/connective_tissue/skeleton/special_bones/
-    - assets/details/bird/connective_tissue/skeleton/spine/
-    - assets/details/bird/connective_tissue/skeleton/spine/discs/
-    - assets/details/bird/connective_tissue/skeleton/spine/caudal_vertebrae/
-    - assets/details/bird/connective_tissue/skeleton/spine/cervical_vertebrae/
-    - assets/details/bird/connective_tissue/skeleton/spine/synsacrum/
-    - assets/details/bird/connective_tissue/skeleton/spine/thoracic_vertebrae/
-    - assets/details/bird/connective_tissue/skeleton/wing/
-    - assets/details/bird/connective_tissue/skeleton/wing/antebrachium/
-    - assets/details/bird/connective_tissue/skeleton/wing/carpus/
-    - assets/details/bird/connective_tissue/skeleton/wing/manus/
+    - assets/details/bird/skeleton/
+    - assets/details/bird/skeleton/hindlimb/
+    - assets/details/bird/skeleton/hindlimb/foot/
+    - assets/details/bird/skeleton/hindlimb/hock/
+    - assets/details/bird/skeleton/hindlimb/leg/
+    - assets/details/bird/skeleton/hindlimb/thigh/
+    - assets/details/bird/skeleton/ribcage/
+    - assets/details/bird/skeleton/ribcage/true_ribs/
+    - assets/details/bird/skeleton/ribcage/false_ribs/
+    - assets/details/bird/skeleton/shoulder_girdle/
+    - assets/details/bird/skeleton/skull/
+    - assets/details/bird/skeleton/skull/cranial_bones/
+    - assets/details/bird/skeleton/skull/facial_bones/
+    - assets/details/bird/skeleton/special_bones/
+    - assets/details/bird/skeleton/spine/
+    - assets/details/bird/skeleton/spine/discs/
+    - assets/details/bird/skeleton/spine/caudal_vertebrae/
+    - assets/details/bird/skeleton/spine/cervical_vertebrae/
+    - assets/details/bird/skeleton/spine/synsacrum/
+    - assets/details/bird/skeleton/spine/thoracic_vertebrae/
+    - assets/details/bird/skeleton/wing/
+    - assets/details/bird/skeleton/wing/antebrachium/
+    - assets/details/bird/skeleton/wing/carpus/
+    - assets/details/bird/skeleton/wing/manus/
     - assets/details/bird/systems/
     - assets/details/bird/systems/cardiovascular_system/
     - assets/details/bird/systems/cranial_nerves/
@@ -583,6 +588,7 @@ flutter:
     - assets/details/bird/systems/respiratory_system/
     - assets/details/bird/systems/respiratory_system/lower/
     - assets/details/bird/systems/respiratory_system/upper/
+    - assets/details/bird/systems/urinary_system/
     - assets/details/bird/systems/water_balance_system/
     - assets/images/horse/
     - assets/images/dog/
@@ -602,9 +608,17 @@ flutter:
     - assets/images/horse/skeleton/dentition/
     - assets/images/horse/skeleton/dentition/upper/
     - assets/images/horse/skeleton/dentition/lower/
+    - assets/images/horse/skeleton//spine/
+    - assets/images/horse/skeleton//spine/cervical_vertebrae/
+    - assets/images/horse/skeleton//spine/thoracic_vertebrae/
+    - assets/images/horse/skeleton//spine/lumbar_vertebrae/
+    - assets/images/horse/skeleton//spine/sacral_vertebrae/
+    - assets/images/horse/skeleton//spine/caudal_vertebrae/
     - assets/images/horse/systems/digestive_system/upper_tract/
     - assets/images/horse/systems/reproductive_system/female/
     - assets/images/horse/muscles/
+    - assets/images/horse/glands/
+    - assets/images/horse/glands/digestive/
     - assets/images/dog/energy/
     - assets/images/dog/energy/aura/
     - assets/images/dog/energy/meridians/
@@ -616,6 +630,8 @@ flutter:
     - assets/images/dog/systems/digestive_system/
     - assets/images/dog/systems/digestive_system/upper_tract/
     - assets/images/dog/muscles/
+    - assets/images/dog/glands/
+    - assets/images/dog/glands/digestive/
     - assets/images/cat/energy/
     - assets/images/cat/energy/meridians/
     - assets/images/cat/energy/meridians/primary_meridian/
@@ -627,12 +643,20 @@ flutter:
     - assets/images/cat/systems/digestive_system/
     - assets/images/cat/systems/digestive_system/upper_tract/
     - assets/images/cat/muscles/
+    - assets/images/cat/glands/
+    - assets/images/cat/glands/digestive/
     - assets/images/bird/energy/
+    - assets/images/bird/energy/meridians/
+    - assets/images/bird/energy/meridians/primary_meridian/
+    - assets/images/bird/energy/meridians/extraordinary_meridian/
     - assets/images/bird/energy/aura/
     - assets/images/bird/sensory/
     - assets/images/bird/skeleton/
     - assets/images/bird/glands/
     - assets/images/bird/glands/digestive/
+    - assets/images/bird/glands/reproductive/
+    - assets/images/bird/glands/reproductive/female/
+    - assets/images/bird/glands/reproductive/male/
     - assets/images/bird/muscles/
     - assets/images/holistic_remedies/
     - assets/images/holistic_remedies/crystals/
@@ -646,6 +670,7 @@ flutter:
     - assets/images/holistic_remedies/crystals/mental_clarity_and_focus/
     - assets/images/holistic_remedies/crystals/spiritual_connection/
     - assets/images/holistic_remedies/crystals/trauma_and_heart_healing/
+    - assets/images/holistic_remedies/supplements_herbs/
     - assets/images/energy/
     - assets/images/energy/chakras/
     - assets/images/energy/chakras/main_chakra/
@@ -661,6 +686,13 @@ flutter:
     - assets/images/energy/energetic_influences/
     - assets/images/energy/unresolved_emotions/
     - assets/images/energy/core_imprints/
+    - assets/images/energy/statements/
+    - assets/images/energy/post_traumatic/
+    - assets/images/energy/positive_integration/
+    - assets/images/energy/relationship_field/
+    - assets/images/energy/relationship_field/internal/
+    - assets/images/energy/relationship_field/external/
+    - assets/images/energy/entities_spirits/
     - assets/images/skeleton/
     - assets/images/skeleton/dentition/
     - assets/images/skeleton/dentition/upper/
@@ -672,6 +704,7 @@ flutter:
     - assets/images/glands/respiratory/
     - assets/images/glands/immune/
     - assets/images/glands/mammary/
+    - assets/images/glands/scent_protective/
     - assets/images/organs/
     - assets/images/organs/head/
     - assets/images/organs/neck/
@@ -700,6 +733,9 @@ flutter:
     - assets/images/systems/digestive_system/
     - assets/images/systems/digestive_system/upper_tract/
     - assets/images/systems/digestive_system/lower_tract/
+    - assets/images/systems/immune_system/
+    - assets/images/systems/immune_system/tissues/
+    - assets/images/environmental/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
