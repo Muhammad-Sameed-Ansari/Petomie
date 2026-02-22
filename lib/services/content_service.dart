@@ -17,26 +17,26 @@ class ContentService {
   // Note: meridians, chakras, aura, negative_beliefs are now animal-specific, not shared
   static const Map<String, String> _sharedFolderMappings = {
     // Energy category folders (shared across all animals)
-    'life_force': 'energy/life_force',
-    'imbalances': 'energy/imbalances',
-    'environmental_impacts': 'energy/imbalances/environmental_impacts',
-    'connections': 'energy/imbalances/connections',
+    'portals_pathways': 'energy/portals_pathways',
+    'energetic_pathways': 'energy/portals_pathways',
+    'portals_energy_gateways': 'energy/portals_pathways',
+    'contracts_vows': 'energy/statements',
     'sacred_symbols': 'energy/sacred_symbols',
-    'states_of_harmony': 'energy/states_of_harmony',
-    'energetic_influences': 'energy/energetic_influences',
     'unresolved_emotions': 'energy/unresolved_emotions',
     'core_imprints': 'energy/core_imprints',
+    'identity_role': 'energy/core_imprints/identity_role',
     'energy_attachments': 'energy/energy_attachments',
-    'entities_spirits': 'energy/entities_spirits',
+    'entities_spirits': 'energy/energy_attachments/entities_spirits',
     'positive_integration': 'energy/positive_integration',
+    'positive_integration_sacred_symbols': 'energy/positive_integration/sacred_symbols',
     'post_traumatic': 'energy/post_traumatic',
-    'relationship_field': 'energy/relationship_field',
-    'internal': 'energy/relationship_field/internal',
-    'external': 'energy/relationship_field/external',
+    'freeze_defence': 'energy/post_traumatic/freeze_defence',
+    'shock': 'energy/post_traumatic/shock',
+    'relationship_field': 'energy/energy_attachments/relationship_field',
+    'internal': 'energy/energy_attachments/relationship_field/internal',
+    'external': 'energy/energy_attachments/relationship_field/external',
     'statements': 'energy/statements',
-    'contracts_vows': 'energy',
-    'energetic_pathways': 'energy',
-    'portals_energy_gateways': 'energy',
+    'energy_trauma': 'energy/trauma',
     
     // Holistic Remedies category folders (shared across all animals)
     'holistic_remedies': 'holistic_remedies',
@@ -349,14 +349,28 @@ class ContentService {
     return categoryIdLower == 'contracts_vows' ||
            categoryIdLower == 'contracts & vows' ||
            categoryIdLower == 'energetic_pathways' ||
+           categoryIdLower == 'portals_pathways' ||
            categoryIdLower == 'portals_energy_gateways' ||
            categoryIdLower == 'portals & energy gateways';
   }
   
   /// Build path for standalone shared energy categories
   String _buildStandaloneSharedEnergyCategoryPath(String categoryId) {
-    String filename = _processFilename(categoryId);
-    String finalPath = 'assets/details/energy/$filename.txt';
+    final categoryIdLower = categoryId.toLowerCase();
+    String finalPath;
+
+    if (categoryIdLower == 'contracts_vows' || categoryIdLower == 'contracts & vows') {
+      finalPath = 'assets/details/energy/statements/contracts&vows.txt';
+    } else if (categoryIdLower == 'energetic_pathways' ||
+        categoryIdLower == 'portals_energy_gateways' ||
+        categoryIdLower == 'portals & energy gateways') {
+      String filename = _processFilename(categoryId);
+      finalPath = 'assets/details/energy/portals_pathways/$filename.txt';
+    } else {
+      String filename = _processFilename(categoryId);
+      finalPath = 'assets/details/energy/$filename.txt';
+    }
+
     print('DEBUG: Using standalone shared energy category path: $finalPath');
     return finalPath;
   }
@@ -510,26 +524,24 @@ class ContentService {
       // and are no longer shared across animals
       
       // Energy categories
-      case 'life force':
-        return 'life_force';
-      case 'imbalances':
-        return 'imbalances';
-      case 'environmental impacts':
-        return 'environmental_impacts';
-      case 'connections':
-        return 'connections';
+      case 'portals pathways':
+        return 'portals_pathways';
       case 'sacred symbols':
+        // Support sacred symbols under positive integration as well
+        if (breadcrumbs.any((b) => b.toLowerCase() == 'positive integration')) {
+          return 'positive_integration_sacred_symbols';
+        }
         return 'sacred_symbols';
-      case 'states of harmony':
-        return 'states_of_harmony';
-      case 'energetic influences':
-        return 'energetic_influences';
       case 'negative beliefs':
         return 'negative_beliefs';
       case 'unresolved emotions':
         return 'unresolved_emotions';
       case 'core imprints':
         return 'core_imprints';
+      case 'identity role':
+      case 'identity & role':
+      case 'identity and role':
+        return 'identity_role';
       case 'energy attachments':
         return 'energy_attachments';
       case 'entities & spirits':
@@ -552,6 +564,11 @@ class ContentService {
         return 'contracts_vows';
       case 'energetic pathways':
         return 'energetic_pathways';
+      case 'freeze defence':
+      case 'freeze defense':
+        return 'freeze_defence';
+      case 'shock':
+        return 'shock';
       case 'portals & energy gateways':
       case 'portals and energy gateways':
         return 'portals_energy_gateways';
@@ -662,6 +679,9 @@ class ContentService {
         }
         return null;
       case 'trauma':
+        if (breadcrumbs.any((b) => b.toLowerCase().contains('energy'))) {
+          return 'energy_trauma';
+        }
         return 'trauma';
       
       // Essential Oils categories

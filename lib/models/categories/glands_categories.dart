@@ -207,14 +207,8 @@ class GlandsCategories {
           ),
           Category(
             id: 'gland_of_the_third_eyelid',
-            label: 'Gland of the Third Eyelid',
+            label: 'Third Eyelid Gland',
             icon: Icons.visibility,
-            imagePath: 'assets/images/glands/ocular.webp',
-          ),
-          Category(
-            id: 'harderian_gland',
-            label: 'Harderian Gland',
-            icon: Icons.water_drop,
             imagePath: 'assets/images/glands/ocular.webp',
           ),
           Category(
@@ -225,7 +219,7 @@ class GlandsCategories {
           ),
           Category(
             id: 'meibomian_glands',
-            label: 'Meibomian Glands',
+            label: 'Meibomian Sebaceous Glands',
             icon: Icons.remove_red_eye,
             imagePath: 'assets/images/glands/ocular.webp',
           ),

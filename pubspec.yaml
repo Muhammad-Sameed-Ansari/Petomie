@@ -92,23 +92,23 @@ flutter:
     - assets/details/
     - assets/details/environmental/
     - assets/details/energy/
-    - assets/details/energy/life_force/
-    - assets/details/energy/imbalances/
-    - assets/details/energy/imbalances/environmental_impacts/
-    - assets/details/energy/imbalances/connections/
-    - assets/details/energy/sacred_symbols/
-    - assets/details/energy/states_of_harmony/
-    - assets/details/energy/energetic_influences/
-    - assets/details/energy/unresolved_emotions/
     - assets/details/energy/core_imprints/
+    - assets/details/energy/core_imprints/identity_role/
     - assets/details/energy/energy_attachments/
-    - assets/details/energy/entities_spirits/
+    - assets/details/energy/energy_attachments/entities_spirits/
+    - assets/details/energy/energy_attachments/relationship_field/
+    - assets/details/energy/energy_attachments/relationship_field/internal/
+    - assets/details/energy/energy_attachments/relationship_field/external/
+    - assets/details/energy/portals_pathways/
     - assets/details/energy/positive_integration/
+    - assets/details/energy/positive_integration/sacred_symbols/
     - assets/details/energy/post_traumatic/
-    - assets/details/energy/relationship_field/
-    - assets/details/energy/relationship_field/internal/
-    - assets/details/energy/relationship_field/external/
+    - assets/details/energy/post_traumatic/freeze_defence/
+    - assets/details/energy/post_traumatic/shock/
+    - assets/details/energy/sacred_symbols/
     - assets/details/energy/statements/
+    - assets/details/energy/trauma/
+    - assets/details/energy/unresolved_emotions/
     - assets/details/holistic_remedies/
     - assets/details/holistic_remedies/australian_bush_flowers/
     - assets/details/holistic_remedies/australian_bush_flowers/a_to_b/
@@ -735,6 +735,7 @@ flutter:
     - assets/images/systems/digestive_system/lower_tract/
     - assets/images/systems/immune_system/
     - assets/images/systems/immune_system/tissues/
+    - assets/images/systems/lumbosacral_plexus/
     - assets/images/environmental/
 
   # An image asset can refer to one or more resolution-specific "variants", see

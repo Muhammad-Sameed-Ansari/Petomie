@@ -322,10 +322,10 @@ class OrgansCategories {
                 imagePath: 'assets/images/organs/reproductive_organs/female/uterus_shell_gland.webp',
               ),
               Category(
-                id: 'vagina',
-                label: 'Vagina',
+                id: 'oviduct',
+                label: 'Oviduct',
                 icon: Icons.scatter_plot,
-                imagePath: 'assets/images/organs/reproductive_organs/female/vagina.webp',
+                imagePath: 'assets/images/organs/reproductive_organs/female/oviduct.webp',
               ),
             ],
           ),
