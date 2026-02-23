@@ -511,6 +511,7 @@ class SystemsCategories {
             id: 'tissues',
             label: _systemIdToLabel('tissues'),
             icon: Icons.shield,
+            imagePath: 'assets/images/systems/immune_system/tissues_horse.webp',
             subcategories: [
               Category(
                 id: 'BALT', 
@@ -1485,7 +1486,7 @@ class SystemsCategories {
             id: 'harderian_gland', 
             label: _systemIdToLabel('harderian_gland'), 
             icon: Icons.shield,
-            imagePath: 'assets/images/systems/immune_system/harderian_gland.webp',
+            imagePath: 'assets/images/systems/immune_system/harderian_gland_dog.webp',
           ),
           Category(
             id: 'liver_immune', 
@@ -1521,6 +1522,7 @@ class SystemsCategories {
             id: 'tissues',
             label: _systemIdToLabel('tissues'),
             icon: Icons.shield,
+            imagePath: 'assets/images/systems/immune_system/tissues_dog.webp',
             subcategories: [
               Category(
                 id: 'BALT', 
@@ -2480,7 +2482,7 @@ class SystemsCategories {
             id: 'harderian_gland', 
             label: _systemIdToLabel('harderian_gland'), 
             icon: Icons.shield,
-            imagePath: 'assets/images/systems/immune_system/harderian_gland.webp',
+            imagePath: 'assets/images/systems/immune_system/harderian_gland_cat.webp',
           ),
           Category(
             id: 'liver_immune', 
@@ -2516,6 +2518,7 @@ class SystemsCategories {
             id: 'tissues',
             label: _systemIdToLabel('tissues'),
             icon: Icons.shield,
+            imagePath: 'assets/images/systems/immune_system/tissues_cat.webp',
             subcategories: [
               Category(
                 id: 'BALT', 

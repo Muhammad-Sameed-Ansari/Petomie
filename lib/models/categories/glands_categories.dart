@@ -559,29 +559,17 @@ class GlandsCategories {
         icon: Icons.shield,
         imagePath: 'assets/images/glands/immune.webp',
         subcategories: [
-          // Category(
-          //   id: 'lymph_glands',
-          //   label: 'Lymph Glands',
-          //   icon: Icons.bubble_chart,
-          //   imagePath: 'assets/images/dog/glands/immune/lymph_glands.txt',
-          // ),
-          // Category(
-          //   id: 'lymph_nodes',
-          //   label: 'Lymph Nodes',
-          //   icon: Icons.radio_button_checked,
-          //   imagePath: 'assets/images/dog/glands/immune/lymph_nodes.txt',
-          // ),
           Category(
             id: 'spleen',
             label: 'Spleen',
             icon: Icons.filter_vintage,
-            imagePath: 'assets/images/dog/glands/immune/spleen.txt',
+            imagePath: 'assets/images/glands/immune/spleen.webp',
           ),
           Category(
             id: 'thymus_gland',
             label: 'Thymus Gland',
             icon: Icons.security,
-            imagePath: 'assets/images/dog/glands/immune/thymus_gland.txt',
+            imagePath: 'assets/images/glands/immune/thymus_gland.webp',
           ),
         ],
       ),
@@ -1007,29 +995,17 @@ class GlandsCategories {
         icon: Icons.shield,
         imagePath: 'assets/images/glands/immune.webp',
         subcategories: [
-          // Category(
-          //   id: 'lymph_glands',
-          //   label: 'Lymph Glands',
-          //   icon: Icons.bubble_chart,
-          //   imagePath: 'assets/images/cat/glands/immune/lymph_glands.txt',
-          // ),
-          // Category(
-          //   id: 'lymph_nodes',
-          //   label: 'Lymph Nodes',
-          //   icon: Icons.radio_button_checked,
-          //   imagePath: 'assets/images/cat/glands/immune/lymph_nodes.txt',
-          // ),
           Category(
             id: 'spleen',
             label: 'Spleen',
             icon: Icons.filter_vintage,
-            imagePath: 'assets/images/cat/glands/immune/spleen.txt',
+            imagePath: 'assets/images/glands/immune/spleen.webp',
           ),
           Category(
             id: 'thymus_gland',
             label: 'Thymus Gland',
             icon: Icons.security,
-            imagePath: 'assets/images/cat/glands/immune/thymus_gland.txt',
+            imagePath: 'assets/images/glands/immune/thymus_gland.webp',
           ),
         ],
       ),
